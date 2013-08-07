@@ -1,0 +1,17 @@
+<div class="col2 expand box research book no-excerpt" id="<%= book["id"]%>">
+	<div class="hideable">
+		<div class="magnifier"></div>
+		<h2><%= book["published"] ? "Published Book" : "Book In Progress" %></h2>
+		<p><img src="<%= book["image"]%>" alt="Image Illustrating the book, \"<%= book["short_title"]%>\""/></p>
+		<h3><%= book["short_title"]%></h3>
+		<% if book["short_description"] %>
+			<p><%= RDiscount.new(book["short_description"]).to_html %></p>
+		<% end %>
+	</div>
+	<div class="expandable">
+		<div class="mobile"><h1><%= book["published"] ? "Published Book" : "Book In Progress" %></h1></div>
+		<h2><%= book["title"]%></h2>
+
+		<%= RDiscount.new(book["description"]).to_html %>
+	</div>
+</div>

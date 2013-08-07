@@ -1,0 +1,19 @@
+<% 
+current_term = "#{CourseDate.to_term(Date.today.month)} #{Date.today.year}"
+current_course = 0
+
+courses.select{ |course| course["course_term"].to_s == term}.each do |course| %>
+<div class="box col2 teaching class <%= course["course_term"].to_s.downcase.gsub(/\s/,"_") %>">
+	<h2 class="no-mobile"><%= (term == current_term) ? "Currently Teaching" : "Taught in #{term}" %></h2>
+	<h3>
+		<span class="course_number"><%= course["course_number"] %>:</span>
+		<span class="course_title"><%= course["course_title"] %></span>
+	</h3>
+	<p><a href="<%= course["course_url"] %>">
+		<img style="display: block; margin: 0 auto" src="/<%= course["course_image"] %>" />
+	</a></p>
+	<p class="course_description"><%= course["course_description"]%></p>
+	<p><a href="<%= course["course_url"] %>">Visit the Class Website</a></p>
+</div>
+	<% current_course += 1 %>
+<% end %>

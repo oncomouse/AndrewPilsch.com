@@ -1,0 +1,31 @@
+@font-face {
+  font-family: Moderna;
+  src: local("Helvetica Neue"), 
+		 local("HelveticaNeue"), 
+		 url(MgOpenModernaRegular.ttf);
+}
+ 
+@font-face {
+  font-family: Moderna;
+  src: local("Helvetica Neue Bold"), 
+	local("HelveticaNeue-Bold"), 
+	url(MgOpenModernaBold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+	font-family: Moderna;
+	src: local("Helvetica Neue Italic"),
+	local("HelveticaNeue-Italic"),
+	url(MgOpenModernaOblique.ttf);
+	font-style: italic;
+}
+
+@font-face {
+	font-family: Moderna;
+	src: local("Helvetica Neue Bold Italic"),
+	local("HelveticaNeue-BoldItalic"),
+	url(MgOpenModernaBoldOblique.ttf);
+	font-style: italic;
+	font-weight: 700;
+}

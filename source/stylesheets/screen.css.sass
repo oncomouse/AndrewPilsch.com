@@ -1,0 +1,482 @@
+@import html5boilerplate
+@import bourbon/bourbon
+
+$top_padding: 40px
+
+$column_width: 240px
+$column_height: 240px
+$column_margin: 5px
+$column_border: 1px
+$column_padding: 5px
+
+$col1: $column_width
+$col2: $column_width * 2 + ($column_margin + $column_border + $column_padding) * 2
+$col3: $column_width * 3 + ($column_margin + $column_border + $column_padding) * 4
+$col4: $column_width * 4 + ($column_margin + $column_border + $column_padding) * 6
+
+$colh1: $column_height
+$colh2: $column_height * 2 + ($column_margin + $column_border + $column_padding) * 2
+$colh3: $column_height * 3 + ($column_margin + $column_border + $column_padding) * 4
+$colh4: $column_height * 4 + ($column_margin + $column_border + $column_padding) * 6
+
+$expandable_height: $colh2
+$expandable_width: $col3
+
+$minimum_number_of_columns: 1
+$minimum_content_width: $minimum_number_of_columns * ($col1 + ($column_margin + $column_border + $column_padding) * 2)
+
+$sidebar_width: 40px
+$sidebar_padding: 0px
+
+$box_border_color: #BABABA
+
+$body_color: #0A0A0D
+$body_font_family: $helvetica
+$body_font_size: 16px
+$heading_font_family: $helvetica
+
+$button_color: lighten(#00F,15%)
+
+$link_color: #F00
+
+body
+	font:
+		family: $body_font_family
+		size: $body_font_size
+	margin: 0px
+	background: #FFFFFF
+	color: $body_color
+
+a
+	color: $link_color
+	text:
+		decoration: none
+
+a:hover
+	text:
+		decoration: underline
+
+p
+	line:
+		height: 1.3em
+
+h1,h2,h3,h4,h5
+	font:
+		family: $heading_font_family
+		weight: 900
+
+h1
+	font-size: 2.5em
+	line-height: 1
+	margin-bottom: 0.5em
+h2
+	font-size: 1.618em
+	margin-bottom: 0.75em
+h3
+	font-size: 1.2em
+	line-height: 1
+	margin-bottom: 1em
+h4
+	font-size: 1.2em
+	line-height: 1.25
+	margin-bottom: 1.25em
+h5
+	font-size: 1em
+	font-weight: bold
+	margin-bottom: 1.5em
+h6
+	font-size: 1em
+	font-weight: bold
+
+hr
+	border: 0px
+	margin: 0.5em auto
+	width: 100%
+	height: 1px
+	background: $body_color
+
+#container
+	margin:
+		left: $sidebar_width + $sidebar_padding * 2
+		top: $top_padding
+	min-width: $minimum_content_width
+
+#footer, footer
+	height: 150px
+	width: 100%
+
+#sidebar
+	position: fixed
+	top: $top_padding
+	left: 0px
+	width: $sidebar_width
+	padding: $sidebar_padding
+
+#logo
+	float: left
+	width: $column_width
+	h1
+		font:
+			size: 25pt
+			family: $heading_font_family
+			weight: 900
+		text:
+			transform: uppercase
+			align: center
+		margin: 0
+	a
+		color: black
+		&:hover
+			text:
+				decoration: none
+
+.andrew
+	font:
+		size: 27pt
+.pilsch
+	font:
+		size: 33pt
+	line:
+		height: 28px
+.courses
+	padding:
+		top: 20px
+
+#sidebar ul
+	list:
+		style: none
+	margin:
+		top: 4em
+		left: 0px
+		right: 0px
+		bottom: 0px
+	padding: 0
+
+#sidebar ul li
+	text-align: center
+	font:
+		size: 11pt
+
+#sidebar ul li:after
+	content: ""
+	display: block
+	width: 35%
+	background-color: $body_color
+	border-bottom: 1px solid $box_border_color
+	margin: 10px auto
+
+#sidebar ul li:last-child:after
+	content: ""
+	display: block
+	width: 35%
+	background-color: $body_color
+	border-bottom: 0px solid $box_border_color
+	margin: 10px auto
+
+/* Begin Content CSS Code */
+.box
+	margin: $column_margin
+	min-height: $column_height
+	padding: $column_padding
+	border: $column_border solid $box_border_color
+	background: white
+
+
+.box h1.cv
+	font:
+		size: 120pt
+		weight: 400
+	text:
+		transform: uppercase
+		align: center
+	margin: 0px
+
+.magnifier
+	font:
+		family: "Lato", serif
+		size: 20px
+		weight: 400
+	color: #FFF
+	width: 24px
+	height: 24px
+	background: $box_border_color
+	opacity: 0.9
+	filter: alpha(opacity=90)
+	filter: "alpha(opacity=90)"
+	position: absolute
+	top: 0px
+	right: 0px
+	z-index: 2
+
+.magnifier:before
+	content: "+"
+	top: 0px
+	left: 7px
+	position: absolute
+
+.hideable
+	cursor: pointer
+
+	h1
+		font:
+			size: 1.1em
+
+.hideable img
+	display: block
+	margin: 0 auto
+
+.expandable
+	display: none
+	overflow: auto
+	width: $expandable_width - 6
+	height: $expandable_height - 10
+	padding: 5px 4px
+	margin:
+		left: 1px
+		right: 2px
+
+/* Scrollbar code borrowed from http://forrst.com */
+.expandable::-webkit-scrollbar
+	width: 8px
+	height: 8px
+	border-left: solid 1 #000
+.expandable::-webkit-scrollbar-button:start:decrement
+	display: block
+	height: 5px
+.expandable::-webkit-scrollbar-button:end:increment
+	display: block
+	height: 5px
+.expandable::-webkit-scrollbar-button:vertical:increment
+	background-color: transparent
+.expandable::-webkit-scrollbar-track:enabled
+	background-color: transparent//rgba(113,112,107,0.1)
+	-webkit-border-radius: 5px
+.expandable::-webkit-scrollbar-thumb:vertical
+	height: 50px
+	background-color: rgba(0,0,0,.2)
+	-webkit-border-radius: 5px
+.expandable::-webkit-scrollbar-thumb:horizontal
+	width: 50px
+	background-color: rgba(0,0,0,.2)
+	-webkit-border-radius: 5px
+	
+.col1
+	width: $col1
+.col2
+	width: $col2
+.col3
+	width: $col3
+.col4
+	width: $col4
+	
+.colh1
+	height: $colh1
+.colh2
+	height: $colh2
+.colh3
+	height: $colh3
+.colh4
+	height: $colh4
+	
+.col1,.col2,.col3,.col4
+	img
+		max-width: 90%
+#filters
+	margin:
+		left: 30px
+
+#filters h1
+	font:
+		size: 12pt
+		weight: bold
+	margin: 0px 5px
+	
+#filters ul
+	list-style: none
+	margin: 1em 0px 2em 0px
+	padding: 0px
+	filter: none
+	text-shadow: none
+	font:
+		family: $heading_font_family
+		weight: 400
+		size: 10.5pt
+
+#filters ul li
+	float: left
+	margin: 0px 5px
+
+#filters ul li a	
+	padding: 8px
+	@include button(simple, #EEE)
+	font-size: 1em
+
+#filters ul li a.selected
+	@include button(simple, $button_color)
+	font-size: 1em
+
+#teaching_button,#research_button
+	@include button(simple, $button_color)
+	font:
+		size: 1.2em
+		family: $heading_font_family
+	
+	
+/* Some media queries */
+@media all and (max-width:  400)
+	#logo
+		float: none !important
+		margin:
+			bottom: 2em
+	#box_container
+		width: $minimum_content_width
+	
+	/* Don't display HTML CV when 	
+	#cv_html
+		display: none
+		
+	.expandable
+		width: $minimum_content_width
+
+/* End Content CSS Code */
+
+
+/* Begin Isotope CSS Code */	
+
+/* Animation */	
+isotope, .isotope .isotope-item
+	-webkit-transition-duration: 0.8s
+	-moz-transition-duration: 0.8s
+	-ms-transition-duration: 0.8s
+	-o-transition-duration: 0.8s
+	transition-duration: 0.8s
+
+
+.isotope 
+	-webkit-transition-property: height, width
+	-moz-transition-property: height, width
+	-ms-transition-property: height, width
+	-o-transition-property: height, width
+	transition-property: height, width
+
+
+.isotope .isotope-item 
+	-webkit-transition-property: -webkit-transform, opacity
+	-moz-transition-property:    -moz-transform, opacity
+	-ms-transition-property:     -ms-transform, opacity
+	-o-transition-property:         top, left, opacity
+	transition-property:         transform, opacity
+
+.isotope.no-transition, .isotope.no-transition .isotope-item, .isotope .isotope-item.no-transition  
+	-webkit-transition-duration: 0s
+	-moz-transition-duration: 0s
+	-ms-transition-duration: 0s
+	-o-transition-duration: 0s
+	transition-duration: 0s
+
+/* Filtering */
+.isotope-item 
+	z-index: 2
+
+.isotope-hidden.isotope-item 
+	pointer-events: none
+	z-index: 1
+/* End Isotope CSS Code */
+
+/* CV Code */
+.center
+	margin: 0px auto
+
+.center_text
+	text-align: center
+
+#cv .expandable
+	font:
+		family: $heading_font_family
+
+#cv .expandable h1
+	font:
+		size: 22pt
+
+#cv .expandable h2
+	border-bottom: 1px solid $body_color
+	font:
+		size: 18pt
+	
+#cv .expandable .large
+	font-size: 0.9em
+
+#cv .expandable p
+	margin:
+		left: 0.25in
+
+#cv .expandable p.indent
+	margin:
+		left: 0.5in
+
+#cv .links p
+	margin:
+		left: 0px
+	font:
+		family: $body_font_family
+
+#cv .expandable ul
+	list-style: none
+	margin:
+		left: 0.25in
+	padding: 0
+
+#cv .expandable li
+	margin:
+		bottom: 1em
+/* End CV Code */
+
+/* Begin Gallery CSS Code */
+
+dl.gallery
+	width: 640px
+
+dl.gallery dt
+	float: right
+	width: 395px
+	font:
+		weight: bold
+	padding:
+		bottom: 1em
+
+dl.gallery dd.image
+	width: 200px
+	float: left
+	margin: 0
+	padding:
+		left: 6px
+	text:
+		align: center
+
+dl.gallery dd.description
+	margin: 0 0 0 245px
+	clear: both
+	padding:
+		bottom: 1.7em
+
+dl.gallery dd.description:after
+	content: "."
+	clear: both
+	display: block
+	visibility: hidden
+	width: 1px
+
+dl.gallery dd a img
+	border: 1px solid $body_color
+	
+dl.gallery dd a:hover img
+	border: 1px solid $link_color
+
+dl.gallery dt
+	font:
+		size: $body_font_size
+		family: $heading_font_family
+		weight: bold
+
+
+/* End Gallery CSS Code */

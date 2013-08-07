@@ -1,0 +1,8 @@
+<ul class="clearfix">
+	<li><a href="#" data-filter="">All</a></li>
+<%
+terms = courses.map{ |course| course["course_term"].to_s}.uniq.reverse
+terms.each do |term| %>
+	<li><a href="#" data-filter=".<%= term.to_s.downcase.gsub(/\s/,"_") %>"><%= term %></a></li>
+<% end %>
+</ul>

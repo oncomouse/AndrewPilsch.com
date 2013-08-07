@@ -1,0 +1,17 @@
+#about_site.box.col1.expand.no-excerpt.no-mobile
+	.hideable
+		.magnifier
+		%h3 About This Site
+		= image_tag "thumbs/about_site.png"
+		%p Software used in development.
+	.expandable
+		%h2 About This Site
+		
+		:markdown
+			This site was built using the [Middleman](http://www.middlemanapp.com) static site generator. The content, for the most part, was written in [HAML](http://haml.info/) and [SASS](http://sass-lang.com/), with help from [Bourbon SASS](bourbon.io) and [Compass](http://compass-style.org/), within Middleman.
+			
+			Overall, the site's javascript is powered by [Modernizr](http://modernizr.com/), [yepnope](http://yepnopejs.com/), and [jQuery](http://jquery.com). The filtering and [masonry](http://designshack.net/articles/css/masonry/) effects are powered by [jQuery Isotope](http://isotope.metafizzy.co).
+			
+			On the back-end, the research and courses are stored in a flat-file collection of [YAML](http://www.yaml.org/), with the dynamic elements (the "All My Courses" button) powered by [PHP](http://www.php.net) and [spyc](https://code.google.com/p/spyc/).
+			
+			The whole site was designed and written by Andrew Pilsch.

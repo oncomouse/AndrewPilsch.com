@@ -1,0 +1,36 @@
+/* Layout Variables
+ ----------------------------------------------------------------------------------------*/
+@import colors
+@import fonts
+@import sizes
+
+/* Utilities
+ ----------------------------------------------------------------------------------------*/
+@import clearfix
+@import compass
+@import bourbon/bourbon
+
+$column_width: 240px
+$column_height: 240px
+$column_margin: 5px
+$column_border: 1px
+$column_padding: 5px
+
+$col1: $column_width
+$col2: $column_width * 2 + ($column_margin + $column_border + $column_padding) * 2
+$col3: $column_width * 3 + ($column_margin + $column_border + $column_padding) * 4
+$col4: $column_width * 4 + ($column_margin + $column_border + $column_padding) * 6
+
+$colh1: $column_height
+$colh2: $column_height * 2 + ($column_margin + $column_border + $column_padding) * 2
+$colh3: $column_height * 3 + ($column_margin + $column_border + $column_padding) * 4
+$colh4: $column_height * 4 + ($column_margin + $column_border + $column_padding) * 6
+
+$expandable_height: $colh2
+$expandable_width: $col3
+
+$minimum_number_of_columns: 1
+$minimum_content_width: $minimum_number_of_columns * ($col1 + ($column_margin + $column_border + $column_padding) * 2)
+
+$sidebar_width: 40px
+$sidebar_padding: 0px
