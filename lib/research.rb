@@ -60,7 +60,12 @@ module ResearchManager
 				
 				# Set the Journal Information based on article status:
 				if data["published"]
-					data["journal_information"] = "Published  in #{data["journal"]}, #{data["issue_number"]} (#{data["issue_date"]})"
+					if data["issue_number"]
+						publication_information = ", #{data["issue_number"]} (#{data["issue_date"]})"
+					else
+						publication_informaiton = ""
+					end
+					data["journal_information"] = "Published  in #{data["journal"]}#{publication_information}"
 				elsif !data["published"]
 					if data["status"].downcase == "under review" or data["status"].downcase == "submitted"
 						data["journal_information"] = "Under Review at #{data["journal"]}"
