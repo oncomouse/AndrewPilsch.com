@@ -37,15 +37,12 @@
 		
 		#box_container
 			= partial("about")
-			= #partial("transhumanism")
 			= partial("research/print_research", :locals => { :type => "book", :front_page => true })
 			= partial("teaching_philosophy")
 			= partial("cv")
-			= #partial("speculative_rhetoric")
-			= #partial("research")
+			= partial("find_me")
 			= partial("research/print_research", :locals => { :type => "article", :front_page => true })
 			= partial("podcasting")
-			= #partial("future_research")
 			= partial("teaching")
 			= partial("courses/print_term", :locals => { :term => current_term })
 			= partial("classroom_resources")
