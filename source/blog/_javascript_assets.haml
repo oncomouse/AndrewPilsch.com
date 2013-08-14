@@ -1,9 +1,17 @@
-:javascript
-	// Assets:
-	var jquery_min_js = "#{javascript_path("vendor/zepto/zepto.min.js")}", // Use Zepto until we can't get away with it.
-	    highlight_min_js = "#{javascript_path("vendor/highlight/highlight.min.js")}",
+:javascript	
+	/*
+	 * Locally available versions of libraries:
+	 * 
+	 * var jquery_min_js = "#{javascript_path("vendor/zepto/zepto.min.js")}",
+	 *     highlight_min_js = "#{javascript_path("vendor/highlight/highlight.min.js")}",	    
+	 *     selectivizr_min_js = "#{javascript_path("vendor/selectivizr/selectivizr.min.js")}",
+	 */
+	
+	var jquery_min_js = "//cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js", // Use Zepto until we can't get away with it.
+	    highlight_min_js = "//cdnjs.cloudflare.com/ajax/libs/highlight.js/7.3/highlight.min.js",
+	    selectivizr_min_js = "//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js",
+	
 	    highlight_theme_css = "#{asset_path :css, "hljs/solarized_light.css"}",
-	    selectivizr_min_js = "#{javascript_path("vendor/selectivizr/selectivizr.min.js")}",
 	    search_js = "#{javascript_path("blog/search.js")}",
 	    site_js = "#{javascript_path("blog/site.js")}";
 	
