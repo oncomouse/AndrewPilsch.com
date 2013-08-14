@@ -1,6 +1,8 @@
 source/stylesheets/.sass-cache
 source/stylesheets/.sass-cache/*
 
+Gemfile.lock
+
 # OS generated files #
 ######################
 .DS_Store

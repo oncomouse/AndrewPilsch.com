@@ -1,0 +1,231 @@
+/* 8. CUSTOM LAYOUT & TYPOGRAPHY (Daddy bear)
+ ----------------------------------------------------------------------------------------*/
+@import bear_defaults
+
+$column-width: 8
+@mixin singleton-size
+	@include span-columns($column-width)
+	@include shift((12-$column-width) / 2)
+@mixin half-singleton-span
+	@include span-columns(($column-width / 2) of $column-width)
+@mixin whole-singleton-span
+	@include span-columns($column-width of $column-width)
+
+body
+	padding: 0//golden-ratio(1em, -1)
+		bottom: 0
+
+//section, header, nav, footer, div.articles
+	
+
+header .content, footer .content, nav .content, footer .content, div.articles, section .content
+	@include outer-container
+	
+header[role="banner"]
+	padding: 0
+		bottom: golden-ratio(1em, 0)
+	border:
+		top: 0
+		bottom: 3px $header_border_color solid
+	margin:
+		bottom: golden-ratio(1em, 0)
+		top: golden-ratio(1em, 4)
+
+nav
+	@include clearfix
+	display: block
+	margin: 0
+		bottom: golden-ratio(1em, 2)
+	padding:
+		left: golden-ratio(1em, 1)
+		right: golden-ratio(1em, 1)
+	border:
+		bottom: 2px solid $header_border_color
+	form.search
+		display: block
+	input.search_term
+		border: 0
+			bottom: 1px dotted $search_term_border_color
+			radius: 0
+		padding: golden-ratio(1em, -2)
+			bottom: 0
+			top: 0
+		background:
+			color: $search_term_background_color
+		font:
+			size: 1em
+		width: 5em
+		&:active, &:focus
+			width: 8em
+			outline: 0
+			color: $search_term_active_color
+			background: $search_term_active_background_color
+
+
+.search_results
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	background: rgba(#000, 0.5)
+	@include clearfix
+	opacity: 0
+	@include transition (opacity 2.0s ease-out 0s)
+	
+	&.show
+		opacity: 1
+
+	.close
+		cursor: pointer
+		position: fixed
+		top: 10%
+		left: -10px
+		@include shift(2)
+		z-index: 2
+		margin:
+			top: -4px
+		color: $close_button_color
+		&:active
+			color: $close_button_active_color
+		&:after
+			font:
+				family: entypo
+			content: "\2716"
+			font-size: 4em
+	
+	.content
+		position: fixed
+		top: 10%
+		bottom: 10%
+		@include span-columns(8)
+		@include shift(2)
+		background: $body_background_color
+		overflow: auto
+		padding: golden-ratio(1em, -1)
+			top: golden-ratio(1em, 1)
+		
+		
+		article
+			@include clearfix
+			margin:
+				bottom: golden-ratio(1em, 2)
+		
+		p.title
+			border: 0
+			margin: 0
+			@include span-columns(3 of 8)
+			padding:
+				top: golden-ratio(1em, -1)
+			font:
+				family: $header_font_family
+				weight: $header_font_weight
+				size: 1.35em
+			color: $subtitle_color
+			line:
+				height: 1em
+		div.article
+			margin: 0
+			@include span-columns(5 of 8)
+			@include omega
+
+.no-fontface .search_results
+	.close:after
+		font:
+			family: $body_font_family
+		content: "[ X ]"
+
+section
+	.content
+		padding: 0
+		h2
+			text-align: left
+		aside
+			display: none
+			//@include span-columns(3)
+		
+		/* Article in archive pages:
+		 - index
+		 - archives
+		 - tag
+		 - calendar
+		 */
+		article
+			@include span-columns(12)
+			.article_body
+				@include span-columns(8)
+			h2
+				@include span-columns(4)
+				padding:
+					top: golden-ratio(1em, -2)
+				a
+					display: block
+					&:after
+						content: ""
+						width: 10%
+						height: 1px
+						background: $article_date_color
+						display: block
+						margin:
+							bottom: golden-ratio(1em, -4)
+							top: golden-ratio(1em, -4)
+				span
+					color: $article_date_color
+		/*
+		 Single page article
+		 */
+			
+		.singleton
+			@include outer-container
+			header
+				@include span-columns(12)
+			h1
+				.article_title, .article_date
+					text-align: center
+				.breakline
+					&:after
+						content: ""
+						width: 10%
+						height: 1px
+						background: $black
+						display: block
+						margin: 0 auto
+							top: golden-ratio(1em, 0)
+				.article_date
+					margin:
+						top: golden-ratio(1em, -1)
+						bottom: golden-ratio(1em, 1)
+			p.tags
+				text:
+					align: center
+				margin:
+					bottom: golden-ratio(1em, 3)
+			article
+				@include singleton-size
+				p,pre,code,h1,h2,h3,h4,h5
+					text-align: left
+					@include whole-singleton-span
+				p
+					font-size: 1.4em
+#things
+	@include singleton-size
+	//margin: 0 -1 * golden-ratio(1em, -1)
+#previous_thing, #next_thing
+	@include half-singleton-span
+#next_thing
+	text-align: right
+/* 9. CUSTOM LAYOUT & TYPOGRAPHY (Mummy bear)
+ ----------------------------------------------------------------------------------------*/
+
+// While not exactly conforming to the Goldie Locks Approach, we have two media queries for
+// the Mummy bear level. That's because there are font troubles at one level and design
+// troubles at another.
+@media screen and (min-width: 30em) and (max-width: ($max-width + (golden-ratio(1em, -1) * 2)))
+	header .content, footer .content, footer .content, div.articles, section .content
+		padding: 0 golden-ratio(1em, -1)
+@media screen and (min-width: 30em) and (max-width: 63.75em)
+	section
+		.content
+			.singleton
+				p
+					font-size: 1.1em !important

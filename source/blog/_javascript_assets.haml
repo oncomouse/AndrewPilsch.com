@@ -1,0 +1,24 @@
+:javascript
+	// Assets:
+	var jquery_min_js = "#{javascript_path("vendor/zepto/zepto.min.js")}", // Use Zepto until we can't get away with it.
+	    highlight_min_js = "#{javascript_path("vendor/highlight/highlight.min.js")}",
+	    highlight_theme_css = "#{asset_path :css, "hljs/solarized_light.css"}",
+	    selectivizr_min_js = "#{javascript_path("vendor/selectivizr/selectivizr.min.js")}",
+	    search_js = "#{javascript_path("blog/search.js")}",
+	    site_js = "#{javascript_path("blog/site.js")}";
+	
+	// If older IE version, load selectivizr:
+	if(head.gte_ie6 && head.lte_ie8) {
+		head.js(selectivizr_min_js)
+	}
+	
+	head.js(jquery_min_js,search_js, site_js, function() {
+		// If there are code blocks to highlight, load the highlighting support:
+		if ($('code').length > 0) {
+			// Load the CSS for highlighting:
+			$('<link rel="stylesheet" type="text/css" href="'+highlight_theme_css+'" >').appendTo("head");
+			head.js(highlight_min_js, function() {
+				hljs.initHighlightingOnLoad();
+			});
+		}
+	});
