@@ -10,6 +10,28 @@ $column-width: 8
 	@include span-columns(($column-width / 2) of $column-width)
 @mixin whole-singleton-span
 	@include span-columns($column-width of $column-width)
+	@include omega
+
+@mixin breakline
+	@include breakline-after
+@mixin breakline-after
+	&:after
+		content: ""
+		width: 10%
+		height: 1px
+		background: $breakline_color
+		display: block
+		margin: 0 auto
+			top: golden-ratio(1em, 0)
+@mixin breakline-before
+	&:before
+		content: ""
+		width: 10%
+		height: 1px
+		background: $breakline_color
+		display: block
+		margin: 0 auto
+			top: golden-ratio(1em, 0)
 
 body
 	padding: 0//golden-ratio(1em, -1)
@@ -41,6 +63,21 @@ nav
 		right: golden-ratio(1em, 1)
 	border:
 		bottom: 2px solid $header_border_color
+	
+	p,form
+		width: auto
+		text-align: left
+		float: left
+		font-size: 1em
+		margin:
+			left: golden-ratio(1em, 1)
+		&:first-child
+			margin:
+				left: 0
+		&:last-child
+			float: right
+		&:before
+			font-size: 2em
 	form.search
 		display: block
 	input.search_term
@@ -138,6 +175,7 @@ nav
 section
 	.content
 		padding: 0
+		
 		h2
 			text-align: left
 		aside
@@ -150,26 +188,29 @@ section
 		 - tag
 		 - calendar
 		 */
-		article
-			@include span-columns(12)
-			.article_body
-				@include span-columns(8)
-			h2
-				@include span-columns(4)
-				padding:
-					top: golden-ratio(1em, -2)
-				a
-					display: block
-					&:after
-						content: ""
-						width: 10%
-						height: 1px
-						background: $article_date_color
+		.articles
+			p,li
+				font-size: 1.2em
+			article
+				@include span-columns(12)
+				.article_body
+					@include span-columns(8)
+				h2
+					@include span-columns(4)
+					padding:
+						top: golden-ratio(1em, -2)
+					a
 						display: block
-						margin:
-							bottom: golden-ratio(1em, -4)
-							top: golden-ratio(1em, -4)
-				span
+						&:after
+							content: ""
+							width: 10%
+							height: 1px
+							background: $article_date_color
+							display: block
+							margin:
+								bottom: golden-ratio(1em, -4)
+								top: golden-ratio(1em, -4)
+					span
 					color: $article_date_color
 		/*
 		 Single page article
@@ -177,24 +218,26 @@ section
 			
 		.singleton
 			@include outer-container
+			
+			p,li
+				font-size: 1em
 			header
 				@include span-columns(12)
 			h1
 				.article_title, .article_date
 					text-align: center
 				.breakline
-					&:after
-						content: ""
-						width: 10%
-						height: 1px
-						background: $black
-						display: block
-						margin: 0 auto
-							top: golden-ratio(1em, 0)
+					@include breakline
 				.article_date
 					margin:
 						top: golden-ratio(1em, -1)
 						bottom: golden-ratio(1em, 1)
+			h2, h3
+				@include breakline
+				margin:
+					bottom: 0
+				&:after
+					margin-bottom: golden-ratio(1em, -1)
 			p.tags
 				text:
 					align: center
@@ -202,14 +245,47 @@ section
 					bottom: golden-ratio(1em, 3)
 			article
 				@include singleton-size
-				p,pre,code,h1,h2,h3,h4,h5
-					text-align: left
-					@include whole-singleton-span
-				p
+				p,ol,ul,pre
 					font-size: 1.4em
+				ol,ul
+					margin:
+						left: -1 * golden-ratio(1em,-1)
+					padding:
+						left: golden-ratio(1em,-1)
+				ul ul, ul ol, ol ul, ol ol
+					margin:
+						left: golden-ratio(1em,1)
+						bottom: 0
+						top: golden-ratio(1em, -1)
+					padding:
+						left: 0
+					font:
+						size: 1em
+					li:last-child
+						margin:
+							bottom: 0
+				code
+					font:
+						size: golden-ratio(1em,1) / 2
+					line:
+						height: 1.25em
+				.footnotes
+					@include whole-singleton-span
+					&:before
+						font:
+							family: $header_font_family
+							weight: $header_font_weight
+							size: 2em
+						content: "Footnotes:"
+						display: block
+						margin:
+							top: golden-ratio(1em, 2)
+							bottom: golden-ratio(1em, 0)
+					
 #things
 	@include singleton-size
-	//margin: 0 -1 * golden-ratio(1em, -1)
+	p
+		font-size: 1.4em
 #previous_thing, #next_thing
 	@include half-singleton-span
 #next_thing

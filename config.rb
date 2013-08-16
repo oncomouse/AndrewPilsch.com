@@ -2,10 +2,12 @@
 # Compass
 ###
 
-set :markdown_engine, :rdiscount
+set :markdown_engine, :kramdown
 set :markdown, :fenced_code_blocks => true,
                :autolink => true, 
-               :smartypants => true
+               :smartypants => true,
+               :footnotes => true,
+               :superscript => true
 
 # Change Compass configuration
 compass_config do |config|

@@ -1,32 +1,52 @@
-:javascript	
+- code_include = "jquery_min_js, search_js, site_js"
+- load_hljs = "false"
+- load_footnotify = "false"
+- if current_page.respond_to? :body
+	- nokogiri_doc = Nokogiri::HTML(current_page.body)
+	- if nokogiri_doc.css('code').length > 0
+		- code_include += ", rainbow_min_js"
+		/ This stylesheet is included if Middleman determines highlighting is need.
+		= stylesheet_link_tag("hljs/solarized_light.css", :media => "all", :rel => "stylesheet" )
+	- if nokogiri_doc.css('.footnotes').length > 0
+		- code_include += ", footnotify_js"
+		/ This stylesheet is included if Middleman determines footnotes are present.
+		= stylesheet_link_tag("footnotify/footnotify.css", :media => "all", :rel => "stylesheet" )
+:javascript
 	/*
 	 * Locally available versions of libraries:
 	 * 
 	 * var jquery_min_js = "#{javascript_path("vendor/zepto/zepto.min.js")}",
-	 *     highlight_min_js = "#{javascript_path("vendor/highlight/highlight.min.js")}",	    
-	 *     selectivizr_min_js = "#{javascript_path("vendor/selectivizr/selectivizr.min.js")}",
+	 *	 highlight_min_js = "#{javascript_path("vendor/highlight/highlight.min.js")}",		
+	 *	 selectivizr_min_js = "#{javascript_path("vendor/selectivizr/selectivizr.min.js")}",
 	 */
 	
 	var jquery_min_js = "//cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js", // Use Zepto until we can't get away with it.
-	    highlight_min_js = "//cdnjs.cloudflare.com/ajax/libs/highlight.js/7.3/highlight.min.js",
-	    selectivizr_min_js = "//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js",
+		selectivizr_min_js = "//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js",
+		footnotify_js = "#{javascript_path("vendor/footnotify/footnotify.js")}",
 	
-	    highlight_theme_css = "#{asset_path :css, "hljs/solarized_light.css"}",
-	    search_js = "#{javascript_path("blog/search.js")}",
-	    site_js = "#{javascript_path("blog/site.js")}";
+		rainbow_min_js = "#{javascript_path("vendor/rainbow/rainbow.min.js")}",
+		search_js = "#{javascript_path("blog/search.js")}",
+		site_js = "#{javascript_path("blog/site.js")}";
 	
 	// If older IE version, load selectivizr:
 	if(head.gte_ie6 && head.lte_ie8) {
-		head.js(selectivizr_min_js)
+		head.js(selectivizr_min_js);
 	}
 	
-	head.js(jquery_min_js,search_js, site_js, function() {
-		// If there are code blocks to highlight, load the highlighting support:
-		if ($('code').length > 0) {
-			// Load the CSS for highlighting:
-			$('<link rel="stylesheet" type="text/css" href="'+highlight_theme_css+'" >').appendTo("head");
-			head.js(highlight_min_js, function() {
-				hljs.initHighlightingOnLoad();
-			});
+	/*
+	 * The libraries to load are determined by Middleman before site compilation.
+	 * 
+	 * If the page is found to contain a highlighted code block, we load Rainbow. If not, we don't load it.
+	 * 
+	 * If the page is found to contain footnotes, we load footnotify. If not, we don't load it.
+	 * 
+	 */
+	head.js(#{code_include}, function() {
+
+		if ($('code').length > 0) {			
+			Rainbow.color();
+		}		
+		if ($('.footnotes').length > 0) {
+			$('.footnotes').style("display", "none");
 		}
 	});

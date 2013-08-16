@@ -4,21 +4,25 @@ pageable: false
 per_page: 6
 ---
 %h1.role Recent Articles
-- page_articles.each_with_index do |article, i|
-	%article
-		%h2
-			= link_to article.title, article
-			%span= article.date.strftime('%b %e, %Y')
-		.article_body
-			= article.first_paragraph
-			%p 
-				= link_to("Continue Reading", article.url)
+.articles
+	- page_articles.each_with_index do |article, i|
+		%article
+			%h2
+				- if article.respond_to? :data and article.data['short_title']
+					= link_to article.data['short_title'] + "...", article
+				- else
+					= link_to article.title, article
+				%span= article.date.strftime('%b %e, %Y')
+			.article_body
+				= article.first_paragraph
+				%p 
+					= link_to("Continue Reading", article.url)
 
-- if page_articles.length == 0
+	- if page_articles.length == 0
 	
-	%h1.article_title Nothing Posted Yet
+		%h1.article_title Nothing Posted Yet
 
-- if page_articles.length > 0 and articles.length > page_articles.length
-	%article
-		%p.archives
-			=link_to "View the Archives", "archives.html"
+	- if page_articles.length > 0 and articles.length > page_articles.length
+		%article
+			%p.archives
+				=link_to "View the Archives", "archives.html"

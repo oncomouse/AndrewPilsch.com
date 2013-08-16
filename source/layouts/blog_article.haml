@@ -1,0 +1,37 @@
+- wrap_layout :blog do
+	.singleton
+		%header
+			%h1
+				%span.article_title.breakline= current_page.title
+				%span.article_date= current_page.date.strftime('%b %e, %Y')
+			%p.tags
+				- if current_page.tags and current_page.tags.length > 0
+					Tagged:
+					= current_page.tags.map { |tag| link_to(tag, "tags/#{tag}.html") }.join(", ")
+		%article
+			= yield
+	#things
+		%h2 Read On:
+		-if current_page.previous_article
+			- if current_page.previous_article.respond_to? :data and current_page.previous_article.data['short_title']
+				- link_title = "#{current_page.previous_article.data['short_title']}"
+			-else
+				- link_title = current_page.previous_article.title
+			#previous_thing
+				%p
+					= link_to(link_title, current_page.previous_article.url)
+		-else
+			#previous_thing
+				%p.no_link At Oldest Article
+
+		- if current_page.next_article
+			- if current_page.next_article.respond_to? :data and current_page.next_article.data['short_title']
+				- link_title = "#{current_page.next_article.data['short_title']}"
+			-else
+				- link_title = current_page.next_article.title
+			#next_thing
+				%p
+					= link_to(link_title, current_page.next_article.url)
+		-else
+			#next_thing
+				%p.no_link At Newest Article
