@@ -375,7 +375,10 @@ section
 				top: golden-ratio(1em, 2)
 			a
 				@include button(shiny, $archives_button_color)
-				font-size: 1.7em
+				font:
+					size: 1.7em
+					family: $header_font_family
+					weight: $header_font_weight
 				padding:
 					top: 12px
 		.singleton
@@ -385,6 +388,19 @@ section
 					top: golden-ratio(1em, 1)
 					bottom: golden-ratio(1em, -1)
 				text-align: center
+			blockquote
+				margin: golden-ratio(1em, 0) auto
+				width: 85%
+				font:
+					style: italic
+				border:
+					left: 4px solid $blockquote_border_color
+				padding:
+					left: golden-ratio(1em, -1)
+					top: golden-ratio(1em, 0)
+					bottom: golden-ratio(1em, -2)
+					
+				
 					
 
 .footnotes

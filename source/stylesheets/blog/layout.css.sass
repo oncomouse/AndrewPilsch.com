@@ -31,7 +31,7 @@ $column-width: 8
 		background: $breakline_color
 		display: block
 		margin: 0 auto
-			top: golden-ratio(1em, 0)
+			bottom: golden-ratio(1em, 0)
 
 body
 	padding: 0//golden-ratio(1em, -1)
@@ -269,6 +269,9 @@ section
 						size: golden-ratio(1em,1) / 2
 					line:
 						height: 1.25em
+				blockquote
+					font:
+						size: 0.9em
 				.footnotes
 					@include whole-singleton-span
 					&:before
@@ -281,7 +284,12 @@ section
 						margin:
 							top: golden-ratio(1em, 2)
 							bottom: golden-ratio(1em, 0)
-					
+
+#disqus_thread
+	@include singleton-size
+	@include breakline-before
+	
+	margin-bottom: golden-ratio(1em, 2)
 #things
 	@include singleton-size
 	p
@@ -305,3 +313,6 @@ section
 			.singleton
 				p
 					font-size: 1.1em !important
+				blockquote
+					font:
+						size: 1.0em !important

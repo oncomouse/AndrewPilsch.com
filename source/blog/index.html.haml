@@ -22,7 +22,7 @@ per_page: 6
 	
 		%h1.article_title Nothing Posted Yet
 
-	- if page_articles.length > 0 and articles.length > page_articles.length
+	- if page_articles.length > 0 and blog.articles.length > page_articles.length
 		%article
 			%p.archives
 				=link_to "View the Archives", "archives.html"
