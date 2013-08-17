@@ -10,28 +10,29 @@
 					= current_page.tags.map { |tag| link_to(tag, "tags/#{tag}.html") }.join(", ")
 		%article
 			= yield
-	#things
-		%h2 Read On:
-		-if current_page.previous_article
-			- if current_page.previous_article.respond_to? :data and current_page.previous_article.data['short_title']
-				- link_title = "#{current_page.previous_article.data['short_title']}"
+	- if current_page.previous_article or current_page.next_article
+		#things
+			%h2 Read On:
+			-if current_page.previous_article
+				- if current_page.previous_article.respond_to? :data and current_page.previous_article.data['short_title']
+					- link_title = "#{current_page.previous_article.data['short_title']}"
+				-else
+					- link_title = current_page.previous_article.title
+				#previous_thing
+					%p
+						= link_to(link_title, current_page.previous_article.url)
 			-else
-				- link_title = current_page.previous_article.title
-			#previous_thing
-				%p
-					= link_to(link_title, current_page.previous_article.url)
-		-else
-			#previous_thing
-				%p.no_link At Oldest Article
+				#previous_thing
+					%p.no_link At Oldest Article
 
-		- if current_page.next_article
-			- if current_page.next_article.respond_to? :data and current_page.next_article.data['short_title']
-				- link_title = "#{current_page.next_article.data['short_title']}"
+			- if current_page.next_article
+				- if current_page.next_article.respond_to? :data and current_page.next_article.data['short_title']
+					- link_title = "#{current_page.next_article.data['short_title']}"
+				-else
+					- link_title = current_page.next_article.title
+				#next_thing
+					%p
+						= link_to(link_title, current_page.next_article.url)
 			-else
-				- link_title = current_page.next_article.title
-			#next_thing
-				%p
-					= link_to(link_title, current_page.next_article.url)
-		-else
-			#next_thing
-				%p.no_link At Newest Article
+				#next_thing
+					%p.no_link At Newest Article

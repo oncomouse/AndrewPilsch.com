@@ -1,7 +1,7 @@
 ---
 title: From Zer0 to Blog in 24 Hours
 short_title: From Zer0 to Blog
-date: 2013-08-14 17:52 UTC
+date: 2013-08-17 17:52 UTC
 tags:
 ---
 
