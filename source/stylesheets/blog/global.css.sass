@@ -314,6 +314,9 @@ header[role="banner"]
 nav
 	@include clearfix
 
+	a
+		font:
+			weight: bold
 	a:before
 		font-size: 2em
 		display: inline-block
@@ -442,8 +445,8 @@ section
 	a
 		&:before, &:after
 			font: 
-				family: entypo
-				size: 1.2em
+				family: icomoon
+				size: 1em
 .no-fontface
 	#previous_thing, #next_thing
 		a:before, a:after
@@ -451,13 +454,13 @@ section
 
 #previous_thing
 	a:before
-		content: "\23ea"
+		content: "\24"
 		padding:
 			right: 2px
 #next_thing
 	text-align: right
 	a:after
-		content: "\23e9"
+		content: "\25"
 		padding:
 			left: 2px
 
