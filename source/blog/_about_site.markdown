@@ -8,6 +8,4 @@ Responsive design by [The Goldilocks Approach](http://goldilocksapproach.com/). 
 
 Scripted by [Zepto](http://zeptojs.com/), [Head.js](http://headjs.com/), [Rainbow.js](http://craig.is/making/rainbows/), and [Footnotify](http://openideas.ideon.co/2011/introducing-footnotify-extension).
 
-Fonts by [Google](http://www.google.com/fonts/specimen/Cabin) and [Font Squirrel](http://www.fontsquirrel.com/fonts/Chunkfive).
-
-[Entypo pictograms](http://www.entypo.com) by Daniel Bruce.
+Fonts by [Google](http://www.google.com/fonts/specimen/Cabin) and [Font Squirrel](http://www.fontsquirrel.com/fonts/Chunkfive). Icons by [IcoMoon](http://icomoon.io/).
