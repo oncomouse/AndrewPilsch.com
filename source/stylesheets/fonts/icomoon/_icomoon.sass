@@ -18,24 +18,27 @@
 	-webkit-font-smoothing: antialiased
 
 
-.icon_github, .icon_rss, .icon_twitter, .icon_fast_backward, .icon_fast_forward
-	font-family: 'icomoon'
-	speak: none
-	font-style: normal
-	font-weight: normal
-	font-variant: normal
-	text-transform: none
-	line-height: 1
-	-webkit-font-smoothing: antialiased
+.icon_github, .icon_rss, .icon_twitter, .icon_fast_backward 
+	&:before, &:after
+		font-family: 'icomoon'
+		speak: none
+		font-style: normal
+		font-weight: normal
+		font-variant: normal
+		text-transform: none
+		line-height: 1
+		-webkit-font-smoothing: antialiased
+		font:
+			size: 0.85em
 
 .icon_github:before 
 	content: "\21"
 
 .icon_rss:before 
-	content: "\22"
+	content: "\23"
 
 .icon_twitter:before 
-	content: "\23"
+	content: "\22"
 
 .icon_fast_backward:before 
 	content: "\24"
