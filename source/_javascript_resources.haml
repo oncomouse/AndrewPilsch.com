@@ -1,0 +1,90 @@
+- method = "head.js" # "modernizr"
+<!--[if (gte IE 6)&(lte IE 8)]>
+= javascript_include_tag("#{javascript_path("vendor/selectivizr/selectivizr.min.js")}")
+<![endif]-->
+/ Fix IE HTML 5 Elements:
+<!--[if lt IE 9]>
+= javascript_include_tag("//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js")
+<![endif]-->
+- if method == "head.js"
+	:javascript
+		var head_conf = {
+			screens: [ (532) ] // Convert Goldilocks Base em Switch to Pixels
+		};
+	= javascript_include_tag("vendor/head/head.min.js")
+	:javascript
+
+		var jquery_min_js = "//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js",
+		    jquery_isotope_min_js = "#{javascript_path("vendor/jquery/plugins/jquery.isotope.min.js")}",
+		    jquery_hashchange_min_js = "#{javascript_path 'vendor/jquery/plugins/jquery.hashchange.min.js'}",
+			//selectivizr_min_js = "#{javascript_path("vendor/selectivizr/selectivizr.min.js")}",
+
+			plugins_js = "#{javascript_path("plugins.js")}",
+			mobile_js = "#{javascript_path("mobile.js")}",
+			site_js = "#{javascript_path("site.js")}";
+	
+		head.js(jquery_min_js, jquery_isotope_min_js, plugins_js, function(){
+			/*if (head.gte_ie6 && head.lte_ie8) {
+				head.js(selectivizr_min_js);
+			}*/
+			
+			if (head.lte_532) {
+				head.js({isotope: mobile_js});
+			} else {
+				head.js(jquery_hashchange_min_js, {isotope: site_js});
+			}
+		});
+		
+		head.ready("isotope", function(){
+			start_isotope();
+		});
+- elsif method == "modernizr"
+	= javascript_include_tag("vendor/modernizr/modernizr-2.6.2.min.js")
+	/ Fix IE CSS Selectors:
+	<!--[if (gte IE 6)&(lte IE 8)]>
+	/ Add javascript support for CSS selectors to old version of IE
+	= javascript_include_tag("vendor/selectivizr/selectivizr.min.js")
+	<![endif]-->
+
+	/ Local javascript files:
+	= #javascript_include_tag("plugins.js")
+	:javascript
+		function basename(path) {
+		    return path.replace(/\\/g,'/').replace( /.*\//, '' );
+		}
+		Modernizr.load([
+			// First, we load jQuery from Google CDN and jQuery Isotope from local sources:
+			{
+				load: [
+					'//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js',
+					'#{javascript_path 'vendor/jquery/plugins/jquery.isotope.min.js'}'
+				],
+				callback: function (url, result, key) {
+					url = basename(url);
+					if(url == "jquery.min.js" && !window.jQuery) {
+						yepnope('#{javascript_path 'vendor/jquery/jquery.min.js'}');
+					}
+				}
+			},
+			// Then, we test for the mobile or full version of the site, using the same
+			// media query for the CSS files, above:
+			{
+				test: Modernizr.mq("all and (min-width: 33.236em)"),
+				yep: [
+					// We only need hashchange on the full site:
+					'#{javascript_path 'vendor/jquery/plugins/jquery.hashchange.min.js'}',
+					'#{javascript_path 'site.js'}'
+				],
+				nope: [
+					'#{javascript_path 'mobile.js'}'
+				],
+				callback: function (url, result, key) {
+					url = basename(url);
+					if(url == "site.js") {
+						start_isotope();
+					} else if (url == "mobile.js") {
+						start_mobile_isotope();
+					}
+				}
+			}
+		]);

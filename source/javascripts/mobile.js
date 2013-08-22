@@ -1,5 +1,9 @@
 var $isotope_container = false;
 
+function start_isotope() {
+	return start_mobile_isotope();
+}
+
 function start_mobile_isotope() {
 	$isotope_container = $('#box_container');
 	$isotope_container.isotope({

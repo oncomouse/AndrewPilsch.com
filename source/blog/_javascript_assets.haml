@@ -11,17 +11,17 @@
 		- code_include += ", footnotify_js"
 		/ This stylesheet is included if Middleman determines footnotes are present.
 		= stylesheet_link_tag("footnotify/footnotify.css", :media => "all", :rel => "stylesheet" )
+/ Fix IE CSS Selectors:
+<!--[if (gte IE 6)&(lte IE 8)]>
+= javascript_include_tag("#{javascript_path("vendor/selectivizr/selectivizr.min.js")}")
+<![endif]-->
+/ Fix IE HTML 5 Elements:
+<!--[if lt IE 9]>
+= javascript_include_tag("//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js")
+<![endif]-->
 :javascript
-	/*
-	 * Locally available versions of libraries:
-	 * 
-	 * var jquery_min_js = "#{javascript_path("vendor/zepto/zepto.min.js")}",
-	 *	 highlight_min_js = "#{javascript_path("vendor/highlight/highlight.min.js")}",		
-	 *	 selectivizr_min_js = "#{javascript_path("vendor/selectivizr/selectivizr.min.js")}",
-	 */
-	
-	var jquery_min_js = "//cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js", // Use Zepto until we can't get away with it.
-		selectivizr_min_js = "//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js",
+	var jquery_min_js = "#{javascript_path("vendor/zepto/zepto.min.js")}", // Use Zepto until we can't get away with it.
+		//selectivizr_min_js = "#{javascript_path("vendor/selectivizr/selectivizr.min.js")}",
 		footnotify_js = "#{javascript_path("vendor/footnotify/footnotify.js")}",
 	
 		rainbow_min_js = "#{javascript_path("vendor/rainbow/rainbow.min.js")}",
@@ -29,9 +29,9 @@
 		site_js = "#{javascript_path("blog/site.js")}";
 	
 	// If older IE version, load selectivizr:
-	if(head.gte_ie6 && head.lte_ie8) {
+	/*if(head.gte_ie6 && head.lte_ie8) {
 		head.js(selectivizr_min_js);
-	}
+	}*/
 	
 	/*
 	 * The libraries to load are determined by Middleman before site compilation.
