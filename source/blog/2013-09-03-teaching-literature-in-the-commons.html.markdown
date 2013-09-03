@@ -1,5 +1,5 @@
 ---
-title: Teaching Literature In the Commons
+title: Teaching Literature In the Commons, Or The Open Source Survey
 date: 2013-09-03 19:20 UTC
 tags:
 published: false
