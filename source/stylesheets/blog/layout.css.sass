@@ -32,6 +32,9 @@ $column-width: 8
 		display: block
 		margin: 0 auto
 			bottom: golden-ratio(1em, 0)
+@mixin no-breakline
+	&:before, &:after
+		display: none
 
 body
 	padding: 0//golden-ratio(1em, -1)
@@ -279,17 +282,20 @@ section
 							family: $header_font_family
 							weight: $header_font_weight
 							size: 2em
-						content: "Footnotes:"
+						content: "Notes:"
 						display: block
 						margin:
 							top: golden-ratio(1em, 2)
 							bottom: golden-ratio(1em, 0)
 
-#disqus_thread
+#comments
 	@include singleton-size
-	@include breakline-before
+	//@include breakline-before
 	
 	margin-bottom: golden-ratio(1em, 2)
+	h2
+		@include no-breakline
+		margin-bottom: golden-ratio(1em, 1)
 #things
 	@include singleton-size
 	p
