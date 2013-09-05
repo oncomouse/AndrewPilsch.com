@@ -15,15 +15,15 @@
 			<p class="single-spaced"><strong><%= article["journal_information"] %></strong></p>
 		<% end %>
 		<% if article["short_description"] %>
-			<p><%= RDiscount.new(article["short_description"]).to_html %></p>
+			<p><%= Kramdown::Document.new(article["short_description"]).to_html %></p>
 		<% end %>
 	</div>
 	<div class="expandable">
 		<div class="mobile"><h1><%= article["published"] ? "Published Article" : unpublished_status %></h1></div>
 		<h2><%= article["title"]%></h2>
 
-		<%= RDiscount.new("**#{article["journal_information"]}**").to_html %>
+		<%= Kramdown::Document.new("**#{article["journal_information"]}**").to_html %>
 		
-		<%= RDiscount.new(article["description"]).to_html %>
+		<%= Kramdown::Document.new(article["description"]).to_html %>
 	</div>
 </div>

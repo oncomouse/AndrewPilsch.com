@@ -5,13 +5,13 @@
 		<p><img src="<%= book["image"]%>" alt="Image Illustrating the book, \"<%= book["short_title"]%>\""/></p>
 		<h3><%= book["short_title"]%></h3>
 		<% if book["short_description"] %>
-			<p><%= RDiscount.new(book["short_description"]).to_html %></p>
+			<p><%= Kramdown::Document.new(book["short_description"]).to_html %></p>
 		<% end %>
 	</div>
 	<div class="expandable">
 		<div class="mobile"><h1><%= book["published"] ? "Published Book" : "Book In Progress" %></h1></div>
 		<h2><%= book["title"]%></h2>
 
-		<%= RDiscount.new(book["description"]).to_html %>
+		<%= Kramdown::Document.new(book["description"]).to_html %>
 	</div>
 </div>
