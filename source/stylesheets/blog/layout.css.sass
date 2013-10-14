@@ -219,9 +219,7 @@ section
 		 Single page article
 		 */
 			
-		.singleton
-			@include outer-container
-			
+		.singleton			
 			p,li
 				font-size: 1em
 			header
@@ -247,17 +245,26 @@ section
 				margin:
 					bottom: golden-ratio(1em, 3)
 			article
-				@include singleton-size
+				@include outer-container
+				p,ol,ul,pre
+					@include singleton-size
+				h1,h2,h3,h4,h5,img
+					@include span-columns(12)
+				img
+					max-width: 100%
 				p,ol,ul,pre
 					font-size: 1.4em
 				ol,ul
-					margin:
-						left: -1 * golden-ratio(1em,-1)
+					li
+						margin:
+							left: -1 * golden-ratio(1em,-1)
 					padding:
 						left: golden-ratio(1em,-1)
 				ul ul, ul ol, ol ul, ol ol
+					li
+						margin:
+							left: golden-ratio(1em,1)
 					margin:
-						left: golden-ratio(1em,1)
 						bottom: 0
 						top: golden-ratio(1em, -1)
 					padding:

@@ -45,17 +45,17 @@ With a commons-friendly survey, who cares? **Everyone already has the text**.
 
 The first way this has changed my classroom structure is rather radical, but maybe not on the surface: I'm using Powerpoint!
 
-While Powerpoint is the worst thing to happen to information design ever, I'm using an online slideshow program called [Remark](http://remarkjs.com/) to make simple slides that merely have the quotes I want to talk about with my students in the order in which I want to discuss them.
+While Powerpoint is the worst thing to happen to information design ever, I find slides to be a really useful tool for a commons-oriented literature survey. While not Powerpoint exactly, I'm using an online slideshow program called [Remark](http://remarkjs.com/) to make simple slides that merely have the quotes I want to talk about with my students in the order in which I want to discuss them.
 
-You can see my slides for this class here: [My Slides](http://oncomouse.github.io/slides/eng337).
+You can see my slides for [this class here](http://oncomouse.github.io/slides/eng337).
 
-Each slide has one quote and, in the event of a novel, the chapter it comes from. Students can look at the slides or pull the quotes up in their Kindles or whatever. The text is just right there and so accessible.
+Each slide presents one quote and the chapter where it comes from. Students can look at the slides or pull the quotes up in their Kindles or whatever. The text is just right there and so accessible.
 
 It also makes preparing for class easy, as putting the slides in sequence (and building an agenda slide) not only forces me to gather the quotes I want to discuss but also helps flesh out the argument about the book that I plan to present.
 
 ## Public Domain and DH Pedagogy
 
-The public domain has already been well established as a boon for the digital humanities on the research end of our profession, but I think it's important to also think about how these same access protocols can enhance our teaching.
+The public domain has already been well established as a boon for the digital humanities on the research end of our profession, but I think it's important to also think about how these same access protocols can enhance our teaching. There's been some discussion about the relation between text corpus availability and digital humanities research projects, explaining why such initiatives are often much more thriving in fields that have texts outside of copyright (so long, modernist and postmodernist DH projects, it would have been fun). As I've become very interested in the possibility for bringing DH methods into the classroom, I think the use of 
 
 ## Citational Hell
 
