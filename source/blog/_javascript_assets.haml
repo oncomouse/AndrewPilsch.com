@@ -1,24 +1,27 @@
-- code_include = "jquery_min_js, search_js, site_js"
+- code_include = "jquery_js, search_js, site_js"
 - load_hljs = "false"
 - load_footnotify = "false"
 - init_calls = []
 - init_code = ""
 - if current_page.path =~ /search/
-	- code_include += ", jquery_tapir_min_js"
+	- code_include += ", jquery_tapir_js"
 	- init_calls.push("$('#search_results').tapir({'token': '52191c08b406d00100000003'});")
 - if current_page.respond_to? :body
 	- nokogiri_doc = Nokogiri::HTML(current_page.body)
 	- if nokogiri_doc.css('code').length > 0
-		- code_include += ", rainbow_min_js"
+		- code_include += ", rainbow_js"
 		- init_calls.push("Rainbow.color();")
 		/ This stylesheet is included if Middleman determines highlighting is need.
 		= stylesheet_link_tag("hljs/solarized_light.css", :media => "all", :rel => "stylesheet" )
 	- if nokogiri_doc.css('.footnotes').length > 0
-		- code_include += ", footnotify_js"
+		- code_include += ", jquery_bigfoot_js"
 		/ This stylesheet is included if Middleman determines footnotes are present.
-		= stylesheet_link_tag("footnotify/footnotify.css", :media => "all", :rel => "stylesheet" )
+		- #stylesheet_link_tag("footnotify/footnotify.css", :media => "all", :rel => "stylesheet" )
+		= stylesheet_link_tag("bigfoot/bigfoot-numbers.css", :media => "all", :rel => "stylesheet" )
+		- init_calls.push('$.bigfoot(); $(window).trigger("scroll resize");')
 	- else
 		- init_calls.push('$(".footnotes").css("display", "none");')
+		- #init_calls.push('$.bigfoot();')
 
 - if init_calls.length > 0
 	- init_code = ", function() {\n\t\t" + init_calls.join("\n\t\t") + "\n\t}"
@@ -30,11 +33,11 @@
 = javascript_include_tag("//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js")
 <![endif]-->
 :javascript
-	var jquery_min_js = "#{javascript_path("vendor/jquery/jquery.min.js")}", // Use Zepto until we can't get away with it.
-	    //jquery_tapir_min_js = "#{javascript_path("vendor/jquery/plugins/jquery.tapir.min.js")}"
-	    footnotify_js = "#{javascript_path("vendor/footnotify/footnotify.js")}",
+	var jquery_js = "#{javascript_path("vendor/jquery/jquery.min.js")}", // Use Zepto until we can't get away with it.
+	    //jquery_tapir_js = "#{javascript_path("vendor/jquery/plugins/jquery.tapir.min.js")}",
+	    jquery_bigfoot_js = "#{javascript_path("vendor/jquery/plugins/jquery.bigfoot.min.js")}",
 	
-	    rainbow_min_js = "#{javascript_path("vendor/rainbow/rainbow.min.js")}",
+	    rainbow_js = "#{javascript_path("vendor/rainbow/rainbow.min.js")}",
 	    search_js = "#{javascript_path("blog/search.js")}",
 	    site_js = "#{javascript_path("blog/site.js")}";
 	
