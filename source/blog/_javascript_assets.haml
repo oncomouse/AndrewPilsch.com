@@ -21,7 +21,6 @@
 		- init_calls.push('$.bigfoot(); $(window).trigger("scroll resize");')
 	- else
 		- init_calls.push('$(".footnotes").css("display", "none");')
-		- #init_calls.push('$.bigfoot();')
 
 - if init_calls.length > 0
 	- init_code = ", function() {\n\t\t" + init_calls.join("\n\t\t") + "\n\t}"
@@ -33,7 +32,7 @@
 = javascript_include_tag("//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js")
 <![endif]-->
 :javascript
-	var jquery_js = "#{javascript_path("vendor/jquery/jquery.min.js")}",
+	var jquery_js = "//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js", 
 	    //jquery_tapir_js = "#{javascript_path("vendor/jquery/plugins/jquery.tapir.min.js")}",
 	    jquery_bigfoot_js = "#{javascript_path("vendor/jquery/plugins/jquery.bigfoot.min.js")}",
 	
