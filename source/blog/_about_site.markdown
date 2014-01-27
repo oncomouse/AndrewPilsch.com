@@ -6,6 +6,6 @@ Styled by [SASS](http://sass-lang.com/), [Bourbon SASS](http://bourbon.io), and 
 
 Responsive design by [The Goldilocks Approach](http://goldilocksapproach.com/). Colors by [SASS Color Palettes](https://github.com/FearMediocrity/sass-color-palettes/).
 
-Scripted by [Zepto](http://zeptojs.com/), [Head.js](http://headjs.com/), [Rainbow.js](http://craig.is/making/rainbows/), and [Footnotify](http://openideas.ideon.co/2011/introducing-footnotify-extension).
+Scripted by [jQuery](http://jquery.com/), [Head.js](http://headjs.com/), [Rainbow.js](http://craig.is/making/rainbows/), and [Bigfoot (footnotes)](http://www.bigfootjs.com/).
 
 Fonts by [Google](http://www.google.com/fonts/specimen/Cabin) and [Font Squirrel](http://www.fontsquirrel.com/fonts/Chunkfive). Icons by [IcoMoon](http://icomoon.io/).
