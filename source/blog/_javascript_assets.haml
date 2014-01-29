@@ -18,7 +18,8 @@
 		/ This stylesheet is included if Middleman determines footnotes are present.
 		- #stylesheet_link_tag("footnotify/footnotify.css", :media => "all", :rel => "stylesheet" )
 		= stylesheet_link_tag("bigfoot/bigfoot-numbers.css", :media => "all", :rel => "stylesheet" )
-		- init_calls.push('$.bigfoot(); $(window).trigger("scroll resize");')
+		- init_calls.push('$.bigfoot();')
+		- init_calls.push('$(window).trigger("scroll resize");')
 	- else
 		- init_calls.push('$(".footnotes").css("display", "none");')
 
@@ -45,6 +46,6 @@
 	 * 
 	 * The HTML of each page is analyzed using Nokogiri and various features
 	 * are loaded or not based on the determined content. An initialization
-	 * function is also included if need.
+	 * function is also included if needed.
 	 */
 	head.js(#{code_include}#{init_code});
