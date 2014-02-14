@@ -24,15 +24,15 @@
 			mobile_js = "#{javascript_path("mobile.js")}",
 			site_js = "#{javascript_path("site.js")}";
 	
-		head.js(jquery_min_js, jquery_isotope_min_js, plugins_js, function(){
+		head.load(jquery_min_js, jquery_isotope_min_js, plugins_js, function(){
 			/*if (head.gte_ie6 && head.lte_ie8) {
-				head.js(selectivizr_min_js);
+				head.load(selectivizr_min_js);
 			}*/
 			
 			if (head.lte_532) {
-				head.js({isotope: mobile_js});
+				head.load({isotope: mobile_js});
 			} else {
-				head.js(jquery_hashchange_min_js, {isotope: site_js});
+				head.load(jquery_hashchange_min_js, {isotope: site_js});
 			}
 		});
 		
