@@ -18,17 +18,13 @@
 		var jquery_min_js = "//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js",
 		    jquery_isotope_min_js = "#{javascript_path("vendor/jquery/plugins/jquery.isotope.min.js")}",
 		    jquery_hashchange_min_js = "#{javascript_path 'vendor/jquery/plugins/jquery.hashchange.min.js'}",
-			//selectivizr_min_js = "#{javascript_path("vendor/selectivizr/selectivizr.min.js")}",
+		    imagesloaded_min_js = "#{javascript_path("vendor/imagesloaded/imagesloaded.min.js")}",
 
-			plugins_js = "#{javascript_path("plugins.js")}",
-			mobile_js = "#{javascript_path("mobile.js")}",
-			site_js = "#{javascript_path("site.js")}";
+		    plugins_js = "#{javascript_path("plugins.js")}",
+		    mobile_js = "#{javascript_path("mobile.js")}",
+		    site_js = "#{javascript_path("site.js")}";
 	
-		head.load(jquery_min_js, jquery_isotope_min_js, plugins_js, function(){
-			/*if (head.gte_ie6 && head.lte_ie8) {
-				head.load(selectivizr_min_js);
-			}*/
-			
+		head.load(imagesloaded_min_js, jquery_min_js, jquery_isotope_min_js, plugins_js, function(){
 			if (head.lte_532) {
 				head.load({isotope: mobile_js});
 			} else {
@@ -41,11 +37,6 @@
 		});
 - elsif method == "modernizr"
 	= javascript_include_tag("vendor/modernizr/modernizr-2.6.2.min.js")
-	/ Fix IE CSS Selectors:
-	<!--[if (gte IE 6)&(lte IE 8)]>
-	/ Add javascript support for CSS selectors to old version of IE
-	= javascript_include_tag("vendor/selectivizr/selectivizr.min.js")
-	<![endif]-->
 
 	/ Local javascript files:
 	= #javascript_include_tag("plugins.js")

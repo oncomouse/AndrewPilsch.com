@@ -6,14 +6,16 @@ function start_isotope() {
 
 function start_mobile_isotope() {
 	$isotope_container = $('#box_container');
-	$isotope_container.isotope({
-		layoutMode: 'straightDown',
-		itemSelector: '.box',
-		animationOptions: {
-			duration: 200,
-			easing: 'linear',
-			queue: false
-		}
+	$isotope_container.imagesLoaded(function() {
+		$isotope_container.isotope({
+			layoutMode: 'straightDown',
+			itemSelector: '.box',
+			animationOptions: {
+				duration: 200,
+				easing: 'linear',
+				queue: false
+			}
+		});
 	});
 	
 	/*

@@ -216,48 +216,50 @@ function start_isotope() {
 		}
 	});
 	
-	$isotope_container.isotope({
-		layoutMode : 'masonry',
-		masonry: {
-			columnWidth: $column_width
-		},
-		cornerStampSelector: '.corner_stamp',
-		itemSelector: '.box',
-		animationOptions: {
-			duration: 200,
-			easing: 'linear',
-			queue: false
-		},
-		/*
-		 This sort data function, rowDominator, puts any expanded box (see below)
-		 at the beginning of the row. This code works for any number of columns, 
-		 but it does assume that blocks are the same width.
-		*/
-		getSortData: {
-			rowDominator: function($item) {
-				var index,order,number_of_columns;
-				var displayed = $('.expand').not('.isotope-hidden');
+	$isotope_container.imagesLoaded(function() {
+		$isotope_container.isotope({
+			layoutMode : 'masonry',
+			masonry: {
+				columnWidth: $column_width
+			},
+			cornerStampSelector: '.corner_stamp',
+			itemSelector: '.box',
+			animationOptions: {
+				duration: 200,
+				easing: 'linear',
+				queue: false
+			},
+			/*
+			 This sort data function, rowDominator, puts any expanded box (see below)
+			 at the beginning of the row. This code works for any number of columns, 
+			 but it does assume that blocks are the same width.
+			*/
+			getSortData: {
+				rowDominator: function($item) {
+					var index,order,number_of_columns;
+					var displayed = $('.expand').not('.isotope-hidden');
 
-				// Determine the index based on the order of displayed nodes, 
-				// not overall nodes (otherwise, behavior isn't as expected):
-				index = displayed.index($item);
+					// Determine the index based on the order of displayed nodes, 
+					// not overall nodes (otherwise, behavior isn't as expected):
+					index = displayed.index($item);
 				
-				// If an item isn't marked as expandable, use it's regular 
-				// index:
-				if (index == -1) {
-					index = $item.index();
-				}
-				number_of_columns = Math.floor($isotope_container.outerWidth() / $column_width);
+					// If an item isn't marked as expandable, use it's regular 
+					// index:
+					if (index == -1) {
+						index = $item.index();
+					}
+					number_of_columns = Math.floor($isotope_container.outerWidth() / $column_width);
 				
-				if ($item.outerWidth() > $col1) {
-					order = index - (index % number_of_columns) - 0.5;
-				} else{
-					order = index;
+					if ($item.outerWidth() > $col1) {
+						order = index - (index % number_of_columns) - 0.5;
+					} else{
+						order = index;
+					}
+					return order;
 				}
-				return order;
-			}
-		},
-		sortBy: 'rowDominator'
+			},
+			sortBy: 'rowDominator'
+		});
 	});
 
 	/*
