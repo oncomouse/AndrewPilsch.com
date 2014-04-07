@@ -15,3 +15,8 @@
         console[methods[length]] = console[methods[length]] || noop;
     }
 }());
+
+// Shim in Date.now support:
+if (!Date.now) {
+    Date.now = function() { return new Date().getTime(); };
+}

@@ -323,16 +323,30 @@ function start_isotope() {
 	$(window).trigger('hashchange');
 }
 //});
-	
-	function jps_shortString( str, limit )
-	{
-		var body = new String( str );
-		var summary = new String(str);
-			summary = summary.substr( 0, summary.lastIndexOf( ' ', limit ) ) + '...';
 
-		var returnString = new Object({
-			body: body,
-			summary: summary
-		});
-		return returnString;
-	}
+// If the static site hasn't been updated in a while, this code
+// can make sure that presentations (for now) are still displaying
+// the correct presented data:
+$(document).ready(function() {
+	var now = Math.round(Date.now() / 1000);
+	$('.presentation').each(function(i) {
+		var $this = $(this);
+		var $h2 = $this.find('.hideable h2').eq(0);
+		if(parseInt($this.attr('data-timestamp')) < now && $h2.html() === "Upcoming Presentation") {
+			$h2.html("Recent Presentation");
+		}
+	});
+});
+
+function jps_shortString( str, limit )
+{
+	var body = new String( str );
+	var summary = new String(str);
+		summary = summary.substr( 0, summary.lastIndexOf( ' ', limit ) ) + '...';
+
+	var returnString = new Object({
+		body: body,
+		summary: summary
+	});
+	return returnString;
+}
