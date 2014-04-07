@@ -9,5 +9,4 @@ gem "bourbon"
 gem "nokogiri"
 gem "therubyracer" if not RbConfig::CONFIG['target_os'] =~ /mswin|mingw/i
 gem "kramdown"
-gem "redcarpet"
 gem 'wdm', '>= 0.1.0' if RbConfig::CONFIG['target_os'] =~ /mswin|mingw/i
