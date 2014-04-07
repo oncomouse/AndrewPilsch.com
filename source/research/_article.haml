@@ -1,0 +1,25 @@
+.col1.expand.box.research.article.no-excerpt{ :id => "#{article["id"]}" }
+	.hideable
+		.magnifier
+		%h2
+			- if article["status"].downcase == "forthcoming"
+				- unpublished_status = "Forthcoming Article"
+			- else
+				- unpublished_status = "Article in Progress"
+			= article["published"] ? "Published Article" : unpublished_status
+		%p
+			%img{ :src => "#{article["image"]}", :alt => "Image Illustrating the article, \"#{article["short_title"]}\"" }
+		%h3= article["short_title"]
+		- if article["status"].downcase == "revise & resubmit" or article["status"].downcase == "revise and resubmit" or article["status"].downcase == "forthcoming" or article["published"]
+			%p.single-spaced= article["journal_information"]
+		- if article["short_description"]
+			:markdown
+				#{article["short_description"]}
+	.expandable
+		.mobile
+			%h1= article["published"] ? "Published Article" : unpublished_status
+			%h2= article["title"]
+			:markdown
+				**#{article["journal_information"]}**
+				
+				#{article["description"]}
