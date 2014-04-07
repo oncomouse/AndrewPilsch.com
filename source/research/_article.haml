@@ -18,8 +18,8 @@
 	.expandable
 		.mobile
 			%h1= article["published"] ? "Published Article" : unpublished_status
-			%h2= article["title"]
-			:markdown
-				**#{article["journal_information"]}**
-				
-				#{article["description"]}
+		%h2= article["title"]
+		:markdown
+			**#{article["journal_information"]}**
+			
+			#{article["description"]}

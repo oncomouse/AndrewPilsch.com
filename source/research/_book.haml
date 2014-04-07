@@ -11,6 +11,6 @@
 	.expandable
 		.mobile
 			%h1= book["published"] ? "Published Book" : "Book In Progress" 
-			%h2= book["title"]
-			:markdown
-				#{book["description"]}
+		%h2= book["title"]
+		:markdown
+			#{book["description"]}

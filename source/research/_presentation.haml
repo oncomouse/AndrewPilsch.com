@@ -11,8 +11,8 @@
 	.expandable
 		.mobile
 			%h1= presentation["delivered"] ? "Recent Presentation" : "Upcoming Presentation"
-			%h2= presentation["title"]
-			:markdown
-				**Presentation At**: _#{presentation["conference"]}_, #{presentation["conference_location"]}, #{presentation["date"].year}
-			
-				#{presentation["description"]}
+		%h2= presentation["title"]
+		:markdown
+			**Presentation At**: _#{presentation["conference"]}_, #{presentation["conference_location"]}, #{presentation["date"].year}
+		
+			#{presentation["description"]}
