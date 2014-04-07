@@ -12,11 +12,11 @@ module Haml::Filters
                 "entity_output" => :symbolic 
             }
 
-            ::Tilt.prefer ::Tilt::KramdownTemplate
+            #::Tilt.prefer ::Tilt::KramdownTemplate
+            ::Tilt.prefer ::Middleman::Renderers::KramdownTemplate
             template = ::Tilt['md'].new(md_options){ text }.render
             
             #Kramdown::Document.new(text, md_options).to_html
         end
     end
 end
-        
