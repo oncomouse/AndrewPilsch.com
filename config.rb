@@ -18,6 +18,7 @@ require "lib/courses.rb"
 activate :course_manager
 require "lib/research.rb"
 activate :research_manager
+require "lib/custom_haml_markdown.rb"
 
 require "bourbon"
 
