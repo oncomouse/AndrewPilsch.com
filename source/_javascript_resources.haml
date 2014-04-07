@@ -33,7 +33,7 @@
 	}
 	
 	// Cache document.ready calls:
-	//var docready=[],$=function(o){function r(fn){docready.push(fn);}if(typeof o === 'function') r(o);return{ready: r}};
+	var docready=[],$=function(o){function r(fn){docready.push(fn);}if(typeof o === 'function') r(o);return{ready: r}};
 	
 	head.load(head_js_array, function(){
 		// Test for mobile version using the Goldilocks media query (see above):
@@ -43,8 +43,8 @@
 			[{isotope: mobile_js}],
 			function() {
 				// Remove cached jQuery document.ready calls:
-				//$ = jQuery;         
-		        //for(n in docready) $(document).ready(docready[n]);
+				$ = jQuery;         
+		        for(n in docready) $(document).ready(docready[n]);
 				
 				start_isotope();
 			}
