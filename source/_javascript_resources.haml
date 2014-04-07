@@ -8,6 +8,12 @@
 <![endif]-->
 
 = javascript_include_tag("vendor/head/head.min.js")
+
+- # Dynamically load the contents of the javascripts/libraries directory:
+- def variable_name(path)
+	- File.basename(path).gsub(".min", "").gsub(/\W/, "_")
+- libraries = Dir.entries(Dir.pwd + "/" + config.source + "/" + config.js_dir + "/libraries").select { |x| !(x =~ /^\./) }
+
 :javascript
 
 	// Queue up the location of all the javascript libraries we will be loading. These file
@@ -18,6 +24,10 @@
 	    imagesloaded_js = "#{javascript_path("vendor/imagesloaded/imagesloaded.min.js")}",
 	    matchmedia_js = "#{javascript_path("vendor/matchMedia/matchmedia.min.js")}",
 
+		#{
+			libraries.map { |x| "#{variable_name(x)} = \"#{javascript_path 'libraries/' + x}\""}.join(",\n\t\t  ")
+		},
+
 	    plugins_js = "#{javascript_path("plugins.js")}",
 	    mobile_js = "#{javascript_path("mobile.js")}",
 	    site_js = "#{javascript_path("site.js")}";
@@ -25,7 +35,9 @@
 	// We put these libraries into an array in order to dynamically add polyfills based on 
 	// some tests below (this is because head.js doesn't run a callback if you pass it
 	// an empty array for success or failure):
-	var head_js_array = [imagesloaded_js, jquery_js, jquery_isotope_js, plugins_js];
+	var head_js_array = [imagesloaded_js, jquery_js, jquery_isotope_js, plugins_js, #{
+		libraries.map { |x| "#{variable_name(x)}" }.join(", ")
+	}];
 	
 	// Polyfill for missing matchMedia() method:
 	if(!window.matchMedia) {
