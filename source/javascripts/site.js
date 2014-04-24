@@ -216,7 +216,7 @@ function start_isotope() {
 		}
 	});
 	
-	$isotope_container.imagesLoaded(function() {
+	imagesLoaded($isotope_container, function() {
 		$isotope_container.isotope({
 			layoutMode : 'masonry',
 			masonry: {
@@ -238,6 +238,10 @@ function start_isotope() {
 				rowDominator: function($item) {
 					var index,order,number_of_columns;
 					var displayed = $('.expand').not('.isotope-hidden');
+
+					if(!($item instanceof jQuery)) {
+						$item = $($item);
+					}
 
 					// Determine the index based on the order of displayed nodes, 
 					// not overall nodes (otherwise, behavior isn't as expected):
