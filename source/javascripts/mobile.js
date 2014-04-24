@@ -6,9 +6,9 @@ function start_isotope() {
 
 function start_mobile_isotope() {
 	$isotope_container = $('#box_container');
-	$isotope_container.imagesLoaded(function() {
+	imagesLoaded($isotope_container, function() {
 		$isotope_container.isotope({
-			layoutMode: 'straightDown',
+			layoutMode: 'vertical',
 			itemSelector: '.box',
 			animationOptions: {
 				duration: 200,
