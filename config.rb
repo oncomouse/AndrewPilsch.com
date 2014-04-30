@@ -130,6 +130,6 @@ end
 activate :deploy do |deploy|
   deploy.method = :rsync
   deploy.user = "eschaton"
-  deploy.host = "dynamo.dreamhost.com"
+  deploy.host = "copland.dreamhost.com"
   deploy.path = "~/www/andrew.pilsch.com/"
 end
