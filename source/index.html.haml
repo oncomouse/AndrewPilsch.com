@@ -1,23 +1,24 @@
 - current_term = "#{CourseDate.to_term(Date.today.month)} #{Date.today.year}"
 #container
 	#content
-		#logo
-			%h1
-				.andrew
-					Andrew
-				.pilsch
-					Pilsch
-		#filters
-			%h1 See Content Related To:
-			%ul.clearfix
-				%li
-					%a(href="#" data-filter="") All
-				%li
-					%a(href="#" data-filter=".research") Research
-				%li
-					%a(href="#" data-filter=".teaching") Teaching
-				%li
-					%a(href="#" data-filter=".design") Design
+		%header
+			#logo
+				%h1
+					.andrew
+						Andrew
+					.pilsch
+						Pilsch
+			#filters
+				%h1 See Content Related To:
+				%ul.clearfix
+					%li
+						%a(href="#" data-filter="") All
+					%li
+						%a(href="#" data-filter=".research") Research
+					%li
+						%a(href="#" data-filter=".teaching") Teaching
+					%li
+						%a(href="#" data-filter=".design") Design
 		
 		#box_container
 			= partial("about")

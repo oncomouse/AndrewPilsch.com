@@ -27,12 +27,31 @@ div.mobile
 #cv_html
 	display: block
 
+header
+	position: relative
+	min-height: 100px
+	margin-top: 15px
+
 #logo
 	width: $col1
-	float: left
 	margin:
 		bottom: 0
 		top: 0
+	position: absolute
+	top: 0
+	left: 0
+
+#filters
+	display: block
+	position: absolute
+	top: 0
+	left:  $minimum_content_width
+	ul
+		margin: 1em 0 2em 0
+		li
+			margin: 0 0.3em
+	h1
+		margin: 0 5px
 
 #column_width, #large_box_size, #column_padding
 	display: none
@@ -113,18 +132,6 @@ h1,h2,h3,h4
 	margin:
 		left: 1px
 		right: 2px
-
-#filters
-	display: block
-	position: inherit
-	margin:
-		left: 30px
-	ul
-		margin: 1em 0 2em 0
-		li
-			margin: 0 0.3em
-	h1
-		margin: 0 5px
 
 #teaching_button,#research_button
 	@include button(simple, $button_selected_color)
