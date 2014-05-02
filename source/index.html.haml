@@ -1,35 +1,33 @@
 - current_term = "#{CourseDate.to_term(Date.today.month)} #{Date.today.year}"
-#container
-	#content
-		%header
-			#logo
-				%h1
-					.andrew
-						Andrew
-					.pilsch
-						Pilsch
-			#filters
-				%h1 See Content Related To:
-				%ul.clearfix
-					%li
-						%a(href="#" data-filter="") All
-					%li
-						%a(href="#" data-filter=".research") Research
-					%li
-						%a(href="#" data-filter=".teaching") Teaching
-					%li
-						%a(href="#" data-filter=".design") Design
-		
-		#box_container
-			= partial("about")
-			= partial("research/print_research", :locals => { :type => "book", :front_page => true })
-			= partial("teaching_philosophy")
-			= partial("cv")
-			= partial("find_me")
-			= partial("research/print_research", :locals => { :type => "article", :front_page => true })
-			= partial("podcasting")
-			= partial("teaching")
-			= partial("courses/print_term", :locals => { :term => current_term })
-			= partial("classroom_resources")
-			= partial("about_site")
-			= partial("research/print_research", :locals => { :type => "presentation", :front_page => true })
+%header
+	#logo
+		%h1
+			%span.andrew
+				Andrew
+			%span.pilsch
+				Pilsch
+	#filters
+		%h1 See Content Related To:
+		%ul.clearfix
+			%li
+				%a(href="#" data-filter="") All
+			%li
+				%a(href="#" data-filter=".research") Research
+			%li
+				%a(href="#" data-filter=".teaching") Teaching
+			%li
+				%a(href="#" data-filter=".design") Design
+
+#box_container
+	= partial("about")
+	= partial("research/print_research", :locals => { :type => "book", :front_page => true })
+	= partial("teaching_philosophy")
+	= partial("cv")
+	= partial("find_me")
+	= partial("research/print_research", :locals => { :type => "article", :front_page => true })
+	= partial("podcasting")
+	= partial("teaching")
+	= partial("courses/print_term", :locals => { :term => current_term })
+	= partial("classroom_resources")
+	= partial("about_site")
+	= partial("research/print_research", :locals => { :type => "presentation", :front_page => true })
