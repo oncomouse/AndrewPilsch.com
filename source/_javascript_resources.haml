@@ -43,9 +43,9 @@
 	}];
 	
 	// Polyfill for missing matchMedia() method:
-	if(!window.matchMedia) {
+	/*if(!window.matchMedia) {
 		modernizr_js_array.push(matchmedia_js);
-	}
+	}*/
 	
 	// Cache document.ready calls:
 	var docready=[],$=function(o){function r(fn){docready.push(fn);}if(typeof o === 'function') r(o);return{ready: r}};
@@ -86,7 +86,7 @@
 			nope: selectivizr_js
 		},
 		{
-			test: window.matchMedia("all and (min-width: 33.236em)").matches,
+			test: Modernizr.mq("all and (min-width: 33.236em)"),
 			yep: site_js,
 			nope: mobile_js,
 			complete: function() {
