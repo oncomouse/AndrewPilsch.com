@@ -28,9 +28,6 @@
 	    mobile_js = "#{javascript_path("mobile.js")}",
 	    site_js = "#{javascript_path("site.js")}";
 
-	// We put these libraries into an array in order to dynamically add polyfills based on 
-	// some tests below (this is because head.js doesn't run a callback if you pass it
-	// an empty array for success or failure):
 	var modernizr_js_array = [imagesloaded_js, jquery_isotope_js, plugins_js, #{
 		libraries.map { |x| "#{variable_name(x)}" }.join(", ")
 	}];
