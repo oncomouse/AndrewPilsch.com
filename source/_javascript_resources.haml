@@ -1,10 +1,3 @@
--# "<!--[if (gte IE 6)&(lte IE 8)]>"
-- javascript_include_tag("#{javascript_path("vendor/selectivizr/selectivizr.min.js")}")
-- javascript_include_tag("//cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js")
-- javascript_include_tag("//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js")
-- # "<![endif]-->"
-
-- javascript_include_tag("vendor/head/head.min.js")
 = javascript_include_tag("vendor/modernizr/modernizr.min.js")
 
 - # Dynamically load the contents of the javascripts/libraries directory:
@@ -42,29 +35,9 @@
 		libraries.map { |x| "#{variable_name(x)}" }.join(", ")
 	}];
 	
-	// Polyfill for missing matchMedia() method:
-	/*if(!window.matchMedia) {
-		modernizr_js_array.push(matchmedia_js);
-	}*/
-	
 	// Cache document.ready calls:
 	var docready=[],$=function(o){function r(fn){docready.push(fn);}if(typeof o === 'function') r(o);return{ready: r}};
 	
-	/*head.load(modernizr_js_array, function(){
-		// Test for mobile version using the Goldilocks media query (see above):
-		head.test(
-			window.matchMedia("all and (min-width: 33.236em)").matches,
-			[jquery_hashchange_js, {isotope: site_js}],
-			[{isotope: mobile_js}],
-			function() {
-				// Remove cached jQuery document.ready calls:
-				$ = jQuery;         
-		        for(n in docready) $(document).ready(docready[n]);
-				
-				start_isotope();
-			}
-		);
-	});*/
 	Modernizr.load([
 		{
 			load: jquery_js,
