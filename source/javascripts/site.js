@@ -49,7 +49,7 @@ function restore_boxes() {
 				$isotope_container.isotope();
 			}
 		}).removeClass('expanded');
-	})
+	});
 }
 
 function expand_box(target) {
@@ -163,6 +163,9 @@ $(window).resize(function(){
 	} else {
 		$defaultSize = $large_box_size;
 	}
+	
+	$('header').height($('#filters').outerHeight(true));
+	
 	/*if ($(window).width() < $minimum_content_width * 2) {
 		$defaultSize = [$col1,$colh2];
 		$istope_container.isotope({
