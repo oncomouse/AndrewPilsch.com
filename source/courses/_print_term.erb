@@ -10,7 +10,7 @@ courses.select{ |course| course["course_term"].to_s == term}.each do |course| %>
 		<span class="course_title"><%= course["course_title"] %></span>
 	</h3>
 	<p><a href="<%= course["course_url"] %>">
-		<img style="display: block; margin: 0 auto" src="/<%= course["course_image"] %>" />
+		<img style="display: block; margin: 0 auto" src="/<%= course["course_image"] %>"  alt="Image of Course Website for <%= course["course_title"];%>"/>
 	</a></p>
 	<p class="course_description"><%= course["course_description"]%></p>
 	<p><a href="<%= course["course_url"] %>">Visit the Class Website</a></p>
