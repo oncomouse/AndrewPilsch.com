@@ -112,7 +112,7 @@ function load_all_courses() {
 		function(data) {
 			if (!$courses_loaded) {
 				$isotope_container.isotope('insert', $(data));
-				$isotope_container.isotope();
+				window.setTimeout(function(){$isotope_container.isotope();}, 150);
 				$courses_loaded = true;
 			}
 			$isotope_container.isotope({filter: '.class'});
