@@ -104,7 +104,7 @@ function load_all_courses() {
 		return false;
 	}
 	if (window.location.href.match(/localhost/)) {
-		url = "/courses/courses.html";
+		url = "/courses/courses";
 	} else {
 		url = "/courses/courses.php";
 	}
@@ -112,6 +112,7 @@ function load_all_courses() {
 		function(data) {
 			if (!$courses_loaded) {
 				$isotope_container.isotope('insert', $(data));
+				$isotope_container.isotope();
 				$courses_loaded = true;
 			}
 			$isotope_container.isotope({filter: '.class'});
