@@ -6,4 +6,4 @@ layout: false
 - terms = courses.map{ |course| course["course_term"].to_s}.uniq.reverse
 - terms.each do |term|
 	- next if term == current_term
-	= partial "print_term", :locals => { :term => term }
+	= partial "courses/print_term", :locals => { :term => term }
