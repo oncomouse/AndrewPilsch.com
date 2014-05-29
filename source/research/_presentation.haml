@@ -4,14 +4,14 @@
 		%h2= presentation["delivered"] ? "Recent Presentation" : "Upcoming Presentation"
 		%p
 			%img{ :src => "#{presentation["image"]}", :alt => "Image Illustrating the presentation, \"#{presentation["short_title"]}\"" }
-		%h3= presentation["short_title"]
+		%h1= presentation["short_title"]
 		- if presentation["short_description"]
 			:markdown
 				#{presentation["short_description"]}
 	.expandable
 		.mobile
-			%h1= presentation["delivered"] ? "Recent Presentation" : "Upcoming Presentation"
-		%h2= presentation["title"]
+			%h2= presentation["delivered"] ? "Recent Presentation" : "Upcoming Presentation"
+		%h1= presentation["title"]
 		:markdown
 			**Presentation At**: _#{presentation["conference"]}_, #{presentation["conference_location"]}, #{presentation["date"].year}
 		

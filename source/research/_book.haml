@@ -4,13 +4,13 @@
 		%h2= book["published"] ? "Published Book" : "Book In Progress"
 		%p
 			%img{ :src => "#{book["image"]}", :alt => "Image Illustrating the book, \"#{book["short_title"]}\"" }
-		%h3= book["short_title"]
+		%h1= book["short_title"]
 		- if book["short_description"]
 			:markdown
 				#{book["short_description"]}
 	.expandable
 		.mobile
-			%h1= book["published"] ? "Published Book" : "Book In Progress" 
-		%h2= book["title"]
+			%h2= book["published"] ? "Published Book" : "Book In Progress" 
+		%h1= book["title"]
 		:markdown
 			#{book["description"]}

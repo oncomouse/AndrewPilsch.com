@@ -9,7 +9,7 @@
 			= article["published"] ? "Published Article" : unpublished_status
 		%p
 			%img{ :src => "#{article["image"]}", :alt => "Image Illustrating the article, \"#{article["short_title"]}\"" }
-		%h3= article["short_title"]
+		%h1= article["short_title"]
 		- if article["status"].downcase == "revise & resubmit" or article["status"].downcase == "revise and resubmit" or article["status"].downcase == "forthcoming" or article["published"]
 			%p.single-spaced= article["journal_information"]
 		- if article["short_description"]
@@ -17,8 +17,8 @@
 				#{article["short_description"]}
 	.expandable
 		.mobile
-			%h1= article["published"] ? "Published Article" : unpublished_status
-		%h2= article["title"]
+			%h2= article["published"] ? "Published Article" : unpublished_status
+		%h1= article["title"]
 		:markdown
 			**#{article["journal_information"]}**
 			
