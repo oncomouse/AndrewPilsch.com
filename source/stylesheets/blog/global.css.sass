@@ -19,16 +19,10 @@
  CONTENTS - LAYOUT.CSS
  -----------------------------------------
  8. CUSTOM LAYOUT & TYPOGRAPHY (Daddy bear)
- 9. CUSTOM LAYOUT & TYPOGRAPHY (Mummy bear) 
+ 9. CUSTOM LAYOUT & TYPOGRAPHY (Mummy bear)
  
  */
-
-// Modular Scale: http://modularscale.com/scale/?px1=16&px2=40&ra1=1.618&ra2=0
-
-@import bear_defaults
-@include establish-baseline
-
-$no_text_decoration: 1px solid rgba(#fff,0)
+@import "bear_defaults"
 
 /* 1. RESET
  ----------------------------------------------------------------------------------------*/
@@ -40,502 +34,338 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	font: inherit
 	vertical-align: baseline
 
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section 
-	display: block
-
-
-/* HTML 5 Boilerplate Reset Code
- */
-
-/* =============================================================================
-   Forms
-   ========================================================================== */
-
-form
-	margin: 0
-fieldset
-	border: 0
-	margin: 0
-	padding: 0
-
-// Indicate that 'label' will shift focus to the associated form element
-label
-	cursor: pointer
-
-/*
-  1. Correct color not inheriting in IE6/7/8/9
-  2. Correct alignment displayed oddly in IE6/7
-  */
-
-legend
-	border: 0
-	*margin-left: -7px
-	padding: 0
-
-/*
-  1. Correct font-size not inheriting in all browsers
-  2. Remove margins in FF3/4 S5 Chrome
-  3. Define consistent vertical alignment display in all browsers
-  */
-
-button, input, select, textarea
-	font-size: 100%
-	margin: 0
-	vertical-align: baseline
-	*vertical-align: middle
-
-/*
-  1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
-  */
-
-button, input
-	line-height: normal
-
-/*
-  1. Display hand cursor for clickable form elements
-  2. Allow styling of clickable form elements in iOS
-  3. Correct inner spacing displayed oddly in IE7 (doesn't effect IE6)
-  4. Consistent box sizing and appearance
-  */
-
-button
-	cursor: pointer
-	-webkit-appearance: button
-	*overflow: visible
-
-input
-	&[type="button"], &[type="reset"], &[type="submit"]
-		cursor: pointer
-		-webkit-appearance: button
-		*overflow: visible
-	&[type="checkbox"], &[type="radio"]
-		@include box-sizing(border-box)
-		padding: 0
-	&[type="search"]
-		-webkit-appearance: textfield
-		@include box-sizing(content-box)
-		&::-webkit-search-decoration
-			-webkit-appearance: none
-
-/*
-  Remove inner padding and border in FF3/4: h5bp.com/l
-  */
-
-button::-moz-focus-inner, input::-moz-focus-inner
-	border: 0
-	padding: 0
-
-/*
-  1. Remove default vertical scrollbar in IE6/7/8/9
-  2. Allow only vertical resizing
-  */
-
-textarea
-	overflow: auto
-	vertical-align: top
-	resize: vertical
-
-
-*
-	@include box-sizing(border-box)
-	z-index: auto
-	text-rendering: optimizeLegibility
-	text-shadow: 0 0 1px transparent
+@import "libraries/normalize"
 
 /* 2. ROOT
  ----------------------------------------------------------------------------------------*/
-html  
+html	
 	overflow-y: scroll
-	background: $body_background_color
+	background: #FFF
+body
+	margin-bottom: 6rem
 
-/* /ht Ethan Marcotte - http://front.ie/l8rJaA */
+/* /ht Ethan Marcotte - http: //front.ie/l8rJaA */
 img, embed, object, video
 	max-width: 100% 
 .ie6 img.full, .ie6 object.full, .ie6 embed, .ie6 video
 	width: 100% 
-/* 
- * These selection declarations have to be separate
- * No text-shadow: twitter.com/miketaylr/status/12228805301
- * Also: hot pink!
- */
-::-moz-selection
-	color: $text_selection_color
-	background: $text_selection_background_color
-	text-shadow: none 
 
-::selection 
-	color: $text_selection_color //#fe57a1
-	background: $text_selection_background_color
-	text-shadow: none 
 
 /* 3. CORE TYPOGRAPHY
  ----------------------------------------------------------------------------------------*/
+@import "libraries/typebase"
+
 html
 	font:
-		family: $body_font_family
-		size: 16px
-		weight: $body_font_weight
-	line-height: $line_height
-	color: $body_font_color
-	text-shadow: rgba(255,255,255,0.5) 0 1px 0
-
-
-h1, h2, h3, h4, h5, h6 
+		family: $bodyFontFamily
+		weight: $bodyFontWeight
+	background: $baseBackgroundColor
+	color: $baseFontColor
+h1,h2,h3,h4,h5,h6
 	font:
-		family: $header_font_family
-		weight: $header_font_weight
-
-p, ul, ol, dl, blockquote 
-	font-size: 1em
-	line-height: $line_height
-	margin-bottom: 1.0em
-	max-width: 100%
-
-ul
-	list-style-type: disc
-	margin-left: $line_height 
-
-ol
-	list-style-type: decimal
-	margin-left: $line_height 
-
-li
-	margin-bottom: 0.59em
-
-nav ul, nav ol
-	list-style: none
-	margin: 0
-	padding: 0
-
-b, strong
-	font-weight: 700 
-i, em
-	font-style: italic 
-small
-	font-size: 80% 
-sup
-	vertical:
-		align: super
-	font:
-		size: 0.65em
-	line:
-		height: 1em
+		family: $headerFontFamily
+		weight: $headerFontWeight
 
 
 /* 4. LINKS
  ----------------------------------------------------------------------------------------*/
-a
-	color: $body_link_color
-	text-decoration: none
+a, a:visited
 	outline: none
-	@include transition(border .2s ease-out, color .2s ease-out, background-color .2s ease-out)
-	border:
-		bottom: $no_text_decoration
-a:hover
-	text-decoration: none
-	color: $body_link_hover_color
-	border:
-		bottom: 1px solid $body_link_hover_color
-a:active, a:focus
-	outline: none
-a:active
-	position: relative
-	top: 2px
-	
+	color: $linkBaseColor
+	text-decoration: underline	
+	@include transition(color .2s ease-out, background-color .2s ease-out) 
+
+	&:hover
+		outline: none
+		color: $linkHoverColor
+		text-decoration: none
+
+	&:active, &:focus
+		outline: none 
+	&:active
+		position: relative
+		top: 2px
+		color: $linkActiveColor
+
+
 /* 5. GLOBAL LAYOUT & GLOBAL CUSTOM TYPOGRAPHY
  ----------------------------------------------------------------------------------------*/
-
-h1
-	font-size: 2.5em
-	line-height: 1
-	margin-bottom: 0.5em
-h2
-	font-size: 1.618em
-	margin-bottom: 0.75em
-h3
-	font-size: 1.2em
-	line-height: 1
-	margin-bottom: 1em
-h4
-	font-size: 1.2em
-	line-height: 1.25
-	margin-bottom: 1.25em
-h5
-	font-size: 1em
-	font-weight: bold
-	margin-bottom: 1.5em
-h6
-	font-size: 1em
-	font-weight: bold
-
-img.center
-	display: block
-	margin: 0 auto
-
-p.single-spaced
-	line-height: 1
-	
-h1,h2,h3,h4,h5
-	&.role
-		display: none
-
-h1
-	span
-		display: block
-
-header[role="banner"]
-	h1,h2,h3,h4,h5
-		font:
-			family: $title_font_family
-			weight: $title_font_weight
-	h1
-		.firstname
-			color: $title_color
-			font:
-				size: 25px
-		.lastname
-			color: $title_color
-			font: 
-				size: 63px
-			margin:
-				top: 12px
-				left: -6px
-				bottom: 14px
-			line:
-				height: 27px
-		.subtitle
-			font:
-				family: $header_font_family
-				weight: $header_font_weight
-				size: 16px
-			color: $subtitle_color
-			margin: 0
-				left: -2px
-			line:
-				height: 1em
-		
-nav
-	@include clearfix
-
-	a
-		font:
-			weight: bold
-	a:before
-		font-size: 2em
-		display: inline-block
-		line-height: 8px
-	a:hover
-		border:
-			bottom: $no_text_decoration
-	
-
-label[for$="search_term"]
-	display: none
-
-section
-	.content
-		padding: 0 golden-ratio(1em, -1)
-		
+.role
+	@include visuallyhidden
+#blog
+	& > header
+		position: relative
+		a.home
+			color: black
+			text-decoration: none
+			&:active
+				top: 0
 		h1
+			position: relative
 			text-align: center
-		.articles
-			padding: 0 golden-ratio(1em, -1)
-			h1
-				margin:
-					top: golden-ratio(1em, 0)
-					bottom: golden-ratio(1em, 0)
-		article
-			margin:
-				bottom: golden-ratio(1em, 4)
-			h2
-				a
-					display: block
-				a:hover
-					border-bottom: $no_text_decoration
-				span
-					display: block
-					font:
-						family: $body_font_family
-						weight: $body_font_weight
-						size: 0.75em
-						line:
-							height: 0.5em
-		h1
-			.article_title, .article_date
-				text-align: center
-			.article_title
-				color: $article_title_color
-			.article_date
-				font-size: golden-ratio(1em, -1)
-				color: $article_date_color
-		pre
-			overflow: auto
-			tab-size: 2
-		pre,code
-			font:
-				family: monospace
-		p.archives
-			text:
-				align: center
-			margin:
-				top: golden-ratio(1em, 2)
-			a
-				@include button(shiny, $archives_button_color)
-				font:
-					size: 1.7em
-					family: $header_font_family
-					weight: $header_font_weight
-				padding:
-					top: 12px
-		.singleton
-			h2,h3
-				text-align: center
-				margin: 
-					top: golden-ratio(1em, 1)
-					bottom: golden-ratio(1em, -1)
-				text-align: center
-			blockquote
-				margin: golden-ratio(1em, 0) auto
-				width: 85%
-				font:
-					style: italic
-				border:
-					left: 4px solid $blockquote_border_color
-				padding:
-					left: golden-ratio(1em, -1)
-					top: golden-ratio(1em, 0)
-					bottom: golden-ratio(1em, -2)
-					
-				
-					
+			font-size: 1rem
+			line-height: 1
+			font-weight: $logoFontWeight
+			text-transform: uppercase
+			.andrew,.pilsch,.blog
+				display: block
+			.andrew
+				font-size: 3.5em
+			.pilsch
+				font-size: 4.25em
+				margin-left: -0.17em
+				line-height: 0.7em
+			.blog
+				font-size: 3.75em
+				padding-left: 1.09em
 
-.footnotes
-	font:
-		size: 0.85em
-
-	&.footnotify
-		display: none !important
-
-#things
-	@include outer-container
-	@include clearfix
-	margin: 0
-	opacity: 1
-	@include transition (opacity 1.0s ease-out 0s)
-	
-	&.show
-		opacity: 1
-	h2
-		display: none
-		font:
-			family: $header_font_family
-			weight: $header_font_weight
-		text-align: center
-#previous_thing, #next_thing
-	
-	margin: 0
+pre > code
 	display: block
-	padding: golden-ratio(1em, 0) 0	
-	@include span-columns(6)
-	.no_link
-		display: none
-	p
-		margin: 0
-		padding: 0
-		&.no_link
-			padding:
-				bottom: 1px
-	a
-		&:before, &:after
-			font: 
-				family: "Times New Roman", serif
-				size: 1em
-.no-fontface
-	#previous_thing, #next_thing
-		a:before, a:after
-			display: none
-
-#previous_thing
-	a:before
-		content: "\00AB"
-		padding:
-			right: 2px
-#next_thing
-	text-align: right
-	a:after
-		content: "\00BB"
-		padding:
-			left: 2px
-
-footer
-	background:
-		color: $footer_background_color
-	border:
-		top: 4px solid $footer_border_color
-		bottom: 2px solid $footer_border_color
-	min-height: golden-ratio(1em, 5)
-	padding: golden-ratio(1em, -1)
-		top: golden-ratio(1em, 1)
-	text:
-		align: center
-	p
+	margin-top: $leading
+	margin-left: $leading
+	padding: $leading/2 $leading/4 !important
+	border: 0 solid $prettyPrintBorderColor !important
+	tab-size: 4
+	
+.page_function
+	h2
 		font:
-			size: 0.85em
-	.about_site_link
-		cursor: pointer
-	.about_site
-		opacity: 0
-		@include transition (opacity 1.0s ease-out 0s)
-		margin:
-			bottom: golden-ratio(1em, 2)
-		&:before
-			content: ""
-			width: 10%
-			height: 1px
-			background: $black
-			display: block
-			margin: 0 auto
-				top: golden-ratio(1em, 2)
-				bottom: golden-ratio(1em, 0)
-		&.show
-			opacity: 1
+			size: $scale * 1.8rem
+			family: $bodyFontFamily
+			weight: $bodyFontWeight
+			style: italic
 
+.articles
+	&:last-child
+		margin-bottom: 0 !important
+
+article
+	header
+		text-align: center
+		a, a:visited
+			color: $black
+			text-decoration: none
+		.metadata
+			margin: 0 auto
+				top: $leading / 2
+		h3
+			display: inline-block
+			font:
+				family: $bodyFontFamily
+				weight: $bodyFontWeight
+				size: 0.95rem
+			text-transform: uppercase
+			line-height: 1
+			margin-top: 0
+			&:before, & a:before
+				@include genericons
+				font-size: 1.2rem
+			&.date:before
+				content: "\f303"
+			&.author:before
+				content: '\f304'
+			&.comment
+				a:before
+					content: '\f300'
+	.article_body
+		margin-top: $leading * 2
+		blockquote
+			position: relative
+			padding-left: $leading
+			font:
+				size: 1.15rem
+				style: italic
+			p
+				line-height: 1.35
+			color: $blockquoteColor
+			&:before
+				content: "\201c"
+				color: $blockquoteQuoteColor
+				position: absolute
+				left: -10px
+				top: 8px
+				font:
+					size: 4.5rem
+					family: $headerFontFamily
+				z-index: 2
+				width: 40px
+				
+	footer
+		margin:
+			top: $leading
+			bottom: 4 * $leading
+		.tags
+			a, a:visited
+				@include transition(none)
+				background-color: $tagBackgroundColor
+				border-radius: 0 2px 2px 0
+				color: $tagFontColor
+				display: inline-block
+				font-size: 14px
+				font-weight: 700
+				line-height: 1.2727272727
+				margin: 2px 4px 2px 10px
+				padding: 3px 7px
+				position: relative
+				text-transform: uppercase
+				text-decoration: none
+				&:hover
+					background-color: $linkHoverColor
+					color: $tagFontColor
+				&:before
+					border-top: 11px solid transparent
+					border-right: 10px solid $tagBackgroundColor
+					border-bottom: 12px solid transparent
+					content: ""
+					height: 0
+					position: absolute
+					top: 0
+					left: -10px
+					width: 0
+				&:hover:before
+					border-right-color: $linkHoverColor
+				&:after
+					background-color: $baseBackgroundColor
+					border-radius: 50%
+					content: ""
+					height: 4px
+					position: absolute
+					top: 10px
+					left: -3px
+					width: 4px
+		#social
+			margin-bottom: $leading * 2
+			&:before
+				content: "Share This:"
+				display: block
+				text-transform: uppercase
+				font-size: 0.85em
+				margin-bottom: $leading / 2
+				margin-left: $leading / -2
+			margin-bottom: $leading
+			padding-left: $leading / 2
+		#navigation
+			margin-top: $leading * 2
+			p
+				display: block
+				border-bottom: 1px solid $thingBorderColor
+				padding: $leading / 4 $leading / 2
+				margin: 0
+				text-align: center
+				&:first-child
+					border-top: 1px solid $thingBorderColor
+				&.past,&.future
+					&:before
+						display: block
+						text-transform: uppercase
+						font-size: 0.85em
+						margin-bottom: $leading / 2
+				&.past:before
+					content: "Earlier Post"
+				&.future:before
+					content: "Later Post"
+
+#navigation
+	text-align: center
+	/* Drop a bootstrap component in here: */
+	.pagination
+		display: inline-block
+		padding-left: 0
+		margin: $leading 0
+		border-radius: 4px
+		font:
+			family: $headerFontFamily
+			weight: $headerFontWeight
+			size: 1.15rem
+		& >
+			li
+				display: inline
+				>
+					a, span
+						position: relative
+						float: left
+						padding: $leading / 4 $leading / 2
+						text-decoration: none
+						color: $paginationLinkColor
+						background-color: $paginationBaseBackround
+						border: 1px solid $paginationBorderColor
+						margin-left: -1px
+				&:first-child >
+					a, span
+						margin-left: 0
+						border-bottom-left-radius: 4px
+						border-top-left-radius: 4px
+				&:last-child >
+					a, span
+						border-bottom-right-radius: 4px
+						border-top-right-radius: 4px
+				>
+					a:hover, span:hover, a:focus, span:focus
+						color: $paginationHoverColor
+						background-color: $paginationHoverBackgroundColor
+						border-color: $paginationBorderColor
+					a:active
+						top: 0px
+			.active >
+				a, span, a:hover, span:hover, a:focus, span:focus
+					z-index: 2
+					color: $paginationActiveColor
+					background-color: $paginationActiveBackgroundColor
+					border-color: $paginationActiveBackgroundColor
+					cursor: default
+			.disabled >
+				span
+					color: $paginationDisabledColor
+					background-color: $paginationBaseBackround
+					border-color: $paginationBorderColor
+					cursor: not-allowed
+					&:hover, &:focus
+						color: $paginationDisabledColor
+						background-color: $paginationBaseBackround
+						border-color: $paginationBorderColor
+						cursor: not-allowed
+				a
+					color: $paginationDisabledColor
+					background-color: $paginationBaseBackround
+					border-color: $thingBorderColor
+					cursor: not-allowed
+					&:hover, &:focus
+						color: $paginationDisabledColor
+						background-color: $paginationBaseBackround
+						border-color: $paginationBorderColor
+						cursor: not-allowed
+
+.archives
+	text-align: center
+	font-size: 1.5rem
+	margin-bottom: 6rem
+			
 /* 6. CUSTOM LAYOUT & TYPOGRAPHY (Baby bear)
  ----------------------------------------------------------------------------------------*/
-header[role="banner"]
-	margin: 
-		top: golden-ratio(1em, 1)
-		bottom: golden-ratio(1em, 0)
-	border:
-		top: 3px $header_border_color solid
-		bottom: 2px $header_border_color solid
-	padding: golden-ratio(1em, -1)
-nav
-	margin: 0 golden-ratio(1em, 0)
-		bottom: golden-ratio(1em, 2)
-	p,form
-		width: 100%
-		text-align: center
-		font-size: 1.1em
+$max-width: $babyBearMaxWidth
 
-form.search
+h1,h2,h3,h4,h5,h6
+	text-align: center
+
+#blog
+	@include outer-container()
+	
+article
+	padding: 0 1rem
+
+nav
 	display: none
 
-section
-	.content
-		aside
-			display: none
-		aside.footnote-content
-			display: block
-			.footnote-content-wrapper
-				font-size: 0.75rem
+#blog
+	& > header
 		h2
-			text-align: center
-		p,li
-			font:
-				size: 1.1em
-			
-footer
-	border:
-		top: 4px solid $footer_border_color
+			display: none
+
+p.read_more, p.back_to_index
+	font-size: 1.35rem
+
+
+/* 7. BROWSER AND NON-SEMANTIC STYLING
+ ----------------------------------------------------------------------------------------*/
+.cf
+	@include clearfix

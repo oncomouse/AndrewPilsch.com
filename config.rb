@@ -14,6 +14,8 @@ compass_config do |config|
 #   config.output_style = :compact
 end
 
+activate :syntax
+
 require "lib/courses.rb"
 activate :course_manager
 require "lib/research.rb"
@@ -68,7 +70,10 @@ set :js_dir, 'javascripts'
 set :images_dir, 'images'
 
 #activate :directory_indexes
+#page "/blog/*", :layout => :blog_article2
 page "/blog/*", :layout => :blog_article
+
+set :haml, { :ugly => true }
 
 activate :blog do |blog|
   blog.prefix = "blog/"
@@ -81,13 +86,13 @@ activate :blog do |blog|
   # blog.year_link = ":year.html"
   # blog.month_link = ":year/:month.html"
   # blog.day_link = ":year/:month/:day.html"
-  # blog.default_extension = ".markdown"
+  blog.default_extension = ".md"
 
   blog.tag_template = "blog/tag.html"
   blog.calendar_template = "blog/calendar.html"
 
   blog.paginate = true
-  blog.per_page = 10
+  blog.per_page = 6
   # blog.page_link = "page/:num"
 end
 
@@ -97,8 +102,9 @@ activate :directory_indexes
 
 # Build-specific configuration
 configure :build do
-
   ignore "/courses/*"
+  ignore "blog_old/*"
+  ignore "stylesheets/blog-old/*"
   #ignore "/research/*"
   ignore "/**/*.rb"
   #set :http_prefix, "/new2"

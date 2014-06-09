@@ -1,0 +1,79 @@
+%article{ :id => "post#{if index.kind_of? Integer then "-#{index+1}" else "" end}"}
+	%header
+		%h2.title
+			-if short
+				- if article.data.has_key? 'short_title'
+					= link_to article.data['short_title'], article
+				- else
+					= link_to article.title, article
+			- else
+				= article.title.sub(/\:/, ":<br>")
+		.metadata
+			%h3.date
+				= article.date.strftime('%b %e, %Y')
+			%h3.author
+				= if article.data.has_key? 'author' then article.data.has_key? 'author' else "andrew" end
+			%h3.comment
+				= link_to "Comment", article.url + "#disqus_thread"
+	.article_body
+		- if short
+			= article.first_paragraph
+			%p.read_more
+				= link_to("Continue Reading", article.url)
+		- else
+			= article.body
+			%p.back_to_index=link_to "Back to Index", "index.html"
+	%footer
+		- if !short
+			#social
+				<!-- AddThis Button BEGIN -->
+				<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+				<a class="addthis_button_twitter"></a>
+				<a class="addthis_button_facebook"></a>
+				<a class="addthis_button_tumblr"></a>
+				<a class="addthis_button_email"></a>
+				<a class="addthis_button_compact"></a><a class="addthis_counter addthis_bubble_style"></a>
+				</div>
+				<script type="text/javascript">var addthis_config = {"data_track_addressbar":false};</script>
+				<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-539493f7021b6439"></script>
+				<!-- AddThis Button END -->
+		.tags
+			- article.tags.each do |tag|
+				= link_to tag, tag_path(tag)
+		- if !short
+			#navigation
+				-if current_page.previous_article
+					- if current_page.previous_article.respond_to? :data and current_page.previous_article.data['short_title']
+						- link_title = "#{current_page.previous_article.data['short_title']}"
+					-else
+						- link_title = current_page.previous_article.title
+					%p.past
+						= link_to(link_title, current_page.previous_article.url)
+
+				- if current_page.next_article
+					- if current_page.next_article.respond_to? :data and current_page.next_article.data['short_title']
+						- link_title = "#{current_page.next_article.data['short_title']}"
+					-else
+						- link_title = current_page.next_article.title
+					%p.future
+						= link_to(link_title, current_page.next_article.url)
+		- if !short and build?
+			#comments
+				%h2 Comments
+			
+				#disqus_thread
+					:javascript
+						var disqus_shortname = 'andrewpilschblog2';
+
+						/* * * DON'T EDIT BELOW THIS LINE * * */
+						(function() {
+								var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+								dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+								(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+						})();
+					%noscript
+						Please enable JavaScript to view the
+						%a{ :href => "http://disqus.com/?ref_noscript" } comments powered by Disqus.
+					%a.dsq-brlink{ :href => "http://disqus.com" }
+						comments powered by
+						.logo-disqus Disqus

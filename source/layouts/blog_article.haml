@@ -1,60 +1,17 @@
-- wrap_layout :blog do
-	.singleton
-		%header
-			%h1
-				%span.article_title.breakline= current_page.title
-				%span.article_date= current_page.date.strftime('%b %e, %Y')
-			%p.tags
-				- if current_page.tags and current_page.tags.length > 0
-					Tagged:
-					= current_page.tags.map { |tag| link_to(tag, "tags/#{tag}.html") }.join(", ")
-		%article
-			= yield
-
-		-if build?
-			#comments
-				%h2 Comments
-				
-				#disqus_thread
-					:javascript
-						var disqus_shortname = 'andrewpilschblog2';
-
-						/* * * DON'T EDIT BELOW THIS LINE * * */
-						(function() {
-								var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-								dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-								(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-						})();
-					%noscript
-						Please enable JavaScript to view the
-						%a{ :href => "http://disqus.com/?ref_noscript" } comments powered by Disqus.
-					%a.dsq-brlink{ :href => "http://disqus.com" }
-						comments powered by
-						.logo-disqus Disqus
-
-	- if current_page.previous_article or current_page.next_article
-		#things
-			%h2 Read On
-			-if current_page.previous_article
-				- if current_page.previous_article.respond_to? :data and current_page.previous_article.data['short_title']
-					- link_title = "#{current_page.previous_article.data['short_title']}"
-				-else
-					- link_title = current_page.previous_article.title
-				#previous_thing
-					%p
-						= link_to(link_title, current_page.previous_article.url)
-			-else
-				#previous_thing
-					%p.no_link At Oldest Article
-
-			- if current_page.next_article
-				- if current_page.next_article.respond_to? :data and current_page.next_article.data['short_title']
-					- link_title = "#{current_page.next_article.data['short_title']}"
-				-else
-					- link_title = current_page.next_article.title
-				#next_thing
-					%p
-						= link_to(link_title, current_page.next_article.url)
-			-else
-				#next_thing
-					%p.no_link At Newest Article
+!!! 5
+-# paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+<!--[if lt IE 7]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7]>		<html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8]>		<html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if gt IE 8]><!-->
+%html.no-js{ :lang => "en" }
+	<!--<![endif]-->
+	%head
+		=partial "blog/pageinfo"
+	%body
+		%section#blog
+			=partial "blog/header"
+			.articles
+				= find_and_preserve do
+					=partial "blog/article", :locals => { :short => false, :article => current_page, :index => nil }
+		=partial "blog/javascript"

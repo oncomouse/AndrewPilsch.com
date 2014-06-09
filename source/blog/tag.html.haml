@@ -1,22 +1,13 @@
 ---
 layout: blog
 pageable: true
-per_page: 12
 ---
 .articles
-	:markdown
-		# Articles tagged '#{tagname}'
+	.page_function
+		:markdown
+			## Articles tagged '#{tagname.capitalize}'
 
 	- page_articles.each_with_index do |article, i|
-		%article
-			%h2
-				= link_to article.title, article
-				%span= article.date.strftime('%b %e, %Y')
-			/ use article.summary(250) if you have Nokogiri available to show just
-			/		 the first 250 characters
-			.article_body
-				= article.summary(250, " ... ")
-				%p 
-					= link_to("Continue Reading", article.url)
+		=partial "blog/article", :locals => { :short => true, :article => article, :index => i }
 
-	= partial "blog/archive_thing"
+	= partial "blog/archive_navigation", :locals => { :paginate => paginate, :next_page => next_page, :prev_page => prev_page, :page_number => page_number, :num_pages => num_pages, :page_start => page_start, :page_end => page_end}

@@ -1,0 +1,15 @@
+- if build?
+	:javascript
+		var disqus_shortname = 'andrewpilschblog2';
+	
+		/* * * DON'T EDIT BELOW THIS LINE * * */
+		(function () {
+		var s = document.createElement('script'); s.async = true;
+		s.type = 'text/javascript';
+		s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+		(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+		}());
+- init_calls = []
+-if init_calls.length > 0
+	:javascript
+		#{init_calls.join("\n")}

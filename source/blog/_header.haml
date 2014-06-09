@@ -1,5 +1,20 @@
-.content
-	%h1
-		%span.firstname Andrew
-		%span.lastname Pilsch
-		%span.subtitle Blog: Rhetoric, Technology, Futurology
+%header
+	- if !/index.html/.match(current_page.source_file)
+		%a.home{:href=> "#{blog.options[:prefix]}"}
+			%h1
+				%span.andrew Andrew
+				%span.pilsch Pilsch
+				%span.blog Blog
+	-else
+		%h1
+			%span.andrew Andrew
+			%span.pilsch Pilsch
+			%span.blog Blog
+	%h2
+		.line Somewhere
+		.line between an RT
+		.line an Article
+	%nav
+		%ul
+			%li= link_to " ", "https://www.twitter.com/oncomouse", :class => "twitter", :alt => "Click to Find Me on Twitter"
+			%li= link_to " ", "https://www.github.com/oncomouse", :class => "github", :alt => "Click to Find Me On GitHub"

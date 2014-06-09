@@ -7,48 +7,25 @@
 %html.no-js{ :lang => "en" }
 	<!--<![endif]-->
 	%head
-		%meta{ :charset => "utf-8" }/
-		
-		-# Always force latest IE rendering engine (even in intranet) & Chrome Frame
-		-# Remove this if you use the .htaccess
-		/ Place in .htaccess, instead
-		/%meta{ "http-equiv" => "X-UA-Compatible", :content => "IE=edge,chrome=1" }/
-		
-		%title
-			Andrew Pilsch
-			- if current_page
-				- if !/index.html/.match(current_page.source_file)
-					= " - "
-				- if current_page.respond_to? :title
-					= "#{current_page.title}"
-				- elsif current_page.source_file =~ /archive.html/
-					= "Full Archive"
-				- elsif current_page.source_file =~ /tag.html/
-					= "Articles Tagged \"#{tagname}\""
-				- elsif current_page.source_file =~ /calendar.html/
-					Archive for
-					- case page_type
-						- when 'day'
-							= Date.new(year, month, day).strftime('%b %e %Y')
-						- when 'month'
-							= Date.new(year, month, 1).strftime('%b %Y')
-						- when 'year'
-							= year
-		%meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0" }/
-		%link{ :href => "/blog/rss.xml", :rel => "alternate", :type =>"application/rss+xml" }/
-		= stylesheet_link_tag("blog/global.css", :media => "all", :rel => "stylesheet" )
-		= stylesheet_link_tag("blog/layout.css", :media => "all and (min-width: 33.236em)", :rel => "stylesheet" )
-
-		= #javascript_include_tag("//cdnjs.cloudflare.com/ajax/libs/headjs/0.99/head.min.js")
-		= partial "blog/javascript_assets", :locals => { :current_page => current_page }
-		
+		-locals = {}
+		- if defined? tagname then locals[:tagname] = tagname end
+		- if defined? page_type
+			- locals[:page_type] = page_type
+			- case page_type
+				- when 'day'
+					- locals[:year] = year
+					- locals[:month] = month
+					- locals[:day] = day
+				- when 'month'
+					- locals[:year] = year
+					- locals[:month] = month
+				- when 'year'
+					- locals[:year] = year
+		=partial "blog/pageinfo", :locals => locals
 	%body
-		%header{ :role => "banner" }
-			= partial "blog/header"
-		%nav{ :role => "navigation" }
-			= partial "blog/nav"
-		%section{ :role => "main" }
-			.content
-				= yield
-		%footer{ :role => "contentinfo" }
-			= partial "blog/footer"
+		%section#blog
+			=partial "blog/header"
+			.article
+				= find_and_preserve do
+					=yield
+				=partial "blog/javascript"

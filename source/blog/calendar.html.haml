@@ -3,26 +3,17 @@ layout: blog
 pageable: true
 ---
 .articles
-	%h1
-		Archive for
-		- case page_type
-			- when 'day'
-				= Date.new(year, month, day).strftime('%b %e %Y')
-			- when 'month'
-				= Date.new(year, month, 1).strftime('%b %Y')
-			- when 'year'
-				= year
+	.page_function
+		%h2
+			Archive for
+			- case page_type
+				- when 'day'
+					= Date.new(year, month, day).strftime('%b %e %Y')
+				- when 'month'
+					= Date.new(year, month, 1).strftime('%b %Y')
+				- when 'year'
+					= year
 
 	- page_articles.each_with_index do |article, i|
-		%article
-			%h2
-				= link_to article.title, article
-				%span= article.date.strftime('%b %e, %Y')
-			/ use article.summary(250) if you have Nokogiri available to show just
-			/		 the first 250 characters
-			.article_body
-				= article.summary(250, " ... ")
-				%p 
-					= link_to("Continue Reading", article.url)
-
-	= partial "blog/archive_thing"
+		=partial "blog/article", :locals => { :short => true, :article => article, :index => i }
+	= partial "blog/archive_navigation", :locals => { :paginate => paginate, :next_page => next_page, :prev_page => prev_page, :page_number => page_number, :num_pages => num_pages, :page_start => page_start, :page_end => page_end}
