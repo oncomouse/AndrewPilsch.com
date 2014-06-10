@@ -109,7 +109,7 @@ a, a:visited
 		h1
 			position: relative
 			text-align: center
-			font-size: 1rem
+			font-size: 0.85rem
 			line-height: 1
 			font-weight: $logoFontWeight
 			text-transform: uppercase
@@ -177,24 +177,39 @@ article
 		margin-top: $leading * 2
 		blockquote
 			position: relative
-			padding-left: $leading
 			font:
 				size: 1.15rem
 				style: italic
 			p
 				line-height: 1.35
+				em
+					font-style: normal
 			color: $blockquoteColor
+		ol,ul
+			margin-left: $leading / 8
+		.footnotes
 			&:before
-				content: "\201c"
-				color: $blockquoteQuoteColor
-				position: absolute
-				left: -10px
-				top: 8px
+				content: "Notes:"
+				display: block
 				font:
-					size: 4.5rem
+					size: 1 * $scale * 1rem
+					weight: $headerFontWeight
 					family: $headerFontFamily
-				z-index: 2
-				width: 40px
+				line-height: $leading
+				margin-top: $leading
+			li
+				font-size: 0.9rem
+			.reversefootnote
+				visibility: hidden
+				text-decoration: none
+				&:before
+					@include genericons
+					content: '\f467'
+					visibility: visible
+					font-size: 1rem
+					vertical-align: text-top
+					
+						
 				
 	footer
 		margin:
