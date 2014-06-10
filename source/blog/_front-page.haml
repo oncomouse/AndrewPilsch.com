@@ -1,0 +1,14 @@
+- articles_to_show = 5
+- articles=[]
+- if blog.articles.length < articles_to_show
+	- articles = blog.articles
+- else
+	- articles = blog.articles[0,5]
+- articles.each do |article|
+	-next if build? and !article.published?
+	.box.col1.blog{ "data-url" => article.url }
+		.hideable
+			%h2 Recent <br> Blog Post
+			%h1= article.title
+			- nokogiri = Nokogiri::HTML(article.body)
+			%p= nokogiri.at('body').inner_text.scan(/[\w'’,.]+/)[0..50].join(" ") + " …"
