@@ -227,7 +227,7 @@ article
 				
 	footer
 		margin:
-			top: $leading
+			top: 2 * $leading
 			bottom: 4 * $leading
 		.tags
 			a, a:visited
@@ -268,8 +268,31 @@ article
 					top: 10px
 					left: -3px
 					width: 4px
+		#related
+			margin-bottom: $leading
+			padding-left: $leading / 2
+			@include clearfix
+			&:before
+				content: "Related:"
+				display: block
+				text-transform: uppercase
+				font-size: 0.85em
+				margin-bottom: $leading / 2
+				margin-left: $leading / -2
+			ul
+				@include span-columns(7)
+				
+				margin: 0
+				list-style: none
+				
+				li
+					@include span-columns(4)
+					font-size: 0.85em
+					line-height: 1
+					&:last-child
+						@include omega
+					
 		#social
-			margin-bottom: $leading * 2
 			&:before
 				content: "Share This:"
 				display: block

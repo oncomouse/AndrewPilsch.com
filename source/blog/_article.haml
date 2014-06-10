@@ -37,6 +37,12 @@
 				<script type="text/javascript">var addthis_config = {"data_track_addressbar":false};</script>
 				<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-539493f7021b6439"></script>
 				<!-- AddThis Button END -->
+			#related
+				- s_a = similar_articles.first(3).map{|article| if build? and !article.published? then nil else article end }.compact
+				- if s_a.length > 0
+					%ul
+						- s_a.each do|article|
+							%li= link_to article.title, article.url
 		.tags
 			- article.tags.each do |tag|
 				= link_to tag, tag_path(tag)

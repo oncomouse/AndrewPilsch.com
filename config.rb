@@ -15,14 +15,13 @@ compass_config do |config|
 end
 
 activate :syntax
+activate :similar
 
 require "lib/courses.rb"
 activate :course_manager
 require "lib/research.rb"
 activate :research_manager
 require "lib/custom_haml_markdown.rb"
-
-require "bourbon"
 
 ready do
 	ignore "/**/*.yml"
@@ -77,7 +76,7 @@ set :images_dir, 'images'
 #page "/blog/*", :layout => :blog_article2
 page "/blog/*", :layout => :blog_article
 
-set :haml, { :ugly => true }
+set :haml, { :ugly => true, :format => :html5 }
 
 activate :blog do |blog|
   blog.prefix = "blog/"

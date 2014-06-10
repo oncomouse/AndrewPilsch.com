@@ -6,6 +6,8 @@ gem "middleman-blog", ">= 3.2.0"
 gem "oj"
 gem "middleman-deploy"
 gem "middleman-syntax"
+gem 'middleman-blog-similar'
+gem 'levenshtein-ffi', :require => 'levenshtein'
 gem "bourbon"
 gem "nokogiri"
 #gem "therubyracer" if not RbConfig::CONFIG['target_os'] =~ /mswin|mingw/i
