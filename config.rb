@@ -55,6 +55,10 @@ helpers do
 		end
 		link_to(txt,url)
 	end
+    
+    def image_link(source, options={})
+        link_to(image_tag(source, options), image_path(source))
+    end
 end
 
 class Middleman::Sitemap::Resource
