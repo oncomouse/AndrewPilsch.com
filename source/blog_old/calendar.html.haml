@@ -21,7 +21,7 @@ pageable: true
 			/ use article.summary(250) if you have Nokogiri available to show just
 			/		 the first 250 characters
 			.article_body
-				= article.summary(250, " ... ")
+				= article.summary(250, " … ")
 				%p 
 					= link_to("Continue Reading", article.url)
 

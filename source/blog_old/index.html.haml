@@ -9,7 +9,7 @@ per_page: 6
 		%article
 			%h2
 				- if article.respond_to? :data and article.data['short_title']
-					= link_to article.data['short_title'] + "...", article
+					= link_to article.data['short_title'] + "…", article
 				- else
 					= link_to article.title, article
 				%span= article.date.strftime('%b %e, %Y')
