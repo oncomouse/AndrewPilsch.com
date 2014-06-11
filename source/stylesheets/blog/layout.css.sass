@@ -4,7 +4,7 @@
 
 //@import url(http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic)
 
-$max-width: $mommyBearMaxWidth
+$max-width: $mommyBearMaxWidth !global
 
 #blog
 	@include outer-container()
@@ -77,7 +77,7 @@ $max-width: $mommyBearMaxWidth
 /* 9. CUSTOM LAYOUT & TYPOGRAPHY (Mummy bear)
  ----------------------------------------------------------------------------------------*/
 @include media($daddyBearMQ)
-	$max-width: $daddyBearMaxWidth
+	$max-width: $daddyBearMaxWidth !global
 	#blog
 		@include outer-container()
 		& > header
