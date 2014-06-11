@@ -45,6 +45,8 @@ $max-width: $mommyBearMaxWidth !global
 					family: $headerFontFamily
 				z-index: 2
 				width: 40px
+		p
+			text-align: justify
 		ol,ul
 			margin-left: 0
 	nav
@@ -72,6 +74,8 @@ $max-width: $mommyBearMaxWidth !global
 						content: '\f202'
 					&.github:before
 						content: '\f200'
+				&.about
+					display: block
 
 
 /* 9. CUSTOM LAYOUT & TYPOGRAPHY (Mummy bear)
@@ -108,8 +112,14 @@ $max-width: $mommyBearMaxWidth !global
 			@include span-columns(2.5)
 			@include omega
 			margin: 0
+			ul
+				li.about
+					font-size: 0.7rem
 						
 		.articles
 			@include span-columns(8.75)
 			@include shift(0.25)
 			@include omega
+			article
+				p
+					text-align: left

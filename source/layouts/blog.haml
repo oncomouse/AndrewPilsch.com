@@ -25,7 +25,5 @@
 	%body
 		%section#blog
 			=partial "blog/header"
-			.article
-				= find_and_preserve do
-					=yield
-				=partial "blog/javascript"
+			=yield
+		=partial "blog/javascript"

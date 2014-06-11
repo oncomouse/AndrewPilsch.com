@@ -6,6 +6,8 @@
 			= " - "
 		- if current_page.respond_to? :title
 			= "#{current_page.title}"
+		-elsif current_page.data.has_key? "title"
+			= "#{current_page.data["title"]}"
 		- elsif current_page.source_file =~ /archive.html/
 			= "Full Archive"
 		- elsif current_page.source_file =~ /tag.html/
