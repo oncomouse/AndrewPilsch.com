@@ -17,6 +17,9 @@ end
 activate :syntax
 activate :similar
 
+require "bourbon"
+require "neat"
+
 require "lib/courses.rb"
 activate :course_manager
 require "lib/research.rb"
@@ -40,10 +43,10 @@ page "*", :layout => "layout"
 # List of jQuery plugins to load on every page.
 #@jquery_plugins = ["isotope","hashchange"]
 
-#after_configuration do
-#    @bower_config = JSON.parse(IO.read("#{root}/.bowerrc"))
-#    sprockets.append_path File.join "#{root}", @bower_config["directory"]
-#end
+after_configuration do
+    @bower_config = JSON.parse(IO.read("#{root}/.bowerrc"))
+    sprockets.append_path File.join "#{root}", @bower_config["directory"]
+end
 
 helpers do
 	def javascript_path(file_path)

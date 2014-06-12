@@ -11,6 +11,9 @@ gem "middleman-syntax"
 gem 'middleman-blog-similar'
 gem 'levenshtein-ffi', :require => 'levenshtein'
 gem "bourbon"
+gem "neat"
+#gem "middleman-sprockets", "3.3.2"
+
 gem "nokogiri"
 #gem "therubyracer" if not RbConfig::CONFIG['target_os'] =~ /mswin|mingw/i
 gem "kramdown"
