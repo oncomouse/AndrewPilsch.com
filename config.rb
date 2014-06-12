@@ -19,6 +19,7 @@ activate :similar
 
 require "bourbon"
 require "neat"
+require 'compass-normalize'
 
 require "lib/courses.rb"
 activate :course_manager
