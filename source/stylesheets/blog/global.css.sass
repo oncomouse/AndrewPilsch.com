@@ -283,17 +283,20 @@ article
 				margin-bottom: $leading / 2
 				margin-left: $leading / -2
 			ul
-				@include span-columns(7)
+				width: 75%
 				
 				margin: 0
 				list-style: none
+				+clearfix
 				
 				li
-					@include span-columns(4)
+					float: left
+					width: 22.5%
+					margin-right: 2.5%
 					font-size: 0.85em
 					line-height: 1
 					&:last-child
-						@include omega
+						margin-right: 0
 					
 		#social
 			&:before
