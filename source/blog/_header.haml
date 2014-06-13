@@ -1,7 +1,7 @@
 %header
 	- if !/index.html/.match(current_page.source_file)
-		%a.home{:href=> "#{blog.options[:prefix]}"}
-			%h1
+		%h1
+			%a.home{:href=> "#{blog.options[:prefix]}"}
 				%span.andrew Andrew
 				%span.pilsch Pilsch
 				%span.blog Blog
