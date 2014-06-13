@@ -1,8 +1,6 @@
 /* 8. CUSTOM LAYOUT & TYPOGRAPHY (Daddy bear)
  ----------------------------------------------------------------------------------------*/
 @import bear_defaults
-$max-width: $mommyBearMaxWidth !global
-
 +layout($susy)
 
 #blog
@@ -81,6 +79,7 @@ $max-width: $mommyBearMaxWidth !global
  ----------------------------------------------------------------------------------------*/
 @include breakpoint($daddyBearMQ)
 	+layout($daddyBearMaxWidth 12)
+	+border-box-sizing
 	#blog
 		+container
 		& > header
