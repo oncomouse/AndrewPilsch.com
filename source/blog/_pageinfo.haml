@@ -1,26 +1,27 @@
 %meta{ :charset => "utf-8" }/
 %title
-	Andrew Pilsch
 	- if current_page
-		- if !/index.html/.match(current_page.source_file)
-			= " - "
-		- if current_page.respond_to? :title
-			= "#{current_page.title}"
-		-elsif current_page.data.has_key? "title"
-			= "#{current_page.data["title"]}"
-		- elsif current_page.source_file =~ /archive.html/
-			= "Full Archive"
-		- elsif current_page.source_file =~ /tag.html/
-			= "Articles Tagged \"#{tagname}\""
-		- elsif current_page.source_file =~ /calendar.html/
-			Archive for
-			- case page_type
-				- when 'day'
-					= Date.new(year, month, day).strftime('%b %e %Y')
-				- when 'month'
-					= Date.new(year, month, 1).strftime('%b %Y')
-				- when 'year'
-					= year
+		- if current_page.data.has_key? "title"
+			= current_page.data["title"]
+		- elsif
+			Andrew Pilsch Blog
+			- if !/index.html/.match(current_page.source_file)
+				= " - "
+			- if current_page.respond_to? :title
+				= "#{current_page.title}"
+			-elsif current_page.data.has_key? "title"
+				= "#{current_page.data["title"]}"
+			- elsif current_page.source_file =~ /tag.html/
+				= "Articles Tagged \"#{tagname}\""
+			- elsif current_page.source_file =~ /calendar.html/
+				Archive for
+				- case page_type
+					- when 'day'
+						= Date.new(year, month, day).strftime('%b %e %Y')
+					- when 'month'
+						= Date.new(year, month, 1).strftime('%b %Y')
+					- when 'year'
+						= year
 %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0" }/
 %link{ :href => "/blog/feed.xml", :rel => "alternate", :type =>"application/atom+xml" }/
 / Load Fonts
