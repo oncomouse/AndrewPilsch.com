@@ -11,7 +11,9 @@ gem "middleman-syntax"
 gem 'middleman-blog-similar'
 gem 'levenshtein-ffi', :require => 'levenshtein'
 gem "bourbon"
-gem "neat"
+#gem "neat"
+gem "susy"
+gem "breakpoint"
 gem "compass-normalize"
 #gem "middleman-sprockets", "3.3.2"
 

@@ -18,7 +18,8 @@ activate :syntax
 activate :similar
 
 require "bourbon"
-require "neat"
+require "susy"
+require "breakpoint"
 require 'compass-normalize'
 
 require "lib/courses.rb"

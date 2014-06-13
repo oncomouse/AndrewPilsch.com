@@ -3,8 +3,10 @@
 @import bear_defaults
 $max-width: $mommyBearMaxWidth !global
 
++layout($susy)
+
 #blog
-	@include outer-container()
+	width: 100%
 	
 	& > header
 		h1
@@ -77,15 +79,15 @@ $max-width: $mommyBearMaxWidth !global
 
 /* 9. CUSTOM LAYOUT & TYPOGRAPHY (Mummy bear)
  ----------------------------------------------------------------------------------------*/
-@include media($daddyBearMQ)
+@include breakpoint($daddyBearMQ)
 	$max-width: $daddyBearMaxWidth !global
 	#blog
-		@include outer-container()
+		+container($max-width)
 		& > header
-			@include span-columns(3)
+			+span(isolate 3 at 1 of 12)
 			h1
 				font-size: 0.75rem
-			padding: 0 $leading / 4
+			//padding: 0 $leading / 4
 			h2
 				text-align: right
 				margin:
@@ -106,17 +108,15 @@ $max-width: $mommyBearMaxWidth !global
 		nav
 			position: fixed
 			bottom: 1 * $leading
-			@include span-columns(2.5)
-			@include omega
+			+span(3 of 12)
 			margin: 0
 			ul
 				li.about
 					font-size: 0.7rem
 						
 		.articles
-			@include span-columns(8.75)
-			@include shift(0.25)
-			@include omega
+			+span(isolate 9 at 4 of 12 last)
+			+prefix(0.5 of 14)
 			article
 				p
 					text-align: left
