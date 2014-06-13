@@ -7,7 +7,7 @@ xml.rss :version => "2.0",  'xmlns:atom' => "http://www.w3.org/2005/Atom" do
 		xml.description "Andrew Pilsch's Blog"
 		xml.title "Andrew Pilsch"
 		xml.link "http://andrew.pilsch.com/blog/"
-		xml.tag! 'atom:link', "href" => "http://andrew.pilsch.com/blog/feed.xml", "rel" => "self",  :type => "application/rss+xml"
+		xml.tag! 'atom:link', "href" => "http://andrew.pilsch.com/blog/rss.xml", "rel" => "self",  :type => "application/rss+xml"
 		blog.articles[0..5].each do |article|
 			xml.item do
                 if article.data.has_key? "short_title"
@@ -18,8 +18,8 @@ xml.rss :version => "2.0",  'xmlns:atom' => "http://www.w3.org/2005/Atom" do
 				xml.link "http://andrew.pilsch.com" + article.url
 				xml.pubDate article.date.to_time.rfc822
 				xml.guid "http://andrew.pilsch.com" + article.url
-				xml.description article.summary + "\n <p>#{link_to "Read More", "http://andrew.pilsch.com" + article.url}</p>", "type" => "html"
-				xml.content article.body, "type" => "html"
+				xml.description article.summary + "\n <p>#{link_to "Read More", "http://andrew.pilsch.com" + article.url}</p>"#, "type" => "html"
+				#xml.content article.body, "type" => "html"
 			end
 		end
 	end
