@@ -4,7 +4,6 @@
 $max-width: $mommyBearMaxWidth !global
 
 +layout($susy)
-+border-box-sizing
 
 #blog
 	width: 100%
@@ -81,9 +80,10 @@ $max-width: $mommyBearMaxWidth !global
 /* 9. CUSTOM LAYOUT & TYPOGRAPHY (Mummy bear)
  ----------------------------------------------------------------------------------------*/
 @include breakpoint($daddyBearMQ)
-	$max-width: $daddyBearMaxWidth !global
+	+layout($daddyBearMaxWidth 12)
+	+border-box-sizing
 	#blog
-		+container($max-width)
+		+container
 		& > header
 			+span(3)
 			h1
