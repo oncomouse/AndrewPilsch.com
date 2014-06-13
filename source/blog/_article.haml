@@ -48,6 +48,13 @@
 				= link_to tag, tag_path(tag)
 		- if !short
 			#navigation
+				- if current_page.next_article
+					- if current_page.next_article.respond_to? :data and current_page.next_article.data['short_title']
+						- link_title = "#{current_page.next_article.data['short_title']}"
+					-else
+						- link_title = current_page.next_article.title
+					%p.future
+						= link_to(link_title, current_page.next_article.url)
 				-if current_page.previous_article
 					- if current_page.previous_article.respond_to? :data and current_page.previous_article.data['short_title']
 						- link_title = "#{current_page.previous_article.data['short_title']}"
@@ -56,13 +63,7 @@
 					%p.past
 						= link_to(link_title, current_page.previous_article.url)
 
-				- if current_page.next_article
-					- if current_page.next_article.respond_to? :data and current_page.next_article.data['short_title']
-						- link_title = "#{current_page.next_article.data['short_title']}"
-					-else
-						- link_title = current_page.next_article.title
-					%p.future
-						= link_to(link_title, current_page.next_article.url)
+				
 		- if !short and build?
 			#comments
 				%h2 Comments
