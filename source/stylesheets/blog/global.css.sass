@@ -92,8 +92,9 @@ strong
 a, a:visited
 	outline: none
 	color: $linkBaseColor
-	text-decoration: underline	
+	text-decoration: none	
 	@include transition(color .2s ease-out, background-color .2s ease-out) 
+	//text-shadow: 1px 1px 0 shade($linkBaseColor, 15%)
 
 	&:hover
 		outline: none
@@ -213,7 +214,7 @@ article
 					weight: $headerFontWeight
 					family: $headerFontFamily
 				line-height: $leading
-				margin-top: $leading
+				margin-top: $leading * 3
 			li
 				font-size: 0.9rem
 			.reversefootnote
@@ -295,7 +296,7 @@ article
 					margin-right: 4.5%
 					font-size: 0.85em
 					line-height: 1
-					&:last-child
+					&:list-child
 						margin-right: 0
 					
 		#social
