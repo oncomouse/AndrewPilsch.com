@@ -5,9 +5,9 @@ $max-width: $mommyBearMaxWidth !global
 
 +layout($susy)
 
-+layout($mommyBearMaxWidth)
 #blog
-	+container	
+	width: 100%
+	
 	& > header
 		h1
 			font-size: 1rem
@@ -81,7 +81,6 @@ $max-width: $mommyBearMaxWidth !global
  ----------------------------------------------------------------------------------------*/
 @include breakpoint($daddyBearMQ)
 	+layout($daddyBearMaxWidth 12)
-	+border-box-sizing
 	#blog
 		+container
 		& > header
