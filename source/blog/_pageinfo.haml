@@ -2,33 +2,44 @@
 %title
 	- if current_page
 		- if current_page.data.has_key? "title"
-			= current_page.data["title"]
+			- page_title =  current_page.data["title"]
 		- elsif
-			Andrew Pilsch Blog
+			- page_title = "Andrew Pilsch Blog"
 			- if !/index.html/.match(current_page.source_file)
-				= " - "
+				- page_title += " - "
 			- if current_page.respond_to? :title
-				= "#{current_page.title}"
+				- page_title +=  "#{current_page.title}"
 			-elsif current_page.data.has_key? "title"
-				= "#{current_page.data["title"]}"
+				- page_title +=  "#{current_page.data["title"]}"
 			- elsif current_page.source_file =~ /tag.html/
-				= "Articles Tagged \"#{tagname}\""
+				- page_title +=  "Articles Tagged \"#{tagname}\""
 			- elsif current_page.source_file =~ /calendar.html/
-				Archive for
+				- page_title += "Archive for"
 				- case page_type
 					- when 'day'
-						= Date.new(year, month, day).strftime('%b %e %Y')
+						- page_title +=  Date.new(year, month, day).strftime('%b %e %Y')
 					- when 'month'
-						= Date.new(year, month, 1).strftime('%b %Y')
+						- page_title +=  Date.new(year, month, 1).strftime('%b %Y')
 					- when 'year'
-						= year
+						- page_title +=  year
+	- else
+		= page_title "Andrew Pilsch Blog"
+	= page_title
 - page_description = nil
 -if current_page.data.has_key? "description"
 	- page_description = Haml::Filters::Markdown.render(current_page.data["description"])
 -elsif current_page.respond_to? :summary
 	- page_description = current_page.summary
 -if not page_description.nil?
-	%meta{ :name => "description", :content => "#{Nokogiri::HTML(page_description).text.gsub(/\'/,"\\'")}"}
+	%meta{ :name => "description", :content => "#{Nokogiri::HTML(page_description).text.gsub(/\'/,"\\'")}" }
+/ Open Graph Stuff
+%meta{ :name => "og:url", :content => "http://andrew.pilsch.com#{current_page.url}" }
+-if page_description.nil?
+	- page_description = "Andrew Pilsch's Blog"
+%meta{ :name => "og:description", :content=> page_description }
+%meta{ :name => "og:title", :content => page_title }
+%meta{ :name => "og:image", :content => "https://pbs.twimg.com/profile_images/2957834955/e050ad2c2d80708d2ede6a1287076d61_400x400.png"}
+
 %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0" }/
 %link{ :href => "/blog/feed.xml", :rel => "alternate", :type =>"application/atom+xml" }/
 / Load Fonts
