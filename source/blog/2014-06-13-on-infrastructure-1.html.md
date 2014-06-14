@@ -3,6 +3,8 @@ title: "On Infrastructure, pt. 1: Gods and Robots"
 short_title: On Infrastructure (1)
 date: 2014-06-13 18:20 UTC
 tags: "latour, rhetoric, #teamrhetoric"
+description: |+
+    Post responding to [Nathaniel Rivers's](http://www.nathanielrivers.org/) essay, "[Stranger Attractions: Infrastructure Made Alien in the work of Bruno Latour and Jenny Odell](http://www.themediares.com/pages/artifacts/stranger-attractions.html)" that tracks the question of Google Map's vision and the desire for empirical verification of existence in the era of the postmodern.
 ---
 
 I just finished [Nathaniel Rivers's](http://www.nathanielrivers.org/) essay, "[Stranger Attractions: Infrastructure Made Alien in the work of Bruno Latour and Jenny Odell](http://www.themediares.com/pages/artifacts/stranger-attractions.html)." I thought it was a good read on infrastructure, Latour, rhetoric, and art. Rivers is discussing [Jenny Odell](http://www.jennyodell.com/)'s artwork as a means of making strange the everyday landscape of infrastructure, the objects and artifacts that make possible our modernity. I have two ideas provoked by the essay. This one concerns the question of [Google Maps](https://www.google.com/maps/preview) and [God](http://god.com/). The other, which I'll get to tomorrow, concerns humans and distance in Bruno Latour.
