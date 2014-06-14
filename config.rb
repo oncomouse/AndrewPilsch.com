@@ -68,6 +68,19 @@ helpers do
     def image_link(source, options={})
         link_to(image_tag(source, options), image_path(source))
     end
+    
+    def blog_link(txt, key)
+        link_to txt, blog_url(key)
+    end
+    
+    def blog_url(key)
+        object = blog.articles.find{ |article| article.title.downcase.include? key.downcase or article.url.include? key}
+        if object.respond_to? :url
+            object.url
+        else
+            ""
+        end
+    end
 end
 
 class Middleman::Sitemap::Resource
