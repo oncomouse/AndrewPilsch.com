@@ -3,7 +3,7 @@
 	- if current_page
 		- if current_page.data.has_key? "title"
 			- page_title =  current_page.data["title"]
-		- elsif
+		- else
 			- page_title = "Andrew Pilsch Blog"
 			- if !/index.html/.match(current_page.source_file)
 				- page_title += " - "
@@ -21,7 +21,7 @@
 					- when 'month'
 						- page_title +=  Date.new(year, month, 1).strftime('%b %Y')
 					- when 'year'
-						- page_title +=  year
+						- page_title +=  year.to_s
 	- else
 		= page_title "Andrew Pilsch Blog"
 	= page_title
@@ -31,7 +31,8 @@
 -elsif current_page.respond_to? :summary
 	- page_description = current_page.summary
 -if not page_description.nil?
-	%meta{ :name => "description", :content => "#{Nokogiri::HTML(page_description).text.gsub(/\'/,"\\'")}" }
+	- page_description = Nokogiri::HTML(page_description).text.gsub(/\'/,"\\'")
+	%meta{ :name => "description", :content => "#{page_description}" }
 / Open Graph Stuff
 %meta{ :name => "og:url", :content => "http://andrew.pilsch.com#{current_page.url}" }
 -if page_description.nil?
