@@ -16,6 +16,10 @@
 		.line an Article
 	%nav
 		%ul
+			%li.tipue_search_bar_container
+				.tipue_search_bar
+					%form{:method=>"get", :action=>url_for("search.html")}
+						%input.tipue_search_input{:type=>"text", :name => "q", :placeholder => "Search"}
 			%li= link_to " ", "https://www.twitter.com/oncomouse", :class => "twitter", :alt => "Click to Find Me on Twitter"
 			%li= link_to " ", "https://www.github.com/oncomouse", :class => "github", :alt => "Click to Find Me On GitHub"
 			%li.about= link_to "About This Blog", "about.html", :alt => "Click to Read About this Blog"

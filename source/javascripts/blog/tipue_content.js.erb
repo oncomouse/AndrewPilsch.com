@@ -1,0 +1,14 @@
+var tipuesearch = {"pages": 
+<%
+	entries = [] 
+	blog.articles.each do |article|
+		entry = {
+			:title => article.title, 
+			:loc => article.url,
+			:text => article.body,
+			:tags => article.tags.join(",")
+		}
+		entries << entry
+	end
+%><%=entries.to_json %>
+};
