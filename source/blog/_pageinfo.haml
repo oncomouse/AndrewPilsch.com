@@ -22,6 +22,13 @@
 						= Date.new(year, month, 1).strftime('%b %Y')
 					- when 'year'
 						= year
+- page_description = nil
+-if current_page.data.has_key? "description"
+	- page_description = Haml::Filters::Markdown.render(current_page.data["description"])
+-elsif current_page.respond_to? :summary
+	- page_description = current_page.summary
+-if not page_description.nil?
+	%meta{ :name => "description", :content => "#{Nokogiri::HTML(page_description).text.gsub(/\'/,"\\'")}"}
 %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0" }/
 %link{ :href => "/blog/feed.xml", :rel => "alternate", :type =>"application/atom+xml" }/
 / Load Fonts
