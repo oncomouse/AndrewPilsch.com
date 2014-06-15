@@ -314,16 +314,17 @@ article
 			padding-left: $leading / 2
 		#navigation
 			margin-top: $leading * 2
+			
 			p
 				display: block
-				border-bottom: 1px solid $thingBorderColor
+
 				padding: $leading / 4 $leading / 2
 				margin: 0
 				text-align: center
-				&:first-child
-					border-top: 1px solid $thingBorderColor
 				&.past,&.future
-					padding-left: $leading * 2
+					border-top: 1px solid $thingBorderColor
+					border-bottom: 1px solid $thingBorderColor
+					width: 50%
 					&:before
 						display: block
 						text-transform: uppercase
@@ -331,22 +332,34 @@ article
 						margin-bottom: $leading / 2
 					&:after
 						display: block
-						float: left
+						
 						font-size: 4rem
 						color: $thingArrowColor
 						margin:
-							left: $leading * -2
 							top: $leading * -1
+				&.future:last-child, &.past:first-child
+					width: 100%
 				&.past
+					padding-left: $leading * 2
+					float: left
 					&:before
 						content: "Older Post"
 					&:after
+						float: left
 						content: "«"
+						margin:
+							left: $leading * -2
 				&.future
+					padding-right: $leading * 2
+					text-align: right
+					float: right
 					&:before
 						content: "Newer Post"
 					&:after
+						float: right
 						content: "»"
+						margin:
+							right: $leading * -2
 
 #navigation
 	text-align: center
