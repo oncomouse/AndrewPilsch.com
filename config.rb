@@ -17,6 +17,8 @@ end
 activate :syntax
 activate :similar
 
+set :site_deploy_root, 'http://andrew.pilsch.com'
+
 require "bourbon"
 require "susy"
 require "breakpoint"
@@ -163,5 +165,5 @@ activate :deploy do |deploy|
   deploy.method = :rsync
   deploy.user = "eschaton"
   deploy.host = "copland.dreamhost.com"
-  deploy.path = "~/www/andrew.pilsch.com/"
+  deploy.path = "~/www/#{config[:site_deploy_root]}/"
 end
