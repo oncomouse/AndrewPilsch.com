@@ -22,7 +22,9 @@
 		/ Basic Goldilocks Approach CSS structure
 		= stylesheet_link_tag("global.css", :media => "all", :rel => "stylesheet" )
 		= stylesheet_link_tag("layout.css", :media => "all and (min-width: 33.236em)", :rel => "stylesheet" )
-		= partial "javascript_resources"
+		
+		/ Load Modernizr
+		= javascript_include_tag("vendor/modernizr/modernizr.min.js")
 		
 	%body				
 		.content.clearfix
@@ -34,6 +36,7 @@
 		#help
 			:markdown
 				Click on any of the boxes marked with a "+" to read more.
+		= partial "javascript_resources"
 		:javascript
 			var _gaq = _gaq || [];
 			_gaq.push(['_setAccount', 'UA-660356-1']);
