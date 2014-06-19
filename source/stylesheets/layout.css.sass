@@ -85,26 +85,28 @@ h1,h2,h3,h4
 	min-height: $column_height
 	box-shadow: 2px 2px 2px 0px rgba($box_border_color, 0.5)
 
-.magnifier
+.expand:after
 	font:
 		family: $header_font_family
 		size: 20px
-		weight: 400
+		weight: 700
+	line-height: 20px
 	color: #FFF
 	width: 24px
-	height: 24px
+	height: 20px
 	background: $box_border_color
 	opacity: 0.9
 	position: absolute
 	top: 0
 	right: 0
 	z-index: 2
-
-	&:before
-		content: "+"
-		top: -2px
-		left: 6px
-		position: absolute
+	text-align: center
+	padding: 
+		top: 0px
+		bottom: 4px
+	content: "+"
+.expand.expanded:after
+	display: none
 
 .hideable
 	display: block
