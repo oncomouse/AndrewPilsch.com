@@ -105,8 +105,9 @@ h1,h2,h3,h4
 		top: 0px
 		bottom: 4px
 	content: "+"
+	+transition(opacity .2s ease-out)
 .expand.expanded:after
-	display: none
+	opacity: 0
 
 .hideable
 	display: block
