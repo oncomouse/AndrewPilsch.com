@@ -12,7 +12,7 @@
 			%h3.date
 				= article.date.strftime('%b %e, %Y')
 			%h3.author
-				= if article.data.has_key? 'author' then article.data.has_key? 'author' else "andrew" end
+				= if article.data.has_key? 'author' then article.data.has_key? 'author' else config[:blog_author].split(/\W+/).first end
 			%h3.comment
 				= link_to "Comment", article.url + "#disqus_thread"
 	.article_body

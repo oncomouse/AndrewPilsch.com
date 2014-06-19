@@ -116,6 +116,9 @@ activate :blog do |blog|
   # blog.day_link = ":year/:month/:day.html"
   blog.default_extension = ".md"
 
+  set :blog_title, "Andrew Pilsch Blog"
+  set :blog_author, "Andrew Pilsch"
+
   blog.tag_template = "blog/tag.html"
   blog.calendar_template = "blog/calendar.html"
 

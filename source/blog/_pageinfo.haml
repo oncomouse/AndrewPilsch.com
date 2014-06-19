@@ -1,19 +1,20 @@
 %meta{ :charset => "utf-8" }/
 %title
+	- page_title = config[:blog_title]
 	- if current_page
 		- if current_page.data.has_key? "title"
-			- page_title =  current_page.data["title"]
+			- page_title = current_page.data["title"]
 		- else
-			- page_title = "Andrew Pilsch Blog"
+			
 			- if !/index.html/.match(current_page.source_file)
 				- page_title += " - "
 			- if current_page.respond_to? :title
 				- page_title +=  "#{current_page.title}"
 			-elsif current_page.data.has_key? "title"
 				- page_title +=  "#{current_page.data["title"]}"
-			- elsif current_page.source_file =~ /tag.html/
+			- elsif current_page.source_file =~ /#{blog.options[:tag_template]}/
 				- page_title +=  "Articles Tagged \"#{tagname}\""
-			- elsif current_page.source_file =~ /calendar.html/
+			- elsif current_page.source_file =~ /#{blog.options[:calendar_template]}/
 				- page_title += "Archive for"
 				- case page_type
 					- when 'day'
@@ -22,8 +23,6 @@
 						- page_title +=  Date.new(year, month, 1).strftime('%b %Y')
 					- when 'year'
 						- page_title +=  year.to_s
-	- else
-		= page_title = "Andrew Pilsch Blog"
 	= page_title
 - page_description = nil
 -if current_page.data.has_key? "description"
