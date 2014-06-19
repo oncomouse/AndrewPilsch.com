@@ -1,6 +1,5 @@
 .col1.expand.box.research.article.no-excerpt{ :id => "#{article["id"]}" }
 	.hideable
-		.magnifier
 		%h2
 			- if article["status"].downcase == "forthcoming"
 				- unpublished_status = "Forthcoming Article"
@@ -15,6 +14,7 @@
 		- if article["short_description"]
 			:markdown
 				#{article["short_description"]}
+		.magnifier
 	.expandable
 		.mobile
 			%h2= article["published"] ? "Published Article" : unpublished_status

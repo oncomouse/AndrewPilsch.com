@@ -1,6 +1,5 @@
 .col2.expand.box.research.article.no-excerpt{ :id => "#{book["id"]}" }
 	.hideable
-		.magnifier
 		%h2= book["published"] ? "Published Book" : "Book In Progress"
 		%p
 			%img{ :src => "#{book["image"]}", :alt => "Image Illustrating the book, \"#{book["short_title"]}\"" }
@@ -8,6 +7,7 @@
 		- if book["short_description"]
 			:markdown
 				#{book["short_description"]}
+		.magnifier
 	.expandable
 		.mobile
 			%h2= book["published"] ? "Published Book" : "Book In Progress" 

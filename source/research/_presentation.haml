@@ -1,6 +1,5 @@
 .col1.expand.box.research.presentation.no-excerpt{ :id => "#{presentation["id"]}", "data-timestamp" => "#{presentation['date'].to_time.to_i}" }
 	.hideable
-		.magnifier
 		%h2= presentation["delivered"] ? "Recent Presentation" : "Upcoming Presentation"
 		%p
 			%img{ :src => "#{presentation["image"]}", :alt => "Image Illustrating the presentation, \"#{presentation["short_title"]}\"" }
@@ -8,6 +7,7 @@
 		- if presentation["short_description"]
 			:markdown
 				#{presentation["short_description"]}
+		.magnifier
 	.expandable
 		.mobile
 			%h2= presentation["delivered"] ? "Recent Presentation" : "Upcoming Presentation"
