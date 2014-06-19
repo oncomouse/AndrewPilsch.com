@@ -23,7 +23,7 @@
 					- when 'year'
 						- page_title +=  year.to_s
 	- else
-		= page_title "Andrew Pilsch Blog"
+		= page_title = "Andrew Pilsch Blog"
 	= page_title
 - page_description = nil
 -if current_page.data.has_key? "description"
