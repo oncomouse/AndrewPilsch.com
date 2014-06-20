@@ -419,28 +419,30 @@ h1,h2,h3,h4
 		top: 6.5em
 		bottom: 2em
 	width: 100%
-	h1
-		font:
-			size: 2.083333em
-			family: $header_font_family
-			weight: $header_font_weight
-		text:
-			transform: uppercase
-			align: center
-		margin: 0
 	a
 		color: black
 		&:hover
 			text:
 				decoration: none
-	.andrew
-		font:
-			size: 1.05em
-	.pilsch
-		font:
-			size: 1.3em
-		line:
-			height: 0.75em
+	h1
+		position: relative
+		text-align: center
+		font-size: 0.75rem
+		line-height: 1
+		text-transform: uppercase
+		margin-top: -0.75rem
+		.andrew,.pilsch,.blog
+			display: block
+		.andrew
+			font-size: 3.5em
+		.pilsch
+			font-size: 4.25em
+			margin-left: -0.17em
+			line-height: 0.7em
+		.blog
+			font-size: 3.75em
+			padding-left: 1.18em
+	
 
 #filters
 	display: block
