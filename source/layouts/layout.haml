@@ -23,8 +23,7 @@
 		= stylesheet_link_tag("global.css", :media => "all", :rel => "stylesheet" )
 		= stylesheet_link_tag("layout.css", :media => "all and (min-width: 33.236em)", :rel => "stylesheet" )
 		
-		/ Load Modernizr
-		= javascript_include_tag("vendor/modernizr/modernizr.min.js")
+		= partial "javascript_resources", :locals => { :place => "head" }
 		
 	%body				
 		.content.clearfix
@@ -36,7 +35,7 @@
 		#help
 			:markdown
 				Click on any of the boxes marked with a "+" to read more.
-		= partial "javascript_resources"
+		= partial "javascript_resources", :locals => { :place => "foot" }
 		:javascript
 			var _gaq = _gaq || [];
 			_gaq.push(['_setAccount', 'UA-660356-1']);
