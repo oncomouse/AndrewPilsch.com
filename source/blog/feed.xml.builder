@@ -21,7 +21,7 @@ xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
 			xml.published article.date.to_time.iso8601
 			xml.updated article.date.to_time.iso8601
 			xml.author { xml.name config[:blog_author] }
-			xml.summary ((if article.data.has_key? "description" then Haml::Filters::Markdown.render(article.data["description"]) else article.summary end) + link_to( "[...]", "#{config[:site_deploy_root]}#{article.url}")), "type" => "html"
+			xml.summary ((if article.data.has_key? "description" then Haml::Filters::Markdown.render(article.data["description"]+ link_to( "[...]", "#{config[:site_deploy_root]}#{article.url}")) else article.summary + link_to( "[...]", "#{config[:site_deploy_root]}#{article.url}") end)), "type" => "html"
 			xml.content article.body, "type" => "html"
 		end
 	end
