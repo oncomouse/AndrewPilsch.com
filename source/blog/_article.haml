@@ -7,7 +7,7 @@
 				- else
 					= link_to article.title, article
 			- else
-				= article.title.sub(/\:/, ":<br>")
+				= article.title.sub(/([:;])/, '\1<br>')
 		.metadata
 			%h3.date
 				= article.date.strftime('%b %e, %Y')
