@@ -267,6 +267,11 @@ img.center
 
 p.single-spaced
 	line-height: 1
+
+.content
+	+clearfix
+	width: 100%
+	margin: auto
 	
 /*
  Social Badges!
@@ -317,8 +322,9 @@ html.no-fontface
 						line:
 							height: 1.618em
 						display: inline
-			
-@import isotope
+
+		
+//@import isotope
 
 /* 6. CUSTOM LAYOUT & TYPOGRAPHY (Baby bear)
  ----------------------------------------------------------------------------------------*/
@@ -329,16 +335,11 @@ body
 h1,h2,h3,h4
 	text-align: center
 
-.content 
+.content
 	max-width: $baby_bear_column_size
-	margin: auto
 
 .no-mobile
 	display: none
-
-.content
-	width: 100%
-	margin: auto
 
 .col1, .col2, .col3, .col4
 	width: 100%
