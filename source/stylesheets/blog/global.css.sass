@@ -313,16 +313,19 @@ article
 		#navigation
 			margin-top: $leading * 2
 			+clearfix
+			position: relative
 			p
 				display: block
 
 				padding: $leading / 4 $leading / 2
 				margin: 0
 				text-align: center
+				position: relative
 				&.past,&.future
 					border-top: 1px solid $thingBorderColor
 					border-bottom: 1px solid $thingBorderColor
 					width: 50%
+					
 					&:before
 						display: block
 						text-transform: uppercase
@@ -330,11 +333,11 @@ article
 						margin-bottom: $leading / 2
 					&:after
 						display: block
-						
 						font-size: 4rem
 						color: $thingArrowColor
-						margin:
-							top: $leading * -1
+						position: absolute
+						top: $leading
+							
 				&.future:last-child, &.past:first-child
 					width: 100%
 				&.past
@@ -346,8 +349,7 @@ article
 					&:after
 						float: left
 						content: "«"
-						margin:
-							left: $leading * -2
+						left: 0
 				&.future
 					padding-right: $leading * 2
 					text-align: right
@@ -357,8 +359,8 @@ article
 					&:after
 						float: right
 						content: "»"
-						margin:
-							right: $leading * -2
+						right: 0
+				
 
 #navigation
 	text-align: center
