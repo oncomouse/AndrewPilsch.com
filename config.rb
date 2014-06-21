@@ -128,6 +128,7 @@ activate :blog do |blog|
 end
 
 activate :directory_indexes
+page "/blank.html", :directory_index => false
 #page "/blog/feed.xml", :layout => false
 #page "/blog/rss.xml", :layout => false
 
