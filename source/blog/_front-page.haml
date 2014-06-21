@@ -7,9 +7,8 @@
 - articles.each do |article|
 	-next if build? and !article.published?
 	.box.col1.blog{ "data-url" => article.url }
-		.hideable
-			%h2 Recent <br> Blog Post
-			%h1= article.title
-			- nokogiri = Nokogiri::HTML(article.body)
-			%p= nokogiri.css("img").first
-			%p= nokogiri.at('body').inner_text.scan(/[\w'’,.]+/)[0..50].join(" ") + " …"
+		%h2 Recent <br> Blog Post
+		%h1= article.title
+		- nokogiri = Nokogiri::HTML(article.body)
+		%p= nokogiri.css("img").first
+		%p= nokogiri.at('body').inner_text.scan(/[\w'’,.]+/)[0..50].join(" ") + " …"
