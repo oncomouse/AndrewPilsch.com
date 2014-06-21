@@ -1,33 +1,12 @@
-- @column_width = 240
-- @column_height = 240
-- @column_margin = 5
-- @column_border = 1
-- @column_padding = 5
-- @sidebar_width = 40
-- @sidebar_padding = 0
-- @col1 = @column_width
-- @col2 = @column_width * 2 + (@column_margin + @column_border + @column_padding) * 2
-- @col3 = @column_width * 3 + (@column_margin + @column_border + @column_padding) * 4
-- @col4 = @column_width * 4 + (@column_margin + @column_border + @column_padding) * 6
-- @colh1 = @column_height
-- @colh2 = @column_height * 2 + (@column_margin + @column_border + @column_padding) * 2
-- @colh3 = @column_height * 3 + (@column_margin + @column_border + @column_padding) * 4
-- @colh4 = @column_height * 4 + (@column_margin + @column_border + @column_padding) * 6
-
-#container
-	#sidebar
-	#content
-		#logo
-			%h1
-				%a{ :href=> "/"}
-					.andrew
-						Andrew
-					.pilsch
-						Pilsch
-				.courses
-					Courses
-		#filters
-			%h1 See Content Related To:
-			= partial "courses/course_filters"
-		#box_container
-			= partial "courses/print_courses"
+%header
+	#logo
+		%h1
+			%a{ :href=> "/"}
+				%span.andrew Andrew
+				%span.pilsch Pilsch
+			%span.courses Courses
+	#filters
+		%h1 See Content Related To:
+		= partial "courses/course_filters"
+#box_container
+	= partial "courses/print_courses"
