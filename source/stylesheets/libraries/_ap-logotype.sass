@@ -1,5 +1,8 @@
 @mixin logotype($size)
 	$logoFontWeight: 700 !default
+	$multiplier: 1
+	@if $size > 1rem
+		$multiplier: 0.5
 	position: relative
 	text-align: center
 	font-size: $size
@@ -12,7 +15,7 @@
 		font-size: 3.5em
 	.pilsch
 		font-size: 4.25em
-		margin-left: -0.17em
+		margin-left: -0.17em * $multiplier
 		line-height: 0.7em
 	.blog
 		font-size: 3.75em
