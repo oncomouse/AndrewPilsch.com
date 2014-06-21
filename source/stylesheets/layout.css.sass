@@ -175,8 +175,8 @@ h1,h2,h3,h4
 		margin:
 			left: 0 !important
 
-.cv_title
-	text-align: center
+#cv_title
+	display: none
 #cv
 	dl
 		margin:
@@ -186,25 +186,35 @@ h1,h2,h3,h4
 		font:
 			family: $header_font_family
 
-	.expandable h1
-		font:
-			size: 22pt
+		h1
+			font:
+				size: 22pt
 
-	.expandable h2
-		border-bottom: 1px solid $body_font_color
-		font:
-			size: 18pt
+		h2
+			border-bottom: 1px solid $body_font_color
+			font:
+				size: 18pt
 
-	.expandable .large
-		font-size: 0.9em
+		.large
+			font-size: 0.9em
 
-	.expandable p
-		margin:
-			left: 0.25in
+		p
+			margin:
+				left: 0.25in
 
-	.expandable p.indent
-		margin:
-			left: 0.5in
+		p.indent
+			margin:
+				left: 0.5in
+	
+		ul
+			list-style: none
+			margin:
+				left: 0.25in
+			padding: 0
+
+			li
+				margin:
+					bottom: 1em
 
 	.links p
 		text-align: left
@@ -213,15 +223,7 @@ h1,h2,h3,h4
 		font:
 			family: $body_font_family
 
-	.expandable ul
-		list-style: none
-		margin:
-			left: 0.25in
-		padding: 0
-
-	.expandable li
-		margin:
-			bottom: 1em
+	
 /* End CV Code */
 
 /* Begin Gallery CSS Code */
