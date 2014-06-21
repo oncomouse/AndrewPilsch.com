@@ -5,7 +5,7 @@ function start_isotope() {
 }
 
 function start_mobile_isotope() {
-	$('#logo').css('margin-top', $('#filters').height() + 16);
+	$('#logo').css('margin-top', $('#filters').outerHeight() + 16);
 	
 	$isotope_container = $('#box_container');
 	imagesLoaded($isotope_container, function() {
