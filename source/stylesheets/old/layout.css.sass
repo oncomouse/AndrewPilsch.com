@@ -1,0 +1,278 @@
+/* 8. CUSTOM LAYOUT & TYPOGRAPHY (Daddy bear)
+ ----------------------------------------------------------------------------------------*/
+@import bear_defaults
+
+$top_padding: 40px
+
+body
+	padding: $line_height / 2
+		bottom: 4em
+
+.content
+	max-width: 100%
+
+.no-mobile
+	display: block
+
+div.mobile
+	display: none
+
+#box_container, .expandable
+	width: 100%
+	position: relative
+	top: 10px
+
+#cv_html
+	display: block
+
+header
+	position: relative
+	min-height: 100px
+	margin-top: 15px
+
+#logo
+	width: $col1
+	margin:
+		bottom: 0
+		top: 0
+	position: absolute
+	top: 0
+	left: 0
+
+#filters
+	display: block
+	position: absolute
+	top: 0
+	left:  $minimum_content_width
+	ul
+		margin: 1em 0 2em 0
+		text-align: left
+		li
+			margin: 0 0.3em
+	h1
+		margin: 0 5px
+
+#column_width, #large_box_size, #column_padding
+	display: none
+#column_width
+	width: $minimum_content_width
+#large_box_size
+	height: $column_height * 2 + ($column_margin + $column_border + $column_padding) * 2
+	width: $col3
+#column_padding
+	width: $column_padding
+
+.col1
+	width: $col1
+.col2
+	width: $col2
+.col3
+	width: $col3
+.col4
+	width: $col4
+
+h1,h2,h3,h4
+	text-align: left
+
+#cv_tile
+	margin:
+		bottom: 3em
+
+.box
+	margin: $column_margin
+	padding: $column_padding
+	border: $column_border solid $box_border_color
+	min-height: $column_height
+	box-shadow: 2px 2px 2px 0px rgba($box_border_color, 0.5)
+	position: relative
+
+.expand:after
+	font:
+		family: $header_font_family
+		size: 20px
+		weight: 700
+	line-height: 20px
+	color: #FFF
+	width: 24px
+	height: 20px
+	background: $box_border_color
+	opacity: 0.9
+	position: absolute
+	top: 0
+	right: 0
+	z-index: 2
+	text-align: center
+	padding: 
+		top: 0px
+		bottom: 4px
+	content: "+"
+	+transition(opacity .2s ease-out)
+.expand.expanded:after
+	opacity: 0
+
+.hideable, .blog
+	display: block
+	cursor: pointer
+
+	h1
+		font:
+			size: 1.1em
+
+	// We do this to account for the "+" sign:
+	h2
+		width: 93%
+
+	img
+		display: block
+		margin: 0 auto
+
+.expandable
+	display: none
+	overflow: auto !important
+	width: $expandable_width - 9
+	height: $expandable_height - 10
+	padding: 5px 4px
+	margin:
+		left: 1px
+		right: 2px
+
+#teaching_button,#research_button
+	@include button(simple, $button_selected_color)
+	font:
+		size: 1.2em
+		family: $header_font_family
+
+#help.displayed
+	opacity: 0.0
+	display: block
+	z-index: 4
+	position: fixed
+	bottom: 0
+	right: 0
+	left: 0
+	background: rgba(0, 0, 0, 0.4)
+	color: white
+	padding: 0.5em
+	font:
+		weight: $header_font_weight
+		size: 1.5em
+		family: $header_font_family
+	text:
+		align: right
+	p
+		margin: 0
+		padding: 0
+
+/* End Content CSS Code */
+
+/* CV Code */
+.center
+	margin: 0 auto
+
+.center_text, .centered
+	text-align: center
+	p
+		margin:
+			left: 0 !important
+
+#cv_title
+	display: none
+#cv
+	dl
+		margin:
+			left: 0.25in
+
+	.expandable
+		font:
+			family: $header_font_family
+
+		h1
+			font:
+				size: 22pt
+
+		h2
+			border-bottom: 1px solid $body_font_color
+			font:
+				size: 18pt
+
+		small
+			font-size: 0.9em
+			float: right
+			display: block
+
+		p
+			margin:
+				left: 0.25in
+
+		p.indent
+			margin:
+				left: 0.5in
+	
+		ul
+			list-style: none
+			margin:
+				left: 0.25in
+			padding: 0
+
+			li
+				margin:
+					bottom: 1em
+
+	.links p
+		text-align: left
+		margin:
+			left: 0
+		font:
+			family: $body_font_family
+
+	
+/* End CV Code */
+
+/* Begin Gallery CSS Code */
+
+$gallery_width: 640px
+$image_width: 200px
+
+dl.gallery
+	width: $gallery_width
+
+	dt
+		float: right
+		width: ($gallery_width - $image_width)
+		padding:
+			bottom: 1em
+		text:
+			align: center
+		font:
+			size: 1em
+			family: $header_font_family
+			weight: bold
+
+	dd.image
+		width: $image_width
+		float: left
+		margin: 0
+		padding:
+			left: 6px
+		text:
+			align: center
+
+	dd.description
+		@include clearfix
+		float: right
+		width: ($gallery_width - $image_width)
+		padding:
+			bottom: 1.7em
+
+	dd a img
+		border: 1px solid $body_font_color
+
+	dd a:hover img
+		border: 1px solid $body_link_color
+
+/* End Gallery CSS Code */
+
+/* 9. CUSTOM LAYOUT & TYPOGRAPHY (Mummy bear)
+ ----------------------------------------------------------------------------------------*/
+//@media screen and (min-width: 30em) and (max-width: 60em)
+	

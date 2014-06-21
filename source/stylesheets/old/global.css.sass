@@ -27,6 +27,8 @@
 
 @import bear_defaults
 
+//@include establish-baseline
+
 /* 1. RESET
  ----------------------------------------------------------------------------------------*/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video 
@@ -37,13 +39,114 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	font: inherit
 	vertical-align: baseline
 
-@import "normalize"
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section 
+	display: block
+
+
+/* HTML 5 Boilerplate Reset Code
+ */
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+
+form
+	margin: 0
+fieldset
+	border: 0
+	margin: 0
+	padding: 0
+
+// Indicate that 'label' will shift focus to the associated form element
+label
+	cursor: pointer
+
+/*
+  1. Correct color not inheriting in IE6/7/8/9
+  2. Correct alignment displayed oddly in IE6/7
+  */
+
+legend
+	border: 0
+	*margin-left: -7px
+	padding: 0
+
+/*
+  1. Correct font-size not inheriting in all browsers
+  2. Remove margins in FF3/4 S5 Chrome
+  3. Define consistent vertical alignment display in all browsers
+  */
+
+button, input, select, textarea
+	font-size: 100%
+	margin: 0
+	vertical-align: baseline
+	*vertical-align: middle
+
+/*
+  1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
+  */
+
+button, input
+	line-height: normal
+
+/*
+  1. Display hand cursor for clickable form elements
+  2. Allow styling of clickable form elements in iOS
+  3. Correct inner spacing displayed oddly in IE7 (doesn't effect IE6)
+  4. Consistent box sizing and appearance
+  */
+
+button
+	cursor: pointer
+	-webkit-appearance: button
+	*overflow: visible
+
+input
+	&[type="button"], &[type="reset"], &[type="submit"]
+		cursor: pointer
+		-webkit-appearance: button
+		*overflow: visible
+	&[type="checkbox"], &[type="radio"]
+		@include box-sizing(border-box)
+		padding: 0
+	&[type="search"]
+		-webkit-appearance: textfield
+		@include box-sizing(content-box)
+		&::-webkit-search-decoration
+			-webkit-appearance: none
+
+/*
+  Remove inner padding and border in FF3/4: h5bp.com/l
+  */
+
+button::-moz-focus-inner, input::-moz-focus-inner
+	border: 0
+	padding: 0
+
+/*
+  1. Remove default vertical scrollbar in IE6/7/8/9
+  2. Allow only vertical resizing
+  */
+
+textarea
+	overflow: auto
+	vertical-align: top
+	resize: vertical
+
+
+*
+	@include box-sizing(border-box)
+	z-index: auto
+	text-rendering: optimizeLegibility
+	text-shadow: 0 0 1px transparent
 
 /* 2. ROOT
  ----------------------------------------------------------------------------------------*/
 html  
 	overflow-y: scroll
-	background: $bodyBackgroundColor
+	background: $body_background_color
 
 /* /ht Ethan Marcotte - http://front.ie/l8rJaA */
 img, embed, object, video
@@ -56,53 +159,59 @@ img, embed, object, video
  * Also: hot pink!
  */
 ::-moz-selection
-	background: $textSelectionColor
+	background: $text_selection_color
 	color: #fff
 	text-shadow: none 
 
 ::selection 
-	background: $textSelectionColor
+	background: $text_selection_color //#fe57a1
 	color: #fff
 	text-shadow: none 
 
-*, *:before, *:after
-	@include box-sizing(border-box)
-	z-index: auto
-	text-rendering: optimizeLegibility
-	text-shadow: 0 0 1px transparent
-
 /* 3. CORE TYPOGRAPHY
  ----------------------------------------------------------------------------------------*/
-@import libraries/typebase
-
 body 
 	font:
-		family: $bodyFontFamily
+		family: $body_font_family
 		size: 1em
-		weight: $bodyFontWeight
-	line-height: $leading
-	color: $bodyFontColor
+		weight: $body_font_weight
+	line-height: $line_height
+	color: $body_font_color
 
 
 h1, h2, h3, h4, h5, h6 
 	font:
-		family: $headerFontFamily
-		weight: $headerFontWeight
+		family: $header_font_family
+		weight: $header_font_weight
+
+p, ul, ol, dl, blockquote 
+	font-size: 1em
+	line-height: $line_height
+	margin-bottom: 1.0em
+	max-width: 100%
+
+ul
+	list-style-type: disc
+	margin-left: $line_height 
+
+ol
+	list-style-type: decimal
+	margin-left: $line_height 
+
+li
+	margin-bottom: 0.59em
 	
 dl
-	margin-top: $leading
+	margin-top: $line_height
 	dt,dd
-		line-height: $leading
+		line-height: $line_height
 	dd
-		margin-left: $leading
+		margin-left: $line_height
 
 nav ul, nav ol
 	list-style: none
 	margin: 0
 	padding: 0
-
-ol,ul
-	margin-left: $leading
 
 b, strong
 	font-weight: 700 
@@ -115,13 +224,13 @@ small
 /* 4. LINKS
  ----------------------------------------------------------------------------------------*/
 a
-	color: $bodyLinkColor
+	color: $body_link_color
 	text-decoration: none
 	outline: none
 	@include transition(color .2s ease-out, background-color .2s ease-out)
 a:hover
 	text-decoration: none
-	color: $bodyLinkHoverColor
+	color: $body_link_hover_color
 a:active, a:focus
 	outline: none
 
@@ -129,6 +238,28 @@ a:active, a:focus
 /* 5. GLOBAL LAYOUT & GLOBAL CUSTOM TYPOGRAPHY
  ----------------------------------------------------------------------------------------*/
 
+h1
+	font-size: 2.5em
+	line-height: 1
+	margin-bottom: 0.5em
+h2
+	font-size: 1.618em
+	margin-bottom: 0.75em
+h3
+	font-size: 1.2em
+	line-height: 1
+	margin-bottom: 1em
+h4
+	font-size: 1.2em
+	line-height: 1.25
+	margin-bottom: 1.25em
+h5
+	font-size: 1em
+	font-weight: bold
+	margin-bottom: 1.5em
+h6
+	font-size: 1em
+	font-weight: bold
 
 img.center
 	display: block
@@ -138,43 +269,14 @@ p.single-spaced
 	line-height: 1
 
 .content
+	+clearfix
 	width: 100%
 	margin: auto
-	+clearfix
 
 #filters
-	font:
-		size: 0.9rem
-	h1
-		font:
-			size: 1em
-			weight: bold
-		line-height: 1
 	ul
 		+clearfix
-		list-style: none
-		padding: 0
-		filter: none
-		text-shadow: none
-		font:
-			family: $headerFontFamily
-			weight: 400
-		li
-			display: inline-block
-			
-			a	
-				padding: 0.5em
-				@include button(simple, $buttonColor)
-				font-size: 1em
-				&.selected
-					@include button(simple, $buttonSelectedColor)
-					font-size: 1em
-			
 
-.box
-	background: $bodyBackgroundColor
-	&.expanded
-		z-index: 2
 /*
  Social Badges!
  */
@@ -183,8 +285,8 @@ p.single-spaced
 	text:
 		align: center
 	a
-		color: $socialBadgeColor
-		background: $socialBadgeBackgroundColor
+		color: $social_badge_color
+		background: $social_badge_background_color
 		display: inline-block
 		font:
 			size: 60px
@@ -194,13 +296,13 @@ p.single-spaced
 			align: center
 		vertical:
 			align: middle
-		border: 1px solid $socialBadgeBorderColor
+		border: 1px solid $social_badge_border_color
 		width: 1.15em
 		
 		&:hover
-			color: $socialBadgeHoverColor
+			color: $social_badge_hover_color
 			background:
-				color: $socialBadgeHoverBackgroundColor
+				color: $social_badge_hover_background_color
 		
 		&:first-child
 			margin:
@@ -235,6 +337,9 @@ html.no-fontface
 							height: 1.618em
 						display: inline
 
+		
+//@import isotope
+
 /* 6. CUSTOM LAYOUT & TYPOGRAPHY (Baby bear)
  ----------------------------------------------------------------------------------------*/
 body
@@ -244,33 +349,17 @@ body
 h1,h2,h3,h4
 	text-align: center
 
-.content 
-	max-width: $babyBearColumnSize
+.content
+	max-width: $baby_bear_column_size
 
 .no-mobile
 	display: none
-
-.hideable
-	display: none
-
-.box
-	h1, h2
-		line-height: 1
-	h2 + h1
-		margin-top: 0
 
 .col1, .col2, .col3, .col4
 	width: 100%
 
 	img
 		max-width: 90%
-		display: block
-		margin: 0 auto
-
-.mobile
-	& + h1
-		margin-top: $leading / 2
-		line-height: 1
 
 .colh1
 	height: $colh1
@@ -281,11 +370,54 @@ h1,h2,h3,h4
 .colh4
 	height: $colh4
 
+.box
+	padding: 10px
+	background: $body_background_color
+
+	h1.cv
+		font:
+			size: 120pt
+			weight: 400
+		text:
+			transform: uppercase
+			align: center
+		margin: 0
+
+.hideable
+	display: none
+.expandable
+	display: block
+
+/* Scrollbar code borrowed from http://forrst.com */
+.expandable::-webkit-scrollbar
+	width: 8px
+	height: 8px
+	border-left: solid 1 #000
+.expandable::-webkit-scrollbar-button:start:decrement
+	display: block
+	height: 0.3em
+.expandable::-webkit-scrollbar-button:end:increment
+	display: block
+	height: 0.3em
+.expandable::-webkit-scrollbar-button:vertical:increment
+	background-color: transparent
+.expandable::-webkit-scrollbar-track:enabled
+	background-color: transparent//rgba(113,112,107,0.1)
+	-webkit-border-radius: 0.3em
+.expandable::-webkit-scrollbar-thumb:vertical
+	height: 50px
+	background-color: rgba(0,0,0,.2)
+	-webkit-border-radius: 0.3em
+.expandable::-webkit-scrollbar-thumb:horizontal
+	width: 50px
+	background-color: rgba(0,0,0,.2)
+	-webkit-border-radius: 0.3em
+
 #logo
 	float: none
 	margin:
-		top: 6.5rem
-		bottom: 2rem
+		top: 6.5em
+		bottom: 2em
 	width: 100%
 	a
 		color: black
@@ -295,33 +427,54 @@ h1,h2,h3,h4
 	h1
 		+logotype(0.75rem)
 		margin-top: -0.75rem
+	
 
 #filters
 	display: block
 	position: fixed
-	background: $bodyBackgroundColor
+	background: $body_background_color
 	top: 0
 	left: 0
 	right: 0
+	font:
+		size: 0.9em
 	z-index: 3
+	
 	h1
+		font:
+			size: 1em
+			weight: bold
 		margin: 0
-			top: $leading / 2
+			top: 0.5em
 
 	ul
+		list-style: none
+		padding: 0
 		margin: 0
-			top: $leading 
-			bottom: $leading / 2
+			top: 1em
+			bottom: 0.5em
+		filter: none
+		text-shadow: none
+		font:
+			family: $header_font_family
+			weight: 400
 		text-align: center
 		li
-			margin: $leading / 32
+			display: inline-block
+			margin: 0.3em
+			a	
+				padding: 0.5em
+				@include button(simple, $button_color)
+				font-size: 1em
+				&.selected
+					@include button(simple, $button_selected_color)
+					font-size: 1em
+
 #cv_html
 	display: none
-	
 #cv
-	.links
-		margin-top: $leading
-		text-align: center
+	.links p
+		text-align: left
 
 div.mobile
 	display: block
