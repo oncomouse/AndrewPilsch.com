@@ -2,15 +2,17 @@
 	/ Load Modernizr
 	= javascript_include_tag("vendor/modernizr/modernizr.min.js")
 - else
+	-if t
+		= javascript_include_tag("application.js")
+	- else
+		- # Dynamically load the contents of the javascripts/libraries directory:
+		- libraries = Dir.entries(Dir.pwd + "/" + config.source + "/" + config.js_dir + "/libraries").select { |x| !(x =~ /^\./) }
 
-	- # Dynamically load the contents of the javascripts/libraries directory:
-	- libraries = Dir.entries(Dir.pwd + "/" + config.source + "/" + config.js_dir + "/libraries").select { |x| !(x =~ /^\./) }
-
-	/ Javascript vendor libraries
-	= javascript_include_tag("//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js", "vendor/imagesloaded/imagesloaded.min.js", "vendor/jquery/plugins/jquery.isotope.min.js", "#{javascript_path("plugins.js")}")
-	/ Local libraries
-	- libraries.map do |x|
-		= javascript_include_tag("libraries/#{x}")
+		/ Javascript vendor libraries
+		= javascript_include_tag("//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js", "vendor/imagesloaded/imagesloaded.min.js", "vendor/jquery/plugins/jquery.isotope.min.js", "#{javascript_path("plugins.js")}")
+		/ Local libraries
+		- libraries.map do |x|
+			= javascript_include_tag("libraries/#{x}")
 
 	:javascript	
 		// Load polyfills and init isotope. All file paths are generated at build by Middleman:
