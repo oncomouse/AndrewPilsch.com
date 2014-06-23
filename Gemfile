@@ -9,6 +9,7 @@ gem "oj"
 gem "middleman-deploy"
 gem "middleman-syntax"
 gem 'middleman-blog-similar'
+gem 'middleman-smusher'
 gem 'levenshtein-ffi', :require => 'levenshtein'
 gem "bourbon"
 #gem "neat"
