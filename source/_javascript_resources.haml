@@ -2,7 +2,7 @@
 	/ Load Modernizr
 	= javascript_include_tag("vendor/modernizr/modernizr.min.js")
 - else
-	-if t
+	-if true
 		= javascript_include_tag("application.js")
 	- else
 		- # Dynamically load the contents of the javascripts/libraries directory:
