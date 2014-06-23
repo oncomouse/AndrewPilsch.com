@@ -1,6 +1,6 @@
 ---
 title: Summoning the Nonhuman
-date: 2014-06-21 18:45 UTC
+date: 2014-06-23 18:45 UTC
 tags: latour, rhetoric, magic, inhumanism
 published: false
 ---
