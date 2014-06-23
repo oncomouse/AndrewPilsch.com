@@ -1,5 +1,5 @@
-@import "breakpoint"
-@import "bear_defaults"
+@import breakpoint
+@import global
 
 +breakpoint(33.236em)
 	<%= IO.readlines("source/stylesheets/layout.css.sass").map{|x| if x =~ /^\@import/ then "" else x end }.join("\n\t")%>
