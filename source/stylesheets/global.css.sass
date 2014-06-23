@@ -45,6 +45,10 @@ html
 	overflow-y: scroll
 	background: $bodyBackgroundColor
 
+body
+	padding: $leading / 2
+		bottom: 4 * $leading
+
 /* /ht Ethan Marcotte - http://front.ie/l8rJaA */
 img, embed, object, video
 	max-width: 100% 
@@ -88,7 +92,12 @@ h1, h2, h3, h4, h5, h6
 	font:
 		family: $headerFontFamily
 		weight: $headerFontWeight
-	
+
+h1
+	font-size: 2.5rem
+h2
+	font-size: 1.8rem
+
 dl
 	margin-top: $leading
 	dt,dd
@@ -237,9 +246,6 @@ html.no-fontface
 
 /* 6. CUSTOM LAYOUT & TYPOGRAPHY (Baby bear)
  ----------------------------------------------------------------------------------------*/
-body
-	padding: 0
-		bottom: 4em
 
 h1,h2,h3,h4
 	text-align: center
