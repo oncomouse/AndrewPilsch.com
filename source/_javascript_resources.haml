@@ -27,8 +27,11 @@
 					nope: "#{javascript_path 'vendor/jquery/plugins/jquery.hashchange.min.js'}"
 				},
 				{
-					test: Modernizr.borderradius,
-					nope: "#{javascript_path("vendor/selectivizr/selectivizr.min.js")}"
+					test: $('html').hasClass('ie6') || $('html').hasClass('ie7') || $('html').hasClass('ie8'),
+					yep: [ 
+						"#{javascript_path("vendor/selectivizr/selectivizr.min.js")}",
+						"#{javascript_path("vendor/rem-unit/rem.min.js")}"
+					]
 				},
 				{
 					test: Modernizr.mq("all and (min-width: 33.236em)"),
