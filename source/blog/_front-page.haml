@@ -11,4 +11,4 @@
 		%h1= article.title
 		- nokogiri = Nokogiri::HTML(article.body)
 		%p= nokogiri.css("img").first
-		%p= nokogiri.at('body').inner_text.scan(/[\w'’,.]+/)[0..50].join(" ") + " …"
+		%p= nokogiri.at('body').inner_text.scan(/[\w'’,.()]+/)[0..50].join(" ") + " …"
