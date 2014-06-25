@@ -1,3327 +1,0 @@
-3.2.1 (Media Mark)
-9a7041d1152a8ef58a3e32d0e7fbff792c848adc
-o:Sass::Tree::RootNode	:@template"XÇ$black: 		#000000
-$navy_blue: 	#000080
-$dark_blue: 	#0000c8
-$blue: 			#0000ff
-$stratos: 		#000741
-$swamp: 		#001b1c
-$resolution_blue: #002387
-$deep_fir: 		#002900
-$burnham: 		#002e20
-$international_klein_blue: #002fa7
-$prussian_blue: #003153
-$midnight_blue: #003366
-$smalt: 		#003399
-$deep_teal: 	#003532
-$cyprus: 		#003e40
-$kaitoke_green: #004620
-$cobalt: 		#0047ab
-$crusoe: 		#004816
-$sherpa_blue: 	#004950
-$endeavour: 	#0056a7
-$camarone: 		#00581a
-$science_blue: 	#0066cc
-$blue_ribbon: 	#0066ff
-$tropical_rain_forest: #00755e
-$allports: 		#0076a3
-$deep_cerulean: #007ba7
-$lochmara: 		#007ec7
-$azure_radiance: #007fff
-$teal: 			#008080
-$bondi_blue: 	#0095b6
-$pacific_blue: 	#009dc4
-$persian_green: #00a693
-$jade: 			#00a86b
-$caribbean_green: #00cc99
-$robins_egg_blue: #00cccc
-$green: 		#00ff00
-$spring_green: 	#00ff7f
-$cyan_aqua: 	#00ffff
-$blue_charcoal: #010d1a
-$midnight: 		#011635
-$holly: 		#011d13
-$daintree: 		#012731
-$cardin_green: 	#01361c
-$county_green: 	#01371a
-$astronaut_blue: #013e62
-$regal_blue: 	#013f6a
-$aqua_deep: 	#014b43
-$orient: 		#015e85
-$blue_stone: 	#016162
-$fun_green: 	#016d39
-$pine_green: 	#01796f
-$blue_lagoon: 	#017987
-$deep_sea: 		#01826b
-$green_haze: 	#01a368
-$english_holly: #022d15
-$sherwood_green: #02402c
-$congress_blue: #02478e
-$evening_sea: 	#024e46
-$bahama_blue: 	#026395
-$observatory: 	#02866f
-$cerulean: 		#02a4d3
-$tangaroa: 		#03163c
-$green_vogue: 	#032b52
-$mosque: 		#036a6e
-$midnight_moss: #041004
-$black_pearl: 	#041322
-$blue_whale: 	#042e4c
-$zuccini: 		#044022
-$teal_blue: 	#044259
-$deep_cove: 	#051040
-$gulf_blue: 	#051657
-$venice_blue: 	#055989
-$watercourse: 	#056f57
-$catalina_blue: #062a78
-$tiber: 		#063537
-$gossamer: 		#069b81
-$niagara: 		#06a189
-$tarawera: 		#073a50
-$jaguar: 		#080110
-$black_bean: 	#081910
-$deep_sapphire: #082567
-$elf_green: 	#088370
-$bright_turquoise: 	#08e8de
-$downriver: 	#092256
-$palm_green: 	#09230f
-$madison: 		#09255d
-$bottle_green: 	#093624
-$deep_sea_green: #095859
-$salem: 		#097f4b
-$black_russian: #0a001c
-$dark_fern: 	#0a480d
-$japanese_laurel: #0a6906
-$atoll: 		#0a6f75
-$cod_gray: 		#0b0b0b
-$marshland: 	#0b0f08
-$gordons_green: #0b1107
-$black_forest: 	#0b1304
-$san_felix: 	#0b6207
-$malachite: 	#0bda51
-$ebony: 		#0c0b1d
-$woodsmoke: 	#0c0d0f
-$racing_green: 	#0c1911
-$surfie_green: 	#0c7a79
-$blue_chill: 	#0c8990
-$black_rock: 	#0d0332
-$bunker: 		#0d1117
-$aztec: 		#0d1c19
-$bush: 			#0d2e1c
-$cinder: 		#0e0e18
-$firefly: 		#0e2a30
-$torea_bay: 	#0f2d9e
-$vulcan: 		#10121d
-$green_waterloo: #101405
-$eden: 			#105852
-$arapawa: 		#110c6c
-$ultramarine: 	#120a8f
-$elephant: 		#123447
-$jewel: 		#126b40
-$diesel: 		#130000
-$asphalt: 		#130a06
-$blue_zodiac: 	#13264d
-$parsley: 		#134f19
-$nero: 			#140600
-$tory_blue: 	#1450aa
-$bunting: 		#151f4c
-$denim: 		#1560bd
-$genoa: 		#15736b
-$mirage: 		#161928
-$hunter_green: 	#161d10
-$big_stone: 	#162a40
-$celtic: 		#163222
-$timber_green: 	#16322c
-$gable_green: 	#163531
-$pine_tree: 	#171f04
-$chathams_blue: #175579
-$deep_forest_green: #182d09
-$blumine: 		#18587a
-$palm_leaf: 	#19330e
-$nile_blue: 	#193751
-$fun_blue: 		#1959a8
-$lucky_point: 	#1a1a68
-$mountain_meadow: #1ab385
-$tolopea: 		#1b0245
-$haiti: 		#1b1035
-$deep_koamaru: 	#1b127b
-$acadia: 		#1b1404
-$seaweed: 		#1b2f11
-$biscay: 		#1b3162
-$matisse: 		#1b659d
-$crowshead: 	#1c1208
-$rangoon_green: #1c1e13
-$persian_blue: 	#1c39bb
-$everglade: 	#1c402e
-$elm: 			#1c7c7d
-$green_pea: 	#1d6142
-$creole: 		#1e0f04
-$karaka: 		#1e1609
-$el_paso: 		#1e1708
-$cello: 		#1e385b
-$te_papa_green: #1e433c
-$dodger_blue: 	#1e90ff
-$eastern_blue: 	#1e9ab0
-$night_rider: 	#1f120f
-$java: 			#1fc2c2
-$jacksons_purple: #20208d
-$cloud_burst: 	#202e54
-$blue_dianne: 	#204852
-$eternity: 		#211a0e
-$deep_blue: 	#220878
-$forest_green: 	#228b22
-$mallard: 		#233418
-$violet: 		#240a40
-$kilamanjaro: 	#240c02
-$log_cabin: 	#242a1d
-$black_olive: 	#242e16
-$green_house: 	#24500f
-$graphite: 		#251607
-$cannon_black: 	#251706
-$port_gore: 	#251f4f
-$shark: 		#25272c
-$green_kelp: 	#25311c
-$curious_blue: 	#2596d1
-$paua: 			#260368
-$paris_m: 		#26056a
-$wood_bark: 	#261105
-$gondola: 		#261414
-$steel_gray: 	#262335
-$ebony_clay: 	#26283b
-$bay_of_many: 	#273a81
-$plantation: 	#27504b
-$eucalyptus: 	#278a5b
-$oil: 			#281e15
-$astronaut: 	#283a77
-$mariner: 		#286acd
-$violent_violet: #290c5e
-$bastille: 		#292130
-$zeus: 			#292319
-$charade: 		#292937
-$jelly_bean: 	#297b9a
-$jungle_green: 	#29ab87
-$cherry_pie: 	#2a0359
-$coffee_bean: 	#2a140e
-$baltic_sea: 	#2a2630
-$turtle_green: 	#2a380b
-$cerulean_blue: #2a52be
-$sepia_black: 	#2b0202
-$valhalla: 		#2b194f
-$heavy_metal: 	#2b3228
-$blue_gem: 		#2c0e8c
-$revolver: 		#2c1632
-$bleached_cedar: #2c2133
-$lochinvar: 	#2c8c84
-$mikado: 		#2d2510
-$outer_space: 	#2d383a
-$st_tropaz: 	#2d569b
-$jacaranda: 	#2e0329
-$jacko_bean: 	#2e1905
-$rangitoto: 	#2e3222
-$rhino: 		#2e3f62
-$sea_green: 	#2e8b57
-$scooter: 		#2ebfd4
-$onion: 		#2f270e
-$governor_bay: 	#2f3cb3
-$sapphire: 		#2f519e
-$spectra: 		#2f5a57
-$casal: 		#2f6168
-$melanzane: 	#300529
-$cocoa_brown: 	#301f1e
-$woodrush: 		#302a0f
-$san_juan: 		#304b6a
-$turquoise: 	#30d5c8
-$eclipse: 		#311c17
-$pickled_bluewood: #314459
-$azure: 		#315ba1
-$calypso: 		#31728d
-$paradiso: 		#317d82
-$persian_indigo: #32127a
-$blackcurrant: 	#32293a
-$mine_shaft: 	#323232
-$stromboli: 	#325d52
-$bilbao: 		#327c14
-$astral: 		#327da0
-$christalle: 	#33036b
-$thunder: 		#33292f
-$shamrock: 		#33cc99
-$tamarind: 		#341515
-$mardi_gras: 	#350036
-$valentino: 	#350e42
-$jagger: 		#350e57
-$tuna: 			#353542
-$chambray: 		#354e8c
-$martinique: 	#363050
-$tuatara: 		#363534
-$waiouru: 		#363c0d
-$ming: 			#36747d
-$la_palma: 		#368716
-$chocolate: 	#370202
-$clinker: 		#371d09
-$brown_tumbleweed: #37290e
-$birch: 		#373021
-$oracle: 		#377475
-$blue_diamond: 	#380474
-$grape: 		#381a51
-$dune: 			#383533
-$oxford_blue: 	#384555
-$clover: 		#384910
-$limed_spruce: 	#394851
-$dell: 			#396413
-$toledo: 		#3a0020
-$sambuca: 		#3a2010
-$jacarta: 		#3a2a6a
-$william: 		#3a686c
-$killarney: 	#3a6a47
-$keppel: 		#3ab09e
-$temptress: 	#3b000b
-$aubergine: 	#3b0910
-$jon: 			#3b1f1f
-$treehouse: 	#3b2820
-$amazon: 		#3b7a57
-$boston_blue: 	#3b91b4
-$windsor: 		#3c0878
-$rebel: 		#3c1206
-$meteorite: 	#3c1f76
-$dark_ebony: 	#3c2005
-$camouflage: 	#3c3910
-$bright_gray: 	#3c4151
-$cape_cod: 		#3c4443
-$lunar_green: 	#3c493a
-$bean__: 		#3d0c02
-$bistre: 		#3d2b1f
-$goblin: 		#3d7d52
-$kingfisher_daisy: #3e0480
-$cedar: 		#3e1c14
-$english_walnut: #3e2b23
-$black_marlin:	#3e2c1c
-$ship_gray: 	#3e3a44
-$pelorous: 		#3eabbf
-$bronze: 		#3f2109
-$cola: 			#3f2500
-$madras: 		#3f3002
-$minsk: 		#3f307f
-$cabbage_pont: 	#3f4c3a
-$tom_thumb: 	#3f583b
-$mineral_green: #3f5d53
-$puerto_rico: 	#3fc1aa
-$harlequin: 	#3fff00
-$brown_pod: 	#401801
-$cork: 			#40291d
-$masala: 		#403b38
-$thatch_green: 	#403d19
-$fiord: 		#405169
-$viridian: 		#40826d
-$chateau_green: #40a860
-$ripe_plum: 	#410056
-$paco: 			#411f10
-$deep_oak: 		#412010
-$merlin: 		#413c37
-$gun_powder: 	#414257
-$east_bay: 		#414c7d
-$royal_blue: 	#4169e1
-$ocean_green: 	#41aa78
-$burnt_maroon: 	#420303
-$lisbon_brown: 	#423921
-$faded_jade: 	#427977
-$scarlet_gum: 	#431560
-$iroko: 		#433120
-$armadillo: 	#433e37
-$river_bed: 	#434c59
-$green_leaf: 	#436a0d
-$barossa: 		#44012d
-$morocco_brown: #441d00
-$mako: 			#444954
-$kelp: 			#454936
-$san_marino: 	#456cac
-$picton_blue: 	#45b1e8
-$loulou: 		#460b41
-$crater_brown: 	#462425
-$gray_asparagus: #465945
-$steel_blue: 	#4682b4
-$rustic_red: 	#480404
-$bulgarian_rose: #480607
-$clairvoyant: 	#480656
-$cocoa_bean: 	#481c1c
-$woody_brown: 	#483131
-$taupe: 		#483c32
-$van_cleef: 	#49170c
-$brown_derby: 	#492615
-$metallic_bronze: #49371b
-$verdun_green: 	#495400
-$blue_bayoux: 	#496679
-$bismark: 		#497183
-$bracken: 		#4a2a04
-$deep_bronze: 	#4a3004
-$mondo: 		#4a3c30
-$tundora: 		#4a4244
-$gravel: 		#4a444b
-$trout: 		#4a4e5a
-$pigment_indigo: #4b0082
-$nandor: 		#4b5d52
-$saddle: 		#4c3024
-$abbey: 		#4c4f56
-$blackberry: 	#4d0135
-$cab_sav: 		#4d0a18
-$indian_tan: 	#4d1e01
-$cowboy: 		#4d282d
-$livid_brown: 	#4d282e
-$rock: 			#4d3833
-$punga: 		#4d3d14
-$bronzetone: 	#4d400f
-$woodland: 		#4d5328
-$mahogany: 		#4e0606
-$bossanova: 	#4e2a5a
-$matterhorn: 	#4e3b41
-$bronze_olive: 	#4e420c
-$mulled_wine: 	#4e4562
-$axolotl: 		#4e6649
-$wedgewood: 	#4e7f9e
-$shakespeare: 	#4eabd1
-$honey_flower: 	#4f1c70
-$daisy_bush: 	#4f2398
-$indigo: 		#4f69c6
-$fern_green: 	#4f7942
-$fruit_salad: 	#4f9d5d
-$apple: 		#4fa83d
-$mortar: 		#504351
-$kashmir_blue: 	#507096
-$cutty_sark: 	#507672
-$emerald: 		#50c878
-$emperor: 		#514649
-$chalet_green: 	#516e3d
-$como: 			#517c66
-$smalt_blue: 	#51808f
-$castro: 		#52001f
-$maroon_oak: 	#520c17
-$gigas: 		#523c94
-$voodoo: 		#533455
-$victoria: 		#534491
-$hippie_green: 	#53824b
-$heath: 		#541012
-$judge_gray: 	#544333
-$fuscous_gray: 	#54534d
-$vida_loca: 	#549019
-$cioccolato: 	#55280c
-$saratoga: 		#555b10
-$finlandia: 	#556d56
-$havelock_blue: #5590d9
-$fountain_blue: #56b4be
-$spring_leaves: #578363
-$saddle_brown: 	#583401
-$scarpa_flow: 	#585562
-$cactus: 		#587156
-$hippie_blue: 	#589aaf
-$wine_berry: 	#591d35
-$brown_bramble: #592804
-$congo_brown: 	#593737
-$millbrook: 	#594433
-$waikawa_gray: 	#5a6e9c
-$horizon: 		#5a87a0
-$jambalaya: 	#5b3013
-$bordeaux: 		#5c0120
-$mulberry_wood: #5c0536
-$carnaby_tan: 	#5c2e01
-$comet: 		#5c5d75
-$redwood: 		#5d1e0f
-$don_juan: 		#5d4c51
-$chicago: 		#5d5c58
-$verdigris: 	#5d5e37
-$dingley: 		#5d7747
-$breaker_bay: 	#5da19f
-$kabul: 		#5e483e
-$hemlock: 		#5e5d3b
-$irish_coffee: 	#5f3d26
-$mid_gray: 		#5f5f6e
-$shuttle_gray: 	#5f6672
-$aqua_forest: 	#5fa777
-$tradewind: 	#5fb3ac
-$horses_neck: 	#604913
-$smoky: 		#605b73
-$corduroy: 		#606e68
-$danube: 		#6093d1
-$espresso: 		#612718
-$eggplant: 		#614051
-$costa_del_sol: #615d30
-$glade_green: 	#61845f
-$buccaneer: 	#622f30
-$quincy: 		#623f2d
-$butterfly_bush: #624e9a
-$west_coast: 	#625119
-$finch: 		#626649
-$patina: 		#639a8f
-$fern: 			#63b76c
-$blue_violet: 	#6456b7
-$dolphin: 		#646077
-$storm_dust: 	#646463
-$siam: 			#646a54
-$nevada: 		#646e75
-$cornflower_blue: #6495ed
-$viking: 		#64ccdb
-$rosewood: 		#65000b
-$cherrywood: 	#651a14
-$purple_heart: 	#652dc1
-$fern_frond: 	#657220
-$willow_grove: 	#65745d
-$hoki: 			#65869f
-$pompadour: 	#660045
-$purple: 		#660099
-$tyrian_purple: #66023c
-$dark_tan: 		#661010
-$silver_tree: 	#66b58f
-$bright_green: 	#66ff00
-$screamin_green: #66ff66
-$black_rose: 	#67032d
-$scampi: 		#675fa6
-$ironside_gray: #676662
-$viridian_green: #678975
-$christi: 		#67a712
-$nutmeg_wood_finish: #683600
-$zambezi: 		#685558
-$salt_box: 		#685e6e
-$tawny_port: 	#692545
-$finn: 			#692d54
-$scorpion: 		#695f62
-$lynch: 		#697e9a
-$spice: 		#6a442e
-$himalaya: 		#6a5d1b
-$soya_bean: 	#6a6051
-$hairy_heath: 	#6b2a14
-$royal_purple: 	#6b3fa0
-$shingle_fawn: 	#6b4e31
-$dorado: 		#6b5755
-$bermuda_gray: 	#6b8ba2
-$olive_drab: 	#6b8e23
-$eminence: 		#6c3082
-$turquoise_blue: #6cdae7
-$lonestar: 		#6d0101
-$pine_cone: 	#6d5e54
-$dove_gray: 	#6d6c6c
-$juniper: 		#6d9292
-$gothic: 		#6d92a1
-$red_oxide: 	#6e0902
-$moccaccino: 	#6e1d14
-$pickled_bean: 	#6e4826
-$dallas: 		#6e4b26
-$kokoda: 		#6e6d57
-$pale_sky: 		#6e7783
-$cafe_royale: 	#6f440c
-$flint: 		#6f6a61
-$highland: 		#6f8e63
-$limeade: 		#6f9d02
-$downy: 		#6fd0c5
-$persian_plum: 	#701c1c
-$sepia: 		#704214
-$antique_bronze: #704a07
-$ferra: 		#704f50
-$coffee: 		#706555
-$slate_gray: 	#708090
-$cedar_wood_finish:	#711a00
-$metallic_copper: 	#71291d
-$affair: 		#714693
-$studio: 		#714ab2
-$tobacco_brown: #715d47
-$yellow_metal: 	#716338
-$peat: 			#716b56
-$olivetone: 	#716e10
-$storm_gray: 	#717486
-$sirocco: 		#718080
-$aquamarine_blue: #71d9e2
-$venetian_red: 	#72010f
-$old_copper: 	#724a2f
-$go_ben: 		#726d4e
-$raven: 		#727b89
-$seance: 		#731e8f
-$raw_umber: 	#734a12
-$kimberly: 		#736c9f
-$crocodile: 	#736d58
-$crete: 		#737829
-$xanadu: 		#738678
-$spicy_mustard: #74640d
-$limed_ash: 	#747d63
-$rolling_stone: #747d83
-$blue_smoke: 	#748881
-$laurel: 		#749378
-$mantis: 		#74c365
-$russett: 		#755a57
-$deluge: 		#7563a8
-$cosmic: 		#76395d
-$blue_marguerite: #7666c6
-$lima: 			#76bd17
-$sky_blue: 		#76d7ea
-$dark_burgundy: #770f05
-$crown_of_thorns: #771f1f
-$walnut: 		#773f1a
-$pablo: 		#776f61
-$pacifika: 		#778120
-$oxley: 		#779e86
-$pastel_green: 	#77dd77
-$japanese_maple: #780109
-$mocha: 		#782d19
-$peanut: 		#782f16
-$camouflage_green: #78866b
-$wasabi: 		#788a25
-$ship_cove: 	#788bba
-$sea_nymph: 	#78a39c
-$roman_coffee: 	#795d4c
-$old_lavender: 	#796878
-$rum: 			#796989
-$fedora: 		#796a78
-$sandstone: 	#796d62
-$spray: 		#79deec
-$siren: 		#7a013a
-$fuchsia_blue: 	#7a58c1
-$boulder: 		#7a7a7a
-$wild_blue_yonder: #7a89b8
-$de_york: 		#7ac488
-$red_beech: 	#7b3801
-$cinnamon: 		#7b3f00
-$yukon_gold: 	#7b6608
-$tapa: 			#7b7874
-$waterloo_: 	#7b7c94
-$flax_smoke: 	#7b8265
-$amulet: 		#7b9f80
-$asparagus: 	#7ba05b
-$kenyan_copper: #7c1c05
-$pesto: 		#7c7631
-$topaz: 		#7c778a
-$concord: 		#7c7b7a
-$jumbo: 		#7c7b82
-$trendy_green: 	#7c881a
-$gumbo: 		#7ca1a6
-$acapulco: 		#7cb0a1
-$neptune: 		#7cb7bb
-$pueblo: 		#7d2c14
-$bay_leaf: 		#7da98d
-$malibu: 		#7dc8f7
-$bermuda: 		#7dd8c6
-$copper_canyon: #7e3a15
-$claret: 		#7f1734
-$peru_tan: 		#7f3a02
-$falcon: 		#7f626d
-$mobster: 		#7f7589
-$moody_blue: 	#7f76d3
-$chartreuse: 	#7fff00
-$aquamarine: 	#7fffd4
-$maroon: 		#800000
-$rose_bud_cherry: #800b47
-$falu_red: 		#801818
-$red_robin: 	#80341f
-$vivid_violet: 	#803790
-$russet: 		#80461b
-$friar_gray: 	#807e79
-$olive: 		#808000
-$gray: 			#808080
-$gulf_stream: 	#80b3ae
-$glacier: 		#80b3c4
-$seagull: 		#80ccea
-$nutmeg: 		#81422c
-$spicy_pink: 	#816e71
-$empress: 		#817377
-$spanish_green: #819885
-$sand_dune: 	#826f65
-$gunsmoke: 		#828685
-$battleship_gray: #828f72
-$merlot: 		#831923
-$shadow: 		#837050
-$chelsea_cucumber: #83aa5d
-$monte_carlo:	#83d0c6
-$plum: 			#843179
-$granny_smith: 	#84a0a0
-$chetwode_blue: #8581d9
-$bandicoot: 	#858470
-$bali_hai: 		#859faf
-$half_baked: 	#85c4cc
-$red_devil: 	#860111
-$lotus: 		#863c3c
-$ironstone: 	#86483c
-$bull_shot: 	#864d1e
-$rusty_nail: 	#86560a
-$bitter: 		#868974
-$regent_gray: 	#86949f
-$disco: 		#871550
-$americano: 	#87756e
-$hurricane: 	#877c7b
-$oslo_gray: 	#878d91
-$sushi: 		#87ab39
-$spicy_mix: 	#885342
-$kumera: 		#886221
-$suva_gray: 	#888387
-$avocado: 		#888d65
-$camelot: 		#893456
-$solid_pink: 	#893843
-$cannon_pink: 	#894367
-$makara: 		#897d6d
-$burnt_umber: 	#8a3324
-$true_v: 		#8a73d6
-$clay_creek: 	#8a8360
-$monsoon: 		#8a8389
-$stack: 		#8a8f8a
-$jordy_blue: 	#8ab9f1
-$electric_violet: #8b00ff
-$monarch: 		#8b0723
-$corn_harvest: 	#8b6b0b
-$olive_haze: 	#8b8470
-$schooner: 		#8b847e
-$natural_gray: 	#8b8680
-$mantle: 		#8b9c90
-$portage: 		#8b9fee
-$envy: 			#8ba690
-$cascade: 		#8ba9a5
-$riptide: 		#8be6d8
-$cardinal_pink: #8c055e
-$mule_fawn: 	#8c472f
-$potters_clay: 	#8c5738
-$trendy_pink: 	#8c6495
-$paprika: 		#8d0226
-$sanguine_brown: #8d3d38
-$tosca: 		#8d3f3f
-$cement: 		#8d7662
-$granite_green: #8d8974
-$manatee: 		#8d90a1
-$polo_blue: 	#8da8cc
-$red_berry: 	#8e0000
-$rope: 			#8e4d1e
-$opium: 		#8e6f70
-$domino: 		#8e775e
-$mamba: 		#8e8190
-$nepal: 		#8eabc1
-$pohutukawa: 	#8f021c
-$el_salva: 		#8f3e33
-$korma: 		#8f4b0e
-$squirrel: 		#8f8176
-$vista_blue: 	#8fd6b4
-$burgundy: 		#900020
-$old_brick: 	#901e1e
-$hemp: 			#907874
-$almond_frost: 	#907b71
-$sycamore: 		#908d39
-$sangria: 		#92000a
-$cumin: 		#924321
-$beaver: 		#926f5b
-$stonewall: 	#928573
-$venus: 		#928590
-$medium_purple: #9370db
-$cornflower: 	#93ccea
-$algae_green: 	#93dfb8
-$copper_rust: 	#944747
-$arrowtown: 	#948771
-$scarlett: 		#950015
-$strikemaster: 	#956387
-$mountain_mist: #959396
-$carmine: 		#960018
-$brown: 		#964b00
-$leather: 		#967059
-$purple_mountains_majesty: #9678b6
-$lavender_purple: #967bb6
-$pewter: 		#96a8a1
-$summer_green: 	#96bbab
-$au_chico: 		#97605d
-$wisteria: 		#9771b5
-$atlantis: 		#97cd2d
-$vin_rouge: 	#983d61
-$lilac_bush: 	#9874d3
-$bazaar: 		#98777b
-$hacienda: 		#98811b
-$pale_oyster: 	#988d77
-$mint_green: 	#98ff98
-$fresh_eggplant: #990066
-$violet_eggplant: #991199
-$tamarillo: 	#991613
-$totem_pole: 	#991b07
-$copper_rose: 	#996666
-$amethyst: 		#9966cc
-$mountbatten_pink: #997a8d
-$blue_bell: 	#9999cc
-$prairie_sand: 	#9a3820
-$toast: 		#9a6e61
-$gurkha: 		#9a9577
-$olivine: 		#9ab973
-$shadow_green: 	#9ac2b8
-$oregon: 		#9b4703
-$lemon_grass: 	#9b9e8f
-$stiletto: 		#9c3336
-$hawaiian_tan: 	#9d5616
-$gull_gray: 	#9dacb7
-$pistachio: 	#9dc209
-$granny_smith_apple: #9de093
-$anakiwa: 		#9de5ff
-$chelsea_gem: 	#9e5302
-$sepia_skin: 	#9e5b40
-$sage: 			#9ea587
-$citron: 		#9ea91f
-$rock_blue: 	#9eb1cd
-$morning_glory: #9edee0
-$cognac: 		#9f381d
-$reef_gold: 	#9f821c
-$star_dust: 	#9f9f9c
-$santas_gray: 	#9fa0b1
-$sinbad: 		#9fd7d3
-$feijoa: 		#9fdd8c
-$tabasco: 		#a02712
-$buttered_rum: 	#a1750d
-$hit_gray: 		#a1adb5
-$citrus: 		#a1c50a
-$aqua_island: 	#a1dad7
-$water_leaf: 	#a1e9de
-$flirt: 		#a2006d
-$rouge: 		#a23b6c
-$cape_palliser: #a26645
-$gray_chateau: 	#a2aab3
-$edward: 		#a2aeab
-$pharlap: 		#a3807b
-$amethyst_smoke: #a397b4
-$blizzard_blue: #a3e3ed
-$delta: 		#a4a49d
-$wistful: 		#a4a6d3
-$green_smoke: 	#a4af6e
-$jazzberry_jam: #a50b5e
-$zorba: 		#a59b91
-$bahia: 		#a5cb0c
-$roof_terracotta: #a62f20
-$paarl: 		#a65529
-$barley_corn: 	#a68b5b
-$donkey_brown: 	#a69279
-$dawn: 			#a6a29a
-$mexican_red: 	#a72525
-$luxor_gold: 	#a7882c
-$rich_gold: 	#a85307
-$reno_sand: 	#a86515
-$coral_tree: 	#a86b6b
-$dusty_gray: 	#a8989b
-$dull_lavender: #a899e6
-$tallow: 		#a8a589
-$bud: 			#a8ae9c
-$locust: 		#a8af8e
-$norway: 		#a8bd9f
-$chinook: 		#a8e3bd
-$gray_olive: 	#a9a491
-$aluminium: 	#a9acb6
-$cadet_blue: 	#a9b2c3
-$schist: 		#a9b497
-$tower_gray: 	#a9bdbf
-$perano: 		#a9bef2
-$opal: 			#a9c6c2
-$night_shadz:	#aa375a
-$fire: 			#aa4203
-$muesli: 		#aa8b5b
-$sandal: 		#aa8d6f
-$shady_lady: 	#aaa5a9
-$logan: 		#aaa9cd
-$spun_pearl: 	#aaabb7
-$regent_st_blue: #aad6e6
-$magic_mint: 	#aaf0d1
-$lipstick: 		#ab0563
-$royal_heath: 	#ab3472
-$sandrift: 		#ab917a
-$cold_purple: 	#aba0d9
-$bronco: 		#aba196
-$limed_oak: 	#ac8a56
-$east_side: 	#ac91ce
-$lemon_ginger: 	#ac9e22
-$napa: 			#aca494
-$hillary: 		#aca586
-$cloudy: 		#aca59f
-$silver_chalice: #acacac
-$swamp_green: 	#acb78e
-$spring_rain: 	#accbb1
-$conifer: 		#acdd4d
-$celadon: 		#ace1af
-$mandalay: 		#ad781b
-$casper: 		#adbed1
-$moss_green: 	#addfad
-$padua: 		#ade6c4
-$green_yellow: 	#adff2f
-$hippie_pink: 	#ae4560
-$desert: 		#ae6020
-$bouquet: 		#ae809e
-$medium_carmine: #af4035
-$apple_blossom: #af4d43
-$brown_rust: 	#af593e
-$driftwood: 	#af8751
-$alpine: 		#af8f2c
-$lucky: 		#af9f1c
-$martini: 		#afa09e
-$bombay: 		#afb1b8
-$pigeon_post: 	#afbdd9
-$cadillac: 		#b04c6a
-$matrix: 		#b05d54
-$tapestry: 		#b05e81
-$mai_tai: 		#b06608
-$del_rio: 		#b09a95
-$powder_blue: 	#b0e0e6
-$inch_worm: 	#b0e313
-$bright_red: 	#b10000
-$vesuvius: 		#b14a0b
-$pumpkin_skin: 	#b1610b
-$santa_fe: 		#b16d52
-$teak: 			#b19461
-$fringy_flower: #b1e2c1
-$ice_cold: 		#b1f4e7
-$shiraz: 		#b20931
-$biloba_flower: #b2a1ea
-$tall_poppy: 	#b32d29
-$fiery_orange: 	#b35213
-$hot_toddy: 	#b38007
-$taupe_gray: 	#b3af95
-$la_rioja: 		#b3c110
-$well_read: 	#b43332
-$blush: 		#b44668
-$jungle_mist: 	#b4cfd3
-$turkish_rose: 	#b57281
-$lavender: 		#b57edc
-$mongoose: 		#b5a27f
-$olive_green: 	#b5b35c
-$jet_stream: 	#b5d2ce
-$cruise: 		#b5ecdf
-$hibiscus: 		#b6316c
-$thatch: 		#b69d98
-$heathered_gray: #b6b095
-$eagle: 		#b6baa4
-$spindle: 		#b6d1ea
-$gum_leaf: 		#b6d3bf
-$rust: 			#b7410e
-$muddy_waters: 	#b78e5c
-$sahara: 		#b7a214
-$husk: 			#b7a458
-$nobel: 		#b7b1b1
-$heather: 		#b7c3d0
-$madang: 		#b7f0be
-$milano_red: 	#b81104
-$copper: 		#b87333
-$gimblet: 		#b8b56a
-$green_spring: 	#b8c1b1
-$celery: 		#b8c25d
-$sail: 			#b8e0f9
-$chestnut: 		#b94e48
-$crail: 		#b95140
-$marigold: 		#b98d28
-$wild_willow: 	#b9c46a
-$rainee: 		#b9c8ac
-$guardsman_red: #ba0101
-$rock_spray: 	#ba450c
-$bourbon: 		#ba6f1e
-$pirate_gold: 	#ba7f03
-$nomad: 		#bab1a2
-$submarine: 	#bac7c9
-$charlotte: 	#baeef9
-$medium_red_violet:	#bb3385
-$brandy_rose: 	#bb8983
-$rio_grande: 	#bbd009
-$surf: 			#bbd7c1
-$powder_ash: 	#bcc9c2
-$tuscany: 		#bd5e2e
-$quicksand: 	#bd978e
-$silk: 			#bdb1a8
-$malta: 		#bdb2a1
-$chatelle: 		#bdb3c7
-$lavender_gray: #bdbbd7
-$french_gray: 	#bdbdc6
-$clay_ash: 		#bdc8b3
-$loblolly: 		#bdc9ce
-$french_pass: 	#bdedfd
-$london_hue: 	#bea6c3
-$pink_swan: 	#beb5b7
-$fuego: 		#bede0d
-$rose_of_sharon: #bf5500
-$tide: 			#bfb8b0
-$blue_haze: 	#bfbed8
-$silver_sand: 	#bfc1c2
-$key_lime_pie: 	#bfc921
-$ziggurat: 		#bfdbe2
-$lime: 			#bfff00
-$thunderbird: 	#c02b18
-$mojo: 			#c04737
-$old_rose: 		#c08081
-$silver: 		#c0c0c0
-$pale_leaf: 	#c0d3b9
-$pixie_green: 	#c0d8b6
-$tia_maria: 	#c1440e
-$fuchsia_pink: 	#c154c1
-$buddha_gold: 	#c1a004
-$bison_hide: 	#c1b7a4
-$tea: 			#c1bab0
-$gray_suit: 	#c1becd
-$sprout: 		#c1d7b0
-$sulu: 			#c1f07c
-$indochine: 	#c26b03
-$twine: 		#c2955d
-$cotton_seed: 	#c2bdb6
-$pumice: 		#c2cac4
-$jagged_ice: 	#c2e8e5
-$maroon_flush: 	#c32148
-$indian_khaki: 	#c3b091
-$pale_slate: 	#c3bfc1
-$gray_nickel: 	#c3c3bd
-$periwinkle_gray: #c3cde6
-$tiara: 		#c3d1d1
-$tropical_blue: #c3ddf9
-$cardinal: 		#c41e3a
-$fuzzy_wuzzy_brown: #c45655
-$orange_roughy: #c45719
-$mist_gray: 	#c4c4bc
-$coriander: 	#c4d0b0
-$mint_tulip: 	#c4f4eb
-$mulberry: 		#c54b8c
-$nugget: 		#c59922
-$tussock: 		#c5994b
-$sea_mist: 		#c5dbca
-$yellow_green: 	#c5e17a
-$brick_red: 	#c62d42
-$contessa: 		#c6726b
-$oriental_pink: #c69191
-$roti: 			#c6a84b
-$ash: 			#c6c3b5
-$kangaroo: 		#c6c8bd
-$las_palmas: 	#c6e610
-$monza: 		#c7031e
-$red_violet: 	#c71585
-$coral_reef: 	#c7bca2
-$melrose: 		#c7c1ff
-$cloud: 		#c7c4bf
-$ghost: 		#c7c9d5
-$pine_glade: 	#c7cd90
-$botticelli: 	#c7dde5
-$antique_brass: #c88a65
-$lilac: 		#c8a2c8
-$hokey_pokey: 	#c8a528
-$lily: 			#c8aabf
-$laser: 		#c8b568
-$edgewater: 	#c8e3d7
-$piper: 		#c96323
-$pizza: 		#c99415
-$light_wisteria: #c9a0dc
-$rodeo_dust: 	#c9b29b
-$sundance: 		#c9b35b
-$earls_green: 	#c9b93b
-$silver_rust: 	#c9c0bb
-$conch: 		#c9d9d2
-$reef: 			#c9ffa2
-$aero_blue: 	#c9ffe5
-$flush_mahogany: #ca3435
-$turmeric: 		#cabb48
-$paris_white: 	#cadcd4
-$bitter_lemon: 	#cae00d
-$skeptic: 		#cae6da
-$viola: 		#cb8fa9
-$foggy_gray: 	#cbcab6
-$green_mist: 	#cbd3b0
-$nebula: 		#cbdbd6
-$persian_red: 	#cc3333
-$burnt_orange: 	#cc5500
-$ochre: 		#cc7722
-$puce: 			#cc8899
-$thistle_green: #cccaa8
-$periwinkle: 	#ccccff
-$electric_lime: #ccff00
-$tenn: 			#cd5700
-$chestnut_rose: #cd5c5c
-$brandy_punch: 	#cd8429
-$onahau: 		#cdf4ff
-$sorrell_brown: #ceb98f
-$cold_turkey: 	#cebaba
-$yuma: 			#cec291
-$chino: 		#cec7a7
-$eunry: 		#cfa39d
-$old_gold: 		#cfb53b
-$tasman: 		#cfdccf
-$surf_crest: 	#cfe5d2
-$humming_bird: 	#cff9f3
-$scandal: 		#cffaf4
-$red_stage: 	#d05f04
-$hopbush: 		#d06da1
-$meteor: 		#d07d12
-$perfume: 		#d0bef8
-$prelude: 		#d0c0e5
-$tea_green: 	#d0f0c0
-$geebung: 		#d18f1b
-$vanilla: 		#d1bea8
-$soft_amber: 	#d1c6b4
-$celeste: 		#d1d2ca
-$mischka: 		#d1d2dd
-$pear: 			#d1e231
-$hot_cinnamon: 	#d2691e
-$raw_sienna: 	#d27d46
-$careys_pink: 	#d29eaa
-$tan: 			#d2b48c
-$deco: 			#d2da97
-$blue_romance: 	#d2f6de
-$gossip: 		#d2f8b0
-$sisal: 		#d3cbba
-$swirl: 		#d3cdc5
-$charm: 		#d47494
-$clam_shell: 	#d4b6af
-$straw: 		#d4bf8d
-$akaroa: 		#d4c4a8
-$bird_flower: 	#d4cd16
-$iron: 			#d4d7d9
-$geyser: 		#d4dfe2
-$hawkes_blue: 	#d4e2fc
-$grenadier: 	#d54600
-$can_can: 		#d591a4
-$whiskey: 		#d59a6f
-$winter_hazel: 	#d5d195
-$granny_apple: 	#d5f6e3
-$my_pink: 		#d69188
-$tacha: 		#d6c562
-$moon_raker: 	#d6cef6
-$quill_gray: 	#d6d6d1
-$snowy_mint: 	#d6ffdb
-$new_york_pink: #d7837f
-$pavlova: 		#d7c498
-$fog: 			#d7d0ff
-$valencia: 		#d84437
-$japonica: 		#d87c63
-$thistle: 		#d8bfd8
-$maverick: 		#d8c2d5
-$foam: 			#d8fcfa
-$cabaret: 		#d94972
-$burning_sand: 	#d99376
-$cameo: 		#d9b99b
-$timberwolf: 	#d9d6cf
-$tana: 			#d9dcc1
-$link_water: 	#d9e4f5
-$mabel: 		#d9f7ff
-$cerise: 		#da3287
-$flame_pea: 	#da5b38
-$bamboo: 		#da6304
-$red_damask: 	#da6a41
-$orchid: 		#da70d6
-$copperfield: 	#da8a67
-$golden_grass: 	#daa520
-$zanah: 		#daecd6
-$iceberg: 		#daf4f0
-$oyster_bay: 	#dafaff
-$cranberry: 	#db5079
-$petite_orchid: #db9690
-$di_serria: 	#db995e
-$alto: 			#dbdbdb
-$frosted_mint: 	#dbfff8
-$crimson: 		#dc143c
-$punch: 		#dc4333
-$galliano: 		#dcb20c
-$blossom: 		#dcb4bc
-$wattle: 		#dcd747
-$westar: 		#dcd9d2
-$moon_mist: 	#dcddcc
-$caper: 		#dcedb4
-$swans_down: 	#dcf0ea
-$swiss_coffee: 	#ddd6d5
-$white_ice: 	#ddf9f1
-$cerise_red: 	#de3163
-$roman: 		#de6360
-$tumbleweed: 	#dea681
-$gold_tips: 	#deba13
-$brandy: 		#dec196
-$wafer: 		#decbc6
-$sapling: 		#ded4a4
-$barberry: 		#ded717
-$beryl_green: 	#dee5c0
-$pattens_blue: 	#def5ff
-$heliotrope: 	#df73ff
-$apache: 		#dfbe6f
-$chenin: 		#dfcd6f
-$lola: 			#dfcfdb
-$willow_brook: 	#dfecda
-$chartreuse_yellow: #dfff00
-$mauve: 		#e0b0ff
-$anzac: 		#e0b646
-$harvest_gold: 	#e0b974
-$calico: 		#e0c095
-$baby_blue: 	#e0ffff
-$sunglo: 		#e16865
-$equator: 		#e1bc64
-$pink_flare: 	#e1c0c8
-$periglacial_blue: 	#e1e6d6
-$kidnapper: 	#e1ead4
-$tara: 			#e1f6e8
-$mandy: 		#e25465
-$terracotta: 	#e2725b
-$golden_bell: 	#e28913
-$shocking: 		#e292c0
-$dixie: 		#e29418
-$light_orchid: 	#e29cd2
-$snuff: 		#e2d8ed
-$mystic: 		#e2ebed
-$apple_green: 	#e2f3ec
-$razzmatazz: 	#e30b5c
-$alizarin_crimson: 	#e32636
-$cinnabar: 		#e34234
-$cavern_pink: 	#e3bebe
-$peppermint: 	#e3f5e1
-$mindaro: 		#e3f988
-$deep_blush: 	#e47698
-$gamboge: 		#e49b0f
-$melanie: 		#e4c2d5
-$twilight: 		#e4cfde
-$bone: 			#e4d1c0
-$sunflower: 	#e4d422
-$grain_brown: 	#e4d5b7
-$zombie: 		#e4d69b
-$frostee: 		#e4f6e7
-$snow_flurry: 	#e4ffd1
-$amaranth: 		#e52b50
-$zest: 			#e5841b
-$dust_storm: 	#e5ccc9
-$stark_white: 	#e5d7bd
-$hampton: 		#e5d8af
-$bon_jour: 		#e5e0e1
-$mercury: 		#e5e5e5
-$polar: 		#e5f9f6
-$trinidad: 		#e64e03
-$gold_sand: 	#e6be8a
-$cashmere: 		#e6bea5
-$double_spanish_white: #e6d7b9
-$satin_linen: 	#e6e4d4
-$harp: 			#e6f2ea
-$off_green: 	#e6f8f3
-$hint_of_green: #e6ffe9
-$tranquil: 		#e6ffff
-$mango_tango: 	#e77200
-$christine: 	#e7730a
-$tonys_pink: 	#e79f8c
-$kobi: 			#e79fc4
-$rose_fog: 		#e7bcb4
-$corn: 			#e7bf05
-$putty: 		#e7cd8c
-$gray_nurse: 	#e7ece6
-$lily_white: 	#e7f8ff
-$bubbles: 		#e7feff
-$fire_bush: 	#e89928
-$shilo: 		#e8b9b3
-$pearl_bush: 	#e8e0d5
-$green_white: 	#e8ebe0
-$chrome_white: 	#e8f1d4
-$gin: 			#e8f2eb
-$aqua_squeeze: 	#e8f5f2
-$clementine: 	#e96e00
-$burnt_sienna: 	#e97451
-$tahiti_gold: 	#e97c07
-$oyster_pink: 	#e9cecd
-$confetti: 		#e9d75a
-$ebb: 			#e9e3e3
-$ottoman: 		#e9f8ed
-$clear_day: 	#e9fffd
-$carissma: 		#ea88a8
-$porsche: 		#eaae69
-$tulip_tree: 	#eab33b
-$rob_roy: 		#eac674
-$raffia: 		#eadab8
-$white_rock: 	#eae8d4
-$panache: 		#eaf6ee
-$solitude: 		#eaf6ff
-$aqua_spring: 	#eaf9f5
-$dew: 			#eafffe
-$apricot: 		#eb9373
-$zinnwaldite: 	#ebc2af
-$fuel_yellow: 	#eca927
-$ronchi: 		#ecc54e
-$french_lilac: 	#ecc7ee
-$just_right: 	#eccdb9
-$wild_rice: 	#ece090
-$fall_green: 	#ecebbd
-$aths_special: 	#ecebce
-$starship: 		#ecf245
-$red_ribbon: 	#ed0a3f
-$tango: 		#ed7a1c
-$carrot_orange: #ed9121
-$sea_pink: 		#ed989e
-$tacao: 		#edb381
-$desert_sand: 	#edc9af
-$pancho: 		#edcdab
-$chamois: 		#eddcb1
-$primrose: 		#edea99
-$frost: 		#edf5dd
-$aqua_haze: 	#edf5f5
-$zumthor: 		#edf6ff
-$narvik: 		#edf9f1
-$honeysuckle: 	#edfc84
-$lavender_magenta:	#ee82ee
-$beauty_bush: 	#eec1be
-$chalky: 		#eed794
-$almond: 		#eed9c4
-$flax: 			#eedc82
-$bizarre: 		#eededa
-$double_colonial_white: #eee3ad
-$cararra: 		#eeeee8
-$manz: 			#eeef78
-$tahuna_sands: 	#eef0c8
-$athens_gray: 	#eef0f3
-$tusk: 			#eef3c3
-$loafer: 		#eef4de
-$catskill_white: #eef6f7
-$twilight_blue: #eefdff
-$jonquil: 		#eeff9a
-$rice_flower: 	#eeffe2
-$jaffa: 		#ef863f
-$gallery: 		#efefef
-$porcelain: 	#eff2f3
-$mauvelous: 	#f091a9
-$golden_dream: 	#f0d52d
-$golden_sand: 	#f0db7d
-$buff: 			#f0dc82
-$prim: 			#f0e2ec
-$khaki: 		#f0e68c
-$selago: 		#f0eefd
-$titan_white: 	#f0eeff
-$alice_blue: 	#f0f8ff
-$feta: 			#f0fcea
-$gold_drop: 	#f18200
-$wewak: 		#f19bab
-$sahara_sand: 	#f1e788
-$parchment: 	#f1e9d2
-$blue_chalk: 	#f1e9ff
-$mint_julep: 	#f1eec1
-$seashell: 		#f1f1f1
-$saltpan: 		#f1f7f2
-$tidal: 		#f1ffad
-$chiffon: 		#f1ffc8
-$flamingo: 		#f2552a
-$tangerine: 	#f28500
-$mandys_pink: 	#f2c3b2
-$concrete: 		#f2f2f2
-$black_squeeze: #f2fafa
-$pomegranate: 	#f34723
-$buttercup: 	#f3ad16
-$new_orleans: 	#f3d69d
-$vanilla_ice: 	#f3d9df
-$sidecar: 		#f3e7bb
-$dawn_pink: 	#f3e9e5
-$wheatfield: 	#f3edcf
-$canary: 		#f3fb62
-$orinoco: 		#f3fbd4
-$carla: 		#f3ffd8
-$hollywood_cerise: 	#f400a1
-$sandy_brown: 	#f4a460
-$saffron: 		#f4c430
-$ripe_lemon: 	#f4d81c
-$janna: 		#f4ebd3
-$pampas: 		#f4f2ee
-$wild_sand: 	#f4f4f4
-$zircon: 		#f4f8ff
-$froly: 		#f57584
-$cream_can: 	#f5c85c
-$manhattan: 	#f5c999
-$maize: 		#f5d5a0
-$wheat: 		#f5deb3
-$sandwisp: 		#f5e7a2
-$pot_pourri:	#f5e7e2
-$albescent_white: #f5e9d3
-$soft_peach: 	#f5edef
-$ecru_white: 	#f5f3e5
-$beige: 		#f5f5dc
-$golden_fizz: 	#f5fb3d
-$australian_mint: #f5ffbe
-$french_rose: 	#f64a8a
-$brilliant_rose: #f653a6
-$illusion: 		#f6a4c9
-$merino: 		#f6f0e6
-$black_haze: 	#f6f7f7
-$spring_sun: 	#f6ffdc
-$violet_red: 	#f7468a
-$chilean_fire: 	#f77703
-$persian_pink: 	#f77fbe
-$rajah: 		#f7b668
-$azalea: 		#f7c8da
-$we_peep: 		#f7dbe6
-$quarter_spanish_white: #f7f2e1
-$whisper: 		#f7f5fa
-$snow_drift: 	#f7faf7
-$casablanca: 	#f8b853
-$chantilly: 	#f8c3df
-$cherub: 		#f8d9e9
-$marzipan: 		#f8db9d
-$energy_yellow: #f8dd5c
-$givry: 		#f8e4bf
-$white_linen: 	#f8f0e8
-$magnolia: 		#f8f4ff
-$spring_wood: 	#f8f6f1
-$coconut_cream: #f8f7dc
-$white_lilac: 	#f8f7fc
-$desert_storm: 	#f8f8f7
-$texas: 		#f8f99c
-$corn_field: 	#f8facd
-$mimosa: 		#f8fdd3
-$carnation: 	#f95a61
-$saffron_mango: #f9bf58
-$carousel_pink: #f9e0ed
-$dairy_cream: 	#f9e4bc
-$portica: 		#f9e663
-$underage_pink: #f9e6f4
-$amour: 		#f9eaf3
-$rum_swizzle: 	#f9f8e4
-$dolly: 		#f9ff8b
-$sugar_cane: 	#f9fff6
-$ecstasy: 		#fa7814
-$tan_hide: 		#fa9d5a
-$corvette: 		#fad3a2
-$peach_yellow: 	#fadfad
-$turbo: 		#fae600
-$astra: 		#faeab9
-$champagne: 	#faeccc
-$linen: 		#faf0e6
-$fantasy: 		#faf3f0
-$citrine_white: #faf7d6
-$alabaster: 	#fafafa
-$hint_of_yellow: #fafde4
-$milan: 		#faffa4
-$brink_pink: 	#fb607f
-$geraldine: 	#fb8989
-$lavender_rose: #fba0e3
-$sea_buckthorn: #fba129
-$sun: 			#fbac13
-$lavender_pink: #fbaed2
-$rose_bud: 		#fbb2a3
-$cupid: 		#fbbeda
-$classic_rose: 	#fbcce7
-$apricot_peach: #fbceb1
-$banana_mania: 	#fbe7b2
-$marigold_yellow: #fbe870
-$festival: 		#fbe96c
-$sweet_corn: 	#fbea8c
-$candy_corn: 	#fbec5d
-$hint_of_red: 	#fbf9f9
-$shalimar: 		#fbffba
-$shocking_pink: #fc0fc0
-$tickle_me_pink: #fc80a5
-$tree_poppy: 	#fc9c1d
-$lightning_yellow: #fcc01e
-$goldenrod: 	#fcd667
-$candlelight: 	#fcd917
-$cherokee: 		#fcda98
-$double_pearl_lusta: #fcf4d0
-$pearl_lusta: 	#fcf4dc
-$vista_white: 	#fcf8f7
-$bianca: 		#fcfbf3
-$moon_glow: 	#fcfeda
-$china_ivory: 	#fcffe7
-$ceramic: 		#fcfff9
-$torch_red: 	#fd0e35
-$wild_watermelon: #fd5b78
-$crusta: 		#fd7b33
-$sorbus: 		#fd7c07
-$sweet_pink: 	#fd9fa2
-$light_apricot: #fdd5b1
-$pig_pink: 		#fdd7e4
-$cinderella: 	#fde1dc
-$golden_glow: 	#fde295
-$lemon: 		#fde910
-$old_lace: 		#fdf5e6
-$half_colonial_white: #fdf6d3
-$drover: 		#fdf7ad
-$pale_prim: 	#fdfeb8
-$cumulus: 		#fdffd5
-$persian_rose: 	#fe28a2
-$sunset_orange: #fe4c40
-$bittersweet: 	#fe6f5e
-$california: 	#fe9d04
-$yellow_sea: 	#fea904
-$melon: 		#febaad
-$bright_sun: 	#fed33c
-$dandelion: 	#fed85d
-$salomie: 		#fedb8d
-$cape_honey: 	#fee5ac
-$remy: 			#feebf3
-$oasis: 		#feefce
-$bridesmaid: 	#fef0ec
-$beeswax: 		#fef2c7
-$bleach_white: 	#fef3d8
-$pipi: 			#fef4cc
-$half_spanish_white: #fef4db
-$wisp_pink:		#fef4f8
-$provincial_pink: #fef5f1
-$half_dutch_white: #fef7de
-$solitaire: 	#fef8e2
-$white_pointer: #fef8ff
-$off_yellow: 	#fef9e3
-$orange_white: 	#fefced
-$red: 			#ff0000
-$rose: 			#ff007f
-$purple_pizzazz: #ff00cc
-$magenta_fuchsia:	#ff00ff
-$scarlet: 		#ff2400
-$wild_strawberry: #ff3399
-$razzle_dazzle_rose: #ff33cc
-$radical_red: 	#ff355e
-$red_orange: 	#ff3f34
-$coral_red: 	#ff4040
-$vermilion: 	#ff4d00
-$international_orange: #ff4f00
-$outrageous_orange:	#ff6037
-$blaze_orange: 	#ff6600
-$pink_flamingo: #ff66ff
-$orange: 		#ff681f
-$hot_pink: 		#ff69b4
-$persimmon: 	#ff6b53
-$blush_pink: 	#ff6fff
-$burning_orange: #ff7034
-$pumpkin: 		#ff7518
-$flamenco: 		#ff7d07
-$flush_orange: 	#ff7f00
-$coral: 		#ff7f50
-$salmon: 		#ff8c69
-$pizazz: 		#ff9000
-$west_side: 	#ff910f
-$pink_salmon: 	#ff91a4
-$neon_carrot: 	#ff9933
-$atomic_tangerine:#ff9966
-$vivid_tangerine: #ff9980
-$sunshade: 		#ff9e2c
-$orange_peel: 	#ffa000
-$mona_lisa: 	#ffa194
-$web_orange: 	#ffa500
-$carnation_pink: #ffa6c9
-$hit_pink: 		#ffab81
-$yellow_orange: #ffae42
-$cornflower_lilac: #ffb0ac
-$sundown: 		#ffb1b3
-$my_sin: 		#ffb31f
-$texas_rose: 	#ffb555
-$cotton_candy: 	#ffb7d5
-$macaroni_and_cheese: #ffb97b
-$selective_yellow: #ffba00
-$koromiko: 		#ffbd5f
-$amber: 		#ffbf00
-$wax_flower: 	#ffc0a8
-$pink: 			#ffc0cb
-$your_pink: 	#ffc3c0
-$supernova: 	#ffc901
-$flesh: 		#ffcba4
-$sunglow: 		#ffcc33
-$golden_tainoi: #ffcc5c
-$peach_orange: 	#ffcc99
-$chardonnay: 	#ffcd8c
-$pastel_pink: 	#ffd1dc
-$romantic: 		#ffd2b7
-$grandis: 		#ffd38c
-$gold: 			#ffd700
-$school_bus_yellow: #ffd800
-$cosmos: 		#ffd8d9
-$mustard: 		#ffdb58
-$peach_schnapps: #ffdcd6
-$caramel: 		#ffddaf
-$tuft_bush: 	#ffddcd
-$watusi: 		#ffddcf
-$pink_lace: 	#ffddf4
-$navajo_white: 	#ffdead
-$frangipani: 	#ffdeb3
-$pippin: 		#ffe1df
-$pale_rose: 	#ffe1f2
-$negroni: 		#ffe2c5
-$cream_brulee: 	#ffe5a0
-$peach: 		#ffe5b4
-$tequila: 		#ffe6c7
-$kournikova: 	#ffe772
-$sandy_beach: 	#ffeac8
-$karry: 		#ffead4
-$broom: 		#ffec13
-$colonial_white: #ffedbc
-$derby: 		#ffeed8
-$vis_vis: 		#ffefa1
-$egg_white: 	#ffefc1
-$papaya_whip: 	#ffefd5
-$fair_pink: 	#ffefec
-$peach_cream: 	#fff0db
-$lavender_blush: #fff0f5
-$gorse: 		#fff14f
-$buttermilk: 	#fff1b5
-$pink_lady: 	#fff1d8
-$forget_me_not: #fff1ee
-$tutu: 			#fff1f9
-$picasso: 		#fff39d
-$chardon: 		#fff3f1
-$paris_daisy: 	#fff46e
-$barley_white: 	#fff4ce
-$egg_sour: 		#fff4dd
-$sazerac: 		#fff4e0
-$serenade: 		#fff4e8
-$chablis: 		#fff4f3
-$seashell_peach: #fff5ee
-$sauvignon: 	#fff5f3
-$milk_punch: 	#fff6d4
-$varden: 		#fff6df
-$rose_white: 	#fff6f5
-$baja_white: 	#fff8d1
-$gin_fizz: 		#fff9e2
-$early_dawn: 	#fff9e6
-$lemon_chiffon: #fffacd
-$bridal_heath: 	#fffaf4
-$scotch_mist: 	#fffbdc
-$soapstone: 	#fffbf9
-$witch_haze: 	#fffc99
-$buttery_white: #fffcea
-$island_spice: 	#fffcee
-$cream: 		#fffdd0
-$chilean_heath: #fffde6
-$travertine: 	#fffde8
-$orchid_white: 	#fffdf3
-$quarter_pearl_lusta: #fffdf4
-$half_and_half: #fffee1
-$apricot_white: #fffeec
-$rice_cake: 	#fffef0
-$black_white: 	#fffef6
-$romance: 		#fffefd
-$yellow: 		#ffff00
-$laser_lemon: 	#ffff66
-$pale_canary: 	#ffff99
-$portafino: 	#ffffb4
-$ivory: 		#fffff0
-$white: 		#ffffff:@options{ :@has_childrenT:@children[o:Sass::Tree::VariableNode:@guarded0:
-@name"
-black:
-@expro:Sass::Script::Color	:@attrs{	:redi :
-alphai:
-greeni :	bluei ;@:
-@linei:@value0:@filename"i/Users/andrew/Desktop/Software/Projects/AndrewPilsch.com/source/stylesheets/blog/colors/_colors.sass;@;i;	[ o;
-;0;"navy_blue;o;	;{	;i ;i;i ;iÄ;@;i;0;@;@;i;	[ o;
-;0;"dark_blue;o;	;{	;i ;i;i ;i»;@;i;0;@;@;i;	[ o;
-;0;"	blue;o;	;{	;i ;i;i ;iˇ;@;i	;0;@;@;i	;	[ o;
-;0;"stratos;o;	;{	;i ;i;i;iF;@;i
-;0;@;@;i
-;	[ o;
-;0;"
-swamp;o;	;{	;i ;i;i ;i!;@;i;0;@;@;i;	[ o;
-;0;"resolution_blue;o;	;{	;i ;i;i(;iá;@;i;0;@;@;i;	[ o;
-;0;"deep_fir;o;	;{	;i ;i;i.;i ;@;i;0;@;@;i;	[ o;
-;0;"burnham;o;	;{	;i ;i;i3;i%;@;i;0;@;@;i;	[ o;
-;0;"international_klein_blue;o;	;{	;i ;i;i4;iß;@;i;0;@;@;i;	[ o;
-;0;"prussian_blue;o;	;{	;i ;i;i6;iX;@;i;0;@;@;i;	[ o;
-;0;"midnight_blue;o;	;{	;i ;i;i8;ik;@;i;0;@;@;i;	[ o;
-;0;"
-smalt;o;	;{	;i ;i;i8;iô;@;i;0;@;@;i;	[ o;
-;0;"deep_teal;o;	;{	;i ;i;i:;i7;@;i;0;@;@;i;	[ o;
-;0;"cyprus;o;	;{	;i ;i;iC;iE;@;i;0;@;@;i;	[ o;
-;0;"kaitoke_green;o;	;{	;i ;i;iK;i%;@;i;0;@;@;i;	[ o;
-;0;"cobalt;o;	;{	;i ;i;iL;i´;@;i;0;@;@;i;	[ o;
-;0;"crusoe;o;	;{	;i ;i;iM;i;@;i;0;@;@;i;	[ o;
-;0;"sherpa_blue;o;	;{	;i ;i;iN;iU;@;i;0;@;@;i;	[ o;
-;0;"endeavour;o;	;{	;i ;i;i[;iß;@;i;0;@;@;i;	[ o;
-;0;"camarone;o;	;{	;i ;i;i];i;@;i;0;@;@;i;	[ o;
-;0;"science_blue;o;	;{	;i ;i;ik;iÃ;@;i;0;@;@;i;	[ o;
-;0;"blue_ribbon;o;	;{	;i ;i;ik;iˇ;@;i;0;@;@;i;	[ o;
-;0;"tropical_rain_forest;o;	;{	;i ;i;iz;ic;@;i;0;@;@;i;	[ o;
-;0;"allports;o;	;{	;i ;i;i{;i£;@;i;0;@;@;i;	[ o;
-;0;"deep_cerulean;o;	;{	;i ;i;i{;iß;@;i;0;@;@;i;	[ o;
-;0;"lochmara;o;	;{	;i ;i;i~;i«;@;i ;0;@;@;i ;	[ o;
-;0;"azure_radiance;o;	;{	;i ;i;i;iˇ;@;i!;0;@;@;i!;	[ o;
-;0;"	teal;o;	;{	;i ;i;iÄ;iÄ;@;i";0;@;@;i";	[ o;
-;0;"bondi_blue;o;	;{	;i ;i;iï;i∂;@;i#;0;@;@;i#;	[ o;
-;0;"pacific_blue;o;	;{	;i ;i;iù;iƒ;@;i$;0;@;@;i$;	[ o;
-;0;"persian_green;o;	;{	;i ;i;i¶;iì;@;i%;0;@;@;i%;	[ o;
-;0;"	jade;o;	;{	;i ;i;i®;ip;@;i&;0;@;@;i&;	[ o;
-;0;"caribbean_green;o;	;{	;i ;i;iÃ;iô;@;i';0;@;@;i';	[ o;
-;0;"robins_egg_blue;o;	;{	;i ;i;iÃ;iÃ;@;i(;0;@;@;i(;	[ o;
-;0;"
-green;o;	;{	;i ;i;iˇ;i ;@;i);0;@;@;i);	[ o;
-;0;"spring_green;o;	;{	;i ;i;iˇ;i;@;i*;0;@;@;i*;	[ o;
-;0;"cyan_aqua;o;	;{	;i ;i;iˇ;iˇ;@;i+;0;@;@;i+;	[ o;
-;0;"blue_charcoal;o;	;{	;i;i;i;i;@;i,;0;@;@;i,;	[ o;
-;0;"midnight;o;	;{	;i;i;i;i:;@;i-;0;@;@;i-;	[ o;
-;0;"
-holly;o;	;{	;i;i;i";i;@;i.;0;@;@;i.;	[ o;
-;0;"daintree;o;	;{	;i;i;i,;i6;@;i/;0;@;@;i/;	[ o;
-;0;"cardin_green;o;	;{	;i;i;i;;i!;@;i0;0;@;@;i0;	[ o;
-;0;"county_green;o;	;{	;i;i;i<;i;@;i1;0;@;@;i1;	[ o;
-;0;"astronaut_blue;o;	;{	;i;i;iC;ig;@;i2;0;@;@;i2;	[ o;
-;0;"regal_blue;o;	;{	;i;i;iD;io;@;i3;0;@;@;i3;	[ o;
-;0;"aqua_deep;o;	;{	;i;i;iP;iH;@;i4;0;@;@;i4;	[ o;
-;0;"orient;o;	;{	;i;i;ic;iÖ;@;i5;0;@;@;i5;	[ o;
-;0;"blue_stone;o;	;{	;i;i;if;ig;@;i6;0;@;@;i6;	[ o;
-;0;"fun_green;o;	;{	;i;i;ir;i>;@;i7;0;@;@;i7;	[ o;
-;0;"pine_green;o;	;{	;i;i;i~;it;@;i8;0;@;@;i8;	[ o;
-;0;"blue_lagoon;o;	;{	;i;i;i~;iá;@;i9;0;@;@;i9;	[ o;
-;0;"deep_sea;o;	;{	;i;i;iÇ;ip;@;i:;0;@;@;i:;	[ o;
-;0;"green_haze;o;	;{	;i;i;i£;im;@;i;;0;@;@;i;;	[ o;
-;0;"english_holly;o;	;{	;i;i;i2;i;@;i<;0;@;@;i<;	[ o;
-;0;"sherwood_green;o;	;{	;i;i;iE;i1;@;i=;0;@;@;i=;	[ o;
-;0;"congress_blue;o;	;{	;i;i;iL;ié;@;i>;0;@;@;i>;	[ o;
-;0;"evening_sea;o;	;{	;i;i;iS;iK;@;i?;0;@;@;i?;	[ o;
-;0;"bahama_blue;o;	;{	;i;i;ih;iï;@;i@;0;@;@;i@;	[ o;
-;0;"observatory;o;	;{	;i;i;iÜ;it;@;iA;0;@;@;iA;	[ o;
-;0;"cerulean;o;	;{	;i;i;i§;i”;@;iB;0;@;@;iB;	[ o;
-;0;"tangaroa;o;	;{	;i;i;i;iA;@;iC;0;@;@;iC;	[ o;
-;0;"green_vogue;o;	;{	;i;i;i0;iW;@;iD;0;@;@;iD;	[ o;
-;0;"mosque;o;	;{	;i;i;io;is;@;iE;0;@;@;iE;	[ o;
-;0;"midnight_moss;o;	;{	;i	;i;i;i	;@;iF;0;@;@;iF;	[ o;
-;0;"black_pearl;o;	;{	;i	;i;i;i';@;iG;0;@;@;iG;	[ o;
-;0;"blue_whale;o;	;{	;i	;i;i3;iQ;@;iH;0;@;@;iH;	[ o;
-;0;"zuccini;o;	;{	;i	;i;iE;i';@;iI;0;@;@;iI;	[ o;
-;0;"teal_blue;o;	;{	;i	;i;iG;i^;@;iJ;0;@;@;iJ;	[ o;
-;0;"deep_cove;o;	;{	;i
-;i;i;iE;@;iK;0;@;@;iK;	[ o;
-;0;"gulf_blue;o;	;{	;i
-;i;i;i\;@;iL;0;@;@;iL;	[ o;
-;0;"venice_blue;o;	;{	;i
-;i;i^;iâ;@;iM;0;@;@;iM;	[ o;
-;0;"watercourse;o;	;{	;i
-;i;it;i\;@;iN;0;@;@;iN;	[ o;
-;0;"catalina_blue;o;	;{	;i;i;i/;i};@;iO;0;@;@;iO;	[ o;
-;0;"
-tiber;o;	;{	;i;i;i:;i<;@;iP;0;@;@;iP;	[ o;
-;0;"gossamer;o;	;{	;i;i;iõ;iÅ;@;iQ;0;@;@;iQ;	[ o;
-;0;"niagara;o;	;{	;i;i;i°;iâ;@;iR;0;@;@;iR;	[ o;
-;0;"tarawera;o;	;{	;i;i;i?;iU;@;iS;0;@;@;iS;	[ o;
-;0;"jaguar;o;	;{	;i;i;i;i;@;iT;0;@;@;iT;	[ o;
-;0;"black_bean;o;	;{	;i;i;i;i;@;iU;0;@;@;iU;	[ o;
-;0;"deep_sapphire;o;	;{	;i;i;i*;il;@;iV;0;@;@;iV;	[ o;
-;0;"elf_green;o;	;{	;i;i;iÉ;iu;@;iW;0;@;@;iW;	[ o;
-;0;"bright_turquoise;o;	;{	;i;i;iË;iﬁ;@;iX;0;@;@;iX;	[ o;
-;0;"downriver;o;	;{	;i;i;i';i[;@;iY;0;@;@;iY;	[ o;
-;0;"palm_green;o;	;{	;i;i;i(;i;@;iZ;0;@;@;iZ;	[ o;
-;0;"madison;o;	;{	;i;i;i*;ib;@;i[;0;@;@;i[;	[ o;
-;0;"bottle_green;o;	;{	;i;i;i;;i);@;i\;0;@;@;i\;	[ o;
-;0;"deep_sea_green;o;	;{	;i;i;i];i^;@;i];0;@;@;i];	[ o;
-;0;"
-salem;o;	;{	;i;i;i;iP;@;i^;0;@;@;i^;	[ o;
-;0;"black_russian;o;	;{	;i;i;i ;i!;@;i_;0;@;@;i_;	[ o;
-;0;"dark_fern;o;	;{	;i;i;iM;i;@;i`;0;@;@;i`;	[ o;
-;0;"japanese_laurel;o;	;{	;i;i;in;i;@;ia;0;@;@;ia;	[ o;
-;0;"
-atoll;o;	;{	;i;i;it;iz;@;ib;0;@;@;ib;	[ o;
-;0;"cod_gray;o;	;{	;i;i;i;i;@;ic;0;@;@;ic;	[ o;
-;0;"marshland;o;	;{	;i;i;i;i;@;id;0;@;@;id;	[ o;
-;0;"gordons_green;o;	;{	;i;i;i;i;@;ie;0;@;@;ie;	[ o;
-;0;"black_forest;o;	;{	;i;i;i;i	;@;if;0;@;@;if;	[ o;
-;0;"san_felix;o;	;{	;i;i;ig;i;@;ig;0;@;@;ig;	[ o;
-;0;"malachite;o;	;{	;i;i;i⁄;iV;@;ih;0;@;@;ih;	[ o;
-;0;"
-ebony;o;	;{	;i;i;i;i";@;ii;0;@;@;ii;	[ o;
-;0;"woodsmoke;o;	;{	;i;i;i;i;@;ij;0;@;@;ij;	[ o;
-;0;"racing_green;o;	;{	;i;i;i;i;@;ik;0;@;@;ik;	[ o;
-;0;"surfie_green;o;	;{	;i;i;i;i~;@;il;0;@;@;il;	[ o;
-;0;"blue_chill;o;	;{	;i;i;iâ;iê;@;im;0;@;@;im;	[ o;
-;0;"black_rock;o;	;{	;i;i;i;i7;@;in;0;@;@;in;	[ o;
-;0;"bunker;o;	;{	;i;i;i;i;@;io;0;@;@;io;	[ o;
-;0;"
-aztec;o;	;{	;i;i;i!;i;@;ip;0;@;@;ip;	[ o;
-;0;"	bush;o;	;{	;i;i;i3;i!;@;iq;0;@;@;iq;	[ o;
-;0;"cinder;o;	;{	;i;i;i;i;@;ir;0;@;@;ir;	[ o;
-;0;"firefly;o;	;{	;i;i;i/;i5;@;is;0;@;@;is;	[ o;
-;0;"torea_bay;o;	;{	;i;i;i2;iû;@;it;0;@;@;it;	[ o;
-;0;"vulcan;o;	;{	;i;i;i;i";@;iu;0;@;@;iu;	[ o;
-;0;"green_waterloo;o;	;{	;i;i;i;i
-;@;iv;0;@;@;iv;	[ o;
-;0;"	eden;o;	;{	;i;i;i];iW;@;iw;0;@;@;iw;	[ o;
-;0;"arapawa;o;	;{	;i;i;i;iq;@;ix;0;@;@;ix;	[ o;
-;0;"ultramarine;o;	;{	;i;i;i;iè;@;iy;0;@;@;iy;	[ o;
-;0;"elephant;o;	;{	;i;i;i9;iL;@;iz;0;@;@;iz;	[ o;
-;0;"
-jewel;o;	;{	;i;i;ip;iE;@;i{;0;@;@;i{;	[ o;
-;0;"diesel;o;	;{	;i;i;i ;i ;@;i|;0;@;@;i|;	[ o;
-;0;"asphalt;o;	;{	;i;i;i;i;@;i};0;@;@;i};	[ o;
-;0;"blue_zodiac;o;	;{	;i;i;i+;iR;@;i~;0;@;@;i~;	[ o;
-;0;"parsley;o;	;{	;i;i;iT;i;@;i;0;@;@;i;	[ o;
-;0;"	nero;o;	;{	;i;i;i;i ;@;i{;0;@;@;i{;	[ o;
-;0;"tory_blue;o;	;{	;i;i;iU;i™;@;i|;0;@;@;i|;	[ o;
-;0;"bunting;o;	;{	;i;i;i$;iQ;@;i};0;@;@;i};	[ o;
-;0;"
-denim;o;	;{	;i;i;ie;iΩ;@;i~;0;@;@;i~;	[ o;
-;0;"
-genoa;o;	;{	;i;i;ix;ip;@;i;0;@;@;i;	[ o;
-;0;"mirage;o;	;{	;i;i;i;i-;@;iÄ;0;@;@;iÄ;	[ o;
-;0;"hunter_green;o;	;{	;i;i;i";i;@;iÅ;0;@;@;iÅ;	[ o;
-;0;"big_stone;o;	;{	;i;i;i/;iE;@;iÇ;0;@;@;iÇ;	[ o;
-;0;"celtic;o;	;{	;i;i;i7;i';@;iÉ;0;@;@;iÉ;	[ o;
-;0;"timber_green;o;	;{	;i;i;i7;i1;@;iÑ;0;@;@;iÑ;	[ o;
-;0;"gable_green;o;	;{	;i;i;i:;i6;@;iÖ;0;@;@;iÖ;	[ o;
-;0;"pine_tree;o;	;{	;i;i;i$;i	;@;iÜ;0;@;@;iÜ;	[ o;
-;0;"chathams_blue;o;	;{	;i;i;iZ;i~;@;iá;0;@;@;iá;	[ o;
-;0;"deep_forest_green;o;	;{	;i;i;i2;i;@;ià;0;@;@;ià;	[ o;
-;0;"blumine;o;	;{	;i;i;i];i;@;iâ;0;@;@;iâ;	[ o;
-;0;"palm_leaf;o;	;{	;i;i;i8;i;@;iä;0;@;@;iä;	[ o;
-;0;"nile_blue;o;	;{	;i;i;i<;iV;@;iã;0;@;@;iã;	[ o;
-;0;"fun_blue;o;	;{	;i;i;i^;i®;@;iå;0;@;@;iå;	[ o;
-;0;"lucky_point;o;	;{	;i;i;i;im;@;iç;0;@;@;iç;	[ o;
-;0;"mountain_meadow;o;	;{	;i;i;i≥;iÖ;@;ié;0;@;@;ié;	[ o;
-;0;"tolopea;o;	;{	;i ;i;i;iJ;@;iè;0;@;@;iè;	[ o;
-;0;"
-haiti;o;	;{	;i ;i;i;i:;@;iê;0;@;@;iê;	[ o;
-;0;"deep_koamaru;o;	;{	;i ;i;i;i{;@;ië;0;@;@;ië;	[ o;
-;0;"acadia;o;	;{	;i ;i;i;i	;@;ií;0;@;@;ií;	[ o;
-;0;"seaweed;o;	;{	;i ;i;i4;i;@;iì;0;@;@;iì;	[ o;
-;0;"biscay;o;	;{	;i ;i;i6;ig;@;iî;0;@;@;iî;	[ o;
-;0;"matisse;o;	;{	;i ;i;ij;iù;@;iï;0;@;@;iï;	[ o;
-;0;"crowshead;o;	;{	;i!;i;i;i;@;iñ;0;@;@;iñ;	[ o;
-;0;"rangoon_green;o;	;{	;i!;i;i#;i;@;ió;0;@;@;ió;	[ o;
-;0;"persian_blue;o;	;{	;i!;i;i>;iª;@;iò;0;@;@;iò;	[ o;
-;0;"everglade;o;	;{	;i!;i;iE;i3;@;iô;0;@;@;iô;	[ o;
-;0;"elm;o;	;{	;i!;i;i|;i};@;iö;0;@;@;iö;	[ o;
-;0;"green_pea;o;	;{	;i";i;if;iG;@;iõ;0;@;@;iõ;	[ o;
-;0;"creole;o;	;{	;i#;i;i;i	;@;iú;0;@;@;iú;	[ o;
-;0;"karaka;o;	;{	;i#;i;i;i;@;iù;0;@;@;iù;	[ o;
-;0;"el_paso;o;	;{	;i#;i;i;i;@;iû;0;@;@;iû;	[ o;
-;0;"
-cello;o;	;{	;i#;i;i=;i`;@;iü;0;@;@;iü;	[ o;
-;0;"te_papa_green;o;	;{	;i#;i;iH;iA;@;i†;0;@;@;i†;	[ o;
-;0;"dodger_blue;o;	;{	;i#;i;iê;iˇ;@;i°;0;@;@;i°;	[ o;
-;0;"eastern_blue;o;	;{	;i#;i;iö;i∞;@;i¢;0;@;@;i¢;	[ o;
-;0;"night_rider;o;	;{	;i$;i;i;i;@;i£;0;@;@;i£;	[ o;
-;0;"	java;o;	;{	;i$;i;i¬;i¬;@;i§;0;@;@;i§;	[ o;
-;0;"jacksons_purple;o;	;{	;i%;i;i%;iç;@;i•;0;@;@;i•;	[ o;
-;0;"cloud_burst;o;	;{	;i%;i;i3;iY;@;i¶;0;@;@;i¶;	[ o;
-;0;"blue_dianne;o;	;{	;i%;i;iM;iW;@;iß;0;@;@;iß;	[ o;
-;0;"eternity;o;	;{	;i&;i;i;i;@;i®;0;@;@;i®;	[ o;
-;0;"deep_blue;o;	;{	;i';i;i;i};@;i©;0;@;@;i©;	[ o;
-;0;"forest_green;o;	;{	;i';i;iã;i';@;i™;0;@;@;i™;	[ o;
-;0;"mallard;o;	;{	;i(;i;i9;i;@;i´;0;@;@;i´;	[ o;
-;0;"violet;o;	;{	;i);i;i;iE;@;i¨;0;@;@;i¨;	[ o;
-;0;"kilamanjaro;o;	;{	;i);i;i;i;@;i≠;0;@;@;i≠;	[ o;
-;0;"log_cabin;o;	;{	;i);i;i/;i";@;iÆ;0;@;@;iÆ;	[ o;
-;0;"black_olive;o;	;{	;i);i;i3;i;@;iØ;0;@;@;iØ;	[ o;
-;0;"green_house;o;	;{	;i);i;iU;i;@;i∞;0;@;@;i∞;	[ o;
-;0;"graphite;o;	;{	;i*;i;i;i;@;i±;0;@;@;i±;	[ o;
-;0;"cannon_black;o;	;{	;i*;i;i;i;@;i≤;0;@;@;i≤;	[ o;
-;0;"port_gore;o;	;{	;i*;i;i$;iT;@;i≥;0;@;@;i≥;	[ o;
-;0;"
-shark;o;	;{	;i*;i;i,;i1;@;i¥;0;@;@;i¥;	[ o;
-;0;"green_kelp;o;	;{	;i*;i;i6;i!;@;iµ;0;@;@;iµ;	[ o;
-;0;"curious_blue;o;	;{	;i*;i;iñ;i—;@;i∂;0;@;@;i∂;	[ o;
-;0;"	paua;o;	;{	;i+;i;i;im;@;i∑;0;@;@;i∑;	[ o;
-;0;"paris_m;o;	;{	;i+;i;i
-;io;@;i∏;0;@;@;i∏;	[ o;
-;0;"wood_bark;o;	;{	;i+;i;i;i
-;@;iπ;0;@;@;iπ;	[ o;
-;0;"gondola;o;	;{	;i+;i;i;i;@;i∫;0;@;@;i∫;	[ o;
-;0;"steel_gray;o;	;{	;i+;i;i(;i:;@;iª;0;@;@;iª;	[ o;
-;0;"ebony_clay;o;	;{	;i+;i;i-;i@;@;iº;0;@;@;iº;	[ o;
-;0;"bay_of_many;o;	;{	;i,;i;i?;iÅ;@;iΩ;0;@;@;iΩ;	[ o;
-;0;"plantation;o;	;{	;i,;i;iU;iP;@;iæ;0;@;@;iæ;	[ o;
-;0;"eucalyptus;o;	;{	;i,;i;iä;i`;@;iø;0;@;@;iø;	[ o;
-;0;"oil;o;	;{	;i-;i;i#;i;@;i¿;0;@;@;i¿;	[ o;
-;0;"astronaut;o;	;{	;i-;i;i?;i|;@;i¡;0;@;@;i¡;	[ o;
-;0;"mariner;o;	;{	;i-;i;io;iÕ;@;i¬;0;@;@;i¬;	[ o;
-;0;"violent_violet;o;	;{	;i.;i;i;ic;@;i√;0;@;@;i√;	[ o;
-;0;"bastille;o;	;{	;i.;i;i&;i5;@;iƒ;0;@;@;iƒ;	[ o;
-;0;"	zeus;o;	;{	;i.;i;i(;i;@;i≈;0;@;@;i≈;	[ o;
-;0;"charade;o;	;{	;i.;i;i.;i<;@;i∆;0;@;@;i∆;	[ o;
-;0;"jelly_bean;o;	;{	;i.;i;i{;iö;@;i«;0;@;@;i«;	[ o;
-;0;"jungle_green;o;	;{	;i.;i;i´;iá;@;i»;0;@;@;i»;	[ o;
-;0;"cherry_pie;o;	;{	;i/;i;i;i^;@;i…;0;@;@;i…;	[ o;
-;0;"coffee_bean;o;	;{	;i/;i;i;i;@;i ;0;@;@;i ;	[ o;
-;0;"baltic_sea;o;	;{	;i/;i;i+;i5;@;iÀ;0;@;@;iÀ;	[ o;
-;0;"turtle_green;o;	;{	;i/;i;i=;i;@;iÃ;0;@;@;iÃ;	[ o;
-;0;"cerulean_blue;o;	;{	;i/;i;iW;iæ;@;iÕ;0;@;@;iÕ;	[ o;
-;0;"sepia_black;o;	;{	;i0;i;i;i;@;iŒ;0;@;@;iŒ;	[ o;
-;0;"valhalla;o;	;{	;i0;i;i;iT;@;iœ;0;@;@;iœ;	[ o;
-;0;"heavy_metal;o;	;{	;i0;i;i7;i-;@;i–;0;@;@;i–;	[ o;
-;0;"blue_gem;o;	;{	;i1;i;i;iå;@;i—;0;@;@;i—;	[ o;
-;0;"revolver;o;	;{	;i1;i;i;i7;@;i“;0;@;@;i“;	[ o;
-;0;"bleached_cedar;o;	;{	;i1;i;i&;i8;@;i”;0;@;@;i”;	[ o;
-;0;"lochinvar;o;	;{	;i1;i;iå;iÑ;@;i‘;0;@;@;i‘;	[ o;
-;0;"mikado;o;	;{	;i2;i;i*;i;@;i’;0;@;@;i’;	[ o;
-;0;"outer_space;o;	;{	;i2;i;i=;i?;@;i÷;0;@;@;i÷;	[ o;
-;0;"st_tropaz;o;	;{	;i2;i;i[;iõ;@;i◊;0;@;@;i◊;	[ o;
-;0;"jacaranda;o;	;{	;i3;i;i;i.;@;iÿ;0;@;@;iÿ;	[ o;
-;0;"jacko_bean;o;	;{	;i3;i;i;i
-;@;iŸ;0;@;@;iŸ;	[ o;
-;0;"rangitoto;o;	;{	;i3;i;i7;i';@;i⁄;0;@;@;i⁄;	[ o;
-;0;"
-rhino;o;	;{	;i3;i;iD;ig;@;i€;0;@;@;i€;	[ o;
-;0;"sea_green;o;	;{	;i3;i;iã;i\;@;i‹;0;@;@;i‹;	[ o;
-;0;"scooter;o;	;{	;i3;i;iø;i‘;@;i›;0;@;@;i›;	[ o;
-;0;"
-onion;o;	;{	;i4;i;i,;i;@;iﬁ;0;@;@;iﬁ;	[ o;
-;0;"governor_bay;o;	;{	;i4;i;iA;i≥;@;iﬂ;0;@;@;iﬂ;	[ o;
-;0;"sapphire;o;	;{	;i4;i;iV;iû;@;i‡;0;@;@;i‡;	[ o;
-;0;"spectra;o;	;{	;i4;i;i_;i\;@;i·;0;@;@;i·;	[ o;
-;0;"
-casal;o;	;{	;i4;i;if;im;@;i‚;0;@;@;i‚;	[ o;
-;0;"melanzane;o;	;{	;i5;i;i
-;i.;@;i„;0;@;@;i„;	[ o;
-;0;"cocoa_brown;o;	;{	;i5;i;i$;i#;@;i‰;0;@;@;i‰;	[ o;
-;0;"woodrush;o;	;{	;i5;i;i/;i;@;iÂ;0;@;@;iÂ;	[ o;
-;0;"san_juan;o;	;{	;i5;i;iP;io;@;iÊ;0;@;@;iÊ;	[ o;
-;0;"turquoise;o;	;{	;i5;i;i’;i»;@;iÁ;0;@;@;iÁ;	[ o;
-;0;"eclipse;o;	;{	;i6;i;i!;i;@;iË;0;@;@;iË;	[ o;
-;0;"pickled_bluewood;o;	;{	;i6;i;iI;i^;@;iÈ;0;@;@;iÈ;	[ o;
-;0;"
-azure;o;	;{	;i6;i;i`;i°;@;iÍ;0;@;@;iÍ;	[ o;
-;0;"calypso;o;	;{	;i6;i;iw;iç;@;iÎ;0;@;@;iÎ;	[ o;
-;0;"paradiso;o;	;{	;i6;i;i};iÇ;@;iÏ;0;@;@;iÏ;	[ o;
-;0;"persian_indigo;o;	;{	;i7;i;i;i;@;iÌ;0;@;@;iÌ;	[ o;
-;0;"blackcurrant;o;	;{	;i7;i;i.;i?;@;iÓ;0;@;@;iÓ;	[ o;
-;0;"mine_shaft;o;	;{	;i7;i;i7;i7;@;iÔ;0;@;@;iÔ;	[ o;
-;0;"stromboli;o;	;{	;i7;i;ib;iW;@;i;0;@;@;i;	[ o;
-;0;"bilbao;o;	;{	;i7;i;i|;i;@;iÒ;0;@;@;iÒ;	[ o;
-;0;"astral;o;	;{	;i7;i;i};i†;@;iÚ;0;@;@;iÚ;	[ o;
-;0;"christalle;o;	;{	;i8;i;i;ip;@;iÛ;0;@;@;iÛ;	[ o;
-;0;"thunder;o;	;{	;i8;i;i.;i4;@;iÙ;0;@;@;iÙ;	[ o;
-;0;"shamrock;o;	;{	;i8;i;iÃ;iô;@;iı;0;@;@;iı;	[ o;
-;0;"tamarind;o;	;{	;i9;i;i;i;@;iˆ;0;@;@;iˆ;	[ o;
-;0;"mardi_gras;o;	;{	;i:;i;i ;i;;@;i˜;0;@;@;i˜;	[ o;
-;0;"valentino;o;	;{	;i:;i;i;iG;@;i¯;0;@;@;i¯;	[ o;
-;0;"jagger;o;	;{	;i:;i;i;i\;@;i˘;0;@;@;i˘;	[ o;
-;0;"	tuna;o;	;{	;i:;i;i:;iG;@;i˙;0;@;@;i˙;	[ o;
-;0;"chambray;o;	;{	;i:;i;iS;iå;@;i˚;0;@;@;i˚;	[ o;
-;0;"martinique;o;	;{	;i;;i;i5;iU;@;i¸;0;@;@;i¸;	[ o;
-;0;"tuatara;o;	;{	;i;;i;i:;i9;@;i˝;0;@;@;i˝;	[ o;
-;0;"waiouru;o;	;{	;i;;i;iA;i;@;i˛;0;@;@;i˛;	[ o;
-;0;"	ming;o;	;{	;i;;i;iy;i};@;iˇ;0;@;@;iˇ;	[ o;
-;0;"la_palma;o;	;{	;i;;i;iá;i;@;i ;0;@;@;i ;	[ o;
-;0;"chocolate;o;	;{	;i<;i;i;i;@;i;0;@;@;i;	[ o;
-;0;"clinker;o;	;{	;i<;i;i";i;@;i;0;@;@;i;	[ o;
-;0;"brown_tumbleweed;o;	;{	;i<;i;i.;i;@;i;0;@;@;i;	[ o;
-;0;"
-birch;o;	;{	;i<;i;i5;i&;@;i;0;@;@;i;	[ o;
-;0;"oracle;o;	;{	;i<;i;iy;iz;@;i;0;@;@;i;	[ o;
-;0;"blue_diamond;o;	;{	;i=;i;i	;iy;@;i;0;@;@;i;	[ o;
-;0;"
-grape;o;	;{	;i=;i;i;iV;@;i;0;@;@;i;	[ o;
-;0;"	dune;o;	;{	;i=;i;i:;i8;@;i;0;@;@;i;	[ o;
-;0;"oxford_blue;o;	;{	;i=;i;iJ;iZ;@;i	;0;@;@;i	;	[ o;
-;0;"clover;o;	;{	;i=;i;iN;i;@;i
-;0;@;@;i
-;	[ o;
-;0;"limed_spruce;o;	;{	;i>;i;iM;iV;@;i;0;@;@;i;	[ o;
-;0;"	dell;o;	;{	;i>;i;ii;i;@;i;0;@;@;i;	[ o;
-;0;"toledo;o;	;{	;i?;i;i ;i%;@;i;0;@;@;i;	[ o;
-;0;"sambuca;o;	;{	;i?;i;i%;i;@;i;0;@;@;i;	[ o;
-;0;"jacarta;o;	;{	;i?;i;i/;io;@;i;0;@;@;i;	[ o;
-;0;"william;o;	;{	;i?;i;im;iq;@;i;0;@;@;i;	[ o;
-;0;"killarney;o;	;{	;i?;i;io;iL;@;i;0;@;@;i;	[ o;
-;0;"keppel;o;	;{	;i?;i;i∞;iû;@;i;0;@;@;i;	[ o;
-;0;"temptress;o;	;{	;i@;i;i ;i;@;i;0;@;@;i;	[ o;
-;0;"aubergine;o;	;{	;i@;i;i;i;@;i;0;@;@;i;	[ o;
-;0;"jon;o;	;{	;i@;i;i$;i$;@;i;0;@;@;i;	[ o;
-;0;"treehouse;o;	;{	;i@;i;i-;i%;@;i;0;@;@;i;	[ o;
-;0;"amazon;o;	;{	;i@;i;i;i\;@;i;0;@;@;i;	[ o;
-;0;"boston_blue;o;	;{	;i@;i;ië;i¥;@;i;0;@;@;i;	[ o;
-;0;"windsor;o;	;{	;iA;i;i;i};@;i;0;@;@;i;	[ o;
-;0;"
-rebel;o;	;{	;iA;i;i;i;@;i;0;@;@;i;	[ o;
-;0;"meteorite;o;	;{	;iA;i;i$;i{;@;i;0;@;@;i;	[ o;
-;0;"dark_ebony;o;	;{	;iA;i;i%;i
-;@;i;0;@;@;i;	[ o;
-;0;"camouflage;o;	;{	;iA;i;i>;i;@;i;0;@;@;i;	[ o;
-;0;"bright_gray;o;	;{	;iA;i;iF;iV;@;i;0;@;@;i;	[ o;
-;0;"cape_cod;o;	;{	;iA;i;iI;iH;@;i;0;@;@;i;	[ o;
-;0;"lunar_green;o;	;{	;iA;i;iN;i?;@;i ;0;@;@;i ;	[ o;
-;0;"bean__;o;	;{	;iB;i;i;i;@;i!;0;@;@;i!;	[ o;
-;0;"bistre;o;	;{	;iB;i;i0;i$;@;i";0;@;@;i";	[ o;
-;0;"goblin;o;	;{	;iB;i;i};iW;@;i#;0;@;@;i#;	[ o;
-;0;"kingfisher_daisy;o;	;{	;iC;i;i	;iÄ;@;i$;0;@;@;i$;	[ o;
-;0;"
-cedar;o;	;{	;iC;i;i!;i;@;i%;0;@;@;i%;	[ o;
-;0;"english_walnut;o;	;{	;iC;i;i0;i(;@;i&;0;@;@;i&;	[ o;
-;0;"black_marlin;o;	;{	;iC;i;i1;i!;@;i';0;@;@;i';	[ o;
-;0;"ship_gray;o;	;{	;iC;i;i?;iI;@;i(;0;@;@;i(;	[ o;
-;0;"pelorous;o;	;{	;iC;i;i´;iø;@;i);0;@;@;i);	[ o;
-;0;"bronze;o;	;{	;iD;i;i&;i;@;i*;0;@;@;i*;	[ o;
-;0;"	cola;o;	;{	;iD;i;i*;i ;@;i+;0;@;@;i+;	[ o;
-;0;"madras;o;	;{	;iD;i;i5;i;@;i,;0;@;@;i,;	[ o;
-;0;"
-minsk;o;	;{	;iD;i;i5;i;@;i-;0;@;@;i-;	[ o;
-;0;"cabbage_pont;o;	;{	;iD;i;iQ;i?;@;i.;0;@;@;i.;	[ o;
-;0;"tom_thumb;o;	;{	;iD;i;i];i@;@;i/;0;@;@;i/;	[ o;
-;0;"mineral_green;o;	;{	;iD;i;ib;iX;@;i0;0;@;@;i0;	[ o;
-;0;"puerto_rico;o;	;{	;iD;i;i¡;i™;@;i1;0;@;@;i1;	[ o;
-;0;"harlequin;o;	;{	;iD;i;iˇ;i ;@;i2;0;@;@;i2;	[ o;
-;0;"brown_pod;o;	;{	;iE;i;i;i;@;i3;0;@;@;i3;	[ o;
-;0;"	cork;o;	;{	;iE;i;i.;i";@;i4;0;@;@;i4;	[ o;
-;0;"masala;o;	;{	;iE;i;i@;i=;@;i5;0;@;@;i5;	[ o;
-;0;"thatch_green;o;	;{	;iE;i;iB;i;@;i6;0;@;@;i6;	[ o;
-;0;"
-fiord;o;	;{	;iE;i;iV;in;@;i7;0;@;@;i7;	[ o;
-;0;"viridian;o;	;{	;iE;i;iÇ;ir;@;i8;0;@;@;i8;	[ o;
-;0;"chateau_green;o;	;{	;iE;i;i®;ie;@;i9;0;@;@;i9;	[ o;
-;0;"ripe_plum;o;	;{	;iF;i;i ;i[;@;i:;0;@;@;i:;	[ o;
-;0;"	paco;o;	;{	;iF;i;i$;i;@;i;;0;@;@;i;;	[ o;
-;0;"deep_oak;o;	;{	;iF;i;i%;i;@;i<;0;@;@;i<;	[ o;
-;0;"merlin;o;	;{	;iF;i;iA;i<;@;i=;0;@;@;i=;	[ o;
-;0;"gun_powder;o;	;{	;iF;i;iG;i\;@;i>;0;@;@;i>;	[ o;
-;0;"east_bay;o;	;{	;iF;i;iQ;i};@;i?;0;@;@;i?;	[ o;
-;0;"royal_blue;o;	;{	;iF;i;in;i·;@;i@;0;@;@;i@;	[ o;
-;0;"ocean_green;o;	;{	;iF;i;i™;i};@;iA;0;@;@;iA;	[ o;
-;0;"burnt_maroon;o;	;{	;iG;i;i;i;@;iB;0;@;@;iB;	[ o;
-;0;"lisbon_brown;o;	;{	;iG;i;i>;i&;@;iC;0;@;@;iC;	[ o;
-;0;"faded_jade;o;	;{	;iG;i;i~;i|;@;iD;0;@;@;iD;	[ o;
-;0;"scarlet_gum;o;	;{	;iH;i;i;ie;@;iE;0;@;@;iE;	[ o;
-;0;"
-iroko;o;	;{	;iH;i;i6;i%;@;iF;0;@;@;iF;	[ o;
-;0;"armadillo;o;	;{	;iH;i;iC;i<;@;iG;0;@;@;iG;	[ o;
-;0;"river_bed;o;	;{	;iH;i;iQ;i^;@;iH;0;@;@;iH;	[ o;
-;0;"green_leaf;o;	;{	;iH;i;io;i;@;iI;0;@;@;iI;	[ o;
-;0;"barossa;o;	;{	;iI;i;i;i2;@;iJ;0;@;@;iJ;	[ o;
-;0;"morocco_brown;o;	;{	;iI;i;i";i ;@;iK;0;@;@;iK;	[ o;
-;0;"	mako;o;	;{	;iI;i;iN;iY;@;iL;0;@;@;iL;	[ o;
-;0;"	kelp;o;	;{	;iJ;i;iN;i;;@;iM;0;@;@;iM;	[ o;
-;0;"san_marino;o;	;{	;iJ;i;iq;i¨;@;iN;0;@;@;iN;	[ o;
-;0;"picton_blue;o;	;{	;iJ;i;i±;iË;@;iO;0;@;@;iO;	[ o;
-;0;"loulou;o;	;{	;iK;i;i;iF;@;iP;0;@;@;iP;	[ o;
-;0;"crater_brown;o;	;{	;iK;i;i);i*;@;iQ;0;@;@;iQ;	[ o;
-;0;"gray_asparagus;o;	;{	;iK;i;i^;iJ;@;iR;0;@;@;iR;	[ o;
-;0;"steel_blue;o;	;{	;iK;i;iÇ;i¥;@;iS;0;@;@;iS;	[ o;
-;0;"rustic_red;o;	;{	;iM;i;i	;i	;@;iT;0;@;@;iT;	[ o;
-;0;"bulgarian_rose;o;	;{	;iM;i;i;i;@;iU;0;@;@;iU;	[ o;
-;0;"clairvoyant;o;	;{	;iM;i;i;i[;@;iV;0;@;@;iV;	[ o;
-;0;"cocoa_bean;o;	;{	;iM;i;i!;i!;@;iW;0;@;@;iW;	[ o;
-;0;"woody_brown;o;	;{	;iM;i;i6;i6;@;iX;0;@;@;iX;	[ o;
-;0;"
-taupe;o;	;{	;iM;i;iA;i7;@;iY;0;@;@;iY;	[ o;
-;0;"van_cleef;o;	;{	;iN;i;i;i;@;iZ;0;@;@;iZ;	[ o;
-;0;"brown_derby;o;	;{	;iN;i;i+;i;@;i[;0;@;@;i[;	[ o;
-;0;"metallic_bronze;o;	;{	;iN;i;i<;i ;@;i\;0;@;@;i\;	[ o;
-;0;"verdun_green;o;	;{	;iN;i;iY;i ;@;i];0;@;@;i];	[ o;
-;0;"blue_bayoux;o;	;{	;iN;i;ik;i~;@;i^;0;@;@;i^;	[ o;
-;0;"bismark;o;	;{	;iN;i;iv;iÉ;@;i_;0;@;@;i_;	[ o;
-;0;"bracken;o;	;{	;iO;i;i/;i	;@;i`;0;@;@;i`;	[ o;
-;0;"deep_bronze;o;	;{	;iO;i;i5;i	;@;ia;0;@;@;ia;	[ o;
-;0;"
-mondo;o;	;{	;iO;i;iA;i5;@;ib;0;@;@;ib;	[ o;
-;0;"tundora;o;	;{	;iO;i;iG;iI;@;ic;0;@;@;ic;	[ o;
-;0;"gravel;o;	;{	;iO;i;iI;iP;@;id;0;@;@;id;	[ o;
-;0;"
-trout;o;	;{	;iO;i;iS;i_;@;ie;0;@;@;ie;	[ o;
-;0;"pigment_indigo;o;	;{	;iP;i;i ;iÇ;@;if;0;@;@;if;	[ o;
-;0;"nandor;o;	;{	;iP;i;ib;iW;@;ig;0;@;@;ig;	[ o;
-;0;"saddle;o;	;{	;iQ;i;i5;i);@;ih;0;@;@;ih;	[ o;
-;0;"
-abbey;o;	;{	;iQ;i;iT;i[;@;ii;0;@;@;ii;	[ o;
-;0;"blackberry;o;	;{	;iR;i;i;i:;@;ij;0;@;@;ij;	[ o;
-;0;"cab_sav;o;	;{	;iR;i;i;i;@;ik;0;@;@;ik;	[ o;
-;0;"indian_tan;o;	;{	;iR;i;i#;i;@;il;0;@;@;il;	[ o;
-;0;"cowboy;o;	;{	;iR;i;i-;i2;@;im;0;@;@;im;	[ o;
-;0;"livid_brown;o;	;{	;iR;i;i-;i3;@;in;0;@;@;in;	[ o;
-;0;"	rock;o;	;{	;iR;i;i=;i8;@;io;0;@;@;io;	[ o;
-;0;"
-punga;o;	;{	;iR;i;iB;i;@;ip;0;@;@;ip;	[ o;
-;0;"bronzetone;o;	;{	;iR;i;iE;i;@;iq;0;@;@;iq;	[ o;
-;0;"woodland;o;	;{	;iR;i;iX;i-;@;ir;0;@;@;ir;	[ o;
-;0;"mahogany;o;	;{	;iS;i;i;i;@;is;0;@;@;is;	[ o;
-;0;"bossanova;o;	;{	;iS;i;i/;i_;@;it;0;@;@;it;	[ o;
-;0;"matterhorn;o;	;{	;iS;i;i@;iF;@;iu;0;@;@;iu;	[ o;
-;0;"bronze_olive;o;	;{	;iS;i;iG;i;@;iv;0;@;@;iv;	[ o;
-;0;"mulled_wine;o;	;{	;iS;i;iJ;ig;@;iw;0;@;@;iw;	[ o;
-;0;"axolotl;o;	;{	;iS;i;ik;iN;@;ix;0;@;@;ix;	[ o;
-;0;"wedgewood;o;	;{	;iS;i;i;iû;@;iy;0;@;@;iy;	[ o;
-;0;"shakespeare;o;	;{	;iS;i;i´;i—;@;iz;0;@;@;iz;	[ o;
-;0;"honey_flower;o;	;{	;iT;i;i!;iu;@;i{;0;@;@;i{;	[ o;
-;0;"daisy_bush;o;	;{	;iT;i;i(;iò;@;i|;0;@;@;i|;	[ o;
-;0;"indigo;o;	;{	;iT;i;in;i∆;@;i};0;@;@;i};	[ o;
-;0;"fern_green;o;	;{	;iT;i;i~;iG;@;i~;0;@;@;i~;	[ o;
-;0;"fruit_salad;o;	;{	;iT;i;iù;ib;@;i;0;@;@;i;	[ o;
-;0;"
-apple;o;	;{	;iT;i;i®;iB;@;iÄ;0;@;@;iÄ;	[ o;
-;0;"mortar;o;	;{	;iU;i;iH;iV;@;iÅ;0;@;@;iÅ;	[ o;
-;0;"kashmir_blue;o;	;{	;iU;i;iu;iñ;@;iÇ;0;@;@;iÇ;	[ o;
-;0;"cutty_sark;o;	;{	;iU;i;i{;iw;@;iÉ;0;@;@;iÉ;	[ o;
-;0;"emerald;o;	;{	;iU;i;i»;i};@;iÑ;0;@;@;iÑ;	[ o;
-;0;"emperor;o;	;{	;iV;i;iK;iN;@;iÖ;0;@;@;iÖ;	[ o;
-;0;"chalet_green;o;	;{	;iV;i;is;iB;@;iÜ;0;@;@;iÜ;	[ o;
-;0;"	como;o;	;{	;iV;i;i|;ik;@;iá;0;@;@;iá;	[ o;
-;0;"smalt_blue;o;	;{	;iV;i;iÄ;iè;@;ià;0;@;@;ià;	[ o;
-;0;"castro;o;	;{	;iW;i;i ;i$;@;iâ;0;@;@;iâ;	[ o;
-;0;"maroon_oak;o;	;{	;iW;i;i;i;@;iä;0;@;@;iä;	[ o;
-;0;"
-gigas;o;	;{	;iW;i;iA;iî;@;iã;0;@;@;iã;	[ o;
-;0;"voodoo;o;	;{	;iX;i;i9;iZ;@;iå;0;@;@;iå;	[ o;
-;0;"victoria;o;	;{	;iX;i;iI;ië;@;iç;0;@;@;iç;	[ o;
-;0;"hippie_green;o;	;{	;iX;i;iÇ;iP;@;ié;0;@;@;ié;	[ o;
-;0;"
-heath;o;	;{	;iY;i;i;i;@;iè;0;@;@;iè;	[ o;
-;0;"judge_gray;o;	;{	;iY;i;iH;i8;@;iê;0;@;@;iê;	[ o;
-;0;"fuscous_gray;o;	;{	;iY;i;iX;iR;@;ië;0;@;@;ië;	[ o;
-;0;"vida_loca;o;	;{	;iY;i;iê;i;@;ií;0;@;@;ií;	[ o;
-;0;"cioccolato;o;	;{	;iZ;i;i-;i;@;iì;0;@;@;iì;	[ o;
-;0;"saratoga;o;	;{	;iZ;i;i`;i;@;iî;0;@;@;iî;	[ o;
-;0;"finlandia;o;	;{	;iZ;i;ir;i[;@;iï;0;@;@;iï;	[ o;
-;0;"havelock_blue;o;	;{	;iZ;i;iê;iŸ;@;iñ;0;@;@;iñ;	[ o;
-;0;"fountain_blue;o;	;{	;i[;i;i¥;iæ;@;ió;0;@;@;ió;	[ o;
-;0;"spring_leaves;o;	;{	;i\;i;iÉ;ih;@;iò;0;@;@;iò;	[ o;
-;0;"saddle_brown;o;	;{	;i];i;i9;i;@;iô;0;@;@;iô;	[ o;
-;0;"scarpa_flow;o;	;{	;i];i;iZ;ig;@;iö;0;@;@;iö;	[ o;
-;0;"cactus;o;	;{	;i];i;iv;i[;@;iõ;0;@;@;iõ;	[ o;
-;0;"hippie_blue;o;	;{	;i];i;iö;iØ;@;iú;0;@;@;iú;	[ o;
-;0;"wine_berry;o;	;{	;i^;i;i";i:;@;iù;0;@;@;iù;	[ o;
-;0;"brown_bramble;o;	;{	;i^;i;i-;i	;@;iû;0;@;@;iû;	[ o;
-;0;"congo_brown;o;	;{	;i^;i;i<;i<;@;iü;0;@;@;iü;	[ o;
-;0;"millbrook;o;	;{	;i^;i;iI;i8;@;i†;0;@;@;i†;	[ o;
-;0;"waikawa_gray;o;	;{	;i_;i;is;iú;@;i°;0;@;@;i°;	[ o;
-;0;"horizon;o;	;{	;i_;i;iá;i†;@;i¢;0;@;@;i¢;	[ o;
-;0;"jambalaya;o;	;{	;i`;i;i5;i;@;i£;0;@;@;i£;	[ o;
-;0;"bordeaux;o;	;{	;ia;i;i;i%;@;i§;0;@;@;i§;	[ o;
-;0;"mulberry_wood;o;	;{	;ia;i;i
-;i;;@;i•;0;@;@;i•;	[ o;
-;0;"carnaby_tan;o;	;{	;ia;i;i3;i;@;i¶;0;@;@;i¶;	[ o;
-;0;"
-comet;o;	;{	;ia;i;ib;iz;@;iß;0;@;@;iß;	[ o;
-;0;"redwood;o;	;{	;ib;i;i#;i;@;i®;0;@;@;i®;	[ o;
-;0;"don_juan;o;	;{	;ib;i;iQ;iV;@;i©;0;@;@;i©;	[ o;
-;0;"chicago;o;	;{	;ib;i;ia;i];@;i™;0;@;@;i™;	[ o;
-;0;"verdigris;o;	;{	;ib;i;ic;i<;@;i´;0;@;@;i´;	[ o;
-;0;"dingley;o;	;{	;ib;i;i|;iL;@;i¨;0;@;@;i¨;	[ o;
-;0;"breaker_bay;o;	;{	;ib;i;i°;iü;@;i≠;0;@;@;i≠;	[ o;
-;0;"
-kabul;o;	;{	;ic;i;iM;iC;@;iÆ;0;@;@;iÆ;	[ o;
-;0;"hemlock;o;	;{	;ic;i;ib;i@;@;iØ;0;@;@;iØ;	[ o;
-;0;"irish_coffee;o;	;{	;id;i;iB;i+;@;i∞;0;@;@;i∞;	[ o;
-;0;"mid_gray;o;	;{	;id;i;id;is;@;i±;0;@;@;i±;	[ o;
-;0;"shuttle_gray;o;	;{	;id;i;ik;iw;@;i≤;0;@;@;i≤;	[ o;
-;0;"aqua_forest;o;	;{	;id;i;iß;i|;@;i≥;0;@;@;i≥;	[ o;
-;0;"tradewind;o;	;{	;id;i;i≥;i¨;@;i¥;0;@;@;i¥;	[ o;
-;0;"horses_neck;o;	;{	;ie;i;iN;i;@;iµ;0;@;@;iµ;	[ o;
-;0;"
-smoky;o;	;{	;ie;i;i`;ix;@;i∂;0;@;@;i∂;	[ o;
-;0;"corduroy;o;	;{	;ie;i;is;im;@;i∑;0;@;@;i∑;	[ o;
-;0;"danube;o;	;{	;ie;i;iì;i—;@;i∏;0;@;@;i∏;	[ o;
-;0;"espresso;o;	;{	;if;i;i,;i;@;iπ;0;@;@;iπ;	[ o;
-;0;"eggplant;o;	;{	;if;i;iE;iV;@;i∫;0;@;@;i∫;	[ o;
-;0;"costa_del_sol;o;	;{	;if;i;ib;i5;@;iª;0;@;@;iª;	[ o;
-;0;"glade_green;o;	;{	;if;i;iÑ;id;@;iº;0;@;@;iº;	[ o;
-;0;"buccaneer;o;	;{	;ig;i;i4;i5;@;iΩ;0;@;@;iΩ;	[ o;
-;0;"quincy;o;	;{	;ig;i;iD;i2;@;iæ;0;@;@;iæ;	[ o;
-;0;"butterfly_bush;o;	;{	;ig;i;iS;iö;@;iø;0;@;@;iø;	[ o;
-;0;"west_coast;o;	;{	;ig;i;iV;i;@;i¿;0;@;@;i¿;	[ o;
-;0;"
-finch;o;	;{	;ig;i;ik;iN;@;i¡;0;@;@;i¡;	[ o;
-;0;"patina;o;	;{	;ih;i;iö;iè;@;i¬;0;@;@;i¬;	[ o;
-;0;"	fern;o;	;{	;ih;i;i∑;iq;@;i√;0;@;@;i√;	[ o;
-;0;"blue_violet;o;	;{	;ii;i;i[;i∑;@;iƒ;0;@;@;iƒ;	[ o;
-;0;"dolphin;o;	;{	;ii;i;ie;i|;@;i≈;0;@;@;i≈;	[ o;
-;0;"storm_dust;o;	;{	;ii;i;ii;ih;@;i∆;0;@;@;i∆;	[ o;
-;0;"	siam;o;	;{	;ii;i;io;iY;@;i«;0;@;@;i«;	[ o;
-;0;"nevada;o;	;{	;ii;i;is;iz;@;i»;0;@;@;i»;	[ o;
-;0;"cornflower_blue;o;	;{	;ii;i;iï;iÌ;@;i…;0;@;@;i…;	[ o;
-;0;"viking;o;	;{	;ii;i;iÃ;i€;@;i ;0;@;@;i ;	[ o;
-;0;"rosewood;o;	;{	;ij;i;i ;i;@;iÀ;0;@;@;iÀ;	[ o;
-;0;"cherrywood;o;	;{	;ij;i;i;i;@;iÃ;0;@;@;iÃ;	[ o;
-;0;"purple_heart;o;	;{	;ij;i;i2;i¡;@;iÕ;0;@;@;iÕ;	[ o;
-;0;"fern_frond;o;	;{	;ij;i;iw;i%;@;iŒ;0;@;@;iŒ;	[ o;
-;0;"willow_grove;o;	;{	;ij;i;iy;ib;@;iœ;0;@;@;iœ;	[ o;
-;0;"	hoki;o;	;{	;ij;i;iÜ;iü;@;i–;0;@;@;i–;	[ o;
-;0;"pompadour;o;	;{	;ik;i;i ;iJ;@;i—;0;@;@;i—;	[ o;
-;0;"purple;o;	;{	;ik;i;i ;iô;@;i“;0;@;@;i“;	[ o;
-;0;"tyrian_purple;o;	;{	;ik;i;i;iA;@;i”;0;@;@;i”;	[ o;
-;0;"dark_tan;o;	;{	;ik;i;i;i;@;i‘;0;@;@;i‘;	[ o;
-;0;"silver_tree;o;	;{	;ik;i;iµ;iè;@;i’;0;@;@;i’;	[ o;
-;0;"bright_green;o;	;{	;ik;i;iˇ;i ;@;i÷;0;@;@;i÷;	[ o;
-;0;"screamin_green;o;	;{	;ik;i;iˇ;ik;@;i◊;0;@;@;i◊;	[ o;
-;0;"black_rose;o;	;{	;il;i;i;i2;@;iÿ;0;@;@;iÿ;	[ o;
-;0;"scampi;o;	;{	;il;i;id;i¶;@;iŸ;0;@;@;iŸ;	[ o;
-;0;"ironside_gray;o;	;{	;il;i;ik;ig;@;i⁄;0;@;@;i⁄;	[ o;
-;0;"viridian_green;o;	;{	;il;i;iâ;iz;@;i€;0;@;@;i€;	[ o;
-;0;"christi;o;	;{	;il;i;iß;i;@;i‹;0;@;@;i‹;	[ o;
-;0;"nutmeg_wood_finish;o;	;{	;im;i;i;;i ;@;i›;0;@;@;i›;	[ o;
-;0;"zambezi;o;	;{	;im;i;iZ;i];@;iﬁ;0;@;@;iﬁ;	[ o;
-;0;"salt_box;o;	;{	;im;i;ic;is;@;iﬂ;0;@;@;iﬂ;	[ o;
-;0;"tawny_port;o;	;{	;in;i;i*;iJ;@;i‡;0;@;@;i‡;	[ o;
-;0;"	finn;o;	;{	;in;i;i2;iY;@;i·;0;@;@;i·;	[ o;
-;0;"scorpion;o;	;{	;in;i;id;ig;@;i‚;0;@;@;i‚;	[ o;
-;0;"
-lynch;o;	;{	;in;i;i~;iö;@;i„;0;@;@;i„;	[ o;
-;0;"
-spice;o;	;{	;io;i;iI;i3;@;i‰;0;@;@;i‰;	[ o;
-;0;"himalaya;o;	;{	;io;i;ib;i ;@;iÂ;0;@;@;iÂ;	[ o;
-;0;"soya_bean;o;	;{	;io;i;ie;iV;@;iÊ;0;@;@;iÊ;	[ o;
-;0;"hairy_heath;o;	;{	;ip;i;i/;i;@;iÁ;0;@;@;iÁ;	[ o;
-;0;"royal_purple;o;	;{	;ip;i;iD;i†;@;iË;0;@;@;iË;	[ o;
-;0;"shingle_fawn;o;	;{	;ip;i;iS;i6;@;iÈ;0;@;@;iÈ;	[ o;
-;0;"dorado;o;	;{	;ip;i;i\;iZ;@;iÍ;0;@;@;iÍ;	[ o;
-;0;"bermuda_gray;o;	;{	;ip;i;iã;i¢;@;iÎ;0;@;@;iÎ;	[ o;
-;0;"olive_drab;o;	;{	;ip;i;ié;i(;@;iÏ;0;@;@;iÏ;	[ o;
-;0;"eminence;o;	;{	;iq;i;i5;iÇ;@;iÌ;0;@;@;iÌ;	[ o;
-;0;"turquoise_blue;o;	;{	;iq;i;i⁄;iÁ;@;iÓ;0;@;@;iÓ;	[ o;
-;0;"lonestar;o;	;{	;ir;i;i;i;@;iÔ;0;@;@;iÔ;	[ o;
-;0;"pine_cone;o;	;{	;ir;i;ic;iY;@;i;0;@;@;i;	[ o;
-;0;"dove_gray;o;	;{	;ir;i;iq;iq;@;iÒ;0;@;@;iÒ;	[ o;
-;0;"juniper;o;	;{	;ir;i;ií;ií;@;iÚ;0;@;@;iÚ;	[ o;
-;0;"gothic;o;	;{	;ir;i;ií;i°;@;iÛ;0;@;@;iÛ;	[ o;
-;0;"red_oxide;o;	;{	;is;i;i;i;@;iÙ;0;@;@;iÙ;	[ o;
-;0;"moccaccino;o;	;{	;is;i;i";i;@;iı;0;@;@;iı;	[ o;
-;0;"pickled_bean;o;	;{	;is;i;iM;i+;@;iˆ;0;@;@;iˆ;	[ o;
-;0;"dallas;o;	;{	;is;i;iP;i+;@;i˜;0;@;@;i˜;	[ o;
-;0;"kokoda;o;	;{	;is;i;ir;i\;@;i¯;0;@;@;i¯;	[ o;
-;0;"pale_sky;o;	;{	;is;i;i|;iÉ;@;i˘;0;@;@;i˘;	[ o;
-;0;"cafe_royale;o;	;{	;it;i;iI;i;@;i˙;0;@;@;i˙;	[ o;
-;0;"
-flint;o;	;{	;it;i;io;if;@;i˚;0;@;@;i˚;	[ o;
-;0;"highland;o;	;{	;it;i;ié;ih;@;i¸;0;@;@;i¸;	[ o;
-;0;"limeade;o;	;{	;it;i;iù;i;@;i˝;0;@;@;i˝;	[ o;
-;0;"
-downy;o;	;{	;it;i;i–;i≈;@;i˛;0;@;@;i˛;	[ o;
-;0;"persian_plum;o;	;{	;iu;i;i!;i!;@;iˇ;0;@;@;iˇ;	[ o;
-;0;"
-sepia;o;	;{	;iu;i;iG;i;@;i ;0;@;@;i ;	[ o;
-;0;"antique_bronze;o;	;{	;iu;i;iO;i;@;i;0;@;@;i;	[ o;
-;0;"
-ferra;o;	;{	;iu;i;iT;iU;@;i;0;@;@;i;	[ o;
-;0;"coffee;o;	;{	;iu;i;ij;iZ;@;i;0;@;@;i;	[ o;
-;0;"slate_gray;o;	;{	;iu;i;iÄ;iê;@;i;0;@;@;i;	[ o;
-;0;"cedar_wood_finish;o;	;{	;iv;i;i;i ;@;i;0;@;@;i;	[ o;
-;0;"metallic_copper;o;	;{	;iv;i;i.;i";@;i;0;@;@;i;	[ o;
-;0;"affair;o;	;{	;iv;i;iK;iì;@;i;0;@;@;i;	[ o;
-;0;"studio;o;	;{	;iv;i;iO;i≤;@;i;0;@;@;i;	[ o;
-;0;"tobacco_brown;o;	;{	;iv;i;ib;iL;@;i	;0;@;@;i	;	[ o;
-;0;"yellow_metal;o;	;{	;iv;i;ih;i=;@;i
-;0;@;@;i
-;	[ o;
-;0;"	peat;o;	;{	;iv;i;ip;i[;@;i;0;@;@;i;	[ o;
-;0;"olivetone;o;	;{	;iv;i;is;i;@;i;0;@;@;i;	[ o;
-;0;"storm_gray;o;	;{	;iv;i;iy;iÜ;@;i;0;@;@;i;	[ o;
-;0;"sirocco;o;	;{	;iv;i;iÄ;iÄ;@;i;0;@;@;i;	[ o;
-;0;"aquamarine_blue;o;	;{	;iv;i;iŸ;i‚;@;i;0;@;@;i;	[ o;
-;0;"venetian_red;o;	;{	;iw;i;i;i;@;i;0;@;@;i;	[ o;
-;0;"old_copper;o;	;{	;iw;i;iO;i4;@;i;0;@;@;i;	[ o;
-;0;"go_ben;o;	;{	;iw;i;ir;iS;@;i;0;@;@;i;	[ o;
-;0;"
-raven;o;	;{	;iw;i;i{;iâ;@;i;0;@;@;i;	[ o;
-;0;"seance;o;	;{	;ix;i;i#;iè;@;i;0;@;@;i;	[ o;
-;0;"raw_umber;o;	;{	;ix;i;iO;i;@;i;0;@;@;i;	[ o;
-;0;"kimberly;o;	;{	;ix;i;iq;iü;@;i;0;@;@;i;	[ o;
-;0;"crocodile;o;	;{	;ix;i;ir;i];@;i;0;@;@;i;	[ o;
-;0;"
-crete;o;	;{	;ix;i;i};i.;@;i;0;@;@;i;	[ o;
-;0;"xanadu;o;	;{	;ix;i;iÜ;i};@;i;0;@;@;i;	[ o;
-;0;"spicy_mustard;o;	;{	;iy;i;ii;i;@;i;0;@;@;i;	[ o;
-;0;"limed_ash;o;	;{	;iy;i;i};ih;@;i;0;@;@;i;	[ o;
-;0;"rolling_stone;o;	;{	;iy;i;i};iÉ;@;i;0;@;@;i;	[ o;
-;0;"blue_smoke;o;	;{	;iy;i;ià;iÅ;@;i;0;@;@;i;	[ o;
-;0;"laurel;o;	;{	;iy;i;iì;i};@;i;0;@;@;i;	[ o;
-;0;"mantis;o;	;{	;iy;i;i√;ij;@;i;0;@;@;i;	[ o;
-;0;"russett;o;	;{	;iz;i;i_;i\;@;i ;0;@;@;i ;	[ o;
-;0;"deluge;o;	;{	;iz;i;ih;i®;@;i!;0;@;@;i!;	[ o;
-;0;"cosmic;o;	;{	;i{;i;i>;ib;@;i";0;@;@;i";	[ o;
-;0;"blue_marguerite;o;	;{	;i{;i;ik;i∆;@;i#;0;@;@;i#;	[ o;
-;0;"	lima;o;	;{	;i{;i;iΩ;i;@;i$;0;@;@;i$;	[ o;
-;0;"sky_blue;o;	;{	;i{;i;i◊;iÍ;@;i%;0;@;@;i%;	[ o;
-;0;"dark_burgundy;o;	;{	;i|;i;i;i
-;@;i&;0;@;@;i&;	[ o;
-;0;"crown_of_thorns;o;	;{	;i|;i;i$;i$;@;i';0;@;@;i';	[ o;
-;0;"walnut;o;	;{	;i|;i;iD;i;@;i(;0;@;@;i(;	[ o;
-;0;"
-pablo;o;	;{	;i|;i;it;if;@;i);0;@;@;i);	[ o;
-;0;"pacifika;o;	;{	;i|;i;iÅ;i%;@;i*;0;@;@;i*;	[ o;
-;0;"
-oxley;o;	;{	;i|;i;iû;iÜ;@;i+;0;@;@;i+;	[ o;
-;0;"pastel_green;o;	;{	;i|;i;i›;i|;@;i,;0;@;@;i,;	[ o;
-;0;"japanese_maple;o;	;{	;i};i;i;i;@;i-;0;@;@;i-;	[ o;
-;0;"
-mocha;o;	;{	;i};i;i2;i;@;i.;0;@;@;i.;	[ o;
-;0;"peanut;o;	;{	;i};i;i4;i;@;i/;0;@;@;i/;	[ o;
-;0;"camouflage_green;o;	;{	;i};i;iÜ;ip;@;i0;0;@;@;i0;	[ o;
-;0;"wasabi;o;	;{	;i};i;iä;i*;@;i1;0;@;@;i1;	[ o;
-;0;"ship_cove;o;	;{	;i};i;iã;i∫;@;i2;0;@;@;i2;	[ o;
-;0;"sea_nymph;o;	;{	;i};i;i£;iú;@;i3;0;@;@;i3;	[ o;
-;0;"roman_coffee;o;	;{	;i~;i;ib;iQ;@;i4;0;@;@;i4;	[ o;
-;0;"old_lavender;o;	;{	;i~;i;im;i};@;i5;0;@;@;i5;	[ o;
-;0;"rum;o;	;{	;i~;i;in;iâ;@;i6;0;@;@;i6;	[ o;
-;0;"fedora;o;	;{	;i~;i;io;i};@;i7;0;@;@;i7;	[ o;
-;0;"sandstone;o;	;{	;i~;i;ir;ig;@;i8;0;@;@;i8;	[ o;
-;0;"
-spray;o;	;{	;i~;i;iﬁ;iÏ;@;i9;0;@;@;i9;	[ o;
-;0;"
-siren;o;	;{	;i;i;i;i?;@;i:;0;@;@;i:;	[ o;
-;0;"fuchsia_blue;o;	;{	;i;i;i];i¡;@;i;;0;@;@;i;;	[ o;
-;0;"boulder;o;	;{	;i;i;i;i;@;i<;0;@;@;i<;	[ o;
-;0;"wild_blue_yonder;o;	;{	;i;i;iâ;i∏;@;i=;0;@;@;i=;	[ o;
-;0;"de_york;o;	;{	;i;i;iƒ;ià;@;i>;0;@;@;i>;	[ o;
-;0;"red_beech;o;	;{	;i{;i;i=;i;@;i?;0;@;@;i?;	[ o;
-;0;"cinnamon;o;	;{	;i{;i;iD;i ;@;i@;0;@;@;i@;	[ o;
-;0;"yukon_gold;o;	;{	;i{;i;ik;i;@;iA;0;@;@;iA;	[ o;
-;0;"	tapa;o;	;{	;i{;i;i};iy;@;iB;0;@;@;iB;	[ o;
-;0;"waterloo_;o;	;{	;i{;i;i|;iî;@;iC;0;@;@;iC;	[ o;
-;0;"flax_smoke;o;	;{	;i{;i;iÇ;ij;@;iD;0;@;@;iD;	[ o;
-;0;"amulet;o;	;{	;i{;i;iü;iÄ;@;iE;0;@;@;iE;	[ o;
-;0;"asparagus;o;	;{	;i{;i;i†;i`;@;iF;0;@;@;iF;	[ o;
-;0;"kenyan_copper;o;	;{	;i|;i;i!;i
-;@;iG;0;@;@;iG;	[ o;
-;0;"
-pesto;o;	;{	;i|;i;i{;i6;@;iH;0;@;@;iH;	[ o;
-;0;"
-topaz;o;	;{	;i|;i;i|;iä;@;iI;0;@;@;iI;	[ o;
-;0;"concord;o;	;{	;i|;i;i{;i;@;iJ;0;@;@;iJ;	[ o;
-;0;"
-jumbo;o;	;{	;i|;i;i{;iÇ;@;iK;0;@;@;iK;	[ o;
-;0;"trendy_green;o;	;{	;i|;i;ià;i;@;iL;0;@;@;iL;	[ o;
-;0;"
-gumbo;o;	;{	;i|;i;i°;i¶;@;iM;0;@;@;iM;	[ o;
-;0;"acapulco;o;	;{	;i|;i;i∞;i°;@;iN;0;@;@;iN;	[ o;
-;0;"neptune;o;	;{	;i|;i;i∑;iª;@;iO;0;@;@;iO;	[ o;
-;0;"pueblo;o;	;{	;i};i;i1;i;@;iP;0;@;@;iP;	[ o;
-;0;"bay_leaf;o;	;{	;i};i;i©;iç;@;iQ;0;@;@;iQ;	[ o;
-;0;"malibu;o;	;{	;i};i;i»;i˜;@;iR;0;@;@;iR;	[ o;
-;0;"bermuda;o;	;{	;i};i;iÿ;i∆;@;iS;0;@;@;iS;	[ o;
-;0;"copper_canyon;o;	;{	;i~;i;i?;i;@;iT;0;@;@;iT;	[ o;
-;0;"claret;o;	;{	;i;i;i;i9;@;iU;0;@;@;iU;	[ o;
-;0;"peru_tan;o;	;{	;i;i;i?;i;@;iV;0;@;@;iV;	[ o;
-;0;"falcon;o;	;{	;i;i;ig;ir;@;iW;0;@;@;iW;	[ o;
-;0;"mobster;o;	;{	;i;i;iz;iâ;@;iX;0;@;@;iX;	[ o;
-;0;"moody_blue;o;	;{	;i;i;i{;i”;@;iY;0;@;@;iY;	[ o;
-;0;"chartreuse;o;	;{	;i;i;iˇ;i ;@;iZ;0;@;@;iZ;	[ o;
-;0;"aquamarine;o;	;{	;i;i;iˇ;i‘;@;i[;0;@;@;i[;	[ o;
-;0;"maroon;o;	;{	;iÄ;i;i ;i ;@;i\;0;@;@;i\;	[ o;
-;0;"rose_bud_cherry;o;	;{	;iÄ;i;i;iL;@;i];0;@;@;i];	[ o;
-;0;"falu_red;o;	;{	;iÄ;i;i;i;@;i^;0;@;@;i^;	[ o;
-;0;"red_robin;o;	;{	;iÄ;i;i9;i$;@;i_;0;@;@;i_;	[ o;
-;0;"vivid_violet;o;	;{	;iÄ;i;i<;iê;@;i`;0;@;@;i`;	[ o;
-;0;"russet;o;	;{	;iÄ;i;iK;i ;@;ia;0;@;@;ia;	[ o;
-;0;"friar_gray;o;	;{	;iÄ;i;i~;i~;@;ib;0;@;@;ib;	[ o;
-;0;"
-olive;o;	;{	;iÄ;i;iÄ;i ;@;ic;0;@;@;ic;	[ o;
-;0;"	gray;o;	;{	;iÄ;i;iÄ;iÄ;@;id;0;@;@;id;	[ o;
-;0;"gulf_stream;o;	;{	;iÄ;i;i≥;iÆ;@;ie;0;@;@;ie;	[ o;
-;0;"glacier;o;	;{	;iÄ;i;i≥;iƒ;@;if;0;@;@;if;	[ o;
-;0;"seagull;o;	;{	;iÄ;i;iÃ;iÍ;@;ig;0;@;@;ig;	[ o;
-;0;"nutmeg;o;	;{	;iÅ;i;iG;i1;@;ih;0;@;@;ih;	[ o;
-;0;"spicy_pink;o;	;{	;iÅ;i;is;iv;@;ii;0;@;@;ii;	[ o;
-;0;"empress;o;	;{	;iÅ;i;ix;i|;@;ij;0;@;@;ij;	[ o;
-;0;"spanish_green;o;	;{	;iÅ;i;iò;iÖ;@;ik;0;@;@;ik;	[ o;
-;0;"sand_dune;o;	;{	;iÇ;i;it;ij;@;il;0;@;@;il;	[ o;
-;0;"gunsmoke;o;	;{	;iÇ;i;iÜ;iÖ;@;im;0;@;@;im;	[ o;
-;0;"battleship_gray;o;	;{	;iÇ;i;iè;iw;@;in;0;@;@;in;	[ o;
-;0;"merlot;o;	;{	;iÉ;i;i;i(;@;io;0;@;@;io;	[ o;
-;0;"shadow;o;	;{	;iÉ;i;iu;iU;@;ip;0;@;@;ip;	[ o;
-;0;"chelsea_cucumber;o;	;{	;iÉ;i;i™;ib;@;iq;0;@;@;iq;	[ o;
-;0;"monte_carlo;o;	;{	;iÉ;i;i–;i∆;@;ir;0;@;@;ir;	[ o;
-;0;"	plum;o;	;{	;iÑ;i;i6;i~;@;is;0;@;@;is;	[ o;
-;0;"granny_smith;o;	;{	;iÑ;i;i†;i†;@;it;0;@;@;it;	[ o;
-;0;"chetwode_blue;o;	;{	;iÖ;i;iÅ;iŸ;@;iu;0;@;@;iu;	[ o;
-;0;"bandicoot;o;	;{	;iÖ;i;iÑ;iu;@;iv;0;@;@;iv;	[ o;
-;0;"bali_hai;o;	;{	;iÖ;i;iü;iØ;@;iw;0;@;@;iw;	[ o;
-;0;"half_baked;o;	;{	;iÖ;i;iƒ;iÃ;@;ix;0;@;@;ix;	[ o;
-;0;"red_devil;o;	;{	;iÜ;i;i;i;@;iy;0;@;@;iy;	[ o;
-;0;"
-lotus;o;	;{	;iÜ;i;iA;iA;@;iz;0;@;@;iz;	[ o;
-;0;"ironstone;o;	;{	;iÜ;i;iM;iA;@;i{;0;@;@;i{;	[ o;
-;0;"bull_shot;o;	;{	;iÜ;i;iR;i#;@;i|;0;@;@;i|;	[ o;
-;0;"rusty_nail;o;	;{	;iÜ;i;i[;i;@;i};0;@;@;i};	[ o;
-;0;"bitter;o;	;{	;iÜ;i;iâ;iy;@;i~;0;@;@;i~;	[ o;
-;0;"regent_gray;o;	;{	;iÜ;i;iî;iü;@;i;0;@;@;i;	[ o;
-;0;"
-disco;o;	;{	;iá;i;i;iU;@;iÄ;0;@;@;iÄ;	[ o;
-;0;"americano;o;	;{	;iá;i;iz;is;@;iÅ;0;@;@;iÅ;	[ o;
-;0;"hurricane;o;	;{	;iá;i;i|;i{;@;iÇ;0;@;@;iÇ;	[ o;
-;0;"oslo_gray;o;	;{	;iá;i;iç;ië;@;iÉ;0;@;@;iÉ;	[ o;
-;0;"
-sushi;o;	;{	;iá;i;i´;i>;@;iÑ;0;@;@;iÑ;	[ o;
-;0;"spicy_mix;o;	;{	;ià;i;iX;iG;@;iÖ;0;@;@;iÖ;	[ o;
-;0;"kumera;o;	;{	;ià;i;ig;i&;@;iÜ;0;@;@;iÜ;	[ o;
-;0;"suva_gray;o;	;{	;ià;i;iÉ;iá;@;iá;0;@;@;iá;	[ o;
-;0;"avocado;o;	;{	;ià;i;iç;ij;@;ià;0;@;@;ià;	[ o;
-;0;"camelot;o;	;{	;iâ;i;i9;i[;@;iâ;0;@;@;iâ;	[ o;
-;0;"solid_pink;o;	;{	;iâ;i;i=;iH;@;iä;0;@;@;iä;	[ o;
-;0;"cannon_pink;o;	;{	;iâ;i;iH;il;@;iã;0;@;@;iã;	[ o;
-;0;"makara;o;	;{	;iâ;i;i};ir;@;iå;0;@;@;iå;	[ o;
-;0;"burnt_umber;o;	;{	;iä;i;i8;i);@;iç;0;@;@;iç;	[ o;
-;0;"true_v;o;	;{	;iä;i;ix;i÷;@;ié;0;@;@;ié;	[ o;
-;0;"clay_creek;o;	;{	;iä;i;iÉ;ie;@;iè;0;@;@;iè;	[ o;
-;0;"monsoon;o;	;{	;iä;i;iÉ;iâ;@;iê;0;@;@;iê;	[ o;
-;0;"
-stack;o;	;{	;iä;i;iè;iä;@;ië;0;@;@;ië;	[ o;
-;0;"jordy_blue;o;	;{	;iä;i;iπ;iÒ;@;ií;0;@;@;ií;	[ o;
-;0;"electric_violet;o;	;{	;iã;i;i ;iˇ;@;iì;0;@;@;iì;	[ o;
-;0;"monarch;o;	;{	;iã;i;i;i(;@;iî;0;@;@;iî;	[ o;
-;0;"corn_harvest;o;	;{	;iã;i;ip;i;@;iï;0;@;@;iï;	[ o;
-;0;"olive_haze;o;	;{	;iã;i;iÑ;iu;@;iñ;0;@;@;iñ;	[ o;
-;0;"schooner;o;	;{	;iã;i;iÑ;i~;@;ió;0;@;@;ió;	[ o;
-;0;"natural_gray;o;	;{	;iã;i;iÜ;iÄ;@;iò;0;@;@;iò;	[ o;
-;0;"mantle;o;	;{	;iã;i;iú;iê;@;iô;0;@;@;iô;	[ o;
-;0;"portage;o;	;{	;iã;i;iü;iÓ;@;iö;0;@;@;iö;	[ o;
-;0;"	envy;o;	;{	;iã;i;i¶;iê;@;iõ;0;@;@;iõ;	[ o;
-;0;"cascade;o;	;{	;iã;i;i©;i•;@;iú;0;@;@;iú;	[ o;
-;0;"riptide;o;	;{	;iã;i;iÊ;iÿ;@;iù;0;@;@;iù;	[ o;
-;0;"cardinal_pink;o;	;{	;iå;i;i
-;ic;@;iû;0;@;@;iû;	[ o;
-;0;"mule_fawn;o;	;{	;iå;i;iL;i4;@;iü;0;@;@;iü;	[ o;
-;0;"potters_clay;o;	;{	;iå;i;i\;i=;@;i†;0;@;@;i†;	[ o;
-;0;"trendy_pink;o;	;{	;iå;i;ii;iï;@;i°;0;@;@;i°;	[ o;
-;0;"paprika;o;	;{	;iç;i;i;i+;@;i¢;0;@;@;i¢;	[ o;
-;0;"sanguine_brown;o;	;{	;iç;i;iB;i=;@;i£;0;@;@;i£;	[ o;
-;0;"
-tosca;o;	;{	;iç;i;iD;iD;@;i§;0;@;@;i§;	[ o;
-;0;"cement;o;	;{	;iç;i;i{;ig;@;i•;0;@;@;i•;	[ o;
-;0;"granite_green;o;	;{	;iç;i;iâ;iy;@;i¶;0;@;@;i¶;	[ o;
-;0;"manatee;o;	;{	;iç;i;iê;i°;@;iß;0;@;@;iß;	[ o;
-;0;"polo_blue;o;	;{	;iç;i;i®;iÃ;@;i®;0;@;@;i®;	[ o;
-;0;"red_berry;o;	;{	;ié;i;i ;i ;@;i©;0;@;@;i©;	[ o;
-;0;"	rope;o;	;{	;ié;i;iR;i#;@;i™;0;@;@;i™;	[ o;
-;0;"
-opium;o;	;{	;ié;i;it;iu;@;i´;0;@;@;i´;	[ o;
-;0;"domino;o;	;{	;ié;i;i|;ic;@;i¨;0;@;@;i¨;	[ o;
-;0;"
-mamba;o;	;{	;ié;i;iÅ;iê;@;i≠;0;@;@;i≠;	[ o;
-;0;"
-nepal;o;	;{	;ié;i;i´;i¡;@;iÆ;0;@;@;iÆ;	[ o;
-;0;"pohutukawa;o;	;{	;iè;i;i;i!;@;iØ;0;@;@;iØ;	[ o;
-;0;"el_salva;o;	;{	;iè;i;iC;i8;@;i∞;0;@;@;i∞;	[ o;
-;0;"
-korma;o;	;{	;iè;i;iP;i;@;i±;0;@;@;i±;	[ o;
-;0;"squirrel;o;	;{	;iè;i;iÅ;i{;@;i≤;0;@;@;i≤;	[ o;
-;0;"vista_blue;o;	;{	;iè;i;i÷;i¥;@;i≥;0;@;@;i≥;	[ o;
-;0;"burgundy;o;	;{	;iê;i;i ;i%;@;i¥;0;@;@;i¥;	[ o;
-;0;"old_brick;o;	;{	;iê;i;i#;i#;@;iµ;0;@;@;iµ;	[ o;
-;0;"	hemp;o;	;{	;iê;i;i};iy;@;i∂;0;@;@;i∂;	[ o;
-;0;"almond_frost;o;	;{	;iê;i;i{;iv;@;i∑;0;@;@;i∑;	[ o;
-;0;"sycamore;o;	;{	;iê;i;iç;i>;@;i∏;0;@;@;i∏;	[ o;
-;0;"sangria;o;	;{	;ií;i;i ;i;@;iπ;0;@;@;iπ;	[ o;
-;0;"
-cumin;o;	;{	;ií;i;iH;i&;@;i∫;0;@;@;i∫;	[ o;
-;0;"beaver;o;	;{	;ií;i;it;i`;@;iª;0;@;@;iª;	[ o;
-;0;"stonewall;o;	;{	;ií;i;iÖ;ix;@;iº;0;@;@;iº;	[ o;
-;0;"
-venus;o;	;{	;ií;i;iÖ;iê;@;iΩ;0;@;@;iΩ;	[ o;
-;0;"medium_purple;o;	;{	;iì;i;iu;i€;@;iæ;0;@;@;iæ;	[ o;
-;0;"cornflower;o;	;{	;iì;i;iÃ;iÍ;@;iø;0;@;@;iø;	[ o;
-;0;"algae_green;o;	;{	;iì;i;iﬂ;i∏;@;i¿;0;@;@;i¿;	[ o;
-;0;"copper_rust;o;	;{	;iî;i;iL;iL;@;i¡;0;@;@;i¡;	[ o;
-;0;"arrowtown;o;	;{	;iî;i;iá;iv;@;i¬;0;@;@;i¬;	[ o;
-;0;"scarlett;o;	;{	;iï;i;i ;i;@;i√;0;@;@;i√;	[ o;
-;0;"strikemaster;o;	;{	;iï;i;ih;iá;@;iƒ;0;@;@;iƒ;	[ o;
-;0;"mountain_mist;o;	;{	;iï;i;iì;iñ;@;i≈;0;@;@;i≈;	[ o;
-;0;"carmine;o;	;{	;iñ;i;i ;i;@;i∆;0;@;@;i∆;	[ o;
-;0;"
-brown;o;	;{	;iñ;i;iP;i ;@;i«;0;@;@;i«;	[ o;
-;0;"leather;o;	;{	;iñ;i;iu;i^;@;i»;0;@;@;i»;	[ o;
-;0;"purple_mountains_majesty;o;	;{	;iñ;i;i};i∂;@;i…;0;@;@;i…;	[ o;
-;0;"lavender_purple;o;	;{	;iñ;i;i{;i∂;@;i ;0;@;@;i ;	[ o;
-;0;"pewter;o;	;{	;iñ;i;i®;i°;@;iÀ;0;@;@;iÀ;	[ o;
-;0;"summer_green;o;	;{	;iñ;i;iª;i´;@;iÃ;0;@;@;iÃ;	[ o;
-;0;"au_chico;o;	;{	;ió;i;ie;ib;@;iÕ;0;@;@;iÕ;	[ o;
-;0;"wisteria;o;	;{	;ió;i;iv;iµ;@;iŒ;0;@;@;iŒ;	[ o;
-;0;"atlantis;o;	;{	;ió;i;iÕ;i2;@;iœ;0;@;@;iœ;	[ o;
-;0;"vin_rouge;o;	;{	;iò;i;iB;if;@;i–;0;@;@;i–;	[ o;
-;0;"lilac_bush;o;	;{	;iò;i;iy;i”;@;i—;0;@;@;i—;	[ o;
-;0;"bazaar;o;	;{	;iò;i;i|;i{;@;i“;0;@;@;i“;	[ o;
-;0;"hacienda;o;	;{	;iò;i;iÅ;i ;@;i”;0;@;@;i”;	[ o;
-;0;"pale_oyster;o;	;{	;iò;i;iç;i|;@;i‘;0;@;@;i‘;	[ o;
-;0;"mint_green;o;	;{	;iò;i;iˇ;iò;@;i’;0;@;@;i’;	[ o;
-;0;"fresh_eggplant;o;	;{	;iô;i;i ;ik;@;i÷;0;@;@;i÷;	[ o;
-;0;"violet_eggplant;o;	;{	;iô;i;i;iô;@;i◊;0;@;@;i◊;	[ o;
-;0;"tamarillo;o;	;{	;iô;i;i;i;@;iÿ;0;@;@;iÿ;	[ o;
-;0;"totem_pole;o;	;{	;iô;i;i ;i;@;iŸ;0;@;@;iŸ;	[ o;
-;0;"copper_rose;o;	;{	;iô;i;ik;ik;@;i⁄;0;@;@;i⁄;	[ o;
-;0;"amethyst;o;	;{	;iô;i;ik;iÃ;@;i€;0;@;@;i€;	[ o;
-;0;"mountbatten_pink;o;	;{	;iô;i;i;iç;@;i‹;0;@;@;i‹;	[ o;
-;0;"blue_bell;o;	;{	;iô;i;iô;iÃ;@;i›;0;@;@;i›;	[ o;
-;0;"prairie_sand;o;	;{	;iö;i;i=;i%;@;iﬁ;0;@;@;iﬁ;	[ o;
-;0;"
-toast;o;	;{	;iö;i;is;if;@;iﬂ;0;@;@;iﬂ;	[ o;
-;0;"gurkha;o;	;{	;iö;i;iï;i|;@;i‡;0;@;@;i‡;	[ o;
-;0;"olivine;o;	;{	;iö;i;iπ;ix;@;i·;0;@;@;i·;	[ o;
-;0;"shadow_green;o;	;{	;iö;i;i¬;i∏;@;i‚;0;@;@;i‚;	[ o;
-;0;"oregon;o;	;{	;iõ;i;iL;i;@;i„;0;@;@;i„;	[ o;
-;0;"lemon_grass;o;	;{	;iõ;i;iû;iè;@;i‰;0;@;@;i‰;	[ o;
-;0;"stiletto;o;	;{	;iú;i;i8;i;;@;iÂ;0;@;@;iÂ;	[ o;
-;0;"hawaiian_tan;o;	;{	;iù;i;i[;i;@;iÊ;0;@;@;iÊ;	[ o;
-;0;"gull_gray;o;	;{	;iù;i;i¨;i∑;@;iÁ;0;@;@;iÁ;	[ o;
-;0;"pistachio;o;	;{	;iù;i;i¬;i;@;iË;0;@;@;iË;	[ o;
-;0;"granny_smith_apple;o;	;{	;iù;i;i‡;iì;@;iÈ;0;@;@;iÈ;	[ o;
-;0;"anakiwa;o;	;{	;iù;i;iÂ;iˇ;@;iÍ;0;@;@;iÍ;	[ o;
-;0;"chelsea_gem;o;	;{	;iû;i;iX;i;@;iÎ;0;@;@;iÎ;	[ o;
-;0;"sepia_skin;o;	;{	;iû;i;i`;iE;@;iÏ;0;@;@;iÏ;	[ o;
-;0;"	sage;o;	;{	;iû;i;i•;iá;@;iÌ;0;@;@;iÌ;	[ o;
-;0;"citron;o;	;{	;iû;i;i©;i$;@;iÓ;0;@;@;iÓ;	[ o;
-;0;"rock_blue;o;	;{	;iû;i;i±;iÕ;@;iÔ;0;@;@;iÔ;	[ o;
-;0;"morning_glory;o;	;{	;iû;i;iﬁ;i‡;@;i;0;@;@;i;	[ o;
-;0;"cognac;o;	;{	;iü;i;i=;i";@;iÒ;0;@;@;iÒ;	[ o;
-;0;"reef_gold;o;	;{	;iü;i;iÇ;i!;@;iÚ;0;@;@;iÚ;	[ o;
-;0;"star_dust;o;	;{	;iü;i;iü;iú;@;iÛ;0;@;@;iÛ;	[ o;
-;0;"santas_gray;o;	;{	;iü;i;i†;i±;@;iÙ;0;@;@;iÙ;	[ o;
-;0;"sinbad;o;	;{	;iü;i;i◊;i”;@;iı;0;@;@;iı;	[ o;
-;0;"feijoa;o;	;{	;iü;i;i›;iå;@;iˆ;0;@;@;iˆ;	[ o;
-;0;"tabasco;o;	;{	;i†;i;i,;i;@;i˜;0;@;@;i˜;	[ o;
-;0;"buttered_rum;o;	;{	;i°;i;iz;i;@;i¯;0;@;@;i¯;	[ o;
-;0;"hit_gray;o;	;{	;i°;i;i≠;iµ;@;i˘;0;@;@;i˘;	[ o;
-;0;"citrus;o;	;{	;i°;i;i≈;i;@;i˙;0;@;@;i˙;	[ o;
-;0;"aqua_island;o;	;{	;i°;i;i⁄;i◊;@;i˚;0;@;@;i˚;	[ o;
-;0;"water_leaf;o;	;{	;i°;i;iÈ;iﬁ;@;i¸;0;@;@;i¸;	[ o;
-;0;"
-flirt;o;	;{	;i¢;i;i ;ir;@;i˝;0;@;@;i˝;	[ o;
-;0;"
-rouge;o;	;{	;i¢;i;i@;iq;@;i˛;0;@;@;i˛;	[ o;
-;0;"cape_palliser;o;	;{	;i¢;i;ik;iJ;@;iˇ;0;@;@;iˇ;	[ o;
-;0;"gray_chateau;o;	;{	;i¢;i;i™;i≥;@;i ;0;@;@;i ;	[ o;
-;0;"edward;o;	;{	;i¢;i;iÆ;i´;@;i;0;@;@;i;	[ o;
-;0;"pharlap;o;	;{	;i£;i;iÄ;i{;@;i;0;@;@;i;	[ o;
-;0;"amethyst_smoke;o;	;{	;i£;i;ió;i¥;@;i;0;@;@;i;	[ o;
-;0;"blizzard_blue;o;	;{	;i£;i;i„;iÌ;@;i;0;@;@;i;	[ o;
-;0;"
-delta;o;	;{	;i§;i;i§;iù;@;i;0;@;@;i;	[ o;
-;0;"wistful;o;	;{	;i§;i;i¶;i”;@;i;0;@;@;i;	[ o;
-;0;"green_smoke;o;	;{	;i§;i;iØ;is;@;i;0;@;@;i;	[ o;
-;0;"jazzberry_jam;o;	;{	;i•;i;i;ic;@;i;0;@;@;i;	[ o;
-;0;"
-zorba;o;	;{	;i•;i;iõ;ië;@;i	;0;@;@;i	;	[ o;
-;0;"
-bahia;o;	;{	;i•;i;iÀ;i;@;i
-;0;@;@;i
-;	[ o;
-;0;"roof_terracotta;o;	;{	;i¶;i;i4;i%;@;i;0;@;@;i;	[ o;
-;0;"
-paarl;o;	;{	;i¶;i;iZ;i.;@;i;0;@;@;i;	[ o;
-;0;"barley_corn;o;	;{	;i¶;i;iã;i`;@;i;0;@;@;i;	[ o;
-;0;"donkey_brown;o;	;{	;i¶;i;ií;i~;@;i;0;@;@;i;	[ o;
-;0;"	dawn;o;	;{	;i¶;i;i¢;iö;@;i;0;@;@;i;	[ o;
-;0;"mexican_red;o;	;{	;iß;i;i*;i*;@;i;0;@;@;i;	[ o;
-;0;"luxor_gold;o;	;{	;iß;i;ià;i1;@;i;0;@;@;i;	[ o;
-;0;"rich_gold;o;	;{	;i®;i;iX;i;@;i;0;@;@;i;	[ o;
-;0;"reno_sand;o;	;{	;i®;i;ij;i;@;i;0;@;@;i;	[ o;
-;0;"coral_tree;o;	;{	;i®;i;ip;ip;@;i;0;@;@;i;	[ o;
-;0;"dusty_gray;o;	;{	;i®;i;iò;iõ;@;i;0;@;@;i;	[ o;
-;0;"dull_lavender;o;	;{	;i®;i;iô;iÊ;@;i;0;@;@;i;	[ o;
-;0;"tallow;o;	;{	;i®;i;i•;iâ;@;i;0;@;@;i;	[ o;
-;0;"bud;o;	;{	;i®;i;iÆ;iú;@;i;0;@;@;i;	[ o;
-;0;"locust;o;	;{	;i®;i;iØ;ié;@;i;0;@;@;i;	[ o;
-;0;"norway;o;	;{	;i®;i;iΩ;iü;@;i;0;@;@;i;	[ o;
-;0;"chinook;o;	;{	;i®;i;i„;iΩ;@;i;0;@;@;i;	[ o;
-;0;"gray_olive;o;	;{	;i©;i;i§;ië;@;i;0;@;@;i;	[ o;
-;0;"aluminium;o;	;{	;i©;i;i¨;i∂;@;i;0;@;@;i;	[ o;
-;0;"cadet_blue;o;	;{	;i©;i;i≤;i√;@;i;0;@;@;i;	[ o;
-;0;"schist;o;	;{	;i©;i;i¥;ió;@;i;0;@;@;i;	[ o;
-;0;"tower_gray;o;	;{	;i©;i;iΩ;iø;@;i ;0;@;@;i ;	[ o;
-;0;"perano;o;	;{	;i©;i;iæ;iÚ;@;i!;0;@;@;i!;	[ o;
-;0;"	opal;o;	;{	;i©;i;i∆;i¬;@;i";0;@;@;i";	[ o;
-;0;"night_shadz;o;	;{	;i™;i;i<;i_;@;i#;0;@;@;i#;	[ o;
-;0;"	fire;o;	;{	;i™;i;iG;i;@;i$;0;@;@;i$;	[ o;
-;0;"muesli;o;	;{	;i™;i;iã;i`;@;i%;0;@;@;i%;	[ o;
-;0;"sandal;o;	;{	;i™;i;iç;it;@;i&;0;@;@;i&;	[ o;
-;0;"shady_lady;o;	;{	;i™;i;i•;i©;@;i';0;@;@;i';	[ o;
-;0;"
-logan;o;	;{	;i™;i;i©;iÕ;@;i(;0;@;@;i(;	[ o;
-;0;"spun_pearl;o;	;{	;i™;i;i´;i∑;@;i);0;@;@;i);	[ o;
-;0;"regent_st_blue;o;	;{	;i™;i;i÷;iÊ;@;i*;0;@;@;i*;	[ o;
-;0;"magic_mint;o;	;{	;i™;i;i;i—;@;i+;0;@;@;i+;	[ o;
-;0;"lipstick;o;	;{	;i´;i;i
-;ih;@;i,;0;@;@;i,;	[ o;
-;0;"royal_heath;o;	;{	;i´;i;i9;iw;@;i-;0;@;@;i-;	[ o;
-;0;"sandrift;o;	;{	;i´;i;ië;i;@;i.;0;@;@;i.;	[ o;
-;0;"cold_purple;o;	;{	;i´;i;i†;iŸ;@;i/;0;@;@;i/;	[ o;
-;0;"bronco;o;	;{	;i´;i;i°;iñ;@;i0;0;@;@;i0;	[ o;
-;0;"limed_oak;o;	;{	;i¨;i;iä;i[;@;i1;0;@;@;i1;	[ o;
-;0;"east_side;o;	;{	;i¨;i;ië;iŒ;@;i2;0;@;@;i2;	[ o;
-;0;"lemon_ginger;o;	;{	;i¨;i;iû;i';@;i3;0;@;@;i3;	[ o;
-;0;"	napa;o;	;{	;i¨;i;i§;iî;@;i4;0;@;@;i4;	[ o;
-;0;"hillary;o;	;{	;i¨;i;i•;iÜ;@;i5;0;@;@;i5;	[ o;
-;0;"cloudy;o;	;{	;i¨;i;i•;iü;@;i6;0;@;@;i6;	[ o;
-;0;"silver_chalice;o;	;{	;i¨;i;i¨;i¨;@;i7;0;@;@;i7;	[ o;
-;0;"swamp_green;o;	;{	;i¨;i;i∑;ié;@;i8;0;@;@;i8;	[ o;
-;0;"spring_rain;o;	;{	;i¨;i;iÀ;i±;@;i9;0;@;@;i9;	[ o;
-;0;"conifer;o;	;{	;i¨;i;i›;iR;@;i:;0;@;@;i:;	[ o;
-;0;"celadon;o;	;{	;i¨;i;i·;iØ;@;i;;0;@;@;i;;	[ o;
-;0;"mandalay;o;	;{	;i≠;i;i};i ;@;i<;0;@;@;i<;	[ o;
-;0;"casper;o;	;{	;i≠;i;iæ;i—;@;i=;0;@;@;i=;	[ o;
-;0;"moss_green;o;	;{	;i≠;i;iﬂ;i≠;@;i>;0;@;@;i>;	[ o;
-;0;"
-padua;o;	;{	;i≠;i;iÊ;iƒ;@;i?;0;@;@;i?;	[ o;
-;0;"green_yellow;o;	;{	;i≠;i;iˇ;i4;@;i@;0;@;@;i@;	[ o;
-;0;"hippie_pink;o;	;{	;iÆ;i;iJ;ie;@;iA;0;@;@;iA;	[ o;
-;0;"desert;o;	;{	;iÆ;i;ie;i%;@;iB;0;@;@;iB;	[ o;
-;0;"bouquet;o;	;{	;iÆ;i;iÄ;iû;@;iC;0;@;@;iC;	[ o;
-;0;"medium_carmine;o;	;{	;iØ;i;iE;i:;@;iD;0;@;@;iD;	[ o;
-;0;"apple_blossom;o;	;{	;iØ;i;iR;iH;@;iE;0;@;@;iE;	[ o;
-;0;"brown_rust;o;	;{	;iØ;i;i^;iC;@;iF;0;@;@;iF;	[ o;
-;0;"driftwood;o;	;{	;iØ;i;iá;iV;@;iG;0;@;@;iG;	[ o;
-;0;"alpine;o;	;{	;iØ;i;iè;i1;@;iH;0;@;@;iH;	[ o;
-;0;"
-lucky;o;	;{	;iØ;i;iü;i!;@;iI;0;@;@;iI;	[ o;
-;0;"martini;o;	;{	;iØ;i;i†;iû;@;iJ;0;@;@;iJ;	[ o;
-;0;"bombay;o;	;{	;iØ;i;i±;i∏;@;iK;0;@;@;iK;	[ o;
-;0;"pigeon_post;o;	;{	;iØ;i;iΩ;iŸ;@;iL;0;@;@;iL;	[ o;
-;0;"cadillac;o;	;{	;i∞;i;iQ;io;@;iM;0;@;@;iM;	[ o;
-;0;"matrix;o;	;{	;i∞;i;ib;iY;@;iN;0;@;@;iN;	[ o;
-;0;"tapestry;o;	;{	;i∞;i;ic;iÅ;@;iO;0;@;@;iO;	[ o;
-;0;"mai_tai;o;	;{	;i∞;i;ik;i;@;iP;0;@;@;iP;	[ o;
-;0;"del_rio;o;	;{	;i∞;i;iö;iï;@;iQ;0;@;@;iQ;	[ o;
-;0;"powder_blue;o;	;{	;i∞;i;i‡;iÊ;@;iR;0;@;@;iR;	[ o;
-;0;"inch_worm;o;	;{	;i∞;i;i„;i;@;iS;0;@;@;iS;	[ o;
-;0;"bright_red;o;	;{	;i±;i;i ;i ;@;iT;0;@;@;iT;	[ o;
-;0;"vesuvius;o;	;{	;i±;i;iO;i;@;iU;0;@;@;iU;	[ o;
-;0;"pumpkin_skin;o;	;{	;i±;i;if;i;@;iV;0;@;@;iV;	[ o;
-;0;"santa_fe;o;	;{	;i±;i;ir;iW;@;iW;0;@;@;iW;	[ o;
-;0;"	teak;o;	;{	;i±;i;iî;if;@;iX;0;@;@;iX;	[ o;
-;0;"fringy_flower;o;	;{	;i±;i;i‚;i¡;@;iY;0;@;@;iY;	[ o;
-;0;"ice_cold;o;	;{	;i±;i;iÙ;iÁ;@;iZ;0;@;@;iZ;	[ o;
-;0;"shiraz;o;	;{	;i≤;i;i;i6;@;i[;0;@;@;i[;	[ o;
-;0;"biloba_flower;o;	;{	;i≤;i;i°;iÍ;@;i\;0;@;@;i\;	[ o;
-;0;"tall_poppy;o;	;{	;i≥;i;i2;i.;@;i];0;@;@;i];	[ o;
-;0;"fiery_orange;o;	;{	;i≥;i;iW;i;@;i^;0;@;@;i^;	[ o;
-;0;"hot_toddy;o;	;{	;i≥;i;iÄ;i;@;i_;0;@;@;i_;	[ o;
-;0;"taupe_gray;o;	;{	;i≥;i;iØ;iï;@;i`;0;@;@;i`;	[ o;
-;0;"la_rioja;o;	;{	;i≥;i;i¡;i;@;ia;0;@;@;ia;	[ o;
-;0;"well_read;o;	;{	;i¥;i;i8;i7;@;ib;0;@;@;ib;	[ o;
-;0;"
-blush;o;	;{	;i¥;i;iK;im;@;ic;0;@;@;ic;	[ o;
-;0;"jungle_mist;o;	;{	;i¥;i;iœ;i”;@;id;0;@;@;id;	[ o;
-;0;"turkish_rose;o;	;{	;iµ;i;iw;iÅ;@;ie;0;@;@;ie;	[ o;
-;0;"lavender;o;	;{	;iµ;i;i~;i‹;@;if;0;@;@;if;	[ o;
-;0;"mongoose;o;	;{	;iµ;i;i¢;i;@;ig;0;@;@;ig;	[ o;
-;0;"olive_green;o;	;{	;iµ;i;i≥;ia;@;ih;0;@;@;ih;	[ o;
-;0;"jet_stream;o;	;{	;iµ;i;i“;iŒ;@;ii;0;@;@;ii;	[ o;
-;0;"cruise;o;	;{	;iµ;i;iÏ;iﬂ;@;ij;0;@;@;ij;	[ o;
-;0;"hibiscus;o;	;{	;i∂;i;i6;iq;@;ik;0;@;@;ik;	[ o;
-;0;"thatch;o;	;{	;i∂;i;iù;iò;@;il;0;@;@;il;	[ o;
-;0;"heathered_gray;o;	;{	;i∂;i;i∞;iï;@;im;0;@;@;im;	[ o;
-;0;"
-eagle;o;	;{	;i∂;i;i∫;i§;@;in;0;@;@;in;	[ o;
-;0;"spindle;o;	;{	;i∂;i;i—;iÍ;@;io;0;@;@;io;	[ o;
-;0;"gum_leaf;o;	;{	;i∂;i;i”;iø;@;ip;0;@;@;ip;	[ o;
-;0;"	rust;o;	;{	;i∑;i;iF;i;@;iq;0;@;@;iq;	[ o;
-;0;"muddy_waters;o;	;{	;i∑;i;ié;ia;@;ir;0;@;@;ir;	[ o;
-;0;"sahara;o;	;{	;i∑;i;i¢;i;@;is;0;@;@;is;	[ o;
-;0;"	husk;o;	;{	;i∑;i;i§;i];@;it;0;@;@;it;	[ o;
-;0;"
-nobel;o;	;{	;i∑;i;i±;i±;@;iu;0;@;@;iu;	[ o;
-;0;"heather;o;	;{	;i∑;i;i√;i–;@;iv;0;@;@;iv;	[ o;
-;0;"madang;o;	;{	;i∑;i;i;iæ;@;iw;0;@;@;iw;	[ o;
-;0;"milano_red;o;	;{	;i∏;i;i;i	;@;ix;0;@;@;ix;	[ o;
-;0;"copper;o;	;{	;i∏;i;ix;i8;@;iy;0;@;@;iy;	[ o;
-;0;"gimblet;o;	;{	;i∏;i;iµ;io;@;iz;0;@;@;iz;	[ o;
-;0;"green_spring;o;	;{	;i∏;i;i¡;i±;@;i{;0;@;@;i{;	[ o;
-;0;"celery;o;	;{	;i∏;i;i¬;ib;@;i|;0;@;@;i|;	[ o;
-;0;"	sail;o;	;{	;i∏;i;i‡;i˘;@;i};0;@;@;i};	[ o;
-;0;"chestnut;o;	;{	;iπ;i;iS;iM;@;i~;0;@;@;i~;	[ o;
-;0;"
-crail;o;	;{	;iπ;i;iV;iE;@;i;0;@;@;i;	[ o;
-;0;"marigold;o;	;{	;iπ;i;iç;i-;@;iÄ;0;@;@;iÄ;	[ o;
-;0;"wild_willow;o;	;{	;iπ;i;iƒ;io;@;iÅ;0;@;@;iÅ;	[ o;
-;0;"rainee;o;	;{	;iπ;i;i»;i¨;@;iÇ;0;@;@;iÇ;	[ o;
-;0;"guardsman_red;o;	;{	;i∫;i;i;i;@;iÉ;0;@;@;iÉ;	[ o;
-;0;"rock_spray;o;	;{	;i∫;i;iJ;i;@;iÑ;0;@;@;iÑ;	[ o;
-;0;"bourbon;o;	;{	;i∫;i;it;i#;@;iÖ;0;@;@;iÖ;	[ o;
-;0;"pirate_gold;o;	;{	;i∫;i;i;i;@;iÜ;0;@;@;iÜ;	[ o;
-;0;"
-nomad;o;	;{	;i∫;i;i±;i¢;@;iá;0;@;@;iá;	[ o;
-;0;"submarine;o;	;{	;i∫;i;i«;i…;@;ià;0;@;@;ià;	[ o;
-;0;"charlotte;o;	;{	;i∫;i;iÓ;i˘;@;iâ;0;@;@;iâ;	[ o;
-;0;"medium_red_violet;o;	;{	;iª;i;i8;iÖ;@;iä;0;@;@;iä;	[ o;
-;0;"brandy_rose;o;	;{	;iª;i;iâ;iÉ;@;iã;0;@;@;iã;	[ o;
-;0;"rio_grande;o;	;{	;iª;i;i–;i;@;iå;0;@;@;iå;	[ o;
-;0;"	surf;o;	;{	;iª;i;i◊;i¡;@;iç;0;@;@;iç;	[ o;
-;0;"powder_ash;o;	;{	;iº;i;i…;i¬;@;ié;0;@;@;ié;	[ o;
-;0;"tuscany;o;	;{	;iΩ;i;ic;i3;@;iè;0;@;@;iè;	[ o;
-;0;"quicksand;o;	;{	;iΩ;i;ió;ié;@;iê;0;@;@;iê;	[ o;
-;0;"	silk;o;	;{	;iΩ;i;i±;i®;@;ië;0;@;@;ië;	[ o;
-;0;"
-malta;o;	;{	;iΩ;i;i≤;i°;@;ií;0;@;@;ií;	[ o;
-;0;"chatelle;o;	;{	;iΩ;i;i≥;i«;@;iì;0;@;@;iì;	[ o;
-;0;"lavender_gray;o;	;{	;iΩ;i;iª;i◊;@;iî;0;@;@;iî;	[ o;
-;0;"french_gray;o;	;{	;iΩ;i;iΩ;i∆;@;iï;0;@;@;iï;	[ o;
-;0;"clay_ash;o;	;{	;iΩ;i;i»;i≥;@;iñ;0;@;@;iñ;	[ o;
-;0;"loblolly;o;	;{	;iΩ;i;i…;iŒ;@;ió;0;@;@;ió;	[ o;
-;0;"french_pass;o;	;{	;iΩ;i;iÌ;i˝;@;iò;0;@;@;iò;	[ o;
-;0;"london_hue;o;	;{	;iæ;i;i¶;i√;@;iô;0;@;@;iô;	[ o;
-;0;"pink_swan;o;	;{	;iæ;i;iµ;i∑;@;iö;0;@;@;iö;	[ o;
-;0;"
-fuego;o;	;{	;iæ;i;iﬁ;i;@;iõ;0;@;@;iõ;	[ o;
-;0;"rose_of_sharon;o;	;{	;iø;i;iZ;i ;@;iú;0;@;@;iú;	[ o;
-;0;"	tide;o;	;{	;iø;i;i∏;i∞;@;iù;0;@;@;iù;	[ o;
-;0;"blue_haze;o;	;{	;iø;i;iæ;iÿ;@;iû;0;@;@;iû;	[ o;
-;0;"silver_sand;o;	;{	;iø;i;i¡;i¬;@;iü;0;@;@;iü;	[ o;
-;0;"key_lime_pie;o;	;{	;iø;i;i…;i&;@;i†;0;@;@;i†;	[ o;
-;0;"ziggurat;o;	;{	;iø;i;i€;i‚;@;i°;0;@;@;i°;	[ o;
-;0;"	lime;o;	;{	;iø;i;iˇ;i ;@;i¢;0;@;@;i¢;	[ o;
-;0;"thunderbird;o;	;{	;i¿;i;i0;i;@;i£;0;@;@;i£;	[ o;
-;0;"	mojo;o;	;{	;i¿;i;iL;i<;@;i§;0;@;@;i§;	[ o;
-;0;"old_rose;o;	;{	;i¿;i;iÄ;iÅ;@;i•;0;@;@;i•;	[ o;
-;0;"silver;o;	;{	;i¿;i;i¿;i¿;@;i¶;0;@;@;i¶;	[ o;
-;0;"pale_leaf;o;	;{	;i¿;i;i”;iπ;@;iß;0;@;@;iß;	[ o;
-;0;"pixie_green;o;	;{	;i¿;i;iÿ;i∂;@;i®;0;@;@;i®;	[ o;
-;0;"tia_maria;o;	;{	;i¡;i;iI;i;@;i©;0;@;@;i©;	[ o;
-;0;"fuchsia_pink;o;	;{	;i¡;i;iY;i¡;@;i™;0;@;@;i™;	[ o;
-;0;"buddha_gold;o;	;{	;i¡;i;i†;i	;@;i´;0;@;@;i´;	[ o;
-;0;"bison_hide;o;	;{	;i¡;i;i∑;i§;@;i¨;0;@;@;i¨;	[ o;
-;0;"tea;o;	;{	;i¡;i;i∫;i∞;@;i≠;0;@;@;i≠;	[ o;
-;0;"gray_suit;o;	;{	;i¡;i;iæ;iÕ;@;iÆ;0;@;@;iÆ;	[ o;
-;0;"sprout;o;	;{	;i¡;i;i◊;i∞;@;iØ;0;@;@;iØ;	[ o;
-;0;"	sulu;o;	;{	;i¡;i;i;i|;@;i∞;0;@;@;i∞;	[ o;
-;0;"indochine;o;	;{	;i¬;i;ip;i;@;i±;0;@;@;i±;	[ o;
-;0;"
-twine;o;	;{	;i¬;i;iï;ib;@;i≤;0;@;@;i≤;	[ o;
-;0;"cotton_seed;o;	;{	;i¬;i;iΩ;i∂;@;i≥;0;@;@;i≥;	[ o;
-;0;"pumice;o;	;{	;i¬;i;i ;iƒ;@;i¥;0;@;@;i¥;	[ o;
-;0;"jagged_ice;o;	;{	;i¬;i;iË;iÂ;@;iµ;0;@;@;iµ;	[ o;
-;0;"maroon_flush;o;	;{	;i√;i;i&;iM;@;i∂;0;@;@;i∂;	[ o;
-;0;"indian_khaki;o;	;{	;i√;i;i∞;ië;@;i∑;0;@;@;i∑;	[ o;
-;0;"pale_slate;o;	;{	;i√;i;iø;i¡;@;i∏;0;@;@;i∏;	[ o;
-;0;"gray_nickel;o;	;{	;i√;i;i√;iΩ;@;iπ;0;@;@;iπ;	[ o;
-;0;"periwinkle_gray;o;	;{	;i√;i;iÕ;iÊ;@;i∫;0;@;@;i∫;	[ o;
-;0;"
-tiara;o;	;{	;i√;i;i—;i—;@;iª;0;@;@;iª;	[ o;
-;0;"tropical_blue;o;	;{	;i√;i;i›;i˘;@;iº;0;@;@;iº;	[ o;
-;0;"cardinal;o;	;{	;iƒ;i;i#;i?;@;iΩ;0;@;@;iΩ;	[ o;
-;0;"fuzzy_wuzzy_brown;o;	;{	;iƒ;i;i[;iZ;@;iæ;0;@;@;iæ;	[ o;
-;0;"orange_roughy;o;	;{	;iƒ;i;i\;i;@;iø;0;@;@;iø;	[ o;
-;0;"mist_gray;o;	;{	;iƒ;i;iƒ;iº;@;i¿;0;@;@;i¿;	[ o;
-;0;"coriander;o;	;{	;iƒ;i;i–;i∞;@;i¡;0;@;@;i¡;	[ o;
-;0;"mint_tulip;o;	;{	;iƒ;i;iÙ;iÎ;@;i¬;0;@;@;i¬;	[ o;
-;0;"mulberry;o;	;{	;i≈;i;iP;iå;@;i√;0;@;@;i√;	[ o;
-;0;"nugget;o;	;{	;i≈;i;iô;i';@;iƒ;0;@;@;iƒ;	[ o;
-;0;"tussock;o;	;{	;i≈;i;iô;iP;@;i≈;0;@;@;i≈;	[ o;
-;0;"sea_mist;o;	;{	;i≈;i;i€;i ;@;i∆;0;@;@;i∆;	[ o;
-;0;"yellow_green;o;	;{	;i≈;i;i·;i;@;i«;0;@;@;i«;	[ o;
-;0;"brick_red;o;	;{	;i∆;i;i2;iG;@;i»;0;@;@;i»;	[ o;
-;0;"contessa;o;	;{	;i∆;i;iw;ip;@;i…;0;@;@;i…;	[ o;
-;0;"oriental_pink;o;	;{	;i∆;i;ië;ië;@;i ;0;@;@;i ;	[ o;
-;0;"	roti;o;	;{	;i∆;i;i®;iP;@;iÀ;0;@;@;iÀ;	[ o;
-;0;"ash;o;	;{	;i∆;i;i√;iµ;@;iÃ;0;@;@;iÃ;	[ o;
-;0;"kangaroo;o;	;{	;i∆;i;i»;iΩ;@;iÕ;0;@;@;iÕ;	[ o;
-;0;"las_palmas;o;	;{	;i∆;i;iÊ;i;@;iŒ;0;@;@;iŒ;	[ o;
-;0;"
-monza;o;	;{	;i«;i;i;i#;@;iœ;0;@;@;iœ;	[ o;
-;0;"red_violet;o;	;{	;i«;i;i;iÖ;@;i–;0;@;@;i–;	[ o;
-;0;"coral_reef;o;	;{	;i«;i;iº;i¢;@;i—;0;@;@;i—;	[ o;
-;0;"melrose;o;	;{	;i«;i;i¡;iˇ;@;i“;0;@;@;i“;	[ o;
-;0;"
-cloud;o;	;{	;i«;i;iƒ;iø;@;i”;0;@;@;i”;	[ o;
-;0;"
-ghost;o;	;{	;i«;i;i…;i’;@;i‘;0;@;@;i‘;	[ o;
-;0;"pine_glade;o;	;{	;i«;i;iÕ;iê;@;i’;0;@;@;i’;	[ o;
-;0;"botticelli;o;	;{	;i«;i;i›;iÂ;@;i÷;0;@;@;i÷;	[ o;
-;0;"antique_brass;o;	;{	;i»;i;iä;ij;@;i◊;0;@;@;i◊;	[ o;
-;0;"
-lilac;o;	;{	;i»;i;i¢;i»;@;iÿ;0;@;@;iÿ;	[ o;
-;0;"hokey_pokey;o;	;{	;i»;i;i•;i-;@;iŸ;0;@;@;iŸ;	[ o;
-;0;"	lily;o;	;{	;i»;i;i™;iø;@;i⁄;0;@;@;i⁄;	[ o;
-;0;"
-laser;o;	;{	;i»;i;iµ;im;@;i€;0;@;@;i€;	[ o;
-;0;"edgewater;o;	;{	;i»;i;i„;i◊;@;i‹;0;@;@;i‹;	[ o;
-;0;"
-piper;o;	;{	;i…;i;ih;i(;@;i›;0;@;@;i›;	[ o;
-;0;"
-pizza;o;	;{	;i…;i;iî;i;@;iﬁ;0;@;@;iﬁ;	[ o;
-;0;"light_wisteria;o;	;{	;i…;i;i†;i‹;@;iﬂ;0;@;@;iﬂ;	[ o;
-;0;"rodeo_dust;o;	;{	;i…;i;i≤;iõ;@;i‡;0;@;@;i‡;	[ o;
-;0;"sundance;o;	;{	;i…;i;i≥;i`;@;i·;0;@;@;i·;	[ o;
-;0;"earls_green;o;	;{	;i…;i;iπ;i@;@;i‚;0;@;@;i‚;	[ o;
-;0;"silver_rust;o;	;{	;i…;i;i¿;iª;@;i„;0;@;@;i„;	[ o;
-;0;"
-conch;o;	;{	;i…;i;iŸ;i“;@;i‰;0;@;@;i‰;	[ o;
-;0;"	reef;o;	;{	;i…;i;iˇ;i¢;@;iÂ;0;@;@;iÂ;	[ o;
-;0;"aero_blue;o;	;{	;i…;i;iˇ;iÂ;@;iÊ;0;@;@;iÊ;	[ o;
-;0;"flush_mahogany;o;	;{	;i ;i;i9;i:;@;iÁ;0;@;@;iÁ;	[ o;
-;0;"turmeric;o;	;{	;i ;i;iª;iM;@;iË;0;@;@;iË;	[ o;
-;0;"paris_white;o;	;{	;i ;i;i‹;i‘;@;iÈ;0;@;@;iÈ;	[ o;
-;0;"bitter_lemon;o;	;{	;i ;i;i‡;i;@;iÍ;0;@;@;iÍ;	[ o;
-;0;"skeptic;o;	;{	;i ;i;iÊ;i⁄;@;iÎ;0;@;@;iÎ;	[ o;
-;0;"
-viola;o;	;{	;iÀ;i;iè;i©;@;iÏ;0;@;@;iÏ;	[ o;
-;0;"foggy_gray;o;	;{	;iÀ;i;i ;i∂;@;iÌ;0;@;@;iÌ;	[ o;
-;0;"green_mist;o;	;{	;iÀ;i;i”;i∞;@;iÓ;0;@;@;iÓ;	[ o;
-;0;"nebula;o;	;{	;iÀ;i;i€;i÷;@;iÔ;0;@;@;iÔ;	[ o;
-;0;"persian_red;o;	;{	;iÃ;i;i8;i8;@;i;0;@;@;i;	[ o;
-;0;"burnt_orange;o;	;{	;iÃ;i;iZ;i ;@;iÒ;0;@;@;iÒ;	[ o;
-;0;"
-ochre;o;	;{	;iÃ;i;i|;i';@;iÚ;0;@;@;iÚ;	[ o;
-;0;"	puce;o;	;{	;iÃ;i;ià;iô;@;iÛ;0;@;@;iÛ;	[ o;
-;0;"thistle_green;o;	;{	;iÃ;i;i ;i®;@;iÙ;0;@;@;iÙ;	[ o;
-;0;"periwinkle;o;	;{	;iÃ;i;iÃ;iˇ;@;iı;0;@;@;iı;	[ o;
-;0;"electric_lime;o;	;{	;iÃ;i;iˇ;i ;@;iˆ;0;@;@;iˆ;	[ o;
-;0;"	tenn;o;	;{	;iÕ;i;i\;i ;@;i˜;0;@;@;i˜;	[ o;
-;0;"chestnut_rose;o;	;{	;iÕ;i;ia;ia;@;i¯;0;@;@;i¯;	[ o;
-;0;"brandy_punch;o;	;{	;iÕ;i;iÑ;i.;@;i˘;0;@;@;i˘;	[ o;
-;0;"onahau;o;	;{	;iÕ;i;iÙ;iˇ;@;i˙;0;@;@;i˙;	[ o;
-;0;"sorrell_brown;o;	;{	;iŒ;i;iπ;iè;@;i˚;0;@;@;i˚;	[ o;
-;0;"cold_turkey;o;	;{	;iŒ;i;i∫;i∫;@;i¸;0;@;@;i¸;	[ o;
-;0;"	yuma;o;	;{	;iŒ;i;i¬;ië;@;i˝;0;@;@;i˝;	[ o;
-;0;"
-chino;o;	;{	;iŒ;i;i«;iß;@;i˛;0;@;@;i˛;	[ o;
-;0;"
-eunry;o;	;{	;iœ;i;i£;iù;@;iˇ;0;@;@;iˇ;	[ o;
-;0;"old_gold;o;	;{	;iœ;i;iµ;i@;@;i ;0;@;@;i ;	[ o;
-;0;"tasman;o;	;{	;iœ;i;i‹;iœ;@;i;0;@;@;i;	[ o;
-;0;"surf_crest;o;	;{	;iœ;i;iÂ;i“;@;i;0;@;@;i;	[ o;
-;0;"humming_bird;o;	;{	;iœ;i;i˘;iÛ;@;i;0;@;@;i;	[ o;
-;0;"scandal;o;	;{	;iœ;i;i˙;iÙ;@;i;0;@;@;i;	[ o;
-;0;"red_stage;o;	;{	;i–;i;id;i	;@;i;0;@;@;i;	[ o;
-;0;"hopbush;o;	;{	;i–;i;ir;i°;@;i;0;@;@;i;	[ o;
-;0;"meteor;o;	;{	;i–;i;i};i;@;i;0;@;@;i;	[ o;
-;0;"perfume;o;	;{	;i–;i;iæ;i¯;@;i;0;@;@;i;	[ o;
-;0;"prelude;o;	;{	;i–;i;i¿;iÂ;@;i	;0;@;@;i	;	[ o;
-;0;"tea_green;o;	;{	;i–;i;i;i¿;@;i
-;0;@;@;i
-;	[ o;
-;0;"geebung;o;	;{	;i—;i;iè;i ;@;i;0;@;@;i;	[ o;
-;0;"vanilla;o;	;{	;i—;i;iæ;i®;@;i;0;@;@;i;	[ o;
-;0;"soft_amber;o;	;{	;i—;i;i∆;i¥;@;i;0;@;@;i;	[ o;
-;0;"celeste;o;	;{	;i—;i;i“;i ;@;i;0;@;@;i;	[ o;
-;0;"mischka;o;	;{	;i—;i;i“;i›;@;i;0;@;@;i;	[ o;
-;0;"	pear;o;	;{	;i—;i;i‚;i6;@;i;0;@;@;i;	[ o;
-;0;"hot_cinnamon;o;	;{	;i“;i;in;i#;@;i;0;@;@;i;	[ o;
-;0;"raw_sienna;o;	;{	;i“;i;i};iK;@;i;0;@;@;i;	[ o;
-;0;"careys_pink;o;	;{	;i“;i;iû;i™;@;i;0;@;@;i;	[ o;
-;0;"tan;o;	;{	;i“;i;i¥;iå;@;i;0;@;@;i;	[ o;
-;0;"	deco;o;	;{	;i“;i;i⁄;ió;@;i;0;@;@;i;	[ o;
-;0;"blue_romance;o;	;{	;i“;i;iˆ;iﬁ;@;i;0;@;@;i;	[ o;
-;0;"gossip;o;	;{	;i“;i;i¯;i∞;@;i;0;@;@;i;	[ o;
-;0;"
-sisal;o;	;{	;i”;i;iÀ;i∫;@;i;0;@;@;i;	[ o;
-;0;"
-swirl;o;	;{	;i”;i;iÕ;i≈;@;i;0;@;@;i;	[ o;
-;0;"
-charm;o;	;{	;i‘;i;iy;iî;@;i;0;@;@;i;	[ o;
-;0;"clam_shell;o;	;{	;i‘;i;i∂;iØ;@;i;0;@;@;i;	[ o;
-;0;"
-straw;o;	;{	;i‘;i;iø;iç;@;i;0;@;@;i;	[ o;
-;0;"akaroa;o;	;{	;i‘;i;iƒ;i®;@;i;0;@;@;i;	[ o;
-;0;"bird_flower;o;	;{	;i‘;i;iÕ;i;@;i;0;@;@;i;	[ o;
-;0;"	iron;o;	;{	;i‘;i;i◊;iŸ;@;i;0;@;@;i;	[ o;
-;0;"geyser;o;	;{	;i‘;i;iﬂ;i‚;@;i ;0;@;@;i ;	[ o;
-;0;"hawkes_blue;o;	;{	;i‘;i;i‚;i¸;@;i!;0;@;@;i!;	[ o;
-;0;"grenadier;o;	;{	;i’;i;iK;i ;@;i";0;@;@;i";	[ o;
-;0;"can_can;o;	;{	;i’;i;ië;i§;@;i#;0;@;@;i#;	[ o;
-;0;"whiskey;o;	;{	;i’;i;iö;it;@;i$;0;@;@;i$;	[ o;
-;0;"winter_hazel;o;	;{	;i’;i;i—;iï;@;i%;0;@;@;i%;	[ o;
-;0;"granny_apple;o;	;{	;i’;i;iˆ;i„;@;i&;0;@;@;i&;	[ o;
-;0;"my_pink;o;	;{	;i÷;i;ië;ià;@;i';0;@;@;i';	[ o;
-;0;"
-tacha;o;	;{	;i÷;i;i≈;ig;@;i(;0;@;@;i(;	[ o;
-;0;"moon_raker;o;	;{	;i÷;i;iŒ;iˆ;@;i);0;@;@;i);	[ o;
-;0;"quill_gray;o;	;{	;i÷;i;i÷;i—;@;i*;0;@;@;i*;	[ o;
-;0;"snowy_mint;o;	;{	;i÷;i;iˇ;i€;@;i+;0;@;@;i+;	[ o;
-;0;"new_york_pink;o;	;{	;i◊;i;iÉ;i;@;i,;0;@;@;i,;	[ o;
-;0;"pavlova;o;	;{	;i◊;i;iƒ;iò;@;i-;0;@;@;i-;	[ o;
-;0;"fog;o;	;{	;i◊;i;i–;iˇ;@;i.;0;@;@;i.;	[ o;
-;0;"valencia;o;	;{	;iÿ;i;iI;i<;@;i/;0;@;@;i/;	[ o;
-;0;"japonica;o;	;{	;iÿ;i;i|;ih;@;i0;0;@;@;i0;	[ o;
-;0;"thistle;o;	;{	;iÿ;i;iø;iÿ;@;i1;0;@;@;i1;	[ o;
-;0;"maverick;o;	;{	;iÿ;i;i¬;i’;@;i2;0;@;@;i2;	[ o;
-;0;"	foam;o;	;{	;iÿ;i;i¸;i˙;@;i3;0;@;@;i3;	[ o;
-;0;"cabaret;o;	;{	;iŸ;i;iN;iw;@;i4;0;@;@;i4;	[ o;
-;0;"burning_sand;o;	;{	;iŸ;i;iì;i{;@;i5;0;@;@;i5;	[ o;
-;0;"
-cameo;o;	;{	;iŸ;i;iπ;iõ;@;i6;0;@;@;i6;	[ o;
-;0;"timberwolf;o;	;{	;iŸ;i;i÷;iœ;@;i7;0;@;@;i7;	[ o;
-;0;"	tana;o;	;{	;iŸ;i;i‹;i¡;@;i8;0;@;@;i8;	[ o;
-;0;"link_water;o;	;{	;iŸ;i;i‰;iı;@;i9;0;@;@;i9;	[ o;
-;0;"
-mabel;o;	;{	;iŸ;i;i˜;iˇ;@;i:;0;@;@;i:;	[ o;
-;0;"cerise;o;	;{	;i⁄;i;i7;iá;@;i;;0;@;@;i;;	[ o;
-;0;"flame_pea;o;	;{	;i⁄;i;i`;i=;@;i<;0;@;@;i<;	[ o;
-;0;"bamboo;o;	;{	;i⁄;i;ih;i	;@;i=;0;@;@;i=;	[ o;
-;0;"red_damask;o;	;{	;i⁄;i;io;iF;@;i>;0;@;@;i>;	[ o;
-;0;"orchid;o;	;{	;i⁄;i;iu;i÷;@;i?;0;@;@;i?;	[ o;
-;0;"copperfield;o;	;{	;i⁄;i;iä;il;@;i@;0;@;@;i@;	[ o;
-;0;"golden_grass;o;	;{	;i⁄;i;i•;i%;@;iA;0;@;@;iA;	[ o;
-;0;"
-zanah;o;	;{	;i⁄;i;iÏ;i÷;@;iB;0;@;@;iB;	[ o;
-;0;"iceberg;o;	;{	;i⁄;i;iÙ;i;@;iC;0;@;@;iC;	[ o;
-;0;"oyster_bay;o;	;{	;i⁄;i;i˙;iˇ;@;iD;0;@;@;iD;	[ o;
-;0;"cranberry;o;	;{	;i€;i;iU;i~;@;iE;0;@;@;iE;	[ o;
-;0;"petite_orchid;o;	;{	;i€;i;iñ;iê;@;iF;0;@;@;iF;	[ o;
-;0;"di_serria;o;	;{	;i€;i;iô;ic;@;iG;0;@;@;iG;	[ o;
-;0;"	alto;o;	;{	;i€;i;i€;i€;@;iH;0;@;@;iH;	[ o;
-;0;"frosted_mint;o;	;{	;i€;i;iˇ;i¯;@;iI;0;@;@;iI;	[ o;
-;0;"crimson;o;	;{	;i‹;i;i;iA;@;iJ;0;@;@;iJ;	[ o;
-;0;"
-punch;o;	;{	;i‹;i;iH;i8;@;iK;0;@;@;iK;	[ o;
-;0;"galliano;o;	;{	;i‹;i;i≤;i;@;iL;0;@;@;iL;	[ o;
-;0;"blossom;o;	;{	;i‹;i;i¥;iº;@;iM;0;@;@;iM;	[ o;
-;0;"wattle;o;	;{	;i‹;i;i◊;iL;@;iN;0;@;@;iN;	[ o;
-;0;"westar;o;	;{	;i‹;i;iŸ;i“;@;iO;0;@;@;iO;	[ o;
-;0;"moon_mist;o;	;{	;i‹;i;i›;iÃ;@;iP;0;@;@;iP;	[ o;
-;0;"
-caper;o;	;{	;i‹;i;iÌ;i¥;@;iQ;0;@;@;iQ;	[ o;
-;0;"swans_down;o;	;{	;i‹;i;i;iÍ;@;iR;0;@;@;iR;	[ o;
-;0;"swiss_coffee;o;	;{	;i›;i;i÷;i’;@;iS;0;@;@;iS;	[ o;
-;0;"white_ice;o;	;{	;i›;i;i˘;iÒ;@;iT;0;@;@;iT;	[ o;
-;0;"cerise_red;o;	;{	;iﬁ;i;i6;ih;@;iU;0;@;@;iU;	[ o;
-;0;"
-roman;o;	;{	;iﬁ;i;ih;ie;@;iV;0;@;@;iV;	[ o;
-;0;"tumbleweed;o;	;{	;iﬁ;i;i¶;iÅ;@;iW;0;@;@;iW;	[ o;
-;0;"gold_tips;o;	;{	;iﬁ;i;i∫;i;@;iX;0;@;@;iX;	[ o;
-;0;"brandy;o;	;{	;iﬁ;i;i¡;iñ;@;iY;0;@;@;iY;	[ o;
-;0;"
-wafer;o;	;{	;iﬁ;i;iÀ;i∆;@;iZ;0;@;@;iZ;	[ o;
-;0;"sapling;o;	;{	;iﬁ;i;i‘;i§;@;i[;0;@;@;i[;	[ o;
-;0;"barberry;o;	;{	;iﬁ;i;i◊;i;@;i\;0;@;@;i\;	[ o;
-;0;"beryl_green;o;	;{	;iﬁ;i;iÂ;i¿;@;i];0;@;@;i];	[ o;
-;0;"pattens_blue;o;	;{	;iﬁ;i;iı;iˇ;@;i^;0;@;@;i^;	[ o;
-;0;"heliotrope;o;	;{	;iﬂ;i;ix;iˇ;@;i_;0;@;@;i_;	[ o;
-;0;"apache;o;	;{	;iﬂ;i;iæ;it;@;i`;0;@;@;i`;	[ o;
-;0;"chenin;o;	;{	;iﬂ;i;iÕ;it;@;ia;0;@;@;ia;	[ o;
-;0;"	lola;o;	;{	;iﬂ;i;iœ;i€;@;ib;0;@;@;ib;	[ o;
-;0;"willow_brook;o;	;{	;iﬂ;i;iÏ;i⁄;@;ic;0;@;@;ic;	[ o;
-;0;"chartreuse_yellow;o;	;{	;iﬂ;i;iˇ;i ;@;id;0;@;@;id;	[ o;
-;0;"
-mauve;o;	;{	;i‡;i;i∞;iˇ;@;ie;0;@;@;ie;	[ o;
-;0;"
-anzac;o;	;{	;i‡;i;i∂;iK;@;if;0;@;@;if;	[ o;
-;0;"harvest_gold;o;	;{	;i‡;i;iπ;iy;@;ig;0;@;@;ig;	[ o;
-;0;"calico;o;	;{	;i‡;i;i¿;iï;@;ih;0;@;@;ih;	[ o;
-;0;"baby_blue;o;	;{	;i‡;i;iˇ;iˇ;@;ii;0;@;@;ii;	[ o;
-;0;"sunglo;o;	;{	;i·;i;im;ij;@;ij;0;@;@;ij;	[ o;
-;0;"equator;o;	;{	;i·;i;iº;ii;@;ik;0;@;@;ik;	[ o;
-;0;"pink_flare;o;	;{	;i·;i;i¿;i»;@;il;0;@;@;il;	[ o;
-;0;"periglacial_blue;o;	;{	;i·;i;iÊ;i÷;@;im;0;@;@;im;	[ o;
-;0;"kidnapper;o;	;{	;i·;i;iÍ;i‘;@;in;0;@;@;in;	[ o;
-;0;"	tara;o;	;{	;i·;i;iˆ;iË;@;io;0;@;@;io;	[ o;
-;0;"
-mandy;o;	;{	;i‚;i;iY;ij;@;ip;0;@;@;ip;	[ o;
-;0;"terracotta;o;	;{	;i‚;i;iw;i`;@;iq;0;@;@;iq;	[ o;
-;0;"golden_bell;o;	;{	;i‚;i;iâ;i;@;ir;0;@;@;ir;	[ o;
-;0;"shocking;o;	;{	;i‚;i;ií;i¿;@;is;0;@;@;is;	[ o;
-;0;"
-dixie;o;	;{	;i‚;i;iî;i;@;it;0;@;@;it;	[ o;
-;0;"light_orchid;o;	;{	;i‚;i;iú;i“;@;iu;0;@;@;iu;	[ o;
-;0;"
-snuff;o;	;{	;i‚;i;iÿ;iÌ;@;iv;0;@;@;iv;	[ o;
-;0;"mystic;o;	;{	;i‚;i;iÎ;iÌ;@;iw;0;@;@;iw;	[ o;
-;0;"apple_green;o;	;{	;i‚;i;iÛ;iÏ;@;ix;0;@;@;ix;	[ o;
-;0;"razzmatazz;o;	;{	;i„;i;i;ia;@;iy;0;@;@;iy;	[ o;
-;0;"alizarin_crimson;o;	;{	;i„;i;i+;i;;@;iz;0;@;@;iz;	[ o;
-;0;"cinnabar;o;	;{	;i„;i;iG;i9;@;i{;0;@;@;i{;	[ o;
-;0;"cavern_pink;o;	;{	;i„;i;iæ;iæ;@;i|;0;@;@;i|;	[ o;
-;0;"peppermint;o;	;{	;i„;i;iı;i·;@;i};0;@;@;i};	[ o;
-;0;"mindaro;o;	;{	;i„;i;i˘;ià;@;i~;0;@;@;i~;	[ o;
-;0;"deep_blush;o;	;{	;i‰;i;i{;iò;@;i;0;@;@;i;	[ o;
-;0;"gamboge;o;	;{	;i‰;i;iõ;i;@;iÄ;0;@;@;iÄ;	[ o;
-;0;"melanie;o;	;{	;i‰;i;i¬;i’;@;iÅ;0;@;@;iÅ;	[ o;
-;0;"twilight;o;	;{	;i‰;i;iœ;iﬁ;@;iÇ;0;@;@;iÇ;	[ o;
-;0;"	bone;o;	;{	;i‰;i;i—;i¿;@;iÉ;0;@;@;iÉ;	[ o;
-;0;"sunflower;o;	;{	;i‰;i;i‘;i';@;iÑ;0;@;@;iÑ;	[ o;
-;0;"grain_brown;o;	;{	;i‰;i;i’;i∑;@;iÖ;0;@;@;iÖ;	[ o;
-;0;"zombie;o;	;{	;i‰;i;i÷;iõ;@;iÜ;0;@;@;iÜ;	[ o;
-;0;"frostee;o;	;{	;i‰;i;iˆ;iÁ;@;iá;0;@;@;iá;	[ o;
-;0;"snow_flurry;o;	;{	;i‰;i;iˇ;i—;@;ià;0;@;@;ià;	[ o;
-;0;"amaranth;o;	;{	;iÂ;i;i0;iU;@;iâ;0;@;@;iâ;	[ o;
-;0;"	zest;o;	;{	;iÂ;i;iÑ;i ;@;iä;0;@;@;iä;	[ o;
-;0;"dust_storm;o;	;{	;iÂ;i;iÃ;i…;@;iã;0;@;@;iã;	[ o;
-;0;"stark_white;o;	;{	;iÂ;i;i◊;iΩ;@;iå;0;@;@;iå;	[ o;
-;0;"hampton;o;	;{	;iÂ;i;iÿ;iØ;@;iç;0;@;@;iç;	[ o;
-;0;"bon_jour;o;	;{	;iÂ;i;i‡;i·;@;ié;0;@;@;ié;	[ o;
-;0;"mercury;o;	;{	;iÂ;i;iÂ;iÂ;@;iè;0;@;@;iè;	[ o;
-;0;"
-polar;o;	;{	;iÂ;i;i˘;iˆ;@;iê;0;@;@;iê;	[ o;
-;0;"trinidad;o;	;{	;iÊ;i;iS;i;@;ië;0;@;@;ië;	[ o;
-;0;"gold_sand;o;	;{	;iÊ;i;iæ;iä;@;ií;0;@;@;ií;	[ o;
-;0;"cashmere;o;	;{	;iÊ;i;iæ;i•;@;iì;0;@;@;iì;	[ o;
-;0;"double_spanish_white;o;	;{	;iÊ;i;i◊;iπ;@;iî;0;@;@;iî;	[ o;
-;0;"satin_linen;o;	;{	;iÊ;i;i‰;i‘;@;iï;0;@;@;iï;	[ o;
-;0;"	harp;o;	;{	;iÊ;i;iÚ;iÍ;@;iñ;0;@;@;iñ;	[ o;
-;0;"off_green;o;	;{	;iÊ;i;i¯;iÛ;@;ió;0;@;@;ió;	[ o;
-;0;"hint_of_green;o;	;{	;iÊ;i;iˇ;iÈ;@;iò;0;@;@;iò;	[ o;
-;0;"tranquil;o;	;{	;iÊ;i;iˇ;iˇ;@;iô;0;@;@;iô;	[ o;
-;0;"mango_tango;o;	;{	;iÁ;i;iw;i ;@;iö;0;@;@;iö;	[ o;
-;0;"christine;o;	;{	;iÁ;i;ix;i;@;iõ;0;@;@;iõ;	[ o;
-;0;"tonys_pink;o;	;{	;iÁ;i;iü;iå;@;iú;0;@;@;iú;	[ o;
-;0;"	kobi;o;	;{	;iÁ;i;iü;iƒ;@;iù;0;@;@;iù;	[ o;
-;0;"rose_fog;o;	;{	;iÁ;i;iº;i¥;@;iû;0;@;@;iû;	[ o;
-;0;"	corn;o;	;{	;iÁ;i;iø;i
-;@;iü;0;@;@;iü;	[ o;
-;0;"
-putty;o;	;{	;iÁ;i;iÕ;iå;@;i†;0;@;@;i†;	[ o;
-;0;"gray_nurse;o;	;{	;iÁ;i;iÏ;iÊ;@;i°;0;@;@;i°;	[ o;
-;0;"lily_white;o;	;{	;iÁ;i;i¯;iˇ;@;i¢;0;@;@;i¢;	[ o;
-;0;"bubbles;o;	;{	;iÁ;i;i˛;iˇ;@;i£;0;@;@;i£;	[ o;
-;0;"fire_bush;o;	;{	;iË;i;iô;i-;@;i§;0;@;@;i§;	[ o;
-;0;"
-shilo;o;	;{	;iË;i;iπ;i≥;@;i•;0;@;@;i•;	[ o;
-;0;"pearl_bush;o;	;{	;iË;i;i‡;i’;@;i¶;0;@;@;i¶;	[ o;
-;0;"green_white;o;	;{	;iË;i;iÎ;i‡;@;iß;0;@;@;iß;	[ o;
-;0;"chrome_white;o;	;{	;iË;i;iÒ;i‘;@;i®;0;@;@;i®;	[ o;
-;0;"gin;o;	;{	;iË;i;iÚ;iÎ;@;i©;0;@;@;i©;	[ o;
-;0;"aqua_squeeze;o;	;{	;iË;i;iı;iÚ;@;i™;0;@;@;i™;	[ o;
-;0;"clementine;o;	;{	;iÈ;i;is;i ;@;i´;0;@;@;i´;	[ o;
-;0;"burnt_sienna;o;	;{	;iÈ;i;iy;iV;@;i¨;0;@;@;i¨;	[ o;
-;0;"tahiti_gold;o;	;{	;iÈ;i;i|;i;@;i≠;0;@;@;i≠;	[ o;
-;0;"oyster_pink;o;	;{	;iÈ;i;iŒ;iÕ;@;iÆ;0;@;@;iÆ;	[ o;
-;0;"confetti;o;	;{	;iÈ;i;i◊;i_;@;iØ;0;@;@;iØ;	[ o;
-;0;"ebb;o;	;{	;iÈ;i;i„;i„;@;i∞;0;@;@;i∞;	[ o;
-;0;"ottoman;o;	;{	;iÈ;i;i¯;iÌ;@;i±;0;@;@;i±;	[ o;
-;0;"clear_day;o;	;{	;iÈ;i;iˇ;i˝;@;i≤;0;@;@;i≤;	[ o;
-;0;"carissma;o;	;{	;iÍ;i;ià;i®;@;i≥;0;@;@;i≥;	[ o;
-;0;"porsche;o;	;{	;iÍ;i;iÆ;in;@;i¥;0;@;@;i¥;	[ o;
-;0;"tulip_tree;o;	;{	;iÍ;i;i≥;i@;@;iµ;0;@;@;iµ;	[ o;
-;0;"rob_roy;o;	;{	;iÍ;i;i∆;iy;@;i∂;0;@;@;i∂;	[ o;
-;0;"raffia;o;	;{	;iÍ;i;i⁄;i∏;@;i∑;0;@;@;i∑;	[ o;
-;0;"white_rock;o;	;{	;iÍ;i;iË;i‘;@;i∏;0;@;@;i∏;	[ o;
-;0;"panache;o;	;{	;iÍ;i;iˆ;iÓ;@;iπ;0;@;@;iπ;	[ o;
-;0;"solitude;o;	;{	;iÍ;i;iˆ;iˇ;@;i∫;0;@;@;i∫;	[ o;
-;0;"aqua_spring;o;	;{	;iÍ;i;i˘;iı;@;iª;0;@;@;iª;	[ o;
-;0;"dew;o;	;{	;iÍ;i;iˇ;i˛;@;iº;0;@;@;iº;	[ o;
-;0;"apricot;o;	;{	;iÎ;i;iì;ix;@;iΩ;0;@;@;iΩ;	[ o;
-;0;"zinnwaldite;o;	;{	;iÎ;i;i¬;iØ;@;iæ;0;@;@;iæ;	[ o;
-;0;"fuel_yellow;o;	;{	;iÏ;i;i©;i,;@;iø;0;@;@;iø;	[ o;
-;0;"ronchi;o;	;{	;iÏ;i;i≈;iS;@;i¿;0;@;@;i¿;	[ o;
-;0;"french_lilac;o;	;{	;iÏ;i;i«;iÓ;@;i¡;0;@;@;i¡;	[ o;
-;0;"just_right;o;	;{	;iÏ;i;iÕ;iπ;@;i¬;0;@;@;i¬;	[ o;
-;0;"wild_rice;o;	;{	;iÏ;i;i‡;iê;@;i√;0;@;@;i√;	[ o;
-;0;"fall_green;o;	;{	;iÏ;i;iÎ;iΩ;@;iƒ;0;@;@;iƒ;	[ o;
-;0;"aths_special;o;	;{	;iÏ;i;iÎ;iŒ;@;i≈;0;@;@;i≈;	[ o;
-;0;"starship;o;	;{	;iÏ;i;iÚ;iJ;@;i∆;0;@;@;i∆;	[ o;
-;0;"red_ribbon;o;	;{	;iÌ;i;i;iD;@;i«;0;@;@;i«;	[ o;
-;0;"
-tango;o;	;{	;iÌ;i;i;i!;@;i»;0;@;@;i»;	[ o;
-;0;"carrot_orange;o;	;{	;iÌ;i;ië;i&;@;i…;0;@;@;i…;	[ o;
-;0;"sea_pink;o;	;{	;iÌ;i;iò;iû;@;i ;0;@;@;i ;	[ o;
-;0;"
-tacao;o;	;{	;iÌ;i;i≥;iÅ;@;iÀ;0;@;@;iÀ;	[ o;
-;0;"desert_sand;o;	;{	;iÌ;i;i…;iØ;@;iÃ;0;@;@;iÃ;	[ o;
-;0;"pancho;o;	;{	;iÌ;i;iÕ;i´;@;iÕ;0;@;@;iÕ;	[ o;
-;0;"chamois;o;	;{	;iÌ;i;i‹;i±;@;iŒ;0;@;@;iŒ;	[ o;
-;0;"primrose;o;	;{	;iÌ;i;iÍ;iô;@;iœ;0;@;@;iœ;	[ o;
-;0;"
-frost;o;	;{	;iÌ;i;iı;i›;@;i–;0;@;@;i–;	[ o;
-;0;"aqua_haze;o;	;{	;iÌ;i;iı;iı;@;i—;0;@;@;i—;	[ o;
-;0;"zumthor;o;	;{	;iÌ;i;iˆ;iˇ;@;i“;0;@;@;i“;	[ o;
-;0;"narvik;o;	;{	;iÌ;i;i˘;iÒ;@;i”;0;@;@;i”;	[ o;
-;0;"honeysuckle;o;	;{	;iÌ;i;i¸;iÑ;@;i‘;0;@;@;i‘;	[ o;
-;0;"lavender_magenta;o;	;{	;iÓ;i;iÇ;iÓ;@;i’;0;@;@;i’;	[ o;
-;0;"beauty_bush;o;	;{	;iÓ;i;i¡;iæ;@;i÷;0;@;@;i÷;	[ o;
-;0;"chalky;o;	;{	;iÓ;i;i◊;iî;@;i◊;0;@;@;i◊;	[ o;
-;0;"almond;o;	;{	;iÓ;i;iŸ;iƒ;@;iÿ;0;@;@;iÿ;	[ o;
-;0;"	flax;o;	;{	;iÓ;i;i‹;iÇ;@;iŸ;0;@;@;iŸ;	[ o;
-;0;"bizarre;o;	;{	;iÓ;i;iﬁ;i⁄;@;i⁄;0;@;@;i⁄;	[ o;
-;0;"double_colonial_white;o;	;{	;iÓ;i;i„;i≠;@;i€;0;@;@;i€;	[ o;
-;0;"cararra;o;	;{	;iÓ;i;iÓ;iË;@;i‹;0;@;@;i‹;	[ o;
-;0;"	manz;o;	;{	;iÓ;i;iÔ;i};@;i›;0;@;@;i›;	[ o;
-;0;"tahuna_sands;o;	;{	;iÓ;i;i;i»;@;iﬁ;0;@;@;iﬁ;	[ o;
-;0;"athens_gray;o;	;{	;iÓ;i;i;iÛ;@;iﬂ;0;@;@;iﬂ;	[ o;
-;0;"	tusk;o;	;{	;iÓ;i;iÛ;i√;@;i‡;0;@;@;i‡;	[ o;
-;0;"loafer;o;	;{	;iÓ;i;iÙ;iﬁ;@;i·;0;@;@;i·;	[ o;
-;0;"catskill_white;o;	;{	;iÓ;i;iˆ;i˜;@;i‚;0;@;@;i‚;	[ o;
-;0;"twilight_blue;o;	;{	;iÓ;i;i˝;iˇ;@;i„;0;@;@;i„;	[ o;
-;0;"jonquil;o;	;{	;iÓ;i;iˇ;iö;@;i‰;0;@;@;i‰;	[ o;
-;0;"rice_flower;o;	;{	;iÓ;i;iˇ;i‚;@;iÂ;0;@;@;iÂ;	[ o;
-;0;"
-jaffa;o;	;{	;iÔ;i;iÜ;iD;@;iÊ;0;@;@;iÊ;	[ o;
-;0;"gallery;o;	;{	;iÔ;i;iÔ;iÔ;@;iÁ;0;@;@;iÁ;	[ o;
-;0;"porcelain;o;	;{	;iÔ;i;iÚ;iÛ;@;iË;0;@;@;iË;	[ o;
-;0;"mauvelous;o;	;{	;i;i;ië;i©;@;iÈ;0;@;@;iÈ;	[ o;
-;0;"golden_dream;o;	;{	;i;i;i’;i2;@;iÍ;0;@;@;iÍ;	[ o;
-;0;"golden_sand;o;	;{	;i;i;i€;i};@;iÎ;0;@;@;iÎ;	[ o;
-;0;"	buff;o;	;{	;i;i;i‹;iÇ;@;iÏ;0;@;@;iÏ;	[ o;
-;0;"	prim;o;	;{	;i;i;i‚;iÏ;@;iÌ;0;@;@;iÌ;	[ o;
-;0;"
-khaki;o;	;{	;i;i;iÊ;iå;@;iÓ;0;@;@;iÓ;	[ o;
-;0;"selago;o;	;{	;i;i;iÓ;i˝;@;iÔ;0;@;@;iÔ;	[ o;
-;0;"titan_white;o;	;{	;i;i;iÓ;iˇ;@;i;0;@;@;i;	[ o;
-;0;"alice_blue;o;	;{	;i;i;i¯;iˇ;@;iÒ;0;@;@;iÒ;	[ o;
-;0;"	feta;o;	;{	;i;i;i¸;iÍ;@;iÚ;0;@;@;iÚ;	[ o;
-;0;"gold_drop;o;	;{	;iÒ;i;iÇ;i ;@;iÛ;0;@;@;iÛ;	[ o;
-;0;"
-wewak;o;	;{	;iÒ;i;iõ;i´;@;iÙ;0;@;@;iÙ;	[ o;
-;0;"sahara_sand;o;	;{	;iÒ;i;iÁ;ià;@;iı;0;@;@;iı;	[ o;
-;0;"parchment;o;	;{	;iÒ;i;iÈ;i“;@;iˆ;0;@;@;iˆ;	[ o;
-;0;"blue_chalk;o;	;{	;iÒ;i;iÈ;iˇ;@;i˜;0;@;@;i˜;	[ o;
-;0;"mint_julep;o;	;{	;iÒ;i;iÓ;i¡;@;i¯;0;@;@;i¯;	[ o;
-;0;"seashell;o;	;{	;iÒ;i;iÒ;iÒ;@;i˘;0;@;@;i˘;	[ o;
-;0;"saltpan;o;	;{	;iÒ;i;i˜;iÚ;@;i˙;0;@;@;i˙;	[ o;
-;0;"
-tidal;o;	;{	;iÒ;i;iˇ;i≠;@;i˚;0;@;@;i˚;	[ o;
-;0;"chiffon;o;	;{	;iÒ;i;iˇ;i»;@;i¸;0;@;@;i¸;	[ o;
-;0;"flamingo;o;	;{	;iÚ;i;iZ;i/;@;i˝;0;@;@;i˝;	[ o;
-;0;"tangerine;o;	;{	;iÚ;i;iÖ;i ;@;i˛;0;@;@;i˛;	[ o;
-;0;"mandys_pink;o;	;{	;iÚ;i;i√;i≤;@;iˇ;0;@;@;iˇ;	[ o;
-;0;"concrete;o;	;{	;iÚ;i;iÚ;iÚ;@;i ;0;@;@;i ;	[ o;
-;0;"black_squeeze;o;	;{	;iÚ;i;i˙;i˙;@;i;0;@;@;i;	[ o;
-;0;"pomegranate;o;	;{	;iÛ;i;iL;i(;@;i;0;@;@;i;	[ o;
-;0;"buttercup;o;	;{	;iÛ;i;i≠;i;@;i;0;@;@;i;	[ o;
-;0;"new_orleans;o;	;{	;iÛ;i;i÷;iù;@;i;0;@;@;i;	[ o;
-;0;"vanilla_ice;o;	;{	;iÛ;i;iŸ;iﬂ;@;i;0;@;@;i;	[ o;
-;0;"sidecar;o;	;{	;iÛ;i;iÁ;iª;@;i;0;@;@;i;	[ o;
-;0;"dawn_pink;o;	;{	;iÛ;i;iÈ;iÂ;@;i;0;@;@;i;	[ o;
-;0;"wheatfield;o;	;{	;iÛ;i;iÌ;iœ;@;i;0;@;@;i;	[ o;
-;0;"canary;o;	;{	;iÛ;i;i˚;ig;@;i	;0;@;@;i	;	[ o;
-;0;"orinoco;o;	;{	;iÛ;i;i˚;i‘;@;i
-;0;@;@;i
-;	[ o;
-;0;"
-carla;o;	;{	;iÛ;i;iˇ;iÿ;@;i;0;@;@;i;	[ o;
-;0;"hollywood_cerise;o;	;{	;iÙ;i;i ;i°;@;i;0;@;@;i;	[ o;
-;0;"sandy_brown;o;	;{	;iÙ;i;i§;ie;@;i;0;@;@;i;	[ o;
-;0;"saffron;o;	;{	;iÙ;i;iƒ;i5;@;i;0;@;@;i;	[ o;
-;0;"ripe_lemon;o;	;{	;iÙ;i;iÿ;i!;@;i;0;@;@;i;	[ o;
-;0;"
-janna;o;	;{	;iÙ;i;iÎ;i”;@;i;0;@;@;i;	[ o;
-;0;"pampas;o;	;{	;iÙ;i;iÚ;iÓ;@;i;0;@;@;i;	[ o;
-;0;"wild_sand;o;	;{	;iÙ;i;iÙ;iÙ;@;i;0;@;@;i;	[ o;
-;0;"zircon;o;	;{	;iÙ;i;i¯;iˇ;@;i;0;@;@;i;	[ o;
-;0;"
-froly;o;	;{	;iı;i;iz;iÑ;@;i;0;@;@;i;	[ o;
-;0;"cream_can;o;	;{	;iı;i;i»;ia;@;i;0;@;@;i;	[ o;
-;0;"manhattan;o;	;{	;iı;i;i…;iô;@;i;0;@;@;i;	[ o;
-;0;"
-maize;o;	;{	;iı;i;i’;i†;@;i;0;@;@;i;	[ o;
-;0;"
-wheat;o;	;{	;iı;i;iﬁ;i≥;@;i;0;@;@;i;	[ o;
-;0;"sandwisp;o;	;{	;iı;i;iÁ;i¢;@;i;0;@;@;i;	[ o;
-;0;"pot_pourri;o;	;{	;iı;i;iÁ;i‚;@;i;0;@;@;i;	[ o;
-;0;"albescent_white;o;	;{	;iı;i;iÈ;i”;@;i;0;@;@;i;	[ o;
-;0;"soft_peach;o;	;{	;iı;i;iÌ;iÔ;@;i;0;@;@;i;	[ o;
-;0;"ecru_white;o;	;{	;iı;i;iÛ;iÂ;@;i;0;@;@;i;	[ o;
-;0;"
-beige;o;	;{	;iı;i;iı;i‹;@;i;0;@;@;i;	[ o;
-;0;"golden_fizz;o;	;{	;iı;i;i˚;iB;@;i;0;@;@;i;	[ o;
-;0;"australian_mint;o;	;{	;iı;i;iˇ;iæ;@;i ;0;@;@;i ;	[ o;
-;0;"french_rose;o;	;{	;iˆ;i;iO;iä;@;i!;0;@;@;i!;	[ o;
-;0;"brilliant_rose;o;	;{	;iˆ;i;iX;i¶;@;i";0;@;@;i";	[ o;
-;0;"illusion;o;	;{	;iˆ;i;i§;i…;@;i#;0;@;@;i#;	[ o;
-;0;"merino;o;	;{	;iˆ;i;i;iÊ;@;i$;0;@;@;i$;	[ o;
-;0;"black_haze;o;	;{	;iˆ;i;i˜;i˜;@;i%;0;@;@;i%;	[ o;
-;0;"spring_sun;o;	;{	;iˆ;i;iˇ;i‹;@;i&;0;@;@;i&;	[ o;
-;0;"violet_red;o;	;{	;i˜;i;iK;iä;@;i';0;@;@;i';	[ o;
-;0;"chilean_fire;o;	;{	;i˜;i;i|;i;@;i(;0;@;@;i(;	[ o;
-;0;"persian_pink;o;	;{	;i˜;i;i;iæ;@;i);0;@;@;i);	[ o;
-;0;"
-rajah;o;	;{	;i˜;i;i∂;im;@;i*;0;@;@;i*;	[ o;
-;0;"azalea;o;	;{	;i˜;i;i»;i⁄;@;i+;0;@;@;i+;	[ o;
-;0;"we_peep;o;	;{	;i˜;i;i€;iÊ;@;i,;0;@;@;i,;	[ o;
-;0;"quarter_spanish_white;o;	;{	;i˜;i;iÚ;i·;@;i-;0;@;@;i-;	[ o;
-;0;"whisper;o;	;{	;i˜;i;iı;i˙;@;i.;0;@;@;i.;	[ o;
-;0;"snow_drift;o;	;{	;i˜;i;i˙;i˜;@;i/;0;@;@;i/;	[ o;
-;0;"casablanca;o;	;{	;i¯;i;i∏;iX;@;i0;0;@;@;i0;	[ o;
-;0;"chantilly;o;	;{	;i¯;i;i√;iﬂ;@;i1;0;@;@;i1;	[ o;
-;0;"cherub;o;	;{	;i¯;i;iŸ;iÈ;@;i2;0;@;@;i2;	[ o;
-;0;"marzipan;o;	;{	;i¯;i;i€;iù;@;i3;0;@;@;i3;	[ o;
-;0;"energy_yellow;o;	;{	;i¯;i;i›;ia;@;i4;0;@;@;i4;	[ o;
-;0;"
-givry;o;	;{	;i¯;i;i‰;iø;@;i5;0;@;@;i5;	[ o;
-;0;"white_linen;o;	;{	;i¯;i;i;iË;@;i6;0;@;@;i6;	[ o;
-;0;"magnolia;o;	;{	;i¯;i;iÙ;iˇ;@;i7;0;@;@;i7;	[ o;
-;0;"spring_wood;o;	;{	;i¯;i;iˆ;iÒ;@;i8;0;@;@;i8;	[ o;
-;0;"coconut_cream;o;	;{	;i¯;i;i˜;i‹;@;i9;0;@;@;i9;	[ o;
-;0;"white_lilac;o;	;{	;i¯;i;i˜;i¸;@;i:;0;@;@;i:;	[ o;
-;0;"desert_storm;o;	;{	;i¯;i;i¯;i˜;@;i;;0;@;@;i;;	[ o;
-;0;"
-texas;o;	;{	;i¯;i;i˘;iú;@;i<;0;@;@;i<;	[ o;
-;0;"corn_field;o;	;{	;i¯;i;i˙;iÕ;@;i=;0;@;@;i=;	[ o;
-;0;"mimosa;o;	;{	;i¯;i;i˝;i”;@;i>;0;@;@;i>;	[ o;
-;0;"carnation;o;	;{	;i˘;i;i_;if;@;i?;0;@;@;i?;	[ o;
-;0;"saffron_mango;o;	;{	;i˘;i;iø;i];@;i@;0;@;@;i@;	[ o;
-;0;"carousel_pink;o;	;{	;i˘;i;i‡;iÌ;@;iA;0;@;@;iA;	[ o;
-;0;"dairy_cream;o;	;{	;i˘;i;i‰;iº;@;iB;0;@;@;iB;	[ o;
-;0;"portica;o;	;{	;i˘;i;iÊ;ih;@;iC;0;@;@;iC;	[ o;
-;0;"underage_pink;o;	;{	;i˘;i;iÊ;iÙ;@;iD;0;@;@;iD;	[ o;
-;0;"
-amour;o;	;{	;i˘;i;iÍ;iÛ;@;iE;0;@;@;iE;	[ o;
-;0;"rum_swizzle;o;	;{	;i˘;i;i¯;i‰;@;iF;0;@;@;iF;	[ o;
-;0;"
-dolly;o;	;{	;i˘;i;iˇ;iã;@;iG;0;@;@;iG;	[ o;
-;0;"sugar_cane;o;	;{	;i˘;i;iˇ;iˆ;@;iH;0;@;@;iH;	[ o;
-;0;"ecstasy;o;	;{	;i˙;i;i};i;@;iI;0;@;@;iI;	[ o;
-;0;"tan_hide;o;	;{	;i˙;i;iù;i_;@;iJ;0;@;@;iJ;	[ o;
-;0;"corvette;o;	;{	;i˙;i;i”;i¢;@;iK;0;@;@;iK;	[ o;
-;0;"peach_yellow;o;	;{	;i˙;i;iﬂ;i≠;@;iL;0;@;@;iL;	[ o;
-;0;"
-turbo;o;	;{	;i˙;i;iÊ;i ;@;iM;0;@;@;iM;	[ o;
-;0;"
-astra;o;	;{	;i˙;i;iÍ;iπ;@;iN;0;@;@;iN;	[ o;
-;0;"champagne;o;	;{	;i˙;i;iÏ;iÃ;@;iO;0;@;@;iO;	[ o;
-;0;"
-linen;o;	;{	;i˙;i;i;iÊ;@;iP;0;@;@;iP;	[ o;
-;0;"fantasy;o;	;{	;i˙;i;iÛ;i;@;iQ;0;@;@;iQ;	[ o;
-;0;"citrine_white;o;	;{	;i˙;i;i˜;i÷;@;iR;0;@;@;iR;	[ o;
-;0;"alabaster;o;	;{	;i˙;i;i˙;i˙;@;iS;0;@;@;iS;	[ o;
-;0;"hint_of_yellow;o;	;{	;i˙;i;i˝;i‰;@;iT;0;@;@;iT;	[ o;
-;0;"
-milan;o;	;{	;i˙;i;iˇ;i§;@;iU;0;@;@;iU;	[ o;
-;0;"brink_pink;o;	;{	;i˚;i;ie;i;@;iV;0;@;@;iV;	[ o;
-;0;"geraldine;o;	;{	;i˚;i;iâ;iâ;@;iW;0;@;@;iW;	[ o;
-;0;"lavender_rose;o;	;{	;i˚;i;i†;i„;@;iX;0;@;@;iX;	[ o;
-;0;"sea_buckthorn;o;	;{	;i˚;i;i°;i.;@;iY;0;@;@;iY;	[ o;
-;0;"sun;o;	;{	;i˚;i;i¨;i;@;iZ;0;@;@;iZ;	[ o;
-;0;"lavender_pink;o;	;{	;i˚;i;iÆ;i“;@;i[;0;@;@;i[;	[ o;
-;0;"rose_bud;o;	;{	;i˚;i;i≤;i£;@;i\;0;@;@;i\;	[ o;
-;0;"
-cupid;o;	;{	;i˚;i;iæ;i⁄;@;i];0;@;@;i];	[ o;
-;0;"classic_rose;o;	;{	;i˚;i;iÃ;iÁ;@;i^;0;@;@;i^;	[ o;
-;0;"apricot_peach;o;	;{	;i˚;i;iŒ;i±;@;i_;0;@;@;i_;	[ o;
-;0;"banana_mania;o;	;{	;i˚;i;iÁ;i≤;@;i`;0;@;@;i`;	[ o;
-;0;"marigold_yellow;o;	;{	;i˚;i;iË;iu;@;ia;0;@;@;ia;	[ o;
-;0;"festival;o;	;{	;i˚;i;iÈ;iq;@;ib;0;@;@;ib;	[ o;
-;0;"sweet_corn;o;	;{	;i˚;i;iÍ;iå;@;ic;0;@;@;ic;	[ o;
-;0;"candy_corn;o;	;{	;i˚;i;iÏ;ib;@;id;0;@;@;id;	[ o;
-;0;"hint_of_red;o;	;{	;i˚;i;i˘;i˘;@;ie;0;@;@;ie;	[ o;
-;0;"shalimar;o;	;{	;i˚;i;iˇ;i∫;@;if;0;@;@;if;	[ o;
-;0;"shocking_pink;o;	;{	;i¸;i;i;i¿;@;ig;0;@;@;ig;	[ o;
-;0;"tickle_me_pink;o;	;{	;i¸;i;iÄ;i•;@;ih;0;@;@;ih;	[ o;
-;0;"tree_poppy;o;	;{	;i¸;i;iú;i";@;ii;0;@;@;ii;	[ o;
-;0;"lightning_yellow;o;	;{	;i¸;i;i¿;i#;@;ij;0;@;@;ij;	[ o;
-;0;"goldenrod;o;	;{	;i¸;i;i÷;il;@;ik;0;@;@;ik;	[ o;
-;0;"candlelight;o;	;{	;i¸;i;iŸ;i;@;il;0;@;@;il;	[ o;
-;0;"cherokee;o;	;{	;i¸;i;i⁄;iò;@;im;0;@;@;im;	[ o;
-;0;"double_pearl_lusta;o;	;{	;i¸;i;iÙ;i–;@;in;0;@;@;in;	[ o;
-;0;"pearl_lusta;o;	;{	;i¸;i;iÙ;i‹;@;io;0;@;@;io;	[ o;
-;0;"vista_white;o;	;{	;i¸;i;i¯;i˜;@;ip;0;@;@;ip;	[ o;
-;0;"bianca;o;	;{	;i¸;i;i˚;iÛ;@;iq;0;@;@;iq;	[ o;
-;0;"moon_glow;o;	;{	;i¸;i;i˛;i⁄;@;ir;0;@;@;ir;	[ o;
-;0;"china_ivory;o;	;{	;i¸;i;iˇ;iÁ;@;is;0;@;@;is;	[ o;
-;0;"ceramic;o;	;{	;i¸;i;iˇ;i˘;@;it;0;@;@;it;	[ o;
-;0;"torch_red;o;	;{	;i˝;i;i;i:;@;iu;0;@;@;iu;	[ o;
-;0;"wild_watermelon;o;	;{	;i˝;i;i`;i};@;iv;0;@;@;iv;	[ o;
-;0;"crusta;o;	;{	;i˝;i;i{;i8;@;iw;0;@;@;iw;	[ o;
-;0;"sorbus;o;	;{	;i˝;i;i|;i;@;ix;0;@;@;ix;	[ o;
-;0;"sweet_pink;o;	;{	;i˝;i;iü;i¢;@;iy;0;@;@;iy;	[ o;
-;0;"light_apricot;o;	;{	;i˝;i;i’;i±;@;iz;0;@;@;iz;	[ o;
-;0;"pig_pink;o;	;{	;i˝;i;i◊;i‰;@;i{;0;@;@;i{;	[ o;
-;0;"cinderella;o;	;{	;i˝;i;i·;i‹;@;i|;0;@;@;i|;	[ o;
-;0;"golden_glow;o;	;{	;i˝;i;i‚;iï;@;i};0;@;@;i};	[ o;
-;0;"
-lemon;o;	;{	;i˝;i;iÈ;i;@;i~;0;@;@;i~;	[ o;
-;0;"old_lace;o;	;{	;i˝;i;iı;iÊ;@;i;0;@;@;i;	[ o;
-;0;"half_colonial_white;o;	;{	;i˝;i;iˆ;i”;@;iÄ;0;@;@;iÄ;	[ o;
-;0;"drover;o;	;{	;i˝;i;i˜;i≠;@;iÅ;0;@;@;iÅ;	[ o;
-;0;"pale_prim;o;	;{	;i˝;i;i˛;i∏;@;iÇ;0;@;@;iÇ;	[ o;
-;0;"cumulus;o;	;{	;i˝;i;iˇ;i’;@;iÉ;0;@;@;iÉ;	[ o;
-;0;"persian_rose;o;	;{	;i˛;i;i-;i¢;@;iÑ;0;@;@;iÑ;	[ o;
-;0;"sunset_orange;o;	;{	;i˛;i;iQ;iE;@;iÖ;0;@;@;iÖ;	[ o;
-;0;"bittersweet;o;	;{	;i˛;i;it;ic;@;iÜ;0;@;@;iÜ;	[ o;
-;0;"california;o;	;{	;i˛;i;iù;i	;@;iá;0;@;@;iá;	[ o;
-;0;"yellow_sea;o;	;{	;i˛;i;i©;i	;@;ià;0;@;@;ià;	[ o;
-;0;"
-melon;o;	;{	;i˛;i;i∫;i≠;@;iâ;0;@;@;iâ;	[ o;
-;0;"bright_sun;o;	;{	;i˛;i;i”;iA;@;iä;0;@;@;iä;	[ o;
-;0;"dandelion;o;	;{	;i˛;i;iÿ;ib;@;iã;0;@;@;iã;	[ o;
-;0;"salomie;o;	;{	;i˛;i;i€;iç;@;iå;0;@;@;iå;	[ o;
-;0;"cape_honey;o;	;{	;i˛;i;iÂ;i¨;@;iç;0;@;@;iç;	[ o;
-;0;"	remy;o;	;{	;i˛;i;iÎ;iÛ;@;ié;0;@;@;ié;	[ o;
-;0;"
-oasis;o;	;{	;i˛;i;iÔ;iŒ;@;iè;0;@;@;iè;	[ o;
-;0;"bridesmaid;o;	;{	;i˛;i;i;iÏ;@;iê;0;@;@;iê;	[ o;
-;0;"beeswax;o;	;{	;i˛;i;iÚ;i«;@;ië;0;@;@;ië;	[ o;
-;0;"bleach_white;o;	;{	;i˛;i;iÛ;iÿ;@;ií;0;@;@;ií;	[ o;
-;0;"	pipi;o;	;{	;i˛;i;iÙ;iÃ;@;iì;0;@;@;iì;	[ o;
-;0;"half_spanish_white;o;	;{	;i˛;i;iÙ;i€;@;iî;0;@;@;iî;	[ o;
-;0;"wisp_pink;o;	;{	;i˛;i;iÙ;i¯;@;iï;0;@;@;iï;	[ o;
-;0;"provincial_pink;o;	;{	;i˛;i;iı;iÒ;@;iñ;0;@;@;iñ;	[ o;
-;0;"half_dutch_white;o;	;{	;i˛;i;i˜;iﬁ;@;ió;0;@;@;ió;	[ o;
-;0;"solitaire;o;	;{	;i˛;i;i¯;i‚;@;iò;0;@;@;iò;	[ o;
-;0;"white_pointer;o;	;{	;i˛;i;i¯;iˇ;@;iô;0;@;@;iô;	[ o;
-;0;"off_yellow;o;	;{	;i˛;i;i˘;i„;@;iö;0;@;@;iö;	[ o;
-;0;"orange_white;o;	;{	;i˛;i;i¸;iÌ;@;iõ;0;@;@;iõ;	[ o;
-;0;"red;o;	;{	;iˇ;i;i ;i ;@;iú;0;@;@;iú;	[ o;
-;0;"	rose;o;	;{	;iˇ;i;i ;i;@;iù;0;@;@;iù;	[ o;
-;0;"purple_pizzazz;o;	;{	;iˇ;i;i ;iÃ;@;iû;0;@;@;iû;	[ o;
-;0;"magenta_fuchsia;o;	;{	;iˇ;i;i ;iˇ;@;iü;0;@;@;iü;	[ o;
-;0;"scarlet;o;	;{	;iˇ;i;i);i ;@;i†;0;@;@;i†;	[ o;
-;0;"wild_strawberry;o;	;{	;iˇ;i;i8;iô;@;i°;0;@;@;i°;	[ o;
-;0;"razzle_dazzle_rose;o;	;{	;iˇ;i;i8;iÃ;@;i¢;0;@;@;i¢;	[ o;
-;0;"radical_red;o;	;{	;iˇ;i;i:;ic;@;i£;0;@;@;i£;	[ o;
-;0;"red_orange;o;	;{	;iˇ;i;iD;i9;@;i§;0;@;@;i§;	[ o;
-;0;"coral_red;o;	;{	;iˇ;i;iE;iE;@;i•;0;@;@;i•;	[ o;
-;0;"vermilion;o;	;{	;iˇ;i;iR;i ;@;i¶;0;@;@;i¶;	[ o;
-;0;"international_orange;o;	;{	;iˇ;i;iT;i ;@;iß;0;@;@;iß;	[ o;
-;0;"outrageous_orange;o;	;{	;iˇ;i;ie;i<;@;i®;0;@;@;i®;	[ o;
-;0;"blaze_orange;o;	;{	;iˇ;i;ik;i ;@;i©;0;@;@;i©;	[ o;
-;0;"pink_flamingo;o;	;{	;iˇ;i;ik;iˇ;@;i™;0;@;@;i™;	[ o;
-;0;"orange;o;	;{	;iˇ;i;im;i$;@;i´;0;@;@;i´;	[ o;
-;0;"hot_pink;o;	;{	;iˇ;i;in;i¥;@;i¨;0;@;@;i¨;	[ o;
-;0;"persimmon;o;	;{	;iˇ;i;ip;iX;@;i≠;0;@;@;i≠;	[ o;
-;0;"blush_pink;o;	;{	;iˇ;i;it;iˇ;@;iÆ;0;@;@;iÆ;	[ o;
-;0;"burning_orange;o;	;{	;iˇ;i;iu;i9;@;iØ;0;@;@;iØ;	[ o;
-;0;"pumpkin;o;	;{	;iˇ;i;iz;i;@;i∞;0;@;@;i∞;	[ o;
-;0;"flamenco;o;	;{	;iˇ;i;i};i;@;i±;0;@;@;i±;	[ o;
-;0;"flush_orange;o;	;{	;iˇ;i;i;i ;@;i≤;0;@;@;i≤;	[ o;
-;0;"
-coral;o;	;{	;iˇ;i;i;iU;@;i≥;0;@;@;i≥;	[ o;
-;0;"salmon;o;	;{	;iˇ;i;iå;in;@;i¥;0;@;@;i¥;	[ o;
-;0;"pizazz;o;	;{	;iˇ;i;iê;i ;@;iµ;0;@;@;iµ;	[ o;
-;0;"west_side;o;	;{	;iˇ;i;ië;i;@;i∂;0;@;@;i∂;	[ o;
-;0;"pink_salmon;o;	;{	;iˇ;i;ië;i§;@;i∑;0;@;@;i∑;	[ o;
-;0;"neon_carrot;o;	;{	;iˇ;i;iô;i8;@;i∏;0;@;@;i∏;	[ o;
-;0;"atomic_tangerine;o;	;{	;iˇ;i;iô;ik;@;iπ;0;@;@;iπ;	[ o;
-;0;"vivid_tangerine;o;	;{	;iˇ;i;iô;iÄ;@;i∫;0;@;@;i∫;	[ o;
-;0;"sunshade;o;	;{	;iˇ;i;iû;i1;@;iª;0;@;@;iª;	[ o;
-;0;"orange_peel;o;	;{	;iˇ;i;i†;i ;@;iº;0;@;@;iº;	[ o;
-;0;"mona_lisa;o;	;{	;iˇ;i;i°;iî;@;iΩ;0;@;@;iΩ;	[ o;
-;0;"web_orange;o;	;{	;iˇ;i;i•;i ;@;iæ;0;@;@;iæ;	[ o;
-;0;"carnation_pink;o;	;{	;iˇ;i;i¶;i…;@;iø;0;@;@;iø;	[ o;
-;0;"hit_pink;o;	;{	;iˇ;i;i´;iÅ;@;i¿;0;@;@;i¿;	[ o;
-;0;"yellow_orange;o;	;{	;iˇ;i;iÆ;iG;@;i¡;0;@;@;i¡;	[ o;
-;0;"cornflower_lilac;o;	;{	;iˇ;i;i∞;i¨;@;i¬;0;@;@;i¬;	[ o;
-;0;"sundown;o;	;{	;iˇ;i;i±;i≥;@;i√;0;@;@;i√;	[ o;
-;0;"my_sin;o;	;{	;iˇ;i;i≥;i$;@;iƒ;0;@;@;iƒ;	[ o;
-;0;"texas_rose;o;	;{	;iˇ;i;iµ;iZ;@;i≈;0;@;@;i≈;	[ o;
-;0;"cotton_candy;o;	;{	;iˇ;i;i∑;i’;@;i∆;0;@;@;i∆;	[ o;
-;0;"macaroni_and_cheese;o;	;{	;iˇ;i;iπ;i{;@;i«;0;@;@;i«;	[ o;
-;0;"selective_yellow;o;	;{	;iˇ;i;i∫;i ;@;i»;0;@;@;i»;	[ o;
-;0;"koromiko;o;	;{	;iˇ;i;iΩ;id;@;i…;0;@;@;i…;	[ o;
-;0;"
-amber;o;	;{	;iˇ;i;iø;i ;@;i ;0;@;@;i ;	[ o;
-;0;"wax_flower;o;	;{	;iˇ;i;i¿;i®;@;iÀ;0;@;@;iÀ;	[ o;
-;0;"	pink;o;	;{	;iˇ;i;i¿;iÀ;@;iÃ;0;@;@;iÃ;	[ o;
-;0;"your_pink;o;	;{	;iˇ;i;i√;i¿;@;iÕ;0;@;@;iÕ;	[ o;
-;0;"supernova;o;	;{	;iˇ;i;i…;i;@;iŒ;0;@;@;iŒ;	[ o;
-;0;"
-flesh;o;	;{	;iˇ;i;iÀ;i§;@;iœ;0;@;@;iœ;	[ o;
-;0;"sunglow;o;	;{	;iˇ;i;iÃ;i8;@;i–;0;@;@;i–;	[ o;
-;0;"golden_tainoi;o;	;{	;iˇ;i;iÃ;ia;@;i—;0;@;@;i—;	[ o;
-;0;"peach_orange;o;	;{	;iˇ;i;iÃ;iô;@;i“;0;@;@;i“;	[ o;
-;0;"chardonnay;o;	;{	;iˇ;i;iÕ;iå;@;i”;0;@;@;i”;	[ o;
-;0;"pastel_pink;o;	;{	;iˇ;i;i—;i‹;@;i‘;0;@;@;i‘;	[ o;
-;0;"romantic;o;	;{	;iˇ;i;i“;i∑;@;i’;0;@;@;i’;	[ o;
-;0;"grandis;o;	;{	;iˇ;i;i”;iå;@;i÷;0;@;@;i÷;	[ o;
-;0;"	gold;o;	;{	;iˇ;i;i◊;i ;@;i◊;0;@;@;i◊;	[ o;
-;0;"school_bus_yellow;o;	;{	;iˇ;i;iÿ;i ;@;iÿ;0;@;@;iÿ;	[ o;
-;0;"cosmos;o;	;{	;iˇ;i;iÿ;iŸ;@;iŸ;0;@;@;iŸ;	[ o;
-;0;"mustard;o;	;{	;iˇ;i;i€;i];@;i⁄;0;@;@;i⁄;	[ o;
-;0;"peach_schnapps;o;	;{	;iˇ;i;i‹;i÷;@;i€;0;@;@;i€;	[ o;
-;0;"caramel;o;	;{	;iˇ;i;i›;iØ;@;i‹;0;@;@;i‹;	[ o;
-;0;"tuft_bush;o;	;{	;iˇ;i;i›;iÕ;@;i›;0;@;@;i›;	[ o;
-;0;"watusi;o;	;{	;iˇ;i;i›;iœ;@;iﬁ;0;@;@;iﬁ;	[ o;
-;0;"pink_lace;o;	;{	;iˇ;i;i›;iÙ;@;iﬂ;0;@;@;iﬂ;	[ o;
-;0;"navajo_white;o;	;{	;iˇ;i;iﬁ;i≠;@;i‡;0;@;@;i‡;	[ o;
-;0;"frangipani;o;	;{	;iˇ;i;iﬁ;i≥;@;i·;0;@;@;i·;	[ o;
-;0;"pippin;o;	;{	;iˇ;i;i·;iﬂ;@;i‚;0;@;@;i‚;	[ o;
-;0;"pale_rose;o;	;{	;iˇ;i;i·;iÚ;@;i„;0;@;@;i„;	[ o;
-;0;"negroni;o;	;{	;iˇ;i;i‚;i≈;@;i‰;0;@;@;i‰;	[ o;
-;0;"cream_brulee;o;	;{	;iˇ;i;iÂ;i†;@;iÂ;0;@;@;iÂ;	[ o;
-;0;"
-peach;o;	;{	;iˇ;i;iÂ;i¥;@;iÊ;0;@;@;iÊ;	[ o;
-;0;"tequila;o;	;{	;iˇ;i;iÊ;i«;@;iÁ;0;@;@;iÁ;	[ o;
-;0;"kournikova;o;	;{	;iˇ;i;iÁ;iw;@;iË;0;@;@;iË;	[ o;
-;0;"sandy_beach;o;	;{	;iˇ;i;iÍ;i»;@;iÈ;0;@;@;iÈ;	[ o;
-;0;"
-karry;o;	;{	;iˇ;i;iÍ;i‘;@;iÍ;0;@;@;iÍ;	[ o;
-;0;"
-broom;o;	;{	;iˇ;i;iÏ;i;@;iÎ;0;@;@;iÎ;	[ o;
-;0;"colonial_white;o;	;{	;iˇ;i;iÌ;iº;@;iÏ;0;@;@;iÏ;	[ o;
-;0;"
-derby;o;	;{	;iˇ;i;iÓ;iÿ;@;iÌ;0;@;@;iÌ;	[ o;
-;0;"vis_vis;o;	;{	;iˇ;i;iÔ;i°;@;iÓ;0;@;@;iÓ;	[ o;
-;0;"egg_white;o;	;{	;iˇ;i;iÔ;i¡;@;iÔ;0;@;@;iÔ;	[ o;
-;0;"papaya_whip;o;	;{	;iˇ;i;iÔ;i’;@;i;0;@;@;i;	[ o;
-;0;"fair_pink;o;	;{	;iˇ;i;iÔ;iÏ;@;iÒ;0;@;@;iÒ;	[ o;
-;0;"peach_cream;o;	;{	;iˇ;i;i;i€;@;iÚ;0;@;@;iÚ;	[ o;
-;0;"lavender_blush;o;	;{	;iˇ;i;i;iı;@;iÛ;0;@;@;iÛ;	[ o;
-;0;"
-gorse;o;	;{	;iˇ;i;iÒ;iT;@;iÙ;0;@;@;iÙ;	[ o;
-;0;"buttermilk;o;	;{	;iˇ;i;iÒ;iµ;@;iı;0;@;@;iı;	[ o;
-;0;"pink_lady;o;	;{	;iˇ;i;iÒ;iÿ;@;iˆ;0;@;@;iˆ;	[ o;
-;0;"forget_me_not;o;	;{	;iˇ;i;iÒ;iÓ;@;i˜;0;@;@;i˜;	[ o;
-;0;"	tutu;o;	;{	;iˇ;i;iÒ;i˘;@;i¯;0;@;@;i¯;	[ o;
-;0;"picasso;o;	;{	;iˇ;i;iÛ;iù;@;i˘;0;@;@;i˘;	[ o;
-;0;"chardon;o;	;{	;iˇ;i;iÛ;iÒ;@;i˙;0;@;@;i˙;	[ o;
-;0;"paris_daisy;o;	;{	;iˇ;i;iÙ;is;@;i˚;0;@;@;i˚;	[ o;
-;0;"barley_white;o;	;{	;iˇ;i;iÙ;iŒ;@;i¸;0;@;@;i¸;	[ o;
-;0;"egg_sour;o;	;{	;iˇ;i;iÙ;i›;@;i˝;0;@;@;i˝;	[ o;
-;0;"sazerac;o;	;{	;iˇ;i;iÙ;i‡;@;i˛;0;@;@;i˛;	[ o;
-;0;"serenade;o;	;{	;iˇ;i;iÙ;iË;@;iˇ;0;@;@;iˇ;	[ o;
-;0;"chablis;o;	;{	;iˇ;i;iÙ;iÛ;@;i ;0;@;@;i ;	[ o;
-;0;"seashell_peach;o;	;{	;iˇ;i;iı;iÓ;@;i;0;@;@;i;	[ o;
-;0;"sauvignon;o;	;{	;iˇ;i;iı;iÛ;@;i;0;@;@;i;	[ o;
-;0;"milk_punch;o;	;{	;iˇ;i;iˆ;i‘;@;i;0;@;@;i;	[ o;
-;0;"varden;o;	;{	;iˇ;i;iˆ;iﬂ;@;i;0;@;@;i;	[ o;
-;0;"rose_white;o;	;{	;iˇ;i;iˆ;iı;@;i;0;@;@;i;	[ o;
-;0;"baja_white;o;	;{	;iˇ;i;i¯;i—;@;i;0;@;@;i;	[ o;
-;0;"gin_fizz;o;	;{	;iˇ;i;i˘;i‚;@;i;0;@;@;i;	[ o;
-;0;"early_dawn;o;	;{	;iˇ;i;i˘;iÊ;@;i;0;@;@;i;	[ o;
-;0;"lemon_chiffon;o;	;{	;iˇ;i;i˙;iÕ;@;i	;0;@;@;i	;	[ o;
-;0;"bridal_heath;o;	;{	;iˇ;i;i˙;iÙ;@;i
-;0;@;@;i
-;	[ o;
-;0;"scotch_mist;o;	;{	;iˇ;i;i˚;i‹;@;i;0;@;@;i;	[ o;
-;0;"soapstone;o;	;{	;iˇ;i;i˚;i˘;@;i;0;@;@;i;	[ o;
-;0;"witch_haze;o;	;{	;iˇ;i;i¸;iô;@;i;0;@;@;i;	[ o;
-;0;"buttery_white;o;	;{	;iˇ;i;i¸;iÍ;@;i;0;@;@;i;	[ o;
-;0;"island_spice;o;	;{	;iˇ;i;i¸;iÓ;@;i;0;@;@;i;	[ o;
-;0;"
-cream;o;	;{	;iˇ;i;i˝;i–;@;i;0;@;@;i;	[ o;
-;0;"chilean_heath;o;	;{	;iˇ;i;i˝;iÊ;@;i;0;@;@;i;	[ o;
-;0;"travertine;o;	;{	;iˇ;i;i˝;iË;@;i;0;@;@;i;	[ o;
-;0;"orchid_white;o;	;{	;iˇ;i;i˝;iÛ;@;i;0;@;@;i;	[ o;
-;0;"quarter_pearl_lusta;o;	;{	;iˇ;i;i˝;iÙ;@;i;0;@;@;i;	[ o;
-;0;"half_and_half;o;	;{	;iˇ;i;i˛;i·;@;i;0;@;@;i;	[ o;
-;0;"apricot_white;o;	;{	;iˇ;i;i˛;iÏ;@;i;0;@;@;i;	[ o;
-;0;"rice_cake;o;	;{	;iˇ;i;i˛;i;@;i;0;@;@;i;	[ o;
-;0;"black_white;o;	;{	;iˇ;i;i˛;iˆ;@;i;0;@;@;i;	[ o;
-;0;"romance;o;	;{	;iˇ;i;i˛;i˝;@;i;0;@;@;i;	[ o;
-;0;"yellow;o;	;{	;iˇ;i;iˇ;i ;@;i;0;@;@;i;	[ o;
-;0;"laser_lemon;o;	;{	;iˇ;i;iˇ;ik;@;i;0;@;@;i;	[ o;
-;0;"pale_canary;o;	;{	;iˇ;i;iˇ;iô;@;i;0;@;@;i;	[ o;
-;0;"portafino;o;	;{	;iˇ;i;iˇ;i¥;@;i;0;@;@;i;	[ o;
-;0;"
-ivory;o;	;{	;iˇ;i;iˇ;i;@;i;0;@;@;i;	[ o;
-;0;"
-white;o;	;{	;iˇ;i;iˇ;iˇ;@;i;0;@;@;i;	[ 
