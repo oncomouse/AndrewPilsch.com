@@ -5,7 +5,7 @@ var emphasize_these = [
 ];
 
 function emphasize() {
-	if(typeof $isotope_container == "undefined" || $isotope_container.hasClass('isotope')) {
+	if(typeof $isotope_container == "undefined" || $isotope_container.isotope == "undefined") {
 		window.setTimeout(emphasize, 50);
 		return;
 	}
