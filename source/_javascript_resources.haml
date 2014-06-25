@@ -27,8 +27,8 @@
 					nope: "#{javascript_path 'vendor/jquery/plugins/jquery.hashchange.min.js'}"
 				},
 				{
-					test: $('html').hasClass('ie6') || $('html').hasClass('ie7') || $('html').hasClass('ie8'),
-					yep: [ 
+					test: ($('html').attr('class').match(/ie[6-8]/) === null),
+					nope: [ 
 						"#{javascript_path("vendor/selectivizr/selectivizr.min.js")}",
 						"#{javascript_path("vendor/rem-unit/rem.min.js")}"
 					]
