@@ -137,6 +137,22 @@ configure :build do
   ignore "/courses/*"
   ignore "blog_old/*"
   ignore "stylesheets/blog-old/*"
+  
+  # Files included in application.css/.js
+  ignore "stylesheets/global.css"
+  ignore "stylesheets/layout.css"
+  ignore "stylesheets/blog/global.css"
+  ignore "stylesheets/blog/layout.css"
+  ignore "stylesheets/blog/pygments.css"
+  ignore "stylesheets/fonts/genericons/genericons.css"
+  ignore "javascripts/vendor/jquery/jquery.min.js"
+  ignore "javascripts/vendor/jquery/plugins/*"
+  ignore "javascripts/vendor/imagesloaded/*"
+  ignore "javascripts/plugins.js"
+  ignore "javascripts/libraries/*"
+  ignore "javascripts/blog/tipue_content.js"
+  ignore "javascripts/blog/tipue.min.js"
+  
   #ignore "/research/*"
   ignore "/**/*.rb"
   #set :http_prefix, "/new2"
