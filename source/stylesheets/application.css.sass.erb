@@ -2,4 +2,4 @@
 @import global
 
 @media (min-width: 33.236em)
-	<%= IO.readlines(File.dirname(__FILE__) + "/layout.css.sass").map{|x| if x =~ /^\@import bear/ then "" else x end }.join("\n\t")%>
+	@import layout
