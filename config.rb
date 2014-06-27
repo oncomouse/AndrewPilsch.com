@@ -21,7 +21,7 @@ set :site_deploy_root, 'http://andrew.pilsch.com'
 
 require "bourbon"
 require "susy"
-require "breakpoint"
+#require "breakpoint"
 require 'compass-normalize'
 
 require "lib/courses.rb"
