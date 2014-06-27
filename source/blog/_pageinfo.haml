@@ -56,10 +56,14 @@
 %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0" }/
 %link{ :href => "/blog/feed.xml", :rel => "alternate", :type =>"application/atom+xml" }/
 / Load Fonts
-= stylesheet_link_tag("fonts/genericons/genericons.css", :media => "all", :rel => "stylesheet" )
 = stylesheet_link_tag("http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic", :media => "all and (min-width: 33.236em)", :rel => "stylesheet" )
-/ Pygments Support
-= stylesheet_link_tag("blog/pygments.css", :media => "all", :rel => "stylesheet" )
-/ Three Bears Structure
-= stylesheet_link_tag("blog/global.css", :media => "all", :rel => "stylesheet" )
-= stylesheet_link_tag("blog/layout.css", :media => "all and (min-width: 33.236em)", :rel => "stylesheet" )
+- if build?
+	/ Compressed CSS Structure
+	= stylesheet_link_tag("blog/application.css", :media => "all", :rel => "stylesheet" )
+-else
+	= stylesheet_link_tag("fonts/genericons/genericons.css", :media => "all", :rel => "stylesheet" )
+	/ Pygments Support
+	= stylesheet_link_tag("blog/pygments.css", :media => "all", :rel => "stylesheet" )
+	/ Three Bears Structure
+	= stylesheet_link_tag("blog/global.css", :media => "all", :rel => "stylesheet" )
+	= stylesheet_link_tag("blog/layout.css", :media => "all and (min-width: 33.236em)", :rel => "stylesheet" )
