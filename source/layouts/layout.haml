@@ -15,14 +15,15 @@
 		
 		%title Andrew Pilsch
 		%meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0" }/
+
 		
-		
-		/Fonts
-		= stylesheet_link_tag("fonts/genericons/genericons.css", :media => "all", :rel => "stylesheet" )
-		/ Basic Goldilocks Approach CSS structure
 		- if build? # We leave this for debugging purposes.
+			/ Compressed Document CSS
 			= stylesheet_link_tag("application.css", :media => "all", :rel => "stylesheet" )
 		- else
+			/Fonts
+			= stylesheet_link_tag("fonts/genericons/genericons.css", :media => "all", :rel => "stylesheet" )
+			/ Basic Goldilocks Approach CSS structure
 			= stylesheet_link_tag("global.css", :media => "all", :rel => "stylesheet" )
 			= stylesheet_link_tag("layout.css", :media => "all and (min-width: 33.236em)", :rel => "stylesheet" )
 		
