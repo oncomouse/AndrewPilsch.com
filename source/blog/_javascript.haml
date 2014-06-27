@@ -20,8 +20,7 @@
 - init_calls = []
 - if current_page.source_file =~ /search.html/
 	= javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"
-	= javascript_include_tag "blog/tipue_content.js"
-	= javascript_include_tag "blog/tipue.min.js"
+	= javascript_include_tag "blog/tipue_search.js"
 	- init_calls.push "$(document).ready(function() {$('#tipue_search_input').tipuesearch();});"
 -if init_calls.length > 0
 	:javascript
