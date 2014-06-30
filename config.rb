@@ -148,6 +148,7 @@ configure :build do
   ignore "javascripts/vendor/jquery/jquery.min.js"
   ignore "javascripts/vendor/jquery/plugins/*"
   ignore "javascripts/vendor/imagesloaded/*"
+  ignore "javascripts/vendor/modernizr/*"
   ignore "javascripts/plugins.js"
   ignore "javascripts/libraries/*"
   ignore "javascripts/blog/tipue_content.js"
