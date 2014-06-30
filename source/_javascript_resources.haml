@@ -17,10 +17,10 @@
 		// Load polyfills and init isotope. All file paths are generated at build by Middleman:
 		$(document).ready(function() {
 			Modernizr.load([
-				{
+				/*{
 					test: window.jQuery,
 					nope: "#{javascript_path("vendor/jquery/jquery.min.js")}"
-				},
+				},*/
 				{
 					test: Modernizr.hashchange,
 					nope: "#{javascript_path 'vendor/jquery/plugins/jquery.hashchange.min.js'}"
