@@ -1,3 +1,3 @@
-//= require jquery2
+//= require jquery
 //= require "./tipue_content.js"
 //= require "./tipue.min.js"
