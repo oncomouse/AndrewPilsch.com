@@ -146,7 +146,7 @@ configure :build do
   #ignore "stylesheets/blog/pygments.css"
   #ignore "stylesheets/fonts/genericons/genericons.css"
   ignore "javascripts/vendor/jquery/jquery.min.js"
-  ignore "javascripts/vendor/jquery/plugins/*"
+  ignore "javascripts/vendor/jquery/plugins/jquery.isotope.min.js"
   ignore "javascripts/vendor/imagesloaded/*"
   ignore "javascripts/vendor/modernizr/*"
   ignore "javascripts/plugins.js"
