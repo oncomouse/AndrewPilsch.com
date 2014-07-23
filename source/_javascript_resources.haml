@@ -29,6 +29,10 @@
 					test: Modernizr.cssremunit,
 					nope: "#{javascript_path("vendor/rem-unit/rem.min.js")}"
 				},
+				/*{
+					test: platform.os.family != "OS X",
+					yep: "#{asset_path(:css, "fonts/liberation-sans/liberation-sans.css")}"
+				},*/
 				{
 					test: Modernizr.mq("all and (min-width: 33.236em)"),
 					yep: "#{javascript_path("site.js")}",
