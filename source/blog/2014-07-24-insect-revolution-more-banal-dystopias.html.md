@@ -1,7 +1,7 @@
 ---
 title: "Insect Revolution: More On Banal Dystopias"
 date: 2014-07-24 16:45 UTC
-tags: cyberpunk, insect, transhumanism, Soylent, transhumanism, futurism
+tags: cyberpunk, insect, transhumanism, Soylent, transhumanism, futurism, Banal Dystopia
 published: true
 ---
 

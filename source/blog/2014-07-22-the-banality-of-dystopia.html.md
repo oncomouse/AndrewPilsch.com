@@ -1,7 +1,7 @@
 ---
 title: The Banality of Dystopia
 date: 2014-07-22 17:40 UTC
-tags: Google, Soylent, futurism, transhumanism
+tags: Google, Soylent, futurism, transhumanism, Banal Dystopia
 published: true
 ---
 
