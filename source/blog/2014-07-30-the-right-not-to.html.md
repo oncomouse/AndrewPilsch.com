@@ -1,7 +1,7 @@
 ---
 title: The Right Not To
 date: 2014-07-30 19:41 UTC
-tags: feminism, negative rights, posthumanism
+tags: feminism, negative rights, posthumanism, posthuman grammar
 published: true
 ---
 
