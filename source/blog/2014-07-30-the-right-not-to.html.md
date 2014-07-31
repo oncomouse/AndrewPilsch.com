@@ -11,7 +11,7 @@ Yesterday, [a story making the rounds](http://www.azfamily.com/news/local/Tempe-
 
 So, while sitting down to enjoy his coffee but really savor his white privilege, he took his AR-15 off of his shoulder and, in the process pointed it at someone who, as any rational being would, became scared and called the police. The act of having a deadly weapon---used in such mass shooting as [this one](http://en.wikipedia.org/wiki/2012_Aurora_shooting)---in a highly secure and sensitive place is not a crime in America but at least pointing one at someone still is ([in certain cases](http://en.wikipedia.org/wiki/Shooting_of_Trayvon_Martin)).
 
-![Looking Down the Barrel of a Gun](/images/blog/ar-15.jpg)
+![Looking Down the Barrel of a Gun](/images/blog/ar-15.jpg){:.splash}
 
 The doctor who gave two people the above view while they all waited to pick up loved ones is, of course, an [open carry activist](http://www.motherjones.com/politics/2014/06/guns-target-open-carry-texas), as the news article makes clear:
 
@@ -35,7 +35,7 @@ Looping this back to my concerns about dealing with open carry "activists" in Ar
 
 That these rights *to* are such a battleground (open carry, abortion, marijuana legalization) is curious. I'm starting to build a case in my head for something we might call a **vocabulary of the posthuman**, because we're entering (or have entered) an era where posthumanism, to be flip, stops being funny. Long a shocking pose---"you know you're actually a thin tissue of juridical, biological, and narratological texts sutured together by access to technology and capital"---posthumanism is becoming the actual world in which we all live: [personhood is more mutable than it once was and appeals to basic, fundamental, or ineffable humanity are not even gestured toward anymore](http://www.washingtonpost.com/blogs/worldviews/files/2014/07/2014-07-16T145202Z_01_GAZ40_RTRIDSP_3_PALESTINIANS-ISRAEL.jpg).
 
-At the same time, we all act *as-if-human*, as though concepts and arguments and even words inherited from the Enlightenment and its vision of a stable essence. This *as-if*-ness is where I think something like viewing the transition from a rights language of "to" to "not" comes into play: we conceptualize rights as add-ons, upgrades we add to the Amazon order of our humanity. 
+At the same time, we all act *as-if-human*, as though concepts and arguments and even words inherited from the Enlightenment and its vision of a stable essence still apply to our subtractive and ad-hoc posthuman existence. This *as-if*-ness is where I think something like viewing the transition from a rights language of "to" to "not" comes into play: we conceptualize rights as add-ons, upgrades we add to the Amazon order of our humanity. 
 
 But, perhaps we need to start thinking about them as subtractive: I have the right not to worry about being shot in an airport terminal. The right of all of us who don't choose to bring a gun to a public place should outweigh the right of the one idiot who did, but our language of rights (granting, gaining, giving, etc.) doesn't convey this noöspheric understanding of rights.
 
