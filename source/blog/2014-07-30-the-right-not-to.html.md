@@ -29,7 +29,7 @@ The further question this has me thinking about is do I not, in America, have a 
 
 As [this comic strip from Robot Hugs](http://www.robot-hugs.com/harassment/) makes clear, women have been dealing with these questions a lot longer than I have. It's one of the best explanations of casual sexism I've read, so take a minute on the whole thing.
 
-Ok, pretty good right? I think the smart take-away from this strip is the point about the unconscious perception that men own public space that women in those public spaces are somehow beholden to them while in these spaces on their own. The idea that women have a right not to be bothered[^1] is alien to most men, it seems.
+Ok, pretty good right? I think the smart take-away from this strip is the point about the unconscious perception that men own public space and that women in those public spaces are somehow beholden to them while in these spaces by themselves. The idea that women have a right not to be bothered[^1] is alien to most men, it seems.
 
 Looping this back to my concerns about dealing with open carry "activists" in Arizona, I asserted that I feel I have a right to feel safe in public, but do I? Is not the right to feel safe the right to not feel threatened? They're both rights not to, they're subtractive rights rather than additive rights. The right to carry a gun in public is an additive right: it's like letting a child stay an extra hour to watch a special TV program. The right *not* is more diaphanous.
 
