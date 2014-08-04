@@ -84,7 +84,14 @@ nav
 	#blog
 		+container
 		& > header
-			+span(3)
+			+span(3 of 12)
+			position: fixed
+			top: 0
+			bottom: 0
+			+clearfix
+			h1,h2
+				margin:
+					right: 18px
 			h1
 				+logotype(0.75rem)
 			padding: 0 $leading / 4
@@ -106,9 +113,9 @@ nav
 							family: "Helvetica", Arial
 							weight: 100
 		nav
-			position: fixed
+			position: absolute
 			bottom: 1 * $leading
-			+span(3 of 12)
+			+span(full)
 			margin: 0
 			ul
 				li.about
