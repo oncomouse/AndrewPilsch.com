@@ -1,3 +1,12 @@
+- #javascript_include_tag "blog/application.js"
+- #:javascript
+- #	if (platform.os.family != "OS X") {
+- #		var font_shim = document.createElement("link");
+- #		font_shim.setAttribute("rel", "stylesheet");
+- #		font_shim.setAttribute("type", "text/css");
+- #		font_shim.setAttribute("href", "#{asset_path(:css, "fonts/liberation-sans/liberation-sans.css")}");
+- #		document.getElementsByTagName("head").item(0).appendChild(font_shim);
+- #	}
 - if build?# and current_page.data.has_key? "layout"
 	:javascript
 		/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -14,7 +23,7 @@
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
+		
 		ga('create', 'UA-660356-3', 'auto');
 		ga('send', 'pageview');
 - init_calls = []
