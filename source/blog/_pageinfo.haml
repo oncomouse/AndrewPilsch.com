@@ -23,7 +23,7 @@
 						- page_title +=  Date.new(year, month, 1).strftime('%b %Y')
 					- when 'year'
 						- page_title +=  year.to_s
-	= page_title
+	= page_title.gsub!(/[_*]/,"")
 - page_description = nil
 -if current_page.data.has_key? "description"
 	- page_description = Haml::Filters::Markdown.render(current_page.data["description"])
