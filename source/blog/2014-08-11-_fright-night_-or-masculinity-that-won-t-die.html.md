@@ -1,7 +1,7 @@
 ---
 title: "_Fright Night_; or, Masculinity That Won't Die"
 date: 2014-08-11 17:18 UTC
-tags: vampires, feminism
+tags: vampires, feminism, misandry
 description: |
   I talk about the 2011 remake of Fright Night and its usage of vampires as allegories for anxieties about male sexuality. Additionally, I connect this usage of unhinged, predatory male sexual violence to a recent turn toward an ironic misandry in feminism. In both cases, we see the struggle against an undead and insatiable masculinity as a key element in manufacturing a progressive understanding of gender in the 21st century.
 ---
