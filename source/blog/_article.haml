@@ -3,11 +3,11 @@
 		%h2.title
 			-if short
 				- if article.data.has_key? 'short_title'
-					= link_to article.data['short_title'], article
+					= link_to Haml::Filters::Markdown.render(article.data['short_title']).sub(/\<\/{0,1}[Pp]\>/,""), article
 				- else
-					= link_to article.title.sub(/([:;])/, '\1<br>'), article
+					= link_to Haml::Filters::Markdown.render(article.title.sub(/([:;])/, '\1<br>')).sub(/\<\/{0,1}[Pp]\>/,""), article
 			- else
-				= article.title.sub(/([:;])/, '\1<br>')
+				= Haml::Filters::Markdown.render(article.title.sub(/([:;])/, '\1<br>')).sub(/\<\/{0,1}[Pp]\>/,"")
 		.metadata
 			%h3.date
 				= article.date.strftime('%b %e, %Y')
