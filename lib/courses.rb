@@ -46,7 +46,7 @@ module CourseManager
 				elsif data["course_id"] && (File.exists? "#{Dir.pwd}/#{course_image_dir}/#{data["course_id"]}.png")
 					data["course_image"] = "#{course_image_dir}/#{data["course_id"]}.png".gsub(/^.*source\//,"")
 				else
-					data["course_image"] = "http://fakeimg.pl/960x500/?text=Image Not Found&font=lobster"
+					data["course_image"] = "http://fakeimg.pl/960x500/?text=Image%20Not%20Found&font=lobster"
 				end
 				if !data["course_url"]
 					data["course_url"] = link_to("","/#{course_dir.gsub("source/","")}/#{data["course_id"]}/").gsub("<a href=\"","").gsub('"></a>','')
