@@ -1,5 +1,5 @@
 -if place == "head"
-	= javascript_include_tag("head-application.js")	
+	- javascript_include_tag("head-application.js")	
 - else
 	-if true
 		= javascript_include_tag("application.js")
@@ -12,34 +12,52 @@
 		/ Local libraries
 		- libraries.map do |x|
 			= javascript_include_tag("libraries/#{x}")
-
-	:javascript	
-		// Load polyfills and init isotope. All file paths are generated at build by Middleman:
-		$(document).ready(function() {
-			Modernizr.load([
-				/*{
-					test: window.jQuery,
-					nope: "#{javascript_path("vendor/jquery/jquery.min.js")}"
-				},*/
-				{
-					test: Modernizr.hashchange,
-					nope: "#{javascript_path 'vendor/jquery/plugins/jquery.hashchange.min.js'}"
-				},
-				{
-					test: Modernizr.cssremunit,
-					nope: "#{javascript_path("vendor/rem-unit/rem.min.js")}"
-				},
-				{
-					test: platform.os.family != "OS X",
-					yep: "#{asset_path(:css, "fonts/liberation-sans/liberation-sans.css")}"
-				},
-				{
-					test: Modernizr.mq("all and (min-width: 33.236em)"),
-					yep: "#{javascript_path("site.js")}",
-					nope: "#{javascript_path("mobile.js")}",
-					complete: function() {
-						start_isotope();
-					}
+	- if true
+		:javascript	
+			// Load polyfills and init isotope. All file paths are generated at build by Middleman:
+			$(document).ready(function() {
+		
+				if (platform.os.family != "OS X") {
+					$('<link rel="stylesheet" type="text/css" href="#{asset_path(:css, "fonts/liberation-sans/liberation-sans.css")}" >') .appendTo("head");
 				}
-			]);
-		});
+				if(window.matchMedia && window.matchMedia("all and (min-width: 33.236em)").matches) {
+					$LAB.queueScript("#{javascript_path("site.js")}");
+				} else {
+					$LAB.queueScript("#{javascript_path("mobile.js")}");
+				}
+		
+				$LAB.queueWait(function() {
+					start_isotope();
+				});
+				$LAB.runQueue();
+			});
+	-else
+		:javascript
+			$(document).ready(function() {
+				Modernizr.load([
+					/*{
+						test: window.jQuery,
+						nope: "#{javascript_path("vendor/jquery/jquery.min.js")}"
+					},*/
+					{
+						test: Modernizr.hashchange,
+						nope: "#{javascript_path 'vendor/jquery/plugins/jquery.hashchange.min.js'}"
+					},
+					{
+						test: Modernizr.cssremunit,
+						nope: "#{javascript_path("vendor/rem-unit/rem.min.js")}"
+					},
+					{
+						test: platform.os.family != "OS X",
+						yep: "#{asset_path(:css, "fonts/liberation-sans/liberation-sans.css")}"
+					},
+					{
+						test: Modernizr.mq("all and (min-width: 33.236em)"),
+						yep: "#{javascript_path("site.js")}",
+						nope: "#{javascript_path("mobile.js")}",
+						complete: function() {
+							start_isotope();
+						}
+					}
+				]);
+			});
