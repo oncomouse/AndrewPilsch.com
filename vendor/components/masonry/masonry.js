@@ -31,7 +31,6 @@ var indexOf = Array.prototype.indexOf ?
 // used for AMD definition and requires
 function masonryDefinition( Outlayer, getSize ) {
   // create an Outlayer layout class
-  console.log(Outlayer.create);
   var Masonry = Outlayer.create('masonry');
 
   Masonry.prototype._resetLayout = function() {
