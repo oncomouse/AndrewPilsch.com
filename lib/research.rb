@@ -99,6 +99,21 @@ module ResearchManager
 			end
 			return yaml_data
 		end
+        
+		def other
+			yaml_data = []
+			Dir.glob("#{Dir.pwd}/#{research_dir}/other/*.yml") do |file_name|
+
+				data = read_yaml_data(file_name)
+				
+				next if data.nil?
+				
+				data["type"] = "other"
+				
+				yaml_data << data
+			end
+			return yaml_data
+		end
 		
 		def presentations
 			yaml_data = []
@@ -131,6 +146,7 @@ module ResearchManager
 			yaml_data += books
 			# Parse Presentations:
 			yaml_data += presentations
+            yaml_data += other
 			return yaml_data
 		end
 	end

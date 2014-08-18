@@ -1,0 +1,14 @@
+.col1.expand.box.research.other.no-excerpt{ :id => "#{item["id"]}" }
+	.hideable
+		%h2= item["kind"]
+		%p
+			%img{ :src => "#{item["image"]}", :alt => "Image Illustrating, \"#{item["short_title"]}\"" }
+		%h1= Haml::Filters::Markdown.render(item["short_title"]).gsub(/\<\/{0,1}[Pp]\>/,"")
+		- if item["short_description"]
+			:markdown
+				#{item["short_description"]}
+	.expandable
+		%h2= item["kind"]
+		%h1= Haml::Filters::Markdown.render(item["short_title"]).gsub(/\<\/{0,1}[Pp]\>/,"")
+		:markdown
+			#{item["description"]}
