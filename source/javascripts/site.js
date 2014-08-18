@@ -228,6 +228,16 @@ function start_isotope() {
 	});
 	
 	imagesLoaded($isotope_container, function() {
+		
+		// Check if we can squeeze another column into the layout:
+		var margin_width = $('body').outerWidth(true) - $('body').outerWidth(false);
+		var remaining_space = $column_width - $('body').outerWidth(false) % $column_width;
+		
+		if(remaining_space > 0 && remaining_space < margin_width) {
+			$('body').css('margin-left', Math.ceil((margin_width - remaining_space) / 2));
+			$('body').css('margin-right', Math.ceil((margin_width - remaining_space) / 2));
+		}
+		
 		$isotope_container.isotope({
 			layoutMode : 'masonry',
 			masonry: {
