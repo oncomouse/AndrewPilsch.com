@@ -18,6 +18,7 @@
     "imagesloaded": "~3.1.8",
     "jquery": ">=2.1",
     "platform": "~1.2.0",
-    "labjs": "*"
+    "labjs": "*",
+    "isotope": "~2.0.0"
   }
 }
