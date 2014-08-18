@@ -18,7 +18,6 @@
 //= require ../../vendor/components/isotope/js/layout-modes/vertical.js
 //= require ../../vendor/components/isotope/js/layout-modes/fit-rows.js
 //= require ../../vendor/components/isotope/js/layout-modes/masonry.js
-// require vendor/jquery/plugins/jquery.isotope.min.js
 //= require plugins.js
 //= require_tree ./libraries
 
