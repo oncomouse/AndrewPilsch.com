@@ -1,4 +1,4 @@
-//=	 require platform
+//=	require platform
 //= require ../../vendor/components/labjs/LAB.js
 //= require jquery
 //= require eventEmitter
