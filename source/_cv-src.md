@@ -30,7 +30,7 @@
 	  }
 	document.write("<a href='mailto:"+link+"'>"+link+"</a>");
 	})();
-</script><br/>
+</script>
 {:/nomarkdown}  
 [http://andrew.pilsch.com](http://andrew.pilsch.com)
 {: .centered}
