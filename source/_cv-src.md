@@ -109,6 +109,8 @@ Philip Young Memorial Endowment in American Literature, 2006. (Penn State)
 
 ### Conference Presentations
 
+**"Interpretation Comes Alive"** _The Conference on College Composition and Communication_, Tampa, FL, 2015 (accepted).
+
 **Roundtable Participant, "Approaching _The Peripheral_: First Responses to William Gibson's New Novel"** _130th MLA Annual Convention_, Vancouver, BC, 2015 (accepted).
 
 **"Sex and the Singularity: On The Reproduction of Software Objects"** _130th MLA Annual Convention_, Vancouver, BC, 2015 (accepted).
