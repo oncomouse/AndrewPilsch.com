@@ -64,7 +64,7 @@ BS, Science Technology &amp; Culture Georgia Institute of Technology , May 2005
 
 ## Publications
 
-**"Fan Utopias and Self-Help Supermen: Political Utopianism in WWII-era SF."** Forthcoming in _Science Fiction Studies_.
+**"Fan Utopias and Self-Help Supermen: Political Utopianism in WWII-era SF."** _Science Fiction Studies_ 41.3 (2014): 524-542.
 
 **"Review of _MP3: The Meaning of a Format_ by Jonathan Sterne."** _Information Society_ 29.5 (2013): 316-317.
 
