@@ -6,9 +6,10 @@
 	- articles = blog.articles[0,articles_to_show]
 - articles.each do |article|
 	-next if build? and !article.published?
+	- nokogiri = Nokogiri::HTML(article.body)
+	- next if nokogiri.at('body').nil?
 	.box.col1.blog{ "data-url" => article.url }
 		%h2 Recent <br> Blog Post
 		%h1= article.title
-		- nokogiri = Nokogiri::HTML(article.body)
 		%p= nokogiri.css("img.splash").first
 		%p= nokogiri.at('body').inner_text.scan(/[\w'’,.()]+/)[0..50].join(" ") + " …"
