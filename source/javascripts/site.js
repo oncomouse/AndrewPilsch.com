@@ -53,6 +53,10 @@ function restore_boxes() {
 }
 
 function expand_box(target) {
+	
+	if(_gaq) {
+		_gaq.push(['_trackPageview', target]);
+	}
 
 	// If taget is blank, return:
 	if (target == "") {
