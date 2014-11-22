@@ -20,34 +20,4 @@
 				start_isotope();
 			});
 			$LAB.runQueue();
-			});
-	- if false # This doesn't load. Old Modernizr code.
-		:javascript
-			$(document).ready(function() {
-				Modernizr.load([
-					/*{
-						test: window.jQuery,
-						nope: "#{javascript_path("vendor/jquery/jquery.min.js")}"
-					},*/
-					{
-						test: Modernizr.hashchange,
-						nope: "#{javascript_path 'vendor/jquery/plugins/jquery.hashchange.min.js'}"
-					},
-					{
-						test: Modernizr.cssremunit,
-						nope: "#{javascript_path("vendor/rem-unit/rem.min.js")}"
-					},
-					{
-						test: platform.os.family != "OS X",
-						yep: "#{asset_path(:css, "fonts/liberation-sans/liberation-sans.css")}"
-					},
-					{
-						test: Modernizr.mq("all and (min-width: 33.236em)"),
-						yep: "#{javascript_path("site.js")}",
-						nope: "#{javascript_path("mobile.js")}",
-						complete: function() {
-							start_isotope();
-						}
-					}
-				]);
-			});
+		});
