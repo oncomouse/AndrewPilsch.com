@@ -7,7 +7,6 @@
 **Arizona State University**
 {: .centered}
 
-(814) 441-9375  
 {::nomarkdown}
 <script>
 	// Email obfuscator script 2.1 by Tim Williams, University of Arizona
@@ -28,12 +27,12 @@
 	      link += (key.charAt(ltr));
 	    }
 	  }
-	document.write("<a href='mailto:"+link+"'>"+link+"</a>");
+	document.write("<p class=\"centered\"><a href='mailto:"+link+"'>"+link+"</a></p>");
 	})();
 </script>
 {:/nomarkdown}  
 [http://andrew.pilsch.com](http://andrew.pilsch.com)
-{: .centered}
+{: .centered .hug}
 
 ## Professional Experience
 
