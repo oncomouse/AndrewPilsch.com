@@ -22,6 +22,7 @@ module CourseManager
 			#Dir.glob("#{Dir.pwd}/#{course_data_dir}/*.yml").each do |yaml_file|
 			Dir.foreach("#{Dir.pwd}/#{course_dir}") do |file_name|	
 				yaml_file = nil
+                next if file_name == "." or file_name == ".."
 				if file_name =~ /.*\.yml$/
 					yaml_file = "#{Dir.pwd}/#{course_dir}/#{file_name}"
 				elsif File.directory? "#{Dir.pwd}/#{course_dir}/#{file_name}"
@@ -31,7 +32,7 @@ module CourseManager
 				end
 				
 				next if yaml_file.nil?
-				
+                
 				begin
 					data = YAML.load(IO.read(yaml_file))
 				rescue *YAML_ERRORS => e
