@@ -115,6 +115,10 @@ function load_all_courses() {
 	$.ajax(url).done(
 		function(data) {
 			if (!$courses_loaded) {
+				/*data = jQuery.grep($(data), function(elem,i) {
+					return (elem.nodeName === 'DIV');
+				});*/
+				//$isotope_container.append(data);
 				$isotope_container.isotope('insert', $(data));
 				window.setTimeout(function(){$isotope_container.isotope();}, 150);
 				$courses_loaded = true;
@@ -259,7 +263,7 @@ function start_isotope() {
 			 at the beginning of the row. This code works for any number of columns, 
 			 but it does assume that blocks are the same width.
 			*/
-			getSortData: {
+			/*getSortData: {
 				rowDominator: function($item) {
 					var index,order,number_of_columns;
 					var displayed = $('.expand').not('.isotope-hidden');
@@ -287,7 +291,7 @@ function start_isotope() {
 					return order;
 				}
 			},
-			sortBy: 'rowDominator'
+			sortBy: 'rowDominator'*/
 		});
 	});
 
