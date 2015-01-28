@@ -1,5 +1,5 @@
 /*!
- * Isotope v2.0.0
+ * Isotope v2.1.0
  * Filter & sort magical layouts
  * http://isotope.metafizzy.co
  */
@@ -268,13 +268,17 @@ function isotopeDefinition( Outlayer, getSize, matchesSelector, Item, LayoutMode
    * @public
    */
   Isotope.prototype.updateSortData = function( elems ) {
+    // get items
+    var items;
+    if ( elems ) {
+      elems = makeArray( elems );
+      items = this.getItems( elems );
+    } else {
+      // update all items if no elems provided
+      items = this.items;
+    }
+
     this._getSorters();
-    // update item sort data
-    // default to all items if none are passed in
-    elems = makeArray( elems );
-    var items = this.getItems( elems );
-    // if no items found, update all items
-    items = items.length ? items : this.items;
     this._updateItemsSortData( items );
   };
 
@@ -291,7 +295,10 @@ function isotopeDefinition( Outlayer, getSize, matchesSelector, Item, LayoutMode
    * @private
    */
   Isotope.prototype._updateItemsSortData = function( items ) {
-    for ( var i=0, len = items.length; i < len; i++ ) {
+    // do not update if no items
+    var len = items && items.length;
+
+    for ( var i=0; len && i < len; i++ ) {
       var item = items[i];
       item.updateSortData();
     }
@@ -549,6 +556,17 @@ function isotopeDefinition( Outlayer, getSize, matchesSelector, Item, LayoutMode
     }
   };
 
+  Isotope.prototype.shuffle = function() {
+    // update random sortData
+    for ( var i=0, len = this.items.length; i < len; i++ ) {
+      var item = this.items[i];
+      item.sortData.random = Math.random();
+    }
+    this.options.sortBy = 'random';
+    this._sort();
+    this._layout();
+  };
+
   /**
    * trigger fn without transition
    * kind of hacky to have this in the first place
@@ -566,6 +584,20 @@ function isotopeDefinition( Outlayer, getSize, matchesSelector, Item, LayoutMode
     // re-enable transition for reveal
     this.options.transitionDuration = transitionDuration;
     return returnValue;
+  };
+
+  // ----- helper methods ----- //
+
+  /**
+   * getter method for getting filtered item elements
+   * @returns {Array} elems - collection of item elements
+   */
+  Isotope.prototype.getFilteredItemElements = function() {
+    var elems = [];
+    for ( var i=0, len = this.filteredItems.length; i < len; i++ ) {
+      elems.push( this.filteredItems[i].element );
+    }
+    return elems;
   };
 
   // -----  ----- //
@@ -589,6 +621,19 @@ if ( typeof define === 'function' && define.amd ) {
       './layout-modes/vertical'
     ],
     isotopeDefinition );
+} else if ( typeof exports === 'object' ) {
+  // CommonJS
+  module.exports = isotopeDefinition(
+    require('outlayer'),
+    require('get-size'),
+    require('desandro-matches-selector'),
+    require('./item'),
+    require('./layout-mode'),
+    // include default layout modes
+    require('./layout-modes/masonry'),
+    require('./layout-modes/fit-rows'),
+    require('./layout-modes/vertical')
+  );
 } else {
   // browser global
   window.Isotope = isotopeDefinition(

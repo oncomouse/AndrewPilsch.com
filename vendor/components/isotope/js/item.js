@@ -42,6 +42,16 @@ Item.prototype.updateSortData = function() {
   }
 };
 
+var _destroy = Item.prototype.destroy;
+Item.prototype.destroy = function() {
+  // call super
+  _destroy.apply( this, arguments );
+  // reset display, #741
+  this.css({
+    display: ''
+  });
+};
+
 return Item;
 
 }
@@ -54,6 +64,11 @@ if ( typeof define === 'function' && define.amd ) {
       'outlayer/outlayer'
     ],
     itemDefinition );
+} else if ( typeof exports === 'object' ) {
+  // CommonJS
+  module.exports = itemDefinition(
+    require('outlayer')
+  );
 } else {
   // browser global
   window.Isotope = window.Isotope || {};
