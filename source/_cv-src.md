@@ -36,11 +36,11 @@
 
 ## Professional Experience
 
-Assistant Professor Arizona State University , 2012-Present
+Assistant Professor Arizona State University, 2012-Present
 
-Fixed-Term Lecturer Pennsylvania State University , 2011-2012
+Fixed-Term Lecturer Pennsylvania State University, 2011-2012
 
-Graduate Teaching Fellow Pennsylvania State University , 2005-2011
+Graduate Teaching Fellow Pennsylvania State University, 2005-2011
 
 ## Education
 
@@ -48,11 +48,11 @@ PhD, English Pennsylvania State University, May 2011
 : Dissertation: *Transhumanism: Evolutionary Logic, Rhetoric, and the Future*
 : Committee: Richard Doyle (Director), Jeffrey Nealon, Mark Morrisson, Robert Yarber.
 
-MA, English Pennsylvania State University , May 2007
+MA, English Pennsylvania State University, May 2007
 
-BS, Computer Science Georgia Institute of Technology , May 2005
+BS, Computer Science Georgia Institute of Technology, May 2005
 
-BS, Science Technology &amp; Culture Georgia Institute of Technology , May 2005
+BS, Science Technology &amp; Culture Georgia Institute of Technology, May 2005
 
 ## Current Book Project
 
