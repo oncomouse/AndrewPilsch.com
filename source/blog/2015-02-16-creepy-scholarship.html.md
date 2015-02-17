@@ -14,7 +14,7 @@ With the application of big data methods to humanities scholarship, I've been fi
 
 ### Cyber-stalking Elderly Professors
 
-Jonathan Goodwin, as I'm sure many of you saw, spent the month leading up to MLA posting screen captures from the historical JIL data that [Jim Ridolofo](http://rid.olfo.org/) produced using commercial OCR software. [He posted his findings on his blog](http://jgoodwin.net/blog/jobs-of-the-mla/). As he mentions at the bottom of that blog post, at one point, I suggested that his project would have more exigence if we could match job listings to names.
+Jonathan Goodwin, as I'm sure many of you saw, spent the month leading up to MLA posting screen captures from the historical JIL data that [Jim Ridolofo](http://rid.olfo.org/) produced using commercial OCR software. [Goodwin posted his findings on his blog, after MLA](http://jgoodwin.net/blog/jobs-of-the-mla/). As he mentions at the bottom of that blog post, at one point, I suggested that his project would have more exigence if we could match job listings to names.
 
 My interest in this project was because one of the truths of the academic job market in the humanities is that "institutional fit" (one of the most nebulous terms in a [profession dominated by nebulous terms](http://www.nytimes.com/2015/02/14/opinion/digitizing-the-humanities.html)) is often so fluid. People get hired who bear little seeming resemblance to their JIL ads because departments decide or know in advance that they *actually* need someone slightly different then they put into words. There's a whole host of reasons for this slippage, and I won't get into enumerating them here. I merely point out the predominance of fit to highlight that data-mining the JIL without accounting for the reality of hiring does not give a full picture of the reality of historic job markets.
 
@@ -36,10 +36,10 @@ Where this turned really creepy, though, is that in the ebb-and-flow of his bibl
 
 This idea of the creepy, emergent narrative is, of course, part of the general creepiness of big data. We're perfectly fine giving away facts about ourselves, but once we see the person-shaped impression, the blurry doppelgänger produced by our data, things are weird: "that person-shaped blur is not me. Or is it?"
 
-Given this creepiness, why are we okay with big data narratives about books or about historical subjects? Is it because they're dead? If that's the case, is it better that we cannot (legally) do datamining on post-1923 literature?
+Given this creepiness, why are we okay with big data narratives about books or about historical subjects? Is it because they're dead? If that's the case, is it better that we cannot (legally) do data-mining on post-1923 literature?
 
 I don't have an answer to all of these questions, but I think it's an important confrontation that digital humanities needs to have with its own methods. The ease with which a simple digital project or even speculation about future projects slides into the creepy territory of distant narrative and the surveillance technologies that author them is startling.
 
-This creep further suggests the problem of interpretation in all DH projects: if narratives extracted from the patterns of datamining are creepy (and I think they can be), where are they creepy? when are they creepy? why might some be creepy and not others? How do we respond ethically to the age of creepy scholarship?
+This creep further suggests the problem of interpretation in all DH projects: if narratives extracted from the patterns of data-mining are creepy (and I think they can be), where are they creepy? when are they creepy? why might some be creepy and not others? How do we respond ethically to the age of creepy scholarship?
 
 As a final plug, these questions could form the grist for some interesting presentations in the special session I'm proposing for MLA 16, ["Critical Informatics and the Digital Humanities."](http://oncomouse.github.io/mla16.html)
