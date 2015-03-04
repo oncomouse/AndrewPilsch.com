@@ -10,7 +10,7 @@ However, I *hate* creating syllabuses. Ever since I began teaching at the colleg
 
 Using Ruby and YAML, I have found a way to make this possible. The course website creator I've built, called [middleman-course-template](https://github.com/oncomouse/middleman-course-template), has just been released on GitHub, and I am really excited to share this exciting and easy way to manage syllabuses with you. You can view a sample of the kind of course website this template creates at [http://andrew.pilsch.com/courses/sample-course/](http://andrew.pilsch.com/courses/sample-course/).
 
-I have experimented with numerous ways of managing it. At Penn State, I used to export my reading schedule as an iCal file and embed it on the course website using Google Calendar. Students hated that (they find it hard to interact with) *and* I hated it, because it was brittle and hard to change.
+I have experimented with numerous ways of doing this in the past. At Penn State, I used to export my reading schedule as an iCal file and embed it on the course website using Google Calendar. Students hated that (they find it hard to interact with) *and* I hated it, because it was brittle and hard to change.
 
 For the last few years, I've been using a custom package of HTML renders and cobbled together Ruby libraries to build [the course sites you can see at my course repository](http://andrew.pilsch.com/courses). It worked okay, but it was still weirdly brittle and would randomly break for no reason.
 
