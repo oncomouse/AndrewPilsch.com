@@ -1,5 +1,6 @@
 source/stylesheets/.sass-cache
 source/stylesheets/.sass-cache/*
+vendor
 
 Gemfile.lock
 
