@@ -19,6 +19,9 @@
     "jquery": ">=2.1",
     "platform": "~1.2.0",
     "labjs": "*",
-    "isotope": "~2.0.0"
+    "isotope": ">=2.0.0"
+  },
+  "resolutions": {
+    "isotope": "~2.1.0"
   }
 }
