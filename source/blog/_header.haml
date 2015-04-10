@@ -21,7 +21,11 @@
 					.tipue_search_bar
 						%form{:method=>"get", :action=>url_for("search.html")}
 							%label{:for => "q"} Input Box to Search This Blog
-							%input.tipue_search_input{:type=>"text", :name => "q", :placeholder => "Search"}
-				%li= link_to " ", "https://www.twitter.com/oncomouse", :class => "twitter", :title => "Andrew Pilsch on Twitter"
-				%li= link_to " ", "https://www.github.com/oncomouse", :class => "github", :title => "Andrew Pilsch On GitHub"
+							%input#q.tipue_search_input{:type=>"text", :name => "q", :placeholder => "Search"}
+				%li
+					= link_to "https://www.twitter.com/oncomouse", :class => "twitter", :title => "Andrew Pilsch on Twitter" do
+						.sr-only I'm oncomouse on Twitter. Follow this link to read my tweets.
+				%li
+					= link_to "https://www.github.com/oncomouse", :class => "github", :title => "Andrew Pilsch On GitHub" do
+						.sr-only I'm oncomouse on GitHub. Follow this link to my open source software.
 				%li.about= link_to "About This Blog", "about.html", :title => "Click to Read About this Blog"
