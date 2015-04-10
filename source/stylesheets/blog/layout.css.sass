@@ -2,7 +2,27 @@
  ----------------------------------------------------------------------------------------*/
 @import bear_defaults
 $scale: 1.414
-@import "libraries/typebase"
+h1, h2, h3, h4, h5, h6
+	margin-top: $leading
+	margin-bottom: 0
+	line-height: $leading
+
+h1
+	font-size: 3 * $scale * 1rem
+	line-height: 3 * $leading
+	margin-top: 2 * $leading
+h2
+	font-size: 2 * $scale * 1rem
+	line-height: 2 * $leading
+	margin-top: 2 * $leading
+h3
+	font-size: 1 * $scale * 1rem
+h4
+	font-size: $scale / 2 * 1rem
+h5
+	font-size: $scale / 3 * 1rem
+h6
+	font-size: $scale / 4 * 1rem
 +layout($susy)
 
 #blog
