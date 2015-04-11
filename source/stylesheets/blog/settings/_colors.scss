@@ -1,0 +1,36 @@
+@import "libraries/sasscolors";
+
+$baseFontColor: $black;
+$baseBackgroundColor: $white;
+
+$linkBaseColor: red;
+$linkHoverColor: adjust-hue($linkBaseColor, 35deg);
+$linkActiveColor: $linkBaseColor;
+
+$subtitleColor: tint($baseFontColor, 45%);
+
+$tagBackgroundColor: tint($baseFontColor, 55%);
+$tagHoverColor: $linkHoverColor;
+$tagFontColor: $baseBackgroundColor;
+
+$thingBorderColor: tint($baseFontColor, 65%);
+$thingArrowColor: transparentize($thingBorderColor, 0.5);
+
+$headerDaddyBackgroundColor: $baseFontColor;
+$headerDaddyFontColor: $baseBackgroundColor;
+
+$blockquoteColor: $baseFontColor;
+$blockquoteQuoteColor: $thingBorderColor;
+
+$prettyPrintBorderColor: $thingBorderColor;
+
+$paginationLinkColor: tint($baseFontColor, 30%);
+$paginationHoverColor: $paginationLinkColor;
+$paginationHoverBackgroundColor: tint($linkHoverColor, 60%);
+$paginationActiveColor: $baseBackgroundColor;
+$paginationActiveBackgroundColor: tint($baseFontColor, 30%);
+$paginationBaseBackround: $baseBackgroundColor;
+$paginationBorderColor: $thingBorderColor;
+$paginationDisabledColor: #999999;
+
+$contactIconColor: tint($baseFontColor, 45%);

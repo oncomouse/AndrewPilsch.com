@@ -1,0 +1,133 @@
+.search_results {
+	.tipue_search_bar_container {
+		margin: {
+			top: $leading * 2;
+		};
+		text-align: center;
+		&:before {
+			content: "Searching For:";
+			display: block;
+			font: {
+				size: 1 * $scale * 1rem;
+				family: $bodyFontFamily;
+				weight: 400;
+				style: italic;
+			};
+		}
+		.tipue_search_bar {
+			margin: {
+				top: 0.5 * $leading;
+			};
+		}
+	}
+}
+
+nav {
+	.tipue_search_bar_container {
+		display: block !important;
+		margin: 0 auto {
+			bottom: $leading / 4;
+		};
+		width: 65%;
+		.tipue_search_bar {
+			padding: {
+				bottom: 2px !important;
+			};
+			border: 0;
+			font-size: 0.8rem;
+			input {
+				text-align: center;
+				width: 100%;
+				border: {
+					bottom: 1px solid $thingBorderColor;
+				};
+				padding-bottom: 0;
+			}
+			&:before {
+				display: none;
+			}
+		}
+	}
+}
+
+.tipue_search_bar {
+	margin: {
+		top: $leading;
+	};
+	display: inline-block;
+	border: 0 {
+		bottom: 1px solid $baseFontColor;
+	};
+	padding: {
+		bottom: 2px;
+		left: $leading / 4;
+	};
+	&:before {
+		@include genericons;
+		content: "\f400";
+		color: $thingBorderColor;
+	}
+	.tipue_search_input {
+		display: inline-block;
+		border: 0;
+		padding: $leading / 8 $leading / 4;
+	}
+	#tipue_search_button {
+		@include visuallyhidden;
+	}
+}
+
+#tipue_search_results_count {
+	font: {
+		size: 2 * $scale * 1rem;
+		family: $bodyFontFamily;
+		weight: $headerFontWeight;
+		style: italic;
+	};
+	margin: {
+		top: 2 * $leading;
+	};
+	text-align: center;
+}
+
+.tipue_search_content_title {
+	font: {
+		size: $scale * 1rem;
+		family: $headerFontFamily;
+		weight: $headerFontWeight;
+		style: normal;
+	};
+	margin: {
+		top: 2 * $leading;
+	};
+	text-align: center;
+	a, a:visited {
+		color: $black;
+		text-decoration: none;
+	}
+}
+
+.tipue_search_content_loc {
+	display: block;
+	margin: {
+		top: $leading;
+	};
+	text-align: center;
+	&:before {
+		display: block;
+		content: "Read More: ";
+	}
+	&:after {
+		content: "";
+		display: block;
+		width: 50%;
+		height: 1px;
+		margin: 0 auto {
+			top: $leading * 2;
+		};
+		background: $thingBorderColor;
+	}
+	&:last-child:after {
+		display: none;
+	}
+}

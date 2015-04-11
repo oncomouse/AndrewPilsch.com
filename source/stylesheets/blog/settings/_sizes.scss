@@ -1,10 +1,10 @@
-$babyBearMaxWidth: 30rem
-$mommyBearMaxWidth: 45rem
-$daddyBearMaxWidth: 60rem
+$babyBearMaxWidth: 30rem;
+$mommyBearMaxWidth: 45rem;
+$daddyBearMaxWidth: 60rem;
 
 // Based on the above bear sizes, we can use Neat's media query support to set our breakpoints
 // Probably a good idea not to edit these:
-//$babyBearMQ: new-breakpoint(max-width $babyBearMaxWidth 12) 
+//$babyBearMQ: new-breakpoint(max-width $babyBearMaxWidth 12)
 //$mommyBearMQ: new-breakpoint(min-width $babyBearMaxWidth max-width ($daddyBearMaxWidth + 2 * $leading) 12)
 //$daddyBearMQ: new-breakpoint(min-width $daddyBearMaxWidth 12)
 
