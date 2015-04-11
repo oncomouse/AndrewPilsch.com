@@ -1,0 +1,21 @@
+@import "libraries/sasscolors";
+
+$red: #dc322f;
+$magenta: #d33682;
+$black: darken(#333333, 5%);
+
+$bodyBackgroundColor: $white;
+$bodyFontColor: $black;
+$bodyLinkColor: $red;
+$bodyLinkHoverColor: darken($red, 15%);
+
+$textSelectionColor: $magenta;
+$buttonSelectedColor: lighten(blue, 15%);
+$buttonColor: #eeeeee;
+$boxBorderColor: lighten($black, 65%);
+
+$socialBadgeColor: $black;
+$socialBadgeBackgroundColor: $white;
+$socialBadgeBorderColor: $white;
+$socialBadgeHoverColor: $red;
+$socialBadgeHoverBackgroundColor: $white;
