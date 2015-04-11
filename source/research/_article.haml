@@ -1,7 +1,7 @@
 .col1.expand.box.research.article.no-excerpt{ :id => "#{article["id"]}" }
 	.hideable
 		%h2
-			- if article["status"].downcase == "forthcoming"
+			- if  article["published"] or article["status"].downcase == "forthcoming"
 				- unpublished_status = "Forthcoming Article"
 			- else
 				- unpublished_status = "Article in Progress"
@@ -9,7 +9,7 @@
 		%p
 			%img{ :src => "#{article["image"]}", :alt => "Image Illustrating the article, \"#{article["short_title"]}\"" }
 		%h1= Haml::Filters::Markdown.render(article["short_title"]).gsub(/\<\/{0,1}[Pp]\>/,"")
-		- if article["status"].downcase == "revise & resubmit" or article["status"].downcase == "revise and resubmit" or article["status"].downcase == "forthcoming" or article["published"]
+		- if article["published"] or article["status"].downcase == "revise & resubmit" or article["status"].downcase == "revise and resubmit" or article["status"].downcase == "forthcoming"
 			%p.single-spaced= article["journal_information"]
 		- if article["short_description"]
 			:markdown
