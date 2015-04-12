@@ -132,6 +132,8 @@ page "/ie8.html", :directory_index => false
 #page "/blog/feed.xml", :layout => false
 #page "/blog/rss.xml", :layout => false
 
+activate :inliner
+
 # Build-specific configuration
 configure :build do
   ignore "/courses/*"

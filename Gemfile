@@ -15,6 +15,7 @@ gem "bourbon"
 #gem "neat"
 gem "susy"
 gem "compass-normalize"
+gem 'middleman-inliner'
 
 gem "nokogiri"
 #gem "therubyracer" if not RbConfig::CONFIG['target_os'] =~ /mswin|mingw/i

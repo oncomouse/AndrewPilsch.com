@@ -2,7 +2,7 @@
 	- javascript_include_tag("head-application.js")	
 - else
 	- # Next step is to remove source/javascripts/vendor and head-application.js
-	= javascript_include_tag("application.js")
+	= build? ? javascript_inline_tag("application.js") : javascript_include_tag("application.js")
 	:javascript	
 		// Load polyfills and init isotope. All file paths are generated at build by Middleman:
 		$(document).ready(function() {
