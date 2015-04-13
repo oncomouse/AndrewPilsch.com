@@ -16,8 +16,8 @@
 				%i.fa.fa-user
 				= if article.data.has_key? 'author' then article.data.has_key? 'author' else config[:blog_author].split(/\W+/).first end
 			%h3.comment
+				%i.fa.fa-comment
 				= link_to article.url + "#disqus_thread" do
-					%i.fa.fa-comment
 					Comment
 	.article_body
 		- if short
