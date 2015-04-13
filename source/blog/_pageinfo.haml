@@ -58,7 +58,7 @@
 / Load Fonts
 = stylesheet_link_tag("http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic", :media => "all and (min-width: 33.236em)", :rel => "stylesheet" )
 = stylesheet_link_tag("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css", :media => "all", :rel => "stylesheet" )
-- if true
+- if build?
 	:scss
 		#{Tilt['erb'].new { IO.read('source/stylesheets/blog/pygments.css.erb') }.render}
 	:scss
