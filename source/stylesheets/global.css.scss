@@ -240,12 +240,6 @@ p.single-spaced {
 		color: $socialBadgeColor;
 		background: $socialBadgeBackgroundColor;
 		display: inline-block;
-		font: {
-			size: 60px;
-		};
-		line: {
-			height: 110px;
-		};
 		text: {
 			align: center;
 		};
@@ -253,7 +247,11 @@ p.single-spaced {
 			align: middle;
 		};
 		border: 1px solid $socialBadgeBorderColor;
-		width: 1.15em;
+		margin: {
+			left: 0.25rem;
+			right: 0.25rem;
+			top: 25px;
+		};
 		&:hover {
 			color: $socialBadgeHoverColor;
 			background: {
@@ -265,20 +263,9 @@ p.single-spaced {
 				left: 0;
 			};
 		}
-		&:before {
-			@include genericons;
-			font: {
-				size: 60px;
-			};
-		}
-		&.icon_twitter:before {
-			content: "\f202";
-		}
-		&.icon_github:before {
-			content: "\f200";
-		}
-		&.icon_rss:before {
-			content: "\f413";
+
+		i {
+
 		}
 	}
 	.no-fontface {

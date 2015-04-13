@@ -9,11 +9,3 @@ $headerFontFamily: $helvetica;
 $headerFontWeight: 700;
 
 $logoFontWeight: 700;
-
-@mixin genericons {
-	-webkit-font-smoothing: antialiased;
-	display: inline-block;
-	font: normal 1rem / 1 Genericons;
-	text-decoration: inherit;
-	vertical-align: text-bottom;
-}
