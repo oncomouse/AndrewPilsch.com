@@ -63,8 +63,8 @@ nav {
 		left: $leading / 4;
 	};
 	&:before {
-		@include genericons;
-		content: "\f400";
+		font-family: FontAwesome;
+		content: "\f002";
 		color: $thingBorderColor;
 	}
 	.tipue_search_input {
