@@ -112,16 +112,6 @@ h6 {
 					&:hover {
 						color: $linkHoverColor;
 					}
-					&:before {
-						@include genericons;
-						font-size: 2.5rem;
-					}
-					&.twitter:before {
-						content: "\f202";
-					}
-					&.github:before {
-						content: "\f200";
-					}
 				}
 				&.about {
 					display: block;

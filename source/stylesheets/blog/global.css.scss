@@ -152,6 +152,11 @@ a, a:visited {
 	@include visuallyhidden;
 }
 
+// Font Awesome Classes:
+.fa-3 {
+	font-size: 3rem;
+}
+
 #blog {
 	& > header {
 		position: relative;
@@ -223,20 +228,11 @@ article {
 			text-transform: uppercase;
 			line-height: 1;
 			margin-top: 0;
-			&:before, & a:before {
-				@include genericons;
-				font-size: 1.2rem;
-			}
-			&.date:before {
-				content: "\f303";
-			}
-			&.author:before {
-				content: "\f304";
-			}
-			&.comment {
-				a:before {
-					content: "\f300";
-				}
+			i {
+				padding: {
+					left: 0.25rem;
+					right: 0.25rem;
+				};
 			}
 		}
 	}
@@ -300,11 +296,13 @@ article {
 				visibility: hidden;
 				text-decoration: none;
 				&:before {
-					@include genericons;
-					content: "\f467";
+					font-family: FontAwesome;
+					content: "\f112";
 					visibility: visible;
-					font-size: 1rem;
-					vertical-align: text-top;
+					font-size: 0.75rem;
+					filter: none;
+					transform: matrix(1, 0, 0, -1, 0, 0);
+					display: inline-block;
 				}
 			}
 		}
