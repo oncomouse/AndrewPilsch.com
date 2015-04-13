@@ -59,15 +59,17 @@
 = stylesheet_link_tag("http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic", :media => "all and (min-width: 33.236em)", :rel => "stylesheet" )
 = stylesheet_link_tag("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css", :media => "all", :rel => "stylesheet" )
 - if build?
-	:scss
-		#{Tilt['erb'].new { IO.read('source/stylesheets/blog/pygments.css.erb') }.render}
-	:scss
-		#{IO.read('source/stylesheets/blog/global.css.scss').gsub('bear_defaults','blog/bear_defaults')}
-	:scss
-		@import 'susy';
-		@media (min-width: 33.236em) {
-			#{IO.read('source/stylesheets/blog/layout.css.scss').gsub('settings/', "blog/settings/").gsub('bear_defaults','blog/bear_defaults')}
-		}
+	= stylesheet_link_tag("blog/application.css", :media => "all", :rel => "stylesheet" )
+	-# Inline stylesheet. Massively increases blog size:
+	-#:scss
+	-#	#{Tilt['erb'].new { IO.read('source/stylesheets/blog/pygments.css.erb') }.render}
+	-#:scss
+	-#	#{IO.read('source/stylesheets/blog/global.css.scss').gsub('bear_defaults','blog/bear_defaults')}
+	-#:scss
+	-#	@import 'susy';
+	-#	@media (min-width: 33.236em) {
+	-#		#{IO.read('source/stylesheets/blog/layout.css.scss').gsub('settings/', "blog/settings/").gsub('bear_defaults','blog/bear_defaults')}
+	-#	}
 -else
 	/ Pygments Support
 	= stylesheet_link_tag("blog/pygments.css", :media => "all", :rel => "stylesheet" )
