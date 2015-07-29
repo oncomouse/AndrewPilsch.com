@@ -21,12 +21,8 @@
     "labjs": "*",
     "isotope": ">=2.0.0",
     "jquery-bridget": "~1.1.0",
-    "normalize.scss": "~3.0.2+normalize.3.0.2",
-    "susy": "~2.2.5",
-    "bourbon": "~4.2.3"
-  },
-  "resolutions": {
-    "isotope": "~2.1.0",
-    "normalize.scss": "~3.0.2+normalize.3.0.2"
+    "normalize.scss": "*",
+    "susy": ">=2.2.5",
+    "bourbon": ">=4.2.3"
   }
 }
