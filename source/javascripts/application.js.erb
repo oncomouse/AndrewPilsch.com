@@ -12,12 +12,12 @@ if(platform.name == 'IE' && parseInt(platform.version) < 9) { window.location.hr
 $(document).ready(function() {
 
 	if (platform.os.family != "OS X") {
-		$('<link rel="stylesheet" type="text/css" href="' + window.assets.cssBaseUrl + 'fonts/liberation-sans/liberation-sans.css" >') .appendTo("head");
+		$('<link rel="stylesheet" type="text/css" href="<%=asset_path(:css, "fonts/liberation-sans/liberation-sans.css") %>" >') .appendTo("head");
 	}
 	if(window.matchMedia && window.matchMedia("all and (min-width: 33.236em)").matches) {
-		$LAB.queueScript(window.assets.baseUrl + 'site.js');
+		$LAB.queueScript("<%=javascript_path("site.js") %>");
 	} else {
-		$LAB.queueScript(window.assets.baseUrl + 'mobile.js');
+		$LAB.queueScript("<%=javascript_path("mobile.js") %>");
 	}
 
 	$LAB.queueWait(function() {
