@@ -11,6 +11,7 @@ set :markdown, :fenced_code_blocks => true,
 
 # Change Compass configuration
 compass_config do |config|
+	config.add_import_path 
 #   config.output_style = :compact
 end
 
@@ -137,8 +138,8 @@ configure :build do
   ignore "stylesheets/blog-old/*"
   
   # Files included in application.css/.js
-  #ignore "stylesheets/global.css"
-  #ignore "stylesheets/layout.css"
+  ignore "stylesheets/global.css"
+  ignore "stylesheets/layout.css"
   ignore "stylesheets/old/*"
   ignore "stylesheets/blog/global.css"
   ignore "stylesheets/blog/layout.css"
