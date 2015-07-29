@@ -2,6 +2,7 @@ source/stylesheets/.sass-cache
 source/stylesheets/.sass-cache/*
 vendor
 node_modules
+build
 
 Gemfile.lock
 

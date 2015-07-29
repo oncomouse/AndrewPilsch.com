@@ -19,18 +19,9 @@
 		= stylesheet_link_tag("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css", :media => "all", :rel => "stylesheet" )
 
 			
-		- if build? # We leave this for debugging purposes.
-			/ Compressed Document CSS
-			:scss
-				#{IO.read('source/stylesheets/global.css.scss')}
-			:scss
-				@media (min-width: 33.236em) {
-					#{IO.read('source/stylesheets/layout.css.scss')}
-				}
-		- else
-			/ Basic Goldilocks Approach CSS structure
-			= stylesheet_link_tag("global.css", :media => "all", :rel => "stylesheet" )
-			= stylesheet_link_tag("layout.css", :media => "all and (min-width: 33.236em)", :rel => "stylesheet" )
+		/ Basic Goldilocks Approach CSS structure
+		= stylesheet_link_tag("global.css", :media => "all", :rel => "stylesheet" )
+		= stylesheet_link_tag("layout.css", :media => "all and (min-width: 33.236em)", :rel => "stylesheet" )
 		
 		= partial "javascript_resources", :locals => { :place => "head" }
 		
