@@ -19,10 +19,6 @@ activate :similar
 
 set :site_deploy_root, 'http://andrew.pilsch.com'
 
-require "bourbon"
-require "susy"
-require 'compass-normalize'
-
 require "lib/courses.rb"
 activate :course_manager
 require "lib/research.rb"

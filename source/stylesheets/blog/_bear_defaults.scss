@@ -1,7 +1,7 @@
 /* Utilities
  * ---------------------------------------------------------------------------------------- */
-@import "bourbon";
-@import "susy";
+@import "bourbon/app/assets/stylesheets/bourbon";
+@import "susy/sass/susy";
 @import "libraries/ap-logotype";
 @import "libraries/sr-only";
 
@@ -33,4 +33,9 @@
 @import "./settings/sizes";
 @import "./settings/colors";
 
-@include border-box-sizing;
+*, *:before, *:after {
+	box-sizing: border-box;
+	z-index: auto;
+	text-rendering: optimizeLegibility;
+	text-shadow: 0 0 1px transparent;
+}
