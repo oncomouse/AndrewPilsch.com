@@ -3,21 +3,8 @@
 - else
 	- # Next step is to remove source/javascripts/vendor and head-application.js
 	= build? ? javascript_inline_tag("application.js") : javascript_include_tag("application.js")
-	:javascript	
-		// Load polyfills and init isotope. All file paths are generated at build by Middleman:
-		$(document).ready(function() {
-	
-			if (platform.os.family != "OS X") {
-				$('<link rel="stylesheet" type="text/css" href="#{asset_path(:css, "fonts/liberation-sans/liberation-sans.css")}" >') .appendTo("head");
-			}
-			if(window.matchMedia && window.matchMedia("all and (min-width: 33.236em)").matches) {
-				$LAB.queueScript("#{javascript_path("site.js")}");
-			} else {
-				$LAB.queueScript("#{javascript_path("mobile.js")}");
-			}
-	
-			$LAB.queueWait(function() {
-				start_isotope();
-			});
-			$LAB.runQueue();
-		});
+	:javascript
+		window.assets = {
+			baseUrl: '#{javascript_path("mobile").gsub(/mobile\.js$/,"")}',
+			cssBaseUrl: '#{asset_path(:css, "global.css").gsub(/global\.css$/,"")}'
+		};
