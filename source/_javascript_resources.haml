@@ -3,8 +3,3 @@
 - else
 	- # Next step is to remove source/javascripts/vendor and head-application.js
 	= build? ? javascript_inline_tag("application.js") : javascript_include_tag("application.js")
-	:javascript
-		window.assets = {
-			baseUrl: '#{javascript_path("mobile").gsub(/mobile\.js$/,"")}',
-			cssBaseUrl: '#{asset_path(:css, "global.css").gsub(/global\.css$/,"")}'
-		};
