@@ -9,10 +9,16 @@ set :markdown, :fenced_code_blocks => true,
                :footnotes => true,
                :superscript => true
 
+@bower_config = JSON.parse(IO.read("#{root}/.bowerrc"))
+
 # Change Compass configuration
 compass_config do |config|
-	config.add_import_path 
+	config.add_import_path File.join "#{root}", @bower_config["directory"]
 #   config.output_style = :compact
+end
+
+after_configuration do
+    sprockets.append_path File.join "#{root}", @bower_config["directory"]
 end
 
 activate :syntax
@@ -42,11 +48,6 @@ page "*", :layout => "layout"
 
 # List of jQuery plugins to load on every page.
 #@jquery_plugins = ["isotope","hashchange"]
-
-after_configuration do
-    @bower_config = JSON.parse(IO.read("#{root}/.bowerrc"))
-    sprockets.append_path File.join "#{root}", @bower_config["directory"]
-end
 
 helpers do
 	def javascript_path(file_path)
@@ -143,6 +144,7 @@ configure :build do
   ignore "stylesheets/old/*"
   ignore "stylesheets/blog/global.css"
   ignore "stylesheets/blog/layout.css"
+  ignore "stylesheets/blog/application.css"
   ignore "stylesheets/blog/pygments.css"
   ignore "stylesheets/fonts/genericons/genericons.css"
   ignore "javascripts/vendor/jquery/jquery.min.js"
