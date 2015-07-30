@@ -1,4 +1,4 @@
-.col1.expand.box.research.article.no-excerpt{ :id => "#{article["id"]}" }
+%div{ :id => "#{article["id"]}", :class=> "col1 expand box research article no-excerpt#{article['emphasize'] ? " emphasize" : ""}" }
 	.hideable
 		%h2
 			- if  article["published"] or article["status"].downcase == "forthcoming"

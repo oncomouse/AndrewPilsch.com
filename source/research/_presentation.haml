@@ -1,4 +1,4 @@
-.col1.expand.box.research.presentation.no-excerpt{ :id => "#{presentation["id"]}", "data-timestamp" => "#{presentation['date'].to_time.to_i}" }
+%div{ :id => "#{presentation["id"]}", "data-timestamp" => "#{presentation['date'].to_time.to_i}", :class=> " col1 expand box research presentation no-excerpt#{presentation['emphasize'] ? " emphasize" : ""}" }
 	.hideable
 		%h2= presentation["delivered"] ? "Recent Presentation" : "Upcoming Presentation"
 		%p

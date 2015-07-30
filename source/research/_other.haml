@@ -1,4 +1,4 @@
-.col1.expand.box.research.other.no-excerpt{ :id => "#{item["id"]}" }
+%div{ :id => "#{item["id"]}", :class=> "col1 expand box research other no-excerpt#{item['emphasize'] ? " emphasize" : ""}" }
 	.hideable
 		%h2= item["kind"]
 		%p

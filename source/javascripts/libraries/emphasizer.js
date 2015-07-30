@@ -1,6 +1,4 @@
 var emphasize_these = [
-	"#mla15_her",
-	"#hypermonsters",
 	".emphasize"
 ];
 
