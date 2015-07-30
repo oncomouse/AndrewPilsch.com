@@ -39,7 +39,7 @@
 
 Assistant Professor Texas A&M University, 2015-Present
 
-Assistant Professor Arizona State University, 2012-2014
+Assistant Professor Arizona State University, 2012-2015
 
 Fixed-Term Lecturer Pennsylvania State University, 2011-2012
 
