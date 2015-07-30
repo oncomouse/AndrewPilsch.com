@@ -1,34 +1,35 @@
 # Andrew Pilsch
 {: .centered}
 
-**Assistant Professor of English**  
-**College of Letters &amp; Sciences**  
-**Interdisciplinary Humanities &amp; Communications**  
-**Arizona State University**
+**Assistant Professor**  
+**Department of English**  
+**Texas A&M University**
 {: .centered}
 
 {::nomarkdown}
-<script>
-	// Email obfuscator script 2.1 by Tim Williams, University of Arizona
-	// Random encryption key feature by Andrew Moulden, Site Engineering Ltd
-	// This code is freeware provided these four comment lines remain intact
-	// A wizard to generate this code is at http://www.jottings.com/obfuscator/
-	(function() { coded = "OqcKuhp@OuG.MnG";
-	  key = "NoDyPtICvlfhrAgx9JR2seB0K5pV64jawYFuM8TQmqEid7OSb1GHLZUWz3cnkX";
-	  shift=coded.length;
-	  link="";
-	  for (i=0; i<coded.length; i++) {
-	    if (key.indexOf(coded.charAt(i))==-1) {
-	      ltr = coded.charAt(i);
-	      link += (ltr);
-	    }
-	    else {     
-	      ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length;
-	      link += (key.charAt(ltr));
-	    }
-	  }
-	document.write("<p class=\"centered\"><a href='mailto:"+link+"'>"+link+"</a></p>");
-	})();
+<script type="text/javascript" language="javascript">
+<!--
+// Email obfuscator script 2.1 by Tim Williams, University of Arizona
+// Random encryption key feature by Andrew Moulden, Site Engineering Ltd
+// This code is freeware provided these four comment lines remain intact
+// A wizard to generate this code is at http://www.jottings.com/obfuscator/
+{ coded = 'tT95mZx@GtHg.yVg'
+  key = 'IJi483NHFcCgDLkdwp9aPQhqYZXAn0lVfTRtzsxW6Ojore5E2bMGvmU1KuS7By'
+  shift=coded.length
+  link=''
+  for (i=0; i<coded.length; i++) {
+    if (key.indexOf(coded.charAt(i))==-1) {
+      ltr = coded.charAt(i)
+      link += (ltr)
+    }
+    else {     
+      ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+      link += (key.charAt(ltr))
+    }
+  }
+  document.write('<p class="centered"><a href="mailto:'+link+'">'+link+'</a></p>');
+}
+//-->
 </script>
 {:/nomarkdown}  
 [http://andrew.pilsch.com](http://andrew.pilsch.com)
@@ -36,7 +37,9 @@
 
 ## Professional Experience
 
-Assistant Professor Arizona State University, 2012-Present
+Assistant Professor Texas A&M University, 2015-Present
+
+Assistant Professor Arizona State University, 2012-2014
 
 Fixed-Term Lecturer Pennsylvania State University, 2011-2012
 
@@ -112,7 +115,11 @@ Philip Young Memorial Endowment in American Literature, 2006. (Penn State)
 
 ### Conference Presentations
 
-**"Interpretation Comes Alive"** _The Conference on College Composition and Communication_, Tampa, FL, 2015 (accepted).
+Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st MLA Annual Convention_, Austin, TX, 2016 (accepted).
+
+**"Worlds Without Us: The Horror of Indifference in *The Southern Reach Trilogy*"** _The Society For Literature, Science, and the Arts 2015 Conference_, Houston, TX, 2015 (accepted).
+
+**"Interpretation Comes Alive"** _The Conference on College Composition and Communication_, Tampa, FL, 2015.
 
 **Roundtable Participant, "Approaching _The Peripheral_: First Responses to William Gibson's New Novel"** _130th MLA Annual Convention_, Vancouver, BC, 2015.
 
@@ -144,7 +151,11 @@ Philip Young Memorial Endowment in American Literature, 2006. (Penn State)
 
 **"Revising Tomorrow: the Historical Present, Telecommunications, and Capitalism in _Nova_ and _Neuromancer_,"** _Samuel Delany: A Critical Symposium_, University at Buffalo (State University of New York), 2006.
 
-## Teaching Experience <small>(26 Sections; 11 Courses; 924 Students)</small>
+## Teaching Experience <small>(27 Sections; 12 Courses; 949 Students)</small>
+
+### Texas A&M University <small>(1 Section; 1 Course; 25 Students)</small>
+
+**Modern Rhetorical Theory** (1 Section; 25 Students) &ndash; Course focuses on the developments of rhetorical theory in the 20th century. Course emphasizes mutations in media and globality as preconditions for the flowering of rhetorical thought that mark our world.
 
 ### Arizona State University <small>(10 Sections; 6 Courses; 280 Students; 7 Online Sections)</small>
 
@@ -178,7 +189,13 @@ Philip Young Memorial Endowment in American Literature, 2006. (Penn State)
 
 ### For National Organizations
 
+**Member-at-large**, Executive Committee, _The Society For Literature, Science, and the Arts_, 2015-2017.
+
 **Program Committee Member**, _The Society For Literature, Science, and the Arts Conference_, 2013.
+
+### For Texas A&M University
+
+**First Year Review Committee Member**, 2015.
 
 ### For Arizona State University
 
