@@ -11,6 +11,8 @@ if(platform.name == 'IE' && parseInt(platform.version) < 9) { window.location.hr
 // Load polyfills and init isotope. All file paths are generated at build by Middleman:
 $(document).ready(function() {
 
+	$('html	').addClass('js').removeClass('no-js');
+
 	if (platform.os.family != "OS X") {
 		$('<link rel="stylesheet" type="text/css" href="<%=asset_path(:css, "fonts/liberation-sans/liberation-sans.css") %>" >') .appendTo("head");
 	}
