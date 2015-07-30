@@ -130,8 +130,6 @@ page "/ie8.html", :directory_index => false
 #page "/blog/feed.xml", :layout => false
 #page "/blog/rss.xml", :layout => false
 
-activate :inliner
-
 # Build-specific configuration
 configure :build do
   ignore "/courses/*"
@@ -141,16 +139,17 @@ configure :build do
   # Files included in application.css/.js
   ignore "stylesheets/global.css"
   ignore "stylesheets/layout.css"
+  ignore "stylesheets/application.css"
   ignore "stylesheets/old/*"
   ignore "stylesheets/blog/global.css"
   ignore "stylesheets/blog/layout.css"
-  ignore "stylesheets/blog/application.css"
   ignore "stylesheets/blog/pygments.css"
   ignore "stylesheets/fonts/genericons/genericons.css"
   ignore "javascripts/vendor/jquery/jquery.min.js"
   ignore "javascripts/vendor/jquery/plugins/jquery.isotope.min.js"
   ignore "javascripts/vendor/imagesloaded/*"
   ignore "javascripts/vendor/modernizr/*"
+  ignore "javascripts/application.js"
   ignore "javascripts/plugins.js"
   ignore "javascripts/libraries/*"
   ignore "javascripts/blog/tipue_content.js"
@@ -167,6 +166,8 @@ configure :build do
 
   # Minify Javascript on build
   activate :minify_javascript, :inline => true
+  activate :inliner
+  activate :minify_html
 
   #activate :gzip
 
