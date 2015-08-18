@@ -199,11 +199,13 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 
 ### For Arizona State University
 
-**Noösphere Reading Group Organizer**, 2014-Present &ndash; Ongoing, informal reading group of SLS faculty reading works related to the topics of global consciousness and global awareness.
+**IHC English Education Search Committee Member** 2014 &ndash; Successful hire for tenure-track assistant professor in English Education.
 
-**IHR Nexus Lab Advisory Group Member**, _Institute for Humanities Research_, 2013-Present &ndash; The Nexus Lab, resulting from the work of the DH Initiative at ASU, serves as a focal point and incubator for collaborative, digital research across the humanities at ASU.
+**Noösphere Reading Group Organizer**, 2014 &ndash; Ongoing, informal reading group of SLS faculty reading works related to the topics of global consciousness and global awareness.
 
-**IHR Nexus Lab Data Visualization Working Group Member**, 2014-Present.
+**IHR Nexus Lab Advisory Group Member**, _Institute for Humanities Research_, 2013-2015 &ndash; The Nexus Lab, resulting from the work of the DH Initiative at ASU, serves as a focal point and incubator for collaborative, digital research across the humanities at ASU.
+
+**IHR Nexus Lab Data Visualization Working Group Member**, 2014-2015.
 
 **Digital Humanities Initiative Working Group Member**, _Institute for Humanities Research_, 2013 &ndash; Created purpose document inaugurating an interdisciplinary research and pedagogy initiative for digital humanities.
 
