@@ -405,6 +405,13 @@ h1,h2,h3,h4 {
 	}
 }
 
+body.cv_standalone {
+	#cv {
+		margin: 0 auto;
+		max-width: 960px;
+	}
+}
+
 #cv_html {
 	display: none;
 }
