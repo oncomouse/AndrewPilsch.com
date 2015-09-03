@@ -167,7 +167,9 @@ configure :build do
   # Minify Javascript on build
   activate :minify_javascript, :inline => true
   activate :inliner
-  activate :minify_html
+  activate :minify_html do |html|
+	  html.remove_comments = false
+  end
 
   #activate :gzip
 
