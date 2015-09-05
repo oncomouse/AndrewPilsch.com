@@ -224,7 +224,4 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 
 **The Society for Literature, Science, and the Arts**
 
-**National Council of Teachers of English**
-
-
 References Available Upon Request
