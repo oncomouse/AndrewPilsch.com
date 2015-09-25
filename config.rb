@@ -80,6 +80,15 @@ helpers do
             ""
         end
     end
+	def inline_image(source, options={})
+		require 'base64'
+		file = Dir.pwd + "/source/" + source
+		if true
+			image_tag(source, options)
+		else
+			image_tag("data:image/#{File.extname(file)};base64,#{Base64.encode64(File.read(file))}")
+		end
+	end
 end
 
 class Middleman::Sitemap::Resource

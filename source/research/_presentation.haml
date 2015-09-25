@@ -2,7 +2,7 @@
 	.hideable
 		%h2= presentation["delivered"] ? "Recent Presentation" : "Upcoming Presentation"
 		%p
-			%img{ :src => "#{presentation["image"]}", :alt => "Image Illustrating the presentation, \"#{presentation["short_title"]}\"" }
+			=inline_image presentation["image"], :alt => "Image Illustrating the presentation, \"#{presentation["short_title"]}\""
 		%h1= Haml::Filters::Markdown.render(presentation["short_title"]).gsub(/\<\/{0,1}[Pp]\>/,"")
 		- if presentation["short_description"]
 			:markdown

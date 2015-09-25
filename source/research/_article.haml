@@ -7,7 +7,7 @@
 				- unpublished_status = "Article in Progress"
 			= article["published"] ? "Published Article" : unpublished_status
 		%p
-			%img{ :src => "#{article["image"]}", :alt => "Image Illustrating the article, \"#{article["short_title"]}\"" }
+			=inline_image article["image"], :alt => "Image Illustrating the article, \"#{article["short_title"]}\""
 		%h1= Haml::Filters::Markdown.render(article["short_title"]).gsub(/\<\/{0,1}[Pp]\>/,"")
 		- if article["published"] or article["status"].downcase == "revise & resubmit" or article["status"].downcase == "revise and resubmit" or article["status"].downcase == "forthcoming"
 			%p.single-spaced= article["journal_information"]
