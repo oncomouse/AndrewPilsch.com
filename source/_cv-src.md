@@ -70,9 +70,8 @@ BS, Science Technology &amp; Culture Georgia Institute of Technology, May 2005
 
 **"Review of _MP3: The Meaning of a Format_ by Jonathan Sterne."** _Information Society_ 29.5 (2013): 316-317.
 
-**"[Review of _Slime Dynamics_ by Ben Woodard.](http://itineration.org/book_reviews/pilsch/index.html)"** _Itineration_, 2013.
-
-<p class="indent hug">Review uses an exploratory hypertext framework to rethink the possibilities of the book review.</p>
+**["Review of _Slime Dynamics_ by Ben Woodard."](http://itineration.org/book_reviews/pilsch/index.html)** _Itineration_, 2013.
+: Review uses an exploratory hypertext framework to rethink the possibilities of the book review.
 
 **"A Review of _The Breakup 2.0_ by Illana Gershon."** _Information Society_ 28.2 (2012): 126-127.
 
