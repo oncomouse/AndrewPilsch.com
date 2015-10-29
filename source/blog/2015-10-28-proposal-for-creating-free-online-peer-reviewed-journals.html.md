@@ -2,7 +2,7 @@
 title: Proposal for Creating Free Online Peer-Reviewed Journals
 date: 2015-10-28 20:46 UTC
 tags:
-published: false
+published: true
 ---
 
 In a discussion on Facebook recently, the lack of rhetoric and composition journals was highlighted as a serious professional problem.[^1] Our field has grown extensively in the last 20 years but the number of publishing venues has not similarly expanded to keep pace with the growing needs of scholars who have research to publish. The recent swath of major and important edited collections was also highlighted as a product of this issue: fewer journals means a need for more venues. As I mentioned, however, edited collections have serious problems when it comes time for tenure and promotion, when we have to interface the tics and worries of our specific field with the broader culture of the humanities and the university as a whole. These broader cultures often discount edited collections because the table of contents are the product of friendships rather than merit.[^3]
