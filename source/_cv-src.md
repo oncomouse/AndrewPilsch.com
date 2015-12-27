@@ -61,10 +61,11 @@ BS, Science Technology &amp; Culture Georgia Institute of Technology, May 2005
 
 <big>**_Transhumanism: The Rhetoric of Evolutionary Futurism_**</big>
 
-
 **Six Chapter Manuscript, Under Contract with University of Minnesota Press**&mdash;Book explores the rhetorical history of "evolutionary futurism," a twentieth century Utopian rhetorical mode associating advancing telecommunications technologies with biological evolution to suggest near-future radical shifts in human existence and cognition. Tracing this rhetoric of transhumanism, chapters explore the evolutionary futurism of theosophy, 1940s science fiction, Raymond Kurzweil, and Pierre Teilhard de Chardin. In addition to a theoretical introduction, the book also contains an extended discussion of contemporary digital aesthetics as transhuman vectors of evolutionary overcoming.
 
 ## Publications
+
+**"'We twiddle...and turn into machines': Mina Loy, HTML, and the Machining of Information."** Chapter in *Reading Modernism with Machines* eds. Shawna Ross & James O'Sullivan. (Collection Under Contract with Palgrave; Forthcoming, 2016).
 
 **["Insect Capital."](http://www.nanocrit.com/issues/8-2015/insect-capital)** _New American Notes Online (NANO)_ 8 (2015).
 
@@ -106,7 +107,6 @@ SLS Faculty Summer Research Initiative, 2013 &amp; 2014. (Arizona State)
 Wilma Ebbitt Graduate Award in Rhetorical Studies, 2010. (Penn State)
 
 Philip Young Memorial Endowment in American Literature, 2006. (Penn State)
-
 
 ## Invited Talks & Conference Presentations
 
@@ -164,7 +164,7 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 
 ### Texas A&M University <small>(4 Sections; 3 Courses; 77 Students)</small>
 
-**Graduated Directed Study: History and Theory of Rhetoric** (1 Section; 2 Students) &ndash; Graduate directed reading focusing on the history of rhetoric from ancient Greece through the Enlightenment _and_ contemporary articulations of those concepts in rhetoric of science, rhetorical historiography, procedural rhetoric, and minority rhetorics.
+**Graduate Directed Study: History and Theory of Rhetoric** (1 Section; 2 Students) &ndash; Graduate directed reading focusing on the history of rhetoric from ancient Greece through the Enlightenment _and_ contemporary articulations of those concepts in rhetoric of science, rhetorical historiography, procedural rhetoric, and minority rhetorics.
 
 **History of Rhetoric** (1 Section; 25 Students) &ndash; Focus on the history and development of rhetorical concepts from the ancient Greeks through the Enlightenment.
 
