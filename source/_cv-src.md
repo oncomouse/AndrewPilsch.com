@@ -8,7 +8,7 @@
 
 {::nomarkdown}
 <script type="text/javascript" language="javascript">
-<!--
+<!&ndash;
 // Email obfuscator script 2.1 by Tim Williams, University of Arizona
 // Random encryption key feature by Andrew Moulden, Site Engineering Ltd
 // This code is freeware provided these four comment lines remain intact
@@ -29,7 +29,7 @@
   }
   document.write('<p class="centered"><a href="mailto:'+link+'">'+link+'</a></p>');
 }
-//-->
+//&ndash;>
 </script>
 {:/nomarkdown}  
 [http://andrew.pilsch.com](http://andrew.pilsch.com)
@@ -65,6 +65,8 @@ BS, Science Technology &amp; Culture Georgia Institute of Technology, May 2005
 **Six Chapter Manuscript, Under Contract with University of Minnesota Press**&mdash;Book explores the rhetorical history of "evolutionary futurism," a twentieth century Utopian rhetorical mode associating advancing telecommunications technologies with biological evolution to suggest near-future radical shifts in human existence and cognition. Tracing this rhetoric of transhumanism, chapters explore the evolutionary futurism of theosophy, 1940s science fiction, Raymond Kurzweil, and Pierre Teilhard de Chardin. In addition to a theoretical introduction, the book also contains an extended discussion of contemporary digital aesthetics as transhuman vectors of evolutionary overcoming.
 
 ## Publications
+
+**["Insect Capital."](http://www.nanocrit.com/issues/8-2015/insect-capital)** _New American Notes Online (NANO)_ 8 (2015).
 
 **"Fan Utopias and Self-Help Supermen: Political Utopianism in WWII-era SF."** _Science Fiction Studies_ 41.3 (2014): 524-542.
 
@@ -114,9 +116,15 @@ Philip Young Memorial Endowment in American Literature, 2006. (Penn State)
 
 ### Conference Presentations
 
+**"'The sharpest part of my skeleton': Digital Surrealism, Weird Posthumanism, and Performing Theory."**  _Computers & Writing 2016 Conference_, Rochester, NY, 2016 (accepted).
+
+**"_Lachrymator_: Persuasion's Tear Gas."** _17th Biennial RSA Conference_, Atlanta, GA, 2016 (accepted).
+
+**"The Rhetorical Future of the Soul at Work."** _17th Biennial RSA Conference_, Atlanta, GA, 2016 (accepted).
+
 Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st MLA Annual Convention_, Austin, TX, 2016 (accepted).
 
-**"Worlds Without Us: The Horror of Indifference in *The Southern Reach Trilogy*"** _The Society For Literature, Science, and the Arts 2015 Conference_, Houston, TX, 2015 (accepted).
+**"Worlds Without Us: The Horror of Indifference in *The Southern Reach Trilogy*"** _The Society For Literature, Science, and the Arts 2015 Conference_, Houston, TX, 2015.
 
 **"Interpretation Comes Alive"** _The Conference on College Composition and Communication_, Tampa, FL, 2015.
 
@@ -136,6 +144,8 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 
 **"&lsquo;I am afraid of a draught of cool air&rsquo;: Lovecraft, Air Conditioning, and Autophagic Modernity"** _The Society For Literature, Science, and the Arts 2013 Conference_, South Bend, IN, 2013.
 
+**"When Writing is no Longer Writing: Institutions, Objects, Disciplines"** _Computers and Writing 2013 Conference_, Frostberg, MD, 2013.
+
 **"Thinking Different: Primitive Accumulation, Cognitive Economies, and the Quest for a More Perfect Mind"** _15th Biennial RSA Conference_, Philadelphia, PA, 2012.
 
 **"Becoming Object: Facebook, Life Writing, and Tool-Being"** _The Conference on College Composition and Communication_, St. Louis, MA, 2012.
@@ -152,9 +162,13 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 
 ## Teaching Experience <small>(27 Sections; 12 Courses; 949 Students)</small>
 
-### Texas A&M University <small>(1 Section; 1 Course; 25 Students)</small>
+### Texas A&M University <small>(4 Sections; 3 Courses; 77 Students)</small>
 
-**Modern Rhetorical Theory** (1 Section; 25 Students) &ndash; Course focuses on the developments of rhetorical theory in the 20th century. Course emphasizes mutations in media and globality as preconditions for the flowering of rhetorical thought that mark our world.
+**Graduated Directed Study: History and Theory of Rhetoric** (1 Section; 2 Students) &ndash; Graduate directed reading focusing on the history of rhetoric from ancient Greece through the Enlightenment _and_ contemporary articulations of those concepts in rhetoric of science, rhetorical historiography, procedural rhetoric, and minority rhetorics.
+
+**History of Rhetoric** (1 Section; 25 Students) &ndash; Focus on the history and development of rhetorical concepts from the ancient Greeks through the Enlightenment.
+
+**Modern Rhetorical Theory** (2 Section; 50 Students) &ndash; Course focuses on the developments of rhetorical theory in the 20th century. Course emphasizes mutations in media and globality as preconditions for the flowering of rhetorical thought that mark our world.
 
 ### Arizona State University <small>(10 Sections; 6 Courses; 280 Students; 7 Online Sections)</small>
 
@@ -193,6 +207,10 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 **Program Committee Member**, _The Society For Literature, Science, and the Arts Conference_, 2013.
 
 ### For Texas A&M University
+
+**Writing Committee Member**, 2015-Present.
+
+**Rhetoric & Composition Search Committee Member**, 2015.
 
 **First Year Review Committee Member**, 2015.
 
