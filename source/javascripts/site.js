@@ -235,6 +235,10 @@ function start_isotope() {
 		}
 	});
 	
+	/* Process all the images we will lazy load and figure out how big they'll be when they are loaded.
+	   This lets masonry fire without the images having been loaded AND we don't have to call isotope a bunch of times
+	   after each image loads.
+	*/
 	$('img.lazy').each(function() {
 		var $this, image_width, image_height;
 		
@@ -270,12 +274,17 @@ function start_isotope() {
 		$('body').css('margin-left', Math.ceil((margin_width - remaining_space) / 2));
 		$('body').css('margin-right', Math.ceil((margin_width - remaining_space) / 2));
 	}
+	
+	var image_loaded_counter = 0;
 	$('img.lazy').lazyload({
 		event: 'masonryComplete',
 		load: function() {
 			$(this).css('width', '');
 			$(this).css('height', '');
-			$isotope_container.isotope();
+			image_loaded_counter += 1;
+			if (image_loaded_counter >= $('img.lazy').length) {
+				$isotope_container.isotope();
+			}
 		}
 	});
 	
