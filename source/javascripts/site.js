@@ -245,14 +245,15 @@ function start_isotope() {
 		$this = $(this);
 		image_width = $this.parent().innerWidth();
 		
-		if(image_width < 0) {
-			if($this.parents().filter('.col1, .col2').hasClass('col1')) {
-				image_width = $('.col1 img.lazy').eq(0).innerWidth();
-			} else {
-				image_width = $('.col2 img.lazy').eq(0).innerWidth();
-			}
-		
-		}
+		// We don't need to run this, I think:
+//		if(image_width < 0) {
+//			if($this.parents().filter('.col1, .col2').hasClass('col1')) {
+//				image_width = $('.col1 img.lazy').eq(0).innerWidth();
+//			} else {
+//				image_width = $('.col2 img.lazy').eq(0).innerWidth();
+//			}
+//		
+//		}
 		
 		image_height = image_width/parseInt($this.attr('data-image-width')) * parseInt($this.attr('data-image-height'));
 		if(image_width > parseInt($this.attr('data-image-width')) || image_height > parseInt($this.attr('data-image-height'))) {
@@ -275,6 +276,10 @@ function start_isotope() {
 		$('body').css('margin-right', Math.ceil((margin_width - remaining_space) / 2));
 	}
 	
+	/* We start lazy loading images when masonry first completes.
+	   As images load, we count how many load.
+	   When we have the total number of images loaded, we masonry again to fix any overlap.
+	*/
 	var image_loaded_counter = 0;
 	$('img.lazy').lazyload({
 		event: 'masonryComplete',
