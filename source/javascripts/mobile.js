@@ -8,16 +8,14 @@ function start_mobile_isotope() {
 	$('#logo').css('margin-top', $('#filters').outerHeight() + 16);
 	
 	$isotope_container = $('#box_container');
-	imagesLoaded($isotope_container, function() {
-		$isotope_container.isotope({
-			layoutMode: 'vertical',
-			itemSelector: '.box',
-			animationOptions: {
-				duration: 200,
-				easing: 'linear',
-				queue: false
-			}
-		});
+	$isotope_container.isotope({
+		layoutMode: 'vertical',
+		itemSelector: '.box',
+		animationOptions: {
+			duration: 200,
+			easing: 'linear',
+			queue: false
+		}
 	});
 	
 	/*

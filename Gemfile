@@ -14,6 +14,7 @@ gem 'levenshtein-ffi', :require => 'levenshtein'
 gem 'middleman-inliner'
 gem "middleman-minify-html"
 
+gem "fastimage"
 
 gem "nokogiri"
 #gem "therubyracer" if not RbConfig::CONFIG['target_os'] =~ /mswin|mingw/i

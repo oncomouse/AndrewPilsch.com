@@ -84,7 +84,11 @@ helpers do
 		require 'base64'
 		file = Dir.pwd + "/source/" + source
 		if true
-			image_tag(source, options)
+			#image_tag(source, options)
+			options["data-original"] = source
+			options["data-image-width"], options["data-image-height"] = FastImage.size(file)
+			options["class"] = "lazy"
+			image_tag(nil, options)
 		else
 			image_tag("data:image/#{File.extname(file)};base64,#{Base64.encode64(File.read(file))}")
 		end

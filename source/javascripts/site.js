@@ -235,65 +235,102 @@ function start_isotope() {
 		}
 	});
 	
-	imagesLoaded($isotope_container, function() {
+	$('img.lazy').each(function() {
+		var $this, image_width, image_height;
 		
-		// Check if we can squeeze another column into the layout:
-		var margin_width = $('body').outerWidth(true) - $('body').outerWidth(false);
-		var remaining_space = $column_width - $('body').outerWidth(false) % $column_width;
+		$this = $(this);
+		image_width = $this.parent().innerWidth();
 		
-		if(remaining_space > 0 && remaining_space < margin_width) {
-			$('body').css('margin-left', Math.ceil((margin_width - remaining_space) / 2));
-			$('body').css('margin-right', Math.ceil((margin_width - remaining_space) / 2));
+		if(image_width < 0) {
+			if($this.parents().filter('.col1, .col2').hasClass('col1')) {
+				image_width = $('.col1 img.lazy').eq(0).innerWidth();
+			} else {
+				image_width = $('.col2 img.lazy').eq(0).innerWidth();
+			}
+		
 		}
 		
-		$isotope_container.isotope({
-			layoutMode : 'masonry',
-			masonry: {
-				columnWidth: $column_width
-			},
-			cornerStampSelector: '.corner_stamp',
-			itemSelector: '.box',
-			animationOptions: {
-				duration: 200,
-				easing: 'linear',
-				queue: false
-			},
-			/*
-			 This sort data function, rowDominator, puts any expanded box (see below)
-			 at the beginning of the row. This code works for any number of columns, 
-			 but it does assume that blocks are the same width.
-			*/
-			/*getSortData: {
-				rowDominator: function($item) {
-					var index,order,number_of_columns;
-					var displayed = $('.expand').not('.isotope-hidden');
-
-					if(!($item instanceof jQuery)) {
-						$item = $($item);
-					}
-
-					// Determine the index based on the order of displayed nodes, 
-					// not overall nodes (otherwise, behavior isn't as expected):
-					index = displayed.index($item);
-				
-					// If an item isn't marked as expandable, use it's regular 
-					// index:
-					if (index == -1) {
-						index = $item.index();
-					}
-					number_of_columns = Math.floor($isotope_container.outerWidth() / $column_width);
-				
-					if ($item.outerWidth() > $col1) {
-						order = index - (index % number_of_columns) - 0.5;
-					} else{
-						order = index;
-					}
-					return order;
-				}
-			},
-			sortBy: 'rowDominator'*/
-		});
+		image_height = image_width/parseInt($this.attr('data-image-width')) * parseInt($this.attr('data-image-height'));
+		if(image_width > parseInt($this.attr('data-image-width')) || image_height > parseInt($this.attr('data-image-height'))) {
+			image_width = parseInt($this.attr('data-image-width'));
+			image_height = parseInt($this.attr('data-image-width'));
+		}
+		
+		$this.css('width', image_width);
+		$this.css('height', image_height);
 	});
+	
+
+	
+	// Check if we can squeeze another column into the layout:
+	var margin_width = $('body').outerWidth(true) - $('body').outerWidth(false);
+	var remaining_space = $column_width - $('body').outerWidth(false) % $column_width;
+	
+	if(remaining_space > 0 && remaining_space < margin_width) {
+		$('body').css('margin-left', Math.ceil((margin_width - remaining_space) / 2));
+		$('body').css('margin-right', Math.ceil((margin_width - remaining_space) / 2));
+	}
+	$('img.lazy').lazyload({
+		event: 'masonryComplete',
+		load: function() {
+			$(this).css('width', '');
+			$(this).css('height', '');
+			$isotope_container.isotope();
+		}
+	});
+	
+	$isotope_container.isotope({
+		isInitLayout: false,
+		layoutMode : 'masonry',
+		masonry: {
+			columnWidth: $column_width
+		},
+		cornerStampSelector: '.corner_stamp',
+		itemSelector: '.box',
+		animationOptions: {
+			duration: 200,
+			easing: 'linear',
+			queue: false
+		},
+		/*
+		 This sort data function, rowDominator, puts any expanded box (see below)
+		 at the beginning of the row. This code works for any number of columns, 
+		 but it does assume that blocks are the same width.
+		*/
+		/*getSortData: {
+			rowDominator: function($item) {
+				var index,order,number_of_columns;
+				var displayed = $('.expand').not('.isotope-hidden');
+
+				if(!($item instanceof jQuery)) {
+					$item = $($item);
+				}
+
+				// Determine the index based on the order of displayed nodes, 
+				// not overall nodes (otherwise, behavior isn't as expected):
+				index = displayed.index($item);
+			
+				// If an item isn't marked as expandable, use it's regular 
+				// index:
+				if (index == -1) {
+					index = $item.index();
+				}
+				number_of_columns = Math.floor($isotope_container.outerWidth() / $column_width);
+			
+				if ($item.outerWidth() > $col1) {
+					order = index - (index % number_of_columns) - 0.5;
+				} else{
+					order = index;
+				}
+				return order;
+			}
+		},
+		sortBy: 'rowDominator'*/
+	});
+	$isotope_container.isotope( 'on', 'arrangeComplete', function() {
+		$('img.lazy').trigger('masonryComplete');
+	});
+	$isotope_container.isotope();
 
 	/*
 	 Set up the expand and contract action.
