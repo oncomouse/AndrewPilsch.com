@@ -8,11 +8,17 @@ function emphasize() {
 		return;
 	}
 	
-	emphasize_these.forEach(function(foobar) {
-		$(foobar).removeClass('col1').addClass('col2');
+	var defer = $.Deferred();
+	var em = defer.then(function() {
+		emphasize_these.forEach(function(foobar) {
+			$(foobar).removeClass('col1').addClass('col2');
+		});
 	});
 	
-	$isotope_container.isotope();
+	defer.resolve();
+	em.done(function() {
+		$isotope_container.isotope();
+	});
 }
 
 $(document).ready(function() {
