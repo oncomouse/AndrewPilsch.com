@@ -8,7 +8,11 @@
 	.expandable
 		%h1#cv_title CV
 		#cv_html
-			= partial "cv-src"
+			.cv-preamble
+				= partial "cv/preamble"
+
+			.rendered-cv	
+				= partial "cv/src"
 			%hr
 		.links
 			:markdown

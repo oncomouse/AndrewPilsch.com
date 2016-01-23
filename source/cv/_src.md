@@ -1,69 +1,50 @@
-# Andrew Pilsch
-{: .centered}
+---
+givenname: Andrew
+familyname: Pilsch
+jobtitle: 'Assistant Professor of English'
+university: 'Texas A&M University'
+unit: 'Department of English'
+website: http://andrew.pilsch.com
+street: MS 4227 TAMU
+city: College Station, TX
+postcode: 77843
+phone: 814-441-9375
+email: apilsch@tamu.edu
+date: 22 November 2014
+...
 
-**Assistant Professor**  
-**Department of English**  
-**Texas A&M University**
-{: .centered}
+# Professional Experience
 
-{::nomarkdown}
-<script type="text/javascript" language="javascript">
-<!&ndash;
-// Email obfuscator script 2.1 by Tim Williams, University of Arizona
-// Random encryption key feature by Andrew Moulden, Site Engineering Ltd
-// This code is freeware provided these four comment lines remain intact
-// A wizard to generate this code is at http://www.jottings.com/obfuscator/
-{ coded = 'tT95mZx@GtHg.yVg'
-  key = 'IJi483NHFcCgDLkdwp9aPQhqYZXAn0lVfTRtzsxW6Ojore5E2bMGvmU1KuS7By'
-  shift=coded.length
-  link=''
-  for (i=0; i<coded.length; i++) {
-    if (key.indexOf(coded.charAt(i))==-1) {
-      ltr = coded.charAt(i)
-      link += (ltr)
-    }
-    else {     
-      ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
-      link += (key.charAt(ltr))
-    }
-  }
-  document.write('<p class="centered"><a href="mailto:'+link+'">'+link+'</a></p>');
-}
-//&ndash;>
-</script>
-{:/nomarkdown}  
-[http://andrew.pilsch.com](http://andrew.pilsch.com)
-{: .centered .hug}
+||||
+|-------------------------------------|--------------------------------|---------|
+|Assistant Professor       | Texas A&M University                | 2015-Present |
+|Assistant Professor       | Arizona State University            |    2012-2015 |
+|Fixed-Term Lecturer       | Pennsylvania State University       |    2011-2012 |
+|Graduate Teaching Fellow  | Pennsylvania State University       |    2005-2011 |
 
-## Professional Experience
 
-Assistant Professor Texas A&M University, 2015-Present
+# Education
 
-Assistant Professor Arizona State University, 2012-2015
+||||
+|-------------------------------------|--------------------------------|---------|
+|PhD, English                         | Pennsylvania State University  | May 2011|
 
-Fixed-Term Lecturer Pennsylvania State University, 2011-2012
+* Dissertation: *Transhumanism: Evolutionary Logic, Rhetoric, and the Future*
+* Committee: Richard Doyle (Director), Jeffrey Nealon, Mark Morrisson, Robert Yarber.
 
-Graduate Teaching Fellow Pennsylvania State University, 2005-2011
+||||
+|-------------------------------------|--------------------------------|---------|
+MA, English                           |Pennsylvania State University   |May 2007 |
+BS, Computer Science                  |Georgia Institute of Technology |May 2005 |
+BS, Science Technology &amp; Culture  |Georgia Institute of Technology |May 2005 |
 
-## Education
+# Current Book Project
 
-PhD, English Pennsylvania State University, May 2011
-: Dissertation: *Transhumanism: Evolutionary Logic, Rhetoric, and the Future*
-: Committee: Richard Doyle (Director), Jeffrey Nealon, Mark Morrisson, Robert Yarber.
+***Transhumanism: The Rhetoric of Evolutionary Futurism***
 
-MA, English Pennsylvania State University, May 2007
+**Six Chapter Manuscript, Under Contract with University of Minnesota Press**---Book explores the rhetorical history of "evolutionary futurism," a twentieth century Utopian rhetorical mode associating advancing telecommunications technologies with biological evolution to suggest near-future radical shifts in human existence and cognition. Tracing this rhetoric of transhumanism, chapters explore the evolutionary futurism of theosophy, 1940s science fiction, Raymond Kurzweil, and Pierre Teilhard de Chardin. In addition to a theoretical introduction, the book also contains an extended discussion of contemporary digital aesthetics as transhuman vectors of evolutionary overcoming.
 
-BS, Computer Science Georgia Institute of Technology, May 2005
-
-BS, Science Technology &amp; Culture Georgia Institute of Technology, May 2005
-
-## Current Book Project
-
-<big>**_Transhumanism: The Rhetoric of Evolutionary Futurism_**</big>
-
-**Six Chapter Manuscript, Under Contract with University of Minnesota Press**&mdash;Book explores the rhetorical history of "evolutionary futurism," a twentieth century Utopian rhetorical mode associating advancing telecommunications technologies with biological evolution to suggest near-future radical shifts in human existence and cognition. Tracing this rhetoric of transhumanism, chapters explore the evolutionary futurism of theosophy, 1940s science fiction, Raymond Kurzweil, and Pierre Teilhard de Chardin. In addition to a theoretical introduction, the book also contains an extended discussion of contemporary digital aesthetics as transhuman vectors of evolutionary overcoming.
-
-## Publications
+# Publications
 
 **"'We twiddle...and turn into machines': Mina Loy, HTML, and the Machining of Information."** Chapter in *Reading Modernism with Machines* eds. Shawna Ross & James O'Sullivan. (Collection Under Contract with Palgrave; Forthcoming, 2016).
 
@@ -74,33 +55,34 @@ BS, Science Technology &amp; Culture Georgia Institute of Technology, May 2005
 **"Review of _MP3: The Meaning of a Format_ by Jonathan Sterne."** _Information Society_ 29.5 (2013): 316-317.
 
 **["Review of _Slime Dynamics_ by Ben Woodard."](http://itineration.org/book_reviews/pilsch/index.html)** _Itineration_, 2013.
-: Review uses an exploratory hypertext framework to rethink the possibilities of the book review.
+
+* Review uses an exploratory hypertext framework to rethink the possibilities of the book review.
 
 **"A Review of _The Breakup 2.0_ by Illana Gershon."** _Information Society_ 28.2 (2012): 126-127.
 
 **"Contagious Narratives: Towards a Global Epidemiology in Priscilla Wald's _Contagious_."** Review Of _Contagious: Cultures, Carriers, and the Outbreak Narrative_ by Priscilla Wald. _BioSocieties_ 4.2-3 (2009): 326-328.
 
-## Online Editions &amp; Open Source Software
+# Online Editions &amp; Open Source Software
 
-### Online Editions
+## Online Editions
 
 **_Mina Loy Online_**. A collection of poems and manifestoes by avant-garde modernist Mina Loy, posted online in an open-access, typographically correct format. [http://oncomouse.github.io/loy](http://oncomouse.github.io/loy).
 
-### Open Source Software
+## Open Source Software
 
 [**jquery-inline-footnotes**](https://github.com/oncomouse/jquery-inline-footnotes), Lead Developer. Open source plugin for the industry-standard Javascript framework, [jQuery](http://www.jquery.com) that converts footnotes generated by Markdown into responsive, elegant side notes.
 
 [**The Goldilocks Approach SASS**](https://github.com/oncomouse/goldilocks-approach-sass), Lead Developer. Open source port of [The Goldilocks Approach](http://goldilocksapproach.com/) (a CSS responsive design framework) to [SASS](http://sass-lang.com/) (a CSS preprocessor used throughout the web development industry).
 
-## Grants &amp; Awards
+# Grants &amp; Awards
 
-### Grants
+## Grants
 
 **Co-author. "Toward a Digital Henry James."** With Shawna Ross, College of Letters &amp; Science at ASU. ASU Institute for Humanities Research Seed Grant, Fall 2014. _Awarded_.
 
 **Co-author. "Toward a Digital Henry James."** With Shawna Ross, College of Letters &amp; Science at ASU. ASU Institute for Humanities Research Seed Grant, Spring 2013. _Revise and Resubmit_.
 
-### Awards
+## Awards
 
 SLS Faculty Summer Research Initiative, 2013 &amp; 2014. (Arizona State)
 
@@ -108,13 +90,13 @@ Wilma Ebbitt Graduate Award in Rhetorical Studies, 2010. (Penn State)
 
 Philip Young Memorial Endowment in American Literature, 2006. (Penn State)
 
-## Invited Talks & Conference Presentations
+# Invited Talks & Conference Presentations
 
-### Invited Talks
+## Invited Talks
 
 **"The What, Why, and How of Net Neutrality."** _New York Times Café_. ASU Downtown Phoenix Campus. 2014.
 
-### Conference Presentations
+## Conference Presentations
 
 **"'The sharpest part of my skeleton': Digital Surrealism, Weird Posthumanism, and Performing Theory."**  _Computers & Writing 2016 Conference_, Rochester, NY, 2016 (accepted).
 
@@ -160,9 +142,9 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 
 **"Revising Tomorrow: the Historical Present, Telecommunications, and Capitalism in _Nova_ and _Neuromancer_,"** _Samuel Delany: A Critical Symposium_, University at Buffalo (State University of New York), 2006.
 
-## Teaching Experience <small>(27 Sections; 12 Courses; 949 Students)</small>
+# Teaching Experience <small>(27 Sections; 12 Courses; 949 Students)</small>
 
-### Texas A&M University <small>(4 Sections; 3 Courses; 77 Students)</small>
+## Texas A&M University <small>(4 Sections; 3 Courses; 77 Students)</small>
 
 **Graduate Directed Study: History and Theory of Rhetoric** (1 Section; 2 Students) &ndash; Graduate directed reading focusing on the history of rhetoric from ancient Greece through the Enlightenment _and_ contemporary articulations of those concepts in rhetoric of science, rhetorical historiography, procedural rhetoric, and minority rhetorics.
 
@@ -170,7 +152,7 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 
 **Modern Rhetorical Theory** (2 Section; 50 Students) &ndash; Course focuses on the developments of rhetorical theory in the 20th century. Course emphasizes mutations in media and globality as preconditions for the flowering of rhetorical thought that mark our world.
 
-### Arizona State University <small>(10 Sections; 6 Courses; 280 Students; 7 Online Sections)</small>
+## Arizona State University <small>(10 Sections; 6 Courses; 280 Students; 7 Online Sections)</small>
 
 [**American Literature From 1860**](http://andrew.pilsch.com/courses/eng242spr2014/) (_1 Section; 24 Students_) &ndash; In this born-digital approach to the literary survey, students learn the history of American literature since 1860 while exploring digital methods of textual analysis.
 
@@ -185,7 +167,7 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 [**Popular Cultural Issues: Apocalypse Now?**](https://dl.dropboxusercontent.com/u/28696035/eng245_online.html) (_1 Section; 30 Students; Online Course_) &ndash; Course asks students to think critically about the continuing popularity of post-apocalyptic and end-of-the-world narratives in contemporary literature, film, and television.
 
 
-### Pennsylvania State University <small>(16 Sections; 5 Courses; 644 Students)</small>
+## Pennsylvania State University <small>(16 Sections; 5 Courses; 644 Students)</small>
 
 **Rhetoric &amp; Composition** (_6 Sections; 144 Students_) &ndash; This first-year composition option at Penn State introduces students to college writing, critical thinking, and basic rhetorical theory. 
 
@@ -198,15 +180,17 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 **Introduction to Critical Reading** (_1 Section; 24 Students_) &ndash; Introductory class focusing on research methods and critical approaches within the English major.  Specifically, instruction focused on media theory and critical appraisal of cultural texts.
 
 
-## Professional Service
+# Professional Service
 
-### For National Organizations
+## For National Organizations
 
 **Member-at-large**, Executive Committee, _The Society For Literature, Science, and the Arts_, 2015-2017.
 
 **Program Committee Member**, _The Society For Literature, Science, and the Arts Conference_, 2013.
 
-### For Texas A&M University
+## For Texas A&M University
+
+**Digital Humanities Working Group Convener**, 2015-Present.
 
 **Writing Committee Member**, 2015-Present.
 
@@ -214,7 +198,7 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 
 **First Year Review Committee Member**, 2015.
 
-### For Arizona State University
+## For Arizona State University
 
 **IHC English Education Search Committee Member** 2014 &ndash; Successful hire for tenure-track assistant professor in English Education.
 
@@ -228,12 +212,12 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 
 **Peer Promotion Committee Chair**, _Interdisciplinary Humanities and Communications_, 2012 &ndash; Reviewed materials for colleagues seeking promotion.
 
-## Relevant Skills
+# Relevant Skills
 
 **Computer Programming** &ndash; Thorough knowledge of multiple computer programming languages such as C, Java, Ruby, PERL, and LISP. Significant experience in building websites using advanced technologies such as PHP, MySQL, Ruby on Rails, and Apache.
 
 
-## Professional Affiliations
+# Professional Affiliations
 
 **The Modern Language Association**
 
@@ -241,4 +225,6 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 
 **The Society for Literature, Science, and the Arts**
 
-References Available Upon Request
+# References 
+
+Available Upon Request

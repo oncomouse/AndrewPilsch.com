@@ -1,0 +1,14 @@
+- metadata = YAML.load(IO.read("source/cv/_src.md").split(/^\.\.\.$/)[0])
+:markdown
+	# #{"#{metadata['givenname']} #{metadata['familyname']}"}
+	{:.centered}
+	
+	**#{metadata['jobtitle']}**  
+	#{metadata['unit']}  
+	#{metadata['university']}  
+	{:.centered}
+
+%p.centered
+	= js_antispam_email_link(metadata['email'])
+	%br
+	= link_to metadata['website'], metadata['website']

@@ -285,16 +285,20 @@ header {
 		> h1:first-child {
 			margin-top: 0;
 		}
-		p,ul,ol,dl,li {
+	}
+	.rendered-cv {
+
+		p,ul,ol,dl, table {
 			line-height: 1.4rem;
 			margin-top: 0.7rem;
+			margin-left: $leading;
 		}
 		dl {
 			margin: {
 				left: $leading;
 			};
 		}
-		h2 {
+		h1 {
 			border-bottom: 1px solid $bodyFontColor;
 			font: {
 				size: 18pt;
@@ -303,7 +307,7 @@ header {
 				top: $leading;
 			};
 		}
-		h3, big {
+		h2, big {
 			font: {
 				size: 15pt;
 			};
@@ -313,6 +317,25 @@ header {
 			margin: {
 				top: $leading / 2;
 			};
+		}
+		table {
+			thead {
+				display: none;
+			}
+			tbody {
+				td {
+					&:nth-child(1) {
+						width: 260px;
+					}
+					&:nth-child(2) {
+						width: 245px;
+					}
+					&:nth-child(3) {
+						text-align: right;
+						width: 160px;
+					}
+				}
+			}
 		}
 		small {
 			float: right;

@@ -25,7 +25,11 @@ layout: false
 		.content
 			#cv
 				#cv_html
-					= partial "../cv-src"
+					.cv-preamble
+						= partial "cv/preamble"
+
+					.rendered-cv	
+						= partial "cv/src"
 	:javascript
 		var _gaq = _gaq || [];
 		_gaq.push(['_setAccount', 'UA-660356-1']);
