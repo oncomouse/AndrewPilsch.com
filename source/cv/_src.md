@@ -148,11 +148,11 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 
 ## Texas A&M University <small>(4 Sections; 3 Courses; 77 Students)</small>
 
-**Graduate Directed Study: History and Theory of Rhetoric** (1 Section; 2 Students) &ndash; Graduate directed reading focusing on the history of rhetoric from ancient Greece through the Enlightenment _and_ contemporary articulations of those concepts in rhetoric of science, rhetorical historiography, procedural rhetoric, and minority rhetorics.
+[**Graduate Directed Study: History and Theory of Rhetoric**](http://andrew.pilsch.com/courses/engl686spr2016) (1 Section; 2 Students) &ndash; Graduate directed reading focusing on the history of rhetoric from ancient Greece through the Enlightenment _and_ contemporary articulations of those concepts in rhetoric of science, rhetorical historiography, procedural rhetoric, and minority rhetorics.
 
-**History of Rhetoric** (1 Section; 25 Students) &ndash; Focus on the history and development of rhetorical concepts from the ancient Greeks through the Enlightenment.
+[**History of Rhetoric**](http://andrew.pilsch.com/courses/engl353spr2016) (1 Section; 25 Students) &ndash; Focus on the history and development of rhetorical concepts from the ancient Greeks through the Enlightenment.
 
-**Modern Rhetorical Theory** (2 Section; 50 Students) &ndash; Course focuses on the developments of rhetorical theory in the 20th century. Course emphasizes mutations in media and globality as preconditions for the flowering of rhetorical thought that mark our world.
+[**Modern Rhetorical Theory**](http://andrew.pilsch.com/courses/engl354spr2016) (2 Section; 50 Students) &ndash; Course focuses on the developments of rhetorical theory in the 20th century. Course emphasizes mutations in media and globality as preconditions for the flowering of rhetorical thought that mark our world.
 
 ## Arizona State University <small>(10 Sections; 6 Courses; 280 Students; 7 Online Sections)</small>
 
