@@ -77,7 +77,7 @@
 \date{} %
 \author{\\[-0.40in]{\normalsize $phone$ \hspace{0.35in} $email$}\\ %
 {\normalsize $street$, $city$, $postcode$} %
-$if(website)$\\{\normalsize <$website$>}\\$endif$ } % 
+$if(website)$\\{\normalsize \url{$website$}}\\$endif$ } % 
 
 % Format Page numbers:
 \usepackage{fancyhdr}%,lastpage}
@@ -93,7 +93,20 @@ $if(website)$\\{\normalsize <$website$>}\\$endif$ } %
 \usepackage{enumitem}
 \setlist{nosep}
 
-\urlstyle{same}
+% Finally, give us PDF bookmarks
+\usepackage{color,hyperref}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+\hypersetup{colorlinks,breaklinks,
+            linkcolor=darkblue,urlcolor=darkblue,
+            anchorcolor=darkblue,citecolor=darkblue}
+
+% Set up URl styles: < > before and after. Uncomment for underlined.
+%\usepackage[normalem]{ulem}
+%\useunder{\uline}{\ulined}{}%
+\DeclareUrlCommand\url{\def\UrlLeft{<}\def\UrlRight{>}%
+%\def\UrlFont{\ulined}
+\urlstyle{same} % Comment out if turning on underline
+}
 
 % BEGIN DOCUMENT
 \begin{document}
