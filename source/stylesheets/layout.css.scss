@@ -293,11 +293,6 @@ header {
 			margin-top: 0.7rem;
 			margin-left: $leading;
 		}
-		dl {
-			margin: {
-				left: $leading;
-			};
-		}
 		h1 {
 			border-bottom: 1px solid $bodyFontColor;
 			font: {
@@ -359,7 +354,8 @@ header {
 		ul {
 			list-style: none;
 			margin: {
-				left: $leading;
+				left: 2 * $leading;
+				top: -0.01rem;
 			};
 			padding: 0;
 			li {
@@ -369,6 +365,12 @@ header {
 					};
 				}
 			}
+		}
+		table + ul {
+			margin-bottom: 0;
+		}
+		ul + table {
+			margin-top: 0;
 		}
 		.links p {
 			margin: {
