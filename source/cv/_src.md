@@ -46,6 +46,8 @@ BS, Science Technology &amp; Culture  |Georgia Institute of Technology |May 2005
 
 # Publications
 
+## Articles & Chapters
+
 **"Life During Wartime: Science Fiction during and after World War II."** Chapter in *The Cambridge History of Science Fiction* eds. Gerry Canavan and Eric Carl Link. (Collection Under Contract with Cambridge UP; Forthcoming, 2017).
 
 **"'We twiddle...and turn into machines': Mina Loy, HTML, and the Machining of Information."** Chapter in *Reading Modernism with Machines* eds. Shawna Ross & James O'Sullivan. (Collection Under Contract with Palgrave; Forthcoming, 2016).
@@ -53,6 +55,10 @@ BS, Science Technology &amp; Culture  |Georgia Institute of Technology |May 2005
 **["Insect Capital."](http://www.nanocrit.com/issues/8-2015/insect-capital)** _New American Notes Online (NANO)_ 8 (2015).
 
 **"Fan Utopias and Self-Help Supermen: Political Utopianism in WWII-era SF."** _Science Fiction Studies_ 41.3 (2014): 524-542.
+
+## Reviews
+
+**["After 'The' 'Text': A Review of Comparative Textual Media."](http://enculturation.net/comparative-textual-media)** Review of *Comparative Textual Media* edited by N. Katherine Hayles and Jessica Pressman. *Enculturation* (2016).
 
 **"Review of _MP3: The Meaning of a Format_ by Jonathan Sterne."** _Information Society_ 29.5 (2013): 316-317.
 
