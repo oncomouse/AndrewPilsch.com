@@ -70,6 +70,10 @@ BS, Science Technology &amp; Culture  |Georgia Institute of Technology |May 2005
 
 **"Contagious Narratives: Towards a Global Epidemiology in Priscilla Wald's _Contagious_."** Review Of _Contagious: Cultures, Carriers, and the Outbreak Narrative_ by Priscilla Wald. _BioSocieties_ 4.2-3 (2009): 326-328.
 
+## Non-Peer-Reviewed
+
+**["When the Coffee Machine Is Just a Human."]**(http://www.theatlantic.com/technology/archive/2016/01/coffee-machine-pour-over-brewing/431658/) An Object Lesson for *The Atlantic* (January 28, 2016).
+
 # Online Editions &amp; Open Source Software
 
 ## Online Editions
