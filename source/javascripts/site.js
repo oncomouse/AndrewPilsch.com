@@ -160,48 +160,63 @@ function expand_box(target) {
 	}			
 }
 
+function load_courses(term) {
+	var url, term;
+	if (window.location.href.match(/localhost/)) {
+		return;
+	}
+	if (term === false || term === undefined) {
+		term = false;
+		url = '/courses/?blank';
+	} else {
+		url = 'courses/?blank&term=' + encodeURIComponent(term);
+	}
+	$.ajax(url).done(
+		function(data) {
+			$isotope_container.isotope('insert', $(data));
+			if (!term) {
+				var seen = [];
+				$('.box.class').each(function(i,class_box) {
+					class_box = $(class_box);
+					if($.inArray(class_box.attr('id'), seen) != -1) {
+						class_box.remove();
+					} else {
+						seen.push(class_box.attr('id'));
+					}
+				});
+			}
+			window.setTimeout(function(){$isotope_container.isotope();}, 150);
+			
+			if (!term) {
+				
+				$(window).trigger('course:load_all');
+			}
+		}
+	);
+}
+
 function load_all_courses(ev) {
-	var url;
-	
 	ev.stopPropagation();
 	ev.preventDefault();
 	
 	if ($courses_loaded) {
 		return false;
 	}
-	if (window.location.href.match(/localhost/)) {
-		url = "/courses/courses";
-	} else {
-		url = "/courses/?blank";
-	}
-	$.ajax(url).done(
-		function(data) {
-			if (!$courses_loaded) {
-				/*data = jQuery.grep($(data), function(elem,i) {
-					return (elem.nodeName === 'DIV');
-				});*/
-				//$isotope_container.append(data);
-				$isotope_container.isotope('insert', $(data));
-				window.setTimeout(function(){$isotope_container.isotope();}, 150);
-				$courses_loaded = true;
-			}
-			$isotope_container.isotope({filter: '.class'});
-			$('#filters li').find('.selected').removeClass('selected');
-			$("#filters ul li a").each(
-				function() {
-					if ($(this).attr("data-filter") == ".teaching") {
-						$(this).addClass('selected');
-					}
-				}
-			);
-		}
-	);
-	
+	$courses_loaded = true;
+	load_courses();
+
 	return false;
 }
 
+$(window).on('course:load_all', function() {
+	$isotope_container.isotope({filter: '.class'});
+	$('#filters li').find('.selected').removeClass('selected');
+	$('#filters ul li a[data-filter=".teaching"]').addClass('selected');
+});
+
 $(document).ready(function() {
-	$('#teaching_button').click(load_all_courses)
+	$('#teaching_button').click(load_all_courses);
+	load_courses(current_term);
 });
 
 function load_all_research() {
