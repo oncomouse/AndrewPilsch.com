@@ -14,6 +14,34 @@ var $defaultSize = $large_box_size;
 var $help_timer = false;
 var $help_timer_delay = 5000;
 
+if (!Function.prototype.bind) {
+  Function.prototype.bind = function(oThis) {
+    if (typeof this !== 'function') {
+      // closest thing possible to the ECMAScript 5
+      // internal IsCallable function
+      throw new TypeError('Function.prototype.bind - what is trying to be bound is not callable');
+    }
+
+    var aArgs   = Array.prototype.slice.call(arguments, 1),
+        fToBind = this,
+        fNOP    = function() {},
+        fBound  = function() {
+          return fToBind.apply(this instanceof fNOP
+                 ? this
+                 : oThis,
+                 aArgs.concat(Array.prototype.slice.call(arguments)));
+        };
+
+    if (this.prototype) {
+      // Function.prototype don't have a prototype property
+      fNOP.prototype = this.prototype; 
+    }
+    fBound.prototype = new fNOP();
+
+    return fBound;
+  };
+}
+
 function handle_isotope_loader(){
 	if($isotope_container) {
 		$isotope_container.isotope();
@@ -36,19 +64,32 @@ function restore_boxes() {
 	$('#close_all').remove();
 	
 	$('.expanded').each(function (i) {
-		//console.log(this);
 		var box = $(this).data('size');
 		$(this).find('.expandable').hide('normal');
 		$(this).find('.hideable').show('normal');
-		$(this).animate({
-			width: (box[0] || 100),
-			height: (box[1] || 'auto')
-		}, 200, function () {
-			if (i >= len) {
-				$isotope_container.isotope('updateSortData', $(this));
-				$isotope_container.isotope();
-			}
-		}).removeClass('expanded');
+		if($('html').hasClass('accelerate')) {
+			$(this).css({
+				width: (box[0] || 100),
+				height: (box[1] || 'auto')
+			}).removeClass('expanded');
+			window.setTimeout(function () {
+				if (i >= len) {
+					$isotope_container.isotope('updateSortData', $(this));
+					$isotope_container.isotope();
+				}
+			}.bind(this), 200);
+		} else {
+			$(this).animate({
+				width: (box[0] || 100),
+				height: (box[1] || 'auto')
+			}, 200, function () {
+				if (i >= len) {
+					$isotope_container.isotope('updateSortData', $(this));
+					$isotope_container.isotope();
+				}
+			});
+		}
+		
 	});
 }
 
@@ -84,10 +125,12 @@ function expand_box(target) {
 	} else {
 		var size = (target.attr('data-size')) ? target.attr('data-size').split(',') : $defaultSize;
 		// save original box size
-		target.data('size', [target.outerWidth(), target.outerHeight()]).animate({
+		if($('html').hasClass('accelerate')) {
+			target.data('size', [target.outerWidth(), target.outerHeight()]).css({
 				width: size[0],
 				height: size[1]
-		}, 200, function () {
+			});
+			window.setTimeout(function () {
 				// show hidden content when box has expanded completely
 				var $this=$(this);
 				$this.find('.expandable').show('normal')
@@ -96,21 +139,40 @@ function expand_box(target) {
 				$isotope_container.isotope();
 				$('#filters ul').append("<li id='close_all'><a href='javascript: window.location.hash=\"\"; restore_boxes();'>Close All</a></li>");
 				window.setTimeout(function(){scroll_to($this)}, 500);
-		});
+			}.bind(target), 200);
+		} else {
+			target.data('size', [target.outerWidth(), target.outerHeight()]).animate({
+					width: size[0],
+					height: size[1]
+			}, 200, function () {
+					// show hidden content when box has expanded completely
+					var $this=$(this);
+					$this.find('.expandable').show('normal')
+					$this.find('.hideable').hide('normal');
+					$isotope_container.isotope('updateSortData', $(this));
+					$isotope_container.isotope();
+					$('#filters ul').append("<li id='close_all'><a href='javascript: window.location.hash=\"\"; restore_boxes();'>Close All</a></li>");
+					window.setTimeout(function(){scroll_to($this)}, 500);
+			});
+		}
 		restore_boxes();
 		target.addClass('expanded');
 	}			
 }
 
-function load_all_courses() {
+function load_all_courses(ev) {
 	var url;
+	
+	ev.stopPropagation();
+	ev.preventDefault();
+	
 	if ($courses_loaded) {
 		return false;
 	}
 	if (window.location.href.match(/localhost/)) {
 		url = "/courses/courses";
 	} else {
-		url = "/courses/courses.php";
+		url = "/courses/?blank";
 	}
 	$.ajax(url).done(
 		function(data) {
@@ -137,6 +199,10 @@ function load_all_courses() {
 	
 	return false;
 }
+
+$(document).ready(function() {
+	$('#teaching_button').click(load_all_courses)
+});
 
 function load_all_research() {
 	if ($research_loaded) {
@@ -193,7 +259,21 @@ $(window).resize(function(){
 });
 
 function start_isotope() {
+		
 	$isotope_container = $('#box_container');
+	
+	var cssTransitionsSupported = ((document.body || document.documentElement).style.WebkitTransition !== undefined || (document.body || document.documentElement).style.transition !== undefined),
+		has3D = ('WebKitCSSMatrix' in window && 'm11' in new WebKitCSSMatrix());
+
+	if(cssTransitionsSupported && has3D) {
+		$('html').addClass('accelerate');
+	} else {
+		$('html').addClass('animate');
+	}
+	
+	if($('html').hasClass('accelerate')) {
+		$('.box.expand').addClass('accelearate')
+	}
 	
 	$expandable_boxes = $('.expand');
 	
