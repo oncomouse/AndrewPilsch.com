@@ -72,7 +72,7 @@ BS, Science Technology &amp; Culture  |Georgia Institute of Technology |May 2005
 
 ## Non-Peer-Reviewed
 
-**["When the Coffee Machine Is Just a Human."]**(http://www.theatlantic.com/technology/archive/2016/01/coffee-machine-pour-over-brewing/431658/) An Object Lesson for *The Atlantic* (January 28, 2016).
+[**"When the Coffee Machine Is Just a Human."**](http://www.theatlantic.com/technology/archive/2016/01/coffee-machine-pour-over-brewing/431658/) An Object Lesson for *The Atlantic* (January 28, 2016).
 
 # Online Editions &amp; Open Source Software
 
