@@ -151,34 +151,8 @@ set :js_dir, 'javascripts'
 set :images_dir, 'images'
 
 #activate :directory_indexes
-#page "/blog/*", :layout => :blog_article2
-page "/blog/*", :layout => :blog_article
 
 set :haml, { :ugly => true, :format => :html5 }
-
-activate :blog do |blog|
-  blog.prefix = "blog/"
-  # blog.permalink = ":year/:month/:day/:title.html"
-  blog.sources = ":year-:month-:day-:title.html"
-  # blog.taglink = "tags/:tag.html"
-  blog.layout = "blog_article"
-  # blog.summary_separator = /(READMORE)/
-  # blog.summary_length = 250
-  # blog.year_link = ":year.html"
-  # blog.month_link = ":year/:month.html"
-  # blog.day_link = ":year/:month/:day.html"
-  blog.default_extension = ".md"
-
-  set :blog_title, "Andrew Pilsch Blog"
-  set :blog_author, "Andrew Pilsch"
-
-  blog.tag_template = "blog/tag.html"
-  blog.calendar_template = "blog/calendar.html"
-
-  blog.paginate = true
-  blog.per_page = 6
-  # blog.page_link = "page/:num"
-end
 
 activate :directory_indexes
 page "/blank.html", :directory_index => false
@@ -190,6 +164,7 @@ page "/ie8.html", :directory_index => false
 configure :build do
   ignore "/courses/*"
   ignore "blog_old/*"
+  ignore "blog/*"
   ignore "stylesheets/blog-old/*"
   
   # Files included in application.css/.js
@@ -197,9 +172,6 @@ configure :build do
   ignore "stylesheets/layout.css"
   ignore "stylesheets/application.css"
   ignore "stylesheets/old/*"
-  ignore "stylesheets/blog/global.css"
-  ignore "stylesheets/blog/layout.css"
-  ignore "stylesheets/blog/pygments.css"
   ignore "stylesheets/fonts/genericons/genericons.css"
   ignore "javascripts/vendor/jquery/jquery.min.js"
   ignore "javascripts/vendor/jquery/plugins/jquery.isotope.min.js"
@@ -208,8 +180,6 @@ configure :build do
   ignore "javascripts/application.js"
   ignore "javascripts/plugins.js"
   ignore "javascripts/libraries/*"
-  ignore "javascripts/blog/tipue_content.js"
-  ignore "javascripts/blog/tipue.min.js"
   
   #ignore "/research/*"
   ignore "/**/*.rb"
@@ -251,6 +221,6 @@ end
 activate :deploy do |deploy|
   deploy.method = :rsync
   deploy.user = "eschaton"
-  deploy.host = "copland.dreamhost.com"
+  deploy.host = "birkenfeld.dreamhost.com"
   deploy.path = "~/www/andrew.pilsch.com/"
 end
