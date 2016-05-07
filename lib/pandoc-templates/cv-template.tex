@@ -15,9 +15,9 @@
 \usepackage{xifthen}
 \renewenvironment{longtable}[5]{%
 	\center %
-	\ifthenelse{\equal{\detokenize{#4}}{\detokenize{@{}lll@{}}}}
+	\ifthenelse{\equal{\detokenize{#3}}{\detokenize{@{}lll@{}}}}
 		{\tabu to \textwidth{\preamble{cvtabu}}} %
-		{\tabu to \textwidth{#4}} %
+		{\tabu to \textwidth{#3}} %
 }{\endtabu\endcenter}
 
 % DOCUMENT LAYOUT
