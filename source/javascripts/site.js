@@ -185,7 +185,7 @@ function load_courses(term) {
 					}
 				});
 			}
-			window.setTimeout(function(){$isotope_container.isotope();}, 150);
+			window.setTimeout(function(){$isotope_container.isotope();}, 250);
 			
 			if (!term) {
 				
