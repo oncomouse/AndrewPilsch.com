@@ -24,10 +24,12 @@
 	= partial("find_me")
 	= partial("research/print_research", :locals => { :type => "article", :front_page => true })
 	= partial("research/print_research", :locals => { :type => "other", :front_page => true })
-	= partial("blog/front-page")
+	= partial("blog")
 	= partial("research/print_research", :locals => { :type => "presentation", :front_page => true })
 	= partial("podcasting")
 	= partial("teaching")
-	= partial("courses/print_term", :locals => { :term => current_term })
+	-# partial("courses/print_term", :locals => { :term => current_term })
+	:javascript
+		var current_term = "#{current_term}";
 	= partial("classroom_resources")
 	= partial("about_site")

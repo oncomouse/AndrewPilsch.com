@@ -1,0 +1,8 @@
+- if build?
+	- require 'open-uri'
+	- require 'json'
+	- JSON.parse(URI.parse("http://andrew.pilsch.com/blog/frontpage.json").read).each do |article|
+		.box.col1.blog{ "data-url" => article['url'] }
+			%h2 Recent <br> Blog Post
+			%h1= article['title']
+			%p= article['summary']
