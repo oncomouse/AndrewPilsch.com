@@ -110,11 +110,11 @@ Philip Young Memorial Endowment in American Literature, 2006. (Penn State)
 
 ## Conference Presentations
 
-**"'The sharpest part of my skeleton': Digital Surrealism, Weird Posthumanism, and Performing Theory."**  _Computers & Writing 2016 Conference_, Rochester, NY, 2016 (accepted).
+**"_Lachrymator_: Persuasion's Tear Gas."** _17th Biennial RSA Conference_, Atlanta, GA, 2016.
 
-**"_Lachrymator_: Persuasion's Tear Gas."** _17th Biennial RSA Conference_, Atlanta, GA, 2016 (accepted).
+**"The Rhetorical Future of the Soul at Work."** _17th Biennial RSA Conference_, Atlanta, GA, 2016.
 
-**"The Rhetorical Future of the Soul at Work."** _17th Biennial RSA Conference_, Atlanta, GA, 2016 (accepted).
+**"'The sharpest part of my skeleton': Digital Surrealism, Weird Posthumanism, and Performing Theory."**  _Computers & Writing 2016 Conference_, Rochester, NY, 2016.
 
 Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st MLA Annual Convention_, Austin, TX, 2016.
 
