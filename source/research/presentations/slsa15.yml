@@ -6,7 +6,7 @@ conference: "The Society For Literature, Science, and the Arts 2014 Conference"
 conference_url: http://litsciarts.org/slsa15/
 conference_location: Houston, TX
 date: 11/14/2015
-emphasize: true
+emphasize: false
 short_description: |+
   Eco-horror, modernity, VanderMeer
 description: |+
