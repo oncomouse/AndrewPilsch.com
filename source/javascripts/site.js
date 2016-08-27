@@ -224,7 +224,7 @@ function load_all_research() {
 		return false;
 	}
 	if (window.location.href.match(/localhost/)) {
-		url = "/research/research.html";
+		url = "/research";
 	} else {
 		url = "/research/research.php";
 	}
