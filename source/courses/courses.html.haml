@@ -1,9 +1,0 @@
----
-layout: false
----
-= #partial "courses/print_courses"
-- current_term = "#{CourseDate.to_term(Date.today.month)} #{Date.today.year}"
-- terms = courses.map{ |course| course["course_term"].to_s}.uniq.reverse
-- terms.each do |term|
-	- next if term == current_term
-	= partial "courses/print_term", :locals => { :term => term }
