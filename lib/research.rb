@@ -1,47 +1,12 @@
-require 'yaml'
-
 module ResearchManager
 	class << self
 		def registered(app)
 			app.send :include, Helpers
-			app.set :research_dir, 'source/research'
-			app.set :research_image_dir, 'source/research/images'
-			#app.set :data_dir, 'source/courses/data'
 		end
 		alias :included :registered
 	end
 	
 	module Helpers
-		YAML_ERRORS = [ Exception, ArgumentError ]
-
-		if defined?(Psych) && defined?(Psych::SyntaxError)
-			YAML_ERRORS << Psych::SyntaxError
-		end
-		
-		def read_yaml_data(yaml_file)
-			begin
-				data = YAML.load(IO.read(yaml_file))
-			rescue *YAML_ERRORS => e
-				logger.error "YAML Exception: #{e.message}"
-				return nil
-			end
-			if data[:id] && (File.exists? "#{Dir.pwd}/#{research_image_dir}/#{data[:id]}.png")
-				data[:image] = "/#{research_image_dir}/#{data[:id]}.png".gsub(/^.*source\//,"")
-			else
-				data[:image] = "http://fakeimg.pl/960x500/?text=Image Not Found&font=lobster"
-			end
-			
-			if !data[:short_title]
-				data[:short_title] = data[:title]
-			end
-			
-			if data[:front_page].nil?
-				data[:front_page] = false
-			end
-			
-			return data
-		end
-		
 		def articles
 			data.research.articles.map do |id, data|
 				
