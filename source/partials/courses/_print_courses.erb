@@ -1,4 +1,4 @@
 <% terms = courses.map{ |course| course["course_term"].to_s}.uniq.reverse %>
 <% terms.each do |term| %>
-	<%= partial "print_term", :locals => { :term => term }%>
+	<%= partial "partials/courses/print_term", :locals => { :term => term }%>
 <% end %>
