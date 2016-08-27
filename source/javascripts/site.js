@@ -220,29 +220,29 @@ $(document).ready(function() {
 });
 
 function load_all_research() {
-	if ($research_loaded) {
-		return false;
-	}
-	if (window.location.href.match(/localhost/)) {
-		url = "/research";
-	} else {
-		url = "/research/research.php";
-	}
-	$.ajax(url).done(
-		function(data) {
-			if (!$research_loaded) {
-				$isotope_container.isotope('insert', $(data));
-				$research_loaded = true;
-			}
-			$("#filters ul li a").each(
-				function() {
-					if ($(this).attr("data-filter") == ".research") {
-						$(this).click();
-					}
-				}
-			);
-		}
-	);
+	//if ($research_loaded) {
+	//	return false;
+	//}
+	//if (window.location.href.match(/localhost/)) {
+	//	url = "/research";
+	//} else {
+	//	url = "/research/research.php";
+	//}
+	//$.ajax(url).done(
+	//	function(data) {
+	//		if (!$research_loaded) {
+	//			$isotope_container.isotope('insert', $(data));
+	//			$research_loaded = true;
+	//		}
+	//		$("#filters ul li a").each(
+	//			function() {
+	//				if ($(this).attr("data-filter") == ".research") {
+	//					$(this).click();
+	//				}
+	//			}
+	//		);
+	//	}
+	//);
 
 	return false;
 }
