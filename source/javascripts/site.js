@@ -84,6 +84,7 @@ function restore_boxes() {
 				height: (box[1] || 'auto')
 			}, 200, function () {
 				if (i >= len) {
+					$(this).removeClass('expanded');
 					$isotope_container.isotope('updateSortData', $(this));
 					$isotope_container.isotope();
 				}
