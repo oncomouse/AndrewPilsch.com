@@ -189,7 +189,7 @@ header {
 	.expandable {
 		display: none;
 		overflow: auto !important;
-		width: $expandableWidth - 9;
+		width: auto;
 		height: $expandableHeight - 10;
 		padding: $leading / 4 $leading / 2 {
 			bottom: $leading;
