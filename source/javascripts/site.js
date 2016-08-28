@@ -122,10 +122,8 @@ function expand_box(target) {
 	
 	if (!target.is('.expanded')) {
 		var size = (target.attr('data-size')) ? target.attr('data-size').split(',') : $defaultSize;
-		// save original box size
 		if(use_css_transitions()) {
 			target.data('size', [target.outerWidth(), target.outerHeight()]).one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function() {
-				// show hidden content when box has expanded completely
 				target.find('.expandable').show('fast')
 				target.find('.hideable').hide('fast');
 				$('#filters ul').append($('<li id="close_all"><a href="javascript: window.location.hash=\'\'; restore_boxes();">Close All</a></li>'));
@@ -141,14 +139,12 @@ function expand_box(target) {
 					width: size[0],
 					height: size[1]
 			}, 200, function () {
-					// show hidden content when box has expanded completely
-					var $this=$(this);
-					$this.find('.expandable').show('fast')
-					$this.find('.hideable').hide('fast');
+					$(this).find('.expandable').show('fast')
+					$(this).find('.hideable').hide('fast');
 					$isotope_container.isotope('updateSortData', $(this));
 					$isotope_container.isotope();
 					$('#filters ul').append("<li id='close_all'><a href='javascript: window.location.hash=\"\"; restore_boxes();'>Close All</a></li>");
-					window.setTimeout(function(){scroll_to($this)}, 500);
+					window.setTimeout(function(){scroll_to($(this))}, 500);
 			});
 		}
 		restore_boxes();
@@ -214,34 +210,6 @@ $(document).ready(function() {
 	$('#teaching_button').click(load_all_courses);
 	load_courses(current_term);
 });
-
-function load_all_research() {
-	//if ($research_loaded) {
-	//	return false;
-	//}
-	//if (window.location.href.match(/localhost/)) {
-	//	url = "/research";
-	//} else {
-	//	url = "/research/research.php";
-	//}
-	//$.ajax(url).done(
-	//	function(data) {
-	//		if (!$research_loaded) {
-	//			$isotope_container.isotope('insert', $(data));
-	//			$research_loaded = true;
-	//		}
-	//		$("#filters ul li a").each(
-	//			function() {
-	//				if ($(this).attr("data-filter") == ".research") {
-	//					$(this).click();
-	//				}
-	//			}
-	//		);
-	//	}
-	//);
-
-	return false;
-}
 
 $(window).resize(function(){
 	if($(window).width() < $large_box_size[0]) {
@@ -363,58 +331,14 @@ function start_isotope() {
 		itemSelector: '.box',
 		animationOptions: {
 			duration: 200,
-			easing: 'linear',
+			easing: 'ease-out',
 			queue: false
-		},
-		/*
-		 This sort data function, rowDominator, puts any expanded box (see below)
-		 at the beginning of the row. This code works for any number of columns, 
-		 but it does assume that blocks are the same width.
-		*/
-		/*getSortData: {
-			rowDominator: function($item) {
-				var index,order,number_of_columns;
-				var displayed = $('.expand').not('.isotope-hidden');
-
-				if(!($item instanceof jQuery)) {
-					$item = $($item);
-				}
-
-				// Determine the index based on the order of displayed nodes, 
-				// not overall nodes (otherwise, behavior isn't as expected):
-				index = displayed.index($item);
-			
-				// If an item isn't marked as expandable, use it's regular 
-				// index:
-				if (index == -1) {
-					index = $item.index();
-				}
-				number_of_columns = Math.floor($isotope_container.outerWidth() / $column_width);
-			
-				if ($item.outerWidth() > $col1) {
-					order = index - (index % number_of_columns) - 0.5;
-				} else{
-					order = index;
-				}
-				return order;
-			}
-		},
-		sortBy: 'rowDominator'*/
+		}
 	});
 	$isotope_container.isotope( 'on', 'arrangeComplete', function() {
 		$('img.lazy').trigger('masonryComplete');
 	});
 	$isotope_container.isotope();
-
-	/*
-	 Set up the expand and contract action.
-	
-	 This very awesome code was borrowed (and mildly rewritten) from code written by
-	 Jason Day for his site, http://thinquetanque.com/.
-	
-	 The only change I have made is to use Isotope instead of jQuery Masonry and to
-	 support updating the sort data for Isotope.
-	*/
 	
 	/* Handle internal links */
 	$(".box a[href^=\'#\'], #sidebar ul li a[href^=\'#\']").click(function () {
