@@ -65,8 +65,8 @@ function restore_boxes() {
 		var box = $(this).data('size');
 		if(use_css_transitions()) {
 			$(this).one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function() {
-				$(this).find('.expandable').hide('normal');
-				$(this).find('.hideable').show('normal');
+				$(this).find('.expandable').hide('fast');
+				$(this).find('.hideable').show('fast');
 				if (i >= len) {
 					$isotope_container.isotope('updateSortData', $(this));
 					$isotope_container.isotope();
@@ -80,8 +80,8 @@ function restore_boxes() {
 				width: (box[0] || 100),
 				height: (box[1] || 'auto')
 			}, 200, function () {
-				$(this).find('.expandable').hide('normal');
-				$(this).find('.hideable').show('normal');
+				$(this).find('.expandable').hide('fast');
+				$(this).find('.hideable').show('fast');
 				if (i >= len) {
 					$(this).removeClass('expanded');
 					$isotope_container.isotope('updateSortData', $(this));
@@ -126,8 +126,8 @@ function expand_box(target) {
 		if(use_css_transitions()) {
 			target.data('size', [target.outerWidth(), target.outerHeight()]).one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function() {
 				// show hidden content when box has expanded completely
-				target.find('.expandable').show('normal')
-				target.find('.hideable').hide('normal');
+				target.find('.expandable').show('fast')
+				target.find('.hideable').hide('fast');
 				$('#filters ul').append($('<li id="close_all"><a href="javascript: window.location.hash=\'\'; restore_boxes();">Close All</a></li>'));
 				$isotope_container.isotope('updateSortData', target);
 				$isotope_container.isotope();			
@@ -143,8 +143,8 @@ function expand_box(target) {
 			}, 200, function () {
 					// show hidden content when box has expanded completely
 					var $this=$(this);
-					$this.find('.expandable').show('normal')
-					$this.find('.hideable').hide('normal');
+					$this.find('.expandable').show('fast')
+					$this.find('.hideable').hide('fast');
 					$isotope_container.isotope('updateSortData', $(this));
 					$isotope_container.isotope();
 					$('#filters ul').append("<li id='close_all'><a href='javascript: window.location.hash=\"\"; restore_boxes();'>Close All</a></li>");
