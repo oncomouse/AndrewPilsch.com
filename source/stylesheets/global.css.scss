@@ -173,8 +173,8 @@ a:active, a:focus {
 
 .box.accelerate {
 	@include transition-property(height, width);
-	@include transition-duration(0.2s);
-	@include transition-timing-function(ease-in);
+	@include transition-duration(200ms);
+	@include transition-timing-function(cubic-bezier(0.230, 1.000, 0.320, 1.000));
 	@include transform(translate3d(0,0,0));
 	-webkit-backface-visibility:hidden;
 	-webkit-perspective: 1000;
@@ -195,27 +195,15 @@ a:active, a:focus {
 
 .isotope,
 .isotope .isotope-item {
-  -webkit-transition-duration: 0.8s;
-     -moz-transition-duration: 0.8s;
-      -ms-transition-duration: 0.8s;
-       -o-transition-duration: 0.8s;
-          transition-duration: 0.8s;
+	@include transition-duration(0.8s);
 }
 
 .isotope {
-  -webkit-transition-property: height, width;
-     -moz-transition-property: height, width;
-      -ms-transition-property: height, width;
-       -o-transition-property: height, width;
-          transition-property: height, width;
+	@include transition-property(height, width);
 }
 
 .isotope .isotope-item {
-  -webkit-transition-property: -webkit-transform, opacity;
-     -moz-transition-property:    -moz-transform, opacity;
-      -ms-transition-property:     -ms-transform, opacity;
-       -o-transition-property:      -o-transform, opacity;
-          transition-property:         transform, opacity;
+	@include transition-property(transform, opacity);
 }
 
 /**** disabling Isotope CSS3 transitions ****/
@@ -223,11 +211,7 @@ a:active, a:focus {
 .isotope.no-transition,
 .isotope.no-transition .isotope-item,
 .isotope .isotope-item.no-transition {
-  -webkit-transition-duration: 0s;
-     -moz-transition-duration: 0s;
-      -ms-transition-duration: 0s;
-       -o-transition-duration: 0s;
-          transition-duration: 0s;
+	@include transition-duration(0s);
 }
 
 img.center {
