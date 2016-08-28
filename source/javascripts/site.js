@@ -230,7 +230,9 @@ function start_isotope() {
 	$isotope_container = $('#box_container');
 	
 	if(use_css_transitions()) {
-		$('.box.expand').addClass('accelerate')
+		$('.box.expand').addClass('accelerate');
+		$isotope_container.addClass('isotope');
+		$('.box.expand').addClass('isotope-item');
 	}
 	
 	$expandable_boxes = $('.expand');
@@ -328,12 +330,7 @@ function start_isotope() {
 			columnWidth: $column_width
 		},
 		cornerStampSelector: '.corner_stamp',
-		itemSelector: '.box',
-		animationOptions: {
-			duration: 200,
-			easing: 'ease-out',
-			queue: false
-		}
+		itemSelector: '.box'
 	});
 	$isotope_container.isotope( 'on', 'arrangeComplete', function() {
 		$('img.lazy').trigger('masonryComplete');
