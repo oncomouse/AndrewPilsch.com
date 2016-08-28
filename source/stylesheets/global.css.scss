@@ -172,9 +172,9 @@ a:active, a:focus {
  * ---------------------------------------------------------------------------------------- */
 
 .box.accelerate {
-    @include transition-property(height, width);
-    @include transition-duration(0.2s);
-	@include transition-timing-function(linear);
+	@include transition-property(height, width);
+	@include transition-duration(0.2s);
+	@include transition-timing-function(ease-in);
 	@include transform(translate3d(0,0,0));
 	-webkit-backface-visibility:hidden;
 	-webkit-perspective: 1000;
