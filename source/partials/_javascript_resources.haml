@@ -1,5 +1,5 @@
 -if place == "head"
-	- javascript_include_tag("head-application.js")	
+	= build? ? javascript_inline_tag("custom-modernizr") : javascript_include_tag("custom-modernizr")	
 - else
 	- # Next step is to remove source/javascripts/vendor and head-application.js
 	= build? ? javascript_inline_tag("application.js") : javascript_include_tag("application.js")

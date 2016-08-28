@@ -49,8 +49,6 @@ function handle_isotope_loader(){
 		window.setTimeout(function(){handle_isotope_loader();}, 50);
 	}
 }
-	
-//$('.expand').imagesLoaded(handle_isotope_loader);
 
 function scroll_to(target){
 	$('html, body').animate({
@@ -65,24 +63,25 @@ function restore_boxes() {
 	
 	$('.expanded').each(function (i) {
 		var box = $(this).data('size');
-		$(this).find('.expandable').hide('normal');
-		$(this).find('.hideable').show('normal');
-		if($('html').hasClass('accelerate')) {
-			$(this).css({
-				width: (box[0] || 100),
-				height: (box[1] || 'auto')
-			}).removeClass('expanded');
-			window.setTimeout(function () {
+		if(use_css_transitions()) {
+			$(this).one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function() {
+				$(this).find('.expandable').hide('normal');
+				$(this).find('.hideable').show('normal');
 				if (i >= len) {
 					$isotope_container.isotope('updateSortData', $(this));
 					$isotope_container.isotope();
 				}
-			}.bind(this), 200);
+			}.bind(this)).css({
+				width: (box[0] || 100),
+				height: (box[1] || 'auto')
+			}).removeClass('expanded');
 		} else {
 			$(this).animate({
 				width: (box[0] || 100),
 				height: (box[1] || 'auto')
 			}, 200, function () {
+				$(this).find('.expandable').hide('normal');
+				$(this).find('.hideable').show('normal');
 				if (i >= len) {
 					$(this).removeClass('expanded');
 					$isotope_container.isotope('updateSortData', $(this));
@@ -121,26 +120,22 @@ function expand_box(target) {
 		window.clearTimeout($help_timer);
 	}
 	
-	if (target.is('.expanded')) {
-		//restore_boxes();
-	} else {
+	if (!target.is('.expanded')) {
 		var size = (target.attr('data-size')) ? target.attr('data-size').split(',') : $defaultSize;
 		// save original box size
-		if($('html').hasClass('accelerate')) {
-			target.data('size', [target.outerWidth(), target.outerHeight()]).css({
+		if(use_css_transitions()) {
+			target.data('size', [target.outerWidth(), target.outerHeight()]).one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function() {
+				// show hidden content when box has expanded completely
+				target.find('.expandable').show('normal')
+				target.find('.hideable').hide('normal');
+				$('#filters ul').append($('<li id="close_all"><a href="javascript: window.location.hash=\'\'; restore_boxes();">Close All</a></li>'));
+				$isotope_container.isotope('updateSortData', target);
+				$isotope_container.isotope();			
+				window.setTimeout(function(){scroll_to(target)}, 500);
+			}.bind(target)).css({
 				width: size[0],
 				height: size[1]
 			});
-			window.setTimeout(function () {
-				// show hidden content when box has expanded completely
-				var $this=$(this);
-				$this.find('.expandable').show('normal')
-				$this.find('.hideable').hide('normal');
-				$isotope_container.isotope('updateSortData', $(this));
-				$isotope_container.isotope();
-				$('#filters ul').append("<li id='close_all'><a href='javascript: window.location.hash=\"\"; restore_boxes();'>Close All</a></li>");
-				window.setTimeout(function(){scroll_to($this)}, 500);
-			}.bind(target), 200);
 		} else {
 			target.data('size', [target.outerWidth(), target.outerHeight()]).animate({
 					width: size[0],
@@ -256,39 +251,18 @@ $(window).resize(function(){
 	}
 	
 	$('header').height($('#filters').outerHeight(true));
-	
-	/*if ($(window).width() < $minimum_content_width * 2) {
-		$defaultSize = [$col1,$colh2];
-		$istope_container.isotope({
-			masonry: {
-				columnWidth: $minimum_content_width * 2;
-			}
-		});
-	} else {
-		$defaultSize = $large_box_size;
-		$isotope_container.isotope({
-			masonry: {
-				columnWidth: $column_width;
-			}
-		});
-	}*/
 });
+
+function use_css_transitions() {
+	return $('html').hasClass('csstransitions') && $('html').hasClass('csstransforms3d');
+}
 
 function start_isotope() {
 		
 	$isotope_container = $('#box_container');
 	
-	var cssTransitionsSupported = ((document.body || document.documentElement).style.WebkitTransition !== undefined || (document.body || document.documentElement).style.transition !== undefined),
-		has3D = ('WebKitCSSMatrix' in window && 'm11' in new WebKitCSSMatrix());
-
-	if(cssTransitionsSupported && has3D) {
-		$('html').addClass('accelerate');
-	} else {
-		$('html').addClass('animate');
-	}
-	
-	if($('html').hasClass('accelerate')) {
-		$('.box.expand').addClass('accelearate')
+	if(use_css_transitions()) {
+		$('.box.expand').addClass('accelerate')
 	}
 	
 	$expandable_boxes = $('.expand');
@@ -340,16 +314,6 @@ function start_isotope() {
 		
 		$this = $(this);
 		image_width = $this.parent().innerWidth();
-		
-		// We don't need to run this, I think:
-//		if(image_width < 0) {
-//			if($this.parents().filter('.col1, .col2').hasClass('col1')) {
-//				image_width = $('.col1 img.lazy').eq(0).innerWidth();
-//			} else {
-//				image_width = $('.col2 img.lazy').eq(0).innerWidth();
-//			}
-//		
-//		}
 		
 		image_height = image_width/parseInt($this.attr('data-image-width')) * parseInt($this.attr('data-image-height'));
 		if(image_width > parseInt($this.attr('data-image-width')) || image_height > parseInt($this.attr('data-image-height'))) {
