@@ -154,15 +154,17 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 
 **"Revising Tomorrow: the Historical Present, Telecommunications, and Capitalism in _Nova_ and _Neuromancer_,"** _Samuel Delany: A Critical Symposium_, University at Buffalo (State University of New York), 2006.
 
-# Teaching Experience <small>(27 Sections; 12 Courses; 949 Students)</small>
+# Teaching Experience <small>(29 Sections; 13 Courses; 980 Students)</small>
 
-## Texas A&M University <small>(4 Sections; 3 Courses; 77 Students)</small>
+## Texas A&M University <small>(6 Sections; 5 Courses; 108 Students)</small>
+
+[**Graduate Seminar: History and Theory of Rhetoric since 1800**](http://andrew.pilsch.com/courses/engl655fall2016) (1 Section; 6 Students) &ndash; Taught in Fall 2016 as "Rhetoric's Avant-Garde," which focused on the intersection between avant-garde writing practices and developments in rhetorical theory during the twentieth century.
 
 [**Graduate Directed Study: History and Theory of Rhetoric**](http://andrew.pilsch.com/courses/engl686spr2016) (1 Section; 2 Students) &ndash; Graduate directed reading focusing on the history of rhetoric from ancient Greece through the Enlightenment _and_ contemporary articulations of those concepts in rhetoric of science, rhetorical historiography, procedural rhetoric, and minority rhetorics.
 
 [**History of Rhetoric**](http://andrew.pilsch.com/courses/engl353spr2016) (1 Section; 25 Students) &ndash; Focus on the history and development of rhetorical concepts from the ancient Greeks through the Enlightenment.
 
-[**Modern Rhetorical Theory**](http://andrew.pilsch.com/courses/engl354spr2016) (2 Section; 50 Students) &ndash; Course focuses on the developments of rhetorical theory in the 20th century. Course emphasizes mutations in media and globality as preconditions for the flowering of rhetorical thought that mark our world.
+[**Modern Rhetorical Theory**](http://andrew.pilsch.com/courses/engl354spr2016) (3 Section; 75 Students) &ndash; Course focuses on the developments of rhetorical theory in the 20th century. Course emphasizes mutations in media and globality as preconditions for the flowering of rhetorical thought that mark our world.
 
 ## Arizona State University <small>(10 Sections; 6 Courses; 280 Students; 7 Online Sections)</small>
 
