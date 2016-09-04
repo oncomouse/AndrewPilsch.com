@@ -198,13 +198,15 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 
 ## For National Organizations
 
-**Manuscript Reviewer**, *Digital Literary Studies*, 2016.
-
 **Member-at-large**, Executive Committee, _The Society For Literature, Science, and the Arts_, 2015-2017.
 
-**Manuscript Reviewer**, *Rhetoric Society Quarterly*, 2015.
-
 **Program Committee Member**, _The Society For Literature, Science, and the Arts Conference_, 2013.
+
+## For Journals
+
+**Manuscript Reviewer**, *Digital Literary Studies*, 2016.
+
+**Manuscript Reviewer**, *Rhetoric Society Quarterly*, 2015.
 
 ## For Texas A&M University
 
