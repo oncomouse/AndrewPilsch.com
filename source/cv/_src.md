@@ -42,11 +42,17 @@ BS, Science Technology &amp; Culture  |Georgia Institute of Technology |May 2005
 
 ***Transhumanism: The Rhetoric of Evolutionary Futurism***
 
-**Six Chapter Manuscript, Under Contract with University of Minnesota Press**---Book explores the rhetorical history of "evolutionary futurism," a twentieth century Utopian rhetorical mode associating advancing telecommunications technologies with biological evolution to suggest near-future radical shifts in human existence and cognition. Tracing this rhetoric of transhumanism, chapters explore the evolutionary futurism of theosophy, 1940s science fiction, Raymond Kurzweil, and Pierre Teilhard de Chardin. In addition to a theoretical introduction, the book also contains an extended discussion of contemporary digital aesthetics as transhuman vectors of evolutionary overcoming.
+**Six Chapter Manuscript, In Production at University of Minnesota Press (Anticipated Publication, November 2107)**---Book explores the rhetorical history of "evolutionary futurism," a twentieth century Utopian rhetorical mode associating advancing telecommunications technologies with biological evolution to suggest near-future radical shifts in human existence and cognition. Tracing this rhetoric of transhumanism, chapters explore the evolutionary futurism of theosophy, 1940s science fiction, Raymond Kurzweil, and Pierre Teilhard de Chardin. In addition to a theoretical introduction, the book also contains an extended discussion of contemporary digital aesthetics as transhuman vectors of evolutionary overcoming.
 
 # Publications
 
 ## Articles & Chapters
+
+**"_Mr. Robot_ & Ethos."** (Under Review at [*Present Tense*](http://www.presenttensejournal.org/)).
+
+**"Abducting Code, Translating the Future: Transpilers and the Implementation of JavaScript's Future."** (Under Review at [*Amodern*](http://amodern.net/) for special issue on "Translation-Machination").
+
+**"Invoking Darkness: Invoking Darkness: *Skotison*, Scalar Derangement, and Inhuman Rhetoric."** (Revise & Resubmit from *Philosophy & Rhetoric*).
 
 **"Life During Wartime: Science Fiction during and after World War II."** Chapter in *The Cambridge History of Science Fiction* eds. Gerry Canavan and Eric Carl Link. (Collection Under Contract with Cambridge UP; Forthcoming, 2017).
 
