@@ -40,6 +40,10 @@ BS, Science Technology &amp; Culture  |Georgia Institute of Technology |May 2005
 
 # Current Book Project
 
+***Histories of Digital Labor, Past and Present***
+
+**Edited Collection, Co-Editing w/ Shawna Ross, Currently Soliciting Chapters & In Talks with Routledge**---[CFP is online at: https://oncomouse.github.io/digital-labor-cfp/](https://oncomouse.github.io/digital-labor-cfp/).
+
 ***Transhumanism: The Rhetoric of Evolutionary Futurism***
 
 **Six-Chapter Manuscript, In Production at University of Minnesota Press (In Print By November 2107)**---Book explores the rhetorical history of "evolutionary futurism," a twentieth century Utopian rhetorical mode associating advancing telecommunications technologies with biological evolution to suggest near-future radical shifts in human existence and cognition. Tracing this rhetoric of transhumanism, chapters explore the evolutionary futurism of theosophy, 1940s science fiction, Raymond Kurzweil, and Pierre Teilhard de Chardin. In addition to a theoretical introduction, the book also contains an extended discussion of contemporary digital aesthetics as transhuman vectors of evolutionary overcoming.
@@ -115,6 +119,8 @@ Philip Young Memorial Endowment in American Literature, 2006. (Penn State)
 **"The What, Why, and How of Net Neutrality."** _New York Times Café_. ASU Downtown Phoenix Campus. 2014.
 
 ## Conference Presentations
+
+**Roundtable Participant, "Working Out Loud: Online Identity Building, Digital Networking, and Professional Development"** *132nd MLA Annual Convention*, Philadelphia, PA, 2016.
 
 **"_Lachrymator_: Persuasion's Tear Gas."** _17th Biennial RSA Conference_, Atlanta, GA, 2016.
 
@@ -210,9 +216,11 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 
 ## For Journals
 
-**Manuscript Reviewer**, *Digital Literary Studies*, 2016.
+**Manuscript Reviewer**, *Journal of Digital Literary Studies*, 2016.
 
 **Manuscript Reviewer**, *Rhetoric Society Quarterly*, 2015.
+
+**Digital Projects & Tools Editor**, *Journal of Digital Literary Studies*, 2015-Present.
 
 ## For Texas A&M University
 
