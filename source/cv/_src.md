@@ -54,13 +54,13 @@ BS, Science Technology &amp; Culture  |Georgia Institute of Technology |May 2005
 
 **"_Mr. Robot_ & Ethos."** (Under Review at [*Present Tense*](http://www.presenttensejournal.org/)).
 
-**"Abducting Code, Translating the Future: Transpilers and the Implementation of JavaScript's Future."** (Under Review at [*Amodern*](http://amodern.net/) for special issue on "Translation-Machination").
+**"Abducting Code, Translating the Future: Transpilers and the Implementation of JavaScript's Future."** (Revise & Resubmit from [*Amodern*](http://amodern.net/) for special issue on "Translation-Machination").
 
-**"Invoking Darkness: Invoking Darkness: *Skotison*, Scalar Derangement, and Inhuman Rhetoric."** (Revise & Resubmit from *Philosophy & Rhetoric*).
+**"Invoking Darkness: Invoking Darkness: *Skotison*, Scalar Derangement, and Inhuman Rhetoric."** (Forthcoming from *Philosophy & Rhetoric*).
 
 **"Life During Wartime: Science Fiction during and after World War II."** Chapter in *The Cambridge History of Science Fiction* eds. Gerry Canavan and Eric Carl Link. (Collection Under Contract with Cambridge UP; Forthcoming, 2017).
 
-**"'We twiddle...and turn into machines': Mina Loy, HTML, and the Machining of Information."** Chapter in *Reading Modernism with Machines* eds. Shawna Ross & James O'Sullivan. (Collection Under Contract with Palgrave; Forthcoming, 2016).
+**"'We twiddle...and turn into machines': Mina Loy, HTML, and the Machining of Information."** Chapter in *Reading Modernism with Machines* eds. Shawna Ross & James O'Sullivan (2016).
 
 **["Insect Capital."](http://www.nanocrit.com/issues/8-2015/insect-capital)** _New American Notes Online (NANO)_ 8 (2015).
 
@@ -120,7 +120,7 @@ Philip Young Memorial Endowment in American Literature, 2006. (Penn State)
 
 ## Conference Presentations
 
-**Roundtable Participant, "Working Out Loud: Online Identity Building, Digital Networking, and Professional Development"** *132nd MLA Annual Convention*, Philadelphia, PA, 2016.
+**Roundtable Participant, "Working Out Loud: Online Identity Building, Digital Networking, and Professional Development"** *132nd MLA Annual Convention*, Philadelphia, PA, 2017.
 
 **"_Lachrymator_: Persuasion's Tear Gas."** _17th Biennial RSA Conference_, Atlanta, GA, 2016.
 
