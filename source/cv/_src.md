@@ -60,6 +60,8 @@ BS, Science Technology &amp; Culture  |Georgia Institute of Technology |May 2005
 
 **"Life During Wartime: Science Fiction during and after World War II."** Chapter in *The Cambridge History of Science Fiction* eds. Gerry Canavan and Eric Carl Link. (Collection Under Contract with Cambridge UP; Forthcoming, 2017).
 
+**"Polynesian Paralysis: Tiki Culture and the Aesthetics of American Empire."** Chapter in *The Year’s Work in Cocktail Culture: The Shaken and the Stirred*. Eds. Stephen Schneider and Craig N. Owens. (Under Preliminary Contract with Indiana UP in "The Year's Work: Studies in Fan Culture and Cultural Theory" series).
+
 **"'We twiddle...and turn into machines': Mina Loy, HTML, and the Machining of Information."** Chapter in *Reading Modernism with Machines* eds. Shawna Ross & James O'Sullivan (2016).
 
 **["Insect Capital."](http://www.nanocrit.com/issues/8-2015/insect-capital)** _New American Notes Online (NANO)_ 8 (2015).
