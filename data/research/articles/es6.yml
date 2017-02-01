@@ -1,0 +1,11 @@
+id: es6
+front_page: true
+title: "Translating the Future: Transpilers and the New Temporalities of Programming in JavaScript"
+short_title: "Translating the Future"
+published: false
+status: "Revise & Resubmit"
+journal: "Amodern"
+journal_url: "http://amodern.net/"
+short_description: "Article theorizing the use of ES6 transpilers (Babel & Traceur) in contemporary JavaScript as examples of novel machine translation systems."
+description: |+
+    This article discusses the use of translating compilers (transpilers) such as Babel & Traceur, which are used to implement the recently approved ES6 standard for JavaScript, represents a novel temporality for translation. Following Vilém Flusser, who argues that the waning of writing and the rise of the technical image signals a shift from progress as a narrative of future-to-present instead of past-to-future, I discuss how transpilers, which allow developers to write present code in a future language (that does not yet exist in production web browsers), enact this shift temporality, by bringing future code into present development. The article also argues that these new temporal rhythms represent potential mutations in the way standards are made and risk is managed in the post-national global economy.
