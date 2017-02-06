@@ -177,6 +177,12 @@ header {
 		p, h1 {
 			margin-top: $leading / 2;
 		}
+		p {
+			overflow-wrap: normal;
+		    overflow: hidden;
+		    -o-text-overflow: ellipsis;
+		    text-overflow: ellipsis;
+		}
 		// We do this to account for the "+" sign:
 		h2 {
 			width: 93%;
