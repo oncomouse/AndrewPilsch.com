@@ -52,7 +52,7 @@ date: 22 November 2014
 
 ## Articles & Chapters
 
-**"_Mr. Robot_ & Ethos."** (Under Review at [*Present Tense*](http://www.presenttensejournal.org/)).
+**"The *Ethos* of *Mr. Robot*."** (Under Review at [*Present Tense*](http://www.presenttensejournal.org/)).
 
 **"Abducting Code, Translating the Future: Transpilers and the Implementation of JavaScript's Future."** (Revise & Resubmit from [*Amodern*](http://amodern.net/) for special issue on "Translation-Machination").
 
