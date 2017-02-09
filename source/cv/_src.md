@@ -230,7 +230,7 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 
 **Writing Committee Member**, 2015-Present.
 
-**Rhetoric & Composition Search Committee Member**, 2015.
+**Rhetoric & Composition Search Committee Member**, 2015 &ndash; Successful hire for tenure-track assistant professor in History & Theory of Rhetoric.
 
 **First Year Review Committee Member**, 2015.
 
