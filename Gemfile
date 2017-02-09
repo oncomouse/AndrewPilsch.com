@@ -8,9 +8,9 @@ gem "middleman-blog", "~> 3.0"
 gem "oj"
 gem "middleman-deploy"
 gem "middleman-syntax"
-gem 'middleman-blog-similar'
-gem 'middleman-smusher'
-gem 'levenshtein-ffi', :require => 'levenshtein'
+#gem 'middleman-blog-similar'
+#gem 'middleman-smusher'
+#gem 'levenshtein-ffi', :require => 'levenshtein'
 gem 'middleman-inliner'
 gem "middleman-minify-html"
 
