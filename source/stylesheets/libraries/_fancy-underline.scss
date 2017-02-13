@@ -1,0 +1,30 @@
+@mixin fancyUnderline($underlineColor:#F00, $backgroundColor:#FFF, $hoverColor:$underlineColor, $textColor:#000, $offset:95%) {
+	color: $textColor;
+	text-decoration: none;
+	text-shadow: .03em 0 $backgroundColor,-.03em 0 $backgroundColor,0 .03em $backgroundColor,0 -.03em $backgroundColor,.06em 0 $backgroundColor,-.06em 0 $backgroundColor,.09em 0 $backgroundColor,-.09em 0 $backgroundColor,.12em 0 $backgroundColor,-.12em 0 $backgroundColor,.15em 0 $backgroundColor,-.15em 0 $backgroundColor;
+	background-size: 1px 1px;
+	background-image: linear-gradient($underlineColor, $underlineColor);
+	background-repeat: repeat-x;
+	background-position: 0 $offset;
+	&:hover {
+		color: $hoverColor;
+		background: 0 0;
+		text-decoration: none;
+		text-shadow: .03em 0 $backgroundColor,-.03em 0 $backgroundColor,0 .03em $backgroundColor,0 -.03em $backgroundColor,.06em 0 $backgroundColor,-.06em 0 $backgroundColor,.09em 0 $backgroundColor,-.09em 0 $backgroundColor,.12em 0 $backgroundColor,-.12em 0 $backgroundColor,.15em 0 $backgroundColor,-.15em 0 $backgroundColor;
+		background-size: 1px 1px;
+		background-image: linear-gradient($hoverColor, $hoverColor);
+		background-repeat: repeat-x;
+		background-position: 0 $offset;
+	}
+}
+
+@mixin plainLink() {
+	text-shadow: none;
+	background-image: none;
+	background-size: 100%;
+	&:hover {
+		background: 0 0;
+		text-shadow: none;
+		background-image: none;
+	}
+}

@@ -152,16 +152,13 @@ big {
 
 /* 4. LINKS
  * ---------------------------------------------------------------------------------------- */
+@import "libraries/fancy-underline";
 a {
 	color: $bodyLinkColor;
+	@include fancyUnderline($bodyLinkColor, $bodyBackgroundColor, $bodyLinkHoverColor, $bodyLinkColor);
 	text-decoration: none;
-	outline: none;
+	//outline: none;
 	@include transition(color 0.2s ease-out, background-color 0.2s ease-out);
-}
-
-a:hover {
-	text-decoration: none;
-	color: $bodyLinkHoverColor;
 }
 
 a:active, a:focus {
@@ -216,17 +213,19 @@ p.single-spaced {
 			family: $headerFontFamily;
 			weight: 400;
 		};
-		li {
-			display: inline-block;
-			a {
-				padding: 0.5em;
-				@include button(simple, $buttonColor);
-				font-size: 1em;
-				&.selected {
-					@include button(simple, $buttonSelectedColor);
-					font-size: 1em;
-				}
-			}
+	}
+	li {
+		display: inline-block;
+		
+	}
+	a {
+		@include plainLink();
+		padding: 0.5em;
+		@include button(simple, $buttonColor);
+		font-size: 1em;
+		&.selected {
+			@include button(simple, $buttonSelectedColor);
+			font-size: 1em;
 		}
 	}
 }
@@ -246,6 +245,7 @@ p.single-spaced {
 		align: center;
 	};
 	a {
+		@include plainLink();
 		color: $socialBadgeColor;
 		background: $socialBadgeBackgroundColor;
 		display: inline-block;

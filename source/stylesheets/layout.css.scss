@@ -117,118 +117,118 @@ header {
 
 /* 8d. BOX CONTAINER
  * ------------------------------------------------------------------------------ */
-#box_container {
-	.box {
-		margin: $columnMargin;
-		padding: $columnPadding {
-			bottom: $leading / 2;
-		};
-		border: $columnBorder solid $boxBorderColor;
-		min-height: $columnHeight;
-		box-shadow: 2px 2px 2px 0px rgba($boxBorderColor, 0.5);
-		position: relative;
-		&.expand {
-			&:after {
-				font: {
-					family: $headerFontFamily;
-					size: 20px;
-					weight: 700;
-				};
-				line-height: 20px;
-				color: white;
-				width: 24px;
-				height: 20px;
-				background: $boxBorderColor;
-				opacity: 0.9;
-				position: absolute;
-				top: 0;
-				right: 0;
-				z-index: 2;
-				text-align: center;
-				padding: {
-					top: 0px;
-					bottom: 24px;
-				};
-				content: "+";
-			}
-			&.expanded:after {
-				display: none;
-			}
-		}
-	}
-	.hideable, .blog, #find_me {
-		h1 {
+.box {
+	margin: $columnMargin;
+	padding: $columnPadding {
+		bottom: $leading / 2;
+	};
+	border: $columnBorder solid $boxBorderColor;
+	min-height: $columnHeight;
+	box-shadow: 2px 2px 2px 0px rgba($boxBorderColor, 0.5);
+	position: relative;
+	&.expand {
+		&:after {
 			font: {
-				size: 1.25rem;
+				family: $headerFontFamily;
+				size: 20px;
+				weight: 700;
 			};
-			margin: {
-				top: $leading;
+			line-height: 20px;
+			color: white;
+			width: 24px;
+			height: 20px;
+			background: $boxBorderColor;
+			opacity: 0.9;
+			position: absolute;
+			top: 0;
+			right: 0;
+			z-index: 2;
+			text-align: center;
+			padding: {
+				top: 0px;
+				bottom: 24px;
 			};
+			content: "+";
 		}
-		h2 {
-			font-size: $leading;
-		}
-	}
-	.hideable, .blog {
-		display: block;
-		cursor: pointer;
-	}
-	.hideable, .blog, #about {
-		p, h1 {
-			margin-top: $leading / 2;
-		}
-		p {
-			overflow-wrap: normal;
-		    overflow: hidden;
-		    -o-text-overflow: ellipsis;
-		    text-overflow: ellipsis;
-		}
-		// We do this to account for the "+" sign:
-		h2 {
-			width: 93%;
-		}
-		img {
-			display: block;
-			margin: 0 auto;
+		&.expanded:after {
+			display: none;
 		}
 	}
-	.expandable {
-		display: none;
-		overflow: auto !important;
-		width: auto;
-		height: $expandableHeight - 10;
-		padding: $leading / 4 $leading / 2 {
-			bottom: $leading;
+}
+.hideable, .blog, #find_me {
+	h1 {
+		font: {
+			size: 1.25rem;
 		};
-		margin: {
-			left: 1px;
-			right: 2px;
-		};
-	}
-	.blog {
-		h2 {
-			br {
-				display: none;
-			}
-			& + h1 {
-				margin: {
-					top: $leading / 2;
-				};
-			}
-		}
-	}
-	.social_badges {
 		margin: {
 			top: $leading;
 		};
 	}
-	#teaching_button, #research_button {
-		@include button(simple, $buttonSelectedColor);
-		font: {
-			size: 1.2rem;
-			family: $headerFontFamily;
-		};
+	h2 {
+		font-size: $leading;
 	}
+}
+.hideable, .blog {
+	display: block;
+	cursor: pointer;
+}
+.hideable, .blog, #about {
+	p, h1 {
+		margin-top: $leading / 2;
+	}
+	p {
+		overflow-wrap: normal;
+	    overflow: hidden;
+	    -o-text-overflow: ellipsis;
+	    text-overflow: ellipsis;
+	}
+	// We do this to account for the "+" sign:
+	h2 {
+		width: 93%;
+	}
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+}
+.expandable {
+	display: none;
+	overflow: auto !important;
+	width: auto;
+	height: $expandableHeight - 10;
+	padding: $leading / 4 $leading / 2 {
+		bottom: $leading;
+	};
+	margin: {
+		left: 1px;
+		right: 2px;
+	};
+}
+.blog {
+	h2 {
+		br {
+			display: none;
+		}
+		& + h1 {
+			margin: {
+				top: $leading / 2;
+			};
+		}
+	}
+}
+.social_badges {
+	margin: {
+		top: $leading;
+	};
+}
+@import "libraries/fancy-underline";
+#teaching_button, #research_button {
+	@include plainLink();
+	@include button(simple, $buttonSelectedColor);
+	font: {
+		size: 1.2rem;
+		family: $headerFontFamily;
+	};
 }
 
 /* 8d. HELP
@@ -319,22 +319,20 @@ header {
 				top: $leading / 2;
 			};
 		}
-		table {
-			thead {
-				display: none;
-			}
-			tbody {
-				td {
-					&:nth-child(1) {
-						width: 260px;
-					}
-					&:nth-child(2) {
-						width: 245px;
-					}
-					&:nth-child(3) {
-						text-align: right;
-						width: 160px;
-					}
+		thead {
+			display: none;
+		}
+		tbody {
+			td {
+				&:nth-child(1) {
+					width: 260px;
+				}
+				&:nth-child(2) {
+					width: 245px;
+				}
+				&:nth-child(3) {
+					text-align: right;
+					width: 160px;
 				}
 			}
 		}
