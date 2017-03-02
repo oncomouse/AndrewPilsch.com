@@ -299,6 +299,9 @@ header {
 			margin-top: 0.7rem;
 			margin-left: $leading;
 		}
+		table {
+			width: 100%;
+		}
 		h1 {
 			border-bottom: 1px solid $bodyFontColor;
 			font: {
@@ -333,6 +336,7 @@ header {
 				&:nth-child(3) {
 					text-align: right;
 					width: 160px;
+					padding-right: $leading;
 				}
 			}
 		}
