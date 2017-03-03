@@ -124,7 +124,7 @@ Philip Young Memorial Endowment in American Literature, 2006. (Penn State)
 
 **Roundtable Participant, "Working Out Loud: Online Identity Building, Digital Networking, and Professional Development"** *132nd MLA Annual Convention*, Philadelphia, PA, 2017.
 
-**"_Lachrymator_: Persuasion's Tear Gas."** _17th Biennial RSA Conference_, Atlanta, GA, 2016.
+**"[_Lachrymator_: Persuasion's Tear Gas.](https://oaktrust.library.tamu.edu/handle/1969.1/159126)"** _17th Biennial RSA Conference_, Atlanta, GA, 2016.
 
 **"The Rhetorical Future of the Soul at Work."** _17th Biennial RSA Conference_, Atlanta, GA, 2016.
 
@@ -132,13 +132,13 @@ Philip Young Memorial Endowment in American Literature, 2006. (Penn State)
 
 Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st MLA Annual Convention_, Austin, TX, 2016.
 
-**"Worlds Without Us: The Horror of Indifference in *The Southern Reach Trilogy*"** _The Society For Literature, Science, and the Arts 2015 Conference_, Houston, TX, 2015.
+**"[Worlds Without Us: The Horror of Indifference in *The Southern Reach Trilogy*"](https://oaktrust.library.tamu.edu/handle/1969.1/159123)** _The Society For Literature, Science, and the Arts 2015 Conference_, Houston, TX, 2015.
 
 **"Interpretation Comes Alive"** _The Conference on College Composition and Communication_, Tampa, FL, 2015.
 
 **Roundtable Participant, "Approaching _The Peripheral_: First Responses to William Gibson's New Novel"** _130th MLA Annual Convention_, Vancouver, BC, 2015.
 
-**"Sex and the Singularity: On The Reproduction of Software Objects"** _130th MLA Annual Convention_, Vancouver, BC, 2015.
+**"[Sex and the Singularity: On The Reproduction of Software Objects](https://oaktrust.library.tamu.edu/handle/1969.1/159124)"** _130th MLA Annual Convention_, Vancouver, BC, 2015.
 
 **"Coffee Futurism"** _The Society For Literature, Science, and the Arts 2014 Conference_, Dallas, TX, 2014.
 
@@ -146,7 +146,7 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 
 **"Polynesian Paralysis"** _Cocktail Culture: A Conference_, Louisville, KY, 2014.
 
-**"How Did I Get Here?: GPS, Surveillance Culture, and Personal Narrative"** _The Conference on College Composition and Communication_, Indianapolis, IN, 2014.
+**"[How Did I Get Here?: GPS, Surveillance Culture, and Personal Narrative](https://oaktrust.library.tamu.edu/handle/1969.1/159125)"** _The Conference on College Composition and Communication_, Indianapolis, IN, 2014.
 
 **"Shooting at Agency"** _Western States Rhetoric and Literacy Conference 2013_, Salt Lake City, UT, 2013.
 
