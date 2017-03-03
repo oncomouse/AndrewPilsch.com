@@ -296,102 +296,102 @@ header {
 			margin-top: 0;
 		}
 	}
-	.rendered-cv {
+}
+.rendered-cv {
 
-		p,ul,ol,dl, table {
-			line-height: 1.4rem;
-			margin-top: 0.7rem;
-			margin-left: $leading;
-		}
-		table {
-			width: 100%;
-		}
-		h1 {
-			border-bottom: 1px solid $bodyFontColor;
-			font: {
-				size: 18pt;
-			};
-			margin: {
-				top: $leading;
-			};
-		}
-		h2, big {
-			font: {
-				size: 15pt;
-			};
-			line: {
-				height: 18pt;
-			};
-			margin: {
-				top: $leading / 2;
-			};
-		}
-		thead {
-			display: none;
-		}
-		tbody {
-			td {
-				&:nth-child(1) {
-					width: 260px;
-				}
-				&:nth-child(2) {
-					width: 245px;
-				}
-				&:nth-child(3) {
-					text-align: right;
-					width: 160px;
-					padding-right: $leading;
-				}
+	p,ul,ol,dl, table {
+		line-height: 1.4rem;
+		margin-top: 0.7rem;
+		margin-left: $leading;
+	}
+	table {
+		width: 100%;
+	}
+	h1 {
+		border-bottom: 1px solid $bodyFontColor;
+		font: {
+			size: 18pt;
+		};
+		margin: {
+			top: $leading;
+		};
+	}
+	h2, big {
+		font: {
+			size: 15pt;
+		};
+		line: {
+			height: 18pt;
+		};
+		margin: {
+			top: $leading / 2;
+		};
+	}
+	thead {
+		display: none;
+	}
+	tbody {
+		td {
+			&:nth-child(1) {
+				width: 260px;
+			}
+			&:nth-child(2) {
+				width: 245px;
+			}
+			&:nth-child(3) {
+				text-align: right;
+				width: 160px;
+				padding-right: $leading;
 			}
 		}
-		small {
-			float: right;
-			display: block;
-		}
-		p {
+	}
+	small {
+		float: right;
+		display: block;
+	}
+	p {
+		margin: {
+			left: $leading;
+		};
+		&.indent {
 			margin: {
-				left: $leading;
+				left: $leading * 2;
 			};
-			&.indent {
-				margin: {
-					left: $leading * 2;
-				};
-			}
-			&.hug {
+		}
+		&.hug {
+			margin: {
+				top: 0;
+			};
+		}
+	}
+	ul {
+		list-style: none;
+		margin: {
+			left: 2 * $leading;
+			top: -0.01rem;
+		};
+		padding: 0;
+		li {
+			&:first-child {
 				margin: {
 					top: 0;
 				};
 			}
 		}
-		ul {
-			list-style: none;
-			margin: {
-				left: 2 * $leading;
-				top: -0.01rem;
-			};
-			padding: 0;
-			li {
-				&:first-child {
-					margin: {
-						top: 0;
-					};
-				}
-			}
-		}
-		table + ul {
-			margin-bottom: 0;
-		}
-		ul + table {
-			margin-top: 0;
-		}
-		.links p {
-			margin: {
-				left: 0;
-			};
-			font: {
-				family: $bodyFontFamily;
-			};
-		}
+	}
+	table + ul {
+		margin-bottom: 0;
+	}
+	ul + table {
+		margin-top: 0;
+	}
+	.links p {
+		margin: {
+			left: 0;
+		};
+		font: {
+			family: $bodyFontFamily;
+		};
 	}
 }
 
