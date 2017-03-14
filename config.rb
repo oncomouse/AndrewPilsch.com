@@ -9,17 +9,27 @@ set :markdown, :fenced_code_blocks => true,
                :footnotes => true,
                :superscript => true
 
-@bower_config = JSON.parse(IO.read("#{root}/.bowerrc"))
+#activate :sprockets
+if defined? RailsAssets
+	RailsAssets.load_paths.each do |path|
+		sprockets.append_path path
+		compass_config do |config|
+			config.add_import_path path
+		end
+	end
+end
+
+#@bower_config = JSON.parse(IO.read("#{root}/.bowerrc"))
 
 # Change Compass configuration
-compass_config do |config|
-	config.add_import_path File.join "#{root}", @bower_config["directory"]
-#   config.output_style = :compact
-end
-
-after_configuration do
-    sprockets.append_path File.join "#{root}", @bower_config["directory"]
-end
+#compass_config do |config|
+#	config.add_import_path File.join "#{root}", @bower_config["directory"]
+##   config.output_style = :compact
+#end
+#
+#after_configuration do
+#    sprockets.append_path File.join "#{root}", @bower_config["directory"]
+#end
 
 activate :syntax
 #activate :similar
