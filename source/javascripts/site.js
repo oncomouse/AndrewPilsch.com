@@ -275,10 +275,16 @@ function start_isotope() {
 		}
 	});
 	
+	/*
+	 * =======================================================================
+	 * LAZY LOAD IMAGES
+	 * =======================================================================
+	 */
 	/* Process all the images we will lazy load and figure out how big they'll be when they are loaded.
 	   This lets masonry fire without the images having been loaded AND we don't have to call isotope a bunch of times
 	   after each image loads.
 	*/
+	var image_loaded_counter = 0;
 	$('img.lazy').each(function() {
 		var $this, image_width, image_height;
 		
@@ -293,25 +299,12 @@ function start_isotope() {
 		
 		$this.css('width', image_width);
 		$this.css('height', image_height);
-	});
-	
-
-	
-	// Check if we can squeeze another column into the layout:
-	var margin_width = $('body').outerWidth(true) - $('body').outerWidth(false);
-	var remaining_space = $column_width - $('body').outerWidth(false) % $column_width;
-	
-	if(remaining_space > 0 && remaining_space < margin_width) {
-		$('body').css('margin-left', Math.ceil((margin_width - remaining_space) / 2));
-		$('body').css('margin-right', Math.ceil((margin_width - remaining_space) / 2));
-	}
-	
+	})
 	/* We start lazy loading images when masonry first completes.
 	   As images load, we count how many load.
 	   When we have the total number of images loaded, we masonry again to fix any overlap.
 	*/
-	var image_loaded_counter = 0;
-	$('img.lazy').lazyload({
+	.lazyload({
 		event: 'masonryComplete',
 		load: function() {
 			$(this).css('width', '');
@@ -322,6 +315,18 @@ function start_isotope() {
 			}
 		}
 	});
+	/*
+	 * =======================================================================
+	 */
+	
+	// Check if we can squeeze another column into the layout:
+	var margin_width = $('body').outerWidth(true) - $('body').outerWidth(false);
+	var remaining_space = $column_width - $('body').outerWidth(false) % $column_width;
+	
+	if(remaining_space > 0 && remaining_space < margin_width) {
+		$('body').css('margin-left', Math.ceil((margin_width - remaining_space) / 2));
+		$('body').css('margin-right', Math.ceil((margin_width - remaining_space) / 2));
+	}
 	
 	$isotope_container.isotope({
 		isInitLayout: false,
