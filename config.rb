@@ -19,20 +19,7 @@ if defined? RailsAssets
 	end
 end
 
-#@bower_config = JSON.parse(IO.read("#{root}/.bowerrc"))
-
-# Change Compass configuration
-#compass_config do |config|
-#	config.add_import_path File.join "#{root}", @bower_config["directory"]
-##   config.output_style = :compact
-#end
-#
-#after_configuration do
-#    sprockets.append_path File.join "#{root}", @bower_config["directory"]
-#end
-
 activate :syntax
-#activate :similar
 
 set :site_deploy_root, 'http://andrew.pilsch.com'
 
@@ -167,8 +154,6 @@ set :haml, { :ugly => true, :format => :html5 }
 activate :directory_indexes
 page "/blank.html", :directory_index => false
 page "/ie8.html", :directory_index => false
-#page "/blog/feed.xml", :layout => false
-#page "/blog/rss.xml", :layout => false
 
 # Build-specific configuration
 configure :build do
@@ -191,9 +176,7 @@ configure :build do
   ignore "javascripts/plugins.js"
   ignore "javascripts/libraries/*"
   
-  #ignore "/research/*"
   ignore "/**/*.rb"
-  #set :http_prefix, "/new2"
   # Change this to build with a different file root.	
   #set :http_prefix, "/my/prefix/folder"
 
@@ -206,21 +189,6 @@ configure :build do
   activate :minify_html do |html|
 	  html.remove_comments = false
   end
-
-  #activate :gzip
-
-  # Enable cache buster
-  # activate :cache_buster
-
-  # Use relative URLs
-  #activate :relative_assets
-
-  # Compress PNGs after build
-  # I wouldn't use this.
-  #activate :smusher
-
-  # Or use a different image path
-  # set :http_path, "/Content/images/"
 end
 
 after_build do
