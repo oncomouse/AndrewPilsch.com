@@ -135,13 +135,7 @@ helpers do
 	end
 end
 
-class Middleman::Sitemap::Resource
-	def first_paragraph
-		nokogiri_doc = Nokogiri::HTML(self.body)
-		
-		return nokogiri_doc.css("p").first.to_s
-	end
-end
+activate :autoprefixer
 
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
@@ -177,13 +171,9 @@ configure :build do
   ignore "javascripts/libraries/*"
   
   ignore "/**/*.rb"
-  # Change this to build with a different file root.	
-  #set :http_prefix, "/my/prefix/folder"
 
-  # For example, change the Compass output style for deployment
+  # Pack those assets
   activate :minify_css
-
-  # Minify Javascript on build
   activate :minify_javascript, :inline => true
   activate :inliner
   activate :minify_html do |html|

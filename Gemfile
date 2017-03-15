@@ -9,6 +9,7 @@ gem "oj"
 gem "middleman-deploy"
 gem "middleman-syntax"
 gem "middleman-inliner"
+gem "middleman-autoprefixer"
 gem "middleman-minify-html"
 
 gem "fastimage"
