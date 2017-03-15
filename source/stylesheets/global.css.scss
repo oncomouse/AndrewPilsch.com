@@ -158,7 +158,7 @@ a {
 	@include fancyUnderline($bodyLinkColor, $bodyBackgroundColor, $bodyLinkHoverColor, $bodyLinkColor);
 	text-decoration: none;
 	//outline: none;
-	@include transition(color 0.2s ease-out, background-color 0.2s ease-out);
+	transition: color 0.2s ease-out, background-color 0.2s ease-out;
 }
 
 a:active, a:focus {
@@ -169,10 +169,10 @@ a:active, a:focus {
  * ---------------------------------------------------------------------------------------- */
 
 .box.accelerate {
-	@include transition-property(height, width);
-	@include transition-duration(200ms);
-	@include transition-timing-function(cubic-bezier(0.230, 1.000, 0.320, 1.000));
-	@include transform(translate3d(0,0,0));
+	transition-property: height, width;
+	transition-duration: 200ms;
+	transition-timing-function: cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	transform: translate3d(0,0,0);
 	-webkit-backface-visibility:hidden;
 	-webkit-perspective: 1000;
 }
