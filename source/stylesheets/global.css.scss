@@ -1,34 +1,107 @@
-/* Goldilocks Approach to Responsive Web Design Boilerplate
- *
- * Author: Design by Front - @designbyfront
- * Version: 0.1
- * URL: http://www.goldilocksapproach.com
- * ----------------------------------------------------------------------------------------
- *
- * CONTENTS - GLOBAL.CSS
- * -----------------------------------------
- * 1. RESET
- * 2. ROOT
- * 3. CORE TYPOGRAPHY
- * 4. LINKS
- * 5. GLOBAL LAYOUT & GLOBAL CUSTOM TYPOGRAPHY
- * 6. CUSTOM LAYOUT & TYPOGRAPHY (Baby bear)
- * 7. BROWSER AND NON-SEMANTIC STYLING
- *
- * CONTENTS - LAYOUT.CSS
- * -----------------------------------------
- * 8. CUSTOM LAYOUT & TYPOGRAPHY (Daddy bear)
- * 9. CUSTOM LAYOUT & TYPOGRAPHY (Mummy bear) 
- *
- */
-
-// Modular Scale: http://modularscale.com/scale/?px1=16&px2=40&ra1=1.618&ra2=0
-
+//  Goldilocks Approach to Responsive Web Design Boilerplate
+// 
+//  Author: Design by Front - @designbyfront
+//  Version: 0.1
+//  URL: http://www.goldilocksapproach.com
+//  -----------------------------------------------------------------------------
+// 
+//  CONTENTS - GLOBAL.CSS
+//  ------------------------------
+//  1. RESET
+//  2. ROOT
+//  3. CORE TYPOGRAPHY
+//  4. LINKS
+//  5. GLOBAL LAYOUT & GLOBAL CUSTOM TYPOGRAPHY
+//  6. CUSTOM LAYOUT & TYPOGRAPHY (Baby bear)
+//  7. BROWSER AND NON-SEMANTIC STYLING
+// 
+//  CONTENTS - LAYOUT.CSS
+//  ------------------------------
+//  8. CUSTOM LAYOUT & TYPOGRAPHY (Daddy bear)
+//  9. CUSTOM LAYOUT & TYPOGRAPHY (Mummy bear) 
+// 
 @import "bear_defaults";
-
-/* 1. RESET
- * ---------------------------------------------------------------------------------------- */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+//  1. RESET
+//  -----------------------------------------------------------------------------
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -37,121 +110,116 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	vertical-align: baseline;
 }
 @include normalize();
-
-/* 2. ROOT
- * ---------------------------------------------------------------------------------------- */
+//  2. ROOT
+//  -----------------------------------------------------------------------------
 html {
 	overflow-y: scroll;
 	background: $bodyBackgroundColor;
 }
-
 body {
 	margin: $leading / 2 {
 		bottom: 4 * $leading;
-	};
+	}
 }
-
-/* /ht Ethan Marcotte - http://front.ie/l8rJaA */
-img, embed, object, video {
+// ht Ethan Marcotte - http://front.ie/l8rJaA
+img,
+embed,
+object,
+video {
 	max-width: 100%;
 }
-
-.ie6 img.full, .ie6 object.full, .ie6 embed, .ie6 video {
+.ie6 img.full,
+.ie6 object.full,
+.ie6 embed,
+.ie6 video {
 	width: 100%;
 }
-
-/* These selection declarations have to be separate
- * No text-shadow: twitter.com/miketaylr/status/12228805301
- * Also: hot pink!
- */
-
+//  These selection declarations have to be separate
+//  No text-shadow: twitter.com/miketaylr/status/12228805301
+//  Also: hot pink!
 ::-moz-selection {
 	background: $textSelectionColor;
 	color: white;
 	text-shadow: none;
 }
-
 ::selection {
 	background: $textSelectionColor;
 	color: white;
 	text-shadow: none;
 }
-
-*, *:before, *:after {
+*,
+*:before,
+*:after {
 	box-sizing: border-box;
 	z-index: auto;
 	text-rendering: optimizeLegibility;
 	text-shadow: 0 0 1px transparent;
 }
-
-/* 3. CORE TYPOGRAPHY
- * ---------------------------------------------------------------------------------------- */
+//  3. CORE TYPOGRAPHY
+//  -----------------------------------------------------------------------------
 @import "libraries/typebase";
-
 body {
 	font: {
 		family: $bodyFontFamily;
 		size: 1em;
 		weight: $bodyFontWeight;
-	};
+	}
 	line-height: $leading;
 	color: $bodyFontColor;
 }
-
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font: {
 		family: $headerFontFamily;
 		weight: $headerFontWeight;
-	};
+	}
 }
-
 h1 {
 	font-size: 2.5rem;
 }
-
 h2 {
 	font-size: 1.8rem;
 }
-
 dl {
 	margin-top: $leading;
-	dt,dd {
+	dt,
+	dd {
 		line-height: $leading;
 	}
 	dd {
 		margin-left: $leading;
 	}
 }
-
-nav ul, nav ol {
+nav ul,
+nav ol {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
-
-ol,ul {
+ol,
+ul {
 	margin-left: $leading;
 }
-
-b, strong {
+b,
+strong {
 	font-weight: 700;
 }
-
-i, em {
+i,
+em {
 	font-style: italic;
 }
-
 small {
 	font-size: 80%;
 }
-
 big {
 	font-size: 120%;
 }
-
-/* 4. LINKS
- * ---------------------------------------------------------------------------------------- */
-@import "libraries/fancy-underline";
+//  4. LINKS
+//  -----------------------------------------------------------------------------
 a {
 	color: $bodyLinkColor;
 	@include fancyUnderline($bodyLinkColor, $bodyBackgroundColor, $bodyLinkHoverColor, $bodyLinkColor);
@@ -159,14 +227,12 @@ a {
 	//outline: none;
 	transition: color 0.2s ease-out, background-color 0.2s ease-out;
 }
-
-a:active, a:focus {
+a:active,
+a:focus {
 	outline: none;
 }
-
-/* 5. GLOBAL LAYOUT & GLOBAL CUSTOM TYPOGRAPHY
- * ---------------------------------------------------------------------------------------- */
-
+//  5. GLOBAL LAYOUT & GLOBAL CUSTOM TYPOGRAPHY
+//  -----------------------------------------------------------------------------
 .box.accelerate {
 	transition-property: height, width;
 	transition-duration: 200ms;
@@ -175,31 +241,27 @@ a:active, a:focus {
 	-webkit-backface-visibility:hidden;
 	-webkit-perspective: 1000;
 }
-
 img.center {
 	display: block;
 	margin: 0 auto;
 }
-
 p.single-spaced {
 	line-height: 1;
 }
-
 .content {
 	width: 100%;
 	margin: auto;
 	@include clearfix;
 }
-
 #filters {
 	font: {
 		size: 0.9rem;
-	};
+	}
 	h1 {
 		font: {
 			size: 1em;
 			weight: bold;
-		};
+		}
 		line-height: 1;
 	}
 	ul {
@@ -211,7 +273,7 @@ p.single-spaced {
 		font: {
 			family: $headerFontFamily;
 			weight: 400;
-		};
+		}
 	}
 	li {
 		display: inline-block;
@@ -228,21 +290,17 @@ p.single-spaced {
 		}
 	}
 }
-
 .box {
 	background: $bodyBackgroundColor;
 	&.expanded {
 		z-index: 2;
 	}
 }
-
-/* Social Badges!
- */
-
+//  Social Badges!
 .social_badges {
 	text: {
 		align: center;
-	};
+	}
 	a {
 		@include plainLink();
 		color: $socialBadgeColor;
@@ -250,37 +308,35 @@ p.single-spaced {
 		display: inline-block;
 		text: {
 			align: center;
-		};
+		}
 		vertical: {
 			align: middle;
-		};
+		}
 		border: 1px solid $socialBadgeBorderColor;
 		margin: {
 			left: 0.25rem;
 			right: 0.25rem;
 			top: 25px;
-		};
+		}
 		&:hover {
 			color: $socialBadgeHoverColor;
 			background: {
 				color: $socialBadgeHoverBackgroundColor;
-			};
+			}
 		}
 		&:first-child {
 			margin: {
 				left: 0;
-			};
+			}
 		}
 	}
 	.no-fontface {
 		display: none;
 	}
 }
-
 .box.no-click {
 	cursor: default !important;
 }
-
 html.no-fontface {
 	.social_badges {
 		.no-fontface {
@@ -290,15 +346,15 @@ html.no-fontface {
 				margin: 0;
 				list: {
 					style: none;
-				};
+				}
 				li {
 					a {
 						font: {
 							size: 1.75em;
-						};
+						}
 						line: {
 							height: 1.618em;
-						};
+						}
 						display: inline-block;
 					}
 				}
@@ -306,36 +362,36 @@ html.no-fontface {
 		}
 	}
 }
-
-/* 6. CUSTOM LAYOUT & TYPOGRAPHY (Baby bear)
- * ---------------------------------------------------------------------------------------- */
-
-h1,h2,h3,h4 {
+//  6. CUSTOM LAYOUT & TYPOGRAPHY (Baby bear)
+//  -----------------------------------------------------------------------------
+h1,
+h2,
+h3,
+h4 {
 	text-align: center;
 }
-
 .content {
 	max-width: $babyBearColumnSize;
 }
-
 .no-mobile {
 	display: none;
 }
-
 .hideable {
 	display: none;
 }
-
 .box {
-	h1, h2 {
+	h1,
+	h2 {
 		line-height: 1;
 	}
 	h2 + h1 {
 		margin-top: 0;
 	}
 }
-
-.col1, .col2, .col3, .col4 {
+.col1,
+.col2,
+.col3,
+.col4 {
 	width: 100%;
 	img {
 		max-width: 90%;
@@ -343,43 +399,37 @@ h1,h2,h3,h4 {
 		margin: 0 auto;
 	}
 }
-
 .mobile {
 	& + h1 {
 		margin-top: $leading / 2;
 		line-height: 1;
 	}
 }
-
 .colh1 {
 	height: $colh1;
 }
-
 .colh2 {
 	height: $colh2;
 }
-
 .colh3 {
 	height: $colh3;
 }
-
 .colh4 {
 	height: $colh4;
 }
-
 #logo {
 	float: none;
 	margin: {
 		top: 6.5rem;
 		bottom: 2rem;
-	};
+	}
 	width: 100%;
 	a {
 		color: black;
 		&:hover {
 			text: {
 				decoration: none;
-			};
+			}
 		}
 	}
 	h1 {
@@ -387,7 +437,6 @@ h1,h2,h3,h4 {
 		margin-top: -0.75rem;
 	}
 }
-
 #filters {
 	display: block;
 	position: fixed;
@@ -399,55 +448,46 @@ h1,h2,h3,h4 {
 	h1 {
 		margin: 0 {
 			top: $leading / 2;
-		};
+		}
 	}
 	ul {
 		margin: 0 {
 			top: $leading;
 			bottom: $leading / 2;
-		};
+		}
 		text-align: center;
 		li {
 			margin: $leading / 32;
 		}
 	}
 }
-
 body.cv_standalone {
 	#cv {
 		margin: 0 auto;
 		max-width: 960px;
 	}
 }
-
 #cv_html {
 	display: none;
 }
-
 #cv {
 	.links {
 		margin-top: $leading;
 		text-align: center;
 	}
 }
-
 div.mobile {
 	display: block;
 }
-
 #help {
 	display: none;
 }
-
-/* 7. BROWSER AND NON-SEMANTIC STYLING
- * ---------------------------------------------------------------------------------------- */
-
+//  7. BROWSER AND NON-SEMANTIC STYLING
+//  -----------------------------------------------------------------------------
 .clearfix {
 	@include clearfix;
 }
-
 // HTML 5 Boilerplate Print Code
-
 @media print {
 	// Black prints faster: h5bp.com/s
 	* {
@@ -475,11 +515,13 @@ div.mobile {
 		content: "";
 	}
 	a {
-		&[href^="javascript:"]:after, &[href^="#"]:after {
+		&[href^="javascript:"]:after,
+		&[href^="#"]:after {
 			content: "";
 		}
 	}
-	pre, blockquote {
+	pre,
+	blockquote {
 		border: 1px solid #999999;
 		page-break-inside: avoid;
 	}
@@ -497,12 +539,14 @@ div.mobile {
 	@page {
 		margin: 0.5cm;
 	}
-
-	p, h2, h3 {
+	p,
+	h2,
+	h3 {
 		orphans: 3;
 		widows: 3;
 	}
-	h2, h3 {
+	h2,
+	h3 {
 		page-break-after: avoid;
 	}
 }

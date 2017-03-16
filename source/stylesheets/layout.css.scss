@@ -1,88 +1,80 @@
-/* 8. CUSTOM LAYOUT & TYPOGRAPHY (Daddy bear)
- * ---------------------------------------------------------------------------------------- */
+// 8. CUSTOM LAYOUT & TYPOGRAPHY (Daddy bear)
+// -----------------------------------------------------------------------------
 @import "bear_defaults";
-
-/* 8a. RESET
- * ------------------------------------------------------------------------------ */
-
+// 8a. RESET
+// -----------------------------------------------------------------------------
 .no-mobile {
 	display: block;
 }
-
 div.mobile {
 	display: none;
 }
-
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	text-align: left;
 	line-height: 1;
 }
-
 h1 {
 	font-size: 2 * $scale * 1rem;
 }
-
-.box, .hideable, .no-mobile, .expandable {
+.box,
+.hideable,
+.no-mobile,
+.expandable {
 	& > *:first-child {
 		margin-top: 0 !important;
 	}
 }
-
 .mobile + h1 {
 	margin-top: 0;
 }
-
 #cv_html {
 	display: block;
 }
-
-/* 8b. SIZING
- * ------------------------------------------------------------------------------ */
+// 8b. SIZING
+// -----------------------------------------------------------------------------
 .content {
 	max-width: 100%;
 }
-
-#box_container, .expandable {
+#box_container,
+.expandable {
 	width: 100%;
 	position: relative;
 	top: 10px;
 }
-
-#column_width, #large_box_size, #column_padding {
+#column_width,
+#large_box_size,
+#column_padding {
 	display: none;
 }
-
 #column_width {
 	width: $minimumContentWidth;
 }
-
 #large_box_size {
 	height: $columnHeight * 2 + ($columnMargin + $columnBorder + $columnPadding) * 2;
 	width: $col3;
 }
-
 #column_padding {
 	width: $columnPadding;
 }
-
 .col1 {
 	width: $col1;
 }
-
 .col2 {
 	width: $col2;
 }
-
 .col3 {
 	width: $col3;
 }
-
 .col4 {
 	width: $col4;
 }
-
-/* 8c. HEADER
- * ------------------------------------------------------------------------------ */
+// 8c. HEADER
+// -----------------------------------------------------------------------------
 header {
 	position: relative;
 	min-height: 100px;
@@ -92,7 +84,7 @@ header {
 		margin: {
 			bottom: 0;
 			top: 0;
-		};
+		}
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -105,23 +97,22 @@ header {
 		ul {
 			margin: $leading / 2 0 $leading 0;
 			text-align: left;
-			li {
-				margin: 0 $leading / 32;
-			}
+		}
+		li {
+			margin: 0 $leading / 32;
 		}
 		h1 {
 			margin: 0 5px;
 		}
 	}
 }
-
-/* 8d. BOX CONTAINER
- * ------------------------------------------------------------------------------ */
+// 8d. BOX CONTAINER
+// -----------------------------------------------------------------------------
 .box {
 	margin: $columnMargin;
 	padding: $columnPadding {
 		bottom: $leading / 2;
-	};
+	}
 	border: $columnBorder solid $boxBorderColor;
 	min-height: $columnHeight;
 	box-shadow: 2px 2px 2px 0px rgba($boxBorderColor, 0.5);
@@ -132,7 +123,7 @@ header {
 				family: $headerFontFamily;
 				size: 20px;
 				weight: 700;
-			};
+			}
 			line-height: 20px;
 			color: white;
 			width: 24px;
@@ -147,7 +138,7 @@ header {
 			padding: {
 				top: 0px;
 				bottom: 24px;
-			};
+			}
 			content: "+";
 		}
 		&.expanded:after {
@@ -155,25 +146,31 @@ header {
 		}
 	}
 }
-.hideable, .blog, #find_me {
+.hideable,
+.blog,
+#find_me {
 	h1 {
 		font: {
 			size: 1.25rem;
-		};
+		}
 		margin: {
 			top: $leading;
-		};
+		}
 	}
 	h2 {
 		font-size: $leading;
 	}
 }
-.hideable, .blog {
+.hideable,
+.blog {
 	display: block;
 	cursor: pointer;
 }
-.hideable, .blog, #about {
-	p, h1 {
+.hideable,
+.blog,
+#about {
+	p,
+h1 {
 		margin-top: $leading / 2;
 	}
 	p {
@@ -198,11 +195,11 @@ header {
 	height: $expandableHeight - 10;
 	padding: $leading / 4 $leading / 2 {
 		bottom: $leading;
-	};
+	}
 	margin: {
 		left: 1px;
 		right: 2px;
-	};
+	}
 }
 .blog {
 	h2 {
@@ -212,27 +209,27 @@ header {
 		& + h1 {
 			margin: {
 				top: $leading / 2;
-			};
+			}
 		}
 	}
 }
 .social_badges {
 	margin: {
 		top: $leading;
-	};
+	}
 }
 @import "libraries/fancy-underline";
-#teaching_button, #research_button {
+#teaching_button,
+#research_button {
 	@include plainLink();
 	@include button(simple, $buttonSelectedColor);
 	font: {
 		size: 1.2rem;
 		family: $headerFontFamily;
-	};
+	}
 }
-
-/* 8d. HELP
- * ------------------------------------------------------------------------------ */
+// 8d. HELP
+// -----------------------------------------------------------------------------
 #help.displayed {
 	opacity: 0;
 	display: block;
@@ -246,7 +243,7 @@ header {
 	padding: $leading / 2;
 	text: {
 		align: right;
-	};
+	}
 	p {
 		margin: 0;
 		padding: 0;
@@ -254,38 +251,37 @@ header {
 			weight: $headerFontWeight;
 			size: 1.5rem;
 			family: $headerFontFamily;
-		};
+		}
 		line-height: $leading * 2;
 	}
 }
-
-/* 8e. CV
- * ------------------------------------------------------------------------------ */
+// 8e. CV
+// -----------------------------------------------------------------------------
 .expandable #cv_html {
 	width: 98%;
 }
-
 #cv {
 	h1.cv {
 		font: {
 			size: 9.5rem;
 			weight: 400;
-		};
+		}
 		text: {
 			transform: uppercase;
 			align: center;
-		};
+		}
 		margin: 0;
 	}
 	.center {
 		margin: 0 auto;
 	}
-	.center_text, .centered {
+	.center_text,
+	.centered {
 		text-align: center;
 		p {
 			margin: {
 				left: 0 !important;
-			};
+			}
 		}
 	}
 	#cv_title {
@@ -298,8 +294,11 @@ header {
 	}
 }
 .rendered-cv {
-
-	p,ul,ol,dl, table {
+	p,
+	ul,
+	ol,
+	dl,
+	table {
 		line-height: 1.4rem;
 		margin-top: 0.7rem;
 		margin-left: $leading;
@@ -311,21 +310,22 @@ header {
 		border-bottom: 1px solid $bodyFontColor;
 		font: {
 			size: 18pt;
-		};
+		}
 		margin: {
 			top: $leading;
-		};
+		}
 	}
-	h2, big {
+	h2,
+	big {
 		font: {
 			size: 15pt;
-		};
+		}
 		line: {
 			height: 18pt;
-		};
+		}
 		margin: {
 			top: $leading / 2;
-		};
+		}
 	}
 	thead {
 		display: none;
@@ -352,16 +352,16 @@ header {
 	p {
 		margin: {
 			left: $leading;
-		};
+		}
 		&.indent {
 			margin: {
 				left: $leading * 2;
-			};
+			}
 		}
 		&.hug {
 			margin: {
 				top: 0;
-			};
+			}
 		}
 	}
 	ul {
@@ -369,13 +369,13 @@ header {
 		margin: {
 			left: 2 * $leading;
 			top: -0.01rem;
-		};
+		}
 		padding: 0;
 		li {
 			&:first-child {
 				margin: {
 					top: 0;
-				};
+				}
 			}
 		}
 	}
@@ -388,18 +388,16 @@ header {
 	.links p {
 		margin: {
 			left: 0;
-		};
+		}
 		font: {
 			family: $bodyFontFamily;
-		};
+		}
 	}
 }
-
-/* 8c. GALLERY
- * ------------------------------------------------------------------------------ */
+// 8c. GALLERY
+// -----------------------------------------------------------------------------
 $galleryWidth: 640px;
 $imageWidth: 200px;
-
 dl.gallery {
 	width: $galleryWidth;
 	@include clearfix;
@@ -408,15 +406,15 @@ dl.gallery {
 		width: $galleryWidth - $imageWidth;
 		padding: {
 			bottom: 1em;
-		};
+		}
 		text: {
 			align: center;
-		};
+		}
 		font: {
 			size: 1em;
 			family: $headerFontFamily;
 			weight: bold;
-		};
+		}
 	}
 	dd {
 		margin-left: 0;
@@ -426,13 +424,13 @@ dl.gallery {
 		float: left;
 		margin: 0 {
 			top: 2 * $leading;
-		};
+		}
 		padding: {
 			left: 6px;
-		};
+		}
 		text: {
 			align: center;
-		};
+		}
 		img {
 			display: inline-block;
 			margin: 0;
@@ -444,7 +442,7 @@ dl.gallery {
 		width: $galleryWidth - $imageWidth;
 		padding: {
 			bottom: 1.7em;
-		};
+		}
 		*:first-child {
 			margin-top: 0;
 		}
@@ -456,10 +454,8 @@ dl.gallery {
 		border: 1px solid $bodyLinkColor;
 	}
 }
-
-/* 8c. ABOUT ME
- * ------------------------------------------------------------------------------ */
-
+// 8c. ABOUT ME
+// -----------------------------------------------------------------------------
 #about {
 	ul {
 		margin: 0;
@@ -467,7 +463,6 @@ dl.gallery {
 		padding-left: 0.85rem;
 	}
 }
-
-/* 9. CUSTOM LAYOUT & TYPOGRAPHY (Mummy bear)
- * ---------------------------------------------------------------------------------------- */
+// 9. CUSTOM LAYOUT & TYPOGRAPHY (Mummy bear)
+// -----------------------------------------------------------------------------
 //@media screen and (min-width: 30em) and (max-width: 60em)

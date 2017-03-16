@@ -1,13 +1,13 @@
-/* Utilities
- * ---------------------------------------------------------------------------------------- */
+// Utilities
+// -----------------------------------------------------------------------------
 @import "bourbon";
 @import "normalize.scss/normalize";
 @import "libraries/ap-logotype";
 @import "libraries/sr-only";
 @import "libraries/bourbon-button";
-
-/* Layout Variables
- * ---------------------------------------------------------------------------------------- */
+@import "libraries/fancy-underline";
+// Layout Variables
+// -----------------------------------------------------------------------------
 @import "settings/colors";
 @import "settings/fonts";
 @import "settings/sizes";
