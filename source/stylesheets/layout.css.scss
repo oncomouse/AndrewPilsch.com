@@ -79,31 +79,31 @@ header {
 	position: relative;
 	min-height: 100px;
 	margin-top: 15px;
-	#logo {
-		width: $col1;
-		margin: {
-			bottom: 0;
-			top: 0;
-		}
-		position: absolute;
+}
+#logo {
+	width: $col1;
+	margin: {
+		bottom: 0;
 		top: 0;
-		left: 0;
 	}
-	#filters {
-		display: block;
-		position: absolute;
-		top: 0;
-		left: $minimumContentWidth;
-		ul {
-			margin: $leading / 2 0 $leading 0;
-			text-align: left;
-		}
-		li {
-			margin: 0 $leading / 32;
-		}
-		h1 {
-			margin: 0 5px;
-		}
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#filters {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: $minimumContentWidth;
+	ul {
+		margin: $leading / 2 0 $leading 0;
+		text-align: left;
+	}
+	li {
+		margin: 0 $leading / 32;
+	}
+	h1 {
+		margin: 0 5px;
 	}
 }
 // 8d. BOX CONTAINER
@@ -170,7 +170,7 @@ header {
 .blog,
 #about {
 	p,
-h1 {
+	h1 {
 		margin-top: $leading / 2;
 	}
 	p {
@@ -218,7 +218,6 @@ h1 {
 		top: $leading;
 	}
 }
-@import "libraries/fancy-underline";
 #teaching_button,
 #research_button {
 	@include plainLink();

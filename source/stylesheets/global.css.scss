@@ -347,17 +347,15 @@ html.no-fontface {
 				list: {
 					style: none;
 				}
-				li {
-					a {
-						font: {
-							size: 1.75em;
-						}
-						line: {
-							height: 1.618em;
-						}
-						display: inline-block;
-					}
+			}
+			a {
+				font: {
+					size: 1.75em;
 				}
+				line: {
+					height: 1.618em;
+				}
+				display: inline-block;
 			}
 		}
 	}
