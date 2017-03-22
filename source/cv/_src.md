@@ -226,9 +226,13 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 
 ## For Texas A&M University
 
+**Strategic Planning Committee**, 2016-Present.
+
 **Digital Humanities Working Group Convener**, 2015-Present.
 
-**Writing Committee Member**, 2015-Present.
+**Multimedia Editing & Writing Ad Hoc Committee**, 2015-Present.
+
+**Ad Hoc Writing Committee Member**, 2015-2016.
 
 **Rhetoric & Composition Search Committee Member**, 2015 &ndash; Successful hire for tenure-track assistant professor in History & Theory of Rhetoric.
 
