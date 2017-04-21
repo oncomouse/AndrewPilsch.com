@@ -8,3 +8,30 @@
 	= build? ? inline_js("modernizr-bundle.js") : javascript_include_tag("modernizr-bundle.js")
 - else
 	= build? ? inline_js("bundle.js") : javascript_include_tag("bundle.js")
+	%noscript#deferred-styles
+		= stylesheet_link_tag("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css", :media => "all", :rel => "stylesheet" )
+		= stylesheet_link_tag("https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i", :media => "all", :rel => "stylesheet")
+	:javascript
+		// Load CDN fonts after initial load:
+		var loadDeferredStyles = function() {
+			var addStylesNode = document.getElementById("deferred-styles");
+			var replacement = document.createElement("div");
+			replacement.innerHTML = addStylesNode.textContent;
+			document.body.appendChild(replacement)
+			addStylesNode.parentElement.removeChild(addStylesNode);
+		};
+		var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+					webkitRequestAnimationFrame || msRequestAnimationFrame;
+		if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+		else window.addEventListener('load', loadDeferredStyles);
+		
+		// Google Tracking:
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-660356-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
