@@ -1,12 +1,9 @@
-module ResearchManager
-	class << self
-		def registered(app)
-			app.send :include, Helpers
-		end
-		alias :included :registered
+class ResearchManager < Middleman::Extension
+	def initialize(app, options_hash={}, &block)
+		super
 	end
 	
-	module Helpers
+	helpers do
 		def articles
 			data.research.articles.map do |id, data|
 				

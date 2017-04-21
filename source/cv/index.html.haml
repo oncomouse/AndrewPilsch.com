@@ -13,13 +13,9 @@ layout: false
 		%title Andrew Pilsch - CV
 		%meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0" }/
 
-		-if build?
-			:css
-				#{Tilt.new("source/stylesheets/application.css.scss").render}
-		- else
-			/ Basic Goldilocks Approach CSS structure
-			= stylesheet_link_tag("global.css", :media => "all", :rel => "stylesheet" )
-			= stylesheet_link_tag("layout.css", :media => "all and (min-width: 33.236em)", :rel => "stylesheet" )
+		/ Basic Goldilocks Approach CSS structure
+		= stylesheet_link_tag("global.css", :media => "all", :rel => "stylesheet" )
+		= stylesheet_link_tag("layout.css", :media => "all and (min-width: 33.236em)", :rel => "stylesheet" )
 		
 	%body.cv_standalone			
 		.content
@@ -29,7 +25,7 @@ layout: false
 						= partial "cv/preamble"
 
 					.rendered-cv	
-						= partial "cv/src"
+						= Tilt['markdown'].new(config[:markdown]) { IO.read("source/cv/_src.md").split(/^\.\.\.$/)[1] }.render(app)
 	:javascript
 		var _gaq = _gaq || [];
 		_gaq.push(['_setAccount', 'UA-660356-1']);

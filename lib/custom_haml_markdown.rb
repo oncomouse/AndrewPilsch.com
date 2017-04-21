@@ -14,7 +14,7 @@ module Haml::Filters
             }
 
             ::Tilt.prefer ::Middleman::Renderers::KramdownTemplate
-            template = ::Tilt['md'].new(md_options){ text }.render
+            template = ::Tilt['markdown'].new(md_options){ text }.render(config)
         end
     end
 end

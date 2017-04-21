@@ -8,17 +8,21 @@
 			= article["published"] ? "Published Article" : unpublished_status
 		%p
 			=inline_image article["image"], :alt => "Image Illustrating the article, \"#{article["short_title"]}\""
-		%h1= Haml::Filters::Markdown.render(article["short_title"]).gsub(/\<\/{0,1}[Pp]\>/,"")
+		%h1= Tilt['markdown'].new(config[:markdown]) { article["short_title"] }.render(app).gsub(/\<\/{0,1}[Pp]\>/,"") 
 		- if article["published"] or article["status"].downcase == "revise & resubmit" or article["status"].downcase == "revise and resubmit" or article["status"].downcase == "forthcoming"
 			%p.single-spaced= article["journal_information"]
 		- if article["short_description"]
-			:markdown
+			= markdown do
 				#{article["short_description"]}
 	.expandable
 		.mobile
 			%h2= article["published"] ? "Published Article" : unpublished_status
-		%h1= Haml::Filters::Markdown.render(article["title"]).gsub(/\<\/{0,1}[Pp]\>/,"")
+		-presentation_title = capture_haml do
+			= markdown do
+				#{article["title"]}
+		%h1= presentation_title.gsub(/\<\/{0,1}[Pp]\>/,"")
 		:markdown
+		
 			**#{article["journal_information"]}**
 			
 			#{article["description"]}

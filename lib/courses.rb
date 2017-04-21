@@ -1,17 +1,16 @@
 require 'yaml'
 
-module CourseManager
-	class << self
-		def registered(app)
-			app.send :include, Helpers
-			app.set :course_dir, 'source/courses'
-			app.set :course_image_dir, 'source/courses/images'
-			app.set :course_data_dir, 'source/courses/data'
-		end
-		alias :included :registered
+class CourseManager < Middleman::Extension
+	def initialize(app, options_hash={}, &block)
+		super
+		app.set :course_dir, 'source/courses'
+		app.set :course_image_dir, 'source/courses/images'
+		app.set :course_data_dir, 'source/courses/data'
+		
 	end
+	#alias :included :registered
 	
-	module Helpers
+	helpers do
 		YAML_ERRORS = [ Exception, ArgumentError ]
 
 		if defined?(Psych) && defined?(Psych::SyntaxError)

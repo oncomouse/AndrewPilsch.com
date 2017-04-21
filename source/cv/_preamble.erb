@@ -1,0 +1,13 @@
+<%
+	metadata = YAML.load(IO.read("source/cv/_src.md").split(/^\.\.\.$/)[0])
+%>
+<h1 class="centered"><%="#{metadata['givenname']} #{metadata['familyname']}"%></h1>
+<p class="centered">
+	<strong><%=metadata['jobtitle']%></strong><br>
+	<%=metadata['unit']%><br>
+	<%=metadata['university']%><br>
+</p>
+<p class="centered">
+	<%=js_antispam_email_link(metadata['email'])%><br>
+	<%= link_to metadata['website'], metadata['website']%>
+</p>

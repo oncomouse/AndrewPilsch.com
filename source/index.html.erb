@@ -1,0 +1,42 @@
+<%current_term = "#{CourseDate.to_term(Date.today.month)} #{Date.today.year}"%>
+<header>
+	<div id="logo">
+		<h1>
+			<span class="andrew">Andrew</span>
+			<span class="pilsch">Pilsch</span>
+		</h1>
+	</div>
+	<div id="filters">
+		<h1>See Content Related To:</h1>
+		<ul>
+			<li>
+				<a href="#" data-filter="">All</a>
+			</li>
+			<li>
+				<a href="#" data-filter=".research">Research</a>
+			</li>
+			<li>
+				<a href="#" data-filter=".teaching">Teaching</a>
+			</li>
+			<li>
+				<a href="#" data-filter=".blog">Blog</a>
+			</li>
+		</ul>
+	</div>
+</header>
+<div id="box_container">
+	<%= partial("partials/about")%>
+	<%= partial("partials/research/print_research", :locals => { :type => "book", :front_page => true })%>
+	<%= partial("partials/teaching_philosophy")%>
+	<%= partial("partials/cv")%>
+	<%= partial("partials/find_me")%>
+	<%= partial("partials/research/print_research", :locals => { :type => "article", :front_page => true })%>
+	<%= partial("partials/research/print_research", :locals => { :type => "other", :front_page => true })%>
+	<%= partial("partials/blog")%>
+	<%= partial("partials/research/print_research", :locals => { :type => "presentation", :front_page => true })%>
+	<%= partial("partials/podcasting")%>
+	<%= partial("partials/teaching")%>
+	<%= partial("partials/courses", locals: {current_term: current_term})%>
+	<%= partial("partials/classroom_resources")%>
+	<%= partial("partials/about_site")%>
+</div>
