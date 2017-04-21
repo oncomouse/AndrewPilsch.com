@@ -1,5 +1,10 @@
 -if place == "head"
-	= javascript_include_tag("https://cdnjs.cloudflare.com/ajax/libs/dom4/1.8.3/dom4.js")
+	- #Pull this off a CDN:
+	- if build?
+		- require "open-uri"
+		= "<script>#{URI.parse("https://cdnjs.cloudflare.com/ajax/libs/dom4/1.8.3/dom4.js").read}</script>"
+	- else
+		= javascript_include_tag("https://cdnjs.cloudflare.com/ajax/libs/dom4/1.8.3/dom4.js")
 	= build? ? inline_js("modernizr-bundle.js") : javascript_include_tag("modernizr-bundle.js")
 	<script type="text/javascript">var fontShimPath = '#{asset_path(:css, "fonts/liberation-sans/liberation-sans.css")}';</script>
 - else
