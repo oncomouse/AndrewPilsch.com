@@ -1,0 +1,34 @@
+<div id="<%=article["id"]%>" class="col1 expand box research article no-excerpt<%=article['emphasize'] ? " emphasize" : ""%>">
+	<div class="hideable">
+		<h2>
+			<%if  article["published"] or article["status"].downcase == "forthcoming" 
+				unpublished_status = "Forthcoming Article"
+			else
+				unpublished_status = "Article in Progress"
+			end %>
+			<%= article["published"] ? "Published Article" : unpublished_status %>
+		</h2>
+		<p>
+			<%=inline_image article["image"], :alt => "Image Illustrating the article, \"#{article["short_title"]}\""%>
+		</p>
+		<h1>
+			<%= Tilt['markdown'].new(config[:markdown]) { article["short_title"] }.render(app).gsub(/\<\/{0,1}[Pp]\>/,"")%>
+		</h1> 
+		<% if article["published"] or article["status"].downcase == "revise & resubmit" or article["status"].downcase == "revise and resubmit" or article["status"].downcase == "forthcoming" %>
+			<p class="single-spaced">
+				<%= article["journal_information"] %>
+			</p>
+		<% end %>
+		<% if article["short_description"] %>
+			<%=Tilt['markdown'].new(config[:markdown]) {article["short_description"] }.render(app) %>
+		<% end %>
+	</div>
+	<div class="expandable">
+		<div class="mobile">
+			<h2><%= article["published"] ? "Published Article" : unpublished_status %></h2>
+		</div>
+		<h1><%=Tilt['markdown'].new(config[:markdown]) { article["title"] }.render(app).gsub(/\<\/{0,1}[Pp]\>/,"")%></h1>
+		<p><strong><%=article["journal_information"]%></strong></p>
+		<%=Tilt['markdown'].new(config[:markdown]) { article["description"] }.render(app)%>
+	</div>
+</div>
