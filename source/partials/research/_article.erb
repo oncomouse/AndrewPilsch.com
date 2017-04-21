@@ -9,7 +9,7 @@
 			<%= article["published"] ? "Published Article" : unpublished_status %>
 		</h2>
 		<p>
-			<%=inline_image article["image"], :alt => "Image Illustrating the article, \"#{article["short_title"]}\""%>
+			<%= inline_image article["image"], :alt => "Image Illustrating the article, \"#{article["short_title"]}\""%>
 		</p>
 		<h1>
 			<%= Tilt['markdown'].new(config[:markdown]) { article["short_title"] }.render(app).gsub(/\<\/{0,1}[Pp]\>/,"")%>
