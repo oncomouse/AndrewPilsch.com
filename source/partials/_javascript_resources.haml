@@ -1,5 +1,6 @@
 -if place == "head"
-	= build? ? javascript_inline_tag("custom-modernizr") : javascript_include_tag("custom-modernizr")	
+	= javascript_include_tag("https://cdnjs.cloudflare.com/ajax/libs/dom4/1.8.3/dom4.js")
+	= build? ? inline_js("modernizr-bundle.js") : javascript_include_tag("modernizr-bundle.js")
+	<script type="text/javascript">var fontShimPath = '#{asset_path(:css, "fonts/liberation-sans/liberation-sans.css")}';</script>
 - else
-	- # Next step is to remove source/javascripts/vendor and head-application.js
-	= build? ? javascript_inline_tag("application.js") : javascript_include_tag("application.js")
+	= build? ? inline_js("bundle.js") : javascript_include_tag("bundle.js")

@@ -8,44 +8,35 @@ set :markdown, :fenced_code_blocks => true,
                :smartypants => true,
                :footnotes => true,
                :superscript => true
+set :site_deploy_root, 'http://andrew.pilsch.com'
 
-#activate :sprockets
 if defined? RailsAssets
 	RailsAssets.load_paths.each do |path|
-		sprockets.append_path path
 		compass_config do |config|
 			config.add_import_path path
 		end
 	end
 end
 
-activate :syntax
-
-set :site_deploy_root, 'http://andrew.pilsch.com'
-
 require "lib/courses.rb"
 activate :course_manager
 require "lib/research.rb"
 activate :research_manager
-require "lib/custom_haml_markdown.rb"
+require "lib/markdown-filter.rb"
+activate :markdown_filter
 
 ready do
 	ignore "/**/*.yml"
 end
-
-###
-# Page options, layouts, aliases and proxies
-###
-
-page "*", :layout => "layout"
+activate :external_pipeline,
+  name: :webpack,
+  command: build? ? 'env NODE_ENV=production ./node_modules/.bin/webpack --bail' : 'env NODE_ENV=development ./node_modules/webpack/bin/webpack.js --watch -d',
+  source: ".tmp/",
+  latency: 1
 
 ###
 # Helpers
 ###
-
-# List of jQuery plugins to load on every page.
-#@jquery_plugins = ["isotope","hashchange"]
-
 helpers do
 	# Rot13 encodes a string
 	def rot13(string)
@@ -95,6 +86,25 @@ helpers do
 		asset_path(:js, file_path)
 	end
 	
+	# Inline Asset Helpers:
+	def fname(str, ext)
+		str.concat(ext) unless str.match(ext)
+		str
+	end
+	def render_resource(fname)
+		sitemap.resources.find { |res| res.source_file.match("/" + fname) }.render
+	end
+	def inline_js(*args)
+		args.map do |arg|
+			"<script type='text/javascript'>#{render_resource(fname(arg, '.js'))}</script>"
+		end.join("\n")
+	end
+	def inline_css(*args)
+		args.map do |arg|
+			"<style type='text/css'>#{render_resource(fname(arg, '.css'))}</style>"
+		end.join("\n")
+	end
+	
 	# Build navigation links in which the active page is highlighted:
 	def navigation_link_to(txt, url)
 		page_index = request["path"].gsub("index.html","")
@@ -141,8 +151,6 @@ set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
 
-#activate :directory_indexes
-
 set :haml, { :ugly => true, :format => :html5 }
 
 activate :directory_indexes
@@ -151,34 +159,13 @@ page "/ie8.html", :directory_index => false
 
 # Build-specific configuration
 configure :build do
-  ignore "/courses/*"
-  ignore "blog_old/*"
-  ignore "blog/*"
-  ignore "stylesheets/blog-old/*"
-  
-  # Files included in application.css/.js
-  ignore "stylesheets/global.css"
-  ignore "stylesheets/layout.css"
-  ignore "stylesheets/application.css"
-  ignore "stylesheets/old/*"
-  ignore "stylesheets/fonts/genericons/genericons.css"
-  ignore "javascripts/vendor/jquery/jquery.min.js"
-  ignore "javascripts/vendor/jquery/plugins/jquery.isotope.min.js"
-  ignore "javascripts/vendor/imagesloaded/*"
-  ignore "javascripts/vendor/modernizr/*"
-  ignore "javascripts/application.js"
-  ignore "javascripts/plugins.js"
-  ignore "javascripts/libraries/*"
-  
-  ignore "/**/*.rb"
-
-  # Pack those assets
-  activate :minify_css
-  activate :minify_javascript, :inline => true
-  activate :inliner
-  activate :minify_html do |html|
-	  html.remove_comments = false
-  end
+	ignore "/courses/*"
+	# Pack those assets
+	activate :minify_css, :inline => true
+	activate :minify_javascript, :inline => true
+	activate :minify_html do |html|
+		html.remove_comments = false
+	end
 end
 
 after_build do
@@ -190,8 +177,7 @@ after_build do
 end
 
 activate :deploy do |deploy|
-  deploy.method = :rsync
-  deploy.user = "eschaton"
-  deploy.host = "birkenfeld.dreamhost.com"
+  deploy.deploy_method = :rsync
+  deploy.host = "eschaton@birkenfeld.dreamhost.com"
   deploy.path = "~/www/andrew.pilsch.com/"
 end
