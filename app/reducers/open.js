@@ -1,4 +1,3 @@
-import { Map } from 'immutable';
 import createReducer from 'utilities/createReducer';
 import { OPEN_ACTION, CLOSE_ACTION } from 'constants/ActionTypes';
 
