@@ -24,7 +24,7 @@
     "masonry-layout": "^4.1.1",
     "modernizr": "^3.5.0",
     "modernizr-webpack-plugin": "^1.0.5",
-    "redux": "^3.5.2",
+    "redux": "^3.6.0",
     "vanilla-lazyload": "^7.1.0",
     "webpack": "^2.1.0-beta.4",
     "webpack-dev-server": "^2.1.0-beta.0",
