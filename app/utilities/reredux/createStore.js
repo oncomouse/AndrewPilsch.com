@@ -19,9 +19,7 @@ class Store {
 	}
 	subscribe(func) {
 		this.emitter.on('dispatch', func);
-	}
-	unsubscribe(func) {
-		this.emitter.off('dispatch', func);
+		return () = > this.emitter.off('dispatch', func);
 	}
 }
 export default function(reducers, initialState={}) {
