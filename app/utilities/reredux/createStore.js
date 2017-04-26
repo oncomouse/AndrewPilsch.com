@@ -8,7 +8,7 @@ class Store {
 		} else {
 			this.reducers = combineReducers(reducers);
 		}
-		this.state = this.reducers(initialState, {type: null});
+		this.state = this.reducers(initialState, {});
 	}
 	dispatch(action) {
 		this.state = this.reducers(this.state, action);
@@ -24,7 +24,6 @@ class Store {
 		this.emitter.off('dispatch', func);
 	}
 }
-
 export default function(reducers, initialState={}) {
 	return new Store(reducers, initialState);
 }
