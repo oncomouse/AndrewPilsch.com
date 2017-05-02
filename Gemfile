@@ -20,4 +20,5 @@ source "https://rails-assets.org" do
     gem "rails-assets-normalize.scss"
     gem "rails-assets-susy", ">=2.2.5"
     gem "rails-assets-bourbon", ">=4.2.3"
+	gem "rails-assets-support-for"
 end
