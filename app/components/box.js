@@ -78,7 +78,7 @@ BoxManager.prototype.handleBoxStateChange = function() {
 			document.querySelector('#close_all').parentNode.removeChild(document.querySelector('#close_all'));
 		}
 		this.openBox = openBox;
-		this.isotope.arrange()
+		this.isotope.arrange();
 	}
 }
 BoxManager.prototype.loadImages = function () {
