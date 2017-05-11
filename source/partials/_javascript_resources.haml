@@ -5,7 +5,7 @@
 		= "<script>#{URI.parse("https://cdnjs.cloudflare.com/ajax/libs/dom4/1.8.3/dom4.js").read}</script>"
 	- else
 		= javascript_include_tag("https://cdnjs.cloudflare.com/ajax/libs/dom4/1.8.3/dom4.js")
-	= build? ? inline_js("modernizr-bundle.js") : javascript_include_tag("modernizr-bundle.js")
+	- #build? ? inline_js("modernizr-bundle.js") : javascript_include_tag("modernizr-bundle.js")
 - else
 	= build? ? inline_js("bundle.js") : javascript_include_tag("bundle.js")
 	%noscript#deferred-styles

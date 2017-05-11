@@ -1,6 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
-const ModernizrWebpackPlugin = require('modernizr-webpack-plugin');
+//const ModernizrWebpackPlugin = require('modernizr-webpack-plugin');
 
 const nodeEnv = process.env.NODE_ENV || 'development';
 const isProd = nodeEnv === 'production';
@@ -63,13 +63,16 @@ var webpackConfig = {
 		}
 	},
 	plugins: [
-		new ModernizrWebpackPlugin({
-			'feature-detects': [
-				'css/transforms3d',
-				'css/transitions'
-			],
-			htmlWebpackPlugin: false
-		}),
+		//new ModernizrWebpackPlugin({
+		//	'feature-detects': [
+		//		'css/transforms3d',
+		//		'css/transitions'
+		//	],
+		//	'options': [
+		//		'setClasses'
+		//	],
+		//	htmlWebpackPlugin: false
+		//}),
 		new webpack.optimize.OccurrenceOrderPlugin,
 		new webpack.ProvidePlugin({
             'Promise': 'es6-promise',
