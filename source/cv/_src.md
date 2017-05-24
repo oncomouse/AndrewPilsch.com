@@ -54,7 +54,7 @@ date: 22 November 2014
 
 **"The *Ethos* of *Mr. Robot*."** (Under Review at [*Present Tense*](http://www.presenttensejournal.org/)).
 
-**"Abducting Code, Translating the Future: Transpilers and the Implementation of JavaScript's Future."** (Revise & Resubmit from [*Amodern*](http://amodern.net/) for special issue on "Translation-Machination").
+**"Abducting Code, Translating the Future: Transpilers and the Implementation of JavaScript's Future."** (Forthcoming from [*Amodern*](http://amodern.net/) for special issue on "Translation-Machination").
 
 **"Invoking Darkness: Invoking Darkness: *Skotison*, Scalar Derangement, and Inhuman Rhetoric."** (Forthcoming from *Philosophy & Rhetoric*).
 
