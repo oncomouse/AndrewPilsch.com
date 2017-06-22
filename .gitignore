@@ -3,6 +3,7 @@ source/stylesheets/.sass-cache/*
 vendor
 node_modules
 build
+.tmp
 
 Gemfile.lock
 
