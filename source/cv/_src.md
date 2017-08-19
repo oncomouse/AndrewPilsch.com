@@ -46,27 +46,27 @@ date: 22 November 2014
 
 ***Transhumanism: The Rhetoric of Evolutionary Futurism***
 
-**Six-Chapter Manuscript, In Production at University of Minnesota Press (In Print By November 2107)**---Book explores the rhetorical history of "evolutionary futurism," a twentieth century Utopian rhetorical mode associating advancing telecommunications technologies with biological evolution to suggest near-future radical shifts in human existence and cognition. Tracing this rhetoric of transhumanism, chapters explore the evolutionary futurism of theosophy, 1940s science fiction, Raymond Kurzweil, and Pierre Teilhard de Chardin. In addition to a theoretical introduction, the book also contains an extended discussion of contemporary digital aesthetics as transhuman vectors of evolutionary overcoming.
+**Six-Chapter Manuscript, University of Minnesota (2017)**---Book explores the rhetorical history of "evolutionary futurism," a twentieth century Utopian rhetorical mode associating advancing telecommunications technologies with biological evolution to suggest near-future radical shifts in human existence and cognition. Tracing this rhetoric of transhumanism, chapters explore the evolutionary futurism of theosophy, 1940s science fiction, Raymond Kurzweil, and Pierre Teilhard de Chardin. In addition to a theoretical introduction, the book also contains an extended discussion of contemporary digital aesthetics as transhuman vectors of evolutionary overcoming.
 
 # Publications
 
 ## Articles & Chapters
 
-**"The *Ethos* of *Mr. Robot*."** (Under Review at [*Present Tense*](http://www.presenttensejournal.org/)).
+**"The *Ethos* of *Mr. Robot*."** (Revise & Resubmit at [*Present Tense*](http://www.presenttensejournal.org/)).
 
 **"Abducting Code, Translating the Future: Transpilers and the Implementation of JavaScript's Future."** (Forthcoming from [*Amodern*](http://amodern.net/) for special issue on "Translation-Machination").
-
-**"Invoking Darkness: Invoking Darkness: *Skotison*, Scalar Derangement, and Inhuman Rhetoric."** (Forthcoming from *Philosophy & Rhetoric*).
 
 **"Life During Wartime: Science Fiction during and after World War II."** Chapter in *The Cambridge History of Science Fiction* eds. Gerry Canavan and Eric Carl Link. (Collection Under Contract with Cambridge UP; Forthcoming, 2017).
 
 **"Polynesian Paralysis: Tiki Culture and the Aesthetics of American Empire."** Chapter in *The Year’s Work in Cocktail Culture: The Shaken and the Stirred*. Eds. Stephen Schneider and Craig N. Owens. (Under Preliminary Contract with Indiana UP in "The Year's Work: Studies in Fan Culture and Cultural Theory" series).
 
+**["Invoking Darkness: *Skotison*, Scalar Derangement, and Inhuman Rhetoric."](https://muse.jhu.edu/article/666620)** *Philosophy and Rhetoric* 50.3 (2017): 336-355.
+
 **"'We twiddle...and turn into machines': Mina Loy, HTML, and the Machining of Information."** Chapter in *Reading Modernism with Machines* eds. Shawna Ross & James O'Sullivan (2016).
 
 **["Insect Capital."](http://www.nanocrit.com/issues/8-2015/insect-capital)** _New American Notes Online (NANO)_ 8 (2015).
 
-**"Fan Utopias and Self-Help Supermen: Political Utopianism in WWII-era SF."** _Science Fiction Studies_ 41.3 (2014): 524-542.
+**["Self-Help Supermen: The Politics of Fan Utopias in World War II-Era Science Fiction."](http://www.jstor.org/stable/10.5621/sciefictstud.41.3.0524)** _Science Fiction Studies_ 41.3 (2014): 524-542.
 
 ## Reviews
 
