@@ -3,9 +3,9 @@ require 'yaml'
 class CourseManager < Middleman::Extension
 	def initialize(app, options_hash={}, &block)
 		super
-		app.set :course_dir, 'source/courses'
-		app.set :course_image_dir, 'source/courses/images'
-		app.set :course_data_dir, 'source/courses/data'
+		app.config[:course_dir] = 'source/courses'
+		app.config[:course_image_dir] = 'source/courses/images'
+		app.config[:course_data_dir] = 'source/courses/data'
 		
 	end
 	#alias :included :registered
