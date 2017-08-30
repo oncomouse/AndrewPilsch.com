@@ -24,9 +24,9 @@ class Mobile {
 		}
 	}
 }
-let isotope = configureIsotope(true);
 
-let mobile = new Mobile(isotope);
+const isotope = configureIsotope(true);
+const mobile = new Mobile(isotope);
 
 export default () => {
 	document.querySelector('html').classList.add('js');
