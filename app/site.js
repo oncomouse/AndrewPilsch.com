@@ -8,15 +8,15 @@ import CourseManager from 'components/courses'
 import HelpManager from 'components/help'
 import addOns from 'add-ons'
 
-let store = configureStore();
-let isotope = configureIsotope(false);
+const store = configureStore();
+const isotope = configureIsotope(false);
 
-let filters = new FilterManager(store, isotope);
-let boxes = new BoxManager(store, isotope);
-let images = new ImageManager(store, isotope);
-let courses = new CourseManager(store, isotope);
-let hash = new HashManager(store);
-let help = new HelpManager(store);
+const filters = new FilterManager(store, isotope);
+const boxes = new BoxManager(store, isotope);
+const images = new ImageManager(store, isotope);
+const courses = new CourseManager(store, isotope);
+const hash = new HashManager(store);
+const help = new HelpManager(store);
 
 export default () => {
 	document.querySelector('html').classList.add('js');
@@ -28,5 +28,4 @@ export default () => {
 	boxes.onReady();
 	hash.onReady();
 	courses.onReady();
-	
 }
