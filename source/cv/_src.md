@@ -218,6 +218,10 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 
 ## For Journals
 
+**Manuscript Reviewer**, Fairleigh Dickinson University Press, 2017.
+
+**Manuscript Reviewer**, *PMLA*, 2017.
+
 **Manuscript Reviewer**, *Journal of Digital Literary Studies*, 2016.
 
 **Manuscript Reviewer**, *Rhetoric Society Quarterly*, 2015.
@@ -225,6 +229,8 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 **Digital Projects & Tools Editor**, *Journal of Digital Literary Studies*, 2015-Present.
 
 ## For Texas A&M University
+
+**Graduate Studies Committee**, 2017-Present.
 
 **Strategic Planning Committee**, 2016-Present.
 
