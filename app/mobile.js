@@ -1,5 +1,6 @@
 import addOns from 'add-ons'
 import {prepImages, updateImages} from 'mobile/images'
+import {manageHash} from 'mobile/hash';
 import {addClass, removeClass, toggleClass, removeNode, insertBefore} from 'mobile/dom'
 
 export default function() {
@@ -86,6 +87,7 @@ export default function() {
 					toggleClass(ev.currentTarget,'open');
 					toggleClass(ev.currentTarget.querySelector('i'), 'fa-caret-right')
 					toggleClass(ev.currentTarget.querySelector('i'), 'fa-caret-down')
+					manageHash(ev.currentTarget);
 				
 					updateImages();
 					ev.currentTarget.querySelectorAll('img.lazy').forEach(img => removeClass(img, 'lazy'))
@@ -97,6 +99,7 @@ export default function() {
 			newContentSectionListItem.appendChild(sectionList);
 		}
 	})
+	window.dispatchEvent(new Event('htmlsetup'));
 	addOns()
 	var loadDeferredStyles = function() {
 		var addStylesNode = document.getElementById("deferred-styles-mobile");
