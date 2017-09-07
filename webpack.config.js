@@ -1,6 +1,5 @@
 const webpack = require('webpack');
 const path = require('path');
-//const ModernizrWebpackPlugin = require('modernizr-webpack-plugin');
 
 const nodeEnv = process.env.NODE_ENV || 'development';
 const isProd = nodeEnv === 'production';
@@ -25,7 +24,7 @@ var webpackConfig = {
 	devtool: isProd ? 'hidden-source-map' : 'eval',
 	entry: {
 		js: [
-			'index', 'isotope', 'add-ons'
+			'index', 'vanilla-lazyload', 'add-ons'
 		]
 	},
 	output: {
@@ -63,16 +62,6 @@ var webpackConfig = {
 		}
 	},
 	plugins: [
-		//new ModernizrWebpackPlugin({
-		//	'feature-detects': [
-		//		'css/transforms3d',
-		//		'css/transitions'
-		//	],
-		//	'options': [
-		//		'setClasses'
-		//	],
-		//	htmlWebpackPlugin: false
-		//}),
 		new webpack.optimize.OccurrenceOrderPlugin,
 		new webpack.ProvidePlugin({
             'Promise': 'es6-promise',
