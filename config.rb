@@ -157,6 +157,8 @@ Haml::TempleEngine.disable_option_validator!
 activate :directory_indexes
 page "/blank.html", :directory_index => false
 page "/ie8.html", :directory_index => false
+page "/style.php", :directory_index => false
+page "/modules/Mobile_Detect.php", :directory_index => false
 
 # Build-specific configuration
 configure :build do
