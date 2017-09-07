@@ -145,9 +145,7 @@ html.mobile .expandable .mobile + h1 {
 .open.read-more .expandable {
 	display: block;
 }
-.sr-only {
-	display: none;
-}
+@import "libraries/sr-only";
 .no-fontface {
 	display: none;
 }

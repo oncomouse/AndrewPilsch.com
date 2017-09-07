@@ -542,3 +542,519 @@ html.no-fontface {
 		page-break-after: avoid;
 	}
 }
+// 8. CUSTOM LAYOUT & TYPOGRAPHY (Daddy bear)
+// -----------------------------------------------------------------------------
+// 8a. RESET
+// -----------------------------------------------------------------------------
+body {
+	margin: {
+		left: 1px;
+		right: 1px;
+	}
+}
+//.no-mobile {
+//	display: block;
+//}
+div.mobile {
+	display: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	//text-align: left;
+	line-height: 1;
+}
+h1 {
+	font-size: 2 * $scale * 1rem;
+}
+h2 {
+	font-size: 1.8rem;
+}
+.box,
+.hideable,
+.no-mobile,
+.expandable {
+	& > *:first-child {
+		margin-top: 0 !important;
+	}
+}
+.mobile + h1 {
+	margin-top: 0;
+}
+//#cv_html {
+//	display: block;
+//}
+// 8b. SIZING
+// -----------------------------------------------------------------------------
+.content {
+	max-width: 100%;
+}
+#box_container,
+.expandable {
+	width: 100%;
+	position: relative;
+	top: 10px;
+}
+#column_width,
+#large_box_size,
+#column_padding {
+	display: none;
+}
+#column_width {
+	width: $minimumContentWidth;
+}
+#large_box_size {
+	height: $columnHeight * 2 + ($columnMargin + $columnBorder + $columnPadding) * 2;
+	width: $col3;
+}
+#column_padding {
+	width: $columnPadding;
+}
+.col1 {
+	width: $col1;
+}
+.col2 {
+	width: $col2;
+}
+.col3 {
+	width: $col3;
+}
+.col4 {
+	width: $col4;
+}
+// 8c. HEADER
+// -----------------------------------------------------------------------------
+header {
+	position: relative;
+	min-height: 100px;
+	margin-top: 15px;
+}
+#logo {
+	width: $col1;
+	margin: {
+		bottom: 0;
+		top: 0;
+	}
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#filters {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: $minimumContentWidth;
+	ul {
+		margin: $leading / 2 0 $leading 0;
+		text-align: left;
+	}
+	li {
+		margin: 0 $leading / 32;
+	}
+	h1 {
+		margin: 0 5px;
+	}
+}
+// 8d. BOX CONTAINER
+// -----------------------------------------------------------------------------
+.box {
+	margin: $columnMargin;
+	padding: $columnPadding {
+		bottom: $leading / 2;
+	}
+	border: $columnBorder solid $boxBorderColor;
+	min-height: $columnHeight;
+	//box-shadow: 2px 2px 2px 0px rgba($boxBorderColor, 0.5);
+    border-bottom-width: 2px;
+    border-radius: 4px;
+    border-bottom-color: $boxBorderColorDark;
+	position: relative;
+	&.expanded {
+		height: $expandableHeight;
+		width: $expandableWidth;
+		&:after {
+			display: none;
+		}
+	}
+	&.expand {
+		transition-property: height, width;
+		transition-duration: 0.2s;
+		transition-timing-function: ease;
+		&:after {
+			font: {
+				family: $headerFontFamily;
+				size: 20px;
+				weight: 700;
+			}
+			line-height: 20px;
+			color: white;
+			width: 24px;
+			height: 20px;
+			background: $boxBorderColorDark;
+			opacity: 0.9;
+			position: absolute;
+			top: 0;
+			right: 0;
+			z-index: 2;
+			text-align: center;
+			padding: {
+				top: 0px;
+				bottom: 24px;
+			}
+			content: "+";
+		}
+	}
+}
+.hideable,
+.blog,
+#find_me {
+	h1 {
+		font: {
+			size: 1.25rem;
+		}
+		margin: {
+			top: $leading;
+		}
+	}
+	h2 {
+		font-size: $leading;
+	}
+}
+.hideable,
+.blog {
+	display: block;
+	cursor: pointer;
+}
+.hideable,
+.blog,
+#about {
+	p,
+	h1 {
+		margin-top: $leading / 2;
+	}
+	p {
+		overflow-wrap: normal;
+	    overflow: hidden;
+	    -o-text-overflow: ellipsis;
+	    text-overflow: ellipsis;
+	}
+	// We do this to account for the "+" sign:
+	h2 {
+		width: 93%;
+	}
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+}
+.expandable {
+	display: none;
+	overflow: auto !important;
+	width: auto;
+	height: 100%;
+	padding: $leading / 4 $leading / 2 {
+		bottom: $leading;
+	}
+	margin: {
+		left: 1px;
+		right: 2px;
+	}
+}
+.expanded .hideable {
+	display: none;
+}
+.expanded .expandable {
+	display: block;
+}
+.blog {
+	h2 {
+		br {
+			display: none;
+		}
+		& + h1 {
+			margin: {
+				top: $leading / 2;
+			}
+		}
+	}
+}
+.social_badges {
+	margin: {
+		top: $leading;
+	}
+}
+#teaching_button,
+#research_button {
+	@include plainLink();
+	@include button(simple, $buttonSelectedColor);
+	font: {
+		size: 1.2rem;
+		family: $headerFontFamily;
+	}
+}
+// 8d. HELP
+// -----------------------------------------------------------------------------
+@keyframes helpFadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes helpFadeOut {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+#help {
+	animation: helpFadeOut;
+	animation-timing-function: ease-out;
+	animation-duration: 0.5s;
+	animation-iteration-count: 1;
+	opacity: 0;
+	display: none;
+	z-index: 4;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.4);
+	color: white;
+	padding: $leading / 2;
+	text: {
+		align: right;
+	}
+	&.displayed {
+		display: block;
+		opacity: 1.0;
+		animation-name: helpFadeIn;
+	}
+	p {
+		margin: 0;
+		padding: 0;
+		font: {
+			weight: $headerFontWeight;
+			size: 1.5rem;
+			family: $headerFontFamily;
+		}
+		line-height: $leading * 2;
+	}
+}
+// 8e. CV
+// -----------------------------------------------------------------------------
+.expandable #cv_html {
+	width: 98%;
+}
+#cv {
+	h1.cv {
+		font: {
+			size: 9.5rem;
+			weight: 400;
+		}
+		text: {
+			transform: uppercase;
+			align: center;
+		}
+		margin: 0;
+	}
+	.center {
+		margin: 0 auto;
+	}
+	.center_text,
+	.centered {
+		text-align: center;
+		p {
+			margin: {
+				left: 0 !important;
+			}
+		}
+	}
+	#cv_title {
+		display: none;
+	}
+	#cv_html {
+		> h1:first-child {
+			margin-top: 0;
+		}
+	}
+}
+.rendered-cv {
+	p,
+	ul,
+	ol,
+	dl,
+	table {
+		line-height: 1.4rem;
+		margin-top: 0.7rem;
+		margin-left: $leading;
+	}
+	table {
+		width: 100%;
+	}
+	h1 {
+		border-bottom: 1px solid $bodyFontColor;
+		font: {
+			size: 18pt;
+		}
+		margin: {
+			top: $leading;
+		}
+	}
+	h2,
+	big {
+		font: {
+			size: 15pt;
+		}
+		line: {
+			height: 18pt;
+		}
+		margin: {
+			top: $leading / 2;
+		}
+	}
+	thead {
+		display: none;
+	}
+	tbody {
+		td {
+			&:nth-child(1) {
+				width: 260px;
+			}
+			&:nth-child(2) {
+				width: 245px;
+			}
+			&:nth-child(3) {
+				text-align: right;
+				width: 160px;
+				padding-right: $leading;
+			}
+		}
+	}
+	small {
+		float: right;
+		display: block;
+	}
+	p {
+		margin: {
+			left: $leading;
+		}
+		&.indent {
+			margin: {
+				left: $leading * 2;
+			}
+		}
+		&.hug {
+			margin: {
+				top: 0;
+			}
+		}
+	}
+	ul {
+		list-style: none;
+		margin: {
+			left: 2 * $leading;
+			top: -0.01rem;
+		}
+		padding: 0;
+		li {
+			&:first-child {
+				margin: {
+					top: 0;
+				}
+			}
+		}
+	}
+	table + ul {
+		margin-bottom: 0;
+	}
+	ul + table {
+		margin-top: 0;
+	}
+	.links p {
+		margin: {
+			left: 0;
+		}
+		font: {
+			family: $bodyFontFamily;
+		}
+	}
+}
+// 8c. GALLERY
+// -----------------------------------------------------------------------------
+$galleryWidth: 640px;
+$imageWidth: 200px;
+dl.gallery {
+	width: $galleryWidth;
+	@include clearfix;
+	dt {
+		float: right;
+		width: $galleryWidth - $imageWidth;
+		padding: {
+			bottom: 1em;
+		}
+		text: {
+			align: center;
+		}
+		font: {
+			size: 1em;
+			family: $headerFontFamily;
+			weight: bold;
+		}
+	}
+	dd {
+		margin-left: 0;
+	}
+	dd.image {
+		width: $imageWidth;
+		float: left;
+		margin: 0 {
+			top: 2 * $leading;
+		}
+		padding: {
+			left: 6px;
+		}
+		text: {
+			align: center;
+		}
+		img {
+			display: inline-block;
+			margin: 0;
+		}
+	}
+	dd.description {
+		@include clearfix;
+		float: right;
+		width: $galleryWidth - $imageWidth;
+		padding: {
+			bottom: 1.7em;
+		}
+		*:first-child {
+			margin-top: 0;
+		}
+	}
+	dd a img {
+		border: 1px solid $bodyFontColor;
+	}
+	dd a:hover img {
+		border: 1px solid $bodyLinkColor;
+	}
+}
+// 8c. ABOUT ME
+// -----------------------------------------------------------------------------
+#about {
+	ul {
+		margin: 0;
+		margin-top: 1rem;
+		padding-left: 0.85rem;
+	}
+}
+// 9. CUSTOM LAYOUT & TYPOGRAPHY (Mummy bear)
+// -----------------------------------------------------------------------------
+//@media screen and (min-width: 30em) and (max-width: 60em)
