@@ -9,9 +9,9 @@ body {
 		right: 1px;
 	}
 }
-.no-mobile {
-	display: block;
-}
+//.no-mobile {
+//	display: block;
+//}
 div.mobile {
 	display: none;
 }
@@ -21,7 +21,7 @@ h3,
 h4,
 h5,
 h6 {
-	text-align: left;
+	//text-align: left;
 	line-height: 1;
 }
 h1 {
@@ -41,9 +41,9 @@ h2 {
 .mobile + h1 {
 	margin-top: 0;
 }
-#cv_html {
-	display: block;
-}
+//#cv_html {
+//	display: block;
+//}
 // 8b. SIZING
 // -----------------------------------------------------------------------------
 .content {

@@ -4,7 +4,8 @@
 		<meta charset="utf-8">
 		<title>Andrew Pilsch</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<%= build? ? inline_css("global.css") : stylesheet_link_tag("global.css", :media => "all", :rel => "stylesheet" )%>
+		<%= stylesheet_link_tag("mobile.css", :media => "screen and (max-width: 33.236em)", :rel => "stylesheet" )%>
+		<%= stylesheet_link_tag("global.css", :media => "all and (min-width: 33.236em)", :rel => "stylesheet" )%>
 		<%= stylesheet_link_tag("layout.css", :media => "all and (min-width: 33.236em)", :rel => "stylesheet" )%>
 		<%= partial "partials/javascript_resources", :locals => { :place => "head" }%>
 	</head>

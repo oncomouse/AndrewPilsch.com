@@ -1,0 +1,164 @@
+html.mobile {
+	font-family: "Roboto Mono";
+	font-size: 18px;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+html.mobile h1 {
+	font-size: 1.8rem;
+}
+html.mobile a {
+	text-decoration: none;
+	color: #00F;
+}
+
+.no-expandable h2.no-mobile,
+.no-expandable .no-mobile > h3 {
+	font-size: 1.8rem;
+	border-bottom: 1px dotted black;
+	display: block;
+	margin: 0;
+	padding-top: 2rem;
+    padding-bottom: 0.5rem;
+}
+.no-expandable .box p,
+.no-expandable .box ul,
+.no-expandable .box ol,
+.no-expandable .box h3, {
+	display: none;
+}
+.open-item .box p,
+.open-item .box ul,
+.open-item .box ol,
+.open-item .box h3, {
+	display: block;
+}
+.open #blog + ul {
+	display: flex;
+	box-orient: horizontal;
+	box-direction: normal;
+	flex-wrap: wrap;
+    margin-right: 0;
+    margin-left: 0;
+	&:after, &:before {
+		display: table;
+		content: ' ';
+		flex-basis: 0;
+		flex-preferred-size: 0;
+		flex-basis: 0;
+		box-ordinal-group: 2;
+		order: 1;
+	}
+}
+.open #blog + ul li {
+	border-bottom: 1px dotted black;
+}
+article > h1 {
+	display: none;
+}
+article ul {
+	padding-left: 0;
+}
+article li {
+	list-style: none;
+	padding: {
+		top: 0.8rem;
+		bottom: 0.8rem;
+	}
+	margin: {
+		top: 0.4rem;
+		bottom: 0.4rem;
+	}
+}
+article li li {
+	display: none;
+	margin: 0;
+	padding: 0;
+}
+article li.open li {
+	display: block;
+}
+article li > a:first-child {
+	display: block;
+	width: 100%;
+	font-weight: 700;
+	font-size: 1.8rem;
+}
+article li > a:first-child:after {
+	padding-left: .7em;
+	font: normal normal normal 14px/1 FontAwesome;
+	content: "\f0da";
+}
+article li.open > a:first-child:after {
+	content: "\f0d7";
+}
+img.lazy {
+	display: none;
+}
+html.mobile #filters,
+html.mobile #box_container,
+html.mobile #help {
+	display :none;
+}
+html.mobile .hideable {
+	border-bottom: 1px dotted black;
+	padding: {
+		top: 2rem;
+		bottom: 0.5rem;
+	}
+}
+html.mobile .hideable p {
+	display: none;
+}
+li.open li.open p {
+	display: block;
+}
+html.mobile .hideable h2 {
+	margin: {
+		top: 0;
+		bottom: 0;
+		left: 0.5rem;
+	}
+}
+html.mobile .hideable h1 {
+	margin: {
+		top: -0.5rem;
+		bottom: 0;
+	}
+}
+html.mobile .hideable i {
+	font-size: 14px;
+}
+html.mobile .mobile {
+	display: none;
+}
+html.mobile .expandable {
+	display: none;
+}
+html.mobile .expandable > h1:first-child,
+html.mobile .expandable .mobile + h1 {
+	display: none;
+}
+.open.read-more .expandable {
+	display: block;
+}
+.sr-only {
+	display: none;
+}
+.no-fontface {
+	display: none;
+}
+html.mobile #find_me a {
+	color: black;
+	font-size: 1.5rem;
+}
+html.mobile #find_me .social_badges {
+	text-align: center;
+}
+html.no-js header,
+html.no-js article {
+	display: none;
+}

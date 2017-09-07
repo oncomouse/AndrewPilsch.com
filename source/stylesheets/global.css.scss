@@ -360,68 +360,18 @@ html.no-fontface {
 		}
 	}
 }
-//  6. CUSTOM LAYOUT & TYPOGRAPHY (Baby bear)
-//  -----------------------------------------------------------------------------
-h1,
-h2,
-h3,
-h4 {
-	text-align: center;
-}
-.content {
-	max-width: $babyBearColumnSize;
-}
-.no-mobile {
-	display: none;
-}
-.hideable {
-	display: none;
-}
-.box {
-	h1,
-	h2 {
-		line-height: 1;
-	}
-	h2 + h1 {
-		margin-top: 0;
-	}
-}
 .col1,
 .col2,
 .col3,
 .col4 {
-	width: 100%;
+	//width: 100%;
 	img {
 		max-width: 90%;
 		display: block;
 		margin: 0 auto;
 	}
 }
-.mobile {
-	& + h1 {
-		margin-top: $leading / 2;
-		line-height: 1;
-	}
-}
-.colh1 {
-	height: $colh1;
-}
-.colh2 {
-	height: $colh2;
-}
-.colh3 {
-	height: $colh3;
-}
-.colh4 {
-	height: $colh4;
-}
 #logo {
-	float: none;
-	margin: {
-		top: 7.5rem;
-		bottom: 2rem;
-	}
-	width: 100%;
 	a {
 		color: black;
 		&:hover {
@@ -435,51 +385,95 @@ h4 {
 		margin-top: -0.75rem;
 	}
 }
-#filters {
-	display: block;
-	position: fixed;
-	background: $bodyBackgroundColor;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 3;
-	h1 {
-		margin: 0 {
-			top: $leading / 2;
-		}
-	}
-	ul {
-		margin: 0 {
-			top: $leading;
-			bottom: $leading / 2;
-		}
-		text-align: center;
-		li {
-			margin: $leading / 32;
-		}
-	}
-}
-body.cv_standalone {
-	#cv {
-		margin: 0 auto;
-		max-width: 960px;
-	}
-}
-#cv_html {
-	display: none;
-}
-#cv {
-	.links {
-		margin-top: $leading;
-		text-align: center;
-	}
-}
-div.mobile {
-	display: block;
-}
-#help {
-	display: none;
-}
+//  6. CUSTOM LAYOUT & TYPOGRAPHY (Baby bear)
+//  -----------------------------------------------------------------------------
+///*h1,
+//h2,
+//h3,
+//h4 {
+//	text-align: center;
+//}*/
+///*.content {
+//	max-width: $babyBearColumnSize;
+//}*/
+///*.no-mobile {
+//	display: none;
+//}*/
+///*.hideable {
+//	display: none;
+//}*/
+///*.box {
+//	h1,
+//	h2 {
+//		line-height: 1;
+//	}
+//	h2 + h1 {
+//		margin-top: 0;
+//	}
+//}*/
+///*.mobile {
+//	& + h1 {
+//		margin-top: $leading / 2;
+//		line-height: 1;
+//	}
+//}*/
+///*.colh1 {
+//	height: $colh1;
+//}*/
+///*.colh2 {
+//	height: $colh2;
+//}*/
+///*.colh3 {
+//	height: $colh3;
+//}*/
+///*.colh4 {
+//	height: $colh4;
+//}*/
+///*#filters {
+//	display: block;
+//	position: fixed;
+//	background: $bodyBackgroundColor;
+//	top: 0;
+//	left: 0;
+//	right: 0;
+//	z-index: 3;
+//	h1 {
+//		margin: 0 {
+//			top: $leading / 2;
+//		}
+//	}
+//	ul {
+//		margin: 0 {
+//			top: $leading;
+//			bottom: $leading / 2;
+//		}
+//		text-align: center;
+//		li {
+//			margin: $leading / 32;
+//		}
+//	}
+//}*/
+///*body.cv_standalone {
+//	#cv {
+//		margin: 0 auto;
+//		max-width: 960px;
+//	}
+//}*/
+///*#cv_html {
+//	display: none;
+//}*/
+///*#cv {
+//	.links {
+//		margin-top: $leading;
+//		text-align: center;
+//	}
+//}*/
+///*div.mobile {
+//	display: block;
+//}*/
+///*#help {
+//	display: none;
+//}*/
 //  7. BROWSER AND NON-SEMANTIC STYLING
 //  -----------------------------------------------------------------------------
 .clearfix {

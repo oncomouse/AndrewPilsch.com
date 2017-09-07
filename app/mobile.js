@@ -1,43 +1,115 @@
-import configureIsotope from 'isotope'
 import addOns from 'add-ons'
+import {prepImages, updateImages} from 'mobile/images'
+import {addClass, removeClass, toggleClass, removeNode, insertBefore} from 'mobile/dom'
 
-class Mobile {
-	constructor(isotope) {
-		this.isotope = isotope;
-		this.filterState = null;
-		this.imageState = false;
-	}
-	changeFilter(ev) {
-		ev.preventDefault();
-	
-		let filterTarget = ev.target.getAttribute('data-filter');
-		if(filterTarget === '') {
-			filterTarget = null;
-		}
-		if(this.filterState !== filterTarget){
-			this.isotope.arrange({
-				filter: filterTarget
+export default function() {
+
+	const attachReadMoreLink = function(newNode) {
+		if(newNode.querySelector('.expandable') !== null) {
+			const readMoreParagraph = document.createElement('P');
+			const readMoreLink = document.createElement('A');
+			readMoreLink.setAttribute('href', '#');
+			readMoreLink.innerHTML = 'Read More';
+			readMoreLink.addEventListener('click', function(ev) {
+				if(ev.defaultPrevented) {
+					return;
+				}
+				ev.preventDefault();
+				ev.currentTarget.parentNode.style.display = 'none';
+				addClass(newNode.parentNode, 'read-more')
 			});
-			this.filterState = filterTarget;
-			document.querySelector('#filters a.selected').classList.remove('selected');
-			document.querySelector(`#filters a[data-filter="${filterTarget === null ? "" : filterTarget}"]`).classList.add('selected');
+			readMoreParagraph.appendChild(readMoreLink);
+			const target = newNode.querySelector('.hideable');
+			(target === null ? newNode : target).appendChild(readMoreParagraph);
 		}
 	}
-}
 
-const isotope = configureIsotope(true);
-const mobile = new Mobile(isotope);
+	prepImages();
 
-export default () => {
-	document.querySelector('html').classList.add('js');
-	document.querySelector('html').classList.remove('no-js');
-	
-	document.querySelector('#filters a[data-filter=""]').classList.add('selected');
-	
-	// Attach filter click events:
-	document.querySelectorAll('#filters a').forEach((el) => el.addEventListener('click', mobile.changeFilter.bind(mobile)));
-	
-	// Run Add-Ons when layout is finished:
-	isotope.once('layoutComplete', () => addOns())
-	isotope.layout();
+	// Move "#about":
+	document.querySelector('header').insertBefore(document.querySelector('#about'), document.querySelector('#filters'));
+
+	// Clone and move "#find_me":
+	const newFindMe = document.querySelector('#find_me').cloneNode(true);
+	removeNode(document.querySelector('#find_me'));
+	insertBefore(document.querySelector('#filters'), newFindMe);
+
+	const newContent = document.createElement('ARTICLE');
+	const newContentList = document.createElement('UL');
+	newContent.appendChild(newContentList);
+	insertBefore(document.querySelector('#box_container'), newContent);
+
+	document.querySelectorAll('#filters a').forEach(link => {
+		if(link.getAttribute('data-filter') !== '') {
+		
+			// Create an LI and an A (to attach events) to:
+			const newContentSectionListItem = document.createElement('LI');
+			const newContentLink = link.cloneNode(true);
+			newContentSectionListItem.appendChild(newContentLink);
+			newContentList.appendChild(newContentSectionListItem);
+			newContentLink.setAttribute('id', link.getAttribute('data-filter').replace(/^\./,''));
+		
+			// Attach a clickable event to the top-level links:
+			newContentLink.addEventListener('click', function(ev) {
+				if(ev.defaultPrevented) {
+					return;
+				}
+				ev.preventDefault();
+				toggleClass(ev.currentTarget.parentNode, 'open')
+			});
+			// Begin creator the second layer list that will contain the content:
+			const sectionList = document.createElement('UL');
+			document.querySelectorAll(`#box_container ${link.getAttribute('data-filter')}`).forEach(function(node) {
+				const sectionListItem = document.createElement('LI');
+				const newNode = node.cloneNode(true);
+			
+				// Attach content to the LI:
+				sectionListItem.appendChild(newNode);
+			
+				// Attach a "read more" link:
+				attachReadMoreLink(newNode);
+				if(newNode.querySelector('.hideable') !== null) {
+					const clickableHeaders = newNode.querySelectorAll('.hideable h1, .hideable h2')
+					clickableHeaders[clickableHeaders.length - 1].insertAdjacentHTML('beforeend', '&nbsp;<i class="fa fa-caret-right" aria-hidden="true"></i>');
+				}
+			
+				// Handle content that is not expandable:
+				if(newContentLink.getAttribute('id') !== 'blog' && newNode.querySelector('.expandable') === null && newNode.querySelector('.expandable') === null) {
+					addClass(sectionListItem, 'no-expandable')
+				}
+				// Add event that will open each second order list item
+				sectionListItem.addEventListener('click', function(ev) {
+					if(ev.defaultPrevented) {
+						return;
+					}
+					ev.preventDefault();
+					toggleClass(ev.currentTarget,'open');
+					toggleClass(ev.currentTarget.querySelector('i'), 'fa-caret-right')
+					toggleClass(ev.currentTarget.querySelector('i'), 'fa-caret-down')
+				
+					updateImages();
+					ev.currentTarget.querySelectorAll('img.lazy').forEach(img => removeClass(img, 'lazy'))
+				})
+				// Attach the section list item to the list:
+				sectionList.appendChild(sectionListItem)
+			});
+			// Attach the section list:
+			newContentSectionListItem.appendChild(sectionList);
+		}
+	})
+	addOns()
+	var loadDeferredStyles = function() {
+		var addStylesNode = document.getElementById("deferred-styles-mobile");
+		var replacement = document.createElement("div");
+		replacement.innerHTML = addStylesNode.textContent;
+		document.body.appendChild(replacement)
+		addStylesNode.parentElement.removeChild(addStylesNode);
+	};
+	var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+				webkitRequestAnimationFrame || msRequestAnimationFrame;
+	if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+	else window.addEventListener('load', loadDeferredStyles);
+	removeClass(document.querySelector('html'), 'no-js')
+	addClass(document.querySelector('html'), 'mobile')
+	addClass(document.querySelector('html'), 'js')
 }
