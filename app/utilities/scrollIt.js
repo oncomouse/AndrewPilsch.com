@@ -1,4 +1,7 @@
 // Vanilla JS scrollTop: https://pawelgrzybek.com/page-scroll-in-vanilla-javascript/
+// Patched to use raf as a requestAnimationFrame polyfill
+import raf from 'raf'
+
 export default function scrollIt(destination, duration = 200, easing = 'linear', callback) {
 
   const easings = {
@@ -51,14 +54,6 @@ export default function scrollIt(destination, duration = 200, easing = 'linear',
   const destinationOffset = typeof destination === 'number' ? destination : destination.offsetTop;
   const destinationOffsetToScroll = Math.round(documentHeight - destinationOffset < windowHeight ? documentHeight - windowHeight : destinationOffset);
 
-  if ('requestAnimationFrame' in window === false) {
-    window.scroll(0, destinationOffsetToScroll);
-    if (callback) {
-      callback();
-    }
-    return;
-  }
-
   function scroll() {
     const now = 'now' in window.performance ? performance.now() : new Date().getTime();
     const time = Math.min(1, ((now - startTime) / duration));
@@ -72,7 +67,7 @@ export default function scrollIt(destination, duration = 200, easing = 'linear',
       return;
     }
 
-    requestAnimationFrame(scroll);
+    raf(scroll);
   }
 
   scroll();
