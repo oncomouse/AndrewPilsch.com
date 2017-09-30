@@ -1,11 +1,11 @@
 // Vanilla JS offset: https://jsperf.com/test-offset-jquery-vs-vanilla
 
-export default function offset(elt) {
-	const rect = elt.getBoundingClientRect();
-	const bodyElt = document.body;
+export default function offset(el) {
+	const rect = el.getBoundingClientRect();
+	const bodyEl = document.body.getBoundingClientRect();
 
 	return {
-		top: rect.top + bodyElt .scrollTop,
-		left: rect.left + bodyElt .scrollLeft
+		top: rect.top - bodyEl.top,
+		left: rect.left - bodyEl.left
 	}
 }
