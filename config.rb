@@ -96,7 +96,7 @@ helpers do
 	end
 	def inline_js(*args)
 		args.map do |arg|
-			"<script type='text/javascript'>#{render_resource(fname(arg, '.js'))}</script>"
+			"<script type='text/javascript' defer>#{render_resource(fname(arg, '.js'))}</script>"
 		end.join("\n")
 	end
 	def inline_css(*args)
