@@ -42,9 +42,9 @@ export default class BoxManager {
 		elem.classList.add('expanded');
 		this.transitionEvent & elem.addEventListener(this.transitionEvent, (e) => {
 			// Scroll to the open box on arrangeComplete:
-			this.isotope.once('arrangeComplete', () => scrollIt(offset(e.target).top - (this.columnPadding * 2), 500));
+			this.isotope.once('layoutComplete', () => scrollIt(offset(e.target).top - (this.columnPadding * 2), 500));
 			// Trigger rearrangement:
-			this.isotope.arrange();
+			this.isotope.layout();
 		}, {once: true});
 	}
 	renderCloseBox(elem) {
