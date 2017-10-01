@@ -2,6 +2,7 @@ import addOns from 'add-ons'
 import {prepImages, updateImages} from 'mobile/images'
 import {manageHash} from 'mobile/hash';
 import {addClass, removeClass, toggleClass, removeNode, insertBefore} from 'mobile/dom'
+import raf from 'raf'
 
 export default function() {
 
@@ -108,10 +109,7 @@ export default function() {
 		document.body.appendChild(replacement)
 		addStylesNode.parentElement.removeChild(addStylesNode);
 	};
-	var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-				webkitRequestAnimationFrame || msRequestAnimationFrame;
-	if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
-	else window.addEventListener('load', loadDeferredStyles);
+	raf(function() { window.setTimeout(loadDeferredStyles, 0); });
 	removeClass(document.querySelector('html'), 'no-js')
 	addClass(document.querySelector('html'), 'mobile')
 	addClass(document.querySelector('html'), 'js')
