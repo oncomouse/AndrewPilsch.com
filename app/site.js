@@ -7,6 +7,7 @@ import ImageManager from 'components/images'
 import CourseManager from 'components/courses'
 import HelpManager from 'components/help'
 import addOns from 'add-ons'
+import raf from 'raf'
 
 const store = configureStore();
 const isotope = configureIsotope(false);
@@ -37,8 +38,5 @@ export default () => {
 		document.body.appendChild(replacement)
 		addStylesNode.parentElement.removeChild(addStylesNode);
 	};
-	var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-				webkitRequestAnimationFrame || msRequestAnimationFrame;
-	if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
-	else window.addEventListener('load', loadDeferredStyles);
+	raf(function() { window.setTimeout(loadDeferredStyles, 0); });
 }
