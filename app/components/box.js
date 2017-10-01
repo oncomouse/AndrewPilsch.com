@@ -53,7 +53,7 @@ export default class BoxManager {
 		elem.classList.remove('expanded');
 		this.transitionEvent & elem.addEventListener(this.transitionEvent, (e) => {
 			// Trigger rearrangment:
-			this.isotope.arrange();
+			this.isotope.layout();
 			// Reattach the ability to open the box:
 			e.target.addEventListener('click', this.dispatchOpenBox.bind(this), {once: true});
 		}, {once: true});
