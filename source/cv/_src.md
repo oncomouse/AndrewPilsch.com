@@ -124,7 +124,13 @@ Philip Young Memorial Endowment in American Literature, 2006. (Penn State)
 
 ## Conference Presentations
 
-**Roundtable Participant, "Working Out Loud: Online Identity Building, Digital Networking, and Professional Development"** *132nd MLA Annual Convention*, Philadelphia, PA, 2017.
+**"Security Through Transparency: Minimal Computing in the Jungle of the Real."** *133rd MLA Annual Convention*, New York, NY, 2018. (Accepted)
+
+**"The Jungle of the Real: Hacking Infrastructure After Baudrillard."** *The Society For Literature, Science, and the Arts 2017 Conference*, Tempe, AZ, 2017. (Accepted)
+
+**"Rocket Into Darkness: Accelerationism, Space, and the Future of the Future."** *The Society For Literature, Science, and the Arts 2017 Conference*, Tempe, AZ, 2017. (Accepted)
+
+**Roundtable Participant, "Working Out Loud: Online Identity Building, Digital Networking, and Professional Development."** *132nd MLA Annual Convention*, Philadelphia, PA, 2017.
 
 **["_Lachrymator_: Persuasion's Tear Gas."](https://oaktrust.library.tamu.edu/handle/1969.1/159126)** _17th Biennial RSA Conference_, Atlanta, GA, 2016.
 
