@@ -6,7 +6,7 @@ conference: "The Society For Literature, Science, and the Arts 2017 Conference"
 conference_url: http://litsciarts.org/slsa17/
 conference_location: Tempe, AZ
 date: 11/11/2017
-emphasize: true
+emphasize: false
 short_description: |+
   Questions about the relationship between space in science and weird fiction and the radical construction of the future in contemporary theory.
 description: |+
