@@ -6,7 +6,7 @@ conference: "The Modern Languages Association Convention"
 conference_url: "http://www.mla.org/convention"
 conference_location: "Austin, TX"
 date: 1/5/2018
-emphasize: true
+emphasize: false
 short_description: |+
     Does minimal computing mean minimal complexity in the age of the accident?
 description: |+
