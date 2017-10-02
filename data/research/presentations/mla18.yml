@@ -1,0 +1,15 @@
+id: mla18
+front_page: true
+title: "Security Through Transparency: Minimal Computing in the Jungle of the Real"
+short_title: "Security Through Transparency"
+conference: "The Modern Languages Association Convention"
+conference_url: "http://www.mla.org/convention"
+conference_location: "Austin, TX"
+date: 1/5/2018
+emphasize: true
+short_description: |+
+    Does minimal computing mean minimal complexity in the age of the accident?
+description: |+
+    Paul Virilio has argued throughout his oeuvre that on the speed-obsessed contemporary globe, the industrial accident (an explosion at a fertilizer plant, say) becomes indistinguishable from terrorism. With this indistinguishability in mind, this paper argues that minimal computing, as a paradigm for designing information systems, functions as a security measure against the proliferation of accidents documented by Virilio. In thinking about information systems and minimalism, I argue that one cluster in Jentery Sayers's definitions of minimal computing is "minimal complexity," a strategy for designing information systems to minimize accidents. This turn to minimal complexity, of which the turn to immutability in JavaScript development is one example, is a response to a recent, and dangerously overlooked, revision to the way we think about digital technology. Where Jean Baudrillard famously declared that media technology produce a desert of the real, recent work in infrastructure studies has instead manifested the jungle of the real in which we live. As ecologists know, jungles are densely entangled, information rich systems that sustain a staggering complexity of life forms. Where scholars of Baudrillard's generation saw the digitization of life as an evacuation of the real, we find in studying infrastructure a tangle that sustains this virtuality that is rich in complexity and, also, ripe for accidents. As such, I conclude by proposing that minimal computing is a paradigm for securing infrastructure in an age of accidents.
+    
+    Image Source: [DennisM2](https://www.flickr.com/photos/dennism2/32861719652/in/photolist-S4SUnj-76Y6zH-cXXqXy-q1DJXA-qfWcPy-dbdGGh-pymswK-pVRDno-UTiRvS-dd2HhH-FbT2X3-QBzLox-qYiH81-bov2cY-YCnjLU-FsLLeC-dbdKCZ-inZCEU-4P2q52-dPcqJ1-mjhDwB-gSLReD-dTa6ng-inZMmu-mjhubJ-a1AiZb-qy6vh2-dJqaHa-fBvhjC-Hz8FCc-772ZsC-ccjB1w-7eirY9-9ixUfK-4Hrq53-62WDMu-a1xpCg-YNW7S7-cXMh9A-nWcVw9-G9QvSn-dUkzDb-a6BM2e-WK4Rsp-Hz8FMk-5PigdF-WUBGyT-YcimBE-bqaH2U-bD5D4e)
