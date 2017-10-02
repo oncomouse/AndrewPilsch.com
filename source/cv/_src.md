@@ -70,6 +70,8 @@ date: 22 November 2014
 
 ## Reviews
 
+**["Ethical Models for Nonhuman, Collective Rhetoric: A Review of *Against Purity: Living Ethically in Compromised Times* by Alexis Shotwell and *Minimal Ethics for the Anthropocene* by Joanna Zylinska"](http://enculturation.net/ethical_models)**. *Enculturation* (2017).
+
 **["After 'The' 'Text': A Review of Comparative Textual Media."](http://enculturation.net/comparative-textual-media)** Review of *Comparative Textual Media* edited by N. Katherine Hayles and Jessica Pressman. *Enculturation* (2016).
 
 **"Review of _MP3: The Meaning of a Format_ by Jonathan Sterne."** _Information Society_ 29.5 (2013): 316-317.
