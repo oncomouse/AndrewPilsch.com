@@ -14,9 +14,14 @@ layout: false
 		%meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0" }/
 
 		/ Basic Goldilocks Approach CSS structure
-		= stylesheet_link_tag("global.css", :media => "all", :rel => "stylesheet" )
-		= stylesheet_link_tag("layout.css", :media => "all and (min-width: 33.236em)", :rel => "stylesheet" )
-		
+		= stylesheet_link_tag("site.css", :media => "all", :rel => "stylesheet" )
+		:scss
+			body.cv_standalone {
+				max-width: 960px;
+				margin: auto;
+				width: 95%;
+				margin-bottom: 12rem;
+			}
 	%body.cv_standalone			
 		.content
 			#cv
