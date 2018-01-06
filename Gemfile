@@ -10,11 +10,11 @@ gem "middleman", "~> 4"
 gem "middleman-compass"
 gem "middleman-autoprefixer"
 gem "middleman-minify-html"
+gem "middleman-livereload"
 gem 'middleman-deploy', github: 'middleman-contrib/middleman-deploy', branch: 'master'
 
 gem "fastimage"
 
-gem "oj"
 gem 'wdm', '>= 0.1.0' if RbConfig::CONFIG['target_os'] =~ /mswin|mingw/i
 
 source "https://rails-assets.org" do

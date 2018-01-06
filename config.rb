@@ -4,7 +4,7 @@
 
 set :markdown_engine, :kramdown
 set :markdown, :fenced_code_blocks => true,
-               :autolink => true, 
+               :autolink => true,
                :smartypants => true,
                :footnotes => true,
                :superscript => true
@@ -25,6 +25,8 @@ activate :research_manager
 require "lib/markdown-filter.rb"
 activate :markdown_filter
 
+activate :livereload, host: "0.0.0.0"
+
 ready do
 	ignore "/**/*.yml"
 end
@@ -42,7 +44,7 @@ helpers do
 	def rot13(string)
 	  string.tr "A-Za-z", "N-ZA-Mn-za-m"
 	end
- 
+
 	# HTML encodes ASCII chars a-z, useful for obfuscating
 	# an email address from spiders and spammers
 	def html_obfuscate(string)
@@ -50,18 +52,18 @@ helpers do
 	  lower = %w(a b c d e f g h i j k l m n o p q r s t u v w x y z)
 	  upper = %w(A B C D E F G H I J K L M N O P Q R S T U V W X Y Z)
 	  char_array = string.split('')
-	  char_array.each do |char|  
+	  char_array.each do |char|
 	    output = lower.index(char) + 97 if lower.include?(char)
 	    output = upper.index(char) + 65 if upper.include?(char)
 	    if output
 	      output_array << "&##{output};"
-	    else 
+	    else
 	      output_array << char
 	    end
 	  end
 	  return output_array.join
 	end
- 
+
 	# Takes in an email address and (optionally) anchor text,
 	# its purpose is to obfuscate email addresses so spiders and
 	# spammers can't harvest them.
@@ -70,7 +72,7 @@ helpers do
 	  user   = html_obfuscate(user)
 	  domain = html_obfuscate(domain)
 	  # if linktext wasn't specified, throw encoded email address builder into js document.write statement
-	  linktext = "'+'#{user}'+'@'+'#{domain}'+'" if linktext == email 
+	  linktext = "'+'#{user}'+'@'+'#{domain}'+'" if linktext == email
 	  rot13_encoded_email = rot13(email) # obfuscate email address as rot13
 	  out =  "<noscript>#{linktext}<br/><small>#{user}(at)#{domain}</small></noscript>\n" # js disabled browsers see this
 	  out += "<script language='javascript'>\n"
@@ -81,11 +83,11 @@ helpers do
 	  out += "</script>\n"
 	  return out
 	end
-	
+
 	def javascript_path(file_path)
 		asset_path(:js, file_path)
 	end
-	
+
 	# Inline Asset Helpers:
 	def fname(str, ext)
 		str.concat(ext) unless str.match(ext)
@@ -104,25 +106,25 @@ helpers do
 			"<style type='text/css'>#{render_resource(fname(arg, '.css'))}</style>"
 		end.join("\n")
 	end
-	
+
 	# Build navigation links in which the active page is highlighted:
 	def navigation_link_to(txt, url)
 		page_index = request["path"].gsub("index.html","")
-		
+
 		if url == "/#{page_index}"
 			return link_to(txt, url, :class => "active")
 		end
 		link_to(txt,url)
 	end
-    
+
     def image_link(source, options={})
         link_to(image_tag(source, options), image_path(source))
     end
-    
+
     def blog_link(txt, key)
         link_to txt, blog_url(key)
     end
-    
+
     def blog_url(key)
         object = blog.articles.find{ |article| article.title.downcase.include? key.downcase or article.url.include? key}
         if object.respond_to? :url
