@@ -76,6 +76,8 @@ date: 22 November 2014
 
 ## Reviews
 
+**["Review of *Technosystems* by Andrew Feenberg"](https://link-springer-com/article/10.1057/s41296-017-0184-1?wt_mc=Internal.Event.1.SEM.ArticleAuthorOnlineFirst)**. *Contemporary Political Theory* (2017).
+
 **["Ethical Models for Nonhuman, Collective Rhetoric: A Review of *Against Purity: Living Ethically in Compromised Times* by Alexis Shotwell and *Minimal Ethics for the Anthropocene* by Joanna Zylinska"](http://enculturation.net/ethical_models)**. *Enculturation* (2017).
 
 **["After 'The' 'Text': A Review of Comparative Textual Media."](http://enculturation.net/comparative-textual-media)** Review of *Comparative Textual Media* edited by N. Katherine Hayles and Jessica Pressman. *Enculturation* (2016).
@@ -140,12 +142,12 @@ Philip Young Memorial Endowment in American Literature, 2006. (Penn State)
 
 **"Events in Flux: Software Architecture and Rhetorical Subtraction."** *18th Biennial RSA Conference*, Minneapolis, MN, 2018. (Accepted)
 
-**"Security Through Transparency: Minimal Computing in the Jungle of the Real."** *133rd MLA Annual Convention*, New York, NY, 2018. (Accepted)
+**"Security Through Transparency: Minimal Computing in the Jungle of the Real."** *133rd MLA Annual Convention*, New York, NY, 2018.
 
 **Facilitator, "Commonsense Information Security
-for Academics."** *133rd MLA Annual Convention*, New York, NY, 2018. (Accepted)
+for Academics."** *133rd MLA Annual Convention*, New York, NY, 2018. (Cancelled Due to Weather)
 
-**Roundtable Participant, "Hacking the Scholarly Worklow."**  *133rd MLA Annual Convention*, New York, NY, 2018. (Accepted)
+**Roundtable Participant, "Hacking the Scholarly Worklow."**  *133rd MLA Annual Convention*, New York, NY, 2018. (Cancelled Due to Weather)
 
 **"The Jungle of the Real: Hacking Infrastructure After Baudrillard."** *The Society For Literature, Science, and the Arts 2017 Conference*, Tempe, AZ, 2017.
 
@@ -223,16 +225,16 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 
 [**H.P. Lovecraft: Style, Science, Myth**](https://andrew.pilsch.com/courses/eng394spr2013) (_2 Section; 60 Students; Online Course_) -- In this course on the horror fiction of H.P. Lovecraft, students use digital humanities methods to complete projects dealing with Lovecraft's unique style, interest in science, and contemporary mythology.
 
-[**Introduction to Contemporary Fiction**](https://andrew.pilsch.com/courses/eng204spr2013//) (_3 Section; 90 Students; Online Course_) -- Course introduces students to the current state of American fiction by focusing on novels published by living authors within the last three years.	
+[**Introduction to Contemporary Fiction**](https://andrew.pilsch.com/courses/eng204spr2013//) (_3 Section; 90 Students; Online Course_) -- Course introduces students to the current state of American fiction by focusing on novels published by living authors within the last three years.
 
 [**Popular Cultural Issues: Apocalypse Now?**](https://dl.dropboxusercontent.com/u/28696035/eng245_online.html) (_1 Section; 30 Students; Online Course_) -- Course asks students to think critically about the continuing popularity of post-apocalyptic and end-of-the-world narratives in contemporary literature, film, and television.
 
 
 ## Pennsylvania State University <small>(16 Sections; 5 Courses; 644 Students)</small>
 
-**Rhetoric &amp; Composition** (_6 Sections; 144 Students_) -- This first-year composition option at Penn State introduces students to college writing, critical thinking, and basic rhetorical theory. 
+**Rhetoric &amp; Composition** (_6 Sections; 144 Students_) -- This first-year composition option at Penn State introduces students to college writing, critical thinking, and basic rhetorical theory.
 
-**Effective Writing: Technical Writing** (_7 Sections; 168 Students_) -- Advanced composition class for students in science and engineering fields. Focus on document design, readability, and technologies of communication. 
+**Effective Writing: Technical Writing** (_7 Sections; 168 Students_) -- Advanced composition class for students in science and engineering fields. Focus on document design, readability, and technologies of communication.
 
 **Effective Writing: Business Writing** (_2 Sections; 48 Students_) -- Advanced composition class for students in business fields. Focus on effective and ethical communication, document design, and branding.
 
@@ -304,6 +306,6 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 
 **The Society for Literature, Science, and the Arts**
 
-# References 
+# References
 
 Available Upon Request
