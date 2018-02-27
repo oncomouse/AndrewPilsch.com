@@ -251,7 +251,9 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 
 **Program Committee Member**, _The Society For Literature, Science, and the Arts Conference_, 2013.
 
-## For Journals
+## For Journals / Presses
+
+**Manuscript Reviewer**, *Science, Technology, & Human Values*, 2018.
 
 **Manuscript Reviewer**, Fairleigh Dickinson University Press, 2017.
 
