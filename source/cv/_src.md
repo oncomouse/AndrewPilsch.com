@@ -44,9 +44,9 @@ date: 22 November 2014
 
 **Six Chapter Manuscript, In-Progress** -- This project is a media archeology of the computer bug. While numerous works explore computer hacking, my project is interested in accidental computer failure: unintended consequences that can have dangerous and far-reaching effects. I uncover that the accident is integral to software while mitigating this accidental nature has radically altered the landscape of contemporary culture. Planned chapters trace the software accident through the early mathematical foundations of computing, the 1990s emergence of home computing and the Internet, the collapse of post-structural thought and the related rise of infrastructure studies, recent changes in programming practices resulting from big data, and current discussions about the programmatic nature of reality itself.
 
-***Histories of Digital Labor, Past and Present***
+***Forms of Digital Labor: Accounting for Work in the Information Age***
 
-**Edited Collection, Co-Editing w/ Shawna Ross, Initial Chapters Solicited & In Talks with Publishers** -- [CFP is online at: https://oncomouse.github.io/digital-labor-cfp/](https://oncomouse.github.io/digital-labor-cfp/). This edited collection draws together interdisciplinary scholars working on the question of digital labor, its forms, and its histories.
+**Edited Collection, Co-Editing w/ Shawna Ross, 13 Chapter Drafts Collected, 2 Additional Solicited, & In Talks with Publishers** -- [CFP is online at: https://oncomouse.github.io/digital-labor-cfp/](https://oncomouse.github.io/digital-labor-cfp/). This edited collection draws together interdisciplinary scholars working on the question of digital labor, its forms, and its histories.
 
 # Publications
 
