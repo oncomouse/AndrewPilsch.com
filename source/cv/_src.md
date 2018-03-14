@@ -60,7 +60,7 @@ date: 22 November 2014
 
 **"The *Ethos* of *Mr. Robot*."** (Forthcoming from [*Present Tense*](http://www.presenttensejournal.org/)).
 
-**"Abducting Code, Translating the Future: Transpilers and the Implementation of JavaScript's Future."** (Forthcoming from [*Amodern*](http://amodern.net/) for special issue on "Translation-Machination").
+**["Abducting Code, Translating the Future: Transpilers and the Implementation of JavaScript's Future."](http://amodern.net/article/translating-the-future/)** _Amodern_ 8 ("Translation-Machination" special issue, ed. Christine Mitchell & Rita Raley) (2018): n.p.
 
 **"Life During Wartime: Science Fiction during and after World War II."** Chapter in *The Cambridge History of Science Fiction* eds. Gerry Canavan and Eric Carl Link. (Collection Under Contract with Cambridge UP; Forthcoming, 2017).
 
