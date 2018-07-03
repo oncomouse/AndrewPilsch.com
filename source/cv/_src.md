@@ -40,7 +40,7 @@ date: 22 November 2014
 
 # Current Book Projects
 
-***Software Accidents: Malfunctioning Code and the Fate of Digital Culture***
+***Immutability: The World According to Software Bugs***
 
 **Six Chapter Manuscript, In-Progress** -- This project is a media archeology of the computer bug. While numerous works explore computer hacking, my project is interested in accidental computer failure: unintended consequences that can have dangerous and far-reaching effects. I uncover that the accident is integral to software while mitigating this accidental nature has radically altered the landscape of contemporary culture. Planned chapters trace the software accident through the early mathematical foundations of computing, the 1990s emergence of home computing and the Internet, the collapse of post-structural thought and the related rise of infrastructure studies, recent changes in programming practices resulting from big data, and current discussions about the programmatic nature of reality itself.
 
@@ -58,7 +58,7 @@ date: 22 November 2014
 
 ## Articles & Chapters
 
-**"The *Ethos* of *Mr. Robot*."** (Forthcoming from [*Present Tense*](http://www.presenttensejournal.org/)).
+**["The *Ethos* of *Mr. Robot*."](http://www.presenttensejournal.org/volume-7/the-ethos-of-mr-robot/)** *Present Tense* 7.1 (2018): n.p.
 
 **["Abducting Code, Translating the Future: Transpilers and the Implementation of JavaScript's Future."](http://amodern.net/article/translating-the-future/)** _Amodern_ 8 ("Translation-Machination" special issue, ed. Christine Mitchell & Rita Raley) (2018): n.p.
 
