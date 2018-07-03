@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 git_source(:github) { |name| "https://github.com/#{name}.git" }
 
+gem "activesupport"
+
 gem "compass", "~> 1.0"
 gem "sass", "~> 3.0"
 gem "kramdown"

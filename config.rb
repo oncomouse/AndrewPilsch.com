@@ -2,6 +2,8 @@
 # Compass
 ###
 
+require "active_support/core_ext/string/conversions"
+
 set :markdown_engine, :kramdown
 set :markdown, :fenced_code_blocks => true,
                :autolink => true,
