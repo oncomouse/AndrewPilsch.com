@@ -56,6 +56,9 @@ date: 22 November 2014
 
 **Six-Chapter Manuscript, University of Minnesota (2017)** -- This book explores the rhetorical history of "evolutionary futurism," a twentieth century Utopian rhetorical mode associating advancing telecommunications technologies with biological evolution to suggest near-future radical shifts in human existence and cognition. Tracing this rhetoric of transhumanism, chapters explore the evolutionary futurism of theosophy, 1940s science fiction, Raymond Kurzweil, and Pierre Teilhard de Chardin. In addition to a theoretical introduction, the book also contains an extended discussion of contemporary digital aesthetics as transhuman vectors of evolutionary overcoming.
 
+**Prizes:** 2018 Science Fiction and Technoculture Studies Book Prize  
+**Reviews:** [*Modernism/Modernity* (25.1)](https://muse.jhu.edu/article/685308)
+
 ## Articles & Chapters
 
 **["The *Ethos* of *Mr. Robot*."](http://www.presenttensejournal.org/volume-7/the-ethos-of-mr-robot/)** *Present Tense* 7.1 (2018): n.p.
