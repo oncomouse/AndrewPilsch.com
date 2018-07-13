@@ -177,9 +177,12 @@ end
 
 after_build do
 	printf "\033[1m\033[32m%12s\033[0m  %s\n", "compiling", "build/cv/cv.pdf"
+  system "pandoc -s source/cv/_src.md -o build/cv/cv.pdf -f markdown+pipe_tables --template=lib/pandoc-templates/cv-template.tex --pdf-engine=xelatex"
+  # This weird error has apparently been fixed in pandoc:
+  #
 	# Sometimes, you have a software error that you just have to kill with fire:
 	# (there's a problem where Pandoc (or LaTeX) is eating the first character of every table. I'm too busy to figure out why, so I just added an extra character to the beginning of each table)
-	system "cat source/cv/_src.md | ruby -e 'puts STDIN.read.gsub(/-\\|\\n\\| /,\"-|\\n| X\")' | pandoc -o build/cv/cv.pdf -f markdown+pipe_tables --template=lib/pandoc-templates/cv-template.tex --pdf-engine=xelatex"
+	# system "cat source/cv/_src.md | ruby -e 'puts STDIN.read.gsub(/-\\|\\n\\| /,\"-|\\n| X\")' | pandoc -o build/cv/cv.pdf -f markdown+pipe_tables --template=lib/pandoc-templates/cv-template.tex --pdf-engine=xelatex"
 	#system "pandoc  -s source/cv/_src.md -o build/cv/cv.pdf -f markdown+pipe_tables --template=lib/pandoc-templates/cv-template.tex --latex-engine=xelatex"
 end
 
