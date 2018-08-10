@@ -17,7 +17,8 @@ date: 22 November 2014
 
 ||||
 |----------------------------|-------------------------------------|--------------|
-| Assistant Professor        | Texas A&M University                | 2015-Present |
+| Associate Professor        | Texas A&M University                | 2018-Present |
+| Assistant Professor        | Texas A&M University                |    2015-2018 |
 | Assistant Professor        | Arizona State University            |    2012-2015 |
 | Fixed-Term Lecturer        | Pennsylvania State University       |    2011-2012 |
 | Graduate Teaching Fellow   | Pennsylvania State University       |    2005-2011 |
