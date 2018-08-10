@@ -1,7 +1,7 @@
 ---
 givenname: Andrew
 familyname: Pilsch
-jobtitle: 'Assistant Professor of English'
+jobtitle: 'Associate Professor of English'
 university: 'Texas A&M University'
 unit: 'Department of English'
 website: https://andrew.pilsch.com
