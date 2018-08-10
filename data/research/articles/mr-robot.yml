@@ -2,6 +2,7 @@ id: "mr-robot"
 front_page: true
 title: "The *Ethos* of *Mr. Robot*"
 published: true
+emphasize: true
 status: "Published"
 journal: "Present Tense"
 journal_url: "http://www.presenttensejournal.org/volume-7/the-ethos-of-mr-robot/"
