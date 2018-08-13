@@ -1,9 +1,0 @@
-<% if item["type"] == "article" %>
-	<%= partial "partials/research/article", :locals => {:article => item} %>
-<% elsif item["type"] == "book" %>
-	<%= partial "partials/research/book", :locals => {:book => item} %>
-<% elsif item["type"] == "presentation" %>
-	<%= partial "partials/research/presentation", :locals => {:presentation => item} %>
-<% else %>
-	<%= partial "partials/research/other", :locals => {:item => item} %>
-<% end %>

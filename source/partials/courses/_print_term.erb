@@ -1,8 +1,0 @@
-<% 
-require "uri"
-require "open-uri"
-current_term = "#{CourseDate.to_term(Date.today.month)} #{Date.today.year}"
-local_term = defined?(term) ? term : current_term
-
-course_html = build? ? URI.parse("https://andrew.pilsch.com/courses?blank&term=#{URI.encode(local_term)}").read.to_s.force_encoding("UTF-8") : "" %>
-<%= course_html %>

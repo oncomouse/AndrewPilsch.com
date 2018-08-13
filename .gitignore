@@ -1,18 +1,4 @@
-source/stylesheets/.sass-cache
-source/stylesheets/.sass-cache/*
-vendor
-node_modules
-build
-.tmp
-
-Gemfile.lock
-
-# OS generated files #
-######################
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
+_site
+.sass-cache
+.jekyll-metadata
+node-modules

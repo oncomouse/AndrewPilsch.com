@@ -1,0 +1,27 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Andrew Pilsch - CV</title>
+	<link rel="stylesheet" href="../css/site.css" />
+	<style>
+		body.cv_standalone {
+			max-width: 960px;
+			margin: auto;
+			width: 95%;
+			margin-bottom: 12rem;
+		}
+	</style>
+</head>
+<body class="cv_standalone bg-white black roboto">
+	<div class="cv-preamble">
+		{% include cv.preamble.html %}
+	</div>
+	<div class="cv-content">
+		{% capture cv %}{% include cv.md %}{% endcapture %}
+		{{ cv | markdownify }}
+	</div>
+</body>
+</html>

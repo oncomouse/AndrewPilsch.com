@@ -1,6 +1,0 @@
-<% if build?
-	require 'open-uri'
-	require 'uri'
-	concat  URI.parse("https://andrew.pilsch.com/courses/?blank&front_page&term=#{URI.escape(locals[:current_term])}").read.gsub("<!DOCTYPE html><html><head><meta charset=utf-8></head><body>","").gsub("</body></html>","")
-end %>
-			

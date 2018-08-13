@@ -1,0 +1,16 @@
+id: about-site
+front_page: true
+title: "About Site"
+short_description: |+
+  Software used in development.
+description: |+
+  ## Software Used in Development
+
+  This site is made using [Jekyll](https://jekyllrb.com/), a static-site generator for Ruby. It uses [Tachyons](http://tachyons.io/) for CSS with some help from [SCSS](https://sass-lang.com). The javascript is powered by [Isotope](http://isotope.metafizzy.co).
+
+  The research and course information are stored in a flat-file collection of [YAML](http://www.yaml.org/) files, with the dynamic elements (the "All My Courses" button) powered by [PHP](http://www.php.net) and [spyc](https://code.google.com/p/spyc/).
+
+  The PDF version of the CV is generated using [Pandoc](http://pandoc.org/) from a template derived from the [markdown-cv](https://github.com/tompollard/markdown-cv) repository.
+
+  The site was designed and coded by Andrew Pilsch.
+
