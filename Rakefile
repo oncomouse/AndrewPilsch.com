@@ -34,6 +34,9 @@ namespace :build do
 		$stdout.print "Compressing *.html..."; $stdout.flush
 		system "html-minifier --input-dir _site --output-dir _site --file-ext html --collapse-whitespace --remove-comments --remove-attribute-quotes --remove-empty-attributes --use-short-doctype --minify-js"
 		$stdout.puts "done"
+		$stdout.print "Building Custom Tachyons.css..."; $stdout.flush
+		system "node _scripts/custom-tachyons.js _site/***.html --compress > _site/css/tachyons-custom.min.css"
+		$stdout.print "done"
   end
 	task :all => [:jekyll, :cv, :compress]
 end
