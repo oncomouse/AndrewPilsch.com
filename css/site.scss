@@ -129,6 +129,20 @@ img {
 .max-h-col-3 {
   max-height: $colh3;
 }
+@media screen and (max-width: 30em) {
+  .ma-custom {
+    margin: 0;
+    margin-top: $columnPadding;
+  }
+  .w-col-1,
+  .w-col-2,
+  .w-col-3 {
+    width: 100%;
+  }
+  .max-h-col-3 {
+    max-height: none;
+  }
+}
 
 // Custom Elements:
 .column-size {
