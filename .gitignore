@@ -1,3 +1,5 @@
+.sass-cache
+_site
 source/stylesheets/.sass-cache
 source/stylesheets/.sass-cache/*
 vendor
