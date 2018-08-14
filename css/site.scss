@@ -90,20 +90,20 @@ img {
 // .b--maroon {
 //   border-color: $maroon;
 // }
-.custom-blue {
-  color: $custom-blue;
-}
-.hover-custom-dark-blue:hover,
-.hover-custom-dark-blue:focus {
-  color: $custom-dark-blue;
-}
-.bg-custom-blue {
-  background-color: $custom-blue;
-}
-.b--custom-blue {
-  border-color: $custom-blue;
-  border-bottom-color: $custom-dark-blue;
-}
+// .custom-blue {
+//   color: $custom-blue;
+// }
+// .hover-custom-dark-blue:hover,
+// .hover-custom-dark-blue:focus {
+//   color: $custom-dark-blue;
+// }
+// .bg-custom-blue {
+//   background-color: $custom-blue;
+// }
+// .b--custom-blue {
+//   border-color: $custom-blue;
+//   border-bottom-color: $custom-dark-blue;
+// }
 .bb-thick {
   border-bottom-width: 2px;
   border-bottom-style: solid;
@@ -129,6 +129,10 @@ img {
 .max-h-col-3 {
   max-height: $colh3;
 }
+.measure-cv {
+  max-width: 35em;
+}
+// Mobile support:
 @media screen and (max-width: 30em) {
   .ma-custom {
     margin: 0;

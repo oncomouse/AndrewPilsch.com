@@ -30,7 +30,9 @@ var toArray = function ta_(notArray) {
 document.addEventListener('DOMContentLoaded', function (ev) {
   // Configure LazyLoad:
   var lazyloader;
+  // Set up the timer for the help function:
   var helpTimer = window.setTimeout(function () {
+    removeClass('dn', document.querySelector('#help'));
     removeClass('o-0', document.querySelector('#help'));
   }, 5000);
   // Scale the temporary images:
@@ -83,9 +85,7 @@ document.addEventListener('DOMContentLoaded', function (ev) {
   function openOrCloseBox(el) {
     // Clear the help timer and remove the help if it is open:
     clearTimeout(helpTimer);
-    if (!hasClass('o-0', document.querySelector('#help'))) {
-      addClass('dn', document.querySelector('#help'));
-    }
+    addClass('dn', document.querySelector('#help'));
     hasClass(OPEN_CLASS, el) ? removeClass(OPEN_CLASS, el) : addClass(OPEN_CLASS, el);
     iso.layout();
   }
