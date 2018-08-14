@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "tachyons-sass": "^4.9.3"
+  },
   "devDependencies": {
     "@oncomouse/extract-tachyons": "^1.0.1",
     "npm-run-all": "^4.1.3",
