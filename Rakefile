@@ -32,7 +32,7 @@ namespace :build do
 		system "uglifyjs -o _site/js/site.js _site/js/site.js"
 		$stdout.puts "done"
 		$stdout.print "Compressing *.html..."; $stdout.flush
-		system "html-minifier --input-dir _site --output-dir _site --file-ext html --collapse-whitespace --remove-comments --remove-attribute-quotes --remove-empty-attributes --use-short-doctype"
+		system "html-minifier --input-dir _site --output-dir _site --file-ext html --collapse-whitespace --remove-comments --remove-attribute-quotes --remove-empty-attributes --use-short-doctype --minify-js"
 		$stdout.puts "done"
   end
 	task :all => [:jekyll, :cv, :compress]
