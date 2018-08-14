@@ -26,7 +26,7 @@ github_username:  oncomouse
 
 # Build settings
 markdown: kramdown
-theme: minima
+# theme: minima
 # plugins:
 #   - jekyll-feed
 sass:
