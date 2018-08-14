@@ -83,6 +83,10 @@
 
 ## Non-Peer-Reviewed
 
+[**"What Does Flash Reason Look Like."**](http://textshopexperiments.org/textshop05/what-does-flash-reason-look-like-pilsch) *Textshop Experiments* 5 (2018): n.p.
+
+* Experimental computer poetry based on the work of Gregory L. Ulmer.
+
 [**"When the Coffee Machine Is Just a Human."**](http://www.theatlantic.com/technology/archive/2016/01/coffee-machine-pour-over-brewing/431658/) An Object Lesson for *The Atlantic* (January 28, 2016).
 
 # Online Editions &amp; Open Source Software
