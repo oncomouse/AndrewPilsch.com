@@ -21,7 +21,7 @@ module Jekyll
 				end
 				term = "#{term} #{today.year.to_s}"
 				output = ""
-				JSON.parse(URI.parse("https://andrew.pilsch.com/courses/?json&blank&front_page&term=#{URI.escape(term).to_s}").read).each do |course|
+				JSON.parse(URI.parse("https://andrew.pilsch.com/courses/courses.php?json&blank&front_page&term=#{URI.escape(term).to_s}").read).each do |course|
 					course["image"] = course["course_image"]
 					course["title"] = "#{course["course_number"]} #{course["course_title"]}, #{course["course_term"]}"
 					course["id"] = course["course_id"]

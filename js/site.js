@@ -154,10 +154,10 @@ document.addEventListener('DOMContentLoaded', function (ev) {
     // Load images:
     lazyloader = new LazyLoad({
       elements_selector: ".lazy",
-      // callback_load: function (el) {
-      //   el.style.width = '';
-      //   el.style.height = '';
-      // },
+      callback_load: function (el) {
+        el.style.width = '';
+        el.style.height = '';
+      },
     });
   });
   // Clean-up tasks for when a layout is triggered:
@@ -171,11 +171,15 @@ document.addEventListener('DOMContentLoaded', function (ev) {
       if (openBox.getBoundingClientRect().top !== 0) {
         zenscroll.to(openBox);
       }
-      addClass(SHOWN_CLASS, closeAllButton);
-      removeClass(HIDDEN_CLASS, closeAllButton);
+      if (closeAllButton !== null) {
+        addClass(SHOWN_CLASS, closeAllButton);
+        removeClass(HIDDEN_CLASS, closeAllButton);
+      }
     } else {
-      removeClass(SHOWN_CLASS, closeAllButton);
-      addClass(HIDDEN_CLASS, closeAllButton);
+      if (closeAllButton !== null) {
+        removeClass(SHOWN_CLASS, closeAllButton);
+        addClass(HIDDEN_CLASS, closeAllButton);
+      }
       window.location.hash = '';
     }
   });

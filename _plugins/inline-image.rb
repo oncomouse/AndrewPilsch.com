@@ -20,7 +20,7 @@ module Jekyll
 				style = "width: #{width}px; height: #{height}px;"
 				output = "<img src=\"data:image/.gif;base64,R0lGODlhAQABAIAAANvf7wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==\" style=\"#{style}\" class=\"#{className}\" data-src=\"#{file_source}\" />"
 			else
-				style = ""
+				style = "height: 225px;"
 				output = "<img src=\"data:image/.gif;base64,R0lGODlhAQABAIAAANvf7wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==\" style=\"#{style}\" class=\"#{className}\" data-src=\"#{file_source}\" />"
 			end
 			output

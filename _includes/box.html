@@ -2,7 +2,7 @@
 	id="{{ include.content.id }}"
   {% if include.type == "blog" %}data-uri="{{include.content.url}}"
 	{% elsif include.type == "course"%}data-uri="{{site.url}}{{include.content.course_url}}"{%endif%}
-	class="box w-col-{%if include.big or include.content.emphasize%}2{%else%}1{%endif%} {% if include.type == "presentation" or include.type == "book" or include.type == "article" or include.type == "other"%}research{% elsif include.type == "course" %}teaching course{%else%}{{ include.type}}{%endif%}{% if include.type != "blog" and include.type != "course" %} expand{%endif%} pointer overflow-auto min-h-col-1 bg-white pa1 ma-custom ba bb-thick br2 b--custom-gray">
+	class="box w-col-{%if include.big or include.content.emphasize%}2{%else%}1{%endif%} {% if include.type == "presentation" or include.type == "book" or include.type == "article" or include.type == "other"%}research{% elsif include.type == "course" %}teaching course{%else%}{{ include.type}}{%endif%}{% if include.type != "blog" and include.type != "course" %} expand{%endif%} pointer overflow-auto min-h-col-1 bg-white pa1 ma-custom ba bb-thick br2 b--custom-gray {% if include.type == "course" %}{{ include.content.course_term | downcase | replace: " ", "-"}}{% endif %}">
 	<!-- Thumbnail-->
   <div class="thumbnail">
 		<header class="flex flex-column-reverse">
@@ -47,7 +47,9 @@
 				{% elsif include.type == "book" %}
 					<!-- Print book type -->
 					{% if include.content.published %}Published Book{%else%}Book In Progress{%endif%}
-				{% elsif  include.type == "course" %}
+				{% elsif  include.type == "course" and include.big == true %}
+					Course for {{ include.content.course_term }}
+				{% elsif  include.type == "course" and include.big == false %}
 					Currently Teaching
 				{% elsif include.type == "other" %}
 					{{ include.content.kind }}
@@ -61,7 +63,7 @@
 			{% if include.type == "blog" %}
 				<p>{{ include.content.summary }}</p>
 			{% elsif include.type == "course" %}
-				{{ include.content.course_description }}
+				<p>{{ include.content.course_description }}</p>
 			{% else %}
 				{{ include.content.short_description | markdownify }}
 			{% endif %}

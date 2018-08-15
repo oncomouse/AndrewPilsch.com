@@ -1,0 +1,64 @@
+---
+layout: null
+---
+{% assign box_style="pointer overflow-auto min-h-col-1 bg-white pa1 ma-custom ba bb-thick br2 b--custom-gray" %}
+{% assign filter_style="bb-thick pointer link br2 ba ph3 pv2 mr1 mb2 b--custom-gray black hover-bg-custom-gray" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Andrew Pilsch</title>
+	<link rel="stylesheet" href="{{ site.url}}/css/tachyons-custom.min.css" />
+	<link rel="stylesheet" href="{{ site.url}}/css/site.css" />
+</head>
+<body class="bg-white black scroll-smooth pa2 roboto">
+	<header class="flex-ns items-center-ns bg-white">
+		<!-- Logo -->
+		<div id="logo" class="w-20-ns">
+			<h1 class="ttu lh-solid f1-ns f2 mv0 ml2-ns">
+				<a href="{{site.url}}" class="black no-underline hover-black no-underline-hover">
+					<span class="andrew db">Andrew</span>
+					<span class="pilsch db">Pilsch</span>
+					</a>
+				<span class="courses db">Courses</span>
+			</h1>
+		</div>
+		<!-- /Logo -->
+
+		<!-- Filters -->
+		<div class="f5-ns f6 mv0-ns mt2 w-80-ns pl4-ns pl0">
+			<h1 class="f5 mt0 mb1">See Courses From:</h1>
+			{% assign terms = site.data.terms | slice: 0, 5 %}
+			<ul id="filters" class="list pl0 mv0">
+				{% for term in terms %}
+					{% capture term_target %}{{term | downcase | replace: " ", "-" | prepend: "." }}{% endcapture %}
+					{% include filter.html target=term_target label=term %}
+				{% endfor %}
+				{% include filter.html active=true target="*" label="All Courses" %}
+			</ul>
+		</div>
+		<!-- /Filter -->
+	</header>
+
+	<!-- Grid -->
+	<div class="mt4 mb5" id="grid">
+		<!-- Courses -->
+		{% all_courses %}
+		<!-- /Courses -->
+	</div>
+	<!-- /Grid -->
+
+	<div class="column-size"></div>
+	<div id="help" class="bg-black-40 white fixed bottom-0 left-0 right-0 o-0 dn z-5">
+		<h1 class="mv3 lh-copy tr f3 pr2">
+			Click on any of the boxes marked with a "+" to read more.
+		</h1>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.15.0/lazyload.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/zenscroll/4.0.2/zenscroll-min.js"></script>
+	<script src="{{ site.url}}/js/vendor/raf.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+	<script src="{{ site.url}}/js/site.js"></script>
+</body>
+</html>

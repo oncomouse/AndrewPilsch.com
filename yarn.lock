@@ -3181,19 +3181,13 @@ tachyons-box-sizing@^3.2.2:
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/tachyons-box-sizing/-/tachyons-box-sizing-3.2.2.tgz#0468bad0c6509d2d78078ec1e684efff0fc93687"
 
-tachyons-custom@^4.9.2, tachyons-custom@^4.9.5:
+tachyons-custom@^4.9.5:
   version "4.9.5"
   resolved "https://registry.yarnpkg.com/tachyons-custom/-/tachyons-custom-4.9.5.tgz#59b3378ea154850bc199fa970bbc928b68ad1363"
 
 tachyons-images@^1.0.11:
   version "1.0.11"
   resolved "https://registry.yarnpkg.com/tachyons-images/-/tachyons-images-1.0.11.tgz#5aeab7eb2a9ab8e6ca792e38c322edc8e34a5822"
-
-tachyons-sass@^4.9.3:
-  version "4.9.3"
-  resolved "https://registry.yarnpkg.com/tachyons-sass/-/tachyons-sass-4.9.3.tgz#a411a6416f1dfa88efb16ba498ace108eefe4aa3"
-  dependencies:
-    tachyons-custom "^4.9.2"
 
 through@2, through@~2.3, through@~2.3.1:
   version "2.3.8"
