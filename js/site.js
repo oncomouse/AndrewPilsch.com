@@ -53,6 +53,16 @@ document.addEventListener('DOMContentLoaded', function (ev) {
 
   // Configure ZenScroll:
   zenscroll.setup(null, 0);
+
+  // Configure clickable boxes:
+  function clickableBoxEventListener(ev) {
+    ev.preventDefault();
+    window.location.assign(ev.currentTarget.getAttribute('data-uri'));
+  }
+  toArray(document.querySelectorAll('[data-uri]')).forEach(function (element) {
+    element.addEventListener('click', clickableBoxEventListener);
+  });
+
   // Configure Isotope:
   var iso = new Isotope('#grid', {
     itemSelector: '.' + BOX_CLASS,
