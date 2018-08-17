@@ -1,0 +1,7 @@
+id: all-courses
+front_page: true
+title: "View All My Courses"
+short_description: |+
+  See a complete list of my courses:
+
+  <a class="nowrap dib bb-thick pointer link br2 ba ph3 pv2 mb2 mr1 b--custom-gray black hover-bg-custom-gray no-underline-hover" href="/courses">Click here to view</a>

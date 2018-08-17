@@ -10,7 +10,7 @@ module Jekyll
     end
 
     def render(context)
-			if ENV["JEKYLL_ENV"] == "production"
+			if true#ENV["JEKYLL_ENV"] == "production"
 				tmpl = File.read(File.join(Dir.pwd, "_includes", "box.html"))
 				today = Date.today
 				term = "Fall"
@@ -25,6 +25,7 @@ module Jekyll
 					course["image"] = course["course_image"]
 					course["title"] = "#{course["course_number"]} #{course["course_title"]}, #{course["course_term"]}"
 					course["id"] = course["course_id"]
+					course["short_description"] = Kramdown::Document.new( course["course_description"].kind_of?(Array) ? course["course_description"].first : course["course_description"]).to_html.to_s
 					includes = {"include" => {"content" => course, "type" => "course" }}
 					output += (Liquid::Template.parse tmpl).render includes
 				end

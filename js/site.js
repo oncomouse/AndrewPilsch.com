@@ -60,7 +60,10 @@ document.addEventListener('DOMContentLoaded', function (ev) {
     window.location.assign(ev.currentTarget.getAttribute('data-uri'));
   }
   toArray(document.querySelectorAll('[data-uri]')).forEach(function (element) {
-    element.addEventListener('click', clickableBoxEventListener);
+    // Ignore boxes that don't have URLs:
+    if (element.getAttribute('data-uri') !== '') {
+      element.addEventListener('click', clickableBoxEventListener);
+    }
   });
 
   // Configure Isotope:

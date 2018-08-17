@@ -1,14 +1,16 @@
 require 'open-uri'
 require 'json'
 require 'date'
+require 'kramdown'
 
 $courses = []
 $terms = []
-if ENV["JEKYLL_ENV"] == "production"
+if true#ENV["JEKYLL_ENV"] == "production"
 	JSON.parse(URI.parse("https://andrew.pilsch.com/courses/courses.php?json").read).each do |course|
 		course["image"] = course["course_image"]
 		course["title"] = "#{course["course_number"]} #{course["course_title"]}, #{course["course_term"]}"
 		course["id"] = course["course_id"]
+		course["short_description"] = Kramdown::Document.new( course["course_description"].kind_of?(Array) ? course["course_description"].first : course["course_description"]).to_html.to_s
 		$courses.push course
 		if not $terms.include?(course["course_term"])
 			$terms.push(course["course_term"])
