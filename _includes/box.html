@@ -1,7 +1,7 @@
 <div
 	id="{{ include.content.id }}"
   {% if include.type == "blog" %}data-uri="{{include.content.url}}"
-	{% elsif include.type == "course"%}data-uri="{{include.content.course_url}}"{%endif%}
+	{% elsif include.type == "course" and include.content.course_url != "" %}data-uri="{{include.content.course_url}}"{% endif %}
 	class="box w-col-{%if include.big or include.content.emphasize%}2{%else%}1{%endif%} {% if include.type == "presentation" or include.type == "book" or include.type == "article" or include.type == "other"%}research{% elsif include.type == "course" %}teaching course{%else%}{{ include.type}}{%endif%}{% if include.type != "blog" and include.type != "course" %} expand{%endif%} pointer overflow-auto min-h-col-1 bg-white pa1 ma-custom ba bb-thick br2 b--custom-gray {% if include.type == "course" %}{{ include.content.course_term | downcase | replace: " ", "-"}}{% endif %}">
 	<!-- Thumbnail-->
   <div class="thumbnail">
@@ -21,6 +21,8 @@
 				{% capture image_src %}/images/{% if include.type == "presentation" or include.type == "book" or include.type == "article" or include.type == "other"%}research{%else%}{{ include.type}}{%endif%}/{{include.content.id}}.png{% endcapture %}
 			{% endif %}
 			{% if include.type == "blog" %}
+				<div class="mt2"></div>
+			{% elsif include.type == "course" && include.content.course_url != "" %}
 				<div class="mt2"></div>
 			{% else %}
 				{% inline_image image_src %}

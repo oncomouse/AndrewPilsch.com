@@ -8,7 +8,7 @@ module Jekyll
     end
 
     def render(context)
-			if true#ENV["JEKYLL_ENV"] == "production"
+			if ENV["JEKYLL_ENV"] == "production"
 				output = ""
 				tmpl = File.read(File.join(Dir.pwd, "_includes", "box.html"))
 				JSON.parse(URI.parse("http://andrew.pilsch.com/blog/frontpage.json").read).each do |article|

@@ -10,7 +10,7 @@ module Jekyll
     end
 
     def render(context)
-			if true#ENV["JEKYLL_ENV"] == "production"
+			if ENV["JEKYLL_ENV"] == "production"
 				tmpl = File.read(File.join(Dir.pwd, "_includes", "box.html"))
 				today = Date.today
 				term = "Fall"
