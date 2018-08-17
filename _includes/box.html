@@ -22,7 +22,7 @@
 			{% endif %}
 			{% if include.type == "blog" %}
 				<div class="mt2"></div>
-			{% elsif include.type == "course" && include.content.course_url == "" %}
+			{% elsif include.type == "course" and include.content.course_url == "" %}
 				<div class="mt2"></div>
 			{% else %}
 				{% inline_image image_src %}
