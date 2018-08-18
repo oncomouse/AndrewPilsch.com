@@ -9,8 +9,7 @@ layout: null
   <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Andrew Pilsch</title>
-	<link rel="stylesheet" href="{{ site.url}}/css/tachyons-custom.min.css" />
-	<link rel="stylesheet" href="{{ site.url}}/css/site.css" />
+	{% include css.html %}
 </head>
 <body class="bg-white black scroll-smooth pa2 roboto">
 	<header class="flex-ns items-center-ns bg-white">
@@ -120,10 +119,6 @@ layout: null
 			Click on any of the boxes marked with a "+" to read more.
 		</h1>
 	</div>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.15.0/lazyload.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/zenscroll/4.0.2/zenscroll-min.js"></script>
-	<script src="{{ site.url}}/js/vendor/raf.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
-	<script src="{{ site.url}}/js/site.js"></script>
+	{% include js.html %}
 </body>
 </html>
