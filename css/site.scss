@@ -12,6 +12,7 @@ $custom-dark-gray: #d5d5d5;
 
 html {
   font-size: (18px/16px) * 100%;
+  -webkit-font-smoothing: antialiased;
 }
 img {
   width: auto;
