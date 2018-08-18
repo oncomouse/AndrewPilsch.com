@@ -1,5 +1,3 @@
----
----
 var OPEN_CLASS = 'open';
 var ACTIVE_CLASS = 'active';
 var HIDDEN_CLASS = 'dn';
