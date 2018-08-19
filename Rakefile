@@ -32,7 +32,7 @@ namespace :build do
 		system "uglifyjs -o _site/js/site.js _site/js/site.js"
 		$stdout.puts "done"
 		$stdout.print "Compressing *.html..."; $stdout.flush
-		system "html-minifier --input-dir _site --output-dir _site --file-ext html --collapse-whitespace --remove-comments --remove-attribute-quotes --remove-empty-attributes --use-short-doctype --minify-js"
+		system "html-minifier --input-dir _site --output-dir _site --file-ext html --collapse-whitespace --remove-comments --remove-attribute-quotes --remove-empty-attributes --use-short-doctype --minify-js --minify-css"
 		$stdout.puts "done"
 		$stdout.print "Building Custom Tachyons.css..."; $stdout.flush
 		system "npx extract-tachyons _site/*.html _site/**/*.html --compress --output _site/css/tachyons-custom.min.css"
