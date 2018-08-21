@@ -1,0 +1,17 @@
+id: rsa18-software
+short_title: "Events in Flux"
+title: "Events in Flux: Software Architecture and Rhetorical Subtraction."
+front_page: true
+conference: "18th Biennial RSA Conference"
+conference_url: "http://associationdatabase.com/aws/RSA/pt/sp/conferences"
+conference_location: "Minneapolis, MN"
+emphasize: false
+date: 31/5/2018
+short_description: |+
+  What can the way Facebook writes software---at the level of the code itself---teach us about how we argue online?
+description: |+
+  This presentation discusses the design of software platforms---emergent, commodified digital publics---through the lens of a "rhetorical code studies" (Brock 2013). (Srnicek 2017) defines a software platform as "a digital space for others to interact" that is also "an extractive apparatus for data." Companies such as Facebook, Amazon, and Google profit from making and managing platforms. Specifically, I discuss Facebook's Flux architecture as a programmatic *detractio*, the rhetorical figure of subtraction. Flux is Facebook's standard pattern for state management. "State management" is the term for tracking user interactions with software, including what they have clicked on, what data is displayed, etc. Older, looser management patterns allow for a higher degree of expressive potential but become difficult to predict in complex applications as components may change the state without one another's knowledge. Flux prevents unexpected mutations by using a unidirectional control flow that curtails free expression while preventing chaotic behavior. Thus I connect Flux to *detractio*, the rhetorical figure of discursive subtraction. *Detractio* encourages a compact style that focuses both rhetor and audience on important information. In this comparison, I provide a particular test-case for thinking about the convergence between rhetoric and code (Brock 2013) and computation and eloquence (Brown 2014). I conclude by suggesting that the work of digital rhetoric is best done by moving beyond screen essentialism. By considering the code of Facebook, I show how computational materiality is a crucial element---along with the uses to which users put platforms---of accounts of the affordances and subversions of the rhetorical platform.
+
+  Image Credit: ["Facebook Press Conference" by Robert Scoble](https://www.flickr.com/photos/scobleizer/5179384336/in/photolist-8TFGvW-dDwzPi-2gM4EX-5GTBCQ-dYJnHQ-6Vwz3Z-eGNqBw-AnVwap-6M96h3-S73ZUx-mxSwbu-7AoLrm-82kGoT-5ptRTj-9m3N6C-6qcvt1-aos7Yy-dYgvM2-eZWAhB-UjDfYv-SGcAwD-RSvd9m-61MFfn-54MdPZ-67jVjc-dqmx19-RSvcUy-QS5cmD-bqhMkd-7Jph4H-26zKPwq-6fLMzN-5Hfyro-7LMoaq-fuwQnu-27qHus5-5WxC5T-5piWPS-27GpDPy-23uKCx-5E5xHP-7D9sqA-dvuaSW-mGUvnY-S1G7mJ-fv7np7-dvub6C-kinkvw-7YQaoa-o3kEn4)
+
+

@@ -131,9 +131,11 @@ Philip Young Memorial Endowment in American Literature, 2006. (Penn State)
 
 ## Conference Presentations
 
-**"Alien Megastructures: The Possibility of Extraterrestrial Life and the Rhetoric of Hope in the Anthropocene."** *18th Biennial RSA Conference*, Minneapolis, MN, 2018. (Accepted)
+"**Composition not Inheritance: Imagining a Functional Digital Humanities.**" *DHSI Colloquium*, Victoria BC, 2018.
 
-**"Events in Flux: Software Architecture and Rhetorical Subtraction."** *18th Biennial RSA Conference*, Minneapolis, MN, 2018. (Accepted)
+**"Alien Megastructures: The Possibility of Extraterrestrial Life and the Rhetoric of Hope in the Anthropocene."** *18th Biennial RSA Conference*, Minneapolis, MN, 2018.
+
+**"Events in Flux: Software Architecture and Rhetorical Subtraction."** *18th Biennial RSA Conference*, Minneapolis, MN, 2018.
 
 **"Security Through Transparency: Minimal Computing in the Jungle of the Real."** *133rd MLA Annual Convention*, New York, NY, 2018.
 
