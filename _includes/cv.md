@@ -194,13 +194,19 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 
 **"Revising Tomorrow: the Historical Present, Telecommunications, and Capitalism in _Nova_ and _Neuromancer_,"** _Samuel Delany: A Critical Symposium_, University at Buffalo (State University of New York), 2006.
 
-# Teaching Experience <small>(36 Sections; 17 Courses; 1122 Students)</small>
+# Teaching Experience <small>(41 Sections; 21 Courses; 1206 Students)</small>
 
-## Texas A&M University <small>(10 Sections; 6 Courses; 198 Students)</small>
+## Texas A&M University <small>(15 Sections; 9 Courses; 282 Students)</small>
+
+[**Independent Study**](http://andrew.pilsch.com/courses/engl485fall2018/) (1 Section; 1 Student) -- Taught in Fall 2018 as "Writing About Science," a pilot for a new course in the English major.
+
+[**Approaches to English Studies**](http://andrew.pilsch.com/courses/engl303spr2018/) (1 Section; 25 Students) -- Taught in Spring 2018 as "Cyberculture," which introduced the English major through topics such as humanities computing, science fiction, and speculative design.
+
+[**Graduate Seminar: Topics in Rhetoric and Composition**](http://andrew.pilsch.com/courses/engl667spr2018/) (1 Section; 8 Students) -- Taught in Spring 2018 as "Infrastructure Tales," which explored the intersection between infrastructure studies and narrative as a key site for future and emerging theories of rhetorical practice.
 
 [**Digital Authoring Practices**](https://github.com/oncomouse/engl460fall2017) (1 Section; 10 Students) -- I developed and first taught this class for A&M. The course is designed to introduce students to the technologies of digital writing while asking them to formulate artifacts using computational artifacts.
 
-[**Rhetoric of Style**](https://andrew.pilsch.com/courses/engl355spr2017) (1 Section; 30 Students) -- Course documents the relationship between style and persuasion, with an emphasis on sentence analysis, tropes & figures, and classical rhetorical style exercises.
+[**Rhetoric of Style**](https://andrew.pilsch.com/courses/engl355fall2018) (3 Section; 80 Students) -- Course documents the relationship between style and persuasion, with an emphasis on sentence analysis, tropes & figures, and classical rhetorical style exercises.
 
 [**Graduate Seminar: History and Theory of Rhetoric since 1800**](https://andrew.pilsch.com/courses/engl655fall2016) (1 Section; 6 Students) -- Taught in Fall 2016 as "Rhetoric's Avant-Garde," which focused on the intersection between avant-garde writing practices and developments in rhetorical theory during the twentieth century.
 
