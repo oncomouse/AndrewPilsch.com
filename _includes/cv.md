@@ -131,6 +131,8 @@ Philip Young Memorial Endowment in American Literature, 2006. (Penn State)
 
 ## Conference Presentations
 
+"**Composition's Mushrooms: Fungal Models of Sustainable Pedagogy.**" *The Conference on College Composition and Communication*. Pittsburgh, PA, 2019. (Accepted)
+
 "**Composition not Inheritance: Imagining a Functional Digital Humanities.**" *DHSI Colloquium*, Victoria BC, 2018.
 
 **"Alien Megastructures: The Possibility of Extraterrestrial Life and the Rhetoric of Hope in the Anthropocene."** *18th Biennial RSA Conference*, Minneapolis, MN, 2018.
