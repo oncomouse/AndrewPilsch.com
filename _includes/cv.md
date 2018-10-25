@@ -127,7 +127,7 @@ Philip Young Memorial Endowment in American Literature, 2006. (Penn State)
 
 ## Workshops Conducted
 
-**"The Frontend: Modern JavaScript and CSS Development."** _Digital Humanities Summer Institute_ (DHSI). Victoria, British Columbia. June 4-8, 2018. (Scheduled)
+**"The Frontend: Modern JavaScript and CSS Development."** _Digital Humanities Summer Institute_ (DHSI). Victoria, British Columbia. June 4-8, 2018.
 
 ## Conference Presentations
 
