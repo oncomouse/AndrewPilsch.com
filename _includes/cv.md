@@ -133,6 +133,8 @@ Philip Young Memorial Endowment in American Literature, 2006. (Penn State)
 
 "**Composition's Mushrooms: Fungal Models of Sustainable Pedagogy.**" *The Conference on College Composition and Communication*. Pittsburgh, PA, 2019. (Accepted)
 
+"**Frankenstein's Monster vs Cthulhu!: Imagining the Monster at the End of this World.**" *"It's Alive!": Frankenstein’s Monster 200 Years Later*, College Station, TX, 2018.
+
 "**Composition not Inheritance: Imagining a Functional Digital Humanities.**" *DHSI Colloquium*, Victoria BC, 2018.
 
 **"Alien Megastructures: The Possibility of Extraterrestrial Life and the Rhetoric of Hope in the Anthropocene."** *18th Biennial RSA Conference*, Minneapolis, MN, 2018.
@@ -144,7 +146,7 @@ Philip Young Memorial Endowment in American Literature, 2006. (Penn State)
 **Facilitator, "Commonsense Information Security
 for Academics."** *133rd MLA Annual Convention*, New York, NY, 2018. (Cancelled Due to Weather)
 
-**Roundtable Participant, "Hacking the Scholarly Worklow."**  *133rd MLA Annual Convention*, New York, NY, 2018. (Cancelled Due to Weather)
+**Roundtable Participant, "Hacking the Scholarly Workflow."**  *133rd MLA Annual Convention*, New York, NY, 2018. (Cancelled Due to Weather)
 
 **"The Jungle of the Real: Hacking Infrastructure After Baudrillard."** *The Society For Literature, Science, and the Arts 2017 Conference*, Tempe, AZ, 2017.
 
