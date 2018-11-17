@@ -131,15 +131,15 @@ Philip Young Memorial Endowment in American Literature, 2006. (Penn State)
 
 ## Conference Presentations
 
-"**Composition's Mushrooms: Fungal Models of Sustainable Pedagogy.**" *The Conference on College Composition and Communication*. Pittsburgh, PA, 2019. (Accepted)
+**"Composition's Mushrooms: Fungal Models of Sustainable Pedagogy."** *The Conference on College Composition and Communication*. Pittsburgh, PA, 2019. (Accepted)
 
-"[**Frankenstein's Monster vs Cthulhu!: Imagining the Monster at the End of this World.**](http://oncomouse.github.io/conference-materials/frankenreads/)" *"It's Alive!": Frankenstein’s Monster 200 Years Later*, College Station, TX, 2018.
+[**"Frankenstein's Monster vs Cthulhu!: Imagining the Monster at the End of this World."**](http://oncomouse.github.io/conference-materials/frankenreads/) *"It's Alive!": Frankenstein’s Monster 200 Years Later*, College Station, TX, 2018.
 
-"[**Composition not Inheritance: Imagining a Functional Digital Humanities.**](http://oncomouse.github.io/conference-materials/dhsi18/)" *DHSI Colloquium*, Victoria BC, 2018.
+[**"Composition not Inheritance: Imagining a Functional Digital Humanities."**](http://oncomouse.github.io/conference-materials/dhsi18/) *DHSI Colloquium*, Victoria BC, 2018.
 
 **["Alien Megastructures: The Possibility of Extraterrestrial Life and the Rhetoric of Hope in the Anthropocene."](http://oncomouse.github.io/conference-materials/rsa18/aliens/)** *18th Biennial RSA Conference*, Minneapolis, MN, 2018.
 
-**"[Events in Flux: Software Architecture and Rhetorical Subtraction.](http://oncomouse.github.io/conference-materials/rsa18/machines/)"** *18th Biennial RSA Conference*, Minneapolis, MN, 2018.
+[**"Events in Flux: Software Architecture and Rhetorical Subtraction."**](http://oncomouse.github.io/conference-materials/rsa18/machines/) *18th Biennial RSA Conference*, Minneapolis, MN, 2018.
 
 **"Security Through Transparency: Minimal Computing in the Jungle of the Real."** *133rd MLA Annual Convention*, New York, NY, 2018.
 
