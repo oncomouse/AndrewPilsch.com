@@ -29,10 +29,10 @@ namespace :build do
 
 	task :compress do
 		$stdout.print "Compressing site.js..."; $stdout.flush
-		system "uglifyjs -o _site/js/site.js _site/js/site.js"
+		system "npx uglifyjs -o _site/js/site.js _site/js/site.js"
 		$stdout.puts "done"
 		$stdout.print "Compressing *.html..."; $stdout.flush
-		system "html-minifier --input-dir _site --output-dir _site --file-ext html --collapse-whitespace --remove-comments --remove-attribute-quotes --remove-empty-attributes --use-short-doctype --minify-js --minify-css"
+		system "npx html-minifier --input-dir _site --output-dir _site --file-ext html --collapse-whitespace --remove-comments --remove-attribute-quotes --remove-empty-attributes --use-short-doctype --minify-js --minify-css"
 		$stdout.puts "done"
 		$stdout.print "Building Custom Tachyons.css..."; $stdout.flush
 		system "npx extract-tachyons `find _site -name \"*.html\"` --compress --output _site/css/tachyons-custom.min.css"
