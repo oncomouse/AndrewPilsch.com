@@ -16,6 +16,7 @@ const processInclude = (el, type, files) => {
   if (src.indexOf('cdnjs.cloudflare.com') >= 0) return;
   if (src.indexOf('unpkg.com') >= 0) return;
   if (src.indexOf('rawgit.com') >= 0) return;
+  if (src.indexOf('jsdelivr.com') >= 0) return;
   if (!files.has(src)) {
     const fileSrc = fs.readFileSync(path.join(...src.replace(/^http[s]{0,1}\:\/\/[^/]+\//, './_site/').split('/'))).toString();
     files.addFile(src, fileSrc);
