@@ -30,7 +30,7 @@
 
 **Six Chapter Manuscript, In-Progress** -- This project is a media archeology of the computer bug. While numerous works explore computer hacking, my project is interested in accidental computer failure: unintended consequences that can have dangerous and far-reaching effects. I uncover that the accident is integral to software while mitigating this accidental nature has radically altered the landscape of contemporary culture. Planned chapters trace the software accident through the early mathematical foundations of computing, the 1990s emergence of home computing and the Internet, the collapse of post-structural thought and the related rise of infrastructure studies, recent changes in programming practices resulting from big data, and current discussions about the programmatic nature of reality itself.
 
-***Forms of Digital Labor: Accounting for Work in the Information Age***
+***Humans at Work in the Digital Age: Forms of Digital Textual Labor***
 
 **Edited Collection, Co-Editing w/ Shawna Ross, 13 Chapter Drafts Collected, 2 Additional Solicited, & In Talks with Publishers** -- [CFP is online at: https://oncomouse.github.io/digital-labor-cfp/](https://oncomouse.github.io/digital-labor-cfp/). This edited collection draws together interdisciplinary scholars working on the question of digital labor, its forms, and its histories.
 
@@ -43,7 +43,7 @@
 **Six-Chapter Manuscript, University of Minnesota (2017)** -- This book explores the rhetorical history of "evolutionary futurism," a twentieth century Utopian rhetorical mode associating advancing telecommunications technologies with biological evolution to suggest near-future radical shifts in human existence and cognition. Tracing this rhetoric of transhumanism, chapters explore the evolutionary futurism of theosophy, 1940s science fiction, Raymond Kurzweil, and Pierre Teilhard de Chardin. In addition to a theoretical introduction, the book also contains an extended discussion of contemporary digital aesthetics as transhuman vectors of evolutionary overcoming.
 
 **Prizes:** 2017 Science Fiction and Technoculture Studies Book Prize  
-**Reviews:** [*Modernism/Modernity* (25.1)](https://muse.jhu.edu/article/685308), [*Configurations* (26.4)](http://muse.jhu.edu/article/705087)
+**Reviews:** [*Modernism/Modernity* (25.1)](https://muse.jhu.edu/article/685308), [*Configurations* (26.4)](http://muse.jhu.edu/article/705087), [*Contemporary Political Theory*](https://link.springer.com/article/10.1057/s41296-018-00302-y)
 
 ## Articles & Chapters
 
