@@ -85,6 +85,7 @@ document.addEventListener('DOMContentLoaded', function (ev) {
         boxes.forEach(function (el) {
           removeClass(OPEN_CLASS, el);
         });
+        hideCloseAllButton();
       });
     }
   }
@@ -96,6 +97,22 @@ document.addEventListener('DOMContentLoaded', function (ev) {
     addClass('dn', document.querySelector('#help'));
     hasClass(OPEN_CLASS, el) ? removeClass(OPEN_CLASS, el) : addClass(OPEN_CLASS, el);
     iso.layout();
+  }
+
+  function hideCloseAllButton() {
+    var closeAllButton = document.querySelector('#close-all');
+    if (closeAllButton !== null) {
+      removeClass(SHOWN_CLASS, closeAllButton);
+      addClass(HIDDEN_CLASS, closeAllButton);
+    }
+  }
+
+  function showCloseAllButton() {
+    var closeAllButton = document.querySelector('#close-all');
+    if (closeAllButton !== null) {
+      removeClass(HIDDEN_CLASS, closeAllButton);
+      addClass(SHOWN_CLASS, closeAllButton);
+    }
   }
 
   // Toggle open and close for a clicked box:
@@ -122,6 +139,9 @@ document.addEventListener('DOMContentLoaded', function (ev) {
         removeClass(ACTIVE_CLASS, el);
       });
       addClass(ACTIVE_CLASS, target);
+      iso.once('arrangeComplete', function() {
+        closeOpenBoxes();
+      });
       iso.arrange({
         filter: target.getAttribute('data-filter'),
       });
@@ -133,7 +153,7 @@ document.addEventListener('DOMContentLoaded', function (ev) {
     if (hasClass(HIDDEN_CLASS, el)) {
       el.addEventListener('click', function (ev) {
         ev.preventDefault();
-        closeOpenBoxes();
+          closeOpenBoxes();
         raf(triggerLayout);
       });
     // Otherwise, run the filter target:
@@ -161,7 +181,6 @@ document.addEventListener('DOMContentLoaded', function (ev) {
   // Clean-up tasks for when a layout is triggered:
   iso.on('layoutComplete', function () {
     var openBox = document.querySelector('.' + OPEN_CLASS);
-    var closeAllButton = document.querySelector('#close-all');
     if (openBox) {
       if (window.location.hash != '#' + openBox.getAttribute('id')) {
         window.location.hash = openBox.getAttribute('id');
@@ -169,15 +188,9 @@ document.addEventListener('DOMContentLoaded', function (ev) {
       if (openBox.getBoundingClientRect().top !== 0) {
         zenscroll.to(openBox);
       }
-      if (closeAllButton !== null) {
-        addClass(SHOWN_CLASS, closeAllButton);
-        removeClass(HIDDEN_CLASS, closeAllButton);
-      }
+      showCloseAllButton();
     } else {
-      if (closeAllButton !== null) {
-        removeClass(SHOWN_CLASS, closeAllButton);
-        addClass(HIDDEN_CLASS, closeAllButton);
-      }
+      hideCloseAllButton();
       window.location.hash = '';
     }
   });
