@@ -22,7 +22,7 @@ function removeClass(cl, el) {
 function hasClass(cl, el) {
   return el.className.split(' ').includes(cl);
 }
-var toArray = function ta_(notArray) {
+function toArray(notArray) {
   return Array.prototype.slice.call(notArray);
 };
 document.addEventListener('DOMContentLoaded', function (ev) {
