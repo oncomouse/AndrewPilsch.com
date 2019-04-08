@@ -47,11 +47,11 @@
 
 ## Articles & Chapters
 
+**"Life During Wartime: Science Fiction during and after World War II."** Chapter in *[The Cambridge History of Science Fiction](https://www.cambridge.org/core/books/cambridge-history-of-science-fiction/3D2698E9F76268359D4C6603A90F0C7A)* eds. Gerry Canavan and Eric Carl Link. (2018).
+
 **["The *Ethos* of *Mr. Robot*."](http://www.presenttensejournal.org/volume-7/the-ethos-of-mr-robot/)** *Present Tense* 7.1 (2018): n.p.
 
 **["Abducting Code, Translating the Future: Transpilers and the Implementation of JavaScript's Future."](http://amodern.net/article/translating-the-future/)** _Amodern_ 8 ("Translation-Machination" special issue, ed. Christine Mitchell & Rita Raley) (2018): n.p.
-
-**"Life During Wartime: Science Fiction during and after World War II."** Chapter in *The Cambridge History of Science Fiction* eds. Gerry Canavan and Eric Carl Link. (Collection Under Contract with Cambridge UP; Forthcoming, 2017).
 
 **"Polynesian Paralysis: Tiki Culture and the Aesthetics of American Empire."** Chapter in *The Year’s Work in Cocktail Culture: The Shaken and the Stirred*. Eds. Stephen Schneider and Craig N. Owens. (Under Preliminary Contract with Indiana UP in "The Year's Work: Studies in Fan Culture and Cultural Theory" series).
 
