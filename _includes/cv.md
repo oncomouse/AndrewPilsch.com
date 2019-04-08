@@ -43,7 +43,7 @@
 **Six-Chapter Manuscript, University of Minnesota (2017)** -- This book explores the rhetorical history of "evolutionary futurism," a twentieth century Utopian rhetorical mode associating advancing telecommunications technologies with biological evolution to suggest near-future radical shifts in human existence and cognition. Tracing this rhetoric of transhumanism, chapters explore the evolutionary futurism of theosophy, 1940s science fiction, Raymond Kurzweil, and Pierre Teilhard de Chardin. In addition to a theoretical introduction, the book also contains an extended discussion of contemporary digital aesthetics as transhuman vectors of evolutionary overcoming.
 
 **Prizes:** 2017 Science Fiction and Technoculture Studies Book Prize  
-**Reviews:** [*Modernism/Modernity* (25.1)](https://muse.jhu.edu/article/685308), [*Configurations* (26.4)](http://muse.jhu.edu/article/705087), [*Contemporary Political Theory*](https://link.springer.com/article/10.1057/s41296-018-00302-y)
+**Reviews:** [*Modernism/Modernity* (25.1)](https://muse.jhu.edu/article/685308), [*Configurations* (26.4)](http://muse.jhu.edu/article/705087), [*Contemporary Political Theory*](https://link.springer.com/article/10.1057/s41296-018-00302-y), [*Science Fiction Studies* (46.1)](https://www.jstor.org/stable/10.5621/sciefictstud.46.1.0196)
 
 ## Articles & Chapters
 
