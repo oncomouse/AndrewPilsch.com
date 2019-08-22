@@ -97,6 +97,8 @@
 
 ## Open Source Software
 
+[**coc-bibtex**](https://github.com/oncomouse/coc-bibtex), Lead developer. Open-source bibliography extension for the popular [Vim editor](https://www.vim.org/) that reads BibLaTeX files, such as those produced by [Zotero](https://zotero.org), and auto-generates in-text citations for users editing LaTeX and Markdown documents.
+
 [**coc-fish**](https://github.com/oncomouse/coc-fish), Lead Developer. Plugin for the popular [Vim editor](https://www.vim.org/) and [Coc framework](https://github.com/neoclide/coc.nvim) that adds autocompletion for the [Fish shell](https://fishshell.com/).
 
 [**rake-and-pandoc**](https://github.com/oncomouse/rake-and-pandoc), Lead Developer. Framework for writing books using the open source Markdown engine, Pandoc, and the task automation system, Rake.
