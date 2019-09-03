@@ -1,91 +1,90 @@
-<div
-	id="{{ include.content.id }}"
-  {% if include.type == "blog" %}data-uri="{{include.content.url}}"
-	{% elsif include.type == "course" and include.content.course_url != "" %}data-uri="{{include.content.course_url}}"{% endif %}
-	class="box w-col-{%if include.big or include.content.emphasize%}2{%else%}1{%endif%} {% if include.type == "presentation" or include.type == "book" or include.type == "article" or include.type == "other"%}research{% elsif include.type == "course" %}teaching course{%else%}{{ include.type}}{%endif%}{% if include.type != "blog" and include.type != "course" %} expand{%endif%} pointer overflow-auto min-h-col-1 bg-white pa1 ma-custom ba bb-thick br2 b--custom-gray {% if include.type == "course" %}{{ include.content.course_term | downcase | replace: " ", "-"}}{% endif %}">
-	<!-- Thumbnail-->
+<div id="{{ include.content.id }}" {% if include.type == "blog" %}data-uri="{{include.content.url}}"
+  {% elsif include.type == "course" and include.content.course_url != "" %}data-uri="{{include.content.course_url}}"
+  {% endif %}
+  class="box w-col-{%if include.big or include.content.emphasize%}2{%else%}1{%endif%} {% if include.type == "presentation" or include.type == "book" or include.type == "article" or include.type == "other"%}research{% elsif include.type == "course" %}teaching course{%else%}{{ include.type}}{%endif%}{% if include.type != "blog" and include.type != "course" %} expand{%endif%} pointer overflow-auto min-h-col-1 bg-white pa1 ma-custom ba bb-thick br2 b--custom-gray {% if include.type == "course" %}{{ include.content.course_term | downcase | replace: " ", "-"}}{% endif %}">
+  <!-- Thumbnail-->
   <div class="thumbnail">
-		<header class="flex flex-column-reverse">
-			<!-- Print the markdownified short title, if present -->
-			<h1 class="f3 mv0">
-				{% if include.type == "course" or include.type == "blog" %}
-					{{ include.content.title }}
-				{% else %}
-					{{ include.content.short_title | default: include.content.title | markdownify | replace: "<p>", "" | replace: "</p>", "" }}
-				{% endif %}
-			</h1>
-			<!-- Display the thumbnail image -->
-			{% if include.type == "course" %}
-				{% assign image_src=include.content.course_image %}
-			{% else %}
-				{% capture image_src %}/images/{% if include.type == "presentation" or include.type == "book" or include.type == "article" or include.type == "other"%}research{%else%}{{ include.type}}{%endif%}/{{include.content.id}}.png{% endcapture %}
-			{% endif %}
-			{% if include.type == "blog" %}
-				<div class="mt2"></div>
-			{% elsif include.type == "course" and include.content.course_url == "" %}
-				<div class="mt2"></div>
-			{% else %}
-				{% inline_image image_src %}
-			{% endif %}
-			<!-- Determine and display type, including cusotmizations -->
-			<h2 class="f4 mv0">
-				{% if include.type == "presentation" %}
-					<!-- Print presentation type, by calculating date delivered -->
-					{% capture today %}{{ "now" | date: "%s" }}{% endcapture %}
-					{% capture presentationtime %}{{ include.content.date | date: "%s" }}{% endcapture %}
-					{% if presentationtime < today %}Recent Presentation{% else %}Upcoming Presentation{% endif %}
-				{% elsif include.type == "article" %}
-					<!-- Print article type -->
-					{% capture unpublished_status %}
-						{% if include.content.published or include.content.status == "Forthcoming" %}
-							Forthcoming Article
-						{% else %}
-							Article in Progress
-						{% endif %}
-					{% endcapture %}
-					{% if include.content.published %}Published Article{%else%}{{ unpublished_status }}{%endif%}
-				{% elsif include.type == "blog" %}
-					Recent <br/> Blog Post
-				{% elsif include.type == "book" %}
-					<!-- Print book type -->
-					{% if include.content.published %}Published Book{%else%}Book In Progress{%endif%}
-				{% elsif  include.type == "course" and include.big == true %}
-					Course for {{ include.content.course_term }}
-				{% elsif  include.type == "course" and include.big == false %}
-					Currently Teaching
-				{% elsif include.type == "other" %}
-					{{ include.content.kind }}
-				{% else %}
-					<!-- Otherwise, guess -->
-					{{ include.type | capitalize }}
-				{% endif %}
-			</h2>
-		</header>
-		<div class="lh-copy">
-			{% if include.type == "blog" or include.type == "course" %}
-				<p>{{ include.content.short_description }}</p>
-			{% else %}
-				{{ include.content.short_description | markdownify }}
-			{% endif %}
-		</div>
+    <header class="flex flex-column-reverse">
+      <!-- Print the markdownified short title, if present -->
+      <h1 class="f3 mv0">
+        {% if include.type == "course" or include.type == "blog" %}
+        {{ include.content.title }}
+        {% else %}
+        {{ include.content.short_title | default: include.content.title | markdownify | replace: "<p>", "" | replace: "</p>", "" }}
+        {% endif %}
+      </h1>
+      <!-- Display the thumbnail image -->
+      {% if include.type == "course" %}
+      {% assign image_src=include.content.course_image %}
+      {% else %}
+      {% capture image_src %}/images/{% if include.type == "presentation" or include.type == "book" or include.type == "article" or include.type == "other"%}research{%else%}{{ include.type}}{%endif%}/{{include.content.id}}.png{% endcapture %}
+      {% endif %}
+      {% if include.type == "blog" %}
+      <div class="mt2"></div>
+      {% elsif include.type == "course" and include.content.course_url == "" %}
+      <div class="mt2"></div>
+      {% else %}
+      {% inline_image image_src %}
+      {% endif %}
+      <!-- Determine and display type, including cusotmizations -->
+      <h2 class="f4 mv0">
+        {% if include.type == "presentation" %}
+        <!-- Print presentation type, by calculating date delivered -->
+        {% capture today %}{{ "now" | date: "%s" }}{% endcapture %}
+        {% capture presentationtime %}{{ include.content.date | date: "%s" }}{% endcapture %}
+        {% if presentationtime < today %}Recent Presentation{% else %}Upcoming Presentation{% endif %}
+        {% elsif include.type == "article" %}
+        <!-- Print article type -->
+        {% capture unpublished_status %}
+        {% if include.content.published or include.content.status == "Forthcoming" %}
+        Forthcoming Article
+        {% else %}
+        Article in Progress
+        {% endif %}
+        {% endcapture %}
+        {% if include.content.published %}Published Article{%else%}{{ unpublished_status }}{%endif%}
+        {% elsif include.type == "blog" %}
+        Recent <br /> Blog Post
+        {% elsif include.type == "book" %}
+        <!-- Print book type -->
+        {% if include.content.published %}Published Book{%else%}Book In Progress{%endif%}
+        {% elsif  include.type == "course" and include.big == true %}
+        Course for {{ include.content.course_term }}
+        {% elsif  include.type == "course" and include.big == false %}
+        Currently Teaching
+        {% elsif include.type == "other" %}
+        {{ include.content.kind }}
+        {% else %}
+        <!-- Otherwise, guess -->
+        {{ include.type | capitalize }}
+        {% endif %}
+      </h2>
+    </header>
+    <div class="lh-copy">
+      {% if include.type == "blog" or include.type == "course" %}
+      <p>{{ include.content.short_description }}</p>
+      {% else %}
+      {{ include.content.short_description | markdownify }}
+      {% endif %}
+    </div>
   </div>
-	{% if include.type != "blog" and include.type != "course" %}
-		<!-- Expanded content: -->
-		<div class="content lh-copy">
-			{% if include.type != "info" %}
-				<h1>{{ include.content.title | markdownify | replace: "<p>", "" | replace: "</p>", "" }}</h1>
-			{% endif %}
-			{% if include.type == "presentation" %}
-				<p>
-					<strong>Presentation At</strong>:
-					<em>{{ include.content.conference }}</em>,
-					{{ include.content.conference_location }}
-					{{ include.content.conference.date.year }}
-				</p>
-			{%endif%}
-			<div class="measure center">
-				{{ include.content.description | markdownify }}
-			</div>
-		</div>
-	{% endif %}
+  {% if include.type != "blog" and include.type != "course" %}
+  <!-- Expanded content: -->
+  <div class="content lh-copy">
+    {% if include.type != "info" %}
+    <h1>{{ include.content.title | markdownify | replace: "<p>", "" | replace: "</p>", "" }}</h1>
+    {% endif %}
+    {% if include.type == "presentation" %}
+    <p>
+      <strong>Presentation At</strong>:
+      <em>{{ include.content.conference }}</em>,
+      {{ include.content.conference_location }}
+      {{ include.content.conference.date.year }}
+    </p>
+    {%endif%}
+    <div class="measure center">
+      {{ include.content.description | markdownify }}
+    </div>
+  </div>
+  {% endif %}
 </div>
