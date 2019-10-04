@@ -166,8 +166,6 @@ img {
 .cv-thumbnail {
   font-size: 9.2em;
 }
-.cv-content {
-}
 .cv-content p,
 .cv-content ul,
 .cv-content ol,
@@ -224,6 +222,11 @@ img {
   padding-bottom: 2px;
   content: "+";
   border-bottom-left-radius: 4px;
+  transition: background 0.4s ease-in;
+}
+.box.expand.open:after {
+  content: '';
+  background: transparent;
 }
 #help {
   transition: opacity .25s ease-in;
