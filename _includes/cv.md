@@ -32,7 +32,7 @@
 
 ***Humans at Work in the Digital Age: Forms of Digital Textual Labor***
 
-**14-Chapter Edited Collection, Co-Edited with Shawna Ross, Routledge (forthcoming 2020) -- This edited collection explores the roots of twenty-first century cultures of digital textual labor, mapping the diverse physical and cognitive acts involved, and recovering the invisible workers and work that support digital technologies. [Table of Contents Online at Routledge](https://www.routledge.com/Humans-at-Work-in-the-Digital-Age-Forms-of-Digital-Textual-Labor-1st/Ross-Pilsch/p/book/9780367199982
+**14-Chapter Edited Collection, Co-Edited with Shawna Ross, Routledge (forthcoming 2020)** -- This edited collection explores the roots of twenty-first century cultures of digital textual labor, mapping the diverse physical and cognitive acts involved, and recovering the invisible workers and work that support digital technologies. [Table of Contents Online at Routledge](https://www.routledge.com/Humans-at-Work-in-the-Digital-Age-Forms-of-Digital-Textual-Labor-1st/Ross-Pilsch/p/book/9780367199982
 )
 
 # Publications
