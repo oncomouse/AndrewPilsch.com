@@ -32,7 +32,8 @@
 
 ***Humans at Work in the Digital Age: Forms of Digital Textual Labor***
 
-**Edited Collection, Co-Editing w/ Shawna Ross, 13 Chapter Drafts Collected, 2 Additional Solicited, & In Talks with Publishers** -- [CFP is online at: https://oncomouse.github.io/digital-labor-cfp/](https://oncomouse.github.io/digital-labor-cfp/). This edited collection draws together interdisciplinary scholars working on the question of digital labor, its forms, and its histories.
+**14-Chapter Edited Collection, Co-Edited with Shawna Ross, Routledge (forthcoming 2020) -- This edited collection explores the roots of twenty-first century cultures of digital textual labor, mapping the diverse physical and cognitive acts involved, and recovering the invisible workers and work that support digital technologies. [Table of Contents Online at Routledge](https://www.routledge.com/Humans-at-Work-in-the-Digital-Age-Forms-of-Digital-Textual-Labor-1st/Ross-Pilsch/p/book/9780367199982
+)
 
 # Publications
 
@@ -47,13 +48,13 @@
 
 ## Articles & Chapters
 
+**"Polynesian Paralysis: Tiki Culture and the Aesthetics of American Empire."** Chapter in *The Year’s Work in Cocktail Culture: The Shaken and the Stirred*. Eds. Stephen Schneider and Craig N. Owens. (Under with Indiana UP in "The Year's Work: Studies in Fan Culture and Cultural Theory" series; forthcoming 2020).
+
 **"Life During Wartime: Science Fiction during and after World War II."** Chapter in *[The Cambridge History of Science Fiction](https://www.cambridge.org/core/books/cambridge-history-of-science-fiction/3D2698E9F76268359D4C6603A90F0C7A)* eds. Gerry Canavan and Eric Carl Link. (2018).
 
 **["The *Ethos* of *Mr. Robot*."](http://www.presenttensejournal.org/volume-7/the-ethos-of-mr-robot/)** *Present Tense* 7.1 (2018): n.p.
 
 **["Abducting Code, Translating the Future: Transpilers and the Implementation of JavaScript's Future."](http://amodern.net/article/translating-the-future/)** _Amodern_ 8 ("Translation-Machination" special issue, ed. Christine Mitchell & Rita Raley) (2018): n.p.
-
-**"Polynesian Paralysis: Tiki Culture and the Aesthetics of American Empire."** Chapter in *The Year’s Work in Cocktail Culture: The Shaken and the Stirred*. Eds. Stephen Schneider and Craig N. Owens. (Under Preliminary Contract with Indiana UP in "The Year's Work: Studies in Fan Culture and Cultural Theory" series).
 
 **["Invoking Darkness: *Skotison*, Scalar Derangement, and Inhuman Rhetoric."](https://muse.jhu.edu/article/666620)** *Philosophy and Rhetoric* 50.3 (2017): 336-355.
 
