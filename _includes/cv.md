@@ -277,13 +277,15 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 
 ## For Texas A&M University
 
+**Ad-hoc Tenure Process Review Committee**, 2019-Present.
+
 **Graduate Studies Committee**, 2017-Present.
 
-**Strategic Planning Committee**, 2016-Present.
+**Strategic Planning Committee**, 2016-2019.
 
-**Digital Humanities Working Group Convener**, 2015-Present.
+**Digital Humanities Working Group Convener**, 2015-2017.
 
-**Multimedia Editing & Writing Ad Hoc Committee**, 2015-Present.
+**Multimedia Editing & Writing Ad Hoc Committee**, 2015-2017.
 
 **Ad Hoc Writing Committee Member**, 2015-2016.
 
