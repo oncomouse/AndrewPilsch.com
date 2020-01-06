@@ -30,14 +30,13 @@
 
 **Six Chapter Manuscript, In-Progress** -- This project is a media archeology of the computer bug. While numerous works explore computer hacking, my project is interested in accidental computer failure: unintended consequences that can have dangerous and far-reaching effects. I uncover that the accident is integral to software while mitigating this accidental nature has radically altered the landscape of contemporary culture. Planned chapters trace the software accident through the early mathematical foundations of computing, the 1990s emergence of home computing and the Internet, the collapse of post-structural thought and the related rise of infrastructure studies, recent changes in programming practices resulting from big data, and current discussions about the programmatic nature of reality itself.
 
-***Humans at Work in the Digital Age: Forms of Digital Textual Labor***
-
-**14-Chapter Edited Collection, Co-Edited with Shawna Ross, Routledge (forthcoming 2020)** -- This edited collection explores the roots of twenty-first century cultures of digital textual labor, mapping the diverse physical and cognitive acts involved, and recovering the invisible workers and work that support digital technologies. [Table of Contents Online at Routledge](https://www.routledge.com/Humans-at-Work-in-the-Digital-Age-Forms-of-Digital-Textual-Labor-1st/Ross-Pilsch/p/book/9780367199982
-)
-
 # Publications
 
 ## Books
+
+***Humans at Work in the Digital Age: Forms of Digital Textual Labor***
+
+**14-Chapter Edited Collection, Co-Edited with Shawna Ross, Routledge (2019)** -- This edited collection explores the roots of twenty-first century cultures of digital textual labor, mapping the diverse physical and cognitive acts involved, and recovering the invisible workers and work that support digital technologies. [Table of Contents Online at Routledge](https://www.routledge.com/Humans-at-Work-in-the-Digital-Age-Forms-of-Digital-Textual-Labor-1st/Ross-Pilsch/p/book/9780367199982)
 
 ***Transhumanism: Evolutionary Futurism and the Human Technologies of Utopia***
 
@@ -136,7 +135,7 @@ Philip Young Memorial Endowment in American Literature, 2006. (Penn State)
 
 ## Conference Presentations
 
-**"Composition's Mushrooms: Fungal Models of Sustainable Pedagogy."** *The Conference on College Composition and Communication*. Pittsburgh, PA, 2019. (Accepted)
+**"The Totalitarian as Reality-Pilot: Transhumanist World Projects in PhilipK. Dick’s Three Stigmata of Palmer Eldritch"**](https://oncomouse.github.io/conference-materials/msa2019/) *Modernist Studies Association 2019 Conference*, Toronto, ON, 2019.
 
 [**"Frankenstein's Monster vs Cthulhu!: Imagining the Monster at the End of this World."**](http://oncomouse.github.io/conference-materials/frankenreads/) *"It's Alive!": Frankenstein’s Monster 200 Years Later*, College Station, TX, 2018.
 
