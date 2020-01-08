@@ -204,7 +204,9 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 
 # Teaching Experience <small>(41 Sections; 21 Courses; 1206 Students)</small>
 
-## Texas A&M University <small>(15 Sections; 9 Courses; 282 Students)</small>
+## Texas A&M University <small>(17 Sections; 9 Courses; 399 Students)</small>
+
+[**Science Fiction**](http://andrew.pilsch.com/courses/engl334spr2020/) (2 Sections; 67 Students) -- Course teaches the history of science fiction from the pulp era to the present, with a focus on the interchange between technology and fictional representation and the development of SF as a publishing industry.
 
 [**Independent Study**](http://andrew.pilsch.com/courses/engl485fall2018/) (1 Section; 1 Student) -- Taught in Fall 2018 as "Writing About Science," a pilot for a new course in the English major.
 
@@ -214,13 +216,13 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 
 [**Digital Authoring Practices**](https://github.com/oncomouse/engl460fall2017) (1 Section; 10 Students) -- I developed and first taught this class for A&M. The course is designed to introduce students to the technologies of digital writing while asking them to formulate artifacts using computational artifacts.
 
-[**Rhetoric of Style**](https://andrew.pilsch.com/courses/engl355fall2018) (3 Section; 80 Students) -- Course documents the relationship between style and persuasion, with an emphasis on sentence analysis, tropes & figures, and classical rhetorical style exercises.
+[**Rhetoric of Style**](https://andrew.pilsch.com/courses/engl355fall2018) (4 Section; 105 Students) -- Course documents the relationship between style and persuasion, with an emphasis on sentence analysis, tropes & figures, and classical rhetorical style exercises.
 
 [**Graduate Seminar: History and Theory of Rhetoric since 1800**](https://andrew.pilsch.com/courses/engl655fall2016) (1 Section; 6 Students) -- Taught in Fall 2016 as "Rhetoric's Avant-Garde," which focused on the intersection between avant-garde writing practices and developments in rhetorical theory during the twentieth century.
 
 [**Graduate Directed Study: History and Theory of Rhetoric**](https://andrew.pilsch.com/courses/engl686spr2016) (1 Section; 2 Students) -- Graduate directed reading focusing on the history of rhetoric from ancient Greece through the Enlightenment _and_ contemporary articulations of those concepts in rhetoric of science, rhetorical historiography, procedural rhetoric, and minority rhetorics.
 
-[**History of Rhetoric**](https://andrew.pilsch.com/courses/engl353spr2017) (2 Section; 50 Students) -- Focus on the history and development of rhetorical concepts from the ancient Greeks through the Enlightenment.
+[**History of Rhetoric**](https://andrew.pilsch.com/courses/engl353spr2017) (3 Section; 75 Students) -- Focus on the history and development of rhetorical concepts from the ancient Greeks through the Enlightenment.
 
 [**Modern Rhetorical Theory**](https://andrew.pilsch.com/courses/engl354fall2017) (4 Section; 100 Students) -- Course focuses on the developments of rhetorical theory in the 20th century. Course emphasizes mutations in media and globality as preconditions for the flowering of rhetorical thought that mark our world.
 
