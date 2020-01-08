@@ -53,7 +53,7 @@
 
 **["The *Ethos* of *Mr. Robot*."](http://www.presenttensejournal.org/volume-7/the-ethos-of-mr-robot/)** *Present Tense* 7.1 (2018): n.p.
 
-**["Abducting Code, Translating the Future: Transpilers and the Implementation of JavaScript's Future."](http://amodern.net/article/translating-the-future/)** _Amodern_ 8 ("Translation-Machination" special issue, ed. Christine Mitchell & Rita Raley) (2018): n.p.
+**["Translating the Future: Transpilers and the Implementation of JavaScript's Future."](https://web.archive.org/web/20180327221625/https://amodern.net/article/translating-the-future/)** _Amodern_ 8 ("Translation-Machination" special issue, ed. Christine Mitchell & Rita Raley) (2018): n.p.
 
 **["Invoking Darkness: *Skotison*, Scalar Derangement, and Inhuman Rhetoric."](https://muse.jhu.edu/article/666620)** *Philosophy and Rhetoric* 50.3 (2017): 336-355.
 
