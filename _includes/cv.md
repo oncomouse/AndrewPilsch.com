@@ -47,9 +47,17 @@
 
 ## Articles & Chapters
 
+**"Teaching Science Fiction as Media Archaeology"** in *Science Fiction in the Literature Classroom*. Ed. Gerry Canavan. (collection proposal under review with MLA).
+
+**"What the Computer Said: Poetic Machines, Rhetorical Adjuncts, and the Circuits of Eloquence"** in *Re-Programmable Rhetorics*. Eds. Steven Holmes and Michael Faris. (collection under review at Utah State UP).
+
+**"The Posthuman City"** in *The City in American Literature aand Culture*. Ed. Kevin McNamara. (preliminary contract from Cambridge UP).
+
+**"Computation"** in *The Edinburgh Companion to Modernism and Technology*. Eds. Ian Whittington and Alex Goody. (preliminary contract from Edinburgh UP).
+
 **"Events in Flux: Software Architecture, *Detractio*, and the Rhetorical Infrastructure of Facebook" *Computers & Composition* 57, Special Issue "Composing Algorithms: Writing (with) Rhetorical Machines" (forthcoming September 2020).
 
-**"Polynesian Paralysis: Tiki Culture and the Aesthetics of American Empire."** Chapter in *The Year’s Work in Cocktail Culture: The Shaken and the Stirred*. Eds. Stephen Schneider and Craig N. Owens. (Under with Indiana UP in "The Year's Work: Studies in Fan Culture and Cultural Theory" series; forthcoming 2020).
+**"Polynesian Paralysis: Tiki Culture and the Aesthetics of American Empire."** Chapter in *The Year's Work in Cocktail Culture: The Shaken and the Stirred*. Eds. Stephen Schneider and Craig N. Owens. (Under Contract with Indiana UP in "The Year's Work: Studies in Fan Culture and Cultural Theory" series; forthcoming 2020).
 
 **"Life During Wartime: Science Fiction during and after World War II."** Chapter in *[The Cambridge History of Science Fiction](https://www.cambridge.org/core/books/cambridge-history-of-science-fiction/3D2698E9F76268359D4C6603A90F0C7A)* eds. Gerry Canavan and Eric Carl Link. (2018).
 
