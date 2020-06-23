@@ -24,6 +24,12 @@ module Jekyll
         output = ''
         JSON.parse(URI.parse("https://oncomouse.github.io/courses/courses.json").read).select { |course| course['course_term'] == term }.each do |course|
           course['image'] = course['course_image']
+          # Check if Image Exists:
+          begin
+            URI.parse(course['image']).read
+          rescue OpenURI::HTTPError => _e
+            course['image'] = "https://dummyimage.com/206x150/fff/000.png&text=#{course['course_id']}"
+          end
           course['title'] = "#{course['course_number']} #{course['course_title']}, #{course['course_term']}"
           course['id'] = course['course_id']
           course['short_description'] = Kramdown::Document.new(course['course_description'].is_a?(Array) ? course['course_description'].first : course['course_description']).to_html.to_s

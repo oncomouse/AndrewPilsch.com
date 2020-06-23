@@ -15,7 +15,7 @@
       </h1>
       <!-- Display the thumbnail image -->
       {% if include.type == "course" %}
-      {% assign image_src=include.content.course_image %}
+      {% assign image_src=include.content.image %}
       {% else %}
       {% capture image_src %}/images/{% if include.type == "presentation" or include.type == "book" or include.type == "article" or include.type == "other"%}research{%else%}{{ include.type}}{%endif%}/{{include.content.id}}.png{% endcapture %}
       {% endif %}
