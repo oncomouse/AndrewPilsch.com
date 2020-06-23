@@ -17,12 +17,12 @@ module Jekyll
         term = 'Fall'
         if (today.month >= 1) && (today.month < 6)
           term = 'Spring'
-        elsif (today.month >= 6) && (today.month < 8)
-          term = 'Summer'
+        # elsif (today.month >= 6) && (today.month < 8)
+        #   term = 'Summer'
         end
         term = "#{term} #{today.year}"
         output = ''
-        JSON.parse(URI.parse("https://andrew.pilsch.com/courses/courses.php?json&blank&front_page&term=#{URI.escape(term)}").read).each do |course|
+        JSON.parse(URI.parse("https://oncomouse.github.io/courses/courses.json").read).select { |course| course['course_term'] == term }.each do |course|
           course['image'] = course['course_image']
           course['title'] = "#{course['course_number']} #{course['course_title']}, #{course['course_term']}"
           course['id'] = course['course_id']

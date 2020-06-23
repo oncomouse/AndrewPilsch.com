@@ -5,4 +5,4 @@ title: "View All My Courses"
 short_description: |+
   See a complete list of my courses:
 
-  <div class="tc"><a class="nowrap dib bb-thick pointer link br2 ba ph3 pv2 mb2 mr1 b--custom-gray black hover-bg-custom-gray no-underline-hover" href="/courses">Click here to view</a></div>
+    <div class="tc"><a class="nowrap dib bb-thick pointer link br2 ba ph3 pv2 mb2 mr1 b--custom-gray black hover-bg-custom-gray no-underline-hover" href="https://oncomouse.github.io/courses">Click here to view</a></div>
