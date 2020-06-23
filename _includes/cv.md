@@ -55,7 +55,7 @@
 
 **"Computation"** in *The Edinburgh Companion to Modernism and Technology*. Eds. Ian Whittington and Alex Goody. (preliminary contract from Edinburgh UP).
 
-**"Events in Flux: Software Architecture, *Detractio*, and the Rhetorical Infrastructure of Facebook" *Computers & Composition* 57, Special Issue "Composing Algorithms: Writing (with) Rhetorical Machines" (forthcoming September 2020).
+**"Events in Flux: Software Architecture, *Detractio*, and the Rhetorical Infrastructure of Facebook."** *Computers & Composition* 57, Special Issue "Composing Algorithms: Writing (with) Rhetorical Machines" (forthcoming September 2020).
 
 **"Polynesian Paralysis: Tiki Culture and the Aesthetics of American Empire."** Chapter in *The Year's Work in Cocktail Culture: The Shaken and the Stirred*. Eds. Stephen Schneider and Craig N. Owens. (Under Contract with Indiana UP in "The Year's Work: Studies in Fan Culture and Cultural Theory" series; forthcoming 2020).
 
