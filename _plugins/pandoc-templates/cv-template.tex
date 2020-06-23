@@ -5,7 +5,6 @@
 \documentclass[11pt, legal]{article}
 \renewcommand*\familydefault{\sfdefault}
 \usepackage{fontspec} 
-\usepackage{hyperref}
 \usepackage{setspace}
 
 \usepackage{longtable, booktabs}
@@ -13,6 +12,7 @@
 \renewcommand{\bottomrule}{}
 \usepackage{tabu}
 \usepackage{xifthen}
+\usepackage{hyperref}
 \renewenvironment{longtable}[5]{%
 	\center %
 	\ifthenelse{\equal{\detokenize{#3}}{\detokenize{@{}lll@{}}}}
