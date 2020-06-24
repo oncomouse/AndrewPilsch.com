@@ -177,8 +177,14 @@ document.addEventListener('DOMContentLoaded', function (ev) {
       },
     });
     // Attach courses:
-    // if (window.ENV['JEKYLL_ENV'] === 'production') {
-    if (true) {
+    if (window.ENV['JEKYLL_ENV'] === 'production') {
+      function boxLoadCallback(boxes) {
+        iso.addItems(boxes);
+        iso.reloadItems();
+        iso.arrange({
+          sortBy: 'original-order',
+        });
+      }
       // Attach courses:
       var today = new Date();
       var month = today.getMonth() + 1;
@@ -190,6 +196,7 @@ document.addEventListener('DOMContentLoaded', function (ev) {
         .then(function (courses) {
           var template = document.querySelector('#all-courses').cloneNode(true);
           var mountPoint = document.querySelector('#grid');
+          var output = [];
           courses.forEach(function (course) {
             var outputBox = template.cloneNode(true);
             outputBox.id = '';
@@ -202,6 +209,7 @@ document.addEventListener('DOMContentLoaded', function (ev) {
               imageContainer.innerHTML = '';
               imageContainer.appendChild(image);
               mountPoint.appendChild(outputBox);
+              output.push(outputBox);
               iso.appended(outputBox);
               iso.layout();
             }
@@ -214,7 +222,9 @@ document.addEventListener('DOMContentLoaded', function (ev) {
             }
             image.src = course.course_image;
           });
-        });
+          return output;
+        })
+        .then(boxLoadCallback);
       // Attach blog posts:
       fetch('https://andrew.pilsch.com/blog/frontpage.json')
         .then(function (res) {return res.json();})
@@ -239,14 +249,7 @@ document.addEventListener('DOMContentLoaded', function (ev) {
           document.querySelector('#grid').removeChild(document.querySelector('#blog_posts'));
           return output;
         })
-        .then(function (boxes) {
-          iso.addItems(boxes);
-          iso.reloadItems();
-          iso.arrange({
-            sortBy: 'original-order',
-          });
-
-        })
+        .then(boxLoadCallback)
     }
   });
   // Clean-up tasks for when a layout is triggered:
