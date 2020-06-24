@@ -16,7 +16,7 @@ function addClass(cl, el) {
 function removeClass(cl, el) {
   el.className = el.className
     .split(' ')
-    .filter(function (x) { return x !== cl; })
+    .filter(function (x) {return x !== cl;})
     .join(' ');
 }
 function hasClass(cl, el) {
@@ -24,10 +24,13 @@ function hasClass(cl, el) {
 }
 function toArray(notArray) {
   return Array.prototype.slice.call(notArray);
-};
+}
+function clickableBoxEventListener(ev) {
+  ev.preventDefault();
+  window.location.assign(ev.currentTarget.getAttribute('data-uri'));
+}
+
 document.addEventListener('DOMContentLoaded', function (ev) {
-  // Configure LazyLoad:
-  var lazyloader;
   // Set up the timer for the help function:
   var helpTimer = window.setTimeout(function () {
     removeClass('dn', document.querySelector('#help'));
@@ -53,10 +56,6 @@ document.addEventListener('DOMContentLoaded', function (ev) {
   zenscroll.setup(null, 0);
 
   // Configure clickable boxes:
-  function clickableBoxEventListener(ev) {
-    ev.preventDefault();
-    window.location.assign(ev.currentTarget.getAttribute('data-uri'));
-  }
   toArray(document.querySelectorAll('[data-uri]')).forEach(function (element) {
     element.addEventListener('click', clickableBoxEventListener);
   });
@@ -139,7 +138,7 @@ document.addEventListener('DOMContentLoaded', function (ev) {
         removeClass(ACTIVE_CLASS, el);
       });
       addClass(ACTIVE_CLASS, target);
-      iso.once('arrangeComplete', function() {
+      iso.once('arrangeComplete', function () {
         closeOpenBoxes();
       });
       iso.arrange({
@@ -153,10 +152,10 @@ document.addEventListener('DOMContentLoaded', function (ev) {
     if (hasClass(HIDDEN_CLASS, el)) {
       el.addEventListener('click', function (ev) {
         ev.preventDefault();
-          closeOpenBoxes();
+        closeOpenBoxes();
         raf(triggerLayout);
       });
-    // Otherwise, run the filter target:
+      // Otherwise, run the filter target:
     } else {
       el.addEventListener('click', filterBoxes);
     }
@@ -170,13 +169,85 @@ document.addEventListener('DOMContentLoaded', function (ev) {
       openOrCloseBox(hashTarget);
     }
     // Load images:
-    lazyloader = new LazyLoad({
+    new LazyLoad({
       elements_selector: ".lazy",
       callback_load: function (el) {
         el.style.width = '';
         el.style.height = '';
       },
     });
+    // Attach courses:
+    // if (window.ENV['JEKYLL_ENV'] === 'production') {
+    if (true) {
+      // Attach courses:
+      var today = new Date();
+      var month = today.getMonth() + 1;
+      var year = today.getFullYear();
+      var term = (month >= 1 && month < 6 ? 'Spring' : 'Fall') + ' ' + year;
+      fetch('https://oncomouse.github.io/courses/courses.json')
+        .then(function (res) {return res.json()})
+        .then(function (json) {return json.filter(function (course) {return course.course_term === term;})})
+        .then(function (courses) {
+          var template = document.querySelector('#all-courses').cloneNode(true);
+          var mountPoint = document.querySelector('#grid');
+          courses.forEach(function (course) {
+            var outputBox = template.cloneNode(true);
+            outputBox.id = '';
+            outputBox.setAttribute('data-uri', course.course_url);
+            outputBox.addEventListener('click', clickableBoxEventListener);
+            outputBox.querySelector('h1').innerText = course.course_title + ', ' + course.course_term;
+            outputBox.querySelector('.lh-copy').innerHTML = snarkdown(course.course_description);
+            function attach(image) {
+              var imageContainer = outputBox.querySelector('.thumbnail .mt2');
+              imageContainer.innerHTML = '';
+              imageContainer.appendChild(image);
+              mountPoint.appendChild(outputBox);
+              iso.appended(outputBox);
+              iso.layout();
+            }
+            var image = new Image();
+            image.onload = function () {
+              attach(image);
+            }
+            image.onerror = function () {
+              image.src = 'https://dummyimage.com/206x150/fff/000.png&text=' + course.course_id;
+            }
+            image.src = course.course_image;
+          });
+        });
+      // Attach blog posts:
+      fetch('https://andrew.pilsch.com/blog/frontpage.json')
+        .then(function (res) {return res.json();})
+        .then(function (posts) {
+          var output = [];
+          var template = document.querySelectorAll('.research.w-col-1.box')[1].cloneNode(true);
+          var mountPoint = document.querySelector('#blog_posts');
+          posts.forEach(function (post) {
+            var outputBox = template.cloneNode(true);
+            outputBox.classList.remove('research');
+            outputBox.classList.add('blog');
+            outputBox.id = '';
+            outputBox.querySelector('header').removeChild(outputBox.querySelector('img'));
+            outputBox.querySelector('h2').innerText = 'Recent Blog Post';
+            outputBox.querySelector('h1').innerText = post.title;
+            outputBox.querySelector('.lh-copy').innerHTML = post.summary;
+            outputBox.setAttribute('data-uri', post.url);
+            outputBox.addEventListener('click', clickableBoxEventListener);
+            mountPoint.insertAdjacentElement('afterend', outputBox);
+            output.push(outputBox);
+          });
+          document.querySelector('#grid').removeChild(document.querySelector('#blog_posts'));
+          return output;
+        })
+        .then(function (boxes) {
+          iso.addItems(boxes);
+          iso.reloadItems();
+          iso.arrange({
+            sortBy: 'original-order',
+          });
+
+        })
+    }
   });
   // Clean-up tasks for when a layout is triggered:
   iso.on('layoutComplete', function () {

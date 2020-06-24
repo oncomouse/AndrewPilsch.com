@@ -61,8 +61,8 @@
       </h2>
     </header>
     <div class="lh-copy">
-      {% if include.type == "blog" or include.type == "course" %}
-      <p>{{ include.content.short_description }}</p>
+      {% if include.type == "blog" %}
+      {{ include.content.short_description }}
       {% else %}
       {{ include.content.short_description | markdownify }}
       {% endif %}

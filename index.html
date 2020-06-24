@@ -95,7 +95,7 @@ layout: null
     {%endfor%}
     <!-- /Other Research -->
     <!-- Blog Posts -->
-    {% blog_posts %}
+    <div id="blog_posts"></div>
     <!-- /Blog Posts -->
     <!-- Presentations -->
     {% for presentation_hash in site.data.research.presentations %}
@@ -109,7 +109,6 @@ layout: null
     {% include box.html type="info" content=site.data.about-site %}
     <!-- /About Site -->
     <!-- Courses -->
-    {% current_courses %}
     {% include box.html type="course" content=site.data.all-courses %}
     <!-- /Courses -->
   </div>
