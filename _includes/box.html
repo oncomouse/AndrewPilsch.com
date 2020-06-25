@@ -24,7 +24,7 @@
       {% elsif include.type == "course" and include.content.course_url == "" %}
       <div class="mt2"></div>
       {% else %}
-      {% inline_image image_src %}
+      <img src="data:image/.gif;base64,R0lGODlhAQABAIAAANvf7wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="{{ image_src | absolute_url }}" style="{% imagesize image_src:css %}" class="lazy db center mv3 bg-mid-gray">
       {% endif %}
       <!-- Determine and display type, including cusotmizations -->
       <h2 class="f4 mv0">
