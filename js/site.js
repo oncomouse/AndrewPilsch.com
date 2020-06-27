@@ -177,7 +177,13 @@ document.addEventListener('DOMContentLoaded', function (ev) {
       },
     });
     // Attach courses:
+    // if (true) {
     if (window.ENV['JEKYLL_ENV'] === 'production') {
+      document.querySelector('#all-courses a').addEventListener('click', function (ev) {
+        ev.preventDefault();
+        loadCourses();
+      })
+
       function boxLoadCallback(boxes) {
         iso.addItems(boxes);
         iso.reloadItems();
@@ -186,45 +192,50 @@ document.addEventListener('DOMContentLoaded', function (ev) {
         });
       }
       // Attach courses:
+      function loadCourses(term) {
+        fetch('https://oncomouse.github.io/courses/courses.json')
+          .then(function (res) {return res.json()})
+          .then(function (json) {return !term ? json : json.filter(function (course) {return course.course_term === term;})})
+          .then(function (courses) {
+            var template = document.querySelector('#all-courses').cloneNode(true);
+            var mountPoint = document.querySelector('#grid');
+            var output = [];
+            courses.forEach(function (course) {
+              if (document.querySelector(course.course_id)) return;
+              var outputBox = template.cloneNode(true);
+              outputBox.id = course.course_id;
+              outputBox.setAttribute('data-uri', course.course_url);
+              outputBox.addEventListener('click', clickableBoxEventListener);
+              outputBox.querySelector('h1').innerText = course.course_title + ', ' + course.course_term;
+              outputBox.querySelector('.lh-copy').innerHTML = snarkdown(course.course_description);
+              function attach(image) {
+                var imageContainer = outputBox.querySelector('.thumbnail .mt2');
+                imageContainer.innerHTML = '';
+                imageContainer.appendChild(image);
+                mountPoint.appendChild(outputBox);
+                output.push(outputBox);
+                iso.appended(outputBox);
+                iso.layout();
+              }
+              var image = new Image();
+              image.onload = function () {
+                attach(image);
+              }
+              image.onerror = function () {
+                image.src = 'https://dummyimage.com/206x150/fff/000.png&text=' + course.course_id;
+              }
+              image.src = course.course_image;
+            });
+            return output;
+          })
+          .then(boxLoadCallback);
+      }
       var today = new Date();
       var month = today.getMonth() + 1;
       var year = today.getFullYear();
       var term = (month >= 1 && month < 6 ? 'Spring' : 'Fall') + ' ' + year;
-      fetch('https://oncomouse.github.io/courses/courses.json')
-        .then(function (res) {return res.json()})
-        .then(function (json) {return json.filter(function (course) {return course.course_term === term;})})
-        .then(function (courses) {
-          var template = document.querySelector('#all-courses').cloneNode(true);
-          var mountPoint = document.querySelector('#grid');
-          var output = [];
-          courses.forEach(function (course) {
-            var outputBox = template.cloneNode(true);
-            outputBox.id = '';
-            outputBox.setAttribute('data-uri', course.course_url);
-            outputBox.addEventListener('click', clickableBoxEventListener);
-            outputBox.querySelector('h1').innerText = course.course_title + ', ' + course.course_term;
-            outputBox.querySelector('.lh-copy').innerHTML = snarkdown(course.course_description);
-            function attach(image) {
-              var imageContainer = outputBox.querySelector('.thumbnail .mt2');
-              imageContainer.innerHTML = '';
-              imageContainer.appendChild(image);
-              mountPoint.appendChild(outputBox);
-              output.push(outputBox);
-              iso.appended(outputBox);
-              iso.layout();
-            }
-            var image = new Image();
-            image.onload = function () {
-              attach(image);
-            }
-            image.onerror = function () {
-              image.src = 'https://dummyimage.com/206x150/fff/000.png&text=' + course.course_id;
-            }
-            image.src = course.course_image;
-          });
-          return output;
-        })
-        .then(boxLoadCallback);
+      // Attach front page courses:
+      loadCourses(term);
       // Attach blog posts:
       fetch('https://andrew.pilsch.com/blog/frontpage.json')
         .then(function (res) {return res.json();})
