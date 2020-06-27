@@ -24,7 +24,8 @@
       {% elsif include.type == "course" and include.content.course_url == "" %}
       <div class="mt2"></div>
       {% else %}
-      {% inline_image image_src %}
+      <img src="{{ image_src | relative_url }}" class="db center mv3 bg-mid-gray loaded">
+      <!-- <img src="{%if jekyll.environment == 'production'%}data:image/.gif;base64,R0lGODlhAQABAIAAANvf7wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=={% else %}{{ image_src | relative_url }}{%endif%}" class="{%if jekyll.environment == 'production'%}lazy {%endif%}db center mv3 bg-mid-gray loaded" data-src="{{ image_src | relative_url }}"> -->
       {% endif %}
       <!-- Determine and display type, including cusotmizations -->
       <h2 class="f4 mv0">
