@@ -177,11 +177,10 @@ document.addEventListener('DOMContentLoaded', function (ev) {
       },
     });
     // Attach courses:
-    // if (true) {
     if (window.ENV['JEKYLL_ENV'] === 'production') {
       document.querySelector('#all-courses a').addEventListener('click', function (ev) {
         ev.preventDefault();
-        loadCourses();
+        loadCourses().then(function () {document.querySelector('[data-filter*=".teaching"]').click();});
       })
 
       function boxLoadCallback(boxes) {
@@ -193,7 +192,7 @@ document.addEventListener('DOMContentLoaded', function (ev) {
       }
       // Attach courses:
       function loadCourses(term) {
-        fetch('https://oncomouse.github.io/courses/courses.json')
+        return fetch('https://oncomouse.github.io/courses/courses.json')
           .then(function (res) {return res.json()})
           .then(function (json) {return !term ? json : json.filter(function (course) {return course.course_term === term;})})
           .then(function (courses) {
