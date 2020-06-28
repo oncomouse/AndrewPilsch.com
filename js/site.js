@@ -217,7 +217,8 @@ function setupSite() {
                 imageContainer.innerHTML = '';
                 imageContainer.appendChild(image);
                 mountPoint.appendChild(outputBox);
-                boxLoadCallback([outputBox])
+                output.push(outputBox);
+                if (output.length === courses.length) boxLoadCallback(outputBox)
               }
               image.onerror = function () {
                 image.src = 'https://dummyimage.com/206x150/fff/000.png&text=' + course.course_id;
