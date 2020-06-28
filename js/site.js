@@ -171,13 +171,15 @@ function setupSite() {
       openOrCloseBox(hashTarget);
     }
     // Load images:
-    new LazyLoad({
-      elements_selector: ".lazy",
-      callback_load: function (el) {
-        el.style.width = '';
-        el.style.height = '';
-      },
-    });
+    if (typeof LazyLoad !== 'undefined') {
+      new LazyLoad({
+        elements_selector: ".lazy",
+        callback_load: function (el) {
+          el.style.width = '';
+          el.style.height = '';
+        },
+      });
+    }
     // Attach courses:
     if (window.ENV['JEKYLL_ENV'] === 'production') {
       document.querySelector('#all-courses a').addEventListener('click', function (ev) {
@@ -186,6 +188,7 @@ function setupSite() {
       })
 
       function boxLoadCallback(boxes) {
+        console.log(boxes)
         iso.addItems(boxes);
         iso.reloadItems();
         iso.arrange({
@@ -215,16 +218,14 @@ function setupSite() {
                 imageContainer.innerHTML = '';
                 imageContainer.appendChild(image);
                 mountPoint.appendChild(outputBox);
-                output.push(outputBox);
+                boxLoadCallback([outputBox])
               }
               image.onerror = function () {
                 image.src = 'https://dummyimage.com/206x150/fff/000.png&text=' + course.course_id;
               }
               image.src = course.course_image;
             });
-            return output;
           })
-          .then(boxLoadCallback);
       }
       var today = new Date();
       var month = today.getMonth() + 1;
