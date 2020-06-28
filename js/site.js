@@ -1,36 +1,32 @@
-var OPEN_CLASS = 'open';
-var ACTIVE_CLASS = 'active';
-var HIDDEN_CLASS = 'dn';
-var SHOWN_CLASS = 'dib';
-var BOX_CLASS = 'box';
-var FILTER_CLASS = 'filter';
+function setupSite() {
+  // Constants:
+  var OPEN_CLASS = 'open';
+  var ACTIVE_CLASS = 'active';
+  var HIDDEN_CLASS = 'dn';
+  var SHOWN_CLASS = 'dib';
+  var BOX_CLASS = 'box';
+  var FILTER_CLASS = 'filter';
 
-var BOX_STYLE = 'pointer overflow-auto min-h-col-1 bg-white pa1 ma-custom ba bb-thick br2 b--custom-gray';
-
-function addClass(cl, el) {
-  if (hasClass(cl, el)) {
-    return el;
+  // Utitlity Functions:
+  function addClass(cl, el) {
+    if (hasClass(cl, el)) {
+      return el;
+    }
+    el.className = el.className === '' ? cl : el.className + ' ' + cl;
   }
-  el.className = el.className === '' ? cl : el.className + ' ' + cl;
-}
-function removeClass(cl, el) {
-  el.className = el.className
-    .split(' ')
-    .filter(function (x) {return x !== cl;})
-    .join(' ');
-}
-function hasClass(cl, el) {
-  return el.className.split(' ').includes(cl);
-}
-function toArray(notArray) {
-  return Array.prototype.slice.call(notArray);
-}
-function clickableBoxEventListener(ev) {
-  ev.preventDefault();
-  window.location.assign(ev.currentTarget.getAttribute('data-uri'));
-}
-
-document.addEventListener('DOMContentLoaded', function (ev) {
+  function removeClass(cl, el) {
+    el.className = el.className
+      .split(' ')
+      .filter(function (x) {return x !== cl;})
+      .join(' ');
+  }
+  function hasClass(cl, el) {
+    return el.className.split(' ').includes(cl);
+  }
+  // Useful for converting NodeList into Array:
+  function toArray(notArray) {
+    return Array.prototype.slice.call(notArray);
+  }
   // Set up the timer for the help function:
   var helpTimer = window.setTimeout(function () {
     removeClass('dn', document.querySelector('#help'));
@@ -55,7 +51,13 @@ document.addEventListener('DOMContentLoaded', function (ev) {
   // Configure ZenScroll:
   zenscroll.setup(null, 0);
 
-  // Configure clickable boxes:
+  // Clickable Box Event Listener:
+  function clickableBoxEventListener(ev) {
+    ev.preventDefault();
+    window.location.assign(ev.currentTarget.getAttribute('data-uri'));
+  }
+
+  // Configure Clickable Boxes:
   toArray(document.querySelectorAll('[data-uri]')).forEach(function (element) {
     element.addEventListener('click', clickableBoxEventListener);
   });
@@ -207,18 +209,13 @@ document.addEventListener('DOMContentLoaded', function (ev) {
               outputBox.addEventListener('click', clickableBoxEventListener);
               outputBox.querySelector('h1').innerText = course.course_title + ', ' + course.course_term;
               outputBox.querySelector('.lh-copy').innerHTML = snarkdown(course.course_description);
-              function attach(image) {
+              var image = new Image();
+              image.onload = function () {
                 var imageContainer = outputBox.querySelector('.thumbnail .mt2');
                 imageContainer.innerHTML = '';
                 imageContainer.appendChild(image);
                 mountPoint.appendChild(outputBox);
                 output.push(outputBox);
-                iso.appended(outputBox);
-                iso.layout();
-              }
-              var image = new Image();
-              image.onload = function () {
-                attach(image);
               }
               image.onerror = function () {
                 image.src = 'https://dummyimage.com/206x150/fff/000.png&text=' + course.course_id;
@@ -281,4 +278,9 @@ document.addEventListener('DOMContentLoaded', function (ev) {
 
   // Once events have been set up, trigger Isotope:
   iso.arrange();
-});
+};
+if (ENV['JEKYLL_ENV'] === 'production') {
+  document.addEventListener('DOMContentLoaded', setupSite)
+} else {
+  imagesLoaded(document.querySelector('#grid'), setupSite)
+}
