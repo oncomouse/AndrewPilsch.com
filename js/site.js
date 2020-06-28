@@ -188,7 +188,6 @@ function setupSite() {
       })
 
       function boxLoadCallback(boxes) {
-        console.log(boxes)
         iso.addItems(boxes);
         iso.reloadItems();
         iso.arrange({
