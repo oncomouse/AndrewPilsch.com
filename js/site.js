@@ -1,5 +1,6 @@
 function setupSite() {
   // Constants:
+  var DEVELOPMENT = false;
   var OPEN_CLASS = 'open';
   var ACTIVE_CLASS = 'active';
   var HIDDEN_CLASS = 'dn';
@@ -39,13 +40,20 @@ function setupSite() {
     var height = parseInt(el.style.height, 10);
     var aspectRatio = height / width;
     var minWidth;
-    if (hasClass('w-col-2', box)) {
-      minWidth = 432.89;
+    // Mobile support for image scaling:
+    var bodyWidth = document.body.getBoundingClientRect().width;
+    if (bodyWidth < 768) {
+      minWidth = bodyWidth - 29;
     } else {
-      minWidth = 206.09;
+      if (document.body.getBoundingClientRect().width >= 432.89 && hasClass('w-col-2', box)) {
+        minWidth = 432.89;
+      } else {
+        minWidth = 206.09;
+      }
     }
-    el.style.width = minWidth + 'px';
-    el.style.height = (aspectRatio * minWidth) + 'px';
+    var newWidth = minWidth < width ? minWidth : width;
+    el.style.width = newWidth + 'px';
+    el.style.height = (aspectRatio * newWidth) + 'px';
   });
 
   // Configure ZenScroll:
@@ -171,17 +179,15 @@ function setupSite() {
       openOrCloseBox(hashTarget);
     }
     // Load images:
-    if (typeof LazyLoad !== 'undefined') {
-      new LazyLoad({
-        elements_selector: ".lazy",
-        callback_load: function (el) {
-          el.style.width = '';
-          el.style.height = '';
-        },
-      });
-    }
+    new LazyLoad({
+      elements_selector: ".lazy",
+      callback_load: function (el) {
+        el.style.width = '';
+        el.style.height = '';
+      },
+    });
     // Attach courses:
-    if (window.ENV['JEKYLL_ENV'] === 'production') {
+    if (DEVELOPMENT || window.ENV['JEKYLL_ENV'] === 'production') {
       document.querySelector('#all-courses a').addEventListener('click', function (ev) {
         ev.preventDefault();
         loadCourses().then(function () {document.querySelector('[data-filter*=".teaching"]').click();});
@@ -202,7 +208,7 @@ function setupSite() {
           .then(function (courses) {
             var template = document.querySelector('#all-courses').cloneNode(true);
             var mountPoint = document.querySelector('#grid');
-            var output = [];
+            var promises = [];
             courses.forEach(function (course) {
               if (document.querySelector(course.course_id)) return;
               var outputBox = template.cloneNode(true);
@@ -211,21 +217,23 @@ function setupSite() {
               outputBox.addEventListener('click', clickableBoxEventListener);
               outputBox.querySelector('h1').innerText = course.course_title + ', ' + course.course_term;
               outputBox.querySelector('.lh-copy').innerHTML = snarkdown(course.course_description);
-              var image = new Image();
-              image.onload = function () {
-                var imageContainer = outputBox.querySelector('.thumbnail .mt2');
-                imageContainer.innerHTML = '';
-                imageContainer.appendChild(image);
-                mountPoint.appendChild(outputBox);
-                output.push(outputBox);
-                if (output.length === courses.length) boxLoadCallback(outputBox)
-              }
-              image.onerror = function () {
-                image.src = 'https://dummyimage.com/206x150/fff/000.png&text=' + course.course_id;
-              }
-              image.src = course.course_image;
+              promises.push(new Promise(function (resolve) {
+                var image = new Image();
+                image.onload = function () {
+                  var imageContainer = outputBox.querySelector('.thumbnail .mt2');
+                  imageContainer.innerHTML = '';
+                  imageContainer.appendChild(image);
+                  mountPoint.appendChild(outputBox);
+                  resolve(outputBox);
+                }
+                image.onerror = function () {
+                  image.src = 'https://dummyimage.com/206x150/fff/000.png&text=' + course.course_id;
+                }
+                image.src = course.course_image;
+              }));
             });
-          })
+            Promise.all(promises).then(boxLoadCallback);
+          });
       }
       var today = new Date();
       var month = today.getMonth() + 1;
