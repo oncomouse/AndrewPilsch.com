@@ -1,10 +1,11 @@
+---
 id: dhsi2018
 title: "Composition not Inheritance: Imagining a Functional Digital Humanities"
 front_page: true
 conference: "DHSI Colloquium"
 conference_url: "http://dhsi.org/schedule.php"
 conference_location: "Victoria, BC"
-emphasize: true
+emphasize: false
 date: 14/6/2018
 short_description: |+
   Call to think through digital humanities practices using methods derived from functional programming.
