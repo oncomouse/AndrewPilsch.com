@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const {execSync} = require('child_process');
 const {JSDOM} = require('jsdom');
 const argv = require('minimist')(process.argv.slice(2), {
   boolean: [
@@ -10,7 +11,7 @@ const argv = require('minimist')(process.argv.slice(2), {
   },
 });
 // Use with --inline to replace inclusions with their file source
-
+const gitRevision = execSync('git rev-parse HEAD').toString().replace(/\n/g, '');
 const processInclude = (el, type, files) => {
   const src = el.getAttribute(type === 'css' ? 'href' : 'src');
   if (src.indexOf('cdnjs.cloudflare.com') >= 0) return;
@@ -68,12 +69,12 @@ argv._.forEach((file) => {
   if (!argv.inline) {
     // If the site had CSS assets, we write the packed CSS file:
     if (seenCss) {
-      const cssPath = files.getNames(/site\.css$/)[0].replace('site', 'packed');
+      const cssPath = files.getNames(/site\.css$/)[0].replace('site', `packed-${gitRevision}`);
       document.querySelector('head').insertAdjacentHTML('beforeend', `<link rel="stylesheet" href="${cssPath}" />`);
     }
     // If the site had JS assets, we write the packed JS file:
     if (seenJs) {
-      const jsPath = files.getNames(/site\.js$/)[0].replace('site', 'packed');
+      const jsPath = files.getNames(/site\.js$/)[0].replace('site', `packed-${gitRevision}`);
       document.querySelector('body').insertAdjacentHTML('beforeend', `<script src="${jsPath}" />`);
     }
   }
@@ -82,12 +83,12 @@ argv._.forEach((file) => {
 if (!argv.inline) {
   // Write the packed CSS file:
   fs.writeFileSync(
-    path.join('_site', 'css', 'packed.css'),
+    path.join('_site', 'css', `packed-${gitRevision}.css`),
     files.getFiles(/\.css$/).join(''),
   );
   // Write the packed JS file:
   fs.writeFileSync(
-    path.join('_site', 'js', 'packed.js'),
+    path.join('_site', 'js', `packed-${gitRevision}.js`),
     files.getFiles(/\.js$/).join(''),
   );
 }
