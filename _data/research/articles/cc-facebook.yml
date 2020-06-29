@@ -1,0 +1,41 @@
+---
+id: cc-facebook
+short_title: "Events in Flux"
+title: "Events in Flux: Software Architecture, *Detractio*, and the Rhetorical Infrastructure of Facebook."
+front_page: true
+published: true
+status: "Published"
+journal: "Computers & Composition"
+journal_url: "https://www.sciencedirect-com/science/article/pii/S8755461520300451"
+issue_number: 57
+issue_date: September 2020
+emphasize: true
+short_description: |+
+  What can the way Facebook writes software---at the level of the code
+  itself---teach us about how we argue online?
+
+  [Read Now](https://www.sciencedirect-com/science/article/pii/S8755461520300451)
+description: |+
+  This article considers the design of software platforms—emergent, commodified
+  digital publics that leverage crowd effects into profit—through the lens of
+  “rhetorical code studies” (Brock 2013) to test whether compositional effects
+  are algorithmic byproducts. It focuses on Facebook’s Flux architecture. Flux
+  is a design pattern—a term borrowed from architecture to denote repeatable
+  solutions to reoccurring problems—meant to facilitate feed-forward state
+  management, a solution necessary in very-large-scale data-driven applications.
+  The article considers Flux, which simplifies a programmer’s expressive
+  potential, an example of rhetorical detractio, the process of saying less in
+  order to focus audience attention. By exploring Flux as detractio, it is
+  possible to make specific arguments about Facebook's role in shaping public
+  argumentation. Facebook is often accused of being a space in which it is
+  difficult to argue because the software discourages reflection and encourages
+  a series of escalating hot takes. Flux removes the process of feedback from
+  platform algorithms and contributes to this lack of feedback at the user
+  level. The article concludes that rhetorical code study is a crucial
+  methodology for studying digital writing that accounts for discursive effects
+  and the manufacture of rhetorical situations by platform algorithms at the
+  level of the code itself.
+
+  Image Credit: ["Facebook Press Conference" by Robert Scoble](https://www.flickr.com/photos/scobleizer/5179384336/in/photolist-8TFGvW-dDwzPi-2gM4EX-5GTBCQ-dYJnHQ-6Vwz3Z-eGNqBw-AnVwap-6M96h3-S73ZUx-mxSwbu-7AoLrm-82kGoT-5ptRTj-9m3N6C-6qcvt1-aos7Yy-dYgvM2-eZWAhB-UjDfYv-SGcAwD-RSvd9m-61MFfn-54MdPZ-67jVjc-dqmx19-RSvcUy-QS5cmD-bqhMkd-7Jph4H-26zKPwq-6fLMzN-5Hfyro-7LMoaq-fuwQnu-27qHus5-5WxC5T-5piWPS-27GpDPy-23uKCx-5E5xHP-7D9sqA-dvuaSW-mGUvnY-S1G7mJ-fv7np7-dvub6C-kinkvw-7YQaoa-o3kEn4)
+
+
