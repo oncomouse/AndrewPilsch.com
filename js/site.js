@@ -172,6 +172,10 @@ function setupSite() {
   });
 
   // Setup stuff to run after layout:
+  // - Checks if a URL hash indicates a box should open
+  // - Sets up lazy image loading
+  // - Loads remote courses
+  // - Loads remote blog posts
   iso.once('layoutComplete', function () {
     // Check if there is an open box according to the hash:
     if (window.location.hash !== '') {
