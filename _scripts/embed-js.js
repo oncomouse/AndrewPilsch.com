@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const { JSDOM } = require('jsdom');
+const {JSDOM} = require('jsdom');
 const argv = require('minimist')(process.argv.slice(2), {
   boolean: [
     'inline',
@@ -17,11 +17,12 @@ const processInclude = (el, type, files) => {
   if (src.indexOf('unpkg.com') >= 0) return;
   if (src.indexOf('rawgit.com') >= 0) return;
   if (src.indexOf('jsdelivr.com') >= 0) return;
+  if (src.indexOf('imagesloaded') >= 0) return; // Ignore a particular script
   if (!files.has(src)) {
     const fileSrc = fs.readFileSync(path.join(...src.replace(/^http[s]{0,1}\:\/\/[^/]+\//, './_site/').split('/'))).toString();
     files.addFile(src, fileSrc);
   }
-  if(argv.inline) {
+  if (argv.inline) {
     // Write the file as an inline inclusion:
     el.outerHTML = (type === 'css' ? `<style>${files.getFile(src)}</style>` : `<script>${files.getFile(src)}</script>`);
   } else {
@@ -30,23 +31,23 @@ const processInclude = (el, type, files) => {
   }
 }
 
-const Files = function() { this.files = {}; };
-Files.prototype.addFile = function(src, fileSrc) { this.files[src] = fileSrc; };
-Files.prototype.has = function(src) { return Object.prototype.hasOwnProperty.call(this.files, src); }
-Files.prototype.getFile = function(src) {
+const Files = function () {this.files = {};};
+Files.prototype.addFile = function (src, fileSrc) {this.files[src] = fileSrc;};
+Files.prototype.has = function (src) {return Object.prototype.hasOwnProperty.call(this.files, src);}
+Files.prototype.getFile = function (src) {
   return this.files[src];
 }
-Files.prototype.getFiles = function(filter=undefined) {
-  if(filter === undefined) return Object.values(this.files);
+Files.prototype.getFiles = function (filter = undefined) {
+  if (filter === undefined) return Object.values(this.files);
   return this.getNames(filter)
     .reduce((acc, cur) => ([
       ...acc,
       this.files[cur],
     ]), []);
 }
-Files.prototype.getNames = function(filter=undefined) {
+Files.prototype.getNames = function (filter = undefined) {
   const keys = Object.keys(this.files);
-  if(filter === undefined) return keys;
+  if (filter === undefined) return keys;
   return Object.keys(this.files)
     .filter(path => path.match(filter));
 }

@@ -51,6 +51,11 @@ namespace :build do
     $stdout.flush
     system 'node _scripts/inline-images.js `find _site -name "*.html"`'
     $stdout.puts 'done'
+    $stdout.print 'Updating Init Script...'
+    $stdout.flush
+    system 'sed -i .bak "s/imagesLoaded(document.querySelector(\"#grid\"),setupSite)/document.addEventListener(\"DOMContentLoaded\",setupSite)/" _site/js/site.js'
+    system 'rm _site/js/site.js.bak'
+    $stdout.puts 'done'
   end
   task all: %i[jekyll cv compress]
 end

@@ -292,8 +292,4 @@ function setupSite() {
   // Once events have been set up, trigger Isotope:
   iso.arrange();
 };
-if (ENV['JEKYLL_ENV'] === 'production') {
-  document.addEventListener('DOMContentLoaded', setupSite)
-} else {
-  imagesLoaded(document.querySelector('#grid'), setupSite)
-}
+imagesLoaded(document.querySelector('#grid'), setupSite)
