@@ -10,6 +10,10 @@ const argv = require('minimist')(process.argv.slice(2), {
     'inline': false,
   },
 });
+const blackList = [
+  'imagesloaded',
+];
+const checkBlackList = src => blackList.reduce((acc, cur) => acc || src.indexOf(cur) >= 0, false);
 // Use with --inline to replace inclusions with their file source
 const gitRevision = execSync('git rev-parse HEAD').toString().replace(/\n/g, '');
 const processInclude = (el, type, files) => {
@@ -18,7 +22,10 @@ const processInclude = (el, type, files) => {
   if (src.indexOf('unpkg.com') >= 0) return;
   if (src.indexOf('rawgit.com') >= 0) return;
   if (src.indexOf('jsdelivr.com') >= 0) return;
-  if (src.indexOf('imagesloaded') >= 0) return; // Ignore a particular script
+  if (checkBlackList(src)) {
+    el.parentNode.removeChild(el);
+    return;
+  }
   if (!files.has(src)) {
     const fileSrc = fs.readFileSync(path.join(...src.replace(/^http[s]{0,1}\:\/\/[^/]+\//, './_site/').split('/'))).toString();
     files.addFile(src, fileSrc);
