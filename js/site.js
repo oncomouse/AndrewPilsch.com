@@ -16,7 +16,7 @@ function addClass(cl, el) {
 function removeClass(cl, el) {
   el.className = el.className
     .split(' ')
-    .filter(function (x) { return x !== cl; })
+    .filter(function (x) {return x !== cl;})
     .join(' ');
 }
 function hasClass(cl, el) {
@@ -40,13 +40,20 @@ document.addEventListener('DOMContentLoaded', function (ev) {
     var height = parseInt(el.style.height, 10);
     var aspectRatio = height / width;
     var minWidth;
-    if (hasClass('w-col-2', box)) {
-      minWidth = 432.89;
+    // Mobile support for image scaling:
+    var bodyWidth = document.body.getBoundingClientRect().width;
+    if (bodyWidth < 768) {
+      minWidth = bodyWidth - 29;
     } else {
-      minWidth = 206.09;
+      if (document.body.getBoundingClientRect().width >= 432.89 && hasClass('w-col-2', box)) {
+        minWidth = 432.89;
+      } else {
+        minWidth = 206.09;
+      }
     }
-    el.style.width = minWidth + 'px';
-    el.style.height = (aspectRatio * minWidth) + 'px';
+    var newWidth = minWidth < width ? minWidth : width;
+    el.style.width = newWidth + 'px';
+    el.style.height = (aspectRatio * newWidth) + 'px';
   });
 
   // Configure ZenScroll:
@@ -139,7 +146,7 @@ document.addEventListener('DOMContentLoaded', function (ev) {
         removeClass(ACTIVE_CLASS, el);
       });
       addClass(ACTIVE_CLASS, target);
-      iso.once('arrangeComplete', function() {
+      iso.once('arrangeComplete', function () {
         closeOpenBoxes();
       });
       iso.arrange({
@@ -153,10 +160,10 @@ document.addEventListener('DOMContentLoaded', function (ev) {
     if (hasClass(HIDDEN_CLASS, el)) {
       el.addEventListener('click', function (ev) {
         ev.preventDefault();
-          closeOpenBoxes();
+        closeOpenBoxes();
         raf(triggerLayout);
       });
-    // Otherwise, run the filter target:
+      // Otherwise, run the filter target:
     } else {
       el.addEventListener('click', filterBoxes);
     }
@@ -173,8 +180,8 @@ document.addEventListener('DOMContentLoaded', function (ev) {
     lazyloader = new LazyLoad({
       elements_selector: ".lazy",
       callback_load: function (el) {
-        el.style.width = '';
-        el.style.height = '';
+        // el.style.width = '';
+        // el.style.height = '';
       },
     });
   });
