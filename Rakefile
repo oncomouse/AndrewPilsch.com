@@ -43,6 +43,11 @@ namespace :build do
     $stdout.flush
     system './node_modules/.bin/extract-tachyons `find _site -name "*.html"` --compress --output _site/css/tachyons-custom.min.css'
     $stdout.puts 'done'
+    $stdout.print 'Updating Init Script...'
+    $stdout.flush
+    system 'sed -i .bak "s/imagesLoaded(document.querySelector(\"#grid\"),setupSite)/document.addEventListener(\"DOMContentLoaded\",setupSite)/" _site/js/site.js'
+    system 'rm _site/js/site.js.bak'
+    $stdout.puts 'done'
     $stdout.print 'Embedding Assets...'
     $stdout.flush
     system 'node _scripts/embed-js.js `find _site -name "*.html"`'
@@ -50,11 +55,6 @@ namespace :build do
     $stdout.print 'Inlining Images...'
     $stdout.flush
     system 'node _scripts/inline-images.js `find _site -name "*.html"`'
-    $stdout.puts 'done'
-    $stdout.print 'Updating Init Script...'
-    $stdout.flush
-    system 'sed -i .bak "s/imagesLoaded(document.querySelector(\"#grid\"),setupSite)/document.addEventListener(\"DOMContentLoaded\",setupSite)/" _site/js/site.js'
-    system 'rm _site/js/site.js.bak'
     $stdout.puts 'done'
   end
   task all: %i[jekyll cv compress]
