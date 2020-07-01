@@ -56,9 +56,6 @@ function setupSite() {
     el.style.height = (aspectRatio * newWidth) + 'px';
   });
 
-  // Configure ZenScroll:
-  zenscroll.setup(null, 0);
-
   // Clickable Box Event Listener:
   function clickableBoxEventListener(ev) {
     ev.preventDefault();
@@ -283,7 +280,7 @@ function setupSite() {
         window.location.hash = openBox.getAttribute('id');
       }
       if (openBox.getBoundingClientRect().top !== 0) {
-        zenscroll.to(openBox);
+        openBox.scrollIntoView();
       }
       showCloseAllButton();
     } else {
