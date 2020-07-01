@@ -21,9 +21,8 @@ gem 'jekyll', '~> 4'
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  # gem 'jekyll-email-protect'
-  # gem 'jekyll-feed', '~> 0.6'
   gem 'jekyll-image-size'
+  gem 'jekyll-seo-tag'
 end
 
 gem 'rake'

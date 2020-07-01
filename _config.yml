@@ -15,24 +15,33 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Andrew Pilsch
-email: your-email@example.com
+title: Andrew Pilsch's Professional Website
+email: apilsch@tamu.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Andrew Pilsch is an Associate Professor at Texas A&M in the English
+  Department. He is broadly interested in rhetorical constructions of fate and
+  human destiny in response to the radical technological changes of the digital.
+  His research and pedagogy focuses on digital rhetoric, digital humanities,
+  emerging media, and science fiction.
 baseurl: ""  # the subpath of your site, e.g. /blog
-url: "https://andrew.pilsch.com"  # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: oncomouse
-github_username: oncomouse
+url: "https://andrew.pilsch.com"  # the base hostname & protocol for your site
+twitter:
+  username: oncomouse
+github:
+  username: oncomouse
+social:
+  name: Andrew Pilsch
+  links:
+    - https://twitter.com/oncomouse
+    - http://orcid.org/0000-0002-4574-9387
+    - https://scholar.google.com/citations?hl=en&user=QpZ-KiMAAAAJ
+    - https://github.com/oncomouse
 
 # Build settings
 markdown: kramdown
-# theme: minima
 plugins:
+  - jekyll-seo-tag
   - jekyll-image-size
-# plugins:
-#   - jekyll-feed
 sass:
   style: compressed
 
