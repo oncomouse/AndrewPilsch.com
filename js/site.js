@@ -217,6 +217,7 @@ function setupSite() {
               if (document.querySelector(course.course_id)) return;
               var outputBox = template.cloneNode(true);
               outputBox.id = course.course_id;
+              outputBox.classList.add('link');
               outputBox.setAttribute('data-uri', course.course_url);
               outputBox.addEventListener('click', clickableBoxEventListener);
               outputBox.querySelector('h1').innerText = course.course_title + ', ' + course.course_term;
@@ -254,8 +255,10 @@ function setupSite() {
           var mountPoint = document.querySelector('#blog_posts');
           posts.forEach(function (post) {
             var outputBox = template.cloneNode(true);
+            outputBox.classList.remove('expand');
             outputBox.classList.remove('research');
             outputBox.classList.add('blog');
+            outputBox.classList.add('link');
             outputBox.id = '';
             outputBox.querySelector('header').removeChild(outputBox.querySelector('img'));
             outputBox.querySelector('h2').innerText = 'Recent Blog Post';

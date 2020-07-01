@@ -203,6 +203,7 @@ img {
   margin-left: 3rem;
   margin-top: -0.01rem;
 }
+.box.link:after,
 .box.expand:after {
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 20px;
@@ -220,9 +221,14 @@ img {
   text-align: center;
   padding-top: 2px;
   padding-bottom: 2px;
-  content: "+";
   border-bottom-left-radius: 4px;
   transition: background 0.4s ease-in;
+}
+.box.expand:after {
+  content: '+';
+}
+.box.link:after {
+  content: '↗';
 }
 .box.expand.open:after {
   content: '';
