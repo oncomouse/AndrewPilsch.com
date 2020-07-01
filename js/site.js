@@ -1,3 +1,4 @@
+/* globals Isotope, imagesLoaded, snarkdown, raf, LazyLoad */
 function setupSite() {
   // Constants:
   var DEVELOPMENT = false;
@@ -291,5 +292,5 @@ function setupSite() {
 
   // Once events have been set up, trigger Isotope:
   iso.arrange();
-};
+}
 imagesLoaded(document.querySelector('#grid'), setupSite)
