@@ -1,13 +1,6 @@
 {
-    "extends": "eslint:recommended",
-    "env": {
-      "browser": true,
-      "commonjs": true,
-      "es6": true,
-      "jest": true,
-      "node": true
-    },
-    "rules": {
-      "no-unused-vars": "warn"
-    }
+  "extends": "eslint:recommended",
+  "env": {
+    "browser": true
   }
+}
