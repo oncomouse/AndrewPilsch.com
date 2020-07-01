@@ -56,9 +56,6 @@ document.addEventListener('DOMContentLoaded', function (ev) {
     el.style.height = (aspectRatio * newWidth) + 'px';
   });
 
-  // Configure ZenScroll:
-  zenscroll.setup(null, 0);
-
   // Configure clickable boxes:
   function clickableBoxEventListener(ev) {
     ev.preventDefault();
@@ -193,7 +190,7 @@ document.addEventListener('DOMContentLoaded', function (ev) {
         window.location.hash = openBox.getAttribute('id');
       }
       if (openBox.getBoundingClientRect().top !== 0) {
-        zenscroll.to(openBox);
+        openBox.scrollIntoView();
       }
       showCloseAllButton();
     } else {
