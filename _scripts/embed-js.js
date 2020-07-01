@@ -65,7 +65,7 @@ argv._.forEach((file) => {
   const html = fs.readFileSync(file);
   const dom = (new JSDOM(html))
   const document = dom.window.document;
-  const seenCss = Array.from(document.querySelectorAll('link[href]')).reduce((seen, el) => {
+  const seenCss = Array.from(document.querySelectorAll('link[rel="stylesheet"]')).reduce((seen, el) => {
     processInclude(el, 'css', files);
     return true;
   }, false);
