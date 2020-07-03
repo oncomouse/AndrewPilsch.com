@@ -1,11 +1,10 @@
+/* globals Isotope, raf, LazyLoad */
 var OPEN_CLASS = 'open';
 var ACTIVE_CLASS = 'active';
 var HIDDEN_CLASS = 'dn';
 var SHOWN_CLASS = 'dib';
 var BOX_CLASS = 'box';
 var FILTER_CLASS = 'filter';
-
-var BOX_STYLE = 'pointer overflow-auto min-h-col-1 bg-white pa1 ma-custom ba bb-thick br2 b--custom-gray';
 
 function addClass(cl, el) {
   if (hasClass(cl, el)) {
@@ -24,10 +23,8 @@ function hasClass(cl, el) {
 }
 function toArray(notArray) {
   return Array.prototype.slice.call(notArray);
-};
-document.addEventListener('DOMContentLoaded', function (ev) {
-  // Configure LazyLoad:
-  var lazyloader;
+}
+document.addEventListener('DOMContentLoaded', function () {
   // Set up the timer for the help function:
   var helpTimer = window.setTimeout(function () {
     removeClass('dn', document.querySelector('#help'));
@@ -55,9 +52,6 @@ document.addEventListener('DOMContentLoaded', function (ev) {
     el.style.width = newWidth + 'px';
     el.style.height = (aspectRatio * newWidth) + 'px';
   });
-
-  // Configure ZenScroll:
-  zenscroll.setup(null, 0);
 
   // Configure clickable boxes:
   function clickableBoxEventListener(ev) {
@@ -177,11 +171,11 @@ document.addEventListener('DOMContentLoaded', function (ev) {
       openOrCloseBox(hashTarget);
     }
     // Load images:
-    lazyloader = new LazyLoad({
+    new LazyLoad({
       elements_selector: ".lazy",
       callback_load: function (el) {
-        // el.style.width = '';
-        // el.style.height = '';
+        el.style.width = '';
+        el.style.height = '';
       },
     });
   });
@@ -193,7 +187,7 @@ document.addEventListener('DOMContentLoaded', function (ev) {
         window.location.hash = openBox.getAttribute('id');
       }
       if (openBox.getBoundingClientRect().top !== 0) {
-        zenscroll.to(openBox);
+        openBox.scrollIntoView();
       }
       showCloseAllButton();
     } else {
