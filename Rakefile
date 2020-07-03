@@ -40,7 +40,7 @@ namespace :build do
     system './node_modules/.bin/extract-tachyons `find _site -name "*.html"` --compress --output _site/css/tachyons-custom.min.css'
     $stdout.puts 'done'
     $stdout.print 'Embedding Assets...'; $stdout.flush
-    system 'node _scripts/embed-js.js `find _site -name "*.html"`'
+    system 'node _scripts/embed-js.js --inline `find _site -name "*.html"`'
     $stdout.puts 'done'
   end
   task all: %i[jekyll cv compress]
