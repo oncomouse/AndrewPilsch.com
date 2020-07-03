@@ -50,7 +50,7 @@ namespace :build do
     $stdout.puts 'done'
     $stdout.print 'Embedding Assets...'
     $stdout.flush
-    system 'node _scripts/embed-js.js `find _site -name "*.html"`'
+    system 'node _scripts/embed-js.js --inline `find _site -name "*.html"`'
     $stdout.puts 'done'
     $stdout.print 'Inlining Images...'
     $stdout.flush
