@@ -1,37 +1,38 @@
 /* globals Isotope, raf, LazyLoad */
-var OPEN_CLASS = 'open';
-var ACTIVE_CLASS = 'active';
-var HIDDEN_CLASS = 'dn';
-var SHOWN_CLASS = 'dib';
-var BOX_CLASS = 'box';
-var FILTER_CLASS = 'filter';
+if (window.NodeList && !NodeList.prototype.forEach) {
+  NodeList.prototype.forEach = Array.prototype.forEach;
+}
 
-function addClass(cl, el) {
-  if (hasClass(cl, el)) {
-    return el;
-  }
-  el.className = el.className === '' ? cl : el.className + ' ' + cl;
-}
-function removeClass(cl, el) {
-  el.className = el.className
-    .split(' ')
-    .filter(function (x) {return x !== cl;})
-    .join(' ');
-}
-function hasClass(cl, el) {
-  return el.className.split(' ').includes(cl);
-}
-function toArray(notArray) {
-  return Array.prototype.slice.call(notArray);
-}
 document.addEventListener('DOMContentLoaded', function () {
+  var OPEN_CLASS = 'open';
+  var ACTIVE_CLASS = 'active';
+  var HIDDEN_CLASS = 'dn';
+  var SHOWN_CLASS = 'dib';
+  var BOX_CLASS = 'box';
+  var FILTER_CLASS = 'filter';
+
+  function addClass(cl, el) {
+    if (hasClass(cl, el)) {
+      return el;
+    }
+    el.className = el.className === '' ? cl : el.className + ' ' + cl;
+  }
+  function removeClass(cl, el) {
+    el.className = el.className
+      .split(' ')
+      .filter(function (x) {return x !== cl;})
+      .join(' ');
+  }
+  function hasClass(cl, el) {
+    return el.className.split(' ').indexOf(cl) >= 0;
+  }
   // Set up the timer for the help function:
   var helpTimer = window.setTimeout(function () {
     removeClass('dn', document.querySelector('#help'));
     removeClass('o-0', document.querySelector('#help'));
   }, 5000);
   // Scale the temporary images:
-  toArray(document.querySelectorAll('.lazy')).forEach(function (el) {
+  document.querySelectorAll('.lazy').forEach(function (el) {
     var box = el.parentNode.parentNode.parentNode;
     var width = parseInt(el.style.width, 10);
     var height = parseInt(el.style.height, 10);
@@ -58,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
     ev.preventDefault();
     window.location.assign(ev.currentTarget.getAttribute('data-uri'));
   }
-  toArray(document.querySelectorAll('[data-uri]')).forEach(function (element) {
+  document.querySelectorAll('[data-uri]').forEach(function (element) {
     element.addEventListener('click', clickableBoxEventListener);
   });
 
@@ -78,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Close all the open boxes:
   function closeOpenBoxes() {
-    var boxes = toArray(document.querySelectorAll('.' + OPEN_CLASS))
+    var boxes = document.querySelectorAll('.' + OPEN_CLASS)
     // This allows for true toggling. We wait on animation frame for the new box
     // to open and then, if there are other open boxes, we remove them:
     if (boxes.length > 0) {
@@ -136,7 +137,7 @@ document.addEventListener('DOMContentLoaded', function () {
     ev.preventDefault();
     var target = ev.currentTarget;
     if (!hasClass(ACTIVE_CLASS, target)) {
-      toArray(document.querySelectorAll('.' + ACTIVE_CLASS)).forEach(function (el) {
+      document.querySelectorAll('.' + ACTIVE_CLASS).forEach(function (el) {
         removeClass(ACTIVE_CLASS, el);
       });
       addClass(ACTIVE_CLASS, target);
