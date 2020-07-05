@@ -1,4 +1,8 @@
-/* globals Isotope, imagesLoaded, snarkdown, raf, LazyLoad */
+/* globals Isotope, imagesLoaded, snarkdown, raf, LazyLoad, Promise */
+// Polyfills:
+if (window.NodeList && !NodeList.prototype.forEach) {
+  NodeList.prototype.forEach = Array.prototype.forEach;
+}
 function setupSite() {
   // Constants:
   var DEVELOPMENT = false;
@@ -23,11 +27,7 @@ function setupSite() {
       .join(' ');
   }
   function hasClass(cl, el) {
-    return el.className.split(' ').includes(cl);
-  }
-  // Useful for converting NodeList into Array:
-  function toArray(notArray) {
-    return Array.prototype.slice.call(notArray);
+    return el.className.split(' ').indexOf(cl) >= 0;
   }
   // Set up the timer for the help function:
   var helpTimer = window.setTimeout(function () {
@@ -35,7 +35,7 @@ function setupSite() {
     removeClass('o-0', document.querySelector('#help'));
   }, 5000);
   // Scale the temporary images:
-  toArray(document.querySelectorAll('.lazy')).forEach(function (el) {
+  document.querySelectorAll('.lazy').forEach(function (el) {
     var box = el.parentNode.parentNode.parentNode;
     var width = parseInt(el.style.width, 10);
     var height = parseInt(el.style.height, 10);
@@ -64,7 +64,7 @@ function setupSite() {
   }
 
   // Configure Clickable Boxes:
-  toArray(document.querySelectorAll('[data-uri]')).forEach(function (element) {
+  document.querySelectorAll('[data-uri]').forEach(function (element) {
     element.addEventListener('click', clickableBoxEventListener);
   });
 
@@ -84,7 +84,7 @@ function setupSite() {
 
   // Close all the open boxes:
   function closeOpenBoxes() {
-    var boxes = toArray(document.querySelectorAll('.' + OPEN_CLASS))
+    var boxes = document.querySelectorAll('.' + OPEN_CLASS)
     // This allows for true toggling. We wait on animation frame for the new box
     // to open and then, if there are other open boxes, we remove them:
     if (boxes.length > 0) {
@@ -142,7 +142,7 @@ function setupSite() {
     ev.preventDefault();
     var target = ev.currentTarget;
     if (!hasClass(ACTIVE_CLASS, target)) {
-      toArray(document.querySelectorAll('.' + ACTIVE_CLASS)).forEach(function (el) {
+      document.querySelectorAll('.' + ACTIVE_CLASS).forEach(function (el) {
         removeClass(ACTIVE_CLASS, el);
       });
       addClass(ACTIVE_CLASS, target);
@@ -177,8 +177,7 @@ function setupSite() {
   iso.once('layoutComplete', function () {
     // Check if there is an open box according to the hash:
     if (window.location.hash !== '') {
-      var hashTarget = document.querySelector(window.location.hash);
-      openOrCloseBox(hashTarget);
+      openOrCloseBox(document.querySelector(window.location.hash));
     }
     // Load images:
     new LazyLoad({
