@@ -37,7 +37,7 @@ namespace :build do
     system './node_modules/.bin/html-minifier --input-dir _site --output-dir _site --file-ext html --collapse-whitespace --remove-comments --remove-attribute-quotes --remove-empty-attributes --use-short-doctype --minify-js --minify-css'
     $stdout.puts 'done'
     $stdout.print 'Building Custom Tachyons.css...'; $stdout.flush
-    system './node_modules/.bin/extract-tachyons `find _site -name "*.html"` --compress --output _site/css/tachyons-custom.min.css'
+    system './node_modules/.bin/extract-tachyons `find _site -name "*.html"` --always "black, hover-black" --compress --output _site/css/tachyons-custom.min.css'
     $stdout.puts 'done'
     $stdout.print 'Embedding Assets...'; $stdout.flush
     system 'node _scripts/embed-js.js --inline `find _site -name "*.html"`'
