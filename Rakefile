@@ -41,7 +41,7 @@ namespace :build do
     $stdout.puts 'done'
     $stdout.print 'Building Custom Tachyons.css...'
     $stdout.flush
-    system './node_modules/.bin/extract-tachyons `find _site -name "*.html"` --compress --output _site/css/tachyons-custom.min.css'
+    system './node_modules/.bin/extract-tachyons `find _site -name "*.html"` --always "black,hover-black" --compress --output _site/css/tachyons-custom.min.css'
     $stdout.puts 'done'
     $stdout.print 'Updating Init Script...'
     $stdout.flush
