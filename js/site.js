@@ -11,11 +11,14 @@ document.addEventListener('DOMContentLoaded', function () {
   var BOX_CLASS = 'box';
   var FILTER_CLASS = 'filter';
 
+  // Utitlity Functions:
+  function hasClass(cl, el) {
+    return el.className.split(' ').indexOf(cl) >= 0;
+  }
   function addClass(cl, el) {
-    if (hasClass(cl, el)) {
-      return el;
+    if (!hasClass(cl, el)) {
+      el.className = el.className === '' ? cl : el.className + ' ' + cl;
     }
-    el.className = el.className === '' ? cl : el.className + ' ' + cl;
   }
   function removeClass(cl, el) {
     el.className = el.className
@@ -23,8 +26,8 @@ document.addEventListener('DOMContentLoaded', function () {
       .filter(function (x) {return x !== cl;})
       .join(' ');
   }
-  function hasClass(cl, el) {
-    return el.className.split(' ').indexOf(cl) >= 0;
+  function toggleClass(cl, el) {
+    hasClass(cl, el) ? removeClass(cl, el) : addClass(cl, el);
   }
   // Set up the timer for the help function:
   var helpTimer = window.setTimeout(function () {
@@ -97,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Clear the help timer and remove the help if it is open:
     clearTimeout(helpTimer);
     addClass('dn', document.querySelector('#help'));
-    hasClass(OPEN_CLASS, el) ? removeClass(OPEN_CLASS, el) : addClass(OPEN_CLASS, el);
+    toggleClass(OPEN_CLASS, el);
     iso.layout();
   }
 
