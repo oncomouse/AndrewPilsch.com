@@ -59,3 +59,5 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - css/icons.css
+  - font/
