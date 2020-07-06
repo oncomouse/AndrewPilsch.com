@@ -5,7 +5,7 @@ if (window.NodeList && !NodeList.prototype.forEach) {
 }
 function setupSite() {
   // Constants:
-  var DEVELOPMENT = false;
+  var DEVELOPMENT = true;
   var OPEN_CLASS = 'open';
   var ACTIVE_CLASS = 'active';
   var HIDDEN_CLASS = 'dn';
@@ -31,6 +31,7 @@ function setupSite() {
   function toggleClass(cl, el) {
     hasClass(cl, el) ? removeClass(cl, el) : addClass(cl, el);
   }
+
   // Set up the timer for the help function:
   var helpTimer = window.setTimeout(function () {
     removeClass('dn', document.querySelector('#help'));
@@ -60,15 +61,24 @@ function setupSite() {
     el.style.height = (aspectRatio * newWidth) + 'px';
   });
 
-  // Clickable Box Event Listener:
-  function clickableBoxEventListener(ev) {
-    ev.preventDefault();
-    window.location.assign(ev.currentTarget.getAttribute('data-uri'));
+  // Clickable Box Linker:
+  function makeBoxIntoALink(el, url, insert) {
+    var outputLink = document.createElement('A');
+    outputLink.href = url;
+    outputLink.className = 'black hover-black';
+    if (insert) {
+      el.insertAdjacentElement('afterend', outputLink);
+      outputLink.appendChild(el.cloneNode(true));
+      el.parentNode.removeChild(el);
+    } else {
+      outputLink.appendChild(el);
+    }
+    return outputLink;
   }
 
   // Configure Clickable Boxes:
   document.querySelectorAll('[data-uri]').forEach(function (element) {
-    element.addEventListener('click', clickableBoxEventListener);
+    makeBoxIntoALink(element, element.getAttribute('data-uri'), true);
   });
 
   // Configure Isotope:
@@ -212,18 +222,19 @@ function setupSite() {
             var outputBox = template.cloneNode(true);
             outputBox.id = course.course_id;
             outputBox.classList.add('link');
-            outputBox.setAttribute('data-uri', course.course_url);
-            outputBox.addEventListener('click', clickableBoxEventListener);
+            // outputBox.setAttribute('data-uri', course.course_url);
+            // outputBox.addEventListener('click', clickableBoxEventListener);
             outputBox.querySelector('h1').innerText = course.course_title + ', ' + course.course_term;
             outputBox.querySelector('.lh-copy').innerHTML = snarkdown(course.course_description);
+            var outputLink = makeBoxIntoALink(outputBox, course.course_url, false);
             promises.push(new Promise(function (resolve) {
               var image = new Image();
               image.onload = function () {
                 var imageContainer = outputBox.querySelector('.thumbnail .mt2');
                 imageContainer.innerHTML = '';
                 imageContainer.appendChild(image);
-                mountPoint.appendChild(outputBox);
-                resolve(outputBox);
+                mountPoint.appendChild(outputLink);
+                resolve(outputLink);
               }
               image.onerror = function () {
                 image.src = 'https://dummyimage.com/206x150/fff/000.png&text=' + course.course_id;
@@ -264,9 +275,8 @@ function setupSite() {
             outputBox.querySelector('h2').innerText = 'Recent Blog Post';
             outputBox.querySelector('h1').innerText = post.title;
             outputBox.querySelector('.lh-copy').innerHTML = post.summary;
-            outputBox.setAttribute('data-uri', post.url);
-            outputBox.addEventListener('click', clickableBoxEventListener);
-            mountPoint.insertAdjacentElement('afterend', outputBox);
+            var outputLink = makeBoxIntoALink(outputBox, post.url, false);
+            mountPoint.insertAdjacentElement('afterend', outputLink);
             output.push(outputBox);
           });
           document.querySelector('#grid').removeChild(document.querySelector('#blog_posts'));
