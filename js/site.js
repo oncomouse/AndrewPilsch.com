@@ -57,13 +57,24 @@ document.addEventListener('DOMContentLoaded', function () {
     el.style.height = (aspectRatio * newWidth) + 'px';
   });
 
-  // Configure clickable boxes:
-  function clickableBoxEventListener(ev) {
-    ev.preventDefault();
-    window.location.assign(ev.currentTarget.getAttribute('data-uri'));
+  // Clickable Box Linker:
+  function makeBoxIntoALink(el, url, insert) {
+    var outputLink = document.createElement('A');
+    outputLink.href = url;
+    outputLink.className = 'black hover-black';
+    if (insert) {
+      el.insertAdjacentElement('afterend', outputLink);
+      outputLink.appendChild(el.cloneNode(true));
+      el.parentNode.removeChild(el);
+    } else {
+      outputLink.appendChild(el);
+    }
+    return outputLink;
   }
+
+  // Configure Clickable Boxes:
   document.querySelectorAll('[data-uri]').forEach(function (element) {
-    element.addEventListener('click', clickableBoxEventListener);
+    makeBoxIntoALink(element, element.getAttribute('data-uri'), true);
   });
 
   // Configure Isotope:
