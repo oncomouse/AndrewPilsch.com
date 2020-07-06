@@ -10,19 +10,20 @@ const argv = require('minimist')(process.argv.slice(2), {
     'inline': false,
   },
 });
-const blackList = [
+const disallowedList = [
   'imagesloaded',
 ];
-const checkBlackList = src => blackList.reduce((acc, cur) => acc || src.indexOf(cur) >= 0, false);
+const checkDisallowedList = src => disallowedList.reduce((acc, cur) => acc || src.indexOf(cur) >= 0, false);
 // Use with --inline to replace inclusions with their file source
 const gitRevision = execSync('git rev-parse HEAD').toString().replace(/\n/g, '');
 const processInclude = (el, type, files) => {
   const src = el.getAttribute(type === 'css' ? 'href' : 'src');
+  if (src.indexOf('googleapis') >= 0) return;
   if (src.indexOf('cdnjs.cloudflare.com') >= 0) return;
   if (src.indexOf('unpkg.com') >= 0) return;
   if (src.indexOf('rawgit.com') >= 0) return;
-  if (src.indexOf('jsdelivr.com') >= 0) return;
-  if (checkBlackList(src)) {
+  if (src.indexOf('jsdelivr.net') >= 0) return;
+  if (checkDisallowedList(src)) {
     el.parentNode.removeChild(el);
     return;
   }
