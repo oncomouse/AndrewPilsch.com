@@ -14,11 +14,13 @@ function setupSite() {
   var FILTER_CLASS = 'filter';
 
   // Utitlity Functions:
+  function hasClass(cl, el) {
+    return el.className.split(' ').indexOf(cl) >= 0;
+  }
   function addClass(cl, el) {
-    if (hasClass(cl, el)) {
-      return el;
+    if (!hasClass(cl, el)) {
+      el.className = el.className === '' ? cl : el.className + ' ' + cl;
     }
-    el.className = el.className === '' ? cl : el.className + ' ' + cl;
   }
   function removeClass(cl, el) {
     el.className = el.className
@@ -26,14 +28,15 @@ function setupSite() {
       .filter(function (x) {return x !== cl;})
       .join(' ');
   }
-  function hasClass(cl, el) {
-    return el.className.split(' ').indexOf(cl) >= 0;
+  function toggleClass(cl, el) {
+    hasClass(cl, el) ? removeClass(cl, el) : addClass(cl, el);
   }
   // Set up the timer for the help function:
   var helpTimer = window.setTimeout(function () {
     removeClass('dn', document.querySelector('#help'));
     removeClass('o-0', document.querySelector('#help'));
   }, 5000);
+
   // Scale the temporary images:
   document.querySelectorAll('.lazy').forEach(function (el) {
     var box = el.parentNode.parentNode.parentNode;
@@ -102,7 +105,7 @@ function setupSite() {
     // Clear the help timer and remove the help if it is open:
     clearTimeout(helpTimer);
     addClass('dn', document.querySelector('#help'));
-    hasClass(OPEN_CLASS, el) ? removeClass(OPEN_CLASS, el) : addClass(OPEN_CLASS, el);
+    toggleClass(OPEN_CLASS, el);
     iso.layout();
   }
 
