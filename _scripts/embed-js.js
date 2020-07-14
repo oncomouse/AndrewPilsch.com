@@ -18,6 +18,7 @@ const checkDisallowedList = src => disallowedList.reduce((acc, cur) => acc || sr
 const gitRevision = execSync('git rev-parse HEAD').toString().replace(/\n/g, '');
 const processInclude = (el, type, files) => {
   const src = el.getAttribute(type === 'css' ? 'href' : 'src');
+  if (src.indexOf('polyfill.io') >= 0) return;
   if (src.indexOf('googleapis') >= 0) return;
   if (src.indexOf('cdnjs.cloudflare.com') >= 0) return;
   if (src.indexOf('unpkg.com') >= 0) return;
