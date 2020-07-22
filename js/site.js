@@ -1,4 +1,4 @@
-/* globals Isotope, imagesLoaded, snarkdown, raf, LazyLoad, Promise */
+/* globals Isotope, imagesLoaded, snarkdown, LazyLoad, Promise */
 // Polyfills:
 if (window.NodeList && !NodeList.prototype.forEach) {
   NodeList.prototype.forEach = Array.prototype.forEach;
