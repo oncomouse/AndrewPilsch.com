@@ -1,9 +1,9 @@
 /* globals Isotope, imagesLoaded, snarkdown, LazyLoad, Promise */
 // Polyfills:
-if (window.NodeList && !NodeList.prototype.forEach) {
-  NodeList.prototype.forEach = Array.prototype.forEach;
+if (window.NodeList && !window.NodeList.prototype.forEach) {
+  window.NodeList.prototype.forEach = Array.prototype.forEach;
 }
-function setupSite() {
+function setupSite () {
   // Constants:
   var DEVELOPMENT = true;
   var OPEN_CLASS = 'open';
@@ -14,21 +14,21 @@ function setupSite() {
   var FILTER_CLASS = 'filter';
 
   // Utitlity Functions:
-  function hasClass(cl, el) {
+  function hasClass (cl, el) {
     return el.className.split(' ').indexOf(cl) >= 0;
   }
-  function addClass(cl, el) {
+  function addClass (cl, el) {
     if (!hasClass(cl, el)) {
       el.className = el.className === '' ? cl : el.className + ' ' + cl;
     }
   }
-  function removeClass(cl, el) {
+  function removeClass (cl, el) {
     el.className = el.className
       .split(' ')
-      .filter(function (x) {return x !== cl;})
+      .filter(function (x) { return x !== cl; })
       .join(' ');
   }
-  function toggleClass(cl, el) {
+  function toggleClass (cl, el) {
     hasClass(cl, el) ? removeClass(cl, el) : addClass(cl, el);
   }
 
@@ -62,7 +62,7 @@ function setupSite() {
   });
 
   // Clickable Box Linker:
-  function makeBoxIntoALink(el, url, insert) {
+  function makeBoxIntoALink (el, url, insert) {
     var outputLink = document.createElement('A');
     outputLink.href = url;
     outputLink.className = 'black hover-black';
@@ -86,22 +86,22 @@ function setupSite() {
     itemSelector: '.' + BOX_CLASS,
     layoutMode: 'masonry',
     masonry: {
-      columnWidth: parseInt(window.getComputedStyle(document.querySelector('.column-size')).width, 10),
+      columnWidth: parseInt(window.getComputedStyle(document.querySelector('.column-size')).width, 10)
     },
-    initLayout: false,
+    initLayout: false
   });
 
-  function triggerLayout() {
+  function triggerLayout () {
     iso.layout();
   }
 
   // Close all the open boxes:
-  function closeOpenBoxes() {
-    var boxes = document.querySelectorAll('.' + OPEN_CLASS)
+  function closeOpenBoxes () {
+    var boxes = document.querySelectorAll('.' + OPEN_CLASS);
     // This allows for true toggling. We wait on animation frame for the new box
     // to open and then, if there are other open boxes, we remove them:
     if (boxes.length > 0) {
-      raf(function () { // We use raf (requestAnimationFrame polyfill)
+      window.requestAnimationFrame(function () {
         boxes.forEach(function (el) {
           removeClass(OPEN_CLASS, el);
         });
@@ -111,7 +111,7 @@ function setupSite() {
   }
 
   // Do the work of opening or closing the box:
-  function openOrCloseBox(el) {
+  function openOrCloseBox (el) {
     // Clear the help timer and remove the help if it is open:
     clearTimeout(helpTimer);
     addClass('dn', document.querySelector('#help'));
@@ -119,7 +119,7 @@ function setupSite() {
     iso.layout();
   }
 
-  function hideCloseAllButton() {
+  function hideCloseAllButton () {
     var closeAllButton = document.querySelector('#close-all');
     if (closeAllButton !== null) {
       removeClass(SHOWN_CLASS, closeAllButton);
@@ -127,7 +127,7 @@ function setupSite() {
     }
   }
 
-  function showCloseAllButton() {
+  function showCloseAllButton () {
     var closeAllButton = document.querySelector('#close-all');
     if (closeAllButton !== null) {
       removeClass(HIDDEN_CLASS, closeAllButton);
@@ -136,7 +136,7 @@ function setupSite() {
   }
 
   // Toggle open and close for a clicked box:
-  function toggleBox(ev) {
+  function toggleBox (ev) {
     // We don't open the box if the target is in a link OR if the box is open:
     if (ev.target.closest('a') === null && !hasClass(OPEN_CLASS, ev.currentTarget)) {
       ev.preventDefault();
@@ -151,7 +151,7 @@ function setupSite() {
   });
 
   // Filter:
-  function filterBoxes(ev) {
+  function filterBoxes (ev) {
     ev.preventDefault();
     var target = ev.currentTarget;
     if (!hasClass(ACTIVE_CLASS, target)) {
@@ -163,7 +163,7 @@ function setupSite() {
         closeOpenBoxes();
       });
       iso.arrange({
-        filter: target.getAttribute('data-filter'),
+        filter: target.getAttribute('data-filter')
       });
     }
   }
@@ -174,7 +174,7 @@ function setupSite() {
       el.addEventListener('click', function (ev) {
         ev.preventDefault();
         closeOpenBoxes();
-        raf(triggerLayout);
+        window.requestAnimationFrame(triggerLayout);
       });
       // Otherwise, run the filter target:
     } else {
@@ -193,26 +193,26 @@ function setupSite() {
       openOrCloseBox(document.querySelector(window.location.hash));
     }
     // Load images:
-    new LazyLoad({
-      elements_selector: ".lazy",
+    LazyLoad({
+      elements_selector: '.lazy',
       callback_load: function (el) {
         el.style.width = '';
         el.style.height = '';
-      },
+      }
     });
     // Attach courses:
-    function boxLoadCallback(boxes) {
+    function boxLoadCallback (boxes) {
       iso.addItems(boxes);
       iso.reloadItems();
       iso.arrange({
-        sortBy: 'original-order',
+        sortBy: 'original-order'
       });
     }
     // Attach courses:
-    function loadCourses(term) {
-      return fetch('https://oncomouse.github.io/courses/courses.json')
-        .then(function (res) {return res.json()})
-        .then(function (json) {return !term ? json : json.filter(function (course) {return course.course_term === term;})})
+    function loadCourses (term) {
+      return window.fetch('https://oncomouse.github.io/courses/courses.json')
+        .then(function (res) { return res.json(); })
+        .then(function (json) { return !term ? json : json.filter(function (course) { return course.course_term === term; }); })
         .then(function (courses) {
           var template = document.querySelector('#all-courses').cloneNode(true);
           var mountPoint = document.querySelector('#grid');
@@ -228,28 +228,28 @@ function setupSite() {
             outputBox.querySelector('.lh-copy').innerHTML = snarkdown(course.course_description);
             var outputLink = makeBoxIntoALink(outputBox, course.course_url, false);
             promises.push(new Promise(function (resolve) {
-              var image = new Image();
+              var image = new window.Image();
               image.onload = function () {
                 var imageContainer = outputBox.querySelector('.thumbnail .mt2');
                 imageContainer.innerHTML = '';
                 imageContainer.appendChild(image);
                 mountPoint.appendChild(outputLink);
                 resolve(outputLink);
-              }
+              };
               image.onerror = function () {
                 image.src = 'https://dummyimage.com/206x150/fff/000.png&text=' + course.course_id;
-              }
+              };
               image.src = course.course_image;
             }));
           });
           Promise.all(promises).then(boxLoadCallback);
         });
     }
-    if (DEVELOPMENT || window.ENV['JEKYLL_ENV'] === 'production') {
+    if (DEVELOPMENT || window.ENV.JEKYLL_ENV === 'production') {
       document.querySelector('#all-courses a').addEventListener('click', function (ev) {
         ev.preventDefault();
-        loadCourses().then(function () {document.querySelector('[data-filter*=".teaching"]').click();});
-      })
+        loadCourses().then(function () { document.querySelector('[data-filter*=".teaching"]').click(); });
+      });
 
       var today = new Date();
       var month = today.getMonth() + 1;
@@ -258,8 +258,8 @@ function setupSite() {
       // Attach front page courses:
       loadCourses(term);
       // Attach blog posts:
-      fetch('https://andrew.pilsch.com/blog/frontpage.json')
-        .then(function (res) {return res.json();})
+      window.fetch('https://andrew.pilsch.com/blog/frontpage.json')
+        .then(function (res) { return res.json(); })
         .then(function (posts) {
           var output = [];
           var template = document.querySelectorAll('.research.w-col-1.box')[1].cloneNode(true);
@@ -282,14 +282,14 @@ function setupSite() {
           document.querySelector('#grid').removeChild(document.querySelector('#blog_posts'));
           return output;
         })
-        .then(boxLoadCallback)
+        .then(boxLoadCallback);
     }
   });
   // Clean-up tasks for when a layout is triggered:
   iso.on('layoutComplete', function () {
     var openBox = document.querySelector('.' + OPEN_CLASS);
     if (openBox) {
-      if (window.location.hash != '#' + openBox.getAttribute('id')) {
+      if (window.location.hash !== '#' + openBox.getAttribute('id')) {
         window.location.hash = openBox.getAttribute('id');
       }
       if (openBox.getBoundingClientRect().top !== 0) {
@@ -305,4 +305,4 @@ function setupSite() {
   // Once events have been set up, trigger Isotope:
   iso.arrange();
 }
-imagesLoaded(document.querySelector('#grid'), setupSite)
+imagesLoaded(document.querySelector('#grid'), setupSite);
