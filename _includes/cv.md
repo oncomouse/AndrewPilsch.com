@@ -51,13 +51,13 @@
 
 **"What the Computer Said: Poetic Machines, Rhetorical Adjuncts, and the Circuits of Eloquence"** in *Re-Programmable Rhetorics*. Eds. Steven Holmes and Michael Faris. (collection under review at Utah State UP).
 
-**"The Posthuman City"** in *The City in American Literature aand Culture*. Ed. Kevin McNamara. (preliminary contract from Cambridge UP).
+**"The Posthuman City"** in *The City in American Literature and Culture*. Ed. Kevin McNamara. (preliminary contract from Cambridge UP).
 
 **"Computation"** in *The Edinburgh Companion to Modernism and Technology*. Eds. Ian Whittington and Alex Goody. (preliminary contract from Edinburgh UP).
 
-**"Events in Flux: Software Architecture, *Detractio*, and the Rhetorical Infrastructure of Facebook."** *Computers & Composition* 57, Special Issue "Composing Algorithms: Writing (with) Rhetorical Machines" (forthcoming September 2020).
+**"Polynesian Paralysis: Tiki Culture and American Colonialism."** Chapter in [*The Year's Work in Cocktail Culture: The Shaken and the Stirred*](https://iupress.org/9780253049742/the-shaken-and-the-stirred/). Eds. Stephen Schneider and Craig N. Owens. Bloomington: Indiana UP, 2020.
 
-**"Polynesian Paralysis: Tiki Culture and the Aesthetics of American Empire."** Chapter in *The Year's Work in Cocktail Culture: The Shaken and the Stirred*. Eds. Stephen Schneider and Craig N. Owens. (Under Contract with Indiana UP in "The Year's Work: Studies in Fan Culture and Cultural Theory" series; forthcoming 2020).
+**["Events in Flux: Software Architecture, *Detractio*, and the Rhetorical Infrastructure of Facebook."](https://www.sciencedirect.com/science/article/abs/pii/S8755461520300451)** *Computers & Composition* 57, Special Issue "Composing Algorithms: Writing (with) Rhetorical Machines".
 
 **"Life During Wartime: Science Fiction during and after World War II."** Chapter in *[The Cambridge History of Science Fiction](https://www.cambridge.org/core/books/cambridge-history-of-science-fiction/3D2698E9F76268359D4C6603A90F0C7A)* eds. Gerry Canavan and Eric Carl Link. (2018).
 
