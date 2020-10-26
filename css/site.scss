@@ -1,21 +1,26 @@
 ---
 ---
-@import 'colors';
-@import 'sizes';
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i');
+
+@import "colors";
+@import "sizes";
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i");
 // @import url('https://cdn.jsdelivr.net/gh/oncomouse/AndrewPilsch.com@master/css/icons.min.css');
 
 @font-face {
-  font-family: 'custom-icons';
+  font-family: "custom-icons";
   font-style: normal;
   font-weight: normal;
-  src: url('https://cdn.jsdelivr.net/gh/oncomouse/AndrewPilsch.com@master/font/custom-icons.eot?81368252');
-  src:
-    url('https://cdn.jsdelivr.net/gh/oncomouse/AndrewPilsch.com@master/font/custom-icons.eot?81368252#iefix') format('embedded-opentype'),
-    url('https://cdn.jsdelivr.net/gh/oncomouse/AndrewPilsch.com@master/font/custom-icons.woff2?81368252') format('woff2'),
-    url('https://cdn.jsdelivr.net/gh/oncomouse/AndrewPilsch.com@master/font/custom-icons.woff?81368252') format('woff'),
-    url('https://cdn.jsdelivr.net/gh/oncomouse/AndrewPilsch.com@master/font/custom-icons.ttf?81368252') format('truetype'),
-    url('https://cdn.jsdelivr.net/gh/oncomouse/AndrewPilsch.com@master/font/custom-icons.svg?81368252#custom-icons') format('svg');
+  src: url("https://cdn.jsdelivr.net/gh/oncomouse/AndrewPilsch.com@master/font/custom-icons.eot?81368252");
+  src: url("https://cdn.jsdelivr.net/gh/oncomouse/AndrewPilsch.com@master/font/custom-icons.eot?81368252#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/oncomouse/AndrewPilsch.com@master/font/custom-icons.woff2?81368252")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/oncomouse/AndrewPilsch.com@master/font/custom-icons.woff?81368252")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/oncomouse/AndrewPilsch.com@master/font/custom-icons.ttf?81368252")
+      format("truetype"),
+    url("https://cdn.jsdelivr.net/gh/oncomouse/AndrewPilsch.com@master/font/custom-icons.svg?81368252#custom-icons")
+      format("svg");
 }
 
 $dark-blue: #00449e;
@@ -80,12 +85,12 @@ img {
 }
 
 .bg-blue,
-%blue {
+%bg-blue {
   background-color: $blue;
 }
 
 .b--blue,
-%blue {
+%b--blue {
   border-color: $blue;
 }
 
@@ -124,7 +129,7 @@ img {
 }
 
 .roboto {
-  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .hover-bg-custom-gray:hover,
@@ -303,8 +308,8 @@ img {
 .box.expand::after {
   background: $custom-dark-gray;
   border-bottom-left-radius: 4px;
-  color: '#FFF';
-  font-family: 'custom-icons', serif;
+  color: "#FFF";
+  font-family: "custom-icons", serif;
   font-size: 17px;
   font-weight: 400;
   height: 20px;
@@ -323,16 +328,16 @@ img {
 }
 
 .box.expand::after {
-  content: '\E800';
+  content: "\E800";
 }
 
 .box.link::after {
-  content: '\E801';
+  content: "\E801";
 }
 
 .box.expand.open::after {
   background: transparent;
-  content: '';
+  content: "";
 }
 
 #help {
