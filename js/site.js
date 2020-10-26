@@ -193,7 +193,7 @@ function setupSite () {
       openOrCloseBox(document.querySelector(window.location.hash));
     }
     // Load images:
-    LazyLoad({
+    var ll = new LazyLoad({
       elements_selector: '.lazy',
       callback_load: function (el) {
         el.style.width = '';
