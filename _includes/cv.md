@@ -57,7 +57,7 @@
 
 **"Polynesian Paralysis: Tiki Culture and American Colonialism."** Chapter in [*The Year's Work in Cocktail Culture: The Shaken and the Stirred*](https://iupress.org/9780253049742/the-shaken-and-the-stirred/). Eds. Stephen Schneider and Craig N. Owens. Bloomington: Indiana UP, 2020.
 
-**["Events in Flux: Software Architecture, *Detractio*, and the Rhetorical Infrastructure of Facebook."](https://www.sciencedirect.com/science/article/abs/pii/S8755461520300451)** *Computers & Composition* 57, Special Issue "Composing Algorithms: Writing (with) Rhetorical Machines".
+**["Events in Flux: Software Architecture, *Detractio*, and the Rhetorical Infrastructure of Facebook."](https://www.sciencedirect.com/science/article/abs/pii/S8755461520300451)** *Computers & Composition* 57 (2020), Special Issue "Composing Algorithms: Writing (with) Rhetorical Machines".
 
 **"Life During Wartime: Science Fiction during and after World War II."** Chapter in *[The Cambridge History of Science Fiction](https://www.cambridge.org/core/books/cambridge-history-of-science-fiction/3D2698E9F76268359D4C6603A90F0C7A)* eds. Gerry Canavan and Eric Carl Link. (2018).
 
