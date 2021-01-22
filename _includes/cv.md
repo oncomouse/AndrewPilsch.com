@@ -49,7 +49,7 @@
 
 **"Teaching Science Fiction as Media Archaeology"** in *Science Fiction in the Literature Classroom*. Ed. Gerry Canavan. (collection proposal under review with MLA).
 
-**"What the Computer Said: Poetic Machines, Rhetorical Adjuncts, and the Circuits of Eloquence"** in *Re-Programmable Rhetorics*. Eds. Steven Holmes and Michael Faris. (collection under review at Utah State UP).
+**"What the Computer Said: Poetic Machines, Rhetorical Adjuncts, and the Circuits of Eloquence"** in *Re-Programmable Rhetorics*. Eds. Steven Holmes and Michael Faris. (collection under contract at Utah State UP).
 
 **"The Posthuman City"** in *The City in American Literature and Culture*. Ed. Kevin McNamara. (preliminary contract from Cambridge UP).
 
