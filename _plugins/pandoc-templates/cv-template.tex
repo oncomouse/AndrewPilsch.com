@@ -10,15 +10,21 @@
 \usepackage{longtable, booktabs}
 \renewcommand{\toprule}{}
 \renewcommand{\bottomrule}{}
-\usepackage{tabu}
+\usepackage{tabularx}
 \usepackage{xifthen}
 \usepackage{hyperref}
+\newcolumntype{R}[1]{>{\hsize=#1\hsize\raggedleft\arraybackslash}X}%
+\renewcommand{\toprule}{}
+\renewcommand{\endhead}{}
+\renewcommand{\midrule}{}
+\renewcommand{\bottomrule}{}
 \renewenvironment{longtable}[5]{%
-	\center %
-	\ifthenelse{\equal{\detokenize{#3}}{\detokenize{@{}lll@{}}}}
-		{\tabu to \textwidth{\preamble{cvtabu}}} %
-		{\tabu to \textwidth{#3}} %
-}{\endtabu\endcenter}
+        \center %
+        \vspace{-0.25in}
+        \ifthenelse{\equal{\detokenize{#3}}{\detokenize{@{}lll@{}}}}
+          {\tabularx{\textwidth}{X X R{.5}}}
+          {\tabularx{\textwidth}{#3}}
+}{\endtabularx\endcenter}
 
 % DOCUMENT LAYOUT
 \usepackage[paper=letterpaper,
@@ -118,7 +124,6 @@ $if(website)$\\{\normalsize \url{$website$}}\\$endif$ } %
 \begin{raggedright}
 	\vspace{-0.25in}
 	\thispagestyle{empty}
-	\begin{tabu} to \textwidth{@{}X X X[.5,r]@{}} \savetabu{cvtabu} \end{tabu}
 	\setlength{\parskip}{\backupparskip}
 	\vspace{-0.5in}
 	$body$
