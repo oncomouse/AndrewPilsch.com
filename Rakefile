@@ -14,9 +14,7 @@ namespace :build do
     system 'env JEKYLL_ENV=production bundle exec jekyll build'
   end
 
-  task :cv do
-    $stdout.print "\nBuilding cv.pdf..."
-    $stdout.flush
+  task :cv_md do
     preamble = IO.read('_data/cv.yml')
     content = IO.read('_includes/cv.md')
     File.open('tmp.md', 'w') do |fp|
@@ -25,6 +23,11 @@ namespace :build do
       fp.write "---\n"
       fp.write content
     end
+  end
+
+  task :cv => [ :cv_md ] do
+    $stdout.print "\nBuilding cv.pdf..."
+    $stdout.flush
     system 'pandoc -s -o _site/cv/cv.pdf -f markdown+pipe_tables+smart --template=_plugins/pandoc-templates/cv-template.tex --pdf-engine=xelatex tmp.md'
     system 'rm tmp.md'
     puts 'done'
