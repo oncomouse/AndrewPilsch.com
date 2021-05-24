@@ -5,7 +5,7 @@
   "license": "MIT",
   "devDependencies": {
     "@oncomouse/extract-tachyons": "^1.0.5",
-    "browserslist": "^4.7.0",
+    "browserslist": "^4.16.5",
     "caniuse-lite": "^1.0.30000998",
     "eslint": "^7.3.1",
     "html-minifier": "^3.5.21",
