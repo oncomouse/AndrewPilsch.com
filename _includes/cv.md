@@ -51,15 +51,19 @@
 
 **"What the Computer Said: Poetic Machines, Rhetorical Adjuncts, and the Circuits of Eloquence"** in *Re-Programmable Rhetorics*. Eds. Steven Holmes and Michael Faris. (under contract at Utah State UP).
 
-**"Computation"** in *The Edinburgh Companion to Modernism and Technology*. Eds. Ian Whittington and Alex Goody. (preliminary contract from Edinburgh UP).
+**"Digital Labor"** Chapter in *Bloomsbury Handbook to the Digital Humanities*. Co-authored (40%) w/ Shawna Ross. Ed. James O'Sullivan. (collection under review with Bloomsbury).
 
-**"The Posthuman City"** in *[The City in American Literature and Culture](https://www.cambridge.org/core/books/city-in-american-literature-and-culture/D655A66B037AF3CE7AFE6BC04B4FAB19)*. Ed. Kevin McNamara. (2021).
+**"Computation."** Chapter in *The Edinburgh Companion to Modernism and Technology*. Eds. Ian Whittington and Alex Goody. (preliminary contract from Edinburgh UP).
 
-**["Events in Flux: Software Architecture, *Detractio*, and the Rhetorical Infrastructure of Facebook."](https://www.sciencedirect.com/science/article/abs/pii/S8755461520300451)** *Computers & Composition* 57, Special Issue "Composing Algorithms: Writing (with) Rhetorical Machines" (2020).
+**"Writing."** Chapter in *[Understanding Flusser, Understanding Modernism](https://www.bloomsbury.com/uk/understanding-flusser-understanding-modernism-9781501348433/)*. Ed. Aaron Jaffe, Michael F. Miller, Rodrigo Martini. (Bloomsbury, forthcoming Dec 2021).
 
-**"Polynesian Paralysis: Tiki Culture and the Aesthetics of American Empire."** Chapter in *[The Shaken and the Stirred: The Year's Work in Cocktail Culture](https://iupress.org/9780253049742/the-shaken-and-the-stirred/)*. Eds. Stephen Schneider and Craig N. Owens. (2020).
+**"The Posthuman City."** Chapter in *[The City in American Literature and Culture](https://www.cambridge.org/core/books/city-in-american-literature-and-culture/D655A66B037AF3CE7AFE6BC04B4FAB19)*. Ed. Kevin McNamara. (Cambridge UP, 2021).
 
-**"Life During Wartime: Science Fiction during and after World War II."** Chapter in *[The Cambridge History of Science Fiction](https://www.cambridge.org/core/books/cambridge-history-of-science-fiction/3D2698E9F76268359D4C6603A90F0C7A)* eds. Gerry Canavan and Eric Carl Link. (2018).
+**["Events in Flux: Software Architecture, *Detractio*, and the Rhetorical Infrastructure of Facebook."](https://www.sciencedirect.com/science/article/abs/pii/S8755461520300451)** Special Issue, "Composing Algorithms: Writing (with) Rhetorical Machines," of *Computers & Composition* 57 (2020): n.p..
+
+**"Polynesian Paralysis: Tiki Culture and the Aesthetics of American Empire."** Chapter in *[The Shaken and the Stirred: The Year's Work in Cocktail Culture](https://iupress.org/9780253049742/the-shaken-and-the-stirred/)*. Eds. Stephen Schneider and Craig N. Owens. (Indiana UP, 2020).
+
+**"Life During Wartime: Science Fiction during and after World War II."** Chapter in *[The Cambridge History of Science Fiction](https://www.cambridge.org/core/books/cambridge-history-of-science-fiction/3D2698E9F76268359D4C6603A90F0C7A)* eds. Gerry Canavan and Eric Carl Link. (Cambridge UP, 2018).
 
 **["The *Ethos* of *Mr. Robot*."](http://www.presenttensejournal.org/volume-7/the-ethos-of-mr-robot/)** *Present Tense* 7.1 (2018): n.p.
 
@@ -67,7 +71,7 @@
 
 **["Invoking Darkness: *Skotison*, Scalar Derangement, and Inhuman Rhetoric."](https://muse.jhu.edu/article/666620)** *Philosophy and Rhetoric* 50.3 (2017): 336-355.
 
-**"'We twiddle...and turn into machines': Mina Loy, HTML, and the Machining of Information."** Chapter in *Reading Modernism with Machines* eds. Shawna Ross & James O'Sullivan (2016).
+**"'We twiddle...and turn into machines': Mina Loy, HTML, and the Machining of Information."** Chapter in *Reading Modernism with Machines* eds. Shawna Ross & James O'Sullivan (Palgrave, 2016).
 
 **["Insect Capital."](http://www.nanocrit.com/issues/8-2015/insect-capital)** _New American Notes Online (NANO)_ 8 (2015).
 
