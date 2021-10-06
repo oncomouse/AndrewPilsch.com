@@ -49,15 +49,15 @@
 
 **"Teaching Science Fiction as Media Archaeology"** in *Science Fiction in the Literature Classroom*. Ed. Gerry Canavan. (collection proposal under review with MLA).
 
-**"What the Computer Said: Poetic Machines, Rhetorical Adjuncts, and the Circuits of Eloquence"** in *Re-Programmable Rhetorics*. Eds. Steven Holmes and Michael Faris. (collection under review at Utah State UP).
-
-**"The Posthuman City"** in *The City in American Literature aand Culture*. Ed. Kevin McNamara. (preliminary contract from Cambridge UP).
+**"What the Computer Said: Poetic Machines, Rhetorical Adjuncts, and the Circuits of Eloquence"** in *Re-Programmable Rhetorics*. Eds. Steven Holmes and Michael Faris. (under contract at Utah State UP).
 
 **"Computation"** in *The Edinburgh Companion to Modernism and Technology*. Eds. Ian Whittington and Alex Goody. (preliminary contract from Edinburgh UP).
 
-**"Events in Flux: Software Architecture, *Detractio*, and the Rhetorical Infrastructure of Facebook."** *Computers & Composition* 57, Special Issue "Composing Algorithms: Writing (with) Rhetorical Machines" (forthcoming September 2020).
+**"The Posthuman City"** in *[The City in American Literature and Culture](https://www.cambridge.org/core/books/city-in-american-literature-and-culture/D655A66B037AF3CE7AFE6BC04B4FAB19)*. Ed. Kevin McNamara. (2021).
 
-**"Polynesian Paralysis: Tiki Culture and the Aesthetics of American Empire."** Chapter in *The Year's Work in Cocktail Culture: The Shaken and the Stirred*. Eds. Stephen Schneider and Craig N. Owens. (Under Contract with Indiana UP in "The Year's Work: Studies in Fan Culture and Cultural Theory" series; forthcoming 2020).
+**["Events in Flux: Software Architecture, *Detractio*, and the Rhetorical Infrastructure of Facebook."](https://www.sciencedirect.com/science/article/abs/pii/S8755461520300451)** *Computers & Composition* 57, Special Issue "Composing Algorithms: Writing (with) Rhetorical Machines" (2020).
+
+**"Polynesian Paralysis: Tiki Culture and the Aesthetics of American Empire."** Chapter in *[The Shaken and the Stirred: The Year's Work in Cocktail Culture](https://iupress.org/9780253049742/the-shaken-and-the-stirred/)*. Eds. Stephen Schneider and Craig N. Owens. (2020).
 
 **"Life During Wartime: Science Fiction during and after World War II."** Chapter in *[The Cambridge History of Science Fiction](https://www.cambridge.org/core/books/cambridge-history-of-science-fiction/3D2698E9F76268359D4C6603A90F0C7A)* eds. Gerry Canavan and Eric Carl Link. (2018).
 
@@ -141,11 +141,13 @@ Philip Young Memorial Endowment in American Literature, 2006. (Penn State)
 
 ## Workshops Conducted
 
-**"The Frontend: Modern JavaScript and CSS Development."** _Digital Humanities Summer Institute_ (DHSI). Victoria, British Columbia. June 4-8, 2018.
+**"The Frontend: Modern JavaScript and CSS Development."** _Digital Humanities Summer Institute_ (DHSI). Victoria, British Columbia. June, 2019 (4-day seminar).
+
+**"The Frontend: Modern JavaScript and CSS Development."** _Digital Humanities Summer Institute_ (DHSI). Victoria, British Columbia. June, 2018 (4-day seminar).
 
 ## Conference Presentations
 
-[**"The Totalitarian as Reality-Pilot: Transhumanist World Projects in PhilipK. Dick’s Three Stigmata of Palmer Eldritch"**](https://oncomouse.github.io/conference-materials/msa2019/) *Modernist Studies Association 2019 Conference*, Toronto, ON, 2019.
+[**"The Totalitarian as Reality-Pilot: Transhumanist World Projects in Philip K. Dick’s Three Stigmata of Palmer Eldritch"**](https://oncomouse.github.io/conference-materials/msa2019/) *Modernist Studies Association 2019 Conference*, Toronto, ON, 2019.
 
 [**"Frankenstein's Monster vs Cthulhu!: Imagining the Monster at the End of this World."**](http://oncomouse.github.io/conference-materials/frankenreads/) *"It's Alive!": Frankenstein’s Monster 200 Years Later*, College Station, TX, 2018.
 
