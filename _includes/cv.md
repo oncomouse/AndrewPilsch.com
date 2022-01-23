@@ -47,15 +47,15 @@
 
 ## Articles & Chapters
 
-**"Teaching Science Fiction as Media Archaeology"** in *Science Fiction in the Literature Classroom*. Ed. Gerry Canavan. (collection proposal under review with MLA).
+**"Teaching Science Fiction as Media Archaeology"** in *Science Fiction in the Literature Classroom*. Ed. Gerry Canavan. (collection accepted by MLA).
 
 **"What the Computer Said: Poetic Machines, Rhetorical Adjuncts, and the Circuits of Eloquence"** in *Re-Programmable Rhetorics*. Eds. Steven Holmes and Michael Faris. (under contract at Utah State UP).
 
 **"Digital Labor"** Chapter in *Bloomsbury Handbook to the Digital Humanities*. Co-authored (40%) w/ Shawna Ross. Ed. James O'Sullivan. (collection under review with Bloomsbury).
 
-**"Computation."** Chapter in *The Edinburgh Companion to Modernism and Technology*. Eds. Ian Whittington and Alex Goody. (preliminary contract from Edinburgh UP).
+**"Computation."** Chapter in *The Edinburgh Companion to Modernism and Technology*. Eds. Ian Whittington and Alex Goody. (under contract with Edinburgh UP).
 
-**"Writing."** Chapter in *[Understanding Flusser, Understanding Modernism](https://www.bloomsbury.com/uk/understanding-flusser-understanding-modernism-9781501348433/)*. Ed. Aaron Jaffe, Michael F. Miller, Rodrigo Martini. (Bloomsbury, forthcoming Dec 2021).
+**"Writing."** Chapter in *[Understanding Flusser, Understanding Modernism](https://www.bloomsbury.com/uk/understanding-flusser-understanding-modernism-9781501348433/)*. Ed. Aaron Jaffe, Michael F. Miller, Rodrigo Martini. (Bloomsbury, 2021).
 
 **"The Posthuman City."** Chapter in *[The City in American Literature and Culture](https://www.cambridge.org/core/books/city-in-american-literature-and-culture/D655A66B037AF3CE7AFE6BC04B4FAB19)*. Ed. Kevin McNamara. (Cambridge UP, 2021).
 
