@@ -49,11 +49,11 @@
 
 **"Teaching Science Fiction as Media Archaeology"** in *Science Fiction in the Literature Classroom*. Ed. Gerry Canavan. (collection accepted by MLA).
 
-**"What the Computer Said: Poetic Machines, Rhetorical Adjuncts, and the Circuits of Eloquence"** in *Re-Programmable Rhetorics*. Eds. Steven Holmes and Michael Faris. (under contract at Utah State UP).
-
 **"Digital Labor"** Chapter in *Bloomsbury Handbook to the Digital Humanities*. Co-authored (40%) w/ Shawna Ross. Ed. James O'Sullivan. (collection under review with Bloomsbury).
 
-**"Computation."** Chapter in *The Edinburgh Companion to Modernism and Technology*. Eds. Ian Whittington and Alex Goody. (under contract with Edinburgh UP).
+**"What the Computer Said: Poetic Machines, Rhetorical Adjuncts, and the Circuits of Eloquence"** in *[Re-Programmable Rhetorics](https://upcolorado.com/utah-state-university-press/item/6203-reprogrammable-rhetoric)*. Eds. Steven Holmes and Michael Faris. (Utah State UP, 2022).
+
+**"Computation."** Chapter in *[The Edinburgh Companion to Modernism and Technology](https://edinburghuniversitypress.com/book-the-edinburgh-companion-to-modernism-and-technology.html)*. Eds. Ian Whittington and Alex Goody. (Edinburgh UP, 2022).
 
 **"Writing."** Chapter in *[Understanding Flusser, Understanding Modernism](https://www.bloomsbury.com/uk/understanding-flusser-understanding-modernism-9781501348433/)*. Ed. Aaron Jaffe, Michael F. Miller, Rodrigo Martini. (Bloomsbury, 2021).
 
