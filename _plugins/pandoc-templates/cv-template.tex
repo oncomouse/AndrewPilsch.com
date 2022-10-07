@@ -11,15 +11,8 @@
 \renewcommand{\toprule}[2]{}
 \renewcommand{\bottomrule}[2]{}
 \usepackage{ltablex}
-% \usepackage{tabu}
 \usepackage{xifthen}
 \usepackage{hyperref}
-% \renewenvironment{longtable}[5]{%
-% 	\center %
-% 	\ifthenelse{\equal{\detokenize{#3}}{\detokenize{@{}lll@{}}}}
-% 		{\tabu to \textwidth{\preamble{cvtabu}}} %
-% 		{\tabu to \textwidth{#3}} %
-% }{\endtabu\endcenter}
 
 % DOCUMENT LAYOUT
 \usepackage[paper=letterpaper,
@@ -119,7 +112,6 @@ $if(website)$\\{\normalsize \url{$website$}}\\$endif$ } %
 \begin{raggedright}
 	\vspace{-0.25in}
 	\thispagestyle{empty}
-	% \begin{tabu} to \textwidth{@{}X X X[.5,r]@{}} \savetabu{cvtabu} \end{tabu}
 	\setlength{\parskip}{\backupparskip}
 	\vspace{-0.5in}
 	$body$
