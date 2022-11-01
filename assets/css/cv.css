@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i");
+:root {
+	--blue: #0074d9;
+	--navy: #001f3f;
+	--teal: #39cccc;
+	--green: #2ecc40;
+	--olive: #3d9970;
+	--lime: #01ff70;
+
+	--yellow: #ffdc00;
+	--orange: #ff851b;
+	--red: #ff4136;
+	--fuchsia: #f012be;
+	--purple: #b10dc9;
+	--maroon: #85144b;
+
+	--white: #ffffff;
+	--silver: #dddddd;
+	--gray: #aaaaaa;
+	--black: #111111;
+}
+
+body.cv_standalone {
+	max-width: 960px;
+	margin: auto;
+	width: 95%;
+	margin-bottom: 12rem;
+}
+
+.black {
+	color: var(--black);
+}
+
+a {
+	color: var(--blue);
+}
+.link {
+  text-decoration: none;
+  transition: color .15s ease-in;
+}
+.link:link,
+.link:visited {
+  transition: color .15s ease-in;
+}
+.link:hover {
+  transition: color .15s ease-in;
+}
+.link:active {
+  transition: color .15s ease-in;
+}
+.link:focus {
+  transition: color .15s ease-in;
+}
+.underline-hover:hover,
+.underline-hover:focus {
+  text-decoration: underline;
+}
+.roboto {
+	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.measure-cv {
+	max-width: 35em;
+}
+
+.cv-thumbnail {
+	font-size: 9.2em;
+}
+
+.cv-content p,
+.cv-content ul,
+.cv-content ol,
+.cv-content dl,
+.cv-content table {
+	margin-top: 0.75rem;
+	margin-left: 1.5rem;
+}
+
+.cv-content ul + table {
+	margin-top: 0;
+}
+
+.cv-content h1 {
+	border-bottom: 1px solid var(--black);
+	font-size: 18pt;
+	margin-top: 1.5rem;
+}
+
+.cv-content h2 {
+	font-size: 15pt;
+	line-height: 18pt;
+	margin-top: 0.75rem;
+}
+
+.cv-content table {
+	width: 100%;
+}
+
+.cv-content td,
+.cv-content th {
+	line-height: 27px;
+}
+
+.cv-content td:nth-child(3) {
+	text-align: right;
+	width: 160px;
+	padding-right: 1.5rem;
+}
+
+.cv-content ul {
+	margin-left: 3rem;
+	margin-top: -0.01rem;
+}
+
+.cv-content h1,
+.cv-content h2,
+.cv-content p,
+.cv-content ul,
+.cv-content ol,
+.cv-content dl,
+.cv-content table {
+  margin-bottom: 0;
+}
+.cv-content p,
+.cv-content ul,
+.cv-content ol,
+.cv-content dl,
+.cv-content table {
+  line-height: 1.5;
+}
+.cv-content thead {
+  display: none;
+}
+.cv-content td,
+.cv-content th {
+  padding: 0;
+}
+.cv-content ul {
+  list-style-type: none;
+  padding: 0;
+}

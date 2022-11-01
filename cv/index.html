@@ -6,18 +6,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Andrew Pilsch - CV</title>
-  {% include css.html %}
+  <link rel="stylesheet" href="{{ site.url }}/assets/css/cv.css">
+  <link rel="stylesheet" href="{{ site.url }}/assets/css/tachyons-custom.min.css">
   <style>
-    body.cv_standalone {
-      max-width: 960px;
-      margin: auto;
-      width: 95%;
-      margin-bottom: 12rem;
-    }
   </style>
 </head>
 
-<body class="cv_standalone bg-white black roboto">
+<body class="cv_standalone roboto bg-white black">
   <div class="cv-preamble">
     {% include cv.preamble.html %}
   </div>

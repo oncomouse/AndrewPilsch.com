@@ -1,0 +1,307 @@
+:root {
+	--item-padding-lr: 0.5rem;
+	--color0: #212733;
+	--color1: #ffae57;
+	--color2: #a6cc70;
+	--color3: #fad07b;
+	--color4: #6dcbfa;
+	--color5: #ed8274;
+	--color6: #90e1c6;
+	--color7: #c7c7c7;
+	--color8: #3b4857;
+	--color9: #ffc44c;
+	--color10: #bae67e;
+	--color11: #ffd580;
+	--color12: #73d0ff;
+	--color13: #f28779;
+	--color14: #95e6cb;
+	--color15: #d9d7ce;
+	--base00: #212733;
+	--base01: #3b4857;
+	--base02: #626973;
+	--base03: #93979c;
+	--base04: #c7c7c7;
+	--base05: #d9d7ce;
+	--base06: #cbccc6;
+	--base07: #ffffff;
+	--base08: #ed8274;
+	--base09: #ffae57;
+	--base0A: #fad07b;
+	--base0B: #a6cc70;
+	--base0C: #90e1c6;
+	--base0D: #6dcbfa;
+	--base0E: #d4bfff;
+	--base0F: #f29e74;
+	--background-dots-tile-size: 100px;
+	--h1-border-width: 4px;
+	--h2-border-width: 2px;
+	--h3-border-width: 1px;
+	--h4-border-width: 0;
+	--h5-border-width: 0;
+	--h6-border-width: 0;
+	--h1-border-color: var(--color6);
+	--h2-border-color: var(--base0E);
+	--h3-border-color: var(--base09);
+	--h4-border-color: transparent;
+	--h5-border-color: transparent;
+	--h6-border-color: transparent;
+	--h1-shadow-color: var(--color8);
+	--link-color: var(--color4);
+	--link-color-shadow: var(--base01);
+	--link-color-hover: var(--color5);
+}
+
+@font-face {
+	font-family: "Chicago";
+	src: url(../fonts/Chicago.woff);
+}
+
+/* @font-face { */
+/* 	font-family: "Monaco"; */
+/* 	src: url(../fonts/Monaco.woff); */
+/* } */
+
+@font-face {
+	font-family: "jetbrainsmono";
+	font-weight: normal;
+	font-style: normal;
+	src: url("../fonts/jetbrainsmono.woff");
+}
+@font-face {
+	font-family: "jetbrainsmono";
+	font-weight: normal;
+	font-style: italic;
+	src: url("../fonts/jetbrainsmono-italic.woff");
+}
+@font-face {
+	font-family: "jetbrainsmono";
+	font-weight: bold;
+	font-style: normal;
+	src: url("../fonts/jetbrainsmono-bold.woff");
+}
+@font-face {
+	font-family: "jetbrainsmono";
+	font-weight: bold;
+	font-style: italic;
+	src: url("../fonts/jetbrainsmono-bold-italic.woff");
+}
+
+* {
+	border-collapse: collapse;
+}
+
+html {
+	font-family: "jetbrainsmono";
+	color: var(--color15);
+}
+
+.background--dots {
+	background-color: var(--color0);
+	background-image: radial-gradient(var(--color8) 5%, transparent 6%),
+		radial-gradient(var(--color8) 5%, transparent 6%);
+	background-size: var(--background-dots-tile-size)
+		var(--background-dots-tile-size);
+	background-position: 0 0,
+		calc(var(--background-dots-tile-size) / 2)
+			calc(var(--background-dots-tile-size) / 2);
+}
+
+.background--seigaiha {
+	background-color: var(--color0);
+	background-image: radial-gradient(
+			circle at 100% 150%,
+			var(--color0) 24%,
+			var(--color8) 24%,
+			var(--color8) 28%,
+			var(--color0) 28%,
+			var(--color0) 36%,
+			var(--color8) 36%,
+			var(--color8) 40%,
+			transparent 40%,
+			transparent
+		),
+		radial-gradient(
+			circle at 0 150%,
+			var(--color0) 24%,
+			var(--color8) 24%,
+			var(--color8) 28%,
+			var(--color0) 28%,
+			var(--color0) 36%,
+			var(--color8) 36%,
+			var(--color8) 40%,
+			transparent 40%,
+			transparent
+		),
+		radial-gradient(
+			circle at 50% 100%,
+			var(--color8) 10%,
+			var(--color0) 10%,
+			var(--color0) 23%,
+			var(--color8) 23%,
+			var(--color8) 30%,
+			var(--color0) 30%,
+			var(--color0) 43%,
+			var(--color8) 43%,
+			var(--color8) 50%,
+			var(--color0) 50%,
+			var(--color0) 63%,
+			var(--color8) 63%,
+			var(--color8) 71%,
+			transparent 71%,
+			transparent
+		),
+		radial-gradient(
+			circle at 100% 50%,
+			var(--color8) 5%,
+			var(--color0) 5%,
+			var(--color0) 15%,
+			var(--color8) 15%,
+			var(--color8) 20%,
+			var(--color0) 20%,
+			var(--color0) 29%,
+			var(--color8) 29%,
+			var(--color8) 34%,
+			var(--color0) 34%,
+			var(--color0) 44%,
+			var(--color8) 44%,
+			var(--color8) 49%,
+			transparent 49%,
+			transparent
+		),
+		radial-gradient(
+			circle at 0 50%,
+			var(--color8) 5%,
+			var(--color0) 5%,
+			var(--color0) 15%,
+			var(--color8) 15%,
+			var(--color8) 20%,
+			var(--color0) 20%,
+			var(--color0) 29%,
+			var(--color8) 29%,
+			var(--color8) 34%,
+			var(--color0) 34%,
+			var(--color0) 44%,
+			var(--color8) 44%,
+			var(--color8) 49%,
+			transparent 49%,
+			transparent
+		);
+	background-size: 100px 50px;
+}
+
+body {
+	margin: 0 auto;
+	max-width: 960px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	padding-left: var(--item-padding-lr);
+	padding-right: var(--item-padding-lr);
+}
+
+ol,
+ul {
+	margin-left: var(--item-padding-lr);
+	margin-right: var(--item-padding-lr);
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Chicago";
+	text-shadow: var(--h1-shadow-color) 2px 2px 1px;
+}
+
+h1 {
+	border-bottom: var(--h1-border-color) var(--h1-border-width) solid;
+}
+
+h2 {
+	border-bottom: var(--h2-border-color) var(--h2-border-width) solid;
+}
+
+h3 {
+	border-bottom: var(--h3-border-color) var(--h3-border-width) solid;
+}
+
+h4 {
+	border-bottom: var(--h4-border-color) var(--h4-border-width) solid;
+}
+
+h5 {
+	border-bottom: var(--h5-border-color) var(--h5-border-width) solid;
+}
+
+h6 {
+	border-bottom-width: var(--h6-border-width);
+}
+
+strong {
+	font-weight: 800;
+	text-shadow: var(--color7) 2px 2px 1px;
+}
+
+footer {
+	text-align: center;
+	margin-top: 1rem;
+	margin-bottom: 6rem;
+}
+
+/****
+ * Main Content Area
+ */
+
+main {
+	background-color: rgba(33, 39, 51, 0.75);
+	padding: 2rem 0.5rem;
+}
+
+main h1:first-child {
+	margin-top: 0;
+}
+
+main ul {
+	margin-left: 6rem;
+}
+
+main a {
+	font-weight: bold;
+	color: var(--link-color);
+	text-decoration: none;
+	border-bottom: 2px solid var(--link-color);
+}
+
+main a:hover {
+	border-bottom-color: var(--link-color-hover);
+}
+
+main p,
+main ul,
+main ol {
+	line-height: 1.55;
+}
+
+main h2 {
+	margin-top: 4rem;
+}
+
+main h3 {
+	margin-top: 2rem;
+}
+
+/****
+ * Utility Classes
+ */
+.big-indent {
+	margin-left: 6rem;
+}

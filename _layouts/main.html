@@ -1,24 +1,22 @@
+---
+layout: null
+---
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Andrew Pilsch</title>
-  <link rel="stylesheet" href="css/site.css" />
-</head>
-<body>
-  <div class="pa2 helvetica">
-    <header class="flex">
-      <div id="logo" class="w-25">
-        <h1 class="lh-solid f1 mv0 ml2">
-          <span class="andrew db">ANDREW</span>
-          <span class="pilsch db">PILSCH</span>
-        </h1>
-      </div>
-      <div id="filters" class="w-75"></div>
-    </header>
-    <div>
-      {{ content }}
-    </div>
-  </div>
-</body>
+	<head>
+		<title>{{ page.title }}</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="{{ site.url }}/assets/css/nf.css" rel="stylesheet" />
+		<link href="{{ site.url }}/assets/css/site.css" rel="stylesheet" />
+	</head>
+	<body class="background--dots">
+		<main>{{ content }}</main>
+		<footer>
+			<a href="https://neovim.io"
+				><img src="assets/images/made-with-vi.gif"
+			/></a>
+			<img src="assets/images/noframes.gif" />
+		</footer>
+	</body>
 </html>
