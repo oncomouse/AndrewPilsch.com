@@ -6,7 +6,6 @@
   "devDependencies": {
     "@oncomouse/extract-tachyons": "^1.0.5",
     "browserslist": "^4.7.0",
-    "caniuse-lite": "^1.0.30000998",
     "eslint": "^7.3.1",
     "html-minifier": "^3.5.21",
     "jsdom": "^11.12.0",
