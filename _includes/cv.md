@@ -151,7 +151,9 @@ Philip Young Memorial Endowment in American Literature, 2006. (Penn State)
 
 ## Conference Presentations
 
-[**"The Totalitarian as Reality-Pilot: Transhumanist World Projects in Philip K. Dick’s Three Stigmata of Palmer Eldritch"**](https://oncomouse.github.io/conference-materials/msa2019/) *Modernist Studies Association 2019 Conference*, Toronto, ON, 2019.
+**"Diogenes and the Possibility of Non-Rhetoric."** *20th Biennial RSA Conference*, Baltimore, MD, 2022.
+
+[**"The Totalitarian as Reality-Pilot: Transhumanist World Projects in Philip K. Dick’s Three Stigmata of Palmer Eldritch."**](https://oncomouse.github.io/conference-materials/msa2019/) *Modernist Studies Association 2019 Conference*, Toronto, ON, 2019.
 
 [**"Frankenstein's Monster vs Cthulhu!: Imagining the Monster at the End of this World."**](http://oncomouse.github.io/conference-materials/frankenreads/) *"It's Alive!": Frankenstein’s Monster 200 Years Later*, College Station, TX, 2018.
 
