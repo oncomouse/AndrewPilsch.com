@@ -276,11 +276,25 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 
 ## For National Organizations
 
+**Application Reviewer**, Mellon Fellowships, *National Endowment for the Humanities*, 2021.
+
 **Member-at-large**, Executive Committee, _The Society For Literature, Science, and the Arts_, 2015-2017.
 
 **Program Committee Member**, _The Society For Literature, Science, and the Arts Conference_, 2013.
 
 ## For Journals / Presses
+
+**Manuscript Reviewer**, *Enculturation*, 2022.
+
+**Manuscript Reviewer**, University of Alabama Press, 2021.
+
+**Manuscript Reviewer**, *Communication and the Public*, 2022.
+
+**Manuscript Reviewer**, *Literature Compass*, 2021.
+
+**Manuscript Reviewer**, *Configurations*, 2021.
+
+**Manuscript Reviewer**, *Kairos*, 2019.
 
 **Manuscript Reviewer**, *Science, Technology, & Human Values*, 2018.
 
@@ -296,9 +310,13 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 
 ## For Texas A&M University
 
-**Ad-hoc Tenure Process Review Committee**, 2019-Present.
+**Writing Studies Search Committee Chair**, 2022-2023
 
-**Graduate Studies Committee**, 2017-Present.
+**Writing Studies Search Committee Chair**, 2021-2022
+
+**Ad-hoc Tenure Process Review Committee**, 2019-2020.
+
+**Graduate Studies Committee**, 2017-2020.
 
 **Strategic Planning Committee**, 2016-2019.
 
