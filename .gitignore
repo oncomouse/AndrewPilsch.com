@@ -4,3 +4,4 @@ _site
 .jekyll-metadata
 .tern-port
 node_modules
+.DS_Store
