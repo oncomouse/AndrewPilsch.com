@@ -49,7 +49,7 @@
 
 **"Teaching Science Fiction as Media Archaeology"** in *Science Fiction in the Literature Classroom*. Ed. Gerry Canavan. (collection accepted by MLA).
 
-**"Digital Labor"** Chapter in *Bloomsbury Handbook to the Digital Humanities*. Co-authored (40%) w/ Shawna Ross. Ed. James O'Sullivan. (collection under review with Bloomsbury).
+**"Digital Labor"** Chapter in *Bloomsbury Handbook to the Digital Humanities*. Co-authored (40%) w/ Shawna Ross. Ed. James O'Sullivan. (Bloomsbury, 2023).
 
 **"What the Computer Said: Poetic Machines, Rhetorical Adjuncts, and the Circuits of Eloquence"** in *[Re-Programmable Rhetorics](https://upcolorado.com/utah-state-university-press/item/6203-reprogrammable-rhetoric)*. Eds. Steven Holmes and Michael Faris. (Utah State UP, 2022).
 
@@ -220,29 +220,35 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 
 **"Revising Tomorrow: the Historical Present, Telecommunications, and Capitalism in _Nova_ and _Neuromancer_,"** _Samuel Delany: A Critical Symposium_, University at Buffalo (State University of New York), 2006.
 
-# Teaching Experience <small>(41 Sections; 21 Courses; 1206 Students)</small>
+# Teaching Experience <small>(58 Sections; 24 Courses; 1607 Students)</small>
 
-## Texas A&M University <small>(17 Sections; 9 Courses; 399 Students)</small>
+## Texas A&M University <small>(32 Sections; 13 Courses; 683 Students)</small>
 
-[**Science Fiction**](http://andrew.pilsch.com/courses/engl334spr2020/) (2 Sections; 67 Students) -- Course teaches the history of science fiction from the pulp era to the present, with a focus on the interchange between technology and fictional representation and the development of SF as a publishing industry.
+[**Graduate Seminar: Studies in Genre**](https://oncomouse.github.io/courses/2023/engl642spr2023) (1 Section; 10 Students) -- Taught as "Science Fiction and the Man-Machine" (Spring 2023).
 
-[**Independent Study**](http://andrew.pilsch.com/courses/engl485fall2018/) (1 Section; 1 Student) -- Taught in Fall 2018 as "Writing About Science," a pilot for a new course in the English major.
+[**Graduate Seminar: Topics in Digital Research**](https://oncomouse.github.io/courses/2021/engl604spr2021) (1 Section; 10 Students) -- Taught as "Software Studies" (Spring 2021) which focused on the history and criticism of software cultures especially in the 1980s and 1990s.
 
-[**Approaches to English Studies**](http://andrew.pilsch.com/courses/engl303spr2018/) (1 Section; 25 Students) -- Taught in Spring 2018 as "Cyberculture," which introduced the English major through topics such as humanities computing, science fiction, and speculative design.
+[**Senior Seminar**](https://oncomouse.github.io/courses/2022/engl481fall2022) (3 Sections; 54 Students) -- Topic-driven course for graduating seniors. Topics include: "Is Writing a Fad?" (Spring 2019), "Gender and Science Fiction" (Spring 2021), and "Cyberpunk: Fact and Fiction" (Fall 2022).
 
-[**Graduate Seminar: Topics in Rhetoric and Composition**](http://andrew.pilsch.com/courses/engl667spr2018/) (1 Section; 8 Students) -- Taught in Spring 2018 as "Infrastructure Tales," which explored the intersection between infrastructure studies and narrative as a key site for future and emerging theories of rhetorical practice.
+[**Science Fiction**](https://oncomouse.github.io/courses/2022/engl334fall2022) (4 Sections; 157 Students) -- Course teaches the history of science fiction from the pulp era to the present, with a focus on the interchange between technology and fictional representation and the development of SF as a publishing industry.
 
-[**Digital Authoring Practices**](https://github.com/oncomouse/engl460fall2017) (1 Section; 10 Students) -- I developed and first taught this class for A&M. The course is designed to introduce students to the technologies of digital writing while asking them to formulate artifacts using computational artifacts.
+[**Independent Study**](https://oncomouse.github.io/courses/2018/engl485fall2018) (1 Section; 1 Student) -- Taught in Fall 2018 as "Writing About Science."
 
-[**Rhetoric of Style**](https://andrew.pilsch.com/courses/engl355fall2018) (4 Section; 105 Students) -- Course documents the relationship between style and persuasion, with an emphasis on sentence analysis, tropes & figures, and classical rhetorical style exercises.
+[**Approaches to English Studies**](https://oncomouse.github.io/courses/2018/engl303spr2018) (1 Section; 25 Students) -- Taught in Spring 2018 as "Cyberculture," which introduced the English major through topics such as humanities computing, science fiction, and speculative design.
 
-[**Graduate Seminar: History and Theory of Rhetoric since 1800**](https://andrew.pilsch.com/courses/engl655fall2016) (1 Section; 6 Students) -- Taught in Fall 2016 as "Rhetoric's Avant-Garde," which focused on the intersection between avant-garde writing practices and developments in rhetorical theory during the twentieth century.
+[**Graduate Seminar: Topics in Rhetoric and Composition**](https://oncomouse.github.io/courses/2018/engl667spr2018) (1 Section; 8 Students) -- Taught in Spring 2018 as "Infrastructure Tales," which explored the intersection between infrastructure studies and narrative as a key site for future and emerging theories of rhetorical practice.
 
-[**Graduate Directed Study: History and Theory of Rhetoric**](https://andrew.pilsch.com/courses/engl686spr2016) (1 Section; 2 Students) -- Graduate directed reading focusing on the history of rhetoric from ancient Greece through the Enlightenment _and_ contemporary articulations of those concepts in rhetoric of science, rhetorical historiography, procedural rhetoric, and minority rhetorics.
+[**Digital Authoring Practices**](https://oncomouse.github.io/courses/2021/engl460fall2021) (3 Section; 30 Students) -- I developed and first taught this class for A&M. The course is designed to introduce students to the technologies of digital writing while asking them to formulate artifacts using computational artifacts.
 
-[**History of Rhetoric**](https://andrew.pilsch.com/courses/engl353spr2017) (3 Section; 75 Students) -- Focus on the history and development of rhetorical concepts from the ancient Greeks through the Enlightenment.
+[**Rhetoric of Style**](https://oncomouse.github.io/courses/2019/engl355fall2019) (3 Section; 80 Students) -- Course documents the relationship between style and persuasion, with an emphasis on sentence analysis, tropes & figures, and classical rhetorical style exercises.
 
-[**Modern Rhetorical Theory**](https://andrew.pilsch.com/courses/engl354fall2017) (4 Section; 100 Students) -- Course focuses on the developments of rhetorical theory in the 20th century. Course emphasizes mutations in media and globality as preconditions for the flowering of rhetorical thought that mark our world.
+[**Graduate Seminar: History and Theory of Rhetoric since 1800**](https://oncomouse.github.io/courses/2016/engl655fall2016) (1 Section; 6 Students) -- Taught in Fall 2016 as "Rhetoric's Avant-Garde," which focused on the intersection between avant-garde writing practices and developments in rhetorical theory during the twentieth century.
+
+[**Graduate Directed Study: History and Theory of Rhetoric**](https://oncomouse.github.io/courses/2016/engl686spr2016) (1 Section; 2 Students) -- Graduate directed reading focusing on the history of rhetoric from ancient Greece through the Enlightenment _and_ contemporary articulations of those concepts in rhetoric of science, rhetorical historiography, procedural rhetoric, and minority rhetorics.
+
+[**History of Rhetoric**](https://oncomouse.github.io/courses/2021/engl353fall2021) (4 Section; 100 Students) -- Focus on the history and development of rhetorical concepts from the ancient Greeks through the Enlightenment.
+
+[**Modern Rhetorical Theory**](https://oncomouse.github.io/courses/2023/engl354spr2023) (8 Section; 200 Students) -- Course focuses on the developments of rhetorical theory in the 20th century. Course emphasizes mutations in media and globality as preconditions for the flowering of rhetorical thought that mark our world.
 
 ## Arizona State University <small>(10 Sections; 6 Courses; 280 Students; 7 Online Sections)</small>
 
