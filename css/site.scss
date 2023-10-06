@@ -201,6 +201,12 @@ img {
 .cv-content th {
   line-height: 27px;
 }
+.cv-content td:first-child {
+  width: 240px;
+}
+.cv_standalone .cv-content td:first-child {
+  max-width: 300px;
+}
 .cv-content td:nth-child(3) {
   text-align: right;
   width: 160px;
