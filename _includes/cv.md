@@ -325,7 +325,9 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 
 ## For Texas A&M English Department
 
-**Critical AI Search Committee Member**, 2023-Present.
+**Ad Hoc Digital Humanities Certificate Committee**, 2023-2024.
+
+**Critical AI Search Committee Member**, 2023-2024.
 
 **Writing Studies Search Committee Chair**, 2022-2023.
 
