@@ -291,6 +291,8 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 
 ## For Journals / Presses
 
+**Manuscript Reviewer**, *Philosophies*, 2023.
+
 **Manuscript Reviewer**, *Enculturation*, 2022.
 
 **Manuscript Reviewer**, University of Alabama Press, 2021.
