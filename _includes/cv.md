@@ -329,6 +329,10 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 
 **Critical AI Search Committee Member**, 2023-2024.
 
+**McAllen VAP Search Committee**, 2023.
+
+**Lecturer Search Committee**, 2023.
+
 **Writing Studies Search Committee Chair**, 2022-2023.
 
 **Writing Studies Search Committee Chair**, 2021-2022.
