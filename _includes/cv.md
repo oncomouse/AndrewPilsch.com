@@ -142,6 +142,8 @@ Philip Young Memorial Endowment in American Literature, 2006. (Penn State)
 
 ## Invited Talks
 
+**"Authoring 'The Statement on Generative AI and Writing.'"** (w/ Jason Crider) _Hear From Peers: Navigating AI_. Center for Teaching Excellence at Texas A&M. 2023.
+
 **"The What, Why, and How of Net Neutrality."** _New York Times Café_. ASU Downtown Phoenix Campus. 2014.
 
 ## Workshops Conducted
