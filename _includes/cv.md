@@ -2,6 +2,7 @@
 
 ||||
 |----------------------------|-------------------------------------|--------------|
+| Associate Department Head  | Texas A&M University                | 2023-Present |
 | Associate Professor        | Texas A&M University                | 2018-Present |
 | Assistant Professor        | Texas A&M University                |    2015-2018 |
 | Assistant Professor        | Arizona State University            |    2012-2015 |
@@ -26,9 +27,9 @@
 
 # Current Book Projects
 
-***Immutability: The World According to Software Bugs***
+***The Radical 90s: Recontextualizing the Informatics of Domination, 1985-2001***
 
-**Six Chapter Manuscript, In-Progress** -- This project is a media archeology of the computer bug. While numerous works explore computer hacking, my project is interested in accidental computer failure: unintended consequences that can have dangerous and far-reaching effects. I uncover that the accident is integral to software while mitigating this accidental nature has radically altered the landscape of contemporary culture. Planned chapters trace the software accident through the early mathematical foundations of computing, the 1990s emergence of home computing and the Internet, the collapse of post-structural thought and the related rise of infrastructure studies, recent changes in programming practices resulting from big data, and current discussions about the programmatic nature of reality itself.
+**Six-Chapter Manuscript, In-Progress** -- This project re-examines the period of Utopian optimism during the 1990s and the early days of Internet Culture. Using contemporary perspectives from infrastructure studies, critical AI, and feminist new materialism and contemporary re-evaluations of cyberpunk and the legacy of Donna Haraway's cyborg, the book contends that particularly narrow and technical unsophisticated narratives of cyberculture, written by the participants in what felt like a revolution, still largely structure critical conversations about digital life, even as these digital spaces slide more and more visibly toward what Donna Haraway labelled as "the informatics of domination" in 1985. The project also engages with recent desire to restore the liberatory aspects of early Internet culture and asks after how we might better think about digital networks outside of a binary of freedom and oppression.
 
 # Publications
 
@@ -140,6 +141,8 @@ Philip Young Memorial Endowment in American Literature, 2006. (Penn State)
 # Talks, Workshops, & Presentations
 
 ## Invited Talks
+
+**"Authoring 'The Statement on Generative AI and Writing.'"** (w/ Jason Crider) _Hear From Peers: Navigating AI_. Center for Teaching Excellence at Texas A&M. 2023.
 
 **"The What, Why, and How of Net Neutrality."** _New York Times Café_. ASU Downtown Phoenix Campus. 2014.
 
@@ -292,6 +295,8 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 
 **Manuscript Reviewer**, Bloomsbury Academic, 2023, 2024.
 
+**Manuscript Reviewer**, *Philosophies*, 2023.
+
 **Manuscript Reviewer**, *Enculturation*, 2022.
 
 **Manuscript Reviewer**, University of Alabama Press, 2021, 2023.
@@ -314,6 +319,8 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 
 **Manuscript Reviewer**, *Rhetoric Society Quarterly*, 2015.
 
+**Digital Projects & Tools Editor**, *Journal of Digital Literary Studies*, 2015-2019.
+
 ## For Texas A&M University
 
 **College of Arts & Sciences Digital Learning Committee**, 2024-Present.
@@ -322,13 +329,23 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 
 **College of Arts & Sciences Digital Learning Taskforce**, 2023-2024.
 
+**Provost's Office Teaching Innovation Group**, 2023.
+
 ## For Texas A&M University, Department of English
 
 **Associate Department Head**, 2023-Present.
 
 **Ad-hoc Committee on Research Excellence Chair**, 2024.
 
-**Critical AI Search Committee Membber**, 2023-2024.
+**Critical AI Search Committee**, 2023-2024.
+
+**Ad Hoc Digital Humanities Certificate Committee**, 2023-2024.
+
+**Critical AI Search Committee**, 2023-2024.
+
+**McAllen VAP Search Committee**, 2023.
+
+**Lecturer Search Committee**, 2023.
 
 **Writing Studies Search Committee Chair**, 2022-2023.
 
