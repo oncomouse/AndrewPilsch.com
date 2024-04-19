@@ -290,9 +290,11 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 
 ## For Journals / Presses
 
+**Manuscript Reviewer**, Bloomsbury Academic, 2023, 2024.
+
 **Manuscript Reviewer**, *Enculturation*, 2022.
 
-**Manuscript Reviewer**, University of Alabama Press, 2021.
+**Manuscript Reviewer**, University of Alabama Press, 2021, 2023.
 
 **Manuscript Reviewer**, *Communication and the Public*, 2022.
 
@@ -312,13 +314,25 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 
 **Manuscript Reviewer**, *Rhetoric Society Quarterly*, 2015.
 
-**Digital Projects & Tools Editor**, *Journal of Digital Literary Studies*, 2015-Present.
-
 ## For Texas A&M University
 
-**Writing Studies Search Committee Chair**, 2022-2023
+**College of Arts & Sciences Digital Learning Committee**, 2024-Present.
 
-**Writing Studies Search Committee Chair**, 2021-2022
+**Emerging and Innovative Technologies Committee**, 2024-Present -- University IT Governance Advisory Committee.
+
+**College of Arts & Sciences Digital Learning Taskforce**, 2023-2024.
+
+## For Texas A&M University, Department of English
+
+**Associate Department Head**, 2023-Present.
+
+**Ad-hoc Committee on Research Excellence Chair**, 2024.
+
+**Critical AI Search Committee Membber**, 2023-2024.
+
+**Writing Studies Search Committee Chair**, 2022-2023.
+
+**Writing Studies Search Committee Chair**, 2021-2022.
 
 **Ad-hoc Tenure Process Review Committee**, 2019-2020.
 
@@ -328,11 +342,11 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 
 **Digital Humanities Working Group Convener**, 2015-2017.
 
-**Multimedia Editing & Writing Ad Hoc Committee**, 2015-2017.
+**Multimedia Editing & Writing Ad-hoc Committee**, 2015-2017.
 
-**Ad Hoc Writing Committee Member**, 2015-2016.
+**Ad-hoc Writing Committee Member**, 2015-2016.
 
-**Rhetoric & Composition Search Committee Member**, 2015 -- Successful hire for tenure-track assistant professor in History & Theory of Rhetoric.
+**Rhetoric & Composition Search Committee Member**, 2015.
 
 **First Year Review Committee Member**, 2015.
 
@@ -340,7 +354,7 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 
 **IHC English Education Search Committee Member** 2014 -- Successful hire for tenure-track assistant professor in English Education.
 
-**Noösphere Reading Group Organizer**, 2014 -- Ongoing, informal reading group of SLS faculty reading works related to the topics of global consciousness and global awareness.
+**Noösphere Reading Group Organizer**, 2014 -- Informal reading group of SLS faculty reading works related to the topics of global consciousness and global awareness.
 
 **IHR Nexus Lab Advisory Group Member**, _Institute for Humanities Research_, 2013-2015 -- The Nexus Lab, resulting from the work of the DH Initiative at ASU, serves as a focal point and incubator for collaborative, digital research across the humanities at ASU.
 
