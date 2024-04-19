@@ -5,8 +5,7 @@ task :serve do
 end
 
 task :deploy do
-  system "rsync -avz '-e ssh -p 22' _site/ eschaton@birkenfeld.dreamhost.com:~/www/andrew.pilsch.com/"
-  # system "scp -r _site/* eschaton@birkenfeld.dreamhost.com:~/www/andrew.pilsch.com/"
+  system "rsync -avz '-e ssh -p 22' _site/ eschaton@pdx1-shared-a1-42.dreamhost.com:~/www/andrew.pilsch.com/"
 end
 
 namespace :build do
