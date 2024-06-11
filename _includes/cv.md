@@ -305,7 +305,7 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 
 **Manuscript Reviewer**, *Literature Compass*, 2021.
 
-**Manuscript Reviewer**, *Configurations*, 2021.
+**Manuscript Reviewer**, *Configurations*, 2021, 2024.
 
 **Manuscript Reviewer**, *Kairos*, 2019.
 
