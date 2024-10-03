@@ -48,9 +48,10 @@
 
 ## Articles & Chapters
 
-**"Teaching Science Fiction as Media Archaeology"** in *Science Fiction in the Literature Classroom*. Ed. Gerry Canavan. (collection accepted by MLA**.
+**"Teaching Science Fiction as Media Archaeology"** in *Science Fiction in the Literature Classroom*. Ed. Gerry Canavan. (collection accepted by MLA).
 
 **["Locating the minimal in minimal computing pedagogy: minimal computing tools and the classroom management of student composing workflows"](https://www.tandfonline.com/doi/full/10.1080/17439884.2024.2401822)**, *Learning, Media, and Technology* (Published 2024, Issue Number Forthcoming)
+
 **"Digital Labor"** Chapter in *Bloomsbury Handbook to the Digital Humanities*. Co-authored (40%) w/ Shawna Ross. Ed. James O'Sullivan. (Bloomsbury, 2023).
 
 **"What the Computer Said: Poetic Machines, Rhetorical Adjuncts, and the Circuits of Eloquence"** in *[Re-Programmable Rhetorics](https://upcolorado.com/utah-state-university-press/item/6203-reprogrammable-rhetoric)*. Eds. Steven Holmes and Michael Faris. (Utah State UP, 2022).
