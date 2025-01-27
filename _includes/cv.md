@@ -50,7 +50,7 @@
 
 **"Teaching Science Fiction as Media Archaeology"** in *Science Fiction in the Literature Classroom*. Ed. Gerry Canavan. (collection accepted by MLA).
 
-**["Locating the minimal in minimal computing pedagogy: minimal computing tools and the classroom management of student composing workflows"](https://www.tandfonline.com/doi/full/10.1080/17439884.2024.2401822)**, *Learning, Media, and Technology* (Published 2024, Issue Number Forthcoming)
+**["Locating the minimal in minimal computing pedagogy: minimal computing tools and the classroom management of student composing workflows."](https://www.tandfonline.com/doi/full/10.1080/17439884.2024.2401822)** *Learning, Media, and Technology* (Published 2024, Issue Number Forthcoming)
 
 **"Digital Labor"** Chapter in *Bloomsbury Handbook to the Digital Humanities*. Co-authored (40%) w/ Shawna Ross. Ed. James O'Sullivan. (Bloomsbury, 2023).
 
@@ -294,6 +294,8 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 **Program Committee Member**, _The Society For Literature, Science, and the Arts Conference_, 2013.
 
 ## For Journals / Presses
+
+**Manuscript Reviewer**, *Configurations*, 2024.
 
 **Manuscript Reviewer**, Bloomsbury Academic, 2023, 2024.
 
