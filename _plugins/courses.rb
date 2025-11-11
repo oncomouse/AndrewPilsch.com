@@ -11,18 +11,19 @@ module Jekyll
     end
 
     def render(_context)
-      if ENV['JEKYLL_ENV'] == 'production'
+      if false
         tmpl = File.read(File.join(Dir.pwd, '_includes', 'box.html'))
         today = Date.today
         term = 'Fall'
         if (today.month >= 1) && (today.month < 6)
           term = 'Spring'
-        # elsif (today.month >= 6) && (today.month < 8)
-        #   term = 'Summer'
+          # elsif (today.month >= 6) && (today.month < 8)
+          #   term = 'Summer'
         end
         term = "#{term} #{today.year}"
         output = ''
-        JSON.parse(URI.parse("https://oncomouse.github.io/courses/courses.json").read).select { |course| course['course_term'] == term }.each do |course|
+        begin
+          JSON.parse(URI.parse("https://oncomouse.github.io/courses/courses.json").read).select { |course| course['course_term'] == term }.each do |course|
           course['image'] = course['course_image']
           # Check if Image Exists:
           begin
@@ -35,6 +36,8 @@ module Jekyll
           course['short_description'] = Kramdown::Document.new(course['course_description'].is_a?(Array) ? course['course_description'].first : course['course_description']).to_html.to_s
           includes = { 'include' => { 'content' => course, 'type' => 'course' } }
           output += (Liquid::Template.parse tmpl).render includes
+          rescue OpenURI::HTTPError => _e
+        end
         end
       end
       output

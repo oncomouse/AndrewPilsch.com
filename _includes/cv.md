@@ -2,7 +2,8 @@
 
 ||||
 |----------------------------|-------------------------------------|--------------|
-| Associate Department Head  | Texas A&M University                | 2023-Present |
+| Interim Department Head    | Texas A&M University                | 2025-Present |
+| Associate Department Head  | Texas A&M University                |    2023-2025 |
 | Associate Professor        | Texas A&M University                | 2018-Present |
 | Assistant Professor        | Texas A&M University                |    2015-2018 |
 | Assistant Professor        | Arizona State University            |    2012-2015 |
@@ -27,9 +28,9 @@
 
 # Current Book Projects
 
-***The Radical 90s: Recontextualizing the Informatics of Domination, 1985-2001***
+***The World According to Computer Bugs***
 
-**Six-Chapter Manuscript, In-Progress** -- This project re-examines the period of Utopian optimism during the 1990s and the early days of Internet Culture. Using contemporary perspectives from infrastructure studies, critical AI, and feminist new materialism and contemporary re-evaluations of cyberpunk and the legacy of Donna Haraway's cyborg, the book contends that particularly narrow and technical unsophisticated narratives of cyberculture, written by the participants in what felt like a revolution, still largely structure critical conversations about digital life, even as these digital spaces slide more and more visibly toward what Donna Haraway labelled as "the informatics of domination" in 1985. The project also engages with recent desire to restore the liberatory aspects of early Internet culture and asks after how we might better think about digital networks outside of a binary of freedom and oppression.
+**Six-Chapter Manuscript, In-Progress** -- This book offers a media archaeological account of the computer bug. It argues that computer bugs represent the failure of computation to totalize the world and, therefore, anxiety over their omnipresence within critical digital infrastructure plays an outsized role in shaping the social landscape of the last 75 years. Individual chapters cover the role error plays in the work of Alan Turing, John von Neumann, and Admiral Grace; the Y2k bug and the launch of Windows 95; software piracy in the Napster era; the rise of functional programming within infrastructure code; and the sustained belief in the simulationist hypothesis (the belief that the real world is actually a computer simulation) in Silicon Valley.
 
 # Publications
 
