@@ -157,6 +157,10 @@ Philip Young Memorial Endowment in American Literature, 2006. (Penn State)
 
 ## Conference Presentations
 
+**Retrofuturistic Writing Machines: What Writing Studies Can Make With Media Theory.** Computers & Writing 2025 Conference, Fort Worth, TX, 2025.
+
+**"Backwards into the Future: Writing the Retro-computer."** Computers & Writing 2024 Conference, Fort Worth, TX, 2024.
+
 **"Diogenes and the Possibility of Non-Rhetoric."** *20th Biennial RSA Conference*, Baltimore, MD, 2022.
 
 [**"The Totalitarian as Reality-Pilot: Transhumanist World Projects in Philip K. Dick’s Three Stigmata of Palmer Eldritch."**](https://oncomouse.github.io/conference-materials/msa2019/) *Modernist Studies Association 2019 Conference*, Toronto, ON, 2019.
@@ -226,63 +230,42 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 
 **"Revising Tomorrow: the Historical Present, Telecommunications, and Capitalism in _Nova_ and _Neuromancer_,"** _Samuel Delany: A Critical Symposium_, University at Buffalo (State University of New York), 2006.
 
-# Teaching Experience <small>(58 Sections; 24 Courses; 1607 Students)</small>
+# Teaching Experience
 
-## Texas A&M University <small>(32 Sections; 13 Courses; 683 Students)</small>
+## Texas A&M University
 
-[**Graduate Seminar: Studies in Genre**](https://oncomouse.github.io/courses/2023/engl642spr2023) (1 Section; 10 Students) -- Taught as "Science Fiction and the Man-Machine" (Spring 2023).
+* Graduate Seminars Taught
+  * Contemporary Rhetorical Theory, "Screen Time!" (Spring 2025)
+  * Studies in Genre, "Science Fiction and the Man-Machine" (Spring 2023)
+  * Topics in Digital Research, "Software Studies" (Spring 2021)
+  * Topics in Rhetoric, "Infrastructure Tales" (Fall 2018)
+  * Contemporary Rhetorical Theory, "Rhetoric's Avant-Grade" (Fall 2016)
 
-[**Graduate Seminar: Topics in Digital Research**](https://oncomouse.github.io/courses/2021/engl604spr2021) (1 Section; 10 Students) -- Taught as "Software Studies" (Spring 2021) which focused on the history and criticism of software cultures especially in the 1980s and 1990s.
+* Undergraduate Senior Seminars Taught
+  * "Is Writing a Fad?" (Spring 2019)
+  * "Gender and Science Fiction" (Spring 2021)
+  * "Cyberpunk: Fact and Fiction" (Fall 2022, Fall 2024, Fall 2025)
 
-[**Senior Seminar**](https://oncomouse.github.io/courses/2022/engl481fall2022) (3 Sections; 54 Students) -- Topic-driven course for graduating seniors. Topics include: "Is Writing a Fad?" (Spring 2019), "Gender and Science Fiction" (Spring 2021), and "Cyberpunk: Fact and Fiction" (Fall 2022).
+* Undergraduate Introductory Seminars Taught
+  * Cyberculture (Spring 2018)
+  * Unreliable Narrators (Spring 2025)
 
-[**Science Fiction**](https://oncomouse.github.io/courses/2022/engl334fall2022) (4 Sections; 157 Students) -- Course teaches the history of science fiction from the pulp era to the present, with a focus on the interchange between technology and fictional representation and the development of SF as a publishing industry.
+* Undergraduate Courses Regularly Taught
+  * Science Fiction, Past and Present
+  * Modern Rhetorical Theory
+  * History of Rhetoric
+  * Digital Authoring Practices
+  * Rhetoric of Style
 
-[**Independent Study**](https://oncomouse.github.io/courses/2018/engl485fall2018) (1 Section; 1 Student) -- Taught in Fall 2018 as "Writing About Science."
+## Arizona State University
 
-[**Approaches to English Studies**](https://oncomouse.github.io/courses/2018/engl303spr2018) (1 Section; 25 Students) -- Taught in Spring 2018 as "Cyberculture," which introduced the English major through topics such as humanities computing, science fiction, and speculative design.
-
-[**Graduate Seminar: Topics in Rhetoric and Composition**](https://oncomouse.github.io/courses/2018/engl667spr2018) (1 Section; 8 Students) -- Taught in Spring 2018 as "Infrastructure Tales," which explored the intersection between infrastructure studies and narrative as a key site for future and emerging theories of rhetorical practice.
-
-[**Digital Authoring Practices**](https://oncomouse.github.io/courses/2021/engl460fall2021) (3 Section; 30 Students) -- I developed and first taught this class for A&M. The course is designed to introduce students to the technologies of digital writing while asking them to formulate artifacts using computational artifacts.
-
-[**Rhetoric of Style**](https://oncomouse.github.io/courses/2019/engl355fall2019) (3 Section; 80 Students) -- Course documents the relationship between style and persuasion, with an emphasis on sentence analysis, tropes & figures, and classical rhetorical style exercises.
-
-[**Graduate Seminar: History and Theory of Rhetoric since 1800**](https://oncomouse.github.io/courses/2016/engl655fall2016) (1 Section; 6 Students) -- Taught in Fall 2016 as "Rhetoric's Avant-Garde," which focused on the intersection between avant-garde writing practices and developments in rhetorical theory during the twentieth century.
-
-[**Graduate Directed Study: History and Theory of Rhetoric**](https://oncomouse.github.io/courses/2016/engl686spr2016) (1 Section; 2 Students) -- Graduate directed reading focusing on the history of rhetoric from ancient Greece through the Enlightenment _and_ contemporary articulations of those concepts in rhetoric of science, rhetorical historiography, procedural rhetoric, and minority rhetorics.
-
-[**History of Rhetoric**](https://oncomouse.github.io/courses/2021/engl353fall2021) (4 Section; 100 Students) -- Focus on the history and development of rhetorical concepts from the ancient Greeks through the Enlightenment.
-
-[**Modern Rhetorical Theory**](https://oncomouse.github.io/courses/2023/engl354spr2023) (8 Section; 200 Students) -- Course focuses on the developments of rhetorical theory in the 20th century. Course emphasizes mutations in media and globality as preconditions for the flowering of rhetorical thought that mark our world.
-
-## Arizona State University <small>(10 Sections; 6 Courses; 280 Students; 7 Online Sections)</small>
-
-[**American Literature From 1860**](https://andrew.pilsch.com/courses/eng242spr2014/) (_1 Section; 24 Students_) -- In this born-digital approach to the literary survey, students learn the history of American literature since 1860 while exploring digital methods of textual analysis.
-
-[**Frankenstein and His World**](https://andrew.pilsch.com/courses/eng245fall2013/) (_1 Section; 30 Students; Online Course_) -- In this course, students will read Mary Shelley's _Frankenstein_ in conversation with the texts that both influenced it and were influenced by the novel. Students also complete projects and papers on this cultural legacy.
-
-[**Major American Novels**](https://andrew.pilsch.com/courses/eng337fall2013/) (_2 Section; 46 Students_) -- Course covering major works of the American novel. Additionally, students will complete assignments deploying thematic, stylometric, and mapping-based approaches to the study of literature in a project-oriented exploration American literary history.
-
-[**H.P. Lovecraft: Style, Science, Myth**](https://andrew.pilsch.com/courses/eng394spr2013) (_2 Section; 60 Students; Online Course_) -- In this course on the horror fiction of H.P. Lovecraft, students use digital humanities methods to complete projects dealing with Lovecraft's unique style, interest in science, and contemporary mythology.
-
-[**Introduction to Contemporary Fiction**](https://andrew.pilsch.com/courses/eng204spr2013//) (_3 Section; 90 Students; Online Course_) -- Course introduces students to the current state of American fiction by focusing on novels published by living authors within the last three years.
-
-[**Popular Cultural Issues: Apocalypse Now?**](https://dl.dropboxusercontent.com/u/28696035/eng245_online.html) (_1 Section; 30 Students; Online Course_) -- Course asks students to think critically about the continuing popularity of post-apocalyptic and end-of-the-world narratives in contemporary literature, film, and television.
-
-
-## Pennsylvania State University <small>(16 Sections; 5 Courses; 644 Students)</small>
-
-**Rhetoric &amp; Composition** (_6 Sections; 144 Students_) -- This first-year composition option at Penn State introduces students to college writing, critical thinking, and basic rhetorical theory.
-
-**Effective Writing: Technical Writing** (_7 Sections; 168 Students_) -- Advanced composition class for students in science and engineering fields. Focus on document design, readability, and technologies of communication.
-
-**Effective Writing: Business Writing** (_2 Sections; 48 Students_) -- Advanced composition class for students in business fields. Focus on effective and ethical communication, document design, and branding.
-
-**Science Fiction** (_2 Sections; 200 Students_) -- Course focusing on the history of science fiction in the 20th and 21st centuries. This large lecture class, composed mostly of non-majors, highlights the ongoing relationships between science, literature, and imagined futures.
-
-**Introduction to Critical Reading** (_1 Section; 24 Students_) -- Introductory class focusing on research methods and critical approaches within the English major.  Specifically, instruction focused on media theory and critical appraisal of cultural texts.
-
+* Undergraduate Courses Taught
+  * American Literature from 1860
+  * Major American Novels
+  * Popular Cultural Issues
+    * "Frankenstein and His World"
+    * "Apocalypse Now?"
+  * Special Topics: "H.P. Lovecraft: Style, Science, Myth"
 
 # Professional Service
 
@@ -296,7 +279,7 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 
 ## For Journals / Presses
 
-**Manuscript Reviewer**, *Configurations*, 2024.
+**Manuscript Reviewer**, *AI & Society*, 2025.
 
 **Manuscript Reviewer**, Bloomsbury Academic, 2023, 2024.
 
@@ -328,9 +311,11 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 
 ## For Texas A&M University
 
-**College of Arts & Sciences Digital Learning Committee**, 2024-Present.
+**College of Arts & Sciences Digital Learning Committee**, 2024-2025.
 
-**Emerging and Innovative Technologies Committee**, 2024-Present -- University IT Governance Advisory Committee.
+**Emerging and Innovative Technologies Committee**, 2024-2025 -- University IT Governance Advisory Committee.
+
+**Innovative Teaching Fellows, AI Advisor**, 2024-Present.
 
 **College of Arts & Sciences Digital Learning Taskforce**, 2023-2024.
 
@@ -338,7 +323,9 @@ Chair and Organizer, **Critical Informatics and the Digital Humanities**. _131st
 
 ## For Texas A&M University, Department of English
 
-**Associate Department Head**, 2023-Present.
+**Interim Department Head**, 2025-Present.
+
+**Associate Department Head**, 2023-2025.
 
 **Ad-hoc Committee on Research Excellence Chair**, 2024.
 
