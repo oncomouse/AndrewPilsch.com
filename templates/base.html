@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Andrew Pilsch{% endblock %}</title>
+    <link rel="preload" href="/static/fonts/IBMPlexMono-Semibold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/static/fonts/IBMPlexMono-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/static/styles/variables.css">
+    <link rel="stylesheet" href="/static/styles/tachyons.min.css">
+</head>
+<body class="code bg-near-black near-white fw5">
+    <main class="measure-wide-m ph4 pb5 center">
+        {% block content %}{% endblock %}
+    </main>
+
+    {% if debug %}
+    {{ debug_info }}
+    {% endif %}
+</body>
+</html>

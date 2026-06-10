@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Andrew Pilsch{% endblock %}
+
+{% block content %}
+    <div class="pt3 pb2 justify-between items-center">
+        <img src="/static/images/logo.svg">
+        <nav>
+            <ul class="flex list flex-wrap f5 pl0">
+            {% for item in navigation %}
+                <li><a href="/{{ item.url }}">{{ item.title }}</a></li>
+            {% endfor %}
+            </ul>
+        </nav>
+    </div>
+    <article class="lh-copy">
+        {{ content | safe }}
+    </article>
+{% endblock %}

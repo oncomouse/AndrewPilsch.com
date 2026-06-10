@@ -1,0 +1,175 @@
+@font-face {
+	font-family: "IBM Plex Mono";
+	src: url("/static/fonts/IBMPlexMono-SemiboldItalic.woff2") format("woff2");
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "IBM Plex Mono";
+	src: url("/static/fonts/IBMPlexMono-Semibold.woff2") format("woff2");
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: "IBM Plex Mono";
+	src: url("/static/fonts/IBMPlexMono-BoldItalic.woff2") format("woff2");
+	font-weight: 700;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "IBM Plex Mono";
+	src: url("/static/fonts/IBMPlexMono-Bold.woff2") format("woff2");
+	font-weight: 700;
+}
+
+:root {
+	--font-code:
+		"IBM Plex Mono", "Ioskeley Mono", "SF Mono", Monaco, "Cascadia Code",
+		"Roboto Mono", Consolas, "Courier New", monospace;
+	--font-size-6: clamp(0.8rem, 0.75rem + 0.25vw, 0.875rem);
+	--font-size-5: clamp(1rem, 0.9rem + 0.5vw, 1.125rem);
+	--font-size-4: clamp(1.25rem, 0.9rem + 1.5vw, 1.75rem);
+	--font-size-3: clamp(1.5rem, 1rem + 2vw, 2.25rem);
+	--font-size-2: clamp(2.25rem, 1rem + 4vw, 4rem);
+	--font-size-1: clamp(3rem, 1rem + 4.5vw, 4.5rem);
+	--lh-title: 1.25;
+	--lh-copy: 1.7;
+	--measure: 900px;
+	--measure-wide: 70ch;
+	--black: #000000;
+	/* --black: #171817; */
+	--white: #ffffff;
+	--near-white: #f5f5f5;
+	--light-gray: #e5e5e5;
+	--moon-gray: #cccccc;
+	--silver: #999999;
+	--near-black: #171817;
+	--dark-gray: #333333;
+	--mid-gray: #555555;
+	--gray: #777777;
+	--light-silver: #aaaaaa;
+}
+
+html {
+	/* Let the browser default (16px) stand */
+	-webkit-text-size-adjust: 100%; /* Prevent iOS text inflation */
+	text-size-adjust: 100%;
+}
+
+/* 2. Fluid type scale */
+body {
+	font-size: var(--font-size-5);
+}
+
+h1 {
+	font-size: var(--font-size-2);
+}
+
+h2 {
+	font-size: var(--font-size-3);
+}
+
+h3 {
+	font-size: var(--font-size-4);
+}
+
+small {
+	font-size: var(--font-size-6);
+}
+
+/* 3. Measure (line length) control */
+p,
+li {
+	max-width: 65ch; /* Optimal reading length */
+}
+
+/* 4. Responsive letter-spacing for headings */
+h1 {
+	letter-spacing: clamp(-0.04em, -0.02em + -0.005vw, -0.01em);
+}
+
+*:first-child {
+	margin-top: 0;
+}
+
+h1 + p,
+h2 + p,
+h3 + p {
+	margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: var(--lh-title);
+}
+
+h1 {
+	margin-top: var(--spacing-5);
+	margin-bottom: calc(var(--spacing-5) / 4);
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-top: var(--spacing-4);
+	margin-bottom: calc(var(--spacing-4) / 4);
+}
+
+p,
+blockquote {
+	margin-top: calc(var(--lh-copy) * 1em);
+}
+
+a {
+	color: var(--near-white);
+	text-decoration: none;
+	transition: color 0.15s ease-in;
+}
+
+a:hover {
+	color: var(--light-silver);
+}
+
+code {
+	background-color: var(--dark-gray);
+	padding: 0.2rem 0.5rem;
+	border-radius: 2px;
+}
+
+pre {
+	background-color: var(--dark-gray);
+	padding: 1.5rem;
+	border-radius: 2px;
+	overflow-x: auto;
+	border: 1px solid var(--light-gray);
+}
+
+pre code {
+	padding: 0;
+	background-color: transparent;
+	border-radius: 0;
+}
+
+blockquote {
+	border-left: 3px solid var(--mid-gray);
+	padding-left: 1.5rem;
+	color: var(--light-gray);
+}
+
+hr {
+	border: none;
+	border-top: 1px solid var(--light-gray);
+	margin: 2rem 0;
+}
+
+nav ul {
+	gap: 1.5rem;
+}
