@@ -27,9 +27,9 @@
 
 # Current Book Projects
 
-***The Radical 90s: Recontextualizing the Informatics of Domination, 1985-2001***
+***The World According to Computer Bugs***
 
-**Six-Chapter Manuscript, In-Progress** -- This project re-examines the period of Utopian optimism during the 1990s and the early days of Internet Culture. Using contemporary perspectives from infrastructure studies, critical AI, and feminist new materialism and contemporary re-evaluations of cyberpunk and the legacy of Donna Haraway's cyborg, the book contends that particularly narrow and technical unsophisticated narratives of cyberculture, written by the participants in what felt like a revolution, still largely structure critical conversations about digital life, even as these digital spaces slide more and more visibly toward what Donna Haraway labelled as "the informatics of domination" in 1985. The project also engages with recent desire to restore the liberatory aspects of early Internet culture and asks after how we might better think about digital networks outside of a binary of freedom and oppression.
+**Six-Chapter Manuscript, In-Progress** -- This project is a media archeology of the computer bug. While numerous works explore computer hacking, my project is interested in accidental computer failure: unintended consequences that can have dangerous and far-reaching effects. I uncover that the accident is integral to software while mitigating this accidental nature has radically altered the landscape of contemporary culture. Planned chapters trace the software accident through the early mathematical foundations of computing, the 1990s emergence of home computing and the Internet, the collapse of post-structural thought and the related rise of infrastructure studies, recent changes in programming practices resulting from big data, and current discussions about the programmatic nature of reality itself.
 
 # Publications
 
