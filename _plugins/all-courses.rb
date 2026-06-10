@@ -7,7 +7,8 @@ require 'kramdown'
 
 $courses = []
 $terms = []
-if ENV['JEKYLL_ENV'] == 'production'
+# if ENV['JEKYLL_ENV'] == 'production'
+if false
   JSON.parse(URI.parse('https://andrew.pilsch.com/courses/courses.php?json').read).each do |course|
     course['image'] = course['course_image']
     course['title'] = "#{course['course_number']} #{course['course_title']}, #{course['course_term']}"
